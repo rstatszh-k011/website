@@ -2,50 +2,50 @@ author: "Lars Schöbitz"
 
 course:
   code: "rstatszh-k009"
-  short-title: "rstatszh-k009"
-  long-title: "rstatsZH - Data Science mit R"
+  short-titel: "rstatszh-k009"
+  long-titel: "rstatsZH - Data Science mit R"
   site: "https://rstatszh-k009.github.io/website/"
   site-short: "rstatszh-k009.github.io/website/"
   github-org: "https://github.com/rstatszh-k009/"
 
 md-01:
-  title: "Willkommen zum Kurs & Werkzeugkiste"
+  titel: "Willkommen zum Kurs & Werkzeugkiste"
   date: "2024-09-24"
 
 md-02:
-  title: "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)"
+  titel: "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)"
   date: "2024-10-01"
   
 md-03:
-  title: "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I"
+  titel: "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I"
   date: "2024-10-08"
   
 md-04:
-  title: "Daten Import & Daten Management"
+  titel: "Daten Import & Daten Management"
   date: "2024-10-15"
   
 md-05:
-  title: "Bedingte Anweisungen & Datumswerte"
+  titel: "Bedingte Anweisungen & Datumswerte"
   date: "2024-10-22"
   
 md-06:
-  title: "Daten Typen & Vektoren & For Loops"
+  titel: "Daten Typen & Vektoren & For Loops"
   date: "2024-10-29"
   
 md-07:
-  title: "Datenformen lang und breit & Daten zusammenfügen"
+  titel: "Datenformen lang und breit & Daten zusammenfügen"
   date: "2024-11-05"
   
 md-08:
-  title: "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II"
+  titel: "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II"
   date: "2024-11-12"
 
 md-09:
-  title: "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages"
+  titel: "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages"
   date: "2024-11-19"
   
 md-10:
-  title: "Funktionen schreiben & Parameterisierung von Berichten"
+  titel: "Funktionen schreiben & Parameterisierung von Berichten"
   date: "2024-11-26"
 
 

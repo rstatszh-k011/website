@@ -40,7 +40,9 @@ website:
             - href: vorbereitung/02-posit-cloud.qmd
               text: "Schritt 2: Posit Cloud"
             - href: vorbereitung/03-r4ds-intro.qmd
-              text: "Schritt 3: Kursuch r4ds"
+              text: "Schritt 3: Kursbuch"
+            - href: vorbereitung/04-umfrage.qmd
+              text: "Schritt 4: Umfrage"
       - href: kalendar.qmd
         text: Kurskalender
       - text: "---"
