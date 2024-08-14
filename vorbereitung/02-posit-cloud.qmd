@@ -1,1 +1,23 @@
-# Posit Cloud
+---
+Titel: "Arbeit mit Quarto & RStudio in Posit Cloud"
+---
+
+## Melde dich mit deinem GitHub-Konto bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei
+
+Hier sind die Anweisungen, um sich mit einem GitHub-Konto bei Posit Cloud anzumelden:
+
+1. Gehe zur Anmeldeseite von Posit Cloud: <https://login.posit.cloud/register>
+
+2. Klicke auf die Schaltfläche **"Sign Up with GitHub"**.
+
+3. Gib deinen GitHub-Benutzernamen und dein Passwort ein, wenn du dazu aufgefordert wirst.
+
+4. Wenn du dich zum ersten Mal mit deinem GitHub-Konto bei Posit Cloud anmeldest, wirst du aufgefordert, Posit Cloud für den Zugriff auf deine GitHub-Kontodaten zu autorisieren.
+
+5. Sobald du den Zugriff autorisiert hast, wirst du zur Posit Cloud-Website zurückgeleitet und bei deinem Konto angemeldet.
+
+Beachte, dass du ein GitHub-Konto benötigst, um diese Anmeldemethode nutzen zu können. Wenn du kein GitHub-Konto hast, musst du eines erstellen, bevor du dich bei Posit Cloud anmelden kannst.
+
+## Tritt dem Kursarbeitsbereich auf Posit Cloud bei
+
+– Öffne diesen Link: In Vorbereitung
