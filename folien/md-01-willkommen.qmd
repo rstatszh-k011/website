@@ -1,0 +1,28 @@
+---
+title: "{{< var md-01.title >}}"
+subtitle: "{{< var course.long-title >}}"
+author: "Lars Schöbitz"
+date: "2024-09-24"
+date-format: "MMM D, YYYY"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    chalkboard: true
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
+editor: source
+execute:
+  freeze: auto
+params:
+    modul: 1
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+library(countdown)
+library(magrittr)
+library(epoxy)
+```
