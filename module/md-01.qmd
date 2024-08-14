@@ -7,7 +7,7 @@ params:
 execute: 
   echo: false
   warning: false
-bibliography: references.bib
+bibliography: referenzen.bib
 editor_options: 
   chunk_output_type: console
 ---
@@ -24,14 +24,14 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
-  dplyr::filter(module == params$module) |>
-  dplyr::pull(learning_objectives)
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+  dplyr::filter(modul == params$modul) |>
+  dplyr::pull(lernziele)
 
 ```
 
 ```{epoxy}
-{1:length(lobj)}. {lobj[1:length(lobj)]}
+{1:length(lernziele)}. {lernziele[1:length(lernziele)]}
 ```
 
 ## {{< fa display >}} Folien
@@ -46,6 +46,6 @@ lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.cs
 
 - In Vorbereitung
 
-## {{< fa code >}} Assignments
+## {{< fa code >}} Übungsaufgaben
 
 - In Vorbereitung
