@@ -1,0 +1,24 @@
+---
+title: "Kurskalendar"
+editor: source
+execute: 
+  echo: false
+  warning: false
+toc: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| echo: false
+#| include: false
+Sys.setlocale("LC_TIME", "de_DE.UTF-8")
+options(knitr.kable.NA = '')
+```
+
+```{r}
+readr::read_csv("data/tbl-00-rstatszh-k009-kursplan.csv") |> 
+  dplyr::select(modul, datum, titel) |> 
+  dplyr::mutate(datum = format(datum, format = "%d %B %Y")) |> 
+  knitr::kable()
+```
