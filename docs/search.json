@@ -12,9 +12,20 @@
   {
     "objectID": "vorbereitung/03-r4ds-intro.html",
     "href": "vorbereitung/03-r4ds-intro.html",
-    "title": "Kursbuch: r4ds",
+    "title": "Kursbuch: R 4 Data Science",
     "section": "",
-    "text": "Kursbuch: r4ds",
+    "text": "“R for Data Science” von Hadley Wickham und Garrett Grolemund ist ein unverzichtbarer Leitfaden für Anfänger:innen, die in die Welt der Datenwissenschaft mit R eintauchen möchten. Dieses Buch führt die Leser:innen in R, RStudio und den Tidyverse ein, eine Suite von R-Paketen, die entwickelt wurde, um datenwissenschaftliche Aufgaben zu optimieren und sie schnell, intuitiv und angenehm zu gestalten.\nEs behandelt den gesamten datenwissenschaftlichen Prozess, einschließlich des Imports, Aufräumens, Transformierens, Visualisierens und Modellierens von Daten, wobei bewährte Verfahren und effiziente Arbeitsabläufe im Vordergrund stehen. Das Buch ist so aufgebaut, dass es Anfänger:innen dabei hilft, eine solide Grundlage in der Datenmanipulation und -analyse zu entwickeln, und bietet praktische Übungen zur Festigung des Gelernten.\nDieses Buch stellt das Kursbuch für diesen Kurs da. Der Zeitrahmen für den Kurs lässt es nicht zu durch sämtliche Kapitel zu arbeiten, jedoch werden die Kursteilnehmer:innen am Ende des Kurses mit den Fähigkeiten ausgestattet sein mittels des Buches selbstständig weiterzulernen.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 3: Kursbuch"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/03-r4ds-intro.html#aufgabe",
+    "href": "vorbereitung/03-r4ds-intro.html#aufgabe",
+    "title": "Kursbuch: R 4 Data Science",
+    "section": "",
+    "text": "Lese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
     "crumbs": [
       "Vorbereitung",
       "Schritt 3: Kursbuch"
@@ -23,9 +34,31 @@
   {
     "objectID": "vorbereitung/02-posit-cloud.html",
     "href": "vorbereitung/02-posit-cloud.html",
-    "title": "Posit Cloud",
+    "title": "rstatsZH - Data Science mit R",
     "section": "",
-    "text": "Posit Cloud",
+    "text": "Hier sind die Anweisungen, um sich mit einem GitHub-Konto bei Posit Cloud anzumelden:\n\nGehe zur Anmeldeseite von Posit Cloud: https://login.posit.cloud/register\nKlicke auf die Schaltfläche “Sign Up with GitHub”.\nGib deinen GitHub-Benutzernamen und dein Passwort ein, wenn du dazu aufgefordert wirst.\nWenn du dich zum ersten Mal mit deinem GitHub-Konto bei Posit Cloud anmeldest, wirst du aufgefordert, Posit Cloud für den Zugriff auf deine GitHub-Kontodaten zu autorisieren.\nSobald du den Zugriff autorisiert hast, wirst du zur Posit Cloud-Website zurückgeleitet und bei deinem Konto angemeldet.\n\nBeachte, dass du ein GitHub-Konto benötigst, um diese Anmeldemethode nutzen zu können. Wenn du kein GitHub-Konto hast, musst du eines erstellen, bevor du dich bei Posit Cloud anmelden kannst.",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 2: Posit Cloud"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/02-posit-cloud.html#melde-dich-mit-deinem-github-konto-bei-posit-cloud-an-und-tritt-dem-arbeitsbereich-für-den-kurs-bei",
+    "href": "vorbereitung/02-posit-cloud.html#melde-dich-mit-deinem-github-konto-bei-posit-cloud-an-und-tritt-dem-arbeitsbereich-für-den-kurs-bei",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "",
+    "text": "Hier sind die Anweisungen, um sich mit einem GitHub-Konto bei Posit Cloud anzumelden:\n\nGehe zur Anmeldeseite von Posit Cloud: https://login.posit.cloud/register\nKlicke auf die Schaltfläche “Sign Up with GitHub”.\nGib deinen GitHub-Benutzernamen und dein Passwort ein, wenn du dazu aufgefordert wirst.\nWenn du dich zum ersten Mal mit deinem GitHub-Konto bei Posit Cloud anmeldest, wirst du aufgefordert, Posit Cloud für den Zugriff auf deine GitHub-Kontodaten zu autorisieren.\nSobald du den Zugriff autorisiert hast, wirst du zur Posit Cloud-Website zurückgeleitet und bei deinem Konto angemeldet.\n\nBeachte, dass du ein GitHub-Konto benötigst, um diese Anmeldemethode nutzen zu können. Wenn du kein GitHub-Konto hast, musst du eines erstellen, bevor du dich bei Posit Cloud anmelden kannst.",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 2: Posit Cloud"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/02-posit-cloud.html#tritt-dem-kursarbeitsbereich-auf-posit-cloud-bei",
+    "href": "vorbereitung/02-posit-cloud.html#tritt-dem-kursarbeitsbereich-auf-posit-cloud-bei",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei",
+    "text": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei\n– Öffne diesen Link: In Vorbereitung",
     "crumbs": [
       "Vorbereitung",
       "Schritt 2: Posit Cloud"
@@ -289,7 +322,7 @@
     "href": "vorbereitung/04-umfrage.html",
     "title": "Umfrage",
     "section": "",
-    "text": "Umfrage",
+    "text": "Umfrage\n\nIn Vorbereitung",
     "crumbs": [
       "Vorbereitung",
       "Schritt 4: Umfrage"
@@ -298,9 +331,31 @@
   {
     "objectID": "vorbereitung/01-github.html",
     "href": "vorbereitung/01-github.html",
-    "title": "GitHub",
+    "title": "rstatsZH - Data Science mit R",
     "section": "",
-    "text": "GitHub",
+    "text": "Um einen Account auf GitHub einzurichten, befolge diese allgemeinen Schritte:\n\nGehe auf die GitHub Website unter https://github.com/.\nKlicke auf die Schaltfläche “Sign up” oben rechts auf der Seite.\nGib deinen gewünschten Benutzernamen, deine E-Mail-Adresse und dein Passwort in die dafür vorgesehenen Felder ein.\nWähle aus, ob du Updates und Ankündigungen per E-Mail erhalten möchtest.\nSchließe den Verifizierungsprozess ab, indem du ein Puzzle löst und einen Verifizierungscode eingibst, der an deine E-Mail-Adresse gesendet wird.\n\n\n\n\n\n\n\nBenutzername-Tipp von: Happy Git and GitHub for the useR\n\n\n\n\n\nEin paar Tipps, die sich leider oft widersprechen:\n\nVerwende deinen tatsächlichen Namen! Die Leute möchten wissen, mit wem sie es zu tun haben. Außerdem ist dein Benutzername dann leichter zu erraten oder zu merken.\nKürzer ist besser als länger.\nSei so einzigartig wie möglich mit so wenig Zeichen wie möglich.\nWähle einen zeitlosen Namen. Hebe deine aktuelle Universität, deinen Arbeitgeber oder deinen Wohnort nicht hervor\nVermeide Wörter, die im Programmierkontext eine besondere Bedeutung haben.\nVermeide die Verwendung von Groß- und Kleinschreibung, um Wörter zu trennen. Wir empfehlen dringend, alles klein zu schreiben. GitHub behandelt Benutzernamen unabhängig von der Groß-/Kleinschreibung. Eine bessere Strategie zur Worttrennung ist die Verwendung eines Bindestrichs -.\n\nDu kannst deinen Benutzernamen später ändern, aber es ist besser, es gleich richtig zu machen.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 1: GitHub"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/01-github.html#einen-account-auf-github-einrichten",
+    "href": "vorbereitung/01-github.html#einen-account-auf-github-einrichten",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "",
+    "text": "Um einen Account auf GitHub einzurichten, befolge diese allgemeinen Schritte:\n\nGehe auf die GitHub Website unter https://github.com/.\nKlicke auf die Schaltfläche “Sign up” oben rechts auf der Seite.\nGib deinen gewünschten Benutzernamen, deine E-Mail-Adresse und dein Passwort in die dafür vorgesehenen Felder ein.\nWähle aus, ob du Updates und Ankündigungen per E-Mail erhalten möchtest.\nSchließe den Verifizierungsprozess ab, indem du ein Puzzle löst und einen Verifizierungscode eingibst, der an deine E-Mail-Adresse gesendet wird.\n\n\n\n\n\n\n\nBenutzername-Tipp von: Happy Git and GitHub for the useR\n\n\n\n\n\nEin paar Tipps, die sich leider oft widersprechen:\n\nVerwende deinen tatsächlichen Namen! Die Leute möchten wissen, mit wem sie es zu tun haben. Außerdem ist dein Benutzername dann leichter zu erraten oder zu merken.\nKürzer ist besser als länger.\nSei so einzigartig wie möglich mit so wenig Zeichen wie möglich.\nWähle einen zeitlosen Namen. Hebe deine aktuelle Universität, deinen Arbeitgeber oder deinen Wohnort nicht hervor\nVermeide Wörter, die im Programmierkontext eine besondere Bedeutung haben.\nVermeide die Verwendung von Groß- und Kleinschreibung, um Wörter zu trennen. Wir empfehlen dringend, alles klein zu schreiben. GitHub behandelt Benutzernamen unabhängig von der Groß-/Kleinschreibung. Eine bessere Strategie zur Worttrennung ist die Verwendung eines Bindestrichs -.\n\nDu kannst deinen Benutzernamen später ändern, aber es ist besser, es gleich richtig zu machen.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 1: GitHub"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/01-github.html#einrichten-eines-persönlichen-github-zugriffstokens-pat",
+    "href": "vorbereitung/01-github.html#einrichten-eines-persönlichen-github-zugriffstokens-pat",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)",
+    "text": "Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)\nHier sind die schrittweisen Anweisungen zum Einrichten eines persönlichen GitHub-Zugriffstokens:\n\n\n\n\n\n\nWarning\n\n\n\n\n\nBehandle deine Zugriffstoken wie Passwörter und bewahre sie sicher auf (z.B. in einer Passwortverwaltungssoftware).\n\n\n\n\nMelde dich bei deinem GitHub-Konto an.\nKlicke oben rechts auf der Seite auf dein Profilbild.\nWähle im Dropdown-Menü “Settings” aus.\nKlicke in der linken Seitenleiste auf “Developer settings”.\nKlicke auf “Personal access tokens”.\nKlicke auf “Tokens (classic)”.\nKlicke auf “Generate new token” und wähle im Dropdown-Menü “Generate new token (classic)”. aus.\nGib deinem Token im Feld “Note” den Namen: GITHUB_PAT\nWähle unter “Expiration” die Option “No expiration” aus.\nWähle unter “Select scopes” Folgendes aus: repo, workflow, user.\nKlicke auf “Select scopes”.\nDein Zugriffstoken wird auf dem Bildschirm angezeigt. Kopiere es und bewahre es an einem sicheren Ort auf.",
     "crumbs": [
       "Vorbereitung",
       "Schritt 1: GitHub"
