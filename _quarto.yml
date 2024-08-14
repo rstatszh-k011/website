@@ -1,19 +1,88 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "website"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  page-navigation: true
+  title: "rstatsZH - Data Science mit R"
+  description: "Webseite des Kurses für Herbst 2024"
+  site-url: "https://rstatszh-k009.github.io/website"
+  repo-url: "https://github.com/rstatszh-k009/website"
+  search: false
+  page-footer: 
+    left: | 
+        Dieser Kurs wird vom [Statistischen Amt Kanton Zürich](https://www.zh.ch/de/politik-staat/statistik-daten.html) angeboten
+    right:
+      - icon: "envelope-at"
+        href: "mailto:datashop@statistik.zh.ch"
+        aria-label: Email
+      - icon: github
+        href: https://github.com/rstatszh-k009/website
+        aria-label: GitHub
+  
+  sidebar:
+    background: "#C8CEF3"
+    pinned: true
+    align: center
+    style: "docked"
+    search: true
+    collapse-level: 1
+    tools:
+      - icon: github
+        href: https://github.com/rstatszh-k009/
+        text: "GitHub Organisation"
+    contents:
+      - section: "Vorbereitung"
+        href: index.qmd
+        contents:
+            - href: vorbereitung/01-github.qmd
+              text: "Schritt 1: GitHub"
+            - href: vorbereitung/02-posit-cloud.qmd
+              text: "Schritt 2: Posit Cloud"
+            - href: vorbereitung/03-r4ds-intro.qmd
+              text: "Schritt 3: Kursuch r4ds"
+      - href: kalendar.qmd
+        text: Kurskalender
+      - text: "---"
+      - section: "Modul 01"
+        href: module/md-01.qmd
+      - section: "Modul 02"
+        href: module/md-01.qmd
+      - section: "Modul 03"
+        href: module/md-01.qmd
+      - section: "Modul 04"
+        href: module/md-01.qmd
+      - section: "Modul 05"
+        href: module/md-01.qmd
+      - section: "Modul 06"
+        href: module/md-01.qmd
+      - section: "Modul 07"
+        href: module/md-01.qmd
+      - section: "Modul 08"
+        href: module/md-01.qmd
+      - section: "Modul 09"
+        href: module/md-01.qmd
+      - section: "Modul 10"
+        href: module/md-01.qmd
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [litera, theme.scss]
+    code-copy: true
+    code-overflow: wrap
     toc: true
+    mainfont: "Atkinson Hyperlegible"
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
+    include-in-header: 
+        - text: |
+            <script defer data-domain="rstatszh-k009.github.io/website" src="https://plausible.io/js/script.js"></script>
+
+execute: 
+  freeze: auto
 
 
 
