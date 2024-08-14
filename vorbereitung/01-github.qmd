@@ -1,1 +1,67 @@
-# GitHub
+---
+Titel: „Interaktion mit GitHub“
+---
+
+## Einen Account auf GitHub einrichten
+
+Um einen Account auf GitHub einzurichten, befolge diese allgemeinen Schritte:
+
+1. Gehe auf die GitHub Website unter <https://github.com/>.
+
+2. Klicke auf die Schaltfläche "Sign up" oben rechts auf der Seite.
+
+3. Gib deinen gewünschten Benutzernamen, deine E-Mail-Adresse und dein Passwort in die dafür vorgesehenen Felder ein.
+
+4. Wähle aus, ob du Updates und Ankündigungen per E-Mail erhalten möchtest.
+
+5. Schließe den Verifizierungsprozess ab, indem du ein Puzzle löst und einen Verifizierungscode eingibst, der an deine E-Mail-Adresse gesendet wird.
+
+::: {.callout-tip collapse=„true“}
+## Benutzername-Tipp von: [Happy Git and GitHub for the useR](https://happygitwithr.com/github-acct.html#github-acct)
+
+Ein paar Tipps, die sich leider oft widersprechen:
+
+- Verwende deinen tatsächlichen Namen! Die Leute möchten wissen, mit wem sie es zu tun haben. Außerdem ist dein Benutzername dann leichter zu erraten oder zu merken.
+- Kürzer ist besser als länger.
+- Sei so einzigartig wie möglich mit so wenig Zeichen wie möglich. 
+- Wähle einen zeitlosen Namen. Hebe deine aktuelle Universität, deinen Arbeitgeber oder deinen Wohnort nicht hervor
+- Vermeide Wörter, die im Programmierkontext eine besondere Bedeutung haben.
+- Vermeide die Verwendung von Groß- und Kleinschreibung, um Wörter zu trennen. Wir empfehlen dringend, alles klein zu schreiben. GitHub behandelt Benutzernamen unabhängig von der Groß-/Kleinschreibung. Eine bessere Strategie zur Worttrennung ist die Verwendung eines Bindestrichs `-`.
+
+Du kannst deinen Benutzernamen später ändern, aber es ist besser, es gleich richtig zu machen.
+
+- <https://help.github.com/articles/changing-your-github-username/>
+- <https://help.github.com/articles/what-happens-when-i-change-my-username/>
+:::
+
+## Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)
+
+Hier sind die schrittweisen Anweisungen zum Einrichten eines persönlichen GitHub-Zugriffstokens:
+
+::: {.callout-warning collapse=„false“}
+Behandle deine Zugriffstoken wie Passwörter und bewahre sie sicher auf (z.B. in einer Passwortverwaltungssoftware).
+:::
+
+1. Melde dich bei deinem GitHub-Konto an.
+
+2. Klicke oben rechts auf der Seite auf dein Profilbild.
+
+3. Wähle im Dropdown-Menü "Settings" aus.
+
+4. Klicke in der linken Seitenleiste auf "Developer settings".
+
+5. Klicke auf "Personal access tokens".
+
+6. Klicke auf **"Tokens (classic)"**.
+
+7. Klicke auf "Generate new token" und wähle im Dropdown-Menü **"Generate new token (classic)".** aus.
+
+8. Gib deinem Token im Feld "Note" den Namen: GITHUB_PAT
+
+9. Wähle unter "Expiration" die Option "No expiration" aus.
+
+10. Wähle unter "Select scopes" Folgendes aus: **repo, workflow, user**.
+
+11. Klicke auf "Select scopes".
+
+12. Dein Zugriffstoken wird auf dem Bildschirm angezeigt. Kopiere es und bewahre es an einem sicheren Ort auf.
