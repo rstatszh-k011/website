@@ -1,0 +1,32 @@
+datum,modul,titel,lernziele
+2024-09-24T00:00:00Z,1,Willkommen zum Kurs & Werkzeugkiste,Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.
+2024-09-24T00:00:00Z,1,Willkommen zum Kurs & Werkzeugkiste,"Die Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen."
+2024-09-24T00:00:00Z,1,Willkommen zum Kurs & Werkzeugkiste,"Die Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown)."
+2024-09-24T00:00:00Z,1,Willkommen zum Kurs & Werkzeugkiste,Die Lernended können die vier Fenster der RStudio IDE identifizieren.
+2024-10-01T00:00:00Z,2,Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP),NA
+2024-10-01T00:00:00Z,2,Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP),NA
+2024-10-01T00:00:00Z,2,Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP),NA
+2024-10-08T00:00:00Z,3,Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I,NA
+2024-10-08T00:00:00Z,3,Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I,NA
+2024-10-08T00:00:00Z,3,Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I,NA
+2024-10-15T00:00:00Z,4,Daten Import & Daten Management,NA
+2024-10-15T00:00:00Z,4,Daten Import & Daten Management,NA
+2024-10-15T00:00:00Z,4,Daten Import & Daten Management,NA
+2024-10-22T00:00:00Z,5,Bedingte Anweisungen & Datumswerte,NA
+2024-10-22T00:00:00Z,5,Bedingte Anweisungen & Datumswerte,NA
+2024-10-22T00:00:00Z,5,Bedingte Anweisungen & Datumswerte,NA
+2024-10-29T00:00:00Z,6,Daten Typen & Vektoren & For Loops,NA
+2024-10-29T00:00:00Z,6,Daten Typen & Vektoren & For Loops,NA
+2024-10-29T00:00:00Z,6,Daten Typen & Vektoren & For Loops,NA
+2024-11-05T00:00:00Z,7,Datenformen lang und breit & Daten zusammenfügen,NA
+2024-11-05T00:00:00Z,7,Datenformen lang und breit & Daten zusammenfügen,NA
+2024-11-05T00:00:00Z,7,Datenformen lang und breit & Daten zusammenfügen,NA
+2024-11-12T00:00:00Z,8,Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II,NA
+2024-11-12T00:00:00Z,8,Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II,NA
+2024-11-12T00:00:00Z,8,Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II,NA
+2024-11-19T00:00:00Z,9,Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages,NA
+2024-11-19T00:00:00Z,9,Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages,NA
+2024-11-19T00:00:00Z,9,Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages,NA
+2024-11-26T00:00:00Z,10,Funktionen schreiben & Parameterisierung von Berichten,NA
+2024-11-26T00:00:00Z,10,Funktionen schreiben & Parameterisierung von Berichten,NA
+2024-11-26T00:00:00Z,10,Funktionen schreiben & Parameterisierung von Berichten,NA

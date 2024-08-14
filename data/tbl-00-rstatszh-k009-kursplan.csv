@@ -1,0 +1,14 @@
+datum,woche,titel,modul,link,title
+2024-09-24T00:00:00Z,1,Willkommen zum Kurs & Werkzeugkiste,Modul 01,https://rstatszh-k009.github.io/website/module/md-01.html,[Willkommen zum Kurs & Werkzeugkiste](https://rstatszh-k009.github.io/website/module/md-01.html)
+2024-10-01T00:00:00Z,2,Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP),Modul 02,https://rstatszh-k009.github.io/website/module/md-02.html,[Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)](https://rstatszh-k009.github.io/website/module/md-02.html)
+2024-10-08T00:00:00Z,3,Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I,Modul 03,https://rstatszh-k009.github.io/website/module/md-03.html,[Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I](https://rstatszh-k009.github.io/website/module/md-03.html)
+2024-10-15T00:00:00Z,4,Daten Import & Daten Management,Modul 04,https://rstatszh-k009.github.io/website/module/md-04.html,[Daten Import & Daten Management](https://rstatszh-k009.github.io/website/module/md-04.html)
+2024-10-22T00:00:00Z,5,Bedingte Anweisungen & Datumswerte,Modul 05,https://rstatszh-k009.github.io/website/module/md-05.html,[Bedingte Anweisungen & Datumswerte](https://rstatszh-k009.github.io/website/module/md-05.html)
+2024-10-29T00:00:00Z,6,Daten Typen & Vektoren & For Loops,Modul 06,https://rstatszh-k009.github.io/website/module/md-06.html,[Daten Typen & Vektoren & For Loops](https://rstatszh-k009.github.io/website/module/md-06.html)
+2024-11-05T00:00:00Z,7,Datenformen lang und breit & Daten zusammenfügen,Modul 07,https://rstatszh-k009.github.io/website/module/md-07.html,[Datenformen lang und breit & Daten zusammenfügen](https://rstatszh-k009.github.io/website/module/md-07.html)
+2024-11-12T00:00:00Z,8,Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II,Modul 08,https://rstatszh-k009.github.io/website/module/md-08.html,[Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II](https://rstatszh-k009.github.io/website/module/md-08.html)
+2024-11-19T00:00:00Z,9,Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages,Modul 09,https://rstatszh-k009.github.io/website/module/md-09.html,[Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages](https://rstatszh-k009.github.io/website/module/md-09.html)
+2024-11-26T00:00:00Z,10,Funktionen schreiben & Parameterisierung von Berichten,Modul 10,https://rstatszh-k009.github.io/website/module/md-10.html,[Funktionen schreiben & Parameterisierung von Berichten](https://rstatszh-k009.github.io/website/module/md-10.html)
+2024-12-03T00:00:00Z,11,Arbeitszeit für Abschlussprojekt,NA,NA,Arbeitszeit für Abschlussprojekt
+2024-12-10T00:00:00Z,12,Abgabe Abschlussprojekt,NA,NA,Abgabe Abschlussprojekt
+2024-12-17T00:00:00Z,13,Abschlussveranstaltung,NA,NA,Abschlussveranstaltung
