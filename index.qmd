@@ -1,11 +1,24 @@
 ---
-title: "website"
+title: "Vorbereitung - rstatsZH Kurs 009"
+editor: source
+execute: 
+  echo: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
 ---
 
-This is a Quarto website.
+Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz  freut sich darauf, dich kennenzulernen. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Wir treffen uns ab 24.09.2024 jeweils um 13:00 Uhr auf Zoom.
 
-```{r}
-1 + 1
-```
+Vor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.
+
+## {{< fa circle-question >}} Was muss ich vor Tag 1 vorbereiten?
+
+Vor Tag 1 arbeite durch die folgenden vier Schritte:
+
+- [Schritt 1](vorbereitung/01-github.qmd): Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.
+- [Schritt 2](vorbereitung/02-posit-cloud.qmd): Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.
+- [Schritt 3](vorbereitung/03-r4ds-intro.qmd): Lies die Einführung des Kursbuches: R 4 Data Science.
+- [Schritt 4](vorbereitung/04-umfrage.qmd): Fülle die Umfrage vor dem Kurs bis Donnerstag, den 18. September 2024 aus.

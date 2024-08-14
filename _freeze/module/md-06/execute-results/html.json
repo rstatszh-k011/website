@@ -1,0 +1,15 @@
+{
+  "hash": "09be5aa73b5b9619418159cd589bb1ad",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Modul 6\"\nsubtitle: \"{{< var md-06.titel >}}\"\neditor: source\nparams:\n    modul: 6\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n\n## Lernziele\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n3. \n:::\n\n\n## {{< fa display >}} Folien\n\n- In Vorbereitung\n\n## {{< fa book >}} Lesematerial\n\n- In Vorbereitung\n\n## {{< fa code >}} Übungsaufgaben\n\n- In Vorbereitung",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

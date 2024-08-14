@@ -10,6 +10,168 @@
     ]
   },
   {
+    "objectID": "vorbereitung/03-r4ds-intro.html",
+    "href": "vorbereitung/03-r4ds-intro.html",
+    "title": "Kursbuch: r4ds",
+    "section": "",
+    "text": "Kursbuch: r4ds",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 3: Kursbuch"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/02-posit-cloud.html",
+    "href": "vorbereitung/02-posit-cloud.html",
+    "title": "Posit Cloud",
+    "section": "",
+    "text": "Posit Cloud",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 2: Posit Cloud"
+    ]
+  },
+  {
+    "objectID": "module/md-08.html#folien",
+    "href": "module/md-08.html#folien",
+    "title": "Modul 8",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-08.html#lesematerial",
+    "href": "module/md-08.html#lesematerial",
+    "title": "Modul 8",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-08.html#übungsaufgaben",
+    "href": "module/md-08.html#übungsaufgaben",
+    "title": "Modul 8",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-07.html#folien",
+    "href": "module/md-07.html#folien",
+    "title": "Modul 7",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-07.html#lesematerial",
+    "href": "module/md-07.html#lesematerial",
+    "title": "Modul 7",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-07.html#übungsaufgaben",
+    "href": "module/md-07.html#übungsaufgaben",
+    "title": "Modul 7",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-04.html#folien",
+    "href": "module/md-04.html#folien",
+    "title": "Modul 4",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-04.html#lesematerial",
+    "href": "module/md-04.html#lesematerial",
+    "title": "Modul 4",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-04.html#übungsaufgaben",
+    "href": "module/md-04.html#übungsaufgaben",
+    "title": "Modul 4",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-05.html",
+    "href": "module/md-05.html",
+    "title": "Modul 5",
+    "section": "",
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
+  },
+  {
+    "objectID": "module/md-05.html#lernziele",
+    "href": "module/md-05.html#lernziele",
+    "title": "Modul 5",
+    "section": "",
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
+  },
+  {
+    "objectID": "module/md-05.html#folien",
+    "href": "module/md-05.html#folien",
+    "title": "Modul 5",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-05.html#lesematerial",
+    "href": "module/md-05.html#lesematerial",
+    "title": "Modul 5",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-05.html#übungsaufgaben",
+    "href": "module/md-05.html#übungsaufgaben",
+    "title": "Modul 5",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-02.html#folien",
+    "href": "module/md-02.html#folien",
+    "title": "Modul 2",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitun"
+  },
+  {
+    "objectID": "module/md-02.html#lesematerial",
+    "href": "module/md-02.html#lesematerial",
+    "title": "Modul 2",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-02.html#übungsaufgaben",
+    "href": "module/md-02.html#übungsaufgaben",
+    "title": "Modul 2",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-03.html#folien",
+    "href": "module/md-03.html#folien",
+    "title": "Modul 3",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-03.html#lesematerial",
+    "href": "module/md-03.html#lesematerial",
+    "title": "Modul 3",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-03.html#übungsaufgaben",
+    "href": "module/md-03.html#übungsaufgaben",
+    "title": "Modul 3",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
     "objectID": "module/md-01.html",
     "href": "module/md-01.html",
     "title": "Modul 1",
@@ -60,26 +222,67 @@
     ]
   },
   {
-    "objectID": "vorbereitung/03-r4ds-intro.html",
-    "href": "vorbereitung/03-r4ds-intro.html",
-    "title": "Kursbuch: r4ds",
-    "section": "",
-    "text": "Kursbuch: r4ds",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 3: Kursbuch"
-    ]
+    "objectID": "module/md-10.html#folien",
+    "href": "module/md-10.html#folien",
+    "title": "Modul 10",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
   },
   {
-    "objectID": "vorbereitung/02-posit-cloud.html",
-    "href": "vorbereitung/02-posit-cloud.html",
-    "title": "Posit Cloud",
-    "section": "",
-    "text": "Posit Cloud",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 2: Posit Cloud"
-    ]
+    "objectID": "module/md-10.html#lesematerial",
+    "href": "module/md-10.html#lesematerial",
+    "title": "Modul 10",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-10.html#übungsaufgaben",
+    "href": "module/md-10.html#übungsaufgaben",
+    "title": "Modul 10",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-06.html#folien",
+    "href": "module/md-06.html#folien",
+    "title": "Modul 6",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-06.html#lesematerial",
+    "href": "module/md-06.html#lesematerial",
+    "title": "Modul 6",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-06.html#übungsaufgaben",
+    "href": "module/md-06.html#übungsaufgaben",
+    "title": "Modul 6",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-09.html#folien",
+    "href": "module/md-09.html#folien",
+    "title": "Modul 9",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-09.html#lesematerial",
+    "href": "module/md-09.html#lesematerial",
+    "title": "Modul 9",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-09.html#übungsaufgaben",
+    "href": "module/md-09.html#übungsaufgaben",
+    "title": "Modul 9",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
   },
   {
     "objectID": "vorbereitung/04-umfrage.html",
@@ -106,9 +309,19 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "website",
+    "title": "Vorbereitung - rstatsZH Kurs 009",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "text": "Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz freut sich darauf, dich kennenzulernen.\nWir treffen uns ab 24.09.2024 jeweils um 13:00 Uhr auf Zoom.\nVor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.",
+    "crumbs": [
+      "Vorbereitung"
+    ]
+  },
+  {
+    "objectID": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
+    "href": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
+    "title": "Vorbereitung - rstatsZH Kurs 009",
+    "section": " Was muss ich vor Tag 1 vorbereiten?",
+    "text": "Was muss ich vor Tag 1 vorbereiten?\nVor Tag 1 arbeite durch die folgenden vier Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R 4 Data Science.\nSchritt 4: Fülle die Umfrage vor dem Kurs bis Donnerstag, den 18. September 2024 aus.",
     "crumbs": [
       "Vorbereitung"
     ]

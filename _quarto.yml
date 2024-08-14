@@ -43,6 +43,7 @@ website:
               text: "Schritt 3: Kursbuch"
             - href: vorbereitung/04-umfrage.qmd
               text: "Schritt 4: Umfrage"
+      - text: "---"
       - href: kalendar.qmd
         text: Kurskalender
       - text: "---"

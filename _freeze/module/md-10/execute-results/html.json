@@ -1,0 +1,15 @@
+{
+  "hash": "d26b09c7d2fda7e331152167dd13d6d9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Modul 10\"\nsubtitle: \"{{< var md-10.titel >}}\"\neditor: source\nparams:\n    modul: 10\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n\n## Lernziele\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n3. \n:::\n\n\n## {{< fa display >}} Folien\n\n- In Vorbereitung\n\n## {{< fa book >}} Lesematerial\n\n- In Vorbereitung\n\n## {{< fa code >}} Übungsaufgaben\n\n- In Vorbereitung",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
