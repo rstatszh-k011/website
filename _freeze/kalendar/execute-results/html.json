@@ -1,0 +1,15 @@
+{
+  "hash": "5403a830c98ce30b68c9ba98429d4d52",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Kurskalendar\"\neditor: source\nexecute: \n  echo: false\n  warning: false\ntoc: false\neditor_options: \n  chunk_output_type: console\n---\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\n|modul    |datum             |titel                                                                            |\n|:--------|:-----------------|:--------------------------------------------------------------------------------|\n|Modul 01 |24 September 2024 |Willkommen zum Kurs & Werkzeugkiste                                              |\n|Modul 02 |01 Oktober 2024   |Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)     |\n|Modul 03 |08 Oktober 2024   |Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I            |\n|Modul 04 |15 Oktober 2024   |Daten Import & Daten Management                                                  |\n|Modul 05 |22 Oktober 2024   |Bedingte Anweisungen & Datumswerte                                               |\n|Modul 06 |29 Oktober 2024   |Daten Typen & Vektoren & For Loops                                               |\n|Modul 07 |05 November 2024  |Datenformen lang und breit & Daten zusammenfügen                                 |\n|Modul 08 |12 November 2024  |Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II                  |\n|Modul 09 |19 November 2024  |Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages |\n|Modul 10 |26 November 2024  |Funktionen schreiben & Parameterisierung von Berichten                           |\n|         |03 Dezember 2024  |Arbeitszeit für Abschlussprojekt                                                 |\n|         |10 Dezember 2024  |Abgabe Abschlussprojekt                                                          |\n|         |17 Dezember 2024  |Abschlussveranstaltung                                                           |\n\n\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

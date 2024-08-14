@@ -1,0 +1,17 @@
+{
+  "hash": "6abbdb175c051f60961df0d4fc841342",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Modul 1\"\nsubtitle: \"{{< var md-01.titel >}}\"\neditor: source\nparams:\n    modul: 1\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n\n\n## Lernziele\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\n2. Die Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\n3. Die Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\n4. Die Lernended können die vier Fenster der RStudio IDE identifizieren.\n:::\n\n\n## {{< fa display >}} Folien\n\n[Zeige Folien im Vollbildmodus an](../folien/md-01-willkommen.html) | [Download slides as PDF](https://github.com/rstatszh-k009/website/raw/main/folien/md-01-willkommen.pdf)\n\n\n```{=html}\n<iframe class=\"slide-deck\" src=\"../folien/md-01-willkommen.html\" height=\"420\" width=\"747\" style=\"border: 1px solid #123233;\"></iframe>\n```\n\n\n## {{< fa book >}} Lesematerial\n\n- In Vorbereitung\n\n## {{< fa code >}} Übungsaufgaben\n\n- In Vorbereitung",
+    "supporting": [
+      "md-01_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "objectID": "kalendar.html",
+    "href": "kalendar.html",
+    "title": "Kurskalendar",
+    "section": "",
+    "text": "modul\ndatum\ntitel\n\n\n\n\nModul 01\n24 September 2024\nWillkommen zum Kurs & Werkzeugkiste\n\n\nModul 02\n01 Oktober 2024\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)\n\n\nModul 03\n08 Oktober 2024\nDaten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 04\n15 Oktober 2024\nDaten Import & Daten Management\n\n\nModul 05\n22 Oktober 2024\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\n29 Oktober 2024\nDaten Typen & Vektoren & For Loops\n\n\nModul 07\n05 November 2024\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n12 November 2024\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 09\n19 November 2024\nErstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages\n\n\nModul 10\n26 November 2024\nFunktionen schreiben & Parameterisierung von Berichten\n\n\n\n03 Dezember 2024\nArbeitszeit für Abschlussprojekt\n\n\n\n10 Dezember 2024\nAbgabe Abschlussprojekt\n\n\n\n17 Dezember 2024\nAbschlussveranstaltung",
+    "crumbs": [
+      "Kurskalender"
+    ]
+  },
+  {
+    "objectID": "module/md-01.html",
+    "href": "module/md-01.html",
+    "title": "Modul 1",
+    "section": "",
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-01.html#lernziele",
+    "href": "module/md-01.html#lernziele",
+    "title": "Modul 1",
+    "section": "",
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-01.html#folien",
+    "href": "module/md-01.html#folien",
+    "title": "Modul 1",
+    "section": " Folien",
+    "text": "Folien\nZeige Folien im Vollbildmodus an | Download slides as PDF",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-01.html#lesematerial",
+    "href": "module/md-01.html#lesematerial",
+    "title": "Modul 1",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-01.html#übungsaufgaben",
+    "href": "module/md-01.html#übungsaufgaben",
+    "title": "Modul 1",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/03-r4ds-intro.html",
+    "href": "vorbereitung/03-r4ds-intro.html",
+    "title": "Kursbuch: r4ds",
+    "section": "",
+    "text": "Kursbuch: r4ds",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 3: Kursbuch"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/02-posit-cloud.html",
+    "href": "vorbereitung/02-posit-cloud.html",
+    "title": "Posit Cloud",
+    "section": "",
+    "text": "Posit Cloud",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 2: Posit Cloud"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/04-umfrage.html",
+    "href": "vorbereitung/04-umfrage.html",
+    "title": "Umfrage",
+    "section": "",
+    "text": "Umfrage",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 4: Umfrage"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/01-github.html",
+    "href": "vorbereitung/01-github.html",
+    "title": "GitHub",
+    "section": "",
+    "text": "GitHub",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 1: GitHub"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "website",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Vorbereitung"
+    ]
+  }
+]
