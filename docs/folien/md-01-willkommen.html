@@ -324,6 +324,8 @@
       margin-right: 0; 
     }
   </style>
+  <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -343,15 +345,527 @@ Lars Schöbitz
 
   <p class="date">Sep 24, 2024</p>
 </section>
-<section class="slide level2">
+<section>
+<section id="willkommen" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Willkommen! 👋</h1>
 
+</section>
+<section id="triff-die-kursleitung" class="slide level2 smaller">
+<h2>Triff die Kursleitung</h2>
+<p><strong>Lars Schöbitz</strong></p>
+
+<img data-src="img/lec-01/profile-lars.png" class="quarto-figure quarto-figure-left r-stretch" style="width:50.0%" alt="Headshot of Lars Schöbitz"><ul>
+<li>Umweltingenieur 🔨</li>
+<li>Forscher im Ruhestand 🛏</li>
+<li><a href="https://education.rstudio.com/trainers/">RStudio zertifizierte Lehrkraft</a></li>
+<li><a href="https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html">Data Steward an der ETH Zurich</a></li>
+</ul>
+</section>
+<section id="lernziele-des-kurses" class="slide level2">
+<h2>Lernziele des Kurses</h2>
+<p>Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:</p>
+<ol type="1">
+<li><p>Teilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.</p></li>
+<li><p>Teilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.</p></li>
+<li><p>Teilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.</p></li>
+</ol>
+</section>
+<section id="warum-das-ganze" class="slide level2">
+<h2>Warum das Ganze?</h2>
+<ul>
+<li>TODO: Diagram Offene Daten / Reproduzierbarkeit / Transparenz</li>
+</ul>
+</section>
+<section id="du-bist-dran-über-dich" class="slide level2">
+<h2>Du bist dran: Über Dich</h2>
+<div class="task">
+<p>Wähle einen Gegenstand aus und mache dir eine Minute lang Notizen:</p>
+<p>Was hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?</p>
+</div>
+
+<img data-src="img/lec-01/items-slide/items-slide.001.png" class="r-stretch"><div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_9707f4fc" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="in-paaren" class="slide level2">
+<h2>In Paaren</h2>
+<div class="task">
+<p><strong>Nehmt euch jeweils 2 Minuten Zeit, um euch auszutauschen:</strong></p>
+<p>Was hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?</p>
+</div>
+
+<img data-src="img/lec-01/items-slide/items-slide.001.png" class="r-stretch"><div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_caa039cf" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="kurskalendar" class="slide level2 smallest scrollable">
+<h2>Kurskalendar</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<colgroup>
+<col style="width: 8%">
+<col style="width: 16%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">modul</th>
+<th style="text-align: left;">datum</th>
+<th style="text-align: left;">titel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Modul 01</td>
+<td style="text-align: left;">24 September 2024</td>
+<td style="text-align: left;">Willkommen zum Kurs &amp; Werkzeugkiste</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Modul 02</td>
+<td style="text-align: left;">01 Oktober 2024</td>
+<td style="text-align: left;">Explorative Datenanalyse durch Visualisierung &amp; Digitaler Arbeitsplatz (DAP)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Modul 03</td>
+<td style="text-align: left;">08 Oktober 2024</td>
+<td style="text-align: left;">Daten Transformation mit dplyr &amp; Kollaboratives Arbeiten mit GitHub I</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Modul 04</td>
+<td style="text-align: left;">15 Oktober 2024</td>
+<td style="text-align: left;">Daten Import &amp; Daten Management</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Modul 05</td>
+<td style="text-align: left;">22 Oktober 2024</td>
+<td style="text-align: left;">Bedingte Anweisungen &amp; Datumswerte</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Modul 06</td>
+<td style="text-align: left;">29 Oktober 2024</td>
+<td style="text-align: left;">Daten Typen &amp; Vektoren &amp; For Loops</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Modul 07</td>
+<td style="text-align: left;">05 November 2024</td>
+<td style="text-align: left;">Datenformen lang und breit &amp; Daten zusammenfügen</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Modul 08</td>
+<td style="text-align: left;">12 November 2024</td>
+<td style="text-align: left;">Mit Text Daten arbeiten &amp; Kollaboratives Arbeiten mit GitHub II</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Modul 09</td>
+<td style="text-align: left;">19 November 2024</td>
+<td style="text-align: left;">Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Modul 10</td>
+<td style="text-align: left;">26 November 2024</td>
+<td style="text-align: left;">Funktionen schreiben &amp; Parameterisierung von Berichten</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">03 Dezember 2024</td>
+<td style="text-align: left;">Arbeitszeit für Abschlussprojekt</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">10 Dezember 2024</td>
+<td style="text-align: left;">Abgabe Abschlussprojekt</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">17 Dezember 2024</td>
+<td style="text-align: left;">Abschlussveranstaltung</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="kursstruktur" class="slide level2">
+<h2>Kursstruktur</h2>
+<ul>
+<li><span class="highlight-yellow">Ich bin dran</span>: Vortragssegmente + Live-Coding</li>
+<li><span class="highlight-yellow">Wir sind dran</span>: Live-Coding + Mitmachen</li>
+<li><span class="highlight-yellow">Ihr seid dran</span>: Übungen in Paaren</li>
+</ul>
+</section>
+<section id="ich-bin-dran-vortragssegmente-live-coding" class="slide level2">
+<h2>Ich bin dran: Vortragssegmente + Live-Coding</h2>
+<ul>
+<li>Der Kursleiter schreibt und spricht den Code laut vor</li>
+<li>Der Kursleiter erklärt Konzepte und Prinzipien, die relevant sind</li>
+<li>Code wird auf dem Bildschirm angezeigt</li>
+</ul>
+</section>
+<section id="wir-sind-dran-live-coding-mitmachen" class="slide level2">
+<h2>Wir sind dran: Live-Coding + Mitmachen</h2>
+<ul>
+<li>Der Kursleiter schreibt und spricht den Code laut vor</li>
+<li>Der Kursleiter erklärt relevante Konzepte und Prinzipien</li>
+<li>Der Code wird auf dem Bildschirm angezeigt</li>
+<li>Die Lernenden machen mit, indem sie denselben Code schreiben und ausführen</li>
+</ul>
+</section>
+<section id="ihr-seid-dran-übungen-in-paaren" class="slide level2">
+<h2>Ihr seid dran: Übungen in Paaren</h2>
+<ul>
+<li>Zwei Lernende arbeiten in Paaren in Break-out Räumen zusammen</li>
+<li>Eine Person tippt und teilt die Bildschirmanzeige</li>
+<li>Eine Person bietet Kommentare und Vorschläge an, und tippt selbst auch mit</li>
+</ul>
+</section>
+<section id="unterstützung-bekommen-fragen-stellen" class="slide level2">
+<h2>Unterstützung bekommen / Fragen stellen</h2>
+<ul>
+<li><p>Während Live-Coding: hebt die Hand mittels Zoom und unterbrecht mich. Ich werde versuchen, mich um dein Anliegen zu kümmern, wenn es die Zeit erlaubt. Offene Fragen werden dokumentiert.</p></li>
+<li><p>Während Übungen in Break-out Räumen: Ihr könnt mich zu euch rufen. Bei einem Grossteil der Übungen werde ich versuchen in jedem Raum einmal vorbeizuschauen.</p></li>
+</ul>
+</section>
+<section id="website-zum-kurs" class="slide level2 center-align large">
+<h2>Website zum Kurs</h2>
+<p><a href="https://rstatszh-k009.github.io/website/">rstatszh-k009.github.io/website/</a></p>
+</section>
+<section id="jetzt-sind-wir-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen" class="slide level2">
+<h2>Jetzt sind wir dran: Öffne und speichere die Kurswebsite als Lesezeichen</h2>
+<div class="task">
+<ol type="1">
+<li>Öffne einen Webbrowser auf deinem Arbeitsgerät.</li>
+<li>Gehe zur Website des Kurses: <a href="https://rstatszh-k009.github.io/website/">rstatszh-k009.github.io/website/</a></li>
+<li>Erstelle einen Lesezeichenordner mit dem Namen rstatszh-k009 in deiner Lesezeichenleiste.</li>
+<li>Füge dem Ordner rstatszh-k009 das Lesezeichen zur Kurs-Webseite hinzu.</li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_6ca15c5e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="learning-objectives-for-this-week" class="slide level2">
+<h2>Learning Objectives (for this week)</h2>
+<div class="cell">
+<ol type="1">
+<li>Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.</li>
+<li>Die Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.</li>
+<li>Die Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).</li>
+<li>Die Lernended können die vier Fenster der RStudio IDE identifizieren.</li>
+</ol>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<p><img data-src="img/lec-01/starwars-rey-rstats.png"></p>
+
+<aside><div>
+<p>Artwork from <a href="https://twitter.com/juliesquid">@juliesquid</a> for <a href="https://twitter.com/openscapes">@openscapes</a> (illustrated by <a href="https://twitter.com/allison_horst">@allison_horst</a>)</p>
+</div></aside></section></section>
+<section>
+<section id="quarto" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Quarto</h1>
+
+</section>
+<section id="wir-holen-euch-dort-ab-wo-ihr-seid" class="slide level2">
+<h2>Wir holen euch dort ab, wo ihr seid</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment fade-in-then-semi-out">
+<p>Ich gehe davon aus, dass du:</p>
+<p>– <span class="highlight-yellow">nicht</span> über Erfahrung mit R oder Git verfügst</p>
+<ul>
+<li><p><span class="highlight-yellow">nicht</span> schon einmal in einer IDE gearbeitet hast (z. B. RStudio IDE)</p></li>
+<li><p>etwas über R lernen möchtest</p></li>
+<li><p>mehr über Quarto und das Veröffentlichen von Berichten erfahren möchtest</p></li>
+<li><p>lernen möchtest, wie man mit GitHub Projekte verwaltet</p></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment fade-in">
+<p>Ich bringe dir bei:</p>
+<p>– R</p>
+<ul>
+<li><p>Quarto-Syntax und -Formate</p></li>
+<li><p>Markdown</p></li>
+<li><p>Git über RStudio IDE nutzen</p></li>
+<li><p>GitHub-Issues, Projektmanagement und Veröffentlichung</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="posit-cloud-rstudio-ide" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Posit Cloud &amp; RStudio IDE</h1>
+
+</section>
+<section id="section-1" class="slide level2" data-background-image="img/lec-01/illustration-slides/illustration-slides.001.png">
+<h2>-</h2>
+</section>
+<section id="section-2" class="slide level2" data-background-image="img/lec-01/illustration-slides/illustration-slides.002.png">
+<h2>-</h2>
+</section>
+<section id="section-3" class="slide level2" data-background-image="img/lec-01/illustration-slides/illustration-slides.003.png">
+<h2>-</h2>
+</section>
+<section id="section-4" class="slide level2" data-background-image="img/lec-01/illustration-slides/illustration-slides.004.png">
+<h2>-</h2>
+</section>
+<section id="section-5" class="slide level2" data-background-image="img/lec-01/illustration-slides/illustration-slides.005.png">
+<h2>-</h2>
+</section>
+<section id="section-6" class="slide level2" data-background-image="img/lec-01/illustration-slides/illustration-slides.006.png">
+<h2>-</h2>
+</section>
+<section id="section-7" class="slide level2" data-background-image="img/lec-01/illustration-slides/illustration-slides.007.png">
+<h2>-</h2>
+</section></section>
+<section>
+<section id="was-ist-quarto" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Was ist Quarto?</h1>
+
+</section>
+<section id="quarto-1" class="slide level2">
+<h2>Quarto …</h2>
+<ul>
+<li>ist ein neues, open-source, wissenschaftliches und technisches Publikationssystem</li>
+<li>zielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern</li>
+</ul>
+
+<img data-src="img/lec-01/horst_quarto_schematic.png" class="quarto-figure quarto-figure-center r-stretch" alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto."><p class="caption">Artwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.</p></section>
+<section id="ich-bin-dran-ein-rundgang-durch-quarto" class="slide level2">
+<h2>Ich bin dran: Ein Rundgang durch Quarto</h2>
+<p><br><br></p>
+<div class="hand-purple-large" style="text-align: center;">
+<p>Zurücklehnen und genießen!</p>
+</div>
+</section>
+<section id="pause-machen" class="slide level2">
+<h2>Pause machen</h2>
+<p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span> Lasst eure E-Mails in Frieden ruhen.</p>
+<p><img data-src="img/lec-01/coffee-break.jpg" style="width:25.0%"></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_1b93d372" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+
+<aside><div>
+<p>Photo by <a href="https://unsplash.com/@blakewisz">Blake Wisz</a></p>
+</div></aside></section>
+<section id="ihr-seid-dran-md-01-uebungen" class="slide level2">
+<h2>Ihr seid dran: md-01-uebungen</h2>
+<div class="task">
+<ol type="1">
+<li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
+<li>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Klicke auf <span class="highlight-yellow">Start</span> neben <span class="highlight-yellow">md-01-uebungen</span>.</li>
+<li>Suche im Dateimanager im Fenster unten rechts die Datei “hallo-quarto.qmd” und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
+<li>Render das Dokument.</li>
+<li>Füge deinen Namen zum Schlüssel <code>author:</code> im YAML-Header hinzu</li>
+<li>Render das Dokument</li>
+<li>Untersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.</li>
+<li>Besprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.</li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_50f2cf3f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="von-deiner-eigenen-arbeitsumgebung-aus" class="slide level2">
+<h2>Von deiner eigenen Arbeitsumgebung aus</h2>
+<div class="r-stack">
+<p><img data-src="https://quarto.org/docs/tools/images/rstudio-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside RStudio" width="1200"></p>
+<p><img data-src="https://quarto.org/docs/tools/images/jupyterlab-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside JupyterLab" width="1200"></p>
+<p><img data-src="https://quarto.org/docs/computations/images/python-vscode.png" class="fragment" alt="A screenshot of a Quarto document rendered inside VSCode" width="1200"></p>
+</div>
+</section></section>
+<section>
+<section id="quarto-formate" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Quarto formate</h1>
+
+</section>
+<section id="mit-einer-installation-ist-alles-enthalten" class="slide level2">
+<h2>Mit einer Installation ist alles enthalten</h2>
+<ul>
+<li><p>RMarkdown entwickelte sich zu einem großen Ökosystem mit <strong>unterschiedlicher Syntax</strong>.</p></li>
+<li><p>Quarto kommt mit allem was es braucht um verschiedene <strong>Formate</strong> zu erstellen.</p>
+<ul>
+<li>HTML Berichte und Webseiten</li>
+<li>PDF Berichte</li>
+<li>MS Office (Word, Powerpoint)</li>
+<li>Präsentationen (Powerpoint, Beamer, <code>revealjs</code>)</li>
+<li>Bücher</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Jede Programmiersprache, <em>exakt</em> gleiche Vorgehensweise und Syntax</li>
+</ul>
+</div>
+</section>
+<section id="viele-quarto-formate" class="slide level2 smaller">
+<h2>Viele Quarto Formate</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>R Markdown</th>
+<th>Quarto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Basic Formats</td>
+<td><p><a href="https://pkgs.rstudio.com/rmarkdown/reference/html_document.html">html_document</a></p>
+<p><a href="https://pkgs.rstudio.com/rmarkdown/reference/pdf_document.html">pdf_document</a></p>
+<p><a href="https://pkgs.rstudio.com/rmarkdown/reference/word_document.html">word_document</a></p></td>
+<td><p><a href="https://quarto.org/docs/output-formats/html-basics.html">html</a></p>
+<p><a href="https://quarto.org/docs/output-formats/pdf-basics.html">pdf</a></p>
+<p><a href="https://quarto.org/docs/output-formats/ms-word.html">docx</a></p></td>
+</tr>
+<tr class="even">
+<td>Beamer</td>
+<td><a href="https://pkgs.rstudio.com/rmarkdown/reference/beamer_presentation.html">beamer_presentation</a></td>
+<td><a href="https://quarto.org/docs/presentations/beamer.html">beamer</a></td>
+</tr>
+<tr class="odd">
+<td>PowerPoint</td>
+<td><a href="https://pkgs.rstudio.com/rmarkdown/reference/powerpoint_presentation.html">powerpoint_presentation</a></td>
+<td><a href="https://quarto.org/docs/presentations/powerpoint.html">pptx</a></td>
+</tr>
+<tr class="even">
+<td>HTML Slides</td>
+<td><p><a href="https://bookdown.org/yihui/rmarkdown/xaringan.html">xaringan</a></p>
+<p><a href="https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html">ioslides</a></p>
+<p><a href="https://bookdown.org/yihui/rmarkdown/revealjs.html">revealjs</a></p></td>
+<td><a href="https://quarto.org/docs/presentations/revealjs/">revealjs</a></td>
+</tr>
+<tr class="odd">
+<td>Advanced Layout</td>
+<td><p><a href="https://bookdown.org/yihui/rmarkdown/tufte-handouts.html">tufte</a></p>
+<p><a href="https://rstudio.github.io/distill/figures.html">distill</a></p></td>
+<td><a href="https://quarto.org/docs/authoring/article-layout.html">Quarto Article Layout</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="viele-quarto-formate-1" class="slide level2 smaller">
+<h2>Viele Quarto Formate</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>R Markdown</th>
+<th>Quarto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cross References</td>
+<td><p><a href="https://bookdown.org/yihui/bookdown/a-single-document.html">html_document2</a></p>
+<p><a href="https://bookdown.org/yihui/bookdown/a-single-document.html">pdf_document2</a></p>
+<p><a href="https://bookdown.org/yihui/bookdown/a-single-document.html">word_document2</a></p></td>
+<td><a href="https://quarto.org/docs/authoring/cross-references.html">Quarto Crossrefs</a></td>
+</tr>
+<tr class="even">
+<td>Websites &amp; Blogs</td>
+<td><p><a href="https://pkgs.rstudio.com/blogdown/">blogdown</a></p>
+<p><a href="https://pkgs.rstudio.com/distill/">distill</a></p></td>
+<td><p><a href="https://quarto.org/docs/websites/">Quarto Websites</a></p>
+<p><a href="https://quarto.org/docs/websites/website-blog.html">Quarto Blogs</a></p></td>
+</tr>
+<tr class="odd">
+<td>Books</td>
+<td><a href="https://pkgs.rstudio.com/bookdown/">bookdown</a></td>
+<td><a href="https://quarto.org/docs/books/">Quarto Books</a></td>
+</tr>
+<tr class="even">
+<td>Interactivity</td>
+<td><a href="https://bookdown.org/yihui/rmarkdown/shiny-documents.html">Shiny Documents</a></td>
+<td><a href="https://quarto.org/docs/interactive/shiny/">Quarto Interactive Documents</a></td>
+</tr>
+<tr class="odd">
+<td>Journal Articles</td>
+<td><a href="https://pkgs.rstudio.com/rticles/">rticles</a></td>
+<td><a href="https://quarto.org/docs/journals/index.html">Journal Articles</a></td>
+</tr>
+<tr class="even">
+<td>Dashboards</td>
+<td><a href="https://pkgs.rstudio.com/flexdashboard/">flexdashboard</a></td>
+<td><a href="https://quarto.org/docs/dashboards/index.html">Quarto Dashboards</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pause-machen-1" class="slide level2">
+<h2>Pause machen</h2>
+<p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span> Lasst eure E-Mails in Frieden ruhen.</p>
+<p><img data-src="img/lec-01/coffee-break.jpg" style="width:25.0%"></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_afa342bf" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+
+<aside><div>
+<p>Photo by <a href="https://unsplash.com/@blakewisz">Blake Wisz</a></p>
+</div></aside></section></section>
+<section>
+<section id="zusatzaufgaben-modul-1" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Zusatzaufgaben Modul 1</h1>
+
+</section>
+<section id="modul-1-dokumentation" class="slide level2">
+<h2>Modul 1 Dokumentation</h2>
+<div class="learn-more">
+<p><a href="https://rstatszh-k009.github.io/website/module/md-01.html">rstatszh-k009.github.io/website/module/md-01.html</a></p>
+<iframe src="https://rstatszh-k009.github.io/website/module/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
+</div>
+</section></section>
+<section>
+<section id="thanks" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Thanks</h1>
+
+</section>
+<section id="thanks-1" class="slide level2">
+<h2>Thanks! 🌻</h2>
+<p>Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as <a href="https://github.com/rstatszh-k009/website/raw/main/folien/md-01-willkommen.pdf">PDF auf GitHub</a></p>
+<p>Alle Materialien sind lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p><a href="https://rstatszh-k009.github.io/website/"><i class="fa-solid fa-link" aria-label="link"></i> rstatszh-k009.github.io/website/</a></p>
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

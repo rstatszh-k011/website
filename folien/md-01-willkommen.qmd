@@ -26,3 +26,381 @@ library(countdown)
 library(magrittr)
 library(epoxy)
 ```
+
+# Willkommen! `r emo::ji("wave")` {background-color="#4C326A"}
+
+## Triff die Kursleitung {.smaller}
+
+**Lars Schöbitz**
+
+![](img/lec-01/profile-lars.png){fig-alt="Headshot of Lars Schöbitz" fig-align="left" width=50%}
+
+-   Umweltingenieur `r emo::ji("hammer")`
+-   Forscher im Ruhestand `r emo::ji("bed")`
+-   [RStudio zertifizierte Lehrkraft](https://education.rstudio.com/trainers/)
+-   [Data Steward an der ETH Zurich](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
+
+## Lernziele des Kurses
+
+
+Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:
+
+1.  Teilnehmer:innen werden in der Lage sein, eine Reihe gängiger
+    datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R
+    tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von
+    Datenanalyseprojekten zu veranschaulichen und öffentlich zu
+    kommunizieren.
+
+2.  Teilnehmer:innen können das Quarto-Dateiformat und den visuellen
+    Bearbeitungsmodus der RStudio IDE zu verwenden, um
+    technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten,
+    Querverweisen, Abbildungen und Tabellen zu erstellen.
+
+3.  Teilnehmer:innen können Git Versionskontrolle verwerden um: (1)
+    Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu
+    übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu
+    öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines
+    Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.
+
+## Warum das Ganze?
+
+- TODO: Diagram Offene Daten / Reproduzierbarkeit / Transparenz
+
+## Du bist dran: Über Dich
+
+::: task
+Wähle einen Gegenstand aus und mache dir eine Minute lang Notizen:
+
+Was hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?
+:::
+
+![](img/lec-01/items-slide/items-slide.001.png)
+
+```{r}
+#| echo: false
+
+countdown(minutes = 1)
+```
+
+## In Paaren
+
+::: task
+**Nehmt euch jeweils 2 Minuten Zeit, um euch auszutauschen:**
+
+Was hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?
+:::
+
+![](img/lec-01/items-slide/items-slide.001.png)
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
+
+## Kurskalendar {.smallest .scrollable}
+
+```{r}
+#| echo: false
+#| include: false
+Sys.setlocale("LC_TIME", "de_DE.UTF-8")
+options(knitr.kable.NA = '')
+```
+
+```{r}
+readr::read_csv("../data/tbl-00-rstatszh-k009-kursplan.csv") |> 
+  dplyr::select(modul, datum, titel) |> 
+  dplyr::mutate(datum = format(datum, format = "%d %B %Y")) |> 
+  knitr::kable()
+```
+
+## Kursstruktur
+
+-   [Ich bin dran]{.highlight-yellow}: Vortragssegmente + Live-Coding
+-   [Wir sind dran]{.highlight-yellow}: Live-Coding + Mitmachen
+-   [Ihr seid dran]{.highlight-yellow}: Übungen in Paaren
+
+## Ich bin dran: Vortragssegmente + Live-Coding
+
+-   Der Kursleiter schreibt und spricht den Code laut vor
+-   Der Kursleiter erklärt Konzepte und Prinzipien, die relevant sind
+-   Code wird auf dem Bildschirm angezeigt
+
+## Wir sind dran:  Live-Coding + Mitmachen
+
+- Der Kursleiter schreibt und spricht den Code laut vor
+- Der Kursleiter erklärt relevante Konzepte und Prinzipien
+- Der Code wird auf dem Bildschirm angezeigt
+- Die Lernenden machen mit, indem sie denselben Code schreiben und ausführen
+
+## Ihr seid dran: Übungen in Paaren
+
+- Zwei Lernende arbeiten in Paaren in Break-out Räumen zusammen
+- Eine Person tippt und teilt die Bildschirmanzeige
+- Eine Person bietet Kommentare und Vorschläge an, und tippt selbst auch mit
+
+## Unterstützung bekommen / Fragen stellen
+
+- Während Live-Coding: hebt die Hand mittels Zoom und unterbrecht mich. Ich werde versuchen, mich um dein Anliegen zu kümmern, wenn es die Zeit erlaubt. Offene Fragen werden dokumentiert.
+
+- Während Übungen in Break-out Räumen: Ihr könnt mich zu euch rufen. Bei einem Grossteil der Übungen werde ich versuchen in jedem Raum einmal vorbeizuschauen.
+
+## Website zum Kurs {.center-align .large}
+
+[rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
+
+## Jetzt sind wir dran: Öffne und speichere die Kurswebsite als Lesezeichen
+
+::: task
+1. Öffne einen Webbrowser auf deinem Arbeitsgerät.
+2. Gehe zur Website des Kurses: [rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
+3. Erstelle einen Lesezeichenordner mit dem Namen rstatszh-k009 in deiner Lesezeichenleiste.
+4. Füge dem Ordner rstatszh-k009 das Lesezeichen zur Kurs-Webseite hinzu.
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 5)
+```
+
+## Learning Objectives (for this week)
+
+```{r}
+#| label: lernziele
+
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+  dplyr::filter(modul == params$modul) |>
+  dplyr::pull(lernziele)
+
+```
+
+```{epoxy}
+{1:length(lernziele)}. {lernziele[1:length(lernziele)]}
+```
+
+## 
+
+![](img/lec-01/starwars-rey-rstats.png)
+
+::: aside
+Artwork from [\@juliesquid](https://twitter.com/juliesquid) for [\@openscapes](https://twitter.com/openscapes) (illustrated by [\@allison_horst](https://twitter.com/allison_horst))
+:::
+
+# Quarto {background-color="#4C326A"}
+
+## Wir holen euch dort ab, wo ihr seid
+
+::: columns
+::: {.column width="50%"}
+::: {.fragment .fade-in-then-semi-out}
+Ich gehe davon aus, dass du:
+
+– [nicht]{.highlight-yellow} über Erfahrung mit R oder Git verfügst
+
+- [nicht]{.highlight-yellow} schon einmal in einer IDE gearbeitet hast (z. B. RStudio IDE)
+
+- etwas über R lernen möchtest
+
+- mehr über Quarto und das Veröffentlichen von Berichten erfahren möchtest
+
+- lernen möchtest, wie man mit GitHub Projekte verwaltet
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+
+Ich bringe dir bei:
+
+– R
+
+- Quarto-Syntax und -Formate
+
+- Markdown
+
+- Git über RStudio IDE nutzen
+
+- GitHub-Issues, Projektmanagement und Veröffentlichung
+:::
+:::
+:::
+
+# Posit Cloud & RStudio IDE {background-color="#4C326A"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.001.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.002.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.003.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.004.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.005.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.006.png"}
+
+## - {background-image="img/lec-01/illustration-slides/illustration-slides.007.png"}
+
+# Was ist Quarto? {background-color="#4C326A"}
+
+## Quarto ...
+
+- ist ein neues, open-source, wissenschaftliches und technisches Publikationssystem
+- zielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](img/lec-01/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
+
+## Ich bin dran: Ein Rundgang durch Quarto
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Zurücklehnen und genießen!
+:::
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/lec-01/coffee-break.jpg){width="25%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
+
+## Ihr seid dran: md-01-uebungen
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Start]{.highlight-yellow} neben [md-01-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei "hallo-quarto.qmd" und klicke darauf, um sie im Fenster oben links zu öffnen.
+4. Render das Dokument.
+5. Füge deinen Namen zum Schlüssel `author:` im YAML-Header hinzu
+6. Render das Dokument
+7. Untersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.
+8. Besprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 5)
+```
+
+## Von deiner eigenen Arbeitsumgebung aus
+
+::: r-stack
+![](https://quarto.org/docs/tools/images/rstudio-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside RStudio" width="1200"}
+
+![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" width="1200"}
+
+![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="1200"}
+:::
+
+# Quarto formate {background-color="#4C326A"}
+
+## Mit einer Installation ist alles enthalten
+
+-   RMarkdown entwickelte sich zu einem großen Ökosystem mit **unterschiedlicher Syntax**.
+
+-   Quarto kommt mit allem was es braucht um verschiedene **Formate** zu erstellen.
+
+    -   HTML Berichte und Webseiten
+    -   PDF Berichte
+    -   MS Office (Word, Powerpoint)
+    -   Präsentationen (Powerpoint, Beamer, `revealjs`)
+    -   Bücher
+
+. . .
+
+-   Jede Programmiersprache, *exakt* gleiche Vorgehensweise und Syntax
+
+## Viele Quarto Formate {.smaller}
+
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| Feature         | R Markdown                                                                                           | Quarto                                                                         |
++=================+======================================================================================================+================================================================================+
+| Basic Formats   | [html_document](https://pkgs.rstudio.com/rmarkdown/reference/html_document.html)                     | [html](https://quarto.org/docs/output-formats/html-basics.html)                |
+|                 |                                                                                                      |                                                                                |
+|                 | [pdf_document](https://pkgs.rstudio.com/rmarkdown/reference/pdf_document.html)                       | [pdf](https://quarto.org/docs/output-formats/pdf-basics.html)                  |
+|                 |                                                                                                      |                                                                                |
+|                 | [word_document](https://pkgs.rstudio.com/rmarkdown/reference/word_document.html)                     | [docx](https://quarto.org/docs/output-formats/ms-word.html)                    |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| Beamer          | [beamer_presentation](https://pkgs.rstudio.com/rmarkdown/reference/beamer_presentation.html)         | [beamer](https://quarto.org/docs/presentations/beamer.html)                    |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| PowerPoint      | [powerpoint_presentation](https://pkgs.rstudio.com/rmarkdown/reference/powerpoint_presentation.html) | [pptx](https://quarto.org/docs/presentations/powerpoint.html)                  |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| HTML Slides     | [xaringan](https://bookdown.org/yihui/rmarkdown/xaringan.html)                                       | [revealjs](https://quarto.org/docs/presentations/revealjs/)                    |
+|                 |                                                                                                      |                                                                                |
+|                 | [ioslides](https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html)                          |                                                                                |
+|                 |                                                                                                      |                                                                                |
+|                 | [revealjs](https://bookdown.org/yihui/rmarkdown/revealjs.html)                                       |                                                                                |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| Advanced Layout | [tufte](https://bookdown.org/yihui/rmarkdown/tufte-handouts.html)                                    | [Quarto Article Layout](https://quarto.org/docs/authoring/article-layout.html) |
+|                 |                                                                                                      |                                                                                |
+|                 | [distill](https://rstudio.github.io/distill/figures.html)                                            |                                                                                |
++-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+
+## Viele Quarto Formate {.smaller}
+
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Feature          | R Markdown                                                                   | Quarto                                                                      |
++==================+==============================================================================+=============================================================================+
+| Cross References | [html_document2](https://bookdown.org/yihui/bookdown/a-single-document.html) | [Quarto Crossrefs](https://quarto.org/docs/authoring/cross-references.html) |
+|                  |                                                                              |                                                                             |
+|                  | [pdf_document2](https://bookdown.org/yihui/bookdown/a-single-document.html)  |                                                                             |
+|                  |                                                                              |                                                                             |
+|                  | [word_document2](https://bookdown.org/yihui/bookdown/a-single-document.html) |                                                                             |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Websites & Blogs | [blogdown](https://pkgs.rstudio.com/blogdown/)                               | [Quarto Websites](https://quarto.org/docs/websites/)                        |
+|                  |                                                                              |                                                                             |
+|                  | [distill](https://pkgs.rstudio.com/distill/)                                 | [Quarto Blogs](https://quarto.org/docs/websites/website-blog.html)          |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Books            | [bookdown](https://pkgs.rstudio.com/bookdown/)                               | [Quarto Books](https://quarto.org/docs/books/)                              |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Interactivity    | [Shiny Documents](https://bookdown.org/yihui/rmarkdown/shiny-documents.html) | [Quarto Interactive Documents](https://quarto.org/docs/interactive/shiny/)  |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Journal Articles | [rticles](https://pkgs.rstudio.com/rticles/)                                 | [Journal Articles](https://quarto.org/docs/journals/index.html)             |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Dashboards       | [flexdashboard](https://pkgs.rstudio.com/flexdashboard/)                     | [Quarto Dashboards](https://quarto.org/docs/dashboards/index.html)          |
++------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/lec-01/coffee-break.jpg){width="25%"}
+
+```{r}
+countdown(minutes = 5)
+```
+
+::: aside
+Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
+:::
+
+# Zusatzaufgaben Modul 1 {background-color="#4C326A"}
+
+## Modul 1 Dokumentation
+
+::: learn-more
+[rstatszh-k009.github.io/website/module/md-01.html](https://rstatszh-k009.github.io/website/module/md-01.html)
+
+```{=html}
+<iframe src="https://rstatszh-k009.github.io/website/module/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
+```
+:::
+
+
+# Thanks {background-color="#4C326A"}
+
+## Thanks! `r emo::ji("sunflower")` 
+
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-01-willkommen.pdf)
+
+Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+

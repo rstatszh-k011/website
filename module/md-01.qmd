@@ -21,7 +21,7 @@ library(epoxy)
 ```
 
 ```{r}
-#| label: learning-objectives
+#| label: lernziele
 
 lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
