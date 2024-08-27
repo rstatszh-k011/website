@@ -31,14 +31,23 @@ library(epoxy)
 
 ## Triff die Kursleitung {.smaller}
 
+::: columns
+::: {.column width="50%"}
+
 **Lars Schöbitz**
 
-![](img/lec-01/profile-lars.png){fig-alt="Headshot of Lars Schöbitz" fig-align="left" width=50%}
+![](img/md-01/profile-lars.png){fig-alt="Headshot of Lars Schöbitz" fig-align="left" width=50%}
+
+:::
+::: {.column width="50%"}
 
 -   Umweltingenieur `r emo::ji("hammer")`
 -   Forscher im Ruhestand `r emo::ji("bed")`
 -   [RStudio zertifizierte Lehrkraft](https://education.rstudio.com/trainers/)
 -   [Data Steward an der ETH Zurich](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
+
+:::
+:::
 
 ## Lernziele des Kurses
 
@@ -74,7 +83,7 @@ Wähle einen Gegenstand aus und mache dir eine Minute lang Notizen:
 Was hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?
 :::
 
-![](img/lec-01/items-slide/items-slide.001.png)
+![](img/md-01/items-slide.001.png)
 
 ```{r}
 #| echo: false
@@ -90,7 +99,7 @@ countdown(minutes = 1)
 Was hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?
 :::
 
-![](img/lec-01/items-slide/items-slide.001.png)
+![](img/md-01/items-slide.001.png)
 
 ```{r}
 #| echo: false
@@ -108,6 +117,8 @@ options(knitr.kable.NA = '')
 ```
 
 ```{r}
+#| tbl-colwidths: [20, 20, 60]
+
 readr::read_csv("../data/tbl-00-rstatszh-k009-kursplan.csv") |> 
   dplyr::select(modul, datum, titel) |> 
   dplyr::mutate(datum = format(datum, format = "%d %B %Y")) |> 
@@ -145,6 +156,46 @@ readr::read_csv("../data/tbl-00-rstatszh-k009-kursplan.csv") |>
 
 - Während Übungen in Break-out Räumen: Ihr könnt mich zu euch rufen. Bei einem Grossteil der Übungen werde ich versuchen in jedem Raum einmal vorbeizuschauen.
 
+
+## Verhaltenskodex {.small}
+
+::: columns
+::: {.column width="65%"}
+
+- Diversität und Inklusion
+- Namen und Pronomen
+- Lernprozess
+- [rstatszh-k009.github.io/website/verhaltenskodex.html](https://rstatszh-k009.github.io/website/verhaltenskodex.html)
+
+
+:::
+::: {.column width="35%"}
+
+![](img/md-01/inclusion.jpg){fig-align="right" width=100%}
+
+
+:::
+:::
+
+::: footer
+Photo by: [Sharon McCutcheon](https://unsplash.com/@sharonmccutcheon)
+:::
+
+
+::: notes
+Diversität und Inklusion sind auch mir sehr wichtig und mit einem 
+Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies
+zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den
+Verhaltenskodex auf der Webseite für den Kurs.
+
+Ich spreche euch basierend auf eurem Namen an, lasst mich wissen falls du 
+einen anderen Namen und Pronomen bevorzugst.
+
+Ich bin selbst in einem Prozess mehr pber verschiedene Perspektiven und 
+Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen
+bereitet, lass es mich bitte wissen.
+:::
+
 ## Website zum Kurs {.center-align .large}
 
 [rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
@@ -163,7 +214,7 @@ readr::read_csv("../data/tbl-00-rstatszh-k009-kursplan.csv") |>
 countdown(minutes = 5)
 ```
 
-## Learning Objectives (for this week)
+## Lernziele (für diese Woche)
 
 ```{r}
 #| label: lernziele
@@ -180,7 +231,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ## 
 
-![](img/lec-01/starwars-rey-rstats.png)
+![](img/md-01/starwars-rey-rstats.png)
 
 ::: aside
 Artwork from [\@juliesquid](https://twitter.com/juliesquid) for [\@openscapes](https://twitter.com/openscapes) (illustrated by [\@allison_horst](https://twitter.com/allison_horst))
@@ -227,19 +278,17 @@ Ich bringe dir bei:
 
 # Posit Cloud & RStudio IDE {background-color="#4C326A"}
 
-## - {background-image="img/lec-01/illustration-slides/illustration-slides.001.png"}
+## - {background-image="img/md-01/screenshot/screenshot.009.png"}
 
-## - {background-image="img/lec-01/illustration-slides/illustration-slides.002.png"}
+## - {background-image="img/md-01/screenshot/screenshot.010.png"}
 
-## - {background-image="img/lec-01/illustration-slides/illustration-slides.003.png"}
+## - {background-image="img/md-01/screenshot/screenshot.011.png"}
 
-## - {background-image="img/lec-01/illustration-slides/illustration-slides.004.png"}
+## - {background-image="img/md-01/screenshot/screenshot.012.png"}
 
-## - {background-image="img/lec-01/illustration-slides/illustration-slides.005.png"}
+## - {background-image="img/md-01/screenshot/screenshot.013.png"}
 
-## - {background-image="img/lec-01/illustration-slides/illustration-slides.006.png"}
-
-## - {background-image="img/lec-01/illustration-slides/illustration-slides.007.png"}
+## - {background-image="img/md-01/screenshot/screenshot.014.png"}
 
 # Was ist Quarto? {background-color="#4C326A"}
 
@@ -248,7 +297,7 @@ Ich bringe dir bei:
 - ist ein neues, open-source, wissenschaftliches und technisches Publikationssystem
 - zielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern
 
-![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](img/lec-01/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](img/md-01/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
 
 ## Ich bin dran: Ein Rundgang durch Quarto
 
@@ -262,7 +311,7 @@ Zurücklehnen und genießen!
 
 [Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
 
-![](img/lec-01/coffee-break.jpg){width="25%"}
+![](img/md-01/coffee-break.jpg){width="25%"}
 
 ```{r}
 countdown(minutes = 10)
@@ -373,7 +422,7 @@ countdown(minutes = 5)
 
 [Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
 
-![](img/lec-01/coffee-break.jpg){width="25%"}
+![](img/md-01/coffee-break.jpg){width="25%"}
 
 ```{r}
 countdown(minutes = 5)
@@ -382,6 +431,75 @@ countdown(minutes = 5)
 ::: aside
 Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 :::
+
+# Versionskontrolle {background-color="#4C326A"}
+
+## Versionskontrolle mit Git und GitHub 
+
+Eine Möglichkeit, Dateien mit anderen zu teilen, damit sie:
+
+- Dateien herunterladen,
+- wiederverwenden,
+- Etwas beitragen können.
+
+Du kannst den Verlauf von Dateien anzeigen und zu jedem beliebigen Zeitpunkt zu einer früheren Version zurückgehen.
+
+## Warum ist es nützlich?
+
+```{r echo=FALSE, fig.align = "center", out.width="40%"}
+knitr::include_graphics("img/md-01/phd_comics_vc.gif")
+```
+
+## Git und GitHub
+
+::: columns
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="25%"}
+knitr::include_graphics("img/md-01/git-logo.png")
+```
+
+- Git ist eine Software zur Versionskontrolle
+- Erstellt im Jahr 2005
+- Beliebt bei Programmierern, die gemeinsam Code entwickeln
+- Verfolgt Änderungen in einer Gruppe von Dateien (Verzeichnis/Ordner/Repository)
+:::
+
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="25%"}
+knitr::include_graphics("img/md-01/github-logo.png")
+```
+
+-   GitHub is a hosting platform for version control using Git
+
+-   Launched in 2008, aquired by Microsoft in in 2018, Microsoft for US\$ 7.5 billion
+
+-   
+
+    > 100 million Users (20.5 in 2022 alone) ([October, 2023](https://octoverse.github.com/2022/global-tech-talent))
+
+-   Social media for software developers
+:::
+:::
+
+## Ich bin dran: Ein Rundgang durch GitHub
+
+::: {.hand-purple-large style="text-align: center;"}
+Zurücklehnen und genießen!
+:::
+
+## Ihr seid dran: Klone ein Repsoitory von GitHub
+
+1. Öffne einen Webbrowser aufdeinen Laptop.
+2. Gehe zur Website des Kurses: [rstatszh-k009.github.io/website/](rstatszh-k009.github.io/website/)
+3. Falls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.
+4. Klicke im Menü auf der linken Seite auf [Modul 1, Wähle dann za-01: GitHub]{.highlight-yellow}
+5. Folge den Anweisungen auf der Website, um Repository von GitHub zu klonen.
+
+```{r}
+#| echo: false
+
+countdown(minutes = 15)
+```
 
 # Zusatzaufgaben Modul 1 {background-color="#4C326A"}
 
@@ -395,10 +513,9 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 ```
 :::
 
+# Danke {background-color="#4C326A"}
 
-# Thanks {background-color="#4C326A"}
-
-## Thanks! `r emo::ji("sunflower")` 
+## Danke! `r emo::ji("sunflower")` 
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-01-willkommen.pdf)
 

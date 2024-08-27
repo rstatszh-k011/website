@@ -13,6 +13,8 @@ website:
     left: | 
         Dieser Kurs wird vom [Statistischen Amt Kanton Zürich](https://www.zh.ch/de/politik-staat/statistik-daten.html) angeboten
     right:
+      - text: Verhaltenskodex
+        href: verhaltenskodex.qmd
       - icon: "envelope-at"
         href: "mailto:datashop@statistik.zh.ch"
         aria-label: Email

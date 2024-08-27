@@ -1,392 +1,10 @@
 [
   {
-    "objectID": "kalendar.html",
-    "href": "kalendar.html",
-    "title": "Kurskalendar",
-    "section": "",
-    "text": "modul\ndatum\ntitel\n\n\n\n\nModul 01\n24 September 2024\nWillkommen zum Kurs & Werkzeugkiste\n\n\nModul 02\n01 Oktober 2024\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)\n\n\nModul 03\n08 Oktober 2024\nDaten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 04\n15 Oktober 2024\nDaten Import & Daten Management\n\n\nModul 05\n22 Oktober 2024\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\n29 Oktober 2024\nDaten Typen & Vektoren & For Loops\n\n\nModul 07\n05 November 2024\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n12 November 2024\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 09\n19 November 2024\nErstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages\n\n\nModul 10\n26 November 2024\nFunktionen schreiben & Parameterisierung von Berichten\n\n\n\n03 Dezember 2024\nArbeitszeit für Abschlussprojekt\n\n\n\n10 Dezember 2024\nAbgabe Abschlussprojekt\n\n\n\n17 Dezember 2024\nAbschlussveranstaltung",
-    "crumbs": [
-      "Kurskalender"
-    ]
-  },
-  {
-    "objectID": "vorbereitung/03-r4ds-intro.html",
-    "href": "vorbereitung/03-r4ds-intro.html",
-    "title": "Kursbuch: R 4 Data Science",
-    "section": "",
-    "text": "“R for Data Science” von Hadley Wickham und Garrett Grolemund ist ein unverzichtbarer Leitfaden für Anfänger:innen, die in die Welt der Datenwissenschaft mit R eintauchen möchten. Dieses Buch führt die Leser:innen in R, RStudio und den Tidyverse ein, eine Suite von R-Paketen, die entwickelt wurde, um datenwissenschaftliche Aufgaben zu optimieren und sie schnell, intuitiv und angenehm zu gestalten.\nEs behandelt den gesamten datenwissenschaftlichen Prozess, einschließlich des Imports, Aufräumens, Transformierens, Visualisierens und Modellierens von Daten, wobei bewährte Verfahren und effiziente Arbeitsabläufe im Vordergrund stehen. Das Buch ist so aufgebaut, dass es Anfänger:innen dabei hilft, eine solide Grundlage in der Datenmanipulation und -analyse zu entwickeln, und bietet praktische Übungen zur Festigung des Gelernten.\nDieses Buch stellt das Kursbuch für diesen Kurs da. Der Zeitrahmen für den Kurs lässt es nicht zu durch sämtliche Kapitel zu arbeiten, jedoch werden die Kursteilnehmer:innen am Ende des Kurses mit den Fähigkeiten ausgestattet sein mittels des Buches selbstständig weiterzulernen.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 3: Kursbuch"
-    ]
-  },
-  {
-    "objectID": "vorbereitung/03-r4ds-intro.html#aufgabe",
-    "href": "vorbereitung/03-r4ds-intro.html#aufgabe",
-    "title": "Kursbuch: R 4 Data Science",
-    "section": "",
-    "text": "Lese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 3: Kursbuch"
-    ]
-  },
-  {
-    "objectID": "vorbereitung/02-posit-cloud.html",
-    "href": "vorbereitung/02-posit-cloud.html",
-    "title": "rstatsZH - Data Science mit R",
-    "section": "",
-    "text": "Hier sind die Anweisungen, um sich mit einem GitHub-Konto bei Posit Cloud anzumelden:\n\nGehe zur Anmeldeseite von Posit Cloud: https://login.posit.cloud/register\nKlicke auf die Schaltfläche “Sign Up with GitHub”.\nGib deinen GitHub-Benutzernamen und dein Passwort ein, wenn du dazu aufgefordert wirst.\nWenn du dich zum ersten Mal mit deinem GitHub-Konto bei Posit Cloud anmeldest, wirst du aufgefordert, Posit Cloud für den Zugriff auf deine GitHub-Kontodaten zu autorisieren.\nSobald du den Zugriff autorisiert hast, wirst du zur Posit Cloud-Website zurückgeleitet und bei deinem Konto angemeldet.\n\nBeachte, dass du ein GitHub-Konto benötigst, um diese Anmeldemethode nutzen zu können. Wenn du kein GitHub-Konto hast, musst du eines erstellen, bevor du dich bei Posit Cloud anmelden kannst.",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 2: Posit Cloud"
-    ]
-  },
-  {
-    "objectID": "vorbereitung/02-posit-cloud.html#melde-dich-mit-deinem-github-konto-bei-posit-cloud-an-und-tritt-dem-arbeitsbereich-für-den-kurs-bei",
-    "href": "vorbereitung/02-posit-cloud.html#melde-dich-mit-deinem-github-konto-bei-posit-cloud-an-und-tritt-dem-arbeitsbereich-für-den-kurs-bei",
-    "title": "rstatsZH - Data Science mit R",
-    "section": "",
-    "text": "Hier sind die Anweisungen, um sich mit einem GitHub-Konto bei Posit Cloud anzumelden:\n\nGehe zur Anmeldeseite von Posit Cloud: https://login.posit.cloud/register\nKlicke auf die Schaltfläche “Sign Up with GitHub”.\nGib deinen GitHub-Benutzernamen und dein Passwort ein, wenn du dazu aufgefordert wirst.\nWenn du dich zum ersten Mal mit deinem GitHub-Konto bei Posit Cloud anmeldest, wirst du aufgefordert, Posit Cloud für den Zugriff auf deine GitHub-Kontodaten zu autorisieren.\nSobald du den Zugriff autorisiert hast, wirst du zur Posit Cloud-Website zurückgeleitet und bei deinem Konto angemeldet.\n\nBeachte, dass du ein GitHub-Konto benötigst, um diese Anmeldemethode nutzen zu können. Wenn du kein GitHub-Konto hast, musst du eines erstellen, bevor du dich bei Posit Cloud anmelden kannst.",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 2: Posit Cloud"
-    ]
-  },
-  {
-    "objectID": "vorbereitung/02-posit-cloud.html#tritt-dem-kursarbeitsbereich-auf-posit-cloud-bei",
-    "href": "vorbereitung/02-posit-cloud.html#tritt-dem-kursarbeitsbereich-auf-posit-cloud-bei",
-    "title": "rstatsZH - Data Science mit R",
-    "section": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei",
-    "text": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei\n– Öffne diesen Link: In Vorbereitung",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 2: Posit Cloud"
-    ]
-  },
-  {
-    "objectID": "module/md-08.html#folien",
-    "href": "module/md-08.html#folien",
-    "title": "Modul 8",
-    "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-08.html#lesematerial",
-    "href": "module/md-08.html#lesematerial",
-    "title": "Modul 8",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-08.html#übungsaufgaben",
-    "href": "module/md-08.html#übungsaufgaben",
-    "title": "Modul 8",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-07.html#folien",
-    "href": "module/md-07.html#folien",
-    "title": "Modul 7",
-    "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-07.html#lesematerial",
-    "href": "module/md-07.html#lesematerial",
-    "title": "Modul 7",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-07.html#übungsaufgaben",
-    "href": "module/md-07.html#übungsaufgaben",
-    "title": "Modul 7",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-04.html#folien",
-    "href": "module/md-04.html#folien",
-    "title": "Modul 4",
-    "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-04.html#lesematerial",
-    "href": "module/md-04.html#lesematerial",
-    "title": "Modul 4",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-04.html#übungsaufgaben",
-    "href": "module/md-04.html#übungsaufgaben",
-    "title": "Modul 4",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-05.html",
-    "href": "module/md-05.html",
-    "title": "Modul 5",
-    "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
-  },
-  {
-    "objectID": "module/md-05.html#lernziele",
-    "href": "module/md-05.html#lernziele",
-    "title": "Modul 5",
-    "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
-  },
-  {
-    "objectID": "module/md-05.html#folien",
-    "href": "module/md-05.html#folien",
-    "title": "Modul 5",
-    "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-05.html#lesematerial",
-    "href": "module/md-05.html#lesematerial",
-    "title": "Modul 5",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-05.html#übungsaufgaben",
-    "href": "module/md-05.html#übungsaufgaben",
-    "title": "Modul 5",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-02.html#folien",
-    "href": "module/md-02.html#folien",
-    "title": "Modul 2",
-    "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitun"
-  },
-  {
-    "objectID": "module/md-02.html#lesematerial",
-    "href": "module/md-02.html#lesematerial",
-    "title": "Modul 2",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-02.html#übungsaufgaben",
-    "href": "module/md-02.html#übungsaufgaben",
-    "title": "Modul 2",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-03.html#folien",
-    "href": "module/md-03.html#folien",
-    "title": "Modul 3",
-    "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-03.html#lesematerial",
-    "href": "module/md-03.html#lesematerial",
-    "title": "Modul 3",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-03.html#übungsaufgaben",
-    "href": "module/md-03.html#übungsaufgaben",
-    "title": "Modul 3",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-01.html",
-    "href": "module/md-01.html",
-    "title": "Modul 1",
-    "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
-    "crumbs": [
-      "Modul 01"
-    ]
-  },
-  {
-    "objectID": "module/md-01.html#lernziele",
-    "href": "module/md-01.html#lernziele",
-    "title": "Modul 1",
-    "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
-    "crumbs": [
-      "Modul 01"
-    ]
-  },
-  {
-    "objectID": "module/md-01.html#folien",
-    "href": "module/md-01.html#folien",
-    "title": "Modul 1",
-    "section": " Folien",
-    "text": "Folien\nZeige Folien im Vollbildmodus an | Download slides as PDF",
-    "crumbs": [
-      "Modul 01"
-    ]
-  },
-  {
-    "objectID": "module/md-01.html#lesematerial",
-    "href": "module/md-01.html#lesematerial",
-    "title": "Modul 1",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung",
-    "crumbs": [
-      "Modul 01"
-    ]
-  },
-  {
-    "objectID": "module/md-01.html#übungsaufgaben",
-    "href": "module/md-01.html#übungsaufgaben",
-    "title": "Modul 1",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung",
-    "crumbs": [
-      "Modul 01"
-    ]
-  },
-  {
-    "objectID": "module/md-10.html#folien",
-    "href": "module/md-10.html#folien",
-    "title": "Modul 10",
-    "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-10.html#lesematerial",
-    "href": "module/md-10.html#lesematerial",
-    "title": "Modul 10",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-10.html#übungsaufgaben",
-    "href": "module/md-10.html#übungsaufgaben",
-    "title": "Modul 10",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-06.html#folien",
-    "href": "module/md-06.html#folien",
-    "title": "Modul 6",
-    "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-06.html#lesematerial",
-    "href": "module/md-06.html#lesematerial",
-    "title": "Modul 6",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-06.html#übungsaufgaben",
-    "href": "module/md-06.html#übungsaufgaben",
-    "title": "Modul 6",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-09.html#folien",
-    "href": "module/md-09.html#folien",
-    "title": "Modul 9",
-    "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-09.html#lesematerial",
-    "href": "module/md-09.html#lesematerial",
-    "title": "Modul 9",
-    "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "module/md-09.html#übungsaufgaben",
-    "href": "module/md-09.html#übungsaufgaben",
-    "title": "Modul 9",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
-  },
-  {
-    "objectID": "vorbereitung/04-umfrage.html",
-    "href": "vorbereitung/04-umfrage.html",
-    "title": "Umfrage",
-    "section": "",
-    "text": "Umfrage\n\nIn Vorbereitung",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 4: Umfrage"
-    ]
-  },
-  {
-    "objectID": "vorbereitung/01-github.html",
-    "href": "vorbereitung/01-github.html",
-    "title": "rstatsZH - Data Science mit R",
-    "section": "",
-    "text": "Um einen Account auf GitHub einzurichten, befolge diese allgemeinen Schritte:\n\nGehe auf die GitHub Website unter https://github.com/.\nKlicke auf die Schaltfläche “Sign up” oben rechts auf der Seite.\nGib deinen gewünschten Benutzernamen, deine E-Mail-Adresse und dein Passwort in die dafür vorgesehenen Felder ein.\nWähle aus, ob du Updates und Ankündigungen per E-Mail erhalten möchtest.\nSchließe den Verifizierungsprozess ab, indem du ein Puzzle löst und einen Verifizierungscode eingibst, der an deine E-Mail-Adresse gesendet wird.\n\n\n\n\n\n\n\nBenutzername-Tipp von: Happy Git and GitHub for the useR\n\n\n\n\n\nEin paar Tipps, die sich leider oft widersprechen:\n\nVerwende deinen tatsächlichen Namen! Die Leute möchten wissen, mit wem sie es zu tun haben. Außerdem ist dein Benutzername dann leichter zu erraten oder zu merken.\nKürzer ist besser als länger.\nSei so einzigartig wie möglich mit so wenig Zeichen wie möglich.\nWähle einen zeitlosen Namen. Hebe deine aktuelle Universität, deinen Arbeitgeber oder deinen Wohnort nicht hervor\nVermeide Wörter, die im Programmierkontext eine besondere Bedeutung haben.\nVermeide die Verwendung von Groß- und Kleinschreibung, um Wörter zu trennen. Wir empfehlen dringend, alles klein zu schreiben. GitHub behandelt Benutzernamen unabhängig von der Groß-/Kleinschreibung. Eine bessere Strategie zur Worttrennung ist die Verwendung eines Bindestrichs -.\n\nDu kannst deinen Benutzernamen später ändern, aber es ist besser, es gleich richtig zu machen.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 1: GitHub"
-    ]
-  },
-  {
-    "objectID": "vorbereitung/01-github.html#einen-account-auf-github-einrichten",
-    "href": "vorbereitung/01-github.html#einen-account-auf-github-einrichten",
-    "title": "rstatsZH - Data Science mit R",
-    "section": "",
-    "text": "Um einen Account auf GitHub einzurichten, befolge diese allgemeinen Schritte:\n\nGehe auf die GitHub Website unter https://github.com/.\nKlicke auf die Schaltfläche “Sign up” oben rechts auf der Seite.\nGib deinen gewünschten Benutzernamen, deine E-Mail-Adresse und dein Passwort in die dafür vorgesehenen Felder ein.\nWähle aus, ob du Updates und Ankündigungen per E-Mail erhalten möchtest.\nSchließe den Verifizierungsprozess ab, indem du ein Puzzle löst und einen Verifizierungscode eingibst, der an deine E-Mail-Adresse gesendet wird.\n\n\n\n\n\n\n\nBenutzername-Tipp von: Happy Git and GitHub for the useR\n\n\n\n\n\nEin paar Tipps, die sich leider oft widersprechen:\n\nVerwende deinen tatsächlichen Namen! Die Leute möchten wissen, mit wem sie es zu tun haben. Außerdem ist dein Benutzername dann leichter zu erraten oder zu merken.\nKürzer ist besser als länger.\nSei so einzigartig wie möglich mit so wenig Zeichen wie möglich.\nWähle einen zeitlosen Namen. Hebe deine aktuelle Universität, deinen Arbeitgeber oder deinen Wohnort nicht hervor\nVermeide Wörter, die im Programmierkontext eine besondere Bedeutung haben.\nVermeide die Verwendung von Groß- und Kleinschreibung, um Wörter zu trennen. Wir empfehlen dringend, alles klein zu schreiben. GitHub behandelt Benutzernamen unabhängig von der Groß-/Kleinschreibung. Eine bessere Strategie zur Worttrennung ist die Verwendung eines Bindestrichs -.\n\nDu kannst deinen Benutzernamen später ändern, aber es ist besser, es gleich richtig zu machen.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 1: GitHub"
-    ]
-  },
-  {
-    "objectID": "vorbereitung/01-github.html#einrichten-eines-persönlichen-github-zugriffstokens-pat",
-    "href": "vorbereitung/01-github.html#einrichten-eines-persönlichen-github-zugriffstokens-pat",
-    "title": "rstatsZH - Data Science mit R",
-    "section": "Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)",
-    "text": "Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)\nHier sind die schrittweisen Anweisungen zum Einrichten eines persönlichen GitHub-Zugriffstokens:\n\n\n\n\n\n\nWarning\n\n\n\n\n\nBehandle deine Zugriffstoken wie Passwörter und bewahre sie sicher auf (z.B. in einer Passwortverwaltungssoftware).\n\n\n\n\nMelde dich bei deinem GitHub-Konto an.\nKlicke oben rechts auf der Seite auf dein Profilbild.\nWähle im Dropdown-Menü “Settings” aus.\nKlicke in der linken Seitenleiste auf “Developer settings”.\nKlicke auf “Personal access tokens”.\nKlicke auf “Tokens (classic)”.\nKlicke auf “Generate new token” und wähle im Dropdown-Menü “Generate new token (classic)”. aus.\nGib deinem Token im Feld “Note” den Namen: GITHUB_PAT\nWähle unter “Expiration” die Option “No expiration” aus.\nWähle unter “Select scopes” Folgendes aus: repo, workflow, user.\nKlicke auf “Select scopes”.\nDein Zugriffstoken wird auf dem Bildschirm angezeigt. Kopiere es und bewahre es an einem sicheren Ort auf.",
-    "crumbs": [
-      "Vorbereitung",
-      "Schritt 1: GitHub"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Vorbereitung - rstatsZH Kurs 009",
-    "section": "",
-    "text": "Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz freut sich darauf, dich kennenzulernen.\nWir treffen uns ab 24.09.2024 jeweils um 13:00 Uhr auf Zoom.\nVor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.",
-    "crumbs": [
-      "Vorbereitung"
-    ]
-  },
-  {
-    "objectID": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
-    "href": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
-    "title": "Vorbereitung - rstatsZH Kurs 009",
-    "section": " Was muss ich vor Tag 1 vorbereiten?",
-    "text": "Was muss ich vor Tag 1 vorbereiten?\nVor Tag 1 arbeite durch die folgenden vier Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R 4 Data Science.\nSchritt 4: Fülle die Umfrage vor dem Kurs bis Donnerstag, den 18. September 2024 aus.",
-    "crumbs": [
-      "Vorbereitung"
-    ]
-  },
-  {
     "objectID": "folien/md-01-willkommen.html#triff-die-kursleitung",
     "href": "folien/md-01-willkommen.html#triff-die-kursleitung",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Triff die Kursleitung",
-    "text": "Triff die Kursleitung\nLars Schöbitz\n\n\nUmweltingenieur 🔨\nForscher im Ruhestand 🛏\nRStudio zertifizierte Lehrkraft\nData Steward an der ETH Zurich"
+    "text": "Triff die Kursleitung\n\n\nLars Schöbitz\n\n\n\n\n\n\n\nUmweltingenieur 🔨\nForscher im Ruhestand 🛏\nRStudio zertifizierte Lehrkraft\nData Steward an der ETH Zurich"
   },
   {
     "objectID": "folien/md-01-willkommen.html#lernziele-des-kurses",
@@ -473,11 +91,11 @@
     "text": "Jetzt sind wir dran: Öffne und speichere die Kurswebsite als Lesezeichen\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k009 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k009 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "folien/md-01-willkommen.html#learning-objectives-for-this-week",
-    "href": "folien/md-01-willkommen.html#learning-objectives-for-this-week",
+    "objectID": "folien/md-01-willkommen.html#lernziele-für-diese-woche",
+    "href": "folien/md-01-willkommen.html#lernziele-für-diese-woche",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "Learning Objectives (for this week)",
-    "text": "Learning Objectives (for this week)\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
   },
   {
     "objectID": "folien/md-01-willkommen.html#section",
@@ -536,13 +154,6 @@
     "text": "-"
   },
   {
-    "objectID": "folien/md-01-willkommen.html#section-7",
-    "href": "folien/md-01-willkommen.html#section-7",
-    "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "-",
-    "text": "-"
-  },
-  {
     "objectID": "folien/md-01-willkommen.html#quarto-1",
     "href": "folien/md-01-willkommen.html#quarto-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
@@ -592,13 +203,6 @@
     "text": "Viele Quarto Formate\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nBasic Formats\nhtml_document\npdf_document\nword_document\nhtml\npdf\ndocx\n\n\nBeamer\nbeamer_presentation\nbeamer\n\n\nPowerPoint\npowerpoint_presentation\npptx\n\n\nHTML Slides\nxaringan\nioslides\nrevealjs\nrevealjs\n\n\nAdvanced Layout\ntufte\ndistill\nQuarto Article Layout"
   },
   {
-    "objectID": "folien/md-01-willkommen.html#many-quarto-formats",
-    "href": "folien/md-01-willkommen.html#many-quarto-formats",
-    "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "Many Quarto formats",
-    "text": "Many Quarto formats\n\n\n\nFeature\nR Markdown\nQuarto\n\n\n\n\nCross References\nhtml_document2\npdf_document2\nword_document2\nQuarto Crossrefs\n\n\nWebsites & Blogs\nblogdown\ndistill\nQuarto Websites\nQuarto Blogs\n\n\nBooks\nbookdown\nQuarto Books\n\n\nInteractivity\nShiny Documents\nQuarto Interactive Documents\n\n\nJournal Articles\nrticles\nJournal Articles\n\n\nDashboards\nflexdashboard\nQuarto Dashboards\n\n\n\n\n\n\n rstatszh-k009.github.io/website/"
-  },
-  {
     "objectID": "folien/md-01-willkommen.html#viele-quarto-formate-1",
     "href": "folien/md-01-willkommen.html#viele-quarto-formate-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
@@ -613,6 +217,41 @@
     "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
+    "objectID": "folien/md-01-willkommen.html#versionskontrolle-mit-git-und-github",
+    "href": "folien/md-01-willkommen.html#versionskontrolle-mit-git-und-github",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Versionskontrolle mit Git und GitHub",
+    "text": "Versionskontrolle mit Git und GitHub\nEine Möglichkeit, Dateien mit anderen zu teilen, damit sie:\n\nDateien herunterladen,\nwiederverwenden,\nEtwas beitragen können.\n\nDu kannst den Verlauf von Dateien anzeigen und zu jedem beliebigen Zeitpunkt zu einer früheren Version zurückgehen."
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#warum-ist-es-nützlich",
+    "href": "folien/md-01-willkommen.html#warum-ist-es-nützlich",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Warum ist es nützlich?",
+    "text": "Warum ist es nützlich?"
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#git-und-github",
+    "href": "folien/md-01-willkommen.html#git-und-github",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Git und GitHub",
+    "text": "Git und GitHub\n\n\n\n\n\n\n\n\n\n\n\n\nGit ist eine Software zur Versionskontrolle\nErstellt im Jahr 2005\nBeliebt bei Programmierern, die gemeinsam Code entwickeln\nVerfolgt Änderungen in einer Gruppe von Dateien (Verzeichnis/Ordner/Repository)\n\n\n\n\n\n\n\n\n\n\n\n\nGitHub is a hosting platform for version control using Git\nLaunched in 2008, aquired by Microsoft in in 2018, Microsoft for US$ 7.5 billion\n\n100 million Users (20.5 in 2022 alone) (October, 2023)\n\nSocial media for software developers"
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#ich-bin-dran-ein-rundgang-durch-github",
+    "href": "folien/md-01-willkommen.html#ich-bin-dran-ein-rundgang-durch-github",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Ich bin dran: Ein Rundgang durch GitHub",
+    "text": "Ich bin dran: Ein Rundgang durch GitHub\n\nZurücklehnen und genießen!"
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#ihr-seid-dran-klone-ein-repsoitory-von-github",
+    "href": "folien/md-01-willkommen.html#ihr-seid-dran-klone-ein-repsoitory-von-github",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Ihr seid dran: Klone ein Repsoitory von GitHub",
+    "text": "Ihr seid dran: Klone ein Repsoitory von GitHub\n\nÖffne einen Webbrowser aufdeinen Laptop.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nFalls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.\nKlicke im Menü auf der linken Seite auf Modul 1, Wähle dann za-01: GitHub\nFolge den Anweisungen auf der Website, um Repository von GitHub zu klonen.\n\n\n\n\n−+\n15:00"
+  },
+  {
     "objectID": "folien/md-01-willkommen.html#modul-1-dokumentation",
     "href": "folien/md-01-willkommen.html#modul-1-dokumentation",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
@@ -620,10 +259,17 @@
     "text": "Modul 1 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-01.html"
   },
   {
-    "objectID": "folien/md-01-willkommen.html#thanks-1",
-    "href": "folien/md-01-willkommen.html#thanks-1",
+    "objectID": "folien/md-01-willkommen.html#danke-1",
+    "href": "folien/md-01-willkommen.html#danke-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "Thanks! 🌻",
-    "text": "Thanks! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
+    "section": "Danke! 🌻",
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
+  },
+  {
+    "objectID": "folien/md-01-willkommen.html#verhaltenskodex",
+    "href": "folien/md-01-willkommen.html#verhaltenskodex",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Verhaltenskodex",
+    "text": "Verhaltenskodex\n\n\n\nDiversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k009.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen."
   }
 ]
