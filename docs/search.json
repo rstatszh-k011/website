@@ -1,5 +1,213 @@
 [
   {
+    "objectID": "kalendar.html",
+    "href": "kalendar.html",
+    "title": "Kurskalendar",
+    "section": "",
+    "text": "modul\ndatum\ntitel\n\n\n\n\nModul 01\n24 September 2024\nWillkommen zum Kurs & Werkzeugkiste\n\n\nModul 02\n01 Oktober 2024\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)\n\n\nModul 03\n08 Oktober 2024\nDaten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 04\n15 Oktober 2024\nDaten Import & Daten Management\n\n\nModul 05\n22 Oktober 2024\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\n29 Oktober 2024\nDaten Typen & Vektoren & For Loops\n\n\nModul 07\n05 November 2024\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n12 November 2024\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 09\n19 November 2024\nErstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages\n\n\nModul 10\n26 November 2024\nFunktionen schreiben & Parameterisierung von Berichten\n\n\n\n03 Dezember 2024\nArbeitszeit für Abschlussprojekt\n\n\n\n10 Dezember 2024\nAbgabe Abschlussprojekt\n\n\n\n17 Dezember 2024\nAbschlussveranstaltung",
+    "crumbs": [
+      "Kurskalender"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Vorbereitung - rstatsZH Kurs 009",
+    "section": "",
+    "text": "Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz freut sich darauf, dich kennenzulernen.\nWir treffen uns ab 24.09.2024 jeweils um 13:00 Uhr auf Zoom.\nVor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.",
+    "crumbs": [
+      "Vorbereitung"
+    ]
+  },
+  {
+    "objectID": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
+    "href": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
+    "title": "Vorbereitung - rstatsZH Kurs 009",
+    "section": " Was muss ich vor Tag 1 vorbereiten?",
+    "text": "Was muss ich vor Tag 1 vorbereiten?\nVor Tag 1 arbeite durch die folgenden vier Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R 4 Data Science.\nSchritt 4: Fülle die Umfrage vor dem Kurs bis Donnerstag, den 18. September 2024 aus.",
+    "crumbs": [
+      "Vorbereitung"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/01-github.html",
+    "href": "vorbereitung/01-github.html",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "",
+    "text": "Um einen Account auf GitHub einzurichten, befolge diese allgemeinen Schritte:\n\nGehe auf die GitHub Website unter https://github.com/.\nKlicke auf die Schaltfläche “Sign up” oben rechts auf der Seite.\nGib deinen gewünschten Benutzernamen, deine E-Mail-Adresse und dein Passwort in die dafür vorgesehenen Felder ein.\nWähle aus, ob du Updates und Ankündigungen per E-Mail erhalten möchtest.\nSchließe den Verifizierungsprozess ab, indem du ein Puzzle löst und einen Verifizierungscode eingibst, der an deine E-Mail-Adresse gesendet wird.\n\n\n\n\n\n\n\nBenutzername-Tipp von: Happy Git and GitHub for the useR\n\n\n\n\n\nEin paar Tipps, die sich leider oft widersprechen:\n\nVerwende deinen tatsächlichen Namen! Die Leute möchten wissen, mit wem sie es zu tun haben. Außerdem ist dein Benutzername dann leichter zu erraten oder zu merken.\nKürzer ist besser als länger.\nSei so einzigartig wie möglich mit so wenig Zeichen wie möglich.\nWähle einen zeitlosen Namen. Hebe deine aktuelle Universität, deinen Arbeitgeber oder deinen Wohnort nicht hervor\nVermeide Wörter, die im Programmierkontext eine besondere Bedeutung haben.\nVermeide die Verwendung von Groß- und Kleinschreibung, um Wörter zu trennen. Wir empfehlen dringend, alles klein zu schreiben. GitHub behandelt Benutzernamen unabhängig von der Groß-/Kleinschreibung. Eine bessere Strategie zur Worttrennung ist die Verwendung eines Bindestrichs -.\n\nDu kannst deinen Benutzernamen später ändern, aber es ist besser, es gleich richtig zu machen.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 1: GitHub"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/01-github.html#einen-account-auf-github-einrichten",
+    "href": "vorbereitung/01-github.html#einen-account-auf-github-einrichten",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "",
+    "text": "Um einen Account auf GitHub einzurichten, befolge diese allgemeinen Schritte:\n\nGehe auf die GitHub Website unter https://github.com/.\nKlicke auf die Schaltfläche “Sign up” oben rechts auf der Seite.\nGib deinen gewünschten Benutzernamen, deine E-Mail-Adresse und dein Passwort in die dafür vorgesehenen Felder ein.\nWähle aus, ob du Updates und Ankündigungen per E-Mail erhalten möchtest.\nSchließe den Verifizierungsprozess ab, indem du ein Puzzle löst und einen Verifizierungscode eingibst, der an deine E-Mail-Adresse gesendet wird.\n\n\n\n\n\n\n\nBenutzername-Tipp von: Happy Git and GitHub for the useR\n\n\n\n\n\nEin paar Tipps, die sich leider oft widersprechen:\n\nVerwende deinen tatsächlichen Namen! Die Leute möchten wissen, mit wem sie es zu tun haben. Außerdem ist dein Benutzername dann leichter zu erraten oder zu merken.\nKürzer ist besser als länger.\nSei so einzigartig wie möglich mit so wenig Zeichen wie möglich.\nWähle einen zeitlosen Namen. Hebe deine aktuelle Universität, deinen Arbeitgeber oder deinen Wohnort nicht hervor\nVermeide Wörter, die im Programmierkontext eine besondere Bedeutung haben.\nVermeide die Verwendung von Groß- und Kleinschreibung, um Wörter zu trennen. Wir empfehlen dringend, alles klein zu schreiben. GitHub behandelt Benutzernamen unabhängig von der Groß-/Kleinschreibung. Eine bessere Strategie zur Worttrennung ist die Verwendung eines Bindestrichs -.\n\nDu kannst deinen Benutzernamen später ändern, aber es ist besser, es gleich richtig zu machen.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 1: GitHub"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/01-github.html#einrichten-eines-persönlichen-github-zugriffstokens-pat",
+    "href": "vorbereitung/01-github.html#einrichten-eines-persönlichen-github-zugriffstokens-pat",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)",
+    "text": "Einrichten eines persönlichen GitHub-Zugriffstokens (PAT)\nHier sind die schrittweisen Anweisungen zum Einrichten eines persönlichen GitHub-Zugriffstokens:\n\n\n\n\n\n\nWarning\n\n\n\n\n\nBehandle deine Zugriffstoken wie Passwörter und bewahre sie sicher auf (z.B. in einer Passwortverwaltungssoftware).\n\n\n\n\nMelde dich bei deinem GitHub-Konto an.\nKlicke oben rechts auf der Seite auf dein Profilbild.\nWähle im Dropdown-Menü “Settings” aus.\nKlicke in der linken Seitenleiste auf “Developer settings”.\nKlicke auf “Personal access tokens”.\nKlicke auf “Tokens (classic)”.\nKlicke auf “Generate new token” und wähle im Dropdown-Menü “Generate new token (classic)”. aus.\nGib deinem Token im Feld “Note” den Namen: GITHUB_PAT\nWähle unter “Expiration” die Option “No expiration” aus.\nWähle unter “Select scopes” Folgendes aus: repo, workflow, user.\nKlicke auf “Select scopes”.\nDein Zugriffstoken wird auf dem Bildschirm angezeigt. Kopiere es und bewahre es an einem sicheren Ort auf.",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 1: GitHub"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/04-umfrage.html",
+    "href": "vorbereitung/04-umfrage.html",
+    "title": "Umfrage",
+    "section": "",
+    "text": "Umfrage\n\nIn Vorbereitung",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 4: Umfrage"
+    ]
+  },
+  {
+    "objectID": "module/md-09.html#folien",
+    "href": "module/md-09.html#folien",
+    "title": "Modul 9",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-09.html#lesematerial",
+    "href": "module/md-09.html#lesematerial",
+    "title": "Modul 9",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-09.html#übungsaufgaben",
+    "href": "module/md-09.html#übungsaufgaben",
+    "title": "Modul 9",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-06.html#folien",
+    "href": "module/md-06.html#folien",
+    "title": "Modul 6",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-06.html#lesematerial",
+    "href": "module/md-06.html#lesematerial",
+    "title": "Modul 6",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-06.html#übungsaufgaben",
+    "href": "module/md-06.html#übungsaufgaben",
+    "title": "Modul 6",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-10.html#folien",
+    "href": "module/md-10.html#folien",
+    "title": "Modul 10",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-10.html#lesematerial",
+    "href": "module/md-10.html#lesematerial",
+    "title": "Modul 10",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-10.html#übungsaufgaben",
+    "href": "module/md-10.html#übungsaufgaben",
+    "title": "Modul 10",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-01.html",
+    "href": "module/md-01.html",
+    "title": "Modul 1",
+    "section": "",
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-01.html#lernziele",
+    "href": "module/md-01.html#lernziele",
+    "title": "Modul 1",
+    "section": "",
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-01.html#folien",
+    "href": "module/md-01.html#folien",
+    "title": "Modul 1",
+    "section": " Folien",
+    "text": "Folien\nZeige Folien im Vollbildmodus an | Download slides as PDF",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-01.html#lesematerial",
+    "href": "module/md-01.html#lesematerial",
+    "title": "Modul 1",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nLies R for Data Science - Whole game\nLies R for Data Science - Data visualization - Section 1.1: Introduction\nLies R for Data Science - Data visualization - Section 1.2: First Steps\nLies R for Data Science - Data visualization - Section 1.3: ggplot2 calls",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-01.html#zusatzaufgaben",
+    "href": "module/md-01.html#zusatzaufgaben",
+    "title": "Modul 1",
+    "section": " Zusatzaufgaben",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis Montag, den 30. September 2024.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
+    "crumbs": [
+      "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-03.html#folien",
+    "href": "module/md-03.html#folien",
+    "title": "Modul 3",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-03.html#lesematerial",
+    "href": "module/md-03.html#lesematerial",
+    "title": "Modul 3",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-03.html#übungsaufgaben",
+    "href": "module/md-03.html#übungsaufgaben",
+    "title": "Modul 3",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
     "objectID": "folien/md-01-willkommen.html#triff-die-kursleitung",
     "href": "folien/md-01-willkommen.html#triff-die-kursleitung",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
@@ -39,7 +247,7 @@
     "href": "folien/md-01-willkommen.html#kurskalendar",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Kurskalendar",
-    "text": "Kurskalendar\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nModul 01\n24 September 2024\nWillkommen zum Kurs & Werkzeugkiste\n\n\nModul 02\n01 Oktober 2024\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)\n\n\nModul 03\n08 Oktober 2024\nDaten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 04\n15 Oktober 2024\nDaten Import & Daten Management\n\n\nModul 05\n22 Oktober 2024\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\n29 Oktober 2024\nDaten Typen & Vektoren & For Loops\n\n\nModul 07\n05 November 2024\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n12 November 2024\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 09\n19 November 2024\nErstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages\n\n\nModul 10\n26 November 2024\nFunktionen schreiben & Parameterisierung von Berichten\n\n\n\n03 Dezember 2024\nArbeitszeit für Abschlussprojekt\n\n\n\n10 Dezember 2024\nAbgabe Abschlussprojekt\n\n\n\n17 Dezember 2024\nAbschlussveranstaltung"
+    "text": "Kurskalendar\n\nreadr::read_csv(\"../data/tbl-00-rstatszh-k009-kursplan.csv\") |&gt; \n  dplyr::select(modul, datum, titel) |&gt; \n  dplyr::mutate(datum = format(datum, format = \"%d %B %Y\")) |&gt; \n  knitr::kable()\n\nRows: 13 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (4): titel, modul, link, title\ndbl  (1): woche\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nModul 01\n24 September 2024\nWillkommen zum Kurs & Werkzeugkiste\n\n\nModul 02\n01 Oktober 2024\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)\n\n\nModul 03\n08 Oktober 2024\nDaten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 04\n15 Oktober 2024\nDaten Import & Daten Management\n\n\nModul 05\n22 Oktober 2024\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\n29 Oktober 2024\nDaten Typen & Vektoren & For Loops\n\n\nModul 07\n05 November 2024\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n12 November 2024\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 09\n19 November 2024\nErstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages\n\n\nModul 10\n26 November 2024\nFunktionen schreiben & Parameterisierung von Berichten\n\n\n\n03 Dezember 2024\nArbeitszeit für Abschlussprojekt\n\n\n\n10 Dezember 2024\nAbgabe Abschlussprojekt\n\n\n\n17 Dezember 2024\nAbschlussveranstaltung"
   },
   {
     "objectID": "folien/md-01-willkommen.html#kursstruktur",
@@ -77,6 +285,13 @@
     "text": "Unterstützung bekommen / Fragen stellen\n\nWährend Live-Coding: hebt die Hand mittels Zoom und unterbrecht mich. Ich werde versuchen, mich um dein Anliegen zu kümmern, wenn es die Zeit erlaubt. Offene Fragen werden dokumentiert.\nWährend Übungen in Break-out Räumen: Ihr könnt mich zu euch rufen. Bei einem Grossteil der Übungen werde ich versuchen in jedem Raum einmal vorbeizuschauen."
   },
   {
+    "objectID": "folien/md-01-willkommen.html#verhaltenskodex",
+    "href": "folien/md-01-willkommen.html#verhaltenskodex",
+    "title": "Willkommen zum Kurs & Werkzeugkiste",
+    "section": "Verhaltenskodex",
+    "text": "Verhaltenskodex\n\n\n\nDiversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k009.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen."
+  },
+  {
     "objectID": "folien/md-01-willkommen.html#website-zum-kurs",
     "href": "folien/md-01-willkommen.html#website-zum-kurs",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
@@ -95,7 +310,7 @@
     "href": "folien/md-01-willkommen.html#lernziele-für-diese-woche",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
+    "text": "Lernziele (für diese Woche)\n\nlernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-k009-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 31 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
   },
   {
     "objectID": "folien/md-01-willkommen.html#section",
@@ -172,7 +387,7 @@
     "href": "folien/md-01-willkommen.html#pause-machen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "folien/md-01-willkommen.html#ihr-seid-dran-md-01-uebungen",
@@ -214,7 +429,7 @@
     "href": "folien/md-01-willkommen.html#pause-machen-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\ncountdown(minutes = 5)\n\n\n−+\n05:00\n\n\n\n\n\nPhoto by Blake Wisz"
   },
   {
     "objectID": "folien/md-01-willkommen.html#versionskontrolle-mit-git-und-github",
@@ -245,11 +460,11 @@
     "text": "Ich bin dran: Ein Rundgang durch GitHub\n\nZurücklehnen und genießen!"
   },
   {
-    "objectID": "folien/md-01-willkommen.html#ihr-seid-dran-klone-ein-repsoitory-von-github",
-    "href": "folien/md-01-willkommen.html#ihr-seid-dran-klone-ein-repsoitory-von-github",
+    "objectID": "folien/md-01-willkommen.html#ihr-seid-dran-wir-sind-dran-klone-ein-repository-von-github",
+    "href": "folien/md-01-willkommen.html#ihr-seid-dran-wir-sind-dran-klone-ein-repository-von-github",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "Ihr seid dran: Klone ein Repsoitory von GitHub",
-    "text": "Ihr seid dran: Klone ein Repsoitory von GitHub\n\nÖffne einen Webbrowser aufdeinen Laptop.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nFalls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.\nKlicke im Menü auf der linken Seite auf Modul 1, Wähle dann za-01: GitHub\nFolge den Anweisungen auf der Website, um Repository von GitHub zu klonen.\n\n\n\n\n−+\n15:00"
+    "section": "Ihr seid dran / Wir sind dran: Klone ein Repository von GitHub",
+    "text": "Ihr seid dran / Wir sind dran: Klone ein Repository von GitHub\n\nÖffne einen Webbrowser aufdeinen Laptop.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nFalls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.\nKlicke im Menü auf der linken Seite auf Modul 1, Wähle dann za-01: GitHub\nFolge den Anweisungen auf der Website, um Repository von GitHub zu klonen.\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#modul-1-dokumentation",
@@ -266,10 +481,268 @@
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides as PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
-    "objectID": "folien/md-01-willkommen.html#verhaltenskodex",
-    "href": "folien/md-01-willkommen.html#verhaltenskodex",
-    "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "Verhaltenskodex",
-    "text": "Verhaltenskodex\n\n\n\nDiversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k009.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen."
+    "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html",
+    "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "",
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf TODO: posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein.\nWarte, bis das Projekt bereitgestellt wurde\nFahre mit dem nächsten Schritt fort"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-1-klone-ein-repository",
+    "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-1-klone-ein-repository",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "",
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf TODO: posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein.\nWarte, bis das Projekt bereitgestellt wurde\nFahre mit dem nächsten Schritt fort"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-2-stelle-dich-git-vor",
+    "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-2-stelle-dich-git-vor",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "Schritt 2: Stelle dich git vor",
+    "text": "Schritt 2: Stelle dich git vor\n\nÖffne in Posit Cloud das Projekt git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nÖffne die Datei git-configuration.qmd im Fenster unten rechts in RStudio.\nBearbeite den Code-Abschnitt unter “Git configuration details” und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen am Repository vornimmst).\nRender das Dokument.\nBehalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit dem nächsten Schritt fort\n\n\nlibrary(usethis)\n\n# Ersetze deinen Namen und deine E-Mail-Adresse durch deine Angaben. Die Anführungszeichen \"\" nicht löschen.\nuse_git_config(user.name = \"Dein Name\", user.email = \"Deine E-Mail-Adresse\")"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-3-übertrage-deine-änderungen-und-speichere-sie",
+    "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-3-übertrage-deine-änderungen-und-speichere-sie",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "Schritt 3: Übertrage deine Änderungen und speichere sie",
+    "text": "Schritt 3: Übertrage deine Änderungen und speichere sie\n\nNavigiere zum “Git” Bereich im Fenster oben rechts in RStudio.\nAktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.\nKlicke auf die Schaltfläche “Commit”\nGib eine Commit-Nachricht in das Feld “Commit Message” ein\nKlicke auf die Schaltfläche “Commit”\nKlicke auf die Schaltfläche “Push”\nGib deinen GitHub-Benutzernamen und deinen GitHub Personal Access Token (PAT) in die Felder “Benutzername” und “Password” ein.\n\n\n\n\n\n\n\nVerwende nicht dein GitHub-Passwort\n\n\n\nDu musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-4-eröffne-ein-issue-auf-github",
+    "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-4-eröffne-ein-issue-auf-github",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "Schritt 4: Eröffne ein Issue auf GitHub",
+    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne [github.com] (https://github.com/) in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs.\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Git Konfiguration abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
+  },
+  {
+    "objectID": "module/md-02.html#folien",
+    "href": "module/md-02.html#folien",
+    "title": "Modul 2",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitun"
+  },
+  {
+    "objectID": "module/md-02.html#lesematerial",
+    "href": "module/md-02.html#lesematerial",
+    "title": "Modul 2",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-02.html#übungsaufgaben",
+    "href": "module/md-02.html#übungsaufgaben",
+    "title": "Modul 2",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-05.html",
+    "href": "module/md-05.html",
+    "title": "Modul 5",
+    "section": "",
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
+  },
+  {
+    "objectID": "module/md-05.html#lernziele",
+    "href": "module/md-05.html#lernziele",
+    "title": "Modul 5",
+    "section": "",
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
+  },
+  {
+    "objectID": "module/md-05.html#folien",
+    "href": "module/md-05.html#folien",
+    "title": "Modul 5",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-05.html#lesematerial",
+    "href": "module/md-05.html#lesematerial",
+    "title": "Modul 5",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-05.html#übungsaufgaben",
+    "href": "module/md-05.html#übungsaufgaben",
+    "title": "Modul 5",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-04.html#folien",
+    "href": "module/md-04.html#folien",
+    "title": "Modul 4",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-04.html#lesematerial",
+    "href": "module/md-04.html#lesematerial",
+    "title": "Modul 4",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-04.html#übungsaufgaben",
+    "href": "module/md-04.html#übungsaufgaben",
+    "title": "Modul 4",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-07.html#folien",
+    "href": "module/md-07.html#folien",
+    "title": "Modul 7",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-07.html#lesematerial",
+    "href": "module/md-07.html#lesematerial",
+    "title": "Modul 7",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-07.html#übungsaufgaben",
+    "href": "module/md-07.html#übungsaufgaben",
+    "title": "Modul 7",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-08.html#folien",
+    "href": "module/md-08.html#folien",
+    "title": "Modul 8",
+    "section": " Folien",
+    "text": "Folien\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-08.html#lesematerial",
+    "href": "module/md-08.html#lesematerial",
+    "title": "Modul 8",
+    "section": " Lesematerial",
+    "text": "Lesematerial\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "module/md-08.html#übungsaufgaben",
+    "href": "module/md-08.html#übungsaufgaben",
+    "title": "Modul 8",
+    "section": " Übungsaufgaben",
+    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+  },
+  {
+    "objectID": "vorbereitung/02-posit-cloud.html",
+    "href": "vorbereitung/02-posit-cloud.html",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "",
+    "text": "Hier sind die Anweisungen, um sich mit einem GitHub-Konto bei Posit Cloud anzumelden:\n\nGehe zur Anmeldeseite von Posit Cloud: https://login.posit.cloud/register\nKlicke auf die Schaltfläche “Sign Up with GitHub”.\nGib deinen GitHub-Benutzernamen und dein Passwort ein, wenn du dazu aufgefordert wirst.\nWenn du dich zum ersten Mal mit deinem GitHub-Konto bei Posit Cloud anmeldest, wirst du aufgefordert, Posit Cloud für den Zugriff auf deine GitHub-Kontodaten zu autorisieren.\nSobald du den Zugriff autorisiert hast, wirst du zur Posit Cloud-Website zurückgeleitet und bei deinem Konto angemeldet.\n\nBeachte, dass du ein GitHub-Konto benötigst, um diese Anmeldemethode nutzen zu können. Wenn du kein GitHub-Konto hast, musst du eines erstellen, bevor du dich bei Posit Cloud anmelden kannst.",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 2: Posit Cloud"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/02-posit-cloud.html#melde-dich-mit-deinem-github-konto-bei-posit-cloud-an-und-tritt-dem-arbeitsbereich-für-den-kurs-bei",
+    "href": "vorbereitung/02-posit-cloud.html#melde-dich-mit-deinem-github-konto-bei-posit-cloud-an-und-tritt-dem-arbeitsbereich-für-den-kurs-bei",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "",
+    "text": "Hier sind die Anweisungen, um sich mit einem GitHub-Konto bei Posit Cloud anzumelden:\n\nGehe zur Anmeldeseite von Posit Cloud: https://login.posit.cloud/register\nKlicke auf die Schaltfläche “Sign Up with GitHub”.\nGib deinen GitHub-Benutzernamen und dein Passwort ein, wenn du dazu aufgefordert wirst.\nWenn du dich zum ersten Mal mit deinem GitHub-Konto bei Posit Cloud anmeldest, wirst du aufgefordert, Posit Cloud für den Zugriff auf deine GitHub-Kontodaten zu autorisieren.\nSobald du den Zugriff autorisiert hast, wirst du zur Posit Cloud-Website zurückgeleitet und bei deinem Konto angemeldet.\n\nBeachte, dass du ein GitHub-Konto benötigst, um diese Anmeldemethode nutzen zu können. Wenn du kein GitHub-Konto hast, musst du eines erstellen, bevor du dich bei Posit Cloud anmelden kannst.",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 2: Posit Cloud"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/02-posit-cloud.html#tritt-dem-kursarbeitsbereich-auf-posit-cloud-bei",
+    "href": "vorbereitung/02-posit-cloud.html#tritt-dem-kursarbeitsbereich-auf-posit-cloud-bei",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei",
+    "text": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei\n– Öffne diesen Link: In Vorbereitung",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 2: Posit Cloud"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/03-r4ds-intro.html",
+    "href": "vorbereitung/03-r4ds-intro.html",
+    "title": "Kursbuch: R for Data Science",
+    "section": "",
+    "text": "“R for Data Science” von Hadley Wickham und Garrett Grolemund ist ein unverzichtbarer Leitfaden für Anfänger:innen, die in die Welt der Datenwissenschaft mit R eintauchen möchten. Dieses Buch führt die Leser:innen in R, RStudio und den Tidyverse ein, eine Suite von R-Paketen, die entwickelt wurde, um datenwissenschaftliche Aufgaben zu optimieren und sie schnell, intuitiv und angenehm zu gestalten.\nEs behandelt den gesamten datenwissenschaftlichen Prozess, einschließlich des Imports, Aufräumens, Transformierens, Visualisierens und Modellierens von Daten, wobei bewährte Verfahren und effiziente Arbeitsabläufe im Vordergrund stehen. Das Buch ist so aufgebaut, dass es Anfänger:innen dabei hilft, eine solide Grundlage in der Datenmanipulation und -analyse zu entwickeln, und bietet praktische Übungen zur Festigung des Gelernten.\nDieses Buch stellt das Kursbuch für diesen Kurs da. Der Zeitrahmen für den Kurs lässt es nicht zu durch sämtliche Kapitel zu arbeiten, jedoch werden die Kursteilnehmer:innen am Ende des Kurses mit den Fähigkeiten ausgestattet sein mittels des Buches selbstständig weiterzulernen.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 3: Kursbuch"
+    ]
+  },
+  {
+    "objectID": "vorbereitung/03-r4ds-intro.html#aufgabe",
+    "href": "vorbereitung/03-r4ds-intro.html#aufgabe",
+    "title": "Kursbuch: R for Data Science",
+    "section": "",
+    "text": "Lese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
+    "crumbs": [
+      "Vorbereitung",
+      "Schritt 3: Kursbuch"
+    ]
+  },
+  {
+    "objectID": "verhaltenskodex.html",
+    "href": "verhaltenskodex.html",
+    "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
+    "section": "",
+    "text": "Wir als Mitglieder, Teilnehmende und Verantwortliche unserer Gemeinschaft verpflichten uns, allen Teilnehmenden an dem Projekt und unserer Gemeinschaft eine belästigungsfreie Beteiligung, unabhängig von Alter, Körpergröße, Behinderung, ethnischer Zuordnung, Geschlechtermerkmalen, -identität und -ausdruck, Grad der Erfahrung, Bildung, sozialem Status, Nationalität, persönlicher Erscheinung, Rasse, Kaste, Hautfarbe, Religion oder sexueller Identität und Orientierung zu ermöglichen.\nWir verpflichten uns, in einer Weise zu handeln und zu interagieren, die zu einer offenen, einladenden, vielfältigen, inklusiven und gesunden Gemeinschaft beiträgt.\n\n\n\nBeispiele für Verhaltensweisen, die zu einem positiven Umfeld für unsere Gemeinschaft beitragen, sind:\n\nEinfühlungsvermögen und Freundlichkeit gegenüber anderen Menschen zeigen\nUnterschiedliche Meinungen, Standpunkte und Erfahrungen respektieren\nKonstruktives Feedback geben und würdevoll annehmen\nVerantwortung übernehmen und uns bei denjenigen entschuldigen, die von unseren Fehlern betroffen sind, und aus den Erfahrungen lernen\nKonzentration auf das, was nicht nur für uns als Individuen, sondern für die gesamte Gemeinschaft das Beste ist\n\nBeispiele für inakzeptables Verhalten sind:\n\nDie Verwendung sexualisierter Sprache, Bilder oder Symbolik sowie unerwünschte Versuche sexueller Annäherung\nBeleidigende oder abwertende Kommentare, persönliche oder politische Angriffe und Trollen\nÖffentliche oder private Belästigungen\nDas Veröffentlichen von privaten Informationen Anderer, wie zum Beispiel physische oder elektronische Adressen, ohne deren ausdrückliche Erlaubnis\nAnderes Verhalten, welches in einem professionellen Umfeld begründet als unangemessen betrachtet werden kann\n\n\n\n\nDie Gemeinschaftsleitung ist verantwortlich dafür, unsere Standards für ein akzeptables Verhalten klarzustellen und wird angemessen und fair korrigierende Maßnahmen ergreifen um auf jegliches Verhalten, das sie für unangemessen, bedrohlich oder beleidigend hält, zu reagieren.\nDie Gemeinschaftsleitung hat das Recht und die Verantwortung, Kommentare, Commits, Code, Wiki-Bearbeitungen, Support-Tickets und andere Beiträge, die nicht mit diesem Verhaltenskodex vereinbar sind, zu entfernen, zu bearbeiten oder abzulehnen, und wird die Gründe für eine Mäßigung mitteilen, wenn es angebracht ist.\n\n\n\nDieser Verhaltenskodex gilt für alle Gemeinschaftsbereiche und gilt auch, wenn eine Einzelperson die Gemeinschaft offiziell in öffentlichen Bereichen vertritt. Beispiele für die Repräsentation unserer Gemeinschaft sind die Verwendung einer offiziellen E-Mail-Adresse, das Posten über ein offizielles Social-Media-Konto oder das Auftreten als ernannte Vertretung bei einer Online- oder Offline-Veranstaltung.\n\n\n\nFälle von missbräuchlichem, belästigendem oder anderweitig inakzeptablem Verhalten können unter [KONTAKTMETHODE EINFÜGEN] der für die Durchsetzung zuständigen Gemeinschaftsleitung gemeldet werden. Alle Beschwerden werden zeitnah und fair geprüft und ermittelt.\nDie gesamte Gemeinschaftsleitung ist verpflichtet, die Privatsphäre und die Sicherheit derjenigen, die einen Vorfall gemeldet haben, zu respektieren.\n\n\n\nDie Gemeinschaftsleitung wird sich bei der Bestimmung der Konsequenzen für jede Handlung, die ihrer Ansicht nach gegen diesen Verhaltenskodex verstößt, an diese Richtlinien über die Auswirkungen in der Gemeinschaft halten:\n\n\nAuswirkungen in der Gemeinschaft: Verwendung unangemessener Sprache oder anderes Verhalten, das in der Gemeinschaft als unprofessionell oder unwillkommen gilt.\nFolge: Eine private, schriftliche Verwarnung der Gemeinschaftsleitung, die Klarheit über die Art des Verstoßes und eine Erklärung dafür bietet, warum das Verhalten unangemessen war. Eine öffentliche Entschuldigung kann verlangt werden.\n\n\n\nAuswirkungen in der Gemeinschaft: Eine Verletzung durch einen einzelnen Vorfall oder eine Reihe von Handlungen.\nFolge: Eine Warnung mit Konsequenzen bei wiederholtem Fehlverhalten. Keine Interaktion mit den beteiligten Personen, einschließlich unaufgeforderter Interaktion mit denjenigen, die den Verhaltenskodex durchsetzen, für einen bestimmten Zeitraum. Dazu gehört die Vermeidung von Interaktionen in Gemeinschaftsräumen sowie in externen Kanälen wie sozialen Medien. Ein Verstoß gegen diese Bedingungen kann zu einem vorübergehenden oder dauerhaften Verbot führen.\n\n\n\nAuswirkungen in der Gemeinschaft: Eine schwerwiegende Verletzung von Gemeinschaftsstandards, einschließlich anhaltend unangemessenen Verhaltens.\nFolge: Ein zeitlich begrenztes Verbot jeglicher Art von Interaktion oder öffentlicher Kommunikation mit der Gemeinschaft. Während dieses Zeitraums ist keine öffentliche oder private Interaktion mit den beteiligten Personen erlaubt. Auch keine unaufgeforderte Interaktion mit denjenigen, die den Verhaltenskodex durchsetzen. Ein Verstoß gegen diese Bedingungen kann zu einem dauerhaften Verbot führen.\n\n\n\nAuswirkungen in der Gemeinschaft: Aufzeigen eines Musters von Verletzungen der Gemeinschaftsstandards, einschließlich anhaltend unangemessenen Verhaltens, Belästigung einer Person oder Aggression gegen oder Herabsetzung von Gruppen von Personen.\nFolge: Ein dauerhaftes Verbot jeglicher Art von öffentlicher Interaktion innerhalb der Gemeinschaft.\n\n\n\n\nDieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "verhaltenskodex.html#unsere-verpflichtung",
+    "href": "verhaltenskodex.html#unsere-verpflichtung",
+    "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
+    "section": "",
+    "text": "Wir als Mitglieder, Teilnehmende und Verantwortliche unserer Gemeinschaft verpflichten uns, allen Teilnehmenden an dem Projekt und unserer Gemeinschaft eine belästigungsfreie Beteiligung, unabhängig von Alter, Körpergröße, Behinderung, ethnischer Zuordnung, Geschlechtermerkmalen, -identität und -ausdruck, Grad der Erfahrung, Bildung, sozialem Status, Nationalität, persönlicher Erscheinung, Rasse, Kaste, Hautfarbe, Religion oder sexueller Identität und Orientierung zu ermöglichen.\nWir verpflichten uns, in einer Weise zu handeln und zu interagieren, die zu einer offenen, einladenden, vielfältigen, inklusiven und gesunden Gemeinschaft beiträgt."
+  },
+  {
+    "objectID": "verhaltenskodex.html#unsere-standards",
+    "href": "verhaltenskodex.html#unsere-standards",
+    "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
+    "section": "",
+    "text": "Beispiele für Verhaltensweisen, die zu einem positiven Umfeld für unsere Gemeinschaft beitragen, sind:\n\nEinfühlungsvermögen und Freundlichkeit gegenüber anderen Menschen zeigen\nUnterschiedliche Meinungen, Standpunkte und Erfahrungen respektieren\nKonstruktives Feedback geben und würdevoll annehmen\nVerantwortung übernehmen und uns bei denjenigen entschuldigen, die von unseren Fehlern betroffen sind, und aus den Erfahrungen lernen\nKonzentration auf das, was nicht nur für uns als Individuen, sondern für die gesamte Gemeinschaft das Beste ist\n\nBeispiele für inakzeptables Verhalten sind:\n\nDie Verwendung sexualisierter Sprache, Bilder oder Symbolik sowie unerwünschte Versuche sexueller Annäherung\nBeleidigende oder abwertende Kommentare, persönliche oder politische Angriffe und Trollen\nÖffentliche oder private Belästigungen\nDas Veröffentlichen von privaten Informationen Anderer, wie zum Beispiel physische oder elektronische Adressen, ohne deren ausdrückliche Erlaubnis\nAnderes Verhalten, welches in einem professionellen Umfeld begründet als unangemessen betrachtet werden kann"
+  },
+  {
+    "objectID": "verhaltenskodex.html#verantwortlichkeiten-bei-der-durchsetzung",
+    "href": "verhaltenskodex.html#verantwortlichkeiten-bei-der-durchsetzung",
+    "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
+    "section": "",
+    "text": "Die Gemeinschaftsleitung ist verantwortlich dafür, unsere Standards für ein akzeptables Verhalten klarzustellen und wird angemessen und fair korrigierende Maßnahmen ergreifen um auf jegliches Verhalten, das sie für unangemessen, bedrohlich oder beleidigend hält, zu reagieren.\nDie Gemeinschaftsleitung hat das Recht und die Verantwortung, Kommentare, Commits, Code, Wiki-Bearbeitungen, Support-Tickets und andere Beiträge, die nicht mit diesem Verhaltenskodex vereinbar sind, zu entfernen, zu bearbeiten oder abzulehnen, und wird die Gründe für eine Mäßigung mitteilen, wenn es angebracht ist."
+  },
+  {
+    "objectID": "verhaltenskodex.html#geltungsbereich",
+    "href": "verhaltenskodex.html#geltungsbereich",
+    "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
+    "section": "",
+    "text": "Dieser Verhaltenskodex gilt für alle Gemeinschaftsbereiche und gilt auch, wenn eine Einzelperson die Gemeinschaft offiziell in öffentlichen Bereichen vertritt. Beispiele für die Repräsentation unserer Gemeinschaft sind die Verwendung einer offiziellen E-Mail-Adresse, das Posten über ein offizielles Social-Media-Konto oder das Auftreten als ernannte Vertretung bei einer Online- oder Offline-Veranstaltung."
+  },
+  {
+    "objectID": "verhaltenskodex.html#durchsetzung",
+    "href": "verhaltenskodex.html#durchsetzung",
+    "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
+    "section": "",
+    "text": "Fälle von missbräuchlichem, belästigendem oder anderweitig inakzeptablem Verhalten können unter [KONTAKTMETHODE EINFÜGEN] der für die Durchsetzung zuständigen Gemeinschaftsleitung gemeldet werden. Alle Beschwerden werden zeitnah und fair geprüft und ermittelt.\nDie gesamte Gemeinschaftsleitung ist verpflichtet, die Privatsphäre und die Sicherheit derjenigen, die einen Vorfall gemeldet haben, zu respektieren."
+  },
+  {
+    "objectID": "verhaltenskodex.html#durchsetzungsrichtlinien",
+    "href": "verhaltenskodex.html#durchsetzungsrichtlinien",
+    "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
+    "section": "",
+    "text": "Die Gemeinschaftsleitung wird sich bei der Bestimmung der Konsequenzen für jede Handlung, die ihrer Ansicht nach gegen diesen Verhaltenskodex verstößt, an diese Richtlinien über die Auswirkungen in der Gemeinschaft halten:\n\n\nAuswirkungen in der Gemeinschaft: Verwendung unangemessener Sprache oder anderes Verhalten, das in der Gemeinschaft als unprofessionell oder unwillkommen gilt.\nFolge: Eine private, schriftliche Verwarnung der Gemeinschaftsleitung, die Klarheit über die Art des Verstoßes und eine Erklärung dafür bietet, warum das Verhalten unangemessen war. Eine öffentliche Entschuldigung kann verlangt werden.\n\n\n\nAuswirkungen in der Gemeinschaft: Eine Verletzung durch einen einzelnen Vorfall oder eine Reihe von Handlungen.\nFolge: Eine Warnung mit Konsequenzen bei wiederholtem Fehlverhalten. Keine Interaktion mit den beteiligten Personen, einschließlich unaufgeforderter Interaktion mit denjenigen, die den Verhaltenskodex durchsetzen, für einen bestimmten Zeitraum. Dazu gehört die Vermeidung von Interaktionen in Gemeinschaftsräumen sowie in externen Kanälen wie sozialen Medien. Ein Verstoß gegen diese Bedingungen kann zu einem vorübergehenden oder dauerhaften Verbot führen.\n\n\n\nAuswirkungen in der Gemeinschaft: Eine schwerwiegende Verletzung von Gemeinschaftsstandards, einschließlich anhaltend unangemessenen Verhaltens.\nFolge: Ein zeitlich begrenztes Verbot jeglicher Art von Interaktion oder öffentlicher Kommunikation mit der Gemeinschaft. Während dieses Zeitraums ist keine öffentliche oder private Interaktion mit den beteiligten Personen erlaubt. Auch keine unaufgeforderte Interaktion mit denjenigen, die den Verhaltenskodex durchsetzen. Ein Verstoß gegen diese Bedingungen kann zu einem dauerhaften Verbot führen.\n\n\n\nAuswirkungen in der Gemeinschaft: Aufzeigen eines Musters von Verletzungen der Gemeinschaftsstandards, einschließlich anhaltend unangemessenen Verhaltens, Belästigung einer Person oder Aggression gegen oder Herabsetzung von Gruppen von Personen.\nFolge: Ein dauerhaftes Verbot jeglicher Art von öffentlicher Interaktion innerhalb der Gemeinschaft."
+  },
+  {
+    "objectID": "verhaltenskodex.html#bezug",
+    "href": "verhaltenskodex.html#bezug",
+    "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
+    "section": "",
+    "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>rstatsZH - Data Science mit R - Vorbereitung - rstatsZH Kurs 009</title>
+<title>rstatsZH - Data Science mit R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,23 +20,54 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="./vorbereitung/01-github.html" rel="next">
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -66,7 +97,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Vorbereitung</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      rstatsZH - Data Science mit R
+      </li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -81,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">rstatsZH - Data Science mit R</a> 
+      <a href="../../">rstatsZH - Data Science mit R</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/rstatszh-k009/" title="GitHub Organisation" class="quarto-navigation-tool px-1" aria-label="GitHub Organisation"><i class="bi bi-github"></i></a>
 </div>
@@ -96,34 +129,34 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Vorbereitung</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vorbereitung/01-github.html" class="sidebar-item-text sidebar-link">
+  <a href="../../vorbereitung/01-github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schritt 1: GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vorbereitung/02-posit-cloud.html" class="sidebar-item-text sidebar-link">
+  <a href="../../vorbereitung/02-posit-cloud.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schritt 2: Posit Cloud</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vorbereitung/03-r4ds-intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../../vorbereitung/03-r4ds-intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schritt 3: Kursbuch</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vorbereitung/04-umfrage.html" class="sidebar-item-text sidebar-link">
+  <a href="../../vorbereitung/04-umfrage.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schritt 4: Umfrage</span></a>
   </div>
 </li>
@@ -132,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./kalendar.html" class="sidebar-item-text sidebar-link">
+  <a href="../../kalendar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Kurskalender</span></a>
   </div>
 </li>
@@ -187,44 +220,86 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#was-muss-ich-vor-tag-1-vorbereiten" id="toc-was-muss-ich-vor-tag-1-vorbereiten" class="nav-link active" data-scroll-target="#was-muss-ich-vor-tag-1-vorbereiten"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> Was muss ich vor Tag 1 vorbereiten?</a></li>
+  <li><a href="#schritt-1-klone-ein-repository" id="toc-schritt-1-klone-ein-repository" class="nav-link active" data-scroll-target="#schritt-1-klone-ein-repository">Schritt 1: Klone ein Repository</a></li>
+  <li><a href="#schritt-2-stelle-dich-git-vor" id="toc-schritt-2-stelle-dich-git-vor" class="nav-link" data-scroll-target="#schritt-2-stelle-dich-git-vor">Schritt 2: Stelle dich git vor</a></li>
+  <li><a href="#schritt-3-übertrage-deine-änderungen-und-speichere-sie" id="toc-schritt-3-übertrage-deine-änderungen-und-speichere-sie" class="nav-link" data-scroll-target="#schritt-3-übertrage-deine-änderungen-und-speichere-sie">Schritt 3: Übertrage deine Änderungen und speichere sie</a></li>
+  <li><a href="#schritt-4-eröffne-ein-issue-auf-github" id="toc-schritt-4-eröffne-ein-issue-auf-github" class="nav-link" data-scroll-target="#schritt-4-eröffne-ein-issue-auf-github">Schritt 4: Eröffne ein Issue auf GitHub</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Vorbereitung - rstatsZH Kurs 009</h1>
+
+
+
+<section id="schritt-1-klone-ein-repository" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-1-klone-ein-repository">Schritt 1: Klone ein Repository</h2>
+<ol type="1">
+<li><p>Öffne github.com in deinem Browser.</p></li>
+<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k009">github.com/rstatszh-k009</a></p></li>
+<li><p>Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es.</p></li>
+<li><p>Klicke auf die grüne Schaltfläche “Code”.</p></li>
+<li><p>Kopiere die HTTPS-URL in deine Zwischenablage.</p></li>
+<li><p>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf <a href="">TODO: posit.cloud</a></p></li>
+<li><p>Klicke auf “New Project” &gt; “New Project from Git Repository”</p></li>
+<li><p>Füge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein.</p></li>
+<li><p>Warte, bis das Projekt bereitgestellt wurde</p></li>
+<li><p>Fahre mit dem nächsten Schritt fort</p></li>
+</ol>
+</section>
+<section id="schritt-2-stelle-dich-git-vor" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-2-stelle-dich-git-vor">Schritt 2: Stelle dich git vor</h2>
+<ol type="1">
+<li><p>Öffne in Posit Cloud das Projekt git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.</p></li>
+<li><p>Öffne die Datei git-configuration.qmd im Fenster unten rechts in RStudio.</p></li>
+<li><p>Bearbeite den Code-Abschnitt unter “Git configuration details” und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen am Repository vornimmst).</p></li>
+<li><p>Render das Dokument.</p></li>
+<li><p>Behalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit dem nächsten Schritt fort</p></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Ersetze deinen Namen und deine E-Mail-Adresse durch deine Angaben. Die Anführungszeichen "" nicht löschen.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Dein Name"</span>, <span class="at">user.email =</span> <span class="st">"Deine E-Mail-Adresse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz freut sich darauf, dich kennenzulernen.</p>
-<p>Wir treffen uns ab 24.09.2024 jeweils um 13:00 Uhr auf Zoom.</p>
-<p>Vor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.</p>
-<section id="was-muss-ich-vor-tag-1-vorbereiten" class="level2">
-<h2 class="anchored" data-anchor-id="was-muss-ich-vor-tag-1-vorbereiten"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> Was muss ich vor Tag 1 vorbereiten?</h2>
-<p>Vor Tag 1 arbeite durch die folgenden vier Schritte:</p>
-<ul>
-<li><a href="./vorbereitung/01-github.html">Schritt 1</a>: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.</li>
-<li><a href="./vorbereitung/02-posit-cloud.html">Schritt 2</a>: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.</li>
-<li><a href="./vorbereitung/03-r4ds-intro.html">Schritt 3</a>: Lies die Einführung des Kursbuches: R 4 Data Science.</li>
-<li><a href="./vorbereitung/04-umfrage.html">Schritt 4</a>: Fülle die Umfrage vor dem Kurs bis Donnerstag, den 18. September 2024 aus.</li>
-</ul>
+</section>
+<section id="schritt-3-übertrage-deine-änderungen-und-speichere-sie" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-3-übertrage-deine-änderungen-und-speichere-sie">Schritt 3: Übertrage deine Änderungen und speichere sie</h2>
+<ol type="1">
+<li><p>Navigiere zum “Git” Bereich im Fenster oben rechts in RStudio.</p></li>
+<li><p>Aktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.</p></li>
+<li><p>Klicke auf die Schaltfläche “Commit”</p></li>
+<li><p>Gib eine Commit-Nachricht in das Feld “Commit Message” ein</p></li>
+<li><p>Klicke auf die Schaltfläche “Commit”</p></li>
+<li><p>Klicke auf die Schaltfläche “Push”</p></li>
+<li><p>Gib deinen GitHub-Benutzernamen und <span class="highlight-yellow">deinen GitHub Personal Access Token (PAT)</span> in die Felder “Benutzername” und <span class="highlight-yellow">“Password”</span> ein.</p></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Verwende nicht dein GitHub-Passwort
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen.</p>
+</div>
+</div>
+</section>
+<section id="schritt-4-eröffne-ein-issue-auf-github" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-4-eröffne-ein-issue-auf-github">Schritt 4: Eröffne ein Issue auf GitHub</h2>
+<ol type="1">
+<li><p>Öffne [github.com] (https://github.com/) in deinem Browser.</p></li>
+<li><p>Navigiere zur GitHub-Organisation für den Kurs.</p></li>
+<li><p>Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.</p></li>
+<li><p>Klicke auf die Schaltfläche “Issues”.</p></li>
+<li><p>Klicke auf die grüne Schaltfläche “New issue”.</p></li>
+<li><p>Schreibe in das Feld “Title”: “Git Konfiguration abgeschlossen”.</p></li>
+<li><p>Markiere im Feld “Leave a comment” den Kursleiter mit <span class="citation" data-cites="larnsce">@larnsce</span> und hiterlasse eine Nachricht oder offene Frage.</p></li>
+</ol>
 
 
 </section>
@@ -617,15 +692,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./vorbereitung/01-github.html" class="pagination-link" aria-label="Schritt 1: GitHub">
-        <span class="nav-page-text">Schritt 1: GitHub</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -638,7 +704,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./verhaltenskodex.html">
+    <a class="nav-link" href="../../verhaltenskodex.html">
 <p>Verhaltenskodex</p>
 </a>
   </li>  

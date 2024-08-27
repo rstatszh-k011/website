@@ -1,0 +1,86 @@
+---
+Titel: "Interaktion mit GitHub"
+---
+
+## Schritt 1: Klone ein Repository
+
+1. Öffne github.com in deinem Browser.
+
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
+
+3. Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es.
+
+4. Klicke auf die grüne Schaltfläche "Code".
+
+5. Kopiere die HTTPS-URL in deine Zwischenablage.
+
+6. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [TODO: posit.cloud]()
+
+7. Klicke auf "New Project" > "New Project from Git Repository"
+
+8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein.
+
+9. Warte, bis das Projekt bereitgestellt wurde
+
+10. Fahre mit dem nächsten Schritt fort
+
+## Schritt 2: Stelle dich git vor
+
+1. Öffne in Posit Cloud das Projekt git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.
+
+2. Öffne die Datei git-configuration.qmd im Fenster unten rechts in RStudio.
+
+3. Bearbeite den Code-Abschnitt unter "Git configuration details" und ersetze die Platzhalter durch deinen Namen und 
+deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen am Repository vornimmst).
+
+4. Render das Dokument.
+
+5. Behalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit dem nächsten Schritt fort
+
+```{r}
+#| echo: true
+#| eval: false
+
+library(usethis)
+
+# Ersetze deinen Namen und deine E-Mail-Adresse durch deine Angaben. Die Anführungszeichen "" nicht löschen.
+use_git_config(user.name = "Dein Name", user.email = "Deine E-Mail-Adresse")
+```
+
+## Schritt 3: Übertrage deine Änderungen und speichere sie
+
+1. Navigiere zum "Git" Bereich im Fenster oben rechts in RStudio.
+
+2. Aktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.
+
+3. Klicke auf die Schaltfläche "Commit"
+
+4. Gib eine Commit-Nachricht in das Feld "Commit Message" ein
+
+5. Klicke auf die Schaltfläche "Commit"
+
+6. Klicke auf die Schaltfläche "Push"
+
+7. Gib deinen GitHub-Benutzernamen und [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} in die Felder "Benutzername" und ["Password"]{.highlight-yellow} ein.
+
+::: callout-important
+## Verwende nicht dein GitHub-Passwort
+
+Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen.
+:::
+
+## Schritt 4: Eröffne ein Issue auf GitHub
+
+1. Öffne [github.com] (https://github.com/) in deinem Browser.
+
+2. Navigiere zur GitHub-Organisation für den Kurs.
+
+3. Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.
+
+4. Klicke auf die Schaltfläche "Issues".
+
+5. Klicke auf die grüne Schaltfläche "New issue".
+
+6. Schreibe in das Feld "Title": "Git Konfiguration abgeschlossen".
+
+7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage.
