@@ -744,5 +744,285 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#section",
+    "href": "folien/md-02-datenvisualisierung.html#section",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "",
+    "text": "Artwork by @allison_horst"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#tipps-für-suchmaschinen",
+    "href": "folien/md-02-datenvisualisierung.html#tipps-für-suchmaschinen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Tipps für Suchmaschinen",
+    "text": "Tipps für Suchmaschinen\n\nVerwende Verben, die beschreiben, was du tun willst\nSei präzise\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nScrolle durch die ersten 5 Ergebnisse (wähle nicht nur das erste aus)\nSchreibe die Suchanfrage auf Englisch\n\nBeispiel: “How to remove a legend from a plot in R ggplot2”"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#stack-overflow",
+    "href": "folien/md-02-datenvisualisierung.html#stack-overflow",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Stack Overflow",
+    "text": "Stack Overflow\n\n\n\nWas ist das?\n\nDas größte Unterstützungsnetzwerk für (Coding-)Probleme\nKann anfangs einschüchternd sein\nUpvote-System\n\n\n\n\nArbeitsablauf\n\nLies dir zuerst kurz die Frage durch, die gepostet wurde.\nLies dir dann die Antwort durch, die als “richtig” markiert wurde.\nLies dir dann eine oder zwei weitere Antworten mit vielen Zustimmungen durch.\nSieh dir dann die “linked posts” an."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#tipps-for-ai-tools",
+    "href": "folien/md-02-datenvisualisierung.html#tipps-for-ai-tools",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Tipps for AI tools",
+    "text": "Tipps for AI tools\n\nVerwende Verben, die beschreiben, was du tun willst\nSei präzise\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nSchreibe die Suchanfrage auf Englisch\n\nBeispiel: “How to remove a legend from a plot in R ggplot2”"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
+    "href": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Andere Quellen für Hilfe",
+    "text": "Andere Quellen für Hilfe\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDokumentation Webseiten: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\nQuarto GitHub Diskussion: https://github.com/quarto-dev/quarto-cli/discussions\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#section-1",
+    "href": "folien/md-02-datenvisualisierung.html#section-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "",
+    "text": "Artwork by @allison_horst"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#öffne-die-github-organisation",
+    "href": "folien/md-02-datenvisualisierung.html#öffne-die-github-organisation",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "öffne die GitHub Organisation",
+    "text": "öffne die GitHub Organisation\nFüge diesen Link als Lesezeichen in deinem Browser hinzu!\n\ngithub.com/rstatszh-k009"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-deines-repositories",
+    "href": "folien/md-02-datenvisualisierung.html#innerhalb-deines-repositories",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "innerhalb deines Repositories",
+    "text": "innerhalb deines Repositories"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud",
+    "href": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "innerhalb Posit Cloud",
+    "text": "innerhalb Posit Cloud\nFüge diesen Link als Lesezeichen in deinem Browser hinzu!\n\nhttps://posit.cloud/spaces/543494/content/"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud-1",
+    "href": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "innerhalb Posit Cloud",
+    "text": "innerhalb Posit Cloud"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
+    "href": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren.\nDie Lernenden…"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#pause-machen",
+    "href": "folien/md-02-datenvisualisierung.html#pause-machen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#r-paket-ggplot2",
+    "href": "folien/md-02-datenvisualisierung.html#r-paket-ggplot2",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "R Paket ggplot2",
+    "text": "R Paket ggplot2\n\n\n\nggplot2 ist das Datenvisualisierungspaket von tidyverse\ngg” in “ggplot2” steht für “Grammar of Graphics”\nInspiriert durch das Buch Grammar of Graphics von Leland Wilkinson\nDokumentation: https://ggplot2.tidyverse.org/\nBuch: https://ggplot2-book.org"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-r",
+    "href": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-r",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Ich bin dran: Arbeiten mit R",
+    "text": "Ich bin dran: Arbeiten mit R\n\n\nZurücklehnen und genießen!"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot() ist die Hauptfunktion von ggplot2\nPlots werden in Schichten aufgebaut\nDie Struktur des Codes für Plots lässt sich wie folgt zusammenfassen\n\n\nggplot(data = [datensatz], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n  geom_xxx() +\n  andere Optionen"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-1",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-2",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-2",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder)"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-3",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-3",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes())"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-4",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-4",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-5",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-5",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-6",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-6",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#poll-1-was-stellt-die-dicke-linie-innerhalb-des-kastens-eines-boxplots-dar",
+    "href": "folien/md-02-datenvisualisierung.html#poll-1-was-stellt-die-dicke-linie-innerhalb-des-kastens-eines-boxplots-dar",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?",
+    "text": "Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?\n\n\n\nIch weiß es nicht\nder Mittelwert der Beobachtungen\ndie Mitte der Box\nder Median der Beobachtungen"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#poll-2-wie-viel-prozent-der-beobachtungen-befinden-sich-innerhalb-der-box-eines-boxplots-interquartilsbereich",
+    "href": "folien/md-02-datenvisualisierung.html#poll-2-wie-viel-prozent-der-beobachtungen-befinden-sich-innerhalb-der-box-eines-boxplots-interquartilsbereich",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Poll 2: Wie viel Prozent der Beobachtungen befinden sich innerhalb der Box eines Boxplots (Interquartilsbereich)?",
+    "text": "Poll 2: Wie viel Prozent der Beobachtungen befinden sich innerhalb der Box eines Boxplots (Interquartilsbereich)?\n\n\n\nIch weiß es nicht\n25%\nhängt vom Median ab\n50%"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#poll-3-was-ist-der-median-einer-gruppe-von-beobachtungen",
+    "href": "folien/md-02-datenvisualisierung.html#poll-3-was-ist-der-median-einer-gruppe-von-beobachtungen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Poll 3: Was ist der Median einer Gruppe von Beobachtungen?",
+    "text": "Poll 3: Was ist der Median einer Gruppe von Beobachtungen?\n\nIch weiß es nicht\nDer Median ist der am häufigsten vorkommende Wert in einem Datensatz.\nDer Median ist die Summe aller Werte in einem Datensatz geteilt durch die Anzahl der Beobachtungen.\nDer Median ist der Punkt, über und unter dem die Hälfte (50%) der Beobachtungen liegt."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#boxplot-erklärt",
+    "href": "folien/md-02-datenvisualisierung.html#boxplot-erklärt",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Boxplot, erklärt",
+    "text": "Boxplot, erklärt\n\n\nFigure 1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.\n\nBild entnommen aus: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nDie Box ist ein Feld, das den Bereich der mittleren Hälfte der Daten angibt, eine Distanz, die als Interquartilbereich (IQR) bekannt ist und sich vom 25. Perzentil der Verteilung bis zum 75. Perzentil erstreckt.\nIn der Mitte der Box befindet sich eine Linie, die den Median, d. h. das 50. Perzentil, der Verteilung anzeigt.\nDiese drei Linien vermitteln einen Eindruck von der Streuung der Verteilung und davon, ob die Verteilung symmetrisch um den Median oder zu einer Seite hin verzerrt ist.\nVisuelle Punkte, die Beobachtungen anzeigen, die mehr als das 1,5-Fache des IQR von einem der Ränder des Kastens entfernt liegen. Diese Ausreißer sind ungewöhnlich und werden daher einzeln dargestellt.\nEine Linie (oder ein Whisker), die sich von jedem Ende des Kastens bis zum am weitesten entfernten Punkt in der Verteilung erstreckt, der kein Ausreißer ist."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
+    "href": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Wir sind dran: md-02-uebungen",
+    "text": "Wir sind dran: md-02-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei TODO: md-02b-datenvisualisierung.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#pause-machen-1",
+    "href": "folien/md-02-datenvisualisierung.html#pause-machen-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#arten-von-variablen",
+    "href": "folien/md-02-datenvisualisierung.html#arten-von-variablen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Arten von Variablen",
+    "text": "Arten von Variablen\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage, Schulnoten)"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#histogramm",
+    "href": "folien/md-02-datenvisualisierung.html#histogramm",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Histogramm",
+    "text": "Histogramm\n\nzur Visualisierung der Verteilung von kontinuierlichen (numerischen) Variablen\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g)) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#barplot-säulendiagramm",
+    "href": "folien/md-02-datenvisualisierung.html#barplot-säulendiagramm",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Barplot (Säulendiagramm)",
+    "text": "Barplot (Säulendiagramm)\n\nzur Visualisierung der Verteilung von kategorischen (nicht numerischen) Variablen\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#scatterplot-streudiagramm",
+    "href": "folien/md-02-datenvisualisierung.html#scatterplot-streudiagramm",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Scatterplot (Streudiagramm)",
+    "text": "Scatterplot (Streudiagramm)\n\nfor visualizing relationships between two continuous (numerical) variables\n\n\nggplot(data = gapminder_2007,\n       mapping = aes(x = gdpPercap,\n                     y = lifeExp,\n                     size = pop,\n                     color = continent)) +\n  geom_point() +\n  scale_color_colorblind() +\n  theme_minimal()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#du-bist-dran-md-02-exercises",
+    "href": "folien/md-02-datenvisualisierung.html#du-bist-dran-md-02-exercises",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Du bist dran: md-02-exercises",
+    "text": "Du bist dran: md-02-exercises\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei TODO: md-02c-diagramm.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#modul-2-dokumentation",
+    "href": "folien/md-02-datenvisualisierung.html#modul-2-dokumentation",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Modul 2 Dokumentation",
+    "text": "Modul 2 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-02.html"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-02-datenvisualisierung.html#zusatzaufgaben-abgabedatum",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Zusatzaufgaben Abgabedatum",
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 07. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 10. Oktober"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#danke-1",
+    "href": "folien/md-02-datenvisualisierung.html#danke-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Danke! 🌻",
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#triff-das-stat",
+    "href": "folien/md-02-datenvisualisierung.html#triff-das-stat",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Triff das STAT",
+    "text": "Triff das STAT"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#triff-die-kursleitung",
+    "href": "folien/md-02-datenvisualisierung.html#triff-die-kursleitung",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Triff die Kursleitung",
+    "text": "Triff die Kursleitung\n\n\nPhilipp Bosch\n\n\n\n\n\n\nPunkt 1\nPunkt 2\nPunkt 3\n\n\nThomas Knecht\n\n\n\n\n\n\nPunkt 1\nPunkt 2\nPunkt 3"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#dap",
+    "href": "folien/md-02-datenvisualisierung.html#dap",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "DAP",
+    "text": "DAP\n\nPunkt 1"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-der-github-organisation",
+    "href": "folien/md-02-datenvisualisierung.html#innerhalb-der-github-organisation",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "innerhalb der GitHub Organisation",
+    "text": "innerhalb der GitHub Organisation\n\nSuche in der Suchleiste nach deinem Benutzernamen unter Repositories"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#versionskontrolle---terminologie-1",
+    "href": "folien/md-02-datenvisualisierung.html#versionskontrolle---terminologie-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Versionskontrolle - Terminologie",
+    "text": "Versionskontrolle - Terminologie\nTODO: Diagramm als Übersicht für Git Terminologie"
   }
 ]
