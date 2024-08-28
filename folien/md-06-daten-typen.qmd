@@ -1,8 +1,8 @@
 ---
-title: "{{< var md-04.titel >}}"
+title: "{{< var md-06.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2024-10-15"
+date: "2024-10-29"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -15,7 +15,7 @@ editor: source
 execute:
   freeze: auto
 params:
-    modul: 4
+    modul: 6
 editor_options: 
   chunk_output_type: console
 ---
@@ -43,27 +43,27 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
 ```
 
-# Zusatzaufgaben Modul 4 {background-color="#4C326A"}
+# Zusatzaufgaben Modul 6 {background-color="#4C326A"}
 
-## Modul 4 Dokumentation
+## Modul 6 Dokumentation
 
 ::: learn-more
-[rstatszh-k009.github.io/website/module/md-04.html](https://rstatszh-k009.github.io/website/module/md-04.html)
+[rstatszh-k009.github.io/website/module/md-06.html](https://rstatszh-k009.github.io/website/module/md-06.html)
 
 ```{=html}
-<iframe src="https://rstatszh-k009.github.io/website/module/md-04.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 4 Dokumentation"></iframe>
+<iframe src="https://rstatszh-k009.github.io/website/module/md-06.html" width="100%" height="500" style="border:2px solid #123233;" title="Modul 6 Dokumentation"></iframe>
 ```
 :::
 
 ## Zusatzaufgaben Abgabedatum
 
--   Abgabedatum: [Montag, 21. Oktober]{.highlight-yellow}
--   Korrektur- und Feedbackphase bis zu: Donnerstag, 24. Oktober 
+-   Abgabedatum: [Montag, 04. November]{.highlight-yellow}
+-   Korrektur- und Feedbackphase bis zu: Donnerstag, 07. November 
 
 # Danke {background-color="#4C326A"}
 
 ## Danke! `r emo::ji("sunflower")` 
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-04-daten-management.pdf)
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-06-daten-typen.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
