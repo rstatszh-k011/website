@@ -1024,5 +1024,152 @@
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Versionskontrolle - Terminologie",
     "text": "Versionskontrolle - Terminologie\nTODO: Diagramm als Übersicht für Git Terminologie"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
+    "href": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen."
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#eine-grammatik-der-datenmanipulation",
+    "href": "folien/md-03-datentransformation.html#eine-grammatik-der-datenmanipulation",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Eine Grammatik der Datenmanipulation…",
+    "text": "Eine Grammatik der Datenmanipulation…\n… basierend auf den Konzepten von Funktionen als Verben, die Dataframes manipulieren\n\n\n\n\n\n\n\n\n\n\n\n\n\nselect: Spalten nach Namen auswählen\narrange: Zeilen neu ordnen\nfilter: wählt Zeilen aus, die den Kriterien entsprechen\nrelocate: ändert die Reihenfolge der Spalten\nmutate: neue Variablen hinzufügen\nsummarise: Variablen auf Werte reduzieren\ngroup_by: für gruppierte Operationen\n… (viele mehr)"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#dplyr-rules",
+    "href": "folien/md-03-datentransformation.html#dplyr-rules",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "dplyr rules",
+    "text": "dplyr rules\nRegeln der dplyr-Funktionen:\n\n\nDas erste Argument ist immer ein Dataframe.\nNachfolgende Argumente sagen, was mit diesem Dataframe geschehen soll.\nGibt immer einen Dataframe zurück.\nNichts wird an Ort und Stelle verändert."
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#funktionen-argumente",
+    "href": "folien/md-03-datentransformation.html#funktionen-argumente",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Funktionen & Argumente",
+    "text": "Funktionen & Argumente\n\nlibrary(dplyr)\n\nfilter(.data = gapminder, \n       year == 2007)\n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#objekte",
+    "href": "folien/md-03-datentransformation.html#objekte",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Objekte",
+    "text": "Objekte\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird\nDaten (Objekt): gapminder_2007"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#operatoren",
+    "href": "folien/md-03-datentransformation.html#operatoren",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Operatoren",
+    "text": "Operatoren\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird\nDaten (Objekt): gapminder_2007\nZuweisungsoperator: &lt;-\nPipe Operator: |&gt;"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#grafik",
+    "href": "folien/md-03-datentransformation.html#grafik",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Grafik",
+    "text": "Grafik\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\nggplot(data = gapminder_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp,\n                     fill = continent)) +\n  geom_boxplot(outlier.shape = NA)"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#daten",
+    "href": "folien/md-03-datentransformation.html#daten",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Daten",
+    "text": "Daten\n\ntreibhausgase &lt;- read_csv(\"daten/ktzh-treibhausgase.csv\")\n\n\nhead(treibhausgase)\n\n\n\n\n\n\n\njahr\nhauptgruppe\nuntergruppe\nthg\nthg_agg\nemission\n\n\n\n\n1990\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1991\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1992\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1993\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1994\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1995\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n\n\n\n\n\n\nncol(treibhausgase)\n\n[1] 6\n\n\n\n\n\n\nnrow(treibhausgase)\n\n[1] 1980"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#data",
+    "href": "folien/md-03-datentransformation.html#data",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Data",
+    "text": "Data\n\ntreibhausgase |&gt; \n  distinct(hauptgruppe, untergruppe)\n\n\n\n\n\n\nhauptgruppe\nuntergruppe\n\n\n\n\nAbwasser und Abfall\nAbfalldeponie\n\n\nAbwasser und Abfall\nAbwasserbehandlung\n\n\nAbwasser und Abfall\nAbfallverbrennung\n\n\nLandwirtschaft\nFermentation bei der Verdauung\n\n\nLandwirtschaft\nWirtschaftsdünger-Management\n\n\nLandwirtschaft\nLandwirtschaftliche Böden\n\n\nVerkehr\nMotorräder\n\n\nVerkehr\nPersonenwagen\n\n\nVerkehr\nLinien-/Omnibusse\n\n\nVerkehr\nReisebusse\n\n\nVerkehr\nLastkraftwagen\n\n\nVerkehr\nSattelzugmaschinen\n\n\nLandwirtschaft\nLand- und forstwirtschaftliche Maschinen\n\n\nIndustrie\nIndustrielle Fahrzeuge und Baumaschinen\n\n\nVerkehr\nSchiene\n\n\nVerkehr\nSchiff\n\n\nGebäude\nHeizkessel Dienstleistungen Heizöl\n\n\nGebäude\nHeizkessel Haushalte Heizöl\n\n\nGebäude\nHeizkessel Dienstleistungen Gas\n\n\nGebäude\nHeizkessel Haushalte Gas\n\n\nAbwasser und Abfall\nKVA\n\n\nIndustrie\nIndustrielle Prozesse nichtenergetisch\n\n\nIndustrie\nIndustrielle Prozesse energetisch"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
+    "href": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Wir sind dran: md-03-uebungen",
+    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#pause-machen",
+    "href": "folien/md-03-datentransformation.html#pause-machen",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
+    "href": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Ihr seid dran: 02-dplyr-ihr.qmd",
+    "text": "Ihr seid dran: 02-dplyr-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-dplyr-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#r-terminology",
+    "href": "folien/md-03-datentransformation.html#r-terminology",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "R Terminology",
+    "text": "R Terminology\n\nlibrary(dplyr)\n\ntreibhausgase_verkehr &lt;- treibhausgase |&gt; \n    filter(hauptgruppe == \"Verkehr\", jahr == 2022) \n\n\nFunktion: filter()\nArgumente, die folgen: hauptgruppe == \"Verkehr\" Was ist mit den Daten gemacht wird\nDaten (Objekt): treibhausgase_verkehr\nZuweisungsoperator: &lt;-\nPipe Operator: |&gt;"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram",
+    "href": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Aufgabe 1.3 - Verbundenes Streudiagram",
+    "text": "Aufgabe 1.3 - Verbundenes Streudiagram\n Großartig für Zeitreihendaten \n\n\nBenutze die Funktion ggplot(), um ein verbundenmes Streudiagramm mit geom_point() und geom_line() für die Daten zu erstellen, die du in Aufgabe 1.2 erstellt hast.\nVerwende die Funktion aes(), um die Variable “jahr” auf die x-Achse, die Variable “emission” auf die y-Achse und die Variable “untergruppe” auf die Farbe und die ästhetische Gruppe zu übertragen.\nÄndere die Farben mit scale_color_colorblind().\n\n\n\ntreibhausgase |&gt; \n    filter(hauptgruppe == \"Gebäude\") |&gt; \n    ggplot(aes(x = jahr, y = emission, color = untergruppe)) +\n    geom_point() +\n    geom_path()"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram-output",
+    "href": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram-output",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Aufgabe 1.3 - Verbundenes Streudiagram",
+    "text": "Aufgabe 1.3 - Verbundenes Streudiagram"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
+    "href": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Wir sind dran: 03-dplyr-wir.qmd",
+    "text": "Wir sind dran: 03-dplyr-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#pause-machen-1",
+    "href": "folien/md-03-datentransformation.html#pause-machen-1",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#todo-04-dplyr-ihr.qmd",
+    "href": "folien/md-03-datentransformation.html#todo-04-dplyr-ihr.qmd",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "TODO: 04-dplyr-ihr.qmd",
+    "text": "TODO: 04-dplyr-ihr.qmd\n\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#modul-3-dokumentation",
+    "href": "folien/md-03-datentransformation.html#modul-3-dokumentation",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Modul 3 Dokumentation",
+    "text": "Modul 3 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-03.html"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Zusatzaufgaben Abgabedatum",
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 14. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 17. Oktober"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#danke-1",
+    "href": "folien/md-03-datentransformation.html#danke-1",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Danke! 🌻",
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   }
 ]
