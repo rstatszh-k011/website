@@ -24,7 +24,7 @@
     "href": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
     "title": "Vorbereitung - rstatsZH Kurs 009",
     "section": " Was muss ich vor Tag 1 vorbereiten?",
-    "text": "Was muss ich vor Tag 1 vorbereiten?\nVor Tag 1 arbeite durch die folgenden vier Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R 4 Data Science.\nSchritt 4: Fülle die Umfrage vor dem Kurs bis Donnerstag, den 18. September 2024 aus.",
+    "text": "Was muss ich vor Tag 1 vorbereiten?\nVor Tag 1 arbeite durch die folgenden vier Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen bis Freitag, den 20. September 2024 aus.",
     "crumbs": [
       "Vorbereitung"
     ]
@@ -411,11 +411,11 @@
     "text": "Website zum Kurs\nrstatszh-k009.github.io/website/"
   },
   {
-    "objectID": "folien/md-01-willkommen.html#jetzt-sind-wir-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
-    "href": "folien/md-01-willkommen.html#jetzt-sind-wir-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
+    "objectID": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
+    "href": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "Jetzt sind wir dran: Öffne und speichere die Kurswebsite als Lesezeichen",
-    "text": "Jetzt sind wir dran: Öffne und speichere die Kurswebsite als Lesezeichen\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k009 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k009 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00"
+    "section": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen",
+    "text": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k009 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k009 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#lernziele-für-diese-woche",
@@ -1381,12 +1381,5 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
-  },
-  {
-    "objectID": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
-    "href": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
-    "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen",
-    "text": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k009 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k009 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00"
   }
 ]
