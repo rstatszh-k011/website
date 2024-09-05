@@ -78,63 +78,90 @@
     "href": "module/md-09.html#folien",
     "title": "Modul 9",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
+    "text": "Folien\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 09"
+    ]
   },
   {
     "objectID": "module/md-09.html#lesematerial",
     "href": "module/md-09.html#lesematerial",
     "title": "Modul 9",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 09"
+    ]
   },
   {
     "objectID": "module/md-09.html#übungsaufgaben",
     "href": "module/md-09.html#übungsaufgaben",
     "title": "Modul 9",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 09"
+    ]
   },
   {
     "objectID": "module/md-06.html#folien",
     "href": "module/md-06.html#folien",
     "title": "Modul 6",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
+    "text": "Folien\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 06"
+    ]
   },
   {
     "objectID": "module/md-06.html#lesematerial",
     "href": "module/md-06.html#lesematerial",
     "title": "Modul 6",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 06"
+    ]
   },
   {
     "objectID": "module/md-06.html#übungsaufgaben",
     "href": "module/md-06.html#übungsaufgaben",
     "title": "Modul 6",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 06"
+    ]
   },
   {
     "objectID": "module/md-10.html#folien",
     "href": "module/md-10.html#folien",
     "title": "Modul 10",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
+    "text": "Folien\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 10"
+    ]
   },
   {
     "objectID": "module/md-10.html#lesematerial",
     "href": "module/md-10.html#lesematerial",
     "title": "Modul 10",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 10"
+    ]
   },
   {
     "objectID": "module/md-10.html#übungsaufgaben",
     "href": "module/md-10.html#übungsaufgaben",
     "title": "Modul 10",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 10"
+    ]
   },
   {
     "objectID": "module/md-01.html",
@@ -191,21 +218,30 @@
     "href": "module/md-03.html#folien",
     "title": "Modul 3",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
+    "text": "Folien\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 03"
+    ]
   },
   {
     "objectID": "module/md-03.html#lesematerial",
     "href": "module/md-03.html#lesematerial",
     "title": "Modul 3",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 03"
+    ]
   },
   {
     "objectID": "module/md-03.html#übungsaufgaben",
     "href": "module/md-03.html#übungsaufgaben",
     "title": "Modul 3",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 03"
+    ]
   },
   {
     "objectID": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
@@ -1143,133 +1179,190 @@
     "href": "module/md-02.html",
     "title": "Modul 2",
     "section": "",
-    "text": "Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren.\nDie Lernenden…"
+    "text": "Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren.\nDie Lernenden…",
+    "crumbs": [
+      "Modul 02"
+    ]
   },
   {
     "objectID": "module/md-02.html#lernziele",
     "href": "module/md-02.html#lernziele",
     "title": "Modul 2",
     "section": "",
-    "text": "Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren.\nDie Lernenden…"
+    "text": "Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren.\nDie Lernenden…",
+    "crumbs": [
+      "Modul 02"
+    ]
   },
   {
     "objectID": "module/md-02.html#folien",
     "href": "module/md-02.html#folien",
     "title": "Modul 2",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
+    "text": "Folien\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 02"
+    ]
   },
   {
     "objectID": "module/md-02.html#lesematerial",
     "href": "module/md-02.html#lesematerial",
     "title": "Modul 2",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 02"
+    ]
   },
   {
     "objectID": "module/md-02.html#übungsaufgaben",
     "href": "module/md-02.html#übungsaufgaben",
     "title": "Modul 2",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 02"
+    ]
   },
   {
     "objectID": "module/md-05.html",
     "href": "module/md-05.html",
     "title": "Modul 5",
     "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
+    "crumbs": [
+      "Modul 05"
+    ]
   },
   {
     "objectID": "module/md-05.html#lernziele",
     "href": "module/md-05.html#lernziele",
     "title": "Modul 5",
     "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren."
+    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
+    "crumbs": [
+      "Modul 05"
+    ]
   },
   {
     "objectID": "module/md-05.html#folien",
     "href": "module/md-05.html#folien",
     "title": "Modul 5",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
+    "text": "Folien\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 05"
+    ]
   },
   {
     "objectID": "module/md-05.html#lesematerial",
     "href": "module/md-05.html#lesematerial",
     "title": "Modul 5",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 05"
+    ]
   },
   {
     "objectID": "module/md-05.html#übungsaufgaben",
     "href": "module/md-05.html#übungsaufgaben",
     "title": "Modul 5",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 05"
+    ]
   },
   {
     "objectID": "module/md-04.html#folien",
     "href": "module/md-04.html#folien",
     "title": "Modul 4",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
+    "text": "Folien\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 04"
+    ]
   },
   {
     "objectID": "module/md-04.html#lesematerial",
     "href": "module/md-04.html#lesematerial",
     "title": "Modul 4",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 04"
+    ]
   },
   {
     "objectID": "module/md-04.html#übungsaufgaben",
     "href": "module/md-04.html#übungsaufgaben",
     "title": "Modul 4",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 04"
+    ]
   },
   {
     "objectID": "module/md-07.html#folien",
     "href": "module/md-07.html#folien",
     "title": "Modul 7",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
+    "text": "Folien\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 07"
+    ]
   },
   {
     "objectID": "module/md-07.html#lesematerial",
     "href": "module/md-07.html#lesematerial",
     "title": "Modul 7",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 07"
+    ]
   },
   {
     "objectID": "module/md-07.html#übungsaufgaben",
     "href": "module/md-07.html#übungsaufgaben",
     "title": "Modul 7",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 07"
+    ]
   },
   {
     "objectID": "module/md-08.html#folien",
     "href": "module/md-08.html#folien",
     "title": "Modul 8",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung"
+    "text": "Folien\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 08"
+    ]
   },
   {
     "objectID": "module/md-08.html#lesematerial",
     "href": "module/md-08.html#lesematerial",
     "title": "Modul 8",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung"
+    "text": "Lesematerial\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 08"
+    ]
   },
   {
     "objectID": "module/md-08.html#übungsaufgaben",
     "href": "module/md-08.html#übungsaufgaben",
     "title": "Modul 8",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung"
+    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "crumbs": [
+      "Modul 08"
+    ]
   },
   {
     "objectID": "vorbereitung/02-posit-cloud.html",
