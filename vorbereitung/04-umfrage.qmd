@@ -1,3 +1,5 @@
-# Umfrage
+# Fragebogen 
 
-- In Vorbereitung
+Vielen Dank für die Teilnahme am Kurs "rstatsZH - Data Science mit R". Der folgende Fragebogen beinhaltet Fragen welche für die Kursverwaltung und für Berichtszwecke genutzt werden. Vielen Dank für das Ausfüllen.
+
+Fragebogen: <https://forms.gle/oRKgrm68UV17vUZ6A>

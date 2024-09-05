@@ -49,8 +49,7 @@ library(epoxy)
 :::
 :::
 
-## Lernziele des Kurses
-
+## Lernziele des Kurses {.scrollable}
 
 Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:
 
@@ -60,10 +59,14 @@ Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:
     Datenanalyseprojekten zu veranschaulichen und öffentlich zu
     kommunizieren.
 
+. . . 
+
 2.  Teilnehmer:innen können das Quarto-Dateiformat und den visuellen
     Bearbeitungsmodus der RStudio IDE zu verwenden, um
     technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten,
     Querverweisen, Abbildungen und Tabellen zu erstellen.
+    
+. . . 
 
 3.  Teilnehmer:innen können Git Versionskontrolle verwerden um: (1)
     Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu
@@ -78,9 +81,8 @@ Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:
 ## Du bist dran: Über Dich
 
 ::: task
-Wähle einen Gegenstand aus und mache dir eine Minute lang Notizen:
-
-Was hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?
+- Wähle einen Gegenstand aus und mache dir eine Minute lang Notizen.
+- Was hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?
 :::
 
 ![](img/md-01/items-slide.001.png)
@@ -96,7 +98,7 @@ countdown(minutes = 1)
 ::: task
 **Nehmt euch jeweils 2 Minuten Zeit, um euch auszutauschen:**
 
-Was hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?
+- Was hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?
 :::
 
 ![](img/md-01/items-slide.001.png)
@@ -200,7 +202,7 @@ bereitet, lass es mich bitte wissen.
 
 [rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
 
-## Jetzt sind wir dran: Öffne und speichere die Kurswebsite als Lesezeichen
+## Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen
 
 ::: task
 1. Öffne einen Webbrowser auf deinem Arbeitsgerät.
@@ -263,7 +265,7 @@ Ich gehe davon aus, dass du:
 
 Ich bringe dir bei:
 
-– R
+- R
 
 - Quarto-Syntax und -Formate
 
@@ -513,7 +515,7 @@ countdown(minutes = 15)
 ```
 :::
 
-# Danke {background-color="#4C326A"}
+# Danke! {background-color="#4C326A"}
 
 ## Danke! `r emo::ji("sunflower")` 
 

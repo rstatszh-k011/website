@@ -17,7 +17,7 @@ library(dplyr)
 kursplan <- "https://docs.google.com/spreadsheets/d/1zNG1qrFBDH8l76G-DQNaHDejbS3PR75_zmK0_7LiARY/edit?gid=0#gid=0"
 
 read_sheet(ss = kursplan) |> 
-    mutate(title = case_when(
+    mutate(titel = case_when(
         is.na(link) == FALSE ~  paste0("[", titel, "](", link, ")"),
         TRUE ~ titel
     )) |>

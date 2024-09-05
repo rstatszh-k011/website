@@ -1,0 +1,19 @@
+{
+  "hash": "67eef36cd777de05b7312c166a280f36",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"{{< var md-10.titel >}}\"\nsubtitle: \"{{< var course.long-titel >}}\"\nauthor: \"Lars Schöbitz\"\ndate: \"2024-11-26\"\ndate-format: \"MMM D, YYYY\"\nformat: \n  revealjs: \n    theme: slides.scss\n    transition: fade\n    slide-number: true\n    chalkboard: true\nfooter: \"[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})\"\neditor: source\nexecute:\n  freeze: auto\nparams:\n    modul: 10\neditor_options: \n  chunk_output_type: console\n---\n\n\n\n\n## Lernziele (für diese Woche)\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\n2. Die Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\n3. Die Lernenden verstehen die dplyr-Funktion across() anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird.\n4. Die Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen.\n:::\n\n\n# Zusatzaufgaben Modul 10 {background-color=\"#4C326A\"}\n\n## Modul 10 Dokumentation\n\n::: learn-more\n[rstatszh-k009.github.io/website/module/md-10.html](https://rstatszh-k009.github.io/website/module/md-10.html)\n\n\n```{=html}\n<iframe src=\"https://rstatszh-k009.github.io/website/module/md-10.html\" width=\"100%\" height=\"500\" style=\"border:2px solid #123233;\" title=\"Modul 10 Dokumentation\"></iframe>\n```\n\n:::\n\n## Zusatzaufgaben Abgabedatum\n\n-   Abgabedatum: [Montag, 02. Dezember]{.highlight-yellow}\n-   Korrektur- und Feedbackphase bis zu: Donnerstag, 05. Dezember \n\n# Danke {background-color=\"#4C326A\"}\n\n## Danke! 🌻 \n\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-10-funktionen.pdf)\n\nAlle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

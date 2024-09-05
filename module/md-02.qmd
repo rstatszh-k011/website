@@ -21,12 +21,6 @@ library(epoxy)
 ```
 
 ```{r}
-#| label: setup
-
-library(epoxy)
-```
-
-```{r}
 #| label: lernziele
 
 lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
@@ -41,7 +35,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ## {{< fa display >}} Folien
 
-- In Vorbereitun
+- In Vorbereitung
 
 ## {{< fa book >}} Lesematerial
 

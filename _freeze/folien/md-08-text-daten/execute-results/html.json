@@ -1,0 +1,19 @@
+{
+  "hash": "ae0f63ccaf8763794084ddb0a524657b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"{{< var md-08.titel >}}\"\nsubtitle: \"{{< var course.long-titel >}}\"\nauthor: \"Lars Schöbitz\"\ndate: \"2024-11-12\"\ndate-format: \"MMM D, YYYY\"\nformat: \n  revealjs: \n    theme: slides.scss\n    transition: fade\n    slide-number: true\n    chalkboard: true\nfooter: \"[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})\"\neditor: source\nexecute:\n  freeze: auto\nparams:\n    modul: 8\neditor_options: \n  chunk_output_type: console\n---\n\n\n\n\n## Lernziele (für diese Woche)\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Die Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\n2. Due Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\n3. Die Lernenden können einen merge conflict innerhalb eines R-Skriptes lösen.\n:::\n\n\n# Zusatzaufgaben Modul 8 {background-color=\"#4C326A\"}\n\n## Modul 8 Dokumentation\n\n::: learn-more\n[rstatszh-k009.github.io/website/module/md-08.html](https://rstatszh-k009.github.io/website/module/md-08.html)\n\n\n```{=html}\n<iframe src=\"https://rstatszh-k009.github.io/website/module/md-08.html\" width=\"100%\" height=\"500\" style=\"border:2px solid #123233;\" title=\"Modul 8 Dokumentation\"></iframe>\n```\n\n:::\n\n## Zusatzaufgaben Abgabedatum\n\n-   Abgabedatum: [Montag, 18. November]{.highlight-yellow}\n-   Korrektur- und Feedbackphase bis zu: Donnerstag, 21. November \n\n# Danke {background-color=\"#4C326A\"}\n\n## Danke! 🌻 \n\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-08-text-daten.pdf)\n\nAlle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

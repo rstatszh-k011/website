@@ -1,9 +1,11 @@
 {
-  "hash": "f74561b2117ef0f110b395b86aea60c3",
+  "hash": "98fe067394d3746519b790d448ae9a7f",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Modul 2\"\nsubtitle: \"{{< var md-02.titel >}}\"\neditor: source\nparams:\n    modul: 2\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n\n## Lernziele\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n3. \n:::\n\n\n## {{< fa display >}} Folien\n\n- In Vorbereitun\n\n## {{< fa book >}} Lesematerial\n\n- In Vorbereitung\n\n## {{< fa code >}} Übungsaufgaben\n\n- In Vorbereitung",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Modul 2\"\nsubtitle: \"{{< var md-02.titel >}}\"\neditor: source\nparams:\n    modul: 2\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n\n## Lernziele\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\n2. Die Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\n3. Die Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\n4. Die Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren.\n5. Die Lernenden...\n:::\n\n\n## {{< fa display >}} Folien\n\n- In Vorbereitung\n\n## {{< fa book >}} Lesematerial\n\n- In Vorbereitung\n\n## {{< fa code >}} Übungsaufgaben\n\n- In Vorbereitung",
+    "supporting": [
+      "md-02_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

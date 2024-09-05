@@ -1,8 +1,8 @@
 # Kursbuch: R for Data Science
 
-"R for Data Science" von Hadley Wickham und Garrett Grolemund ist ein unverzichtbarer Leitfaden für Anfänger:innen, die in die Welt der Datenwissenschaft mit R eintauchen möchten. Dieses Buch führt die Leser:innen in R, RStudio und den Tidyverse ein, eine Suite von R-Paketen, die entwickelt wurde, um datenwissenschaftliche Aufgaben zu optimieren und sie schnell, intuitiv und angenehm zu gestalten. 
+"R for Data Science" von Hadley Wickham und Garrett Grolemund ist ein unverzichtbarer Leitfaden für Anfänger:innen, die in die Welt der Datenwissenschaft mit R eintauchen möchten. Dieses Buch führt die Leser:innen in R, RStudio und den Tidyverse ein, eine Sammlung von R-Paketen, die entwickelt wurde, um datenwissenschaftliche Aufgaben zu optimieren und intuitiv zu gestalten. 
 
-Es behandelt den gesamten datenwissenschaftlichen Prozess, einschließlich des Imports, Aufräumens, Transformierens, Visualisierens und Modellierens von Daten, wobei bewährte Verfahren und effiziente Arbeitsabläufe im Vordergrund stehen. Das Buch ist so aufgebaut, dass es Anfänger:innen dabei hilft, eine solide Grundlage in der Datenmanipulation und -analyse zu entwickeln, und bietet praktische Übungen zur Festigung des Gelernten. 
+Es behandelt den gesamten datenwissenschaftlichen Prozess, einschließlich des Imports, Aufräumens (Cleaning), Transformierens, Visualisierens und Modellierens von Daten, wobei bewährte Verfahren und effiziente Arbeitsabläufe im Vordergrund stehen. Das Buch ist so aufgebaut, dass es Anfänger:innen dabei hilft, eine solide Grundlage in der Datenmanipulation und -analyse zu entwickeln, und bietet praktische Übungen zur Festigung des Gelernten. 
 
 Dieses Buch stellt das Kursbuch für diesen Kurs da. Der Zeitrahmen für den Kurs lässt es nicht zu durch sämtliche Kapitel zu arbeiten, jedoch werden die Kursteilnehmer:innen am Ende des Kurses mit den Fähigkeiten ausgestattet sein mittels des Buches selbstständig weiterzulernen.
 

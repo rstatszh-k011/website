@@ -49,25 +49,25 @@ website:
       - href: kalendar.qmd
         text: Kurskalender
       - text: "---"
-      - section: "Modul 01"
+      - text: "Modul 01"
         href: module/md-01.qmd
-      - section: "Modul 02"
+      - text: "Modul 02"
         href: module/md-01.qmd
-      - section: "Modul 03"
+      - text: "Modul 03"
         href: module/md-01.qmd
-      - section: "Modul 04"
+      - text: "Modul 04"
         href: module/md-01.qmd
-      - section: "Modul 05"
+      - text: "Modul 05"
         href: module/md-01.qmd
-      - section: "Modul 06"
+      - text: "Modul 06"
         href: module/md-01.qmd
-      - section: "Modul 07"
+      - text: "Modul 07"
         href: module/md-01.qmd
-      - section: "Modul 08"
+      - text: "Modul 08"
         href: module/md-01.qmd
-      - section: "Modul 09"
+      - text: "Modul 09"
         href: module/md-01.qmd
-      - section: "Modul 10"
+      - text: "Modul 10"
         href: module/md-01.qmd
 
 format:
