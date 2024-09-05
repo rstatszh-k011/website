@@ -2,7 +2,7 @@
   "hash": "804ac922cff45a3e1116db2064fd3eec",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Modul 9\"\nsubtitle: \"{{< var md-09.titel >}}\"\neditor: source\nparams:\n    modul: 9\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n\n## Lernziele\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. \n2. \n3. \n:::\n\n\n## {{< fa display >}} Folien\n\n- In Vorbereitung\n\n## {{< fa book >}} Lesematerial\n\n- In Vorbereitung\n\n## {{< fa code >}} Übungsaufgaben\n\n- In Vorbereitung",
+    "markdown": "---\ntitle: \"Modul 9\"\nsubtitle: \"{{< var md-09.titel >}}\"\neditor: source\nparams:\n    modul: 9\nexecute: \n  echo: false\n  warning: false\nbibliography: referenzen.bib\neditor_options: \n  chunk_output_type: console\n---\n\n\n## Lernziele\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n1. Die Lernenden können Literaturangaben zu Quarto-Dateien hinzufügen, indem sie das Navigationsmenü des visuellen Editors RStudio verwenden und eine Referenzsammlung im .bib Dateformat erstellen.\n2. Die Lernenden können Funktionen aus den Paketen knitr und gt anwenden, um Tabellen in Berichten im HTML Ausgabeformat darzustellen.\n3. Die Lernenden können den GitHub Pages Dienst nutzen, um ein Repository als eigenständige Website zu veröffentlichen.\n:::\n\n\n## {{< fa display >}} Folien\n\n- In Vorbereitung\n\n## {{< fa book >}} Lesematerial\n\n- In Vorbereitung\n\n## {{< fa code >}} Übungsaufgaben\n\n- In Vorbereitung",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

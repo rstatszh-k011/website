@@ -74,6 +74,26 @@
     ]
   },
   {
+    "objectID": "module/md-09.html",
+    "href": "module/md-09.html",
+    "title": "Modul 9",
+    "section": "",
+    "text": "Die Lernenden können Literaturangaben zu Quarto-Dateien hinzufügen, indem sie das Navigationsmenü des visuellen Editors RStudio verwenden und eine Referenzsammlung im .bib Dateformat erstellen.\nDie Lernenden können Funktionen aus den Paketen knitr und gt anwenden, um Tabellen in Berichten im HTML Ausgabeformat darzustellen.\nDie Lernenden können den GitHub Pages Dienst nutzen, um ein Repository als eigenständige Website zu veröffentlichen.",
+    "crumbs": [
+      "Modul 09"
+    ]
+  },
+  {
+    "objectID": "module/md-09.html#lernziele",
+    "href": "module/md-09.html#lernziele",
+    "title": "Modul 9",
+    "section": "",
+    "text": "Die Lernenden können Literaturangaben zu Quarto-Dateien hinzufügen, indem sie das Navigationsmenü des visuellen Editors RStudio verwenden und eine Referenzsammlung im .bib Dateformat erstellen.\nDie Lernenden können Funktionen aus den Paketen knitr und gt anwenden, um Tabellen in Berichten im HTML Ausgabeformat darzustellen.\nDie Lernenden können den GitHub Pages Dienst nutzen, um ein Repository als eigenständige Website zu veröffentlichen.",
+    "crumbs": [
+      "Modul 09"
+    ]
+  },
+  {
     "objectID": "module/md-09.html#folien",
     "href": "module/md-09.html#folien",
     "title": "Modul 9",
@@ -104,6 +124,26 @@
     ]
   },
   {
+    "objectID": "module/md-06.html",
+    "href": "module/md-06.html",
+    "title": "Modul 6",
+    "section": "",
+    "text": "Die Lernenden können die Bedeutung von Vektoren mit Bezug auf einen Dataframe erläutern.\nDie Lernenden können drei verschiedene Methoden anwenden um auf einen Vektor in einem dataframe zuzugreifen.\nDie Lernenden können die vier wichtigsten atomaren Vektortypen in R auflisten.\nDie Lernenden können einen for loop verwenden, um durch die Elemente eines Vektors in einem Dataframe zu iterieren und spezifische Operationen auf jedes Element anzuwenden.",
+    "crumbs": [
+      "Modul 06"
+    ]
+  },
+  {
+    "objectID": "module/md-06.html#lernziele",
+    "href": "module/md-06.html#lernziele",
+    "title": "Modul 6",
+    "section": "",
+    "text": "Die Lernenden können die Bedeutung von Vektoren mit Bezug auf einen Dataframe erläutern.\nDie Lernenden können drei verschiedene Methoden anwenden um auf einen Vektor in einem dataframe zuzugreifen.\nDie Lernenden können die vier wichtigsten atomaren Vektortypen in R auflisten.\nDie Lernenden können einen for loop verwenden, um durch die Elemente eines Vektors in einem Dataframe zu iterieren und spezifische Operationen auf jedes Element anzuwenden.",
+    "crumbs": [
+      "Modul 06"
+    ]
+  },
+  {
     "objectID": "module/md-06.html#folien",
     "href": "module/md-06.html#folien",
     "title": "Modul 6",
@@ -131,6 +171,26 @@
     "text": "Übungsaufgaben\n\nIn Vorbereitung",
     "crumbs": [
       "Modul 06"
+    ]
+  },
+  {
+    "objectID": "module/md-10.html",
+    "href": "module/md-10.html",
+    "title": "Modul 10",
+    "section": "",
+    "text": "Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden verstehen die dplyr-Funktion across() anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen.",
+    "crumbs": [
+      "Modul 10"
+    ]
+  },
+  {
+    "objectID": "module/md-10.html#lernziele",
+    "href": "module/md-10.html#lernziele",
+    "title": "Modul 10",
+    "section": "",
+    "text": "Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden verstehen die dplyr-Funktion across() anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen.",
+    "crumbs": [
+      "Modul 10"
     ]
   },
   {
@@ -211,6 +271,26 @@
     "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis Montag, den 30. September 2024.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
     "crumbs": [
       "Modul 01"
+    ]
+  },
+  {
+    "objectID": "module/md-03.html",
+    "href": "module/md-03.html",
+    "title": "Modul 3",
+    "section": "",
+    "text": "Die Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen.",
+    "crumbs": [
+      "Modul 03"
+    ]
+  },
+  {
+    "objectID": "module/md-03.html#lernziele",
+    "href": "module/md-03.html#lernziele",
+    "title": "Modul 3",
+    "section": "",
+    "text": "Die Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen.",
+    "crumbs": [
+      "Modul 03"
     ]
   },
   {
@@ -1275,6 +1355,26 @@
     ]
   },
   {
+    "objectID": "module/md-04.html",
+    "href": "module/md-04.html",
+    "title": "Modul 4",
+    "section": "",
+    "text": "Die Lernenden können Daten aus Dateien im CSV-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses und auf GitHub befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten.",
+    "crumbs": [
+      "Modul 04"
+    ]
+  },
+  {
+    "objectID": "module/md-04.html#lernziele",
+    "href": "module/md-04.html#lernziele",
+    "title": "Modul 4",
+    "section": "",
+    "text": "Die Lernenden können Daten aus Dateien im CSV-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses und auf GitHub befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten.",
+    "crumbs": [
+      "Modul 04"
+    ]
+  },
+  {
     "objectID": "module/md-04.html#folien",
     "href": "module/md-04.html#folien",
     "title": "Modul 4",
@@ -1305,6 +1405,26 @@
     ]
   },
   {
+    "objectID": "module/md-07.html",
+    "href": "module/md-07.html",
+    "title": "Modul 7",
+    "section": "",
+    "text": "Die Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzepters widergeben.",
+    "crumbs": [
+      "Modul 07"
+    ]
+  },
+  {
+    "objectID": "module/md-07.html#lernziele",
+    "href": "module/md-07.html#lernziele",
+    "title": "Modul 7",
+    "section": "",
+    "text": "Die Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzepters widergeben.",
+    "crumbs": [
+      "Modul 07"
+    ]
+  },
+  {
     "objectID": "module/md-07.html#folien",
     "href": "module/md-07.html#folien",
     "title": "Modul 7",
@@ -1332,6 +1452,26 @@
     "text": "Übungsaufgaben\n\nIn Vorbereitung",
     "crumbs": [
       "Modul 07"
+    ]
+  },
+  {
+    "objectID": "module/md-08.html",
+    "href": "module/md-08.html",
+    "title": "Modul 8",
+    "section": "",
+    "text": "Die Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\nDue Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\nDie Lernenden können einen merge conflict innerhalb eines R-Skriptes lösen.",
+    "crumbs": [
+      "Modul 08"
+    ]
+  },
+  {
+    "objectID": "module/md-08.html#lernziele",
+    "href": "module/md-08.html#lernziele",
+    "title": "Modul 8",
+    "section": "",
+    "text": "Die Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\nDue Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\nDie Lernenden können einen merge conflict innerhalb eines R-Skriptes lösen.",
+    "crumbs": [
+      "Modul 08"
     ]
   },
   {
