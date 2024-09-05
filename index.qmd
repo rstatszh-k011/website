@@ -18,6 +18,7 @@ Vor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Di
 
 Vor Tag 1 arbeite durch die folgenden vier Schritte:
 
+- Schritt 0: Einladung zum Slack Channel annhemen. Diese ist per Email gekommen. Falls du keine Einladung erhalten hast, schreibe bitte an Lars.
 - [Schritt 1](vorbereitung/01-github.qmd): Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.
 - [Schritt 2](vorbereitung/02-posit-cloud.qmd): Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.
 - [Schritt 3](vorbereitung/03-r4ds-intro.qmd): Lies die Einführung des Kursbuches: R for Data Science.
