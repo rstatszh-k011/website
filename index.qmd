@@ -16,7 +16,7 @@ Vor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Di
 
 ## {{< fa circle-question >}} Was muss ich vor Tag 1 vorbereiten?
 
-Vor Tag 1 arbeite durch die folgenden vier Schritte:
+Arbeite durch die folgenden Schritte: 
 
 - Schritt 0: Einladung zum Slack Channel annhemen. Diese ist per Email gekommen. Falls du keine Einladung erhalten hast, schreibe bitte an Lars.
 - [Schritt 1](vorbereitung/01-github.qmd): Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.
