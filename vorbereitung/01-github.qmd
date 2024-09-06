@@ -62,6 +62,6 @@ Behandle deine Zugriffstoken wie Passwörter und bewahre sie sicher auf (z.B. in
 
 10. Wähle unter "Select scopes" Folgendes aus: **repo, workflow, user**.
 
-11. Klicke auf "Select scopes".
+11. Klicke auf "Generate".
 
 12. Dein Zugriffstoken wird auf dem Bildschirm angezeigt. Kopiere es und bewahre es an einem sicheren Ort auf.
