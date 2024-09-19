@@ -14,19 +14,19 @@ Titel: "Interaktion mit GitHub"
 
 5. Kopiere die HTTPS-URL in deine Zwischenablage.
 
-6. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [TODO: posit.cloud]()
+6. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/543494/content/all?sort=name_asc)
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
 8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein.
 
-9. Warte, bis das Projekt bereitgestellt wurde
+9. Warte, bis das Projekt bereitgestellt wurde.
 
-10. Fahre mit dem nächsten Schritt fort
+10. Fahre mit dem nächsten Schritt fort.
 
 ## Schritt 2: Stelle dich git vor
 
-1. Öffne in Posit Cloud das Projekt git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.
+1. Falls das Projekt aus Schritt 1 geschlossen wurde, öffne das Projekt git-configuration-BENUTZERNAME in Posit Cloud, das mit deinem GitHub-Benutzernamen endet.
 
 2. Öffne die Datei git-configuration.qmd im Fenster unten rechts in RStudio.
 
@@ -53,13 +53,13 @@ use_git_config(user.name = "Dein Name", user.email = "Deine E-Mail-Adresse")
 
 2. Aktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.
 
-3. Klicke auf die Schaltfläche "Commit"
+3. Klicke auf die Schaltfläche "Commit".
 
-4. Gib eine Commit-Nachricht in das Feld "Commit Message" ein
+4. Gib die Commit-Nachricht "erster Commit" in das Feld "Commit Message" ein.
 
-5. Klicke auf die Schaltfläche "Commit"
+5. Klicke auf die Schaltfläche "Commit".
 
-6. Klicke auf die Schaltfläche "Push"
+6. Klicke auf die Schaltfläche "Push".
 
 7. Gib deinen GitHub-Benutzernamen und [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} in die Felder "Benutzername" und ["Password"]{.highlight-yellow} ein.
 
