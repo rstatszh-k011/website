@@ -74,10 +74,6 @@ Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:
     öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines
     Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.
 
-## Warum das Ganze?
-
-- TODO: Diagram Offene Daten / Reproduzierbarkeit / Transparenz
-
 ## Du bist dran: Über Dich
 
 ::: task
@@ -301,7 +297,7 @@ Ich bringe dir bei:
 
 ![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](img/md-01/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
 
-## Ich bin dran: Ein Rundgang durch Quarto
+## Ich bin dran: Ein Rundgang durch RStudio IDE und Quarto
 
 <br><br>
 
@@ -489,13 +485,14 @@ knitr::include_graphics("img/md-01/github-logo.png")
 Zurücklehnen und genießen!
 :::
 
-## Ihr seid dran / Wir sind dran: Klone ein Repository von GitHub
+## Ihr seid dran: Klone ein Repository von GitHub 
 
-1. Öffne einen Webbrowser aufdeinen Laptop.
-2. Gehe zur Website des Kurses: [rstatszh-k009.github.io/website/](rstatszh-k009.github.io/website/)
+1. Öffne einen Webbrowser auf deinem Laptop.
+2. Gehe zur Website des Kurses: [rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
 3. Falls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.
-4. Klicke im Menü auf der linken Seite auf [Modul 1, Wähle dann za-01: GitHub]{.highlight-yellow}
-5. Folge den Anweisungen auf der Website, um Repository von GitHub zu klonen.
+4. Klicke im Menü auf der linken Seite auf [Modul 1]{.highlight-yellow}
+5. In der Modulübersicht, scrolle nach unten zur Sektion "Zusatzaufgaben" und öffne "Zusatzaufgabe 1: Git configuration"
+6. Folge den Anweisungen auf der Website, um das Repository von GitHub zu klonen.
 
 ```{r}
 #| echo: false

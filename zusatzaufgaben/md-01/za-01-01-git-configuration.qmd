@@ -1,6 +1,14 @@
 ---
 Titel: "Interaktion mit GitHub"
+execute:
+    echo: false
 ---
+
+## Schritt 0: Einladung zur GitHub-Organisation annehmen
+
+1. Nehme die Einladung zum Beitritt der GitHub Organisation für den Kurs an.
+
+![](images/gh-einladung.png){width=50%}
 
 ## Schritt 1: Klone ein Repository
 
@@ -8,60 +16,90 @@ Titel: "Interaktion mit GitHub"
 
 2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
 
-3. Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es.
+![](images/gh-clone-01.png){width=50%}
+
+3. Finde das Repository [git-configuration-BENUTZERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.
+
+![](images/gh-clone-01-repo.png){width=50%}
 
 4. Klicke auf die grüne Schaltfläche "Code".
 
+![](images/gh-clone-02.png){width=50%}
+
 5. Kopiere die HTTPS-URL in deine Zwischenablage.
 
-6. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [TODO: posit.cloud]()
+![](images/gh-clone-03.png){width=50%}
+
+6. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/543494/content/all?sort=name_asc)
+
+![](images/gh-clone-04.png){width=50%}
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
-8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein.
+![](images/gh-clone-05.png){width=50%}
 
-9. Warte, bis das Projekt bereitgestellt wurde
+8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein. [**Beachte:**]{.highlight-yellow} Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.
 
-10. Fahre mit dem nächsten Schritt fort
+![](images/gh-clone-06.png){width=50%}
 
-## Schritt 2: Stelle dich git vor
+9. Warte, bis das Projekt bereitgestellt wurde.
 
-1. Öffne in Posit Cloud das Projekt git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.
+![](images/gh-clone-07.png){width=50%}
 
-2. Öffne die Datei git-configuration.qmd im Fenster unten rechts in RStudio.
+10. Fahre mit dem nächsten Schritt 2 fort.
 
-3. Bearbeite den Code-Abschnitt unter "Git configuration details" und ersetze die Platzhalter durch deinen Namen und 
-deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen am Repository vornimmst).
+## Schritt 2: Stelle dich Git vor
 
-4. Render das Dokument.
+1. Falls das Projekt aus Schritt 1 geschlossen wurde, öffne das Projekt git-configuration-BENUTZERNAME in Posit Cloud, das mit deinem GitHub-Benutzernamen endet.
 
-5. Behalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit dem nächsten Schritt fort
+2. Öffne die Datei git-configuration.qmd, welche du im Datei Manager ("Files") im Fenster unten rechts findest. Die Datei öffnet sich im Fenster oben rechts.
 
-```{r}
-#| echo: true
-#| eval: false
+![](images/gh-clone-07.png){width=50%}
 
-library(usethis)
+3. Bearbeite den Code-Abschnitt unter "Git configuration details" und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen vornimmst und diese gespeichert werden). **Beachte:** Die Anführungszeichen müssen beibehalten werden.
 
-# Ersetze deinen Namen und deine E-Mail-Adresse durch deine Angaben. Die Anführungszeichen "" nicht löschen.
-use_git_config(user.name = "Dein Name", user.email = "Deine E-Mail-Adresse")
-```
+![](images/gh-clone-08.png){width=50%}
+
+4. Render das Dokument in dem du auf den "Render" Button klickst.
+
+![](images/gh-clone-08-render.png){width=50%}
+
+5. Behalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit Schritt 3 fort.
 
 ## Schritt 3: Übertrage deine Änderungen und speichere sie
 
-1. Navigiere zum "Git" Bereich im Fenster oben rechts in RStudio.
+1. Navigiere zum Git-Bereich im Fenster oben rechts.
 
 2. Aktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.
 
-3. Klicke auf die Schaltfläche "Commit"
+![](images/gh-clone-09.png){width=50%}
 
-4. Gib eine Commit-Nachricht in das Feld "Commit Message" ein
+3. Klicke auf die Schaltfläche "Commit".
 
-5. Klicke auf die Schaltfläche "Commit"
+![](images/gh-clone-09.png){width=50%}
 
-6. Klicke auf die Schaltfläche "Push"
+4. Gib eine Commit-Nachricht in das Feld "Commit Message" ein (z.B. Git configuration abgeschlossen).
 
-7. Gib deinen GitHub-Benutzernamen und [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} in die Felder "Benutzername" und ["Password"]{.highlight-yellow} ein.
+![](images/gh-clone-10.png){width=50%}
+
+5. Klicke auf die Schaltfläche "Commit". Klicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.
+
+![](images/gh-clone-10-commit.png){width=50%}
+
+6. Klicke auf die Schaltfläche "Push".
+
+![](images/gh-clone-10-commit-push.png){width=50%}
+
+7. Gib deinen GitHub-Benutzernamen im Feld Username an. 
+
+![](images/gh-clone-11.png){width=50%}
+8. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Password"]{.highlight-yellow} ein.
+
+![](images/gh-clone-13.png){width=50%}
+
+9. Das Fenster kann geschlossen werden.
+
+![](images/gh-clone-14.png){width=50%}
 
 ::: callout-important
 ## Verwende nicht dein GitHub-Passwort
@@ -73,7 +111,7 @@ Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung
 
 1. Öffne [github.com] (https://github.com/) in deinem Browser.
 
-2. Navigiere zur GitHub-Organisation für den Kurs.
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
 
 3. Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.
 
@@ -81,6 +119,6 @@ Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung
 
 5. Klicke auf die grüne Schaltfläche "New issue".
 
-6. Schreibe in das Feld "Title": "Git Konfiguration abgeschlossen".
+6. Schreibe in das Feld "Title": "Git configuration abgeschlossen".
 
 7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage.
