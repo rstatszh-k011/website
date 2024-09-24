@@ -8,7 +8,7 @@ Titel: "Interaktion mit GitHub"
 
 2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
 
-3. Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es.
+3. Finde das Repository [git-configuration-BENUTZERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.
 
 4. Klicke auf die grüne Schaltfläche "Code".
 
@@ -18,24 +18,23 @@ Titel: "Interaktion mit GitHub"
 
 7. Klicke auf "New Project" > "New Project from Git Repository"
 
-8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein.
+8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein. [**Beachte:**]{.highlight-yellow} Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.
 
 9. Warte, bis das Projekt bereitgestellt wurde.
 
-10. Fahre mit dem nächsten Schritt fort.
+10. Fahre mit dem nächsten Schritt 2 fort.
 
-## Schritt 2: Stelle dich git vor
+## Schritt 2: Stelle dich Git vor
 
 1. Falls das Projekt aus Schritt 1 geschlossen wurde, öffne das Projekt git-configuration-BENUTZERNAME in Posit Cloud, das mit deinem GitHub-Benutzernamen endet.
 
 2. Öffne die Datei git-configuration.qmd im Fenster unten rechts in RStudio.
 
-3. Bearbeite den Code-Abschnitt unter "Git configuration details" und ersetze die Platzhalter durch deinen Namen und 
-deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen am Repository vornimmst).
+3. Bearbeite den Code-Abschnitt unter "Git configuration details" und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen vornimmst und diese gespeichert werden). **Beachte:** Die Anführungszeichen müssen beibehalten werden.
 
-4. Render das Dokument.
+4. Render das Dokument in dem du auf den "Render" Button klickst.
 
-5. Behalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit dem nächsten Schritt fort
+5. Behalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit Schritt 3 fort.
 
 ```{r}
 #| echo: true
@@ -49,19 +48,21 @@ use_git_config(user.name = "Dein Name", user.email = "Deine E-Mail-Adresse")
 
 ## Schritt 3: Übertrage deine Änderungen und speichere sie
 
-1. Navigiere zum "Git" Bereich im Fenster oben rechts in RStudio.
+1. Navigiere zum Git-Bereich im Fenster oben rechts.
 
 2. Aktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.
 
 3. Klicke auf die Schaltfläche "Commit".
 
-4. Gib die Commit-Nachricht "erster Commit" in das Feld "Commit Message" ein.
+4. Gib eine Commit-Nachricht in das Feld "Commit Message" ein (z.B. Git configuration abgeschlossen).
 
-5. Klicke auf die Schaltfläche "Commit".
+5. Klicke auf die Schaltfläche "Commit". Klicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.
 
 6. Klicke auf die Schaltfläche "Push".
 
-7. Gib deinen GitHub-Benutzernamen und [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} in die Felder "Benutzername" und ["Password"]{.highlight-yellow} ein.
+7. Gib deinen GitHub-Benutzernamen und [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} in die Felder "Username" und ["Password"]{.highlight-yellow} ein.
+
+8. Das Fenster kann geschlossen werden.
 
 ::: callout-important
 ## Verwende nicht dein GitHub-Passwort
