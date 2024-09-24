@@ -1217,35 +1217,42 @@
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html",
     "title": "rstatsZH - Data Science mit R",
     "section": "",
-    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein.\nWarte, bis das Projekt bereitgestellt wurde.\nFahre mit dem nächsten Schritt fort."
+    "text": "Nehme die Einladung zum Beitritt der GitHub Organisation für den Kurs an."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-0-einladung-zur-github-organisation-annehmen",
+    "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-0-einladung-zur-github-organisation-annehmen",
+    "title": "rstatsZH - Data Science mit R",
+    "section": "",
+    "text": "Nehme die Einladung zum Beitritt der GitHub Organisation für den Kurs an."
   },
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-1-klone-ein-repository",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-1-klone-ein-repository",
     "title": "rstatsZH - Data Science mit R",
-    "section": "",
-    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein.\nWarte, bis das Projekt bereitgestellt wurde.\nFahre mit dem nächsten Schritt fort."
+    "section": "Schritt 1: Klone ein Repository",
+    "text": "Schritt 1: Klone ein Repository\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\n\n\n\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\n\n\n\nKlicke auf die grüne Schaltfläche “Code”.\n\n\n\nKopiere die HTTPS-URL in deine Zwischenablage.\n\n\n\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\n\n\n\nKlicke auf “New Project” &gt; “New Project from Git Repository”\n\n\n\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\n\n\n\nWarte, bis das Projekt bereitgestellt wurde.\n\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-2-stelle-dich-git-vor",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-2-stelle-dich-git-vor",
     "title": "rstatsZH - Data Science mit R",
-    "section": "Schritt 2: Stelle dich git vor",
-    "text": "Schritt 2: Stelle dich git vor\n\nFalls das Projekt aus Schritt 1 geschlossen wurde, öffne das Projekt git-configuration-BENUTZERNAME in Posit Cloud, das mit deinem GitHub-Benutzernamen endet.\nÖffne die Datei git-configuration.qmd im Fenster unten rechts in RStudio.\nBearbeite den Code-Abschnitt unter “Git configuration details” und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen am Repository vornimmst).\nRender das Dokument.\nBehalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit dem nächsten Schritt fort\n\n\nlibrary(usethis)\n\n# Ersetze deinen Namen und deine E-Mail-Adresse durch deine Angaben. Die Anführungszeichen \"\" nicht löschen.\nuse_git_config(user.name = \"Dein Name\", user.email = \"Deine E-Mail-Adresse\")"
+    "section": "Schritt 2: Stelle dich Git vor",
+    "text": "Schritt 2: Stelle dich Git vor\n\nFalls das Projekt aus Schritt 1 geschlossen wurde, öffne das Projekt git-configuration-BENUTZERNAME in Posit Cloud, das mit deinem GitHub-Benutzernamen endet.\nÖffne die Datei git-configuration.qmd, welche du im Datei Manager (“Files”) im Fenster unten rechts findest. Die Datei öffnet sich im Fenster oben rechts.\n\n\n\nBearbeite den Code-Abschnitt unter “Git configuration details” und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen vornimmst und diese gespeichert werden). Beachte: Die Anführungszeichen müssen beibehalten werden.\n\n\n\nRender das Dokument in dem du auf den “Render” Button klickst.\n\n\n\nBehalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit Schritt 3 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-3-übertrage-deine-änderungen-und-speichere-sie",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-3-übertrage-deine-änderungen-und-speichere-sie",
     "title": "rstatsZH - Data Science mit R",
     "section": "Schritt 3: Übertrage deine Änderungen und speichere sie",
-    "text": "Schritt 3: Übertrage deine Änderungen und speichere sie\n\nNavigiere zum “Git” Bereich im Fenster oben rechts in RStudio.\nAktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.\nKlicke auf die Schaltfläche “Commit”.\nGib die Commit-Nachricht “erster Commit” in das Feld “Commit Message” ein.\nKlicke auf die Schaltfläche “Commit”.\nKlicke auf die Schaltfläche “Push”.\nGib deinen GitHub-Benutzernamen und deinen GitHub Personal Access Token (PAT) in die Felder “Benutzername” und “Password” ein.\n\n\n\n\n\n\n\nVerwende nicht dein GitHub-Passwort\n\n\n\nDu musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen."
+    "text": "Schritt 3: Übertrage deine Änderungen und speichere sie\n\nNavigiere zum Git-Bereich im Fenster oben rechts.\nAktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.\n\n\n\nKlicke auf die Schaltfläche “Commit”.\n\n\n\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Git configuration abgeschlossen).\n\n\n\nKlicke auf die Schaltfläche “Commit”. Klicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\n\n\n\nKlicke auf die Schaltfläche “Push”.\n\n\n\nGib deinen GitHub-Benutzernamen im Feld Username an.\n\n 8. Gib deinen GitHub Personal Access Token (PAT) im Feld “Password” ein.\n\n\nDas Fenster kann geschlossen werden.\n\n\n\n\n\n\n\n\nVerwende nicht dein GitHub-Passwort\n\n\n\nDu musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen."
   },
   {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-4-eröffne-ein-issue-auf-github",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html#schritt-4-eröffne-ein-issue-auf-github",
     "title": "rstatsZH - Data Science mit R",
     "section": "Schritt 4: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne [github.com] (https://github.com/) in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs.\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Git Konfiguration abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 4: Eröffne ein Issue auf GitHub\n\nÖffne [github.com] (https://github.com/) in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Git configuration abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "module/md-02.html",

@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -240,8 +206,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#schritt-1-klone-ein-repository" id="toc-schritt-1-klone-ein-repository" class="nav-link active" data-scroll-target="#schritt-1-klone-ein-repository">Schritt 1: Klone ein Repository</a></li>
-  <li><a href="#schritt-2-stelle-dich-git-vor" id="toc-schritt-2-stelle-dich-git-vor" class="nav-link" data-scroll-target="#schritt-2-stelle-dich-git-vor">Schritt 2: Stelle dich git vor</a></li>
+  <li><a href="#schritt-0-einladung-zur-github-organisation-annehmen" id="toc-schritt-0-einladung-zur-github-organisation-annehmen" class="nav-link active" data-scroll-target="#schritt-0-einladung-zur-github-organisation-annehmen">Schritt 0: Einladung zur GitHub-Organisation annehmen</a></li>
+  <li><a href="#schritt-1-klone-ein-repository" id="toc-schritt-1-klone-ein-repository" class="nav-link" data-scroll-target="#schritt-1-klone-ein-repository">Schritt 1: Klone ein Repository</a></li>
+  <li><a href="#schritt-2-stelle-dich-git-vor" id="toc-schritt-2-stelle-dich-git-vor" class="nav-link" data-scroll-target="#schritt-2-stelle-dich-git-vor">Schritt 2: Stelle dich Git vor</a></li>
   <li><a href="#schritt-3-übertrage-deine-änderungen-und-speichere-sie" id="toc-schritt-3-übertrage-deine-änderungen-und-speichere-sie" class="nav-link" data-scroll-target="#schritt-3-übertrage-deine-änderungen-und-speichere-sie">Schritt 3: Übertrage deine Änderungen und speichere sie</a></li>
   <li><a href="#schritt-4-eröffne-ein-issue-auf-github" id="toc-schritt-4-eröffne-ein-issue-auf-github" class="nav-link" data-scroll-target="#schritt-4-eröffne-ein-issue-auf-github">Schritt 4: Eröffne ein Issue auf GitHub</a></li>
   </ul>
@@ -253,48 +220,103 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+<section id="schritt-0-einladung-zur-github-organisation-annehmen" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-0-einladung-zur-github-organisation-annehmen">Schritt 0: Einladung zur GitHub-Organisation annehmen</h2>
+<ol type="1">
+<li>Nehme die Einladung zum Beitritt der GitHub Organisation für den Kurs an.</li>
+</ol>
+<p><img src="images/gh-einladung.png" class="img-fluid" style="width:50.0%"></p>
+</section>
 <section id="schritt-1-klone-ein-repository" class="level2">
 <h2 class="anchored" data-anchor-id="schritt-1-klone-ein-repository">Schritt 1: Klone ein Repository</h2>
 <ol type="1">
 <li><p>Öffne github.com in deinem Browser.</p></li>
 <li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k009">github.com/rstatszh-k009</a></p></li>
-<li><p>Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es.</p></li>
-<li><p>Klicke auf die grüne Schaltfläche “Code”.</p></li>
-<li><p>Kopiere die HTTPS-URL in deine Zwischenablage.</p></li>
-<li><p>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf <a href="https://posit.cloud/spaces/543494/content/all?sort=name_asc">posit.cloud</a></p></li>
-<li><p>Klicke auf “New Project” &gt; “New Project from Git Repository”</p></li>
-<li><p>Füge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein.</p></li>
-<li><p>Warte, bis das Projekt bereitgestellt wurde.</p></li>
-<li><p>Fahre mit dem nächsten Schritt fort.</p></li>
+</ol>
+<p><img src="images/gh-clone-01.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="3" type="1">
+<li>Finde das Repository <span class="highlight-yellow">git-configuration-BENUTZERNAME</span>, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.</li>
+</ol>
+<p><img src="images/gh-clone-01-repo.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="4" type="1">
+<li>Klicke auf die grüne Schaltfläche “Code”.</li>
+</ol>
+<p><img src="images/gh-clone-02.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="5" type="1">
+<li>Kopiere die HTTPS-URL in deine Zwischenablage.</li>
+</ol>
+<p><img src="images/gh-clone-03.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="6" type="1">
+<li>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf <a href="https://posit.cloud/spaces/543494/content/all?sort=name_asc">posit.cloud</a></li>
+</ol>
+<p><img src="images/gh-clone-04.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="7" type="1">
+<li>Klicke auf “New Project” &gt; “New Project from Git Repository”</li>
+</ol>
+<p><img src="images/gh-clone-05.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="8" type="1">
+<li>Füge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. <span class="highlight-yellow"><strong>Beachte:</strong></span> Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.</li>
+</ol>
+<p><img src="images/gh-clone-06.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="9" type="1">
+<li>Warte, bis das Projekt bereitgestellt wurde.</li>
+</ol>
+<p><img src="images/gh-clone-07.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="10" type="1">
+<li>Fahre mit dem nächsten Schritt 2 fort.</li>
 </ol>
 </section>
 <section id="schritt-2-stelle-dich-git-vor" class="level2">
-<h2 class="anchored" data-anchor-id="schritt-2-stelle-dich-git-vor">Schritt 2: Stelle dich git vor</h2>
+<h2 class="anchored" data-anchor-id="schritt-2-stelle-dich-git-vor">Schritt 2: Stelle dich Git vor</h2>
 <ol type="1">
 <li><p>Falls das Projekt aus Schritt 1 geschlossen wurde, öffne das Projekt git-configuration-BENUTZERNAME in Posit Cloud, das mit deinem GitHub-Benutzernamen endet.</p></li>
-<li><p>Öffne die Datei git-configuration.qmd im Fenster unten rechts in RStudio.</p></li>
-<li><p>Bearbeite den Code-Abschnitt unter “Git configuration details” und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen am Repository vornimmst).</p></li>
-<li><p>Render das Dokument.</p></li>
-<li><p>Behalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit dem nächsten Schritt fort</p></li>
+<li><p>Öffne die Datei git-configuration.qmd, welche du im Datei Manager (“Files”) im Fenster unten rechts findest. Die Datei öffnet sich im Fenster oben rechts.</p></li>
 </ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Ersetze deinen Namen und deine E-Mail-Adresse durch deine Angaben. Die Anführungszeichen "" nicht löschen.</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Dein Name"</span>, <span class="at">user.email =</span> <span class="st">"Deine E-Mail-Adresse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p><img src="images/gh-clone-07.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="3" type="1">
+<li>Bearbeite den Code-Abschnitt unter “Git configuration details” und ersetze die Platzhalter durch deinen Namen und deine E-Mail-Adresse (anhand dieser Daten wird Git dich identifizieren, wenn du Änderungen vornimmst und diese gespeichert werden). <strong>Beachte:</strong> Die Anführungszeichen müssen beibehalten werden.</li>
+</ol>
+<p><img src="images/gh-clone-08.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="4" type="1">
+<li>Render das Dokument in dem du auf den “Render” Button klickst.</li>
+</ol>
+<p><img src="images/gh-clone-08-render.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="5" type="1">
+<li>Behalte das Projekt git-configuration-BENUTZERNAME in RStudio geöffnet. Fahre mit Schritt 3 fort.</li>
+</ol>
 </section>
 <section id="schritt-3-übertrage-deine-änderungen-und-speichere-sie" class="level2">
 <h2 class="anchored" data-anchor-id="schritt-3-übertrage-deine-änderungen-und-speichere-sie">Schritt 3: Übertrage deine Änderungen und speichere sie</h2>
 <ol type="1">
-<li><p>Navigiere zum “Git” Bereich im Fenster oben rechts in RStudio.</p></li>
+<li><p>Navigiere zum Git-Bereich im Fenster oben rechts.</p></li>
 <li><p>Aktiviere das Kontrollkästchen neben der Datei git-configuration.qmd, um sie für den Commit vorzubereiten.</p></li>
-<li><p>Klicke auf die Schaltfläche “Commit”.</p></li>
-<li><p>Gib die Commit-Nachricht “erster Commit” in das Feld “Commit Message” ein.</p></li>
-<li><p>Klicke auf die Schaltfläche “Commit”.</p></li>
-<li><p>Klicke auf die Schaltfläche “Push”.</p></li>
-<li><p>Gib deinen GitHub-Benutzernamen und <span class="highlight-yellow">deinen GitHub Personal Access Token (PAT)</span> in die Felder “Benutzername” und <span class="highlight-yellow">“Password”</span> ein.</p></li>
 </ol>
+<p><img src="images/gh-clone-09.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="3" type="1">
+<li>Klicke auf die Schaltfläche “Commit”.</li>
+</ol>
+<p><img src="images/gh-clone-09.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="4" type="1">
+<li>Gib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Git configuration abgeschlossen).</li>
+</ol>
+<p><img src="images/gh-clone-10.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="5" type="1">
+<li>Klicke auf die Schaltfläche “Commit”. Klicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.</li>
+</ol>
+<p><img src="images/gh-clone-10-commit.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="6" type="1">
+<li>Klicke auf die Schaltfläche “Push”.</li>
+</ol>
+<p><img src="images/gh-clone-10-commit-push.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="7" type="1">
+<li>Gib deinen GitHub-Benutzernamen im Feld Username an.</li>
+</ol>
+<p><img src="images/gh-clone-11.png" class="img-fluid" style="width:50.0%"> 8. Gib <span class="highlight-yellow">deinen GitHub Personal Access Token (PAT)</span> im Feld <span class="highlight-yellow">“Password”</span> ein.</p>
+<p><img src="images/gh-clone-13.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="9" type="1">
+<li>Das Fenster kann geschlossen werden.</li>
+</ol>
+<p><img src="images/gh-clone-14.png" class="img-fluid" style="width:50.0%"></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -313,11 +335,11 @@ Verwende nicht dein GitHub-Passwort
 <h2 class="anchored" data-anchor-id="schritt-4-eröffne-ein-issue-auf-github">Schritt 4: Eröffne ein Issue auf GitHub</h2>
 <ol type="1">
 <li><p>Öffne [github.com] (https://github.com/) in deinem Browser.</p></li>
-<li><p>Navigiere zur GitHub-Organisation für den Kurs.</p></li>
+<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k009">github.com/rstatszh-k009</a></p></li>
 <li><p>Finde das Repository git-configuration-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.</p></li>
 <li><p>Klicke auf die Schaltfläche “Issues”.</p></li>
 <li><p>Klicke auf die grüne Schaltfläche “New issue”.</p></li>
-<li><p>Schreibe in das Feld “Title”: “Git Konfiguration abgeschlossen”.</p></li>
+<li><p>Schreibe in das Feld “Title”: “Git configuration abgeschlossen”.</p></li>
 <li><p>Markiere im Feld “Leave a comment” den Kursleiter mit <span class="citation" data-cites="larnsce">@larnsce</span> und hiterlasse eine Nachricht oder offene Frage.</p></li>
 </ol>
 
