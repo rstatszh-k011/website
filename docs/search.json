@@ -790,7 +790,7 @@
     "href": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Andere Quellen für Hilfe",
-    "text": "Andere Quellen für Hilfe\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDokumentation Webseiten: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\nQuarto GitHub Diskussion: https://github.com/quarto-dev/quarto-cli/discussions\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+    "text": "Andere Quellen für Hilfe\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDokumentation Webseiten: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#section-1",
@@ -846,7 +846,7 @@
     "href": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden.\nDie Lernenden…"
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden."
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#triff-das-stat",
@@ -1614,5 +1614,12 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
+    "href": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Ich bin dran: Arbeiten mit Quarto und R",
+    "text": "Ich bin dran: Arbeiten mit Quarto und R\n\n\nZurücklehnen und genießen!"
   }
 ]

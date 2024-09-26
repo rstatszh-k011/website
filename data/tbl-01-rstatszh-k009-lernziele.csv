@@ -7,7 +7,6 @@ datum,modul,titel,lernziele
 2024-10-01T00:00:00Z,2,Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community,"Die Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren."
 2024-10-01T00:00:00Z,2,Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community,"Die Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen."
 2024-10-01T00:00:00Z,2,Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community,Die Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden.
-2024-10-01T00:00:00Z,2,Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community,Die Lernenden...
 2024-10-08T00:00:00Z,3,Daten Transformation mit dplyr,"Die Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen."
 2024-10-08T00:00:00Z,3,Daten Transformation mit dplyr,"Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen."
 2024-10-15T00:00:00Z,4,Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II,"Die Lernenden können Daten aus Dateien im CSV-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses und auf GitHub befinden."
