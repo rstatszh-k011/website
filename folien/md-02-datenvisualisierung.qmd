@@ -174,17 +174,81 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ![](img/md-01/profil-thomas.png){fig-alt="" fig-align="left" width=50%}
 
-- Punkt 1 
-- Punkt 2
-- Punkt 3
+- Team-Data im Statistischen Amt 
+- Verantwortlicher R-Infrastruktur
+- Debug-Master
 
 
 :::
 :::
 
-## DAP
 
-- Punkt 1
+## Installation auf dem DAP
+
+Um auf den vollen Genuss der R-Analyse Umgebung zu kommen, musst du im Serviceportal folgende Module bestellen:
+
+
+::: columns
+::: {.column width="30%"}
+
+![](img/md-02/serviceportal_servicekatalog.PNG){width="80%"}
+
+:::
+::: {.column width="70%"}
+
+![](img/md-02/serviceportal_R.PNG)
+
+
+![](img/md-02/serviceportal_RTools.PNG)
+
+
+![](img/md-02/serviceportal_tinytex.PNG)
+
+
+:::
+:::
+
+
+## Community
+
+
+Im Kanton haben wir eine Community of Practice für R, welche im Teams angesiedelt ist.
+
+Der Kanal soll folgende Zwecke erfüllen:
+
+- Austausch zwischen allen R-Nutzenden im Kanton
+- Information über das R-Bundle
+- ...
+
+
+## R-Fachgruppe
+
+
+::: columns
+::: {.column width="50%"}
+
+Aufgaben
+
+- Updates des R-Bundles
+- Weiterentwicklung der Installation
+- Bedürfnisabklärung
+- Support bei Instalationsproblemen
+- ...
+
+:::
+::: {.column width="50%"}
+
+Vertretungen
+
+- Thomas Knecht
+
+- Philipp Bosch
+...
+
+
+:::
+:::
+
 
 ## Pause machen
 
