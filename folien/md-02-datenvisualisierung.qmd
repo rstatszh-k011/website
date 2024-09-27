@@ -33,104 +33,90 @@ library(epoxy)
 library(palmerpenguins)
 ```
 
-```{r} 
+```{r}
 
 gapminder_2007 <- gapminder |> 
   filter(year == 2007)
 
 ```
 
+##  {background-image="img/md-02/r_rollercoaster.png" background-size="contain"}
 
-## {background-image="img/md-02/r_rollercoaster.png" background-size="contain"} 
-
-::: {.aside}
-Artwork by [@allison_horst](https://twitter.com/allison_horst) 
+::: aside
+Artwork by [\@allison_horst](https://twitter.com/allison_horst)
 :::
 
 # Lösung von Coding Problemen {background-color="#4C326A"}
 
 ## Tipps für Suchmaschinen
 
-- Verwende Verben, die beschreiben, was du tun willst
-- Sei präzise 
-- Füge R zur Suchanfrage hinzu 
-- Füge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)
-- Scrolle durch die ersten 5 Ergebnisse (wähle nicht nur das erste aus)
-- Schreibe die Suchanfrage auf Englisch
+-   Verwende Verben, die beschreiben, was du tun willst
+-   Sei präzise
+-   Füge R zur Suchanfrage hinzu
+-   Füge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)
+-   Scrolle durch die ersten 5 Ergebnisse (wähle nicht nur das erste aus)
+-   Schreibe die Suchanfrage auf Englisch
 
 **Beispiel: "How to remove a legend from a plot in R ggplot2"**
 
 ## Stack Overflow
 
-::: {.incremental}
-
-:::: {.columns}
-
+::: incremental
+::: columns
 ::: {.column width="47.5%"}
-
 **Was ist das?**
 
-- Das größte Unterstützungsnetzwerk für (Coding-)Probleme
-- Kann anfangs einschüchternd sein
-- Upvote-System
-
+-   Das größte Unterstützungsnetzwerk für (Coding-)Probleme
+-   Kann anfangs einschüchternd sein
+-   Upvote-System
 :::
 
 ::: {.column width="5%"}
-
 :::
 
 ::: {.column width="47.5%"}
-
 **Arbeitsablauf**
 
-- Lies dir zuerst kurz die Frage durch, die gepostet wurde.
-- Lies dir dann die Antwort durch, die als "richtig" markiert wurde.
-- Lies dir dann eine oder zwei weitere Antworten mit vielen Zustimmungen durch.
-- Sieh dir dann die "linked posts" an.
-
+-   Lies dir zuerst kurz die Frage durch, die gepostet wurde.
+-   Lies dir dann die Antwort durch, die als "richtig" markiert wurde.
+-   Lies dir dann eine oder zwei weitere Antworten mit vielen Zustimmungen durch.
+-   Sieh dir dann die "linked posts" an.
+:::
+:::
 :::
 
-::::
+## Tipps for AI tools
 
-:::
-
-## Tipps for AI tools 
-
-- Verwende Verben, die beschreiben, was du tun willst
-- Sei präzise 
-- Füge R zur Suchanfrage hinzu 
-- Füge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)
-- Schreibe die Suchanfrage auf Englisch
+-   Verwende Verben, die beschreiben, was du tun willst
+-   Sei präzise
+-   Füge R zur Suchanfrage hinzu
+-   Füge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)
+-   Schreibe die Suchanfrage auf Englisch
 
 **Beispiel: "How to remove a legend from a plot in R ggplot2"**
 
 ## Andere Quellen für Hilfe
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-
-- Posit Community Forum: <https://community.rstudio.com/>
-- Dokumentation Webseiten: <https://ggplot2.tidyverse.org/>
-- Mastodon tag: [#rstats](https://fosstodon.org/tags/rstats)
+-   Posit Community Forum: <https://community.rstudio.com/>
+-   Dokumentation Webseiten: <https://ggplot2.tidyverse.org/>
+-   Mastodon tag: [#rstats](https://fosstodon.org/tags/rstats)
 :::
 
 ::: {.column width="50%"}
-
 ![](img/md-02/dalle3-image-colorful-coding.png)
-
-::: 
-::::
+:::
+:::
 
 ::: footer
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-## {background-image="img/md-02/code_hero.jpg" background-size="contain"} 
+##  {background-image="img/md-02/code_hero.jpg" background-size="contain"}
 
 ::: footer
-Artwork by [@allison_horst](https://www.allisonhorst.com/)
+Artwork by [\@allison_horst](https://www.allisonhorst.com/)
 :::
 
 ## Lernziele (für diese Woche)
@@ -150,105 +136,97 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 # Digitaler Arbeitsplatz / R Community
 
-- TODO
-
 ## Triff das STAT
-
-## Triff die Kursleitung {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
-
 **Philipp Bosch**
 
-![](img/md-01/profil-philipp.png){fig-alt="" fig-align="left" width=50%}
+![](img/md-02/bild_philipp.png){fig-alt="" fig-align="center" width="33%"}
 
-- Punkt 1 
-- Punkt 2
-- Punkt 3
-
+-   Job ohne Excel gesucht 🧮
+-   Community Mensch 💙
+-   Data Literacy Fan 💡
 :::
-::: {.column width="50%"}
 
+::: {.column width="50%"}
 **Thomas Knecht**
 
-![](img/md-01/profil-thomas.png){fig-alt="" fig-align="left" width=50%}
+![](img/md-02/bild_dinacon_thomas.png){fig-alt="" fig-align="center" width="50%"}
 
-- Team-Data im Statistischen Amt 
-- Verantwortlicher R-Infrastruktur
-- Debug-Master
-
-
+-   R-Support gegen Cookies 🍪
+-   R-Infrastruktur Guru 🧙
+-   Debug-Master & Kartentyp 🗺️
 :::
 :::
-
 
 ## Installation auf dem DAP
 
-Um auf den vollen Genuss der R-Analyse Umgebung zu kommen, musst du im Serviceportal folgende Module bestellen:
-
+Um in den vollen Genuss der R-Analyse Umgebung zu kommen, musst du im Serviceportal folgende Module bestellen:
 
 ::: columns
 ::: {.column width="30%"}
-
 ![](img/md-02/serviceportal_servicekatalog.PNG){width="80%"}
-
 :::
+
 ::: {.column width="70%"}
-
 ![](img/md-02/serviceportal_R.PNG)
-
 
 ![](img/md-02/serviceportal_RTools.PNG)
 
-
 ![](img/md-02/serviceportal_tinytex.PNG)
-
-
 :::
 :::
-
 
 ## Community
 
+Im Kanton haben wir eine Community of Practice für R, welche ihre digitale Heimat in einem Teams-Kanal hat.
 
-Im Kanton haben wir eine Community of Practice für R, welche im Teams angesiedelt ist.
+[Hier geht's zum Kanal](https://teams.microsoft.com/l/channel/19%3Ab743f31273fb4d08b779263e12c27316%40thread.tacv2/R%20User?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58)
 
-Der Kanal soll folgende Zwecke erfüllen:
+Im Kanal könnt ihr:
 
-- Austausch zwischen allen R-Nutzenden im Kanton
-- Information über das R-Bundle
-- ...
-
+-   Fragen rund um R stellen (Stackoverflow des Kantons)
+-   Neue Infos zum R-Bundle erhalten
+-   Up-to-date bleiben was in der Community läuft
 
 ## R-Fachgruppe
 
-
 ::: columns
 ::: {.column width="50%"}
-
 Aufgaben
 
-- Updates des R-Bundles
-- Weiterentwicklung der Installation
-- Bedürfnisabklärung
-- Support bei Instalationsproblemen
-- ...
-
+-   Updates des R-Bundles
+-   Weiterentwicklung der Installation anhand eurer Bedürfnisse
+-   Support bei Installationsproblemen
 :::
-::: {.column width="50%"}
 
+::: {.column width="50%"}
 Vertretungen
 
-- Thomas Knecht
+-   Thomas Knecht (JI)
 
-- Philipp Bosch
-...
+-   Philipp Bosch (JI)
 
+-   Sarah Gerhard (BI)
 
+-   Miriam Hofstetter (VD)
+
+-   Andreas Gubler (BD)
+
+-   Gianluca Macauda (GD)
+
+-   Fabian Berger (SD)
+
+-   Jörg Sintermann (BD)
+
+-   Nina Schnyder (JI)
+
+-   Gian-Marco Alt (BD)
+
+-   Joëlle Ninon Albrecht (JI)
 :::
 :::
-
 
 ## Pause machen
 
@@ -268,30 +246,23 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ## R Paket `ggplot2`
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-
-- **ggplot2** ist das Datenvisualisierungspaket von tidyverse
-- gg" in "ggplot2" steht für "Grammar of Graphics"
-- Inspiriert durch das Buch **Grammar of Graphics** von Leland Wilkinson
-- **Dokumentation:** https://ggplot2.tidyverse.org/
-- **Buch**: https://ggplot2-book.org
-
+-   **ggplot2** ist das Datenvisualisierungspaket von tidyverse
+-   gg" in "ggplot2" steht für "Grammar of Graphics"
+-   Inspiriert durch das Buch **Grammar of Graphics** von Leland Wilkinson
+-   **Dokumentation:** https://ggplot2.tidyverse.org/
+-   **Buch**: https://ggplot2-book.org
 :::
 
 ::: {.column width="50%"}
-
 ![](img/md-02/ggplot2-part-of-tidyverse.png)
 
 ```{r}
 #knitr::include_graphics(here::here("slides/img/md-02/ggplot2-part-of-tidyverse.png"))
 ```
-
 :::
-
-::::
-
+:::
 
 ## Ich bin dran: Arbeiten mit Quarto und R
 
@@ -303,9 +274,9 @@ Zurücklehnen und genießen!
 
 ## Code Struktur
 
-- `ggplot()` ist die Hauptfunktion von ggplot2
-- Plots werden in Schichten aufgebaut
-- Die Struktur des Codes für Plots lässt sich wie folgt zusammenfassen
+-   `ggplot()` ist die Hauptfunktion von ggplot2
+-   Plots werden in Schichten aufgebaut
+-   Die Struktur des Codes für Plots lässt sich wie folgt zusammenfassen
 
 ```{r}
 #| eval: false
@@ -388,20 +359,17 @@ ggplot(data = gapminder,
 
 # Polls {background-color="#4C326A"}
 
-## Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?{.smaller}
+## Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar? {.smaller}
 
 ::: columns
 ::: {.column width="30%"}
-
-1. Ich weiß es nicht
-2. der Mittelwert der Beobachtungen
-3. die Mitte der Box
-4. der Median der Beobachtungen
-
+1.  Ich weiß es nicht
+2.  der Mittelwert der Beobachtungen
+3.  die Mitte der Box
+4.  der Median der Beobachtungen
 :::
 
 ::: {.column width="70%"}
-
 ```{r}
 #| fig-width: 7
 #| fig-asp: 0.618
@@ -411,7 +379,6 @@ ggplot(data = gapminder,
   geom_boxplot() +
   theme_minimal(base_size = 14)
 ```
-
 :::
 :::
 
@@ -419,16 +386,13 @@ ggplot(data = gapminder,
 
 ::: columns
 ::: {.column width="30%"}
-
-1. Ich weiß es nicht
-2. 25%
-3. hängt vom Median ab
-4. 50%
-
+1.  Ich weiß es nicht
+2.  25%
+3.  hängt vom Median ab
+4.  50%
 :::
 
 ::: {.column width="70%"}
-
 ```{r}
 #| fig-width: 7
 #| fig-asp: 0.618
@@ -438,16 +402,15 @@ ggplot(data = gapminder,
   geom_boxplot() +
   theme_minimal(base_size = 14)
 ```
-
 :::
 :::
 
 ## Poll 3: Was ist der Median einer Gruppe von Beobachtungen? {.smaller}
 
-1. Ich weiß es nicht
-2. Der Median ist der am häufigsten vorkommende Wert in einem Datensatz.
-3. Der Median ist die Summe aller Werte in einem Datensatz geteilt durch die Anzahl der Beobachtungen.
-4. Der Median ist der Punkt, über und unter dem die Hälfte (50%) der Beobachtungen liegt.
+1.  Ich weiß es nicht
+2.  Der Median ist der am häufigsten vorkommende Wert in einem Datensatz.
+3.  Der Median ist die Summe aller Werte in einem Datensatz geteilt durch die Anzahl der Beobachtungen.
+4.  Der Median ist der Punkt, über und unter dem die Hälfte (50%) der Beobachtungen liegt.
 
 ## Boxplot, erklärt
 
@@ -468,25 +431,24 @@ Bild entnommen aus: <https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot>
 :::
 
 ::: notes
+-   Die Box ist ein Feld, das den Bereich der mittleren Hälfte der Daten angibt, eine Distanz, die als Interquartilbereich (IQR) bekannt ist und sich vom 25. Perzentil der Verteilung bis zum 75. Perzentil erstreckt.
 
-- Die Box ist ein Feld, das den Bereich der mittleren Hälfte der Daten angibt, eine Distanz, die als Interquartilbereich (IQR) bekannt ist und sich vom 25. Perzentil der Verteilung bis zum 75. Perzentil erstreckt. 
+-   In der Mitte der Box befindet sich eine Linie, die den Median, d. h. das 50. Perzentil, der Verteilung anzeigt.
 
-- In der Mitte der Box befindet sich eine Linie, die den Median, d. h. das 50. Perzentil, der Verteilung anzeigt.
+-   Diese drei Linien vermitteln einen Eindruck von der Streuung der Verteilung und davon, ob die Verteilung symmetrisch um den Median oder zu einer Seite hin verzerrt ist.
 
-- Diese drei Linien vermitteln einen Eindruck von der Streuung der Verteilung und davon, ob die Verteilung symmetrisch um den Median oder zu einer Seite hin verzerrt ist.
+-   Visuelle Punkte, die Beobachtungen anzeigen, die mehr als das 1,5-Fache des IQR von einem der Ränder des Kastens entfernt liegen. Diese Ausreißer sind ungewöhnlich und werden daher einzeln dargestellt.
 
-- Visuelle Punkte, die Beobachtungen anzeigen, die mehr als das 1,5-Fache des IQR von einem der Ränder des Kastens entfernt liegen. Diese Ausreißer sind ungewöhnlich und werden daher einzeln dargestellt.
-
-- Eine Linie (oder ein Whisker), die sich von jedem Ende des Kastens bis zum am weitesten entfernten Punkt in der Verteilung erstreckt, der kein Ausreißer ist.
+-   Eine Linie (oder ein Whisker), die sich von jedem Ende des Kastens bis zum am weitesten entfernten Punkt in der Verteilung erstreckt, der kein Ausreißer ist.
 :::
 
 ## Wir sind dran: md-02-uebungen
 
 ::: task
-1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
-3. Klicke auf [Start]{.highlight-yellow} neben [md-02-uebungen]{.highlight-yellow}.
-4. Suche im Dateimanager im Fenster unten rechts die Datei [`TODO: md-02b-datenvisualisierung.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-02-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`TODO: md-02b-datenvisualisierung.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::
 
 ```{r}
@@ -509,51 +471,43 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 # Daten visualisieren {background-color="#4C326A"}
 
-## Arten von Variablen 
+## Arten von Variablen
 
-::: {.incremental}
-
-:::: {.columns}
-
+::: incremental
+::: columns
 ::: {.column width="50%"}
-
 ### Numerisch
 
 **Diskrete Variablen**
 
-- nicht negative
-- zählbare
-- ganze Zahlen
-- z.B. Anzahl Schüler, Würfelwurf
+-   nicht negative
+-   zählbare
+-   ganze Zahlen
+-   z.B. Anzahl Schüler, Würfelwurf
 
 **Stetige (kontinuierliche) Variablen**
 
-- unendliche Anzahl von Werten 
-- zwischen zwei Werten
-- auch Datums/Uhrzeitwerte
-- z.B. Länge, Gewicht, Grösse 
-
+-   unendliche Anzahl von Werten
+-   zwischen zwei Werten
+-   auch Datums/Uhrzeitwerte
+-   z.B. Länge, Gewicht, Grösse
 :::
 
 ::: {.column width="50%"}
-
 ### Nicht numerisch
 
 **Kategoriale Variablen**
 
-- endliche Anzahl von Werten 
-- eindeutige Gruppen (z.B. EU Länder)
-- **ordinal**, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage, Schulnoten)
-
+-   endliche Anzahl von Werten
+-   eindeutige Gruppen (z.B. EU Länder)
+-   **ordinal**, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage, Schulnoten)
 :::
-
-::::
-
+:::
 :::
 
 ## Histogramm
 
-- zur Visualisierung der Verteilung von kontinuierlichen (numerischen) Variablen
+-   zur Visualisierung der Verteilung von kontinuierlichen (numerischen) Variablen
 
 ```{r}
 #| label: histogram-penguins
@@ -568,7 +522,7 @@ ggplot(data = penguins,
 
 ## Barplot (Säulendiagramm)
 
-- zur Visualisierung der Verteilung von kategorischen (nicht numerischen) Variablen
+-   zur Visualisierung der Verteilung von kategorischen (nicht numerischen) Variablen
 
 ```{r}
 #| label: barplot-penguins
@@ -583,7 +537,7 @@ ggplot(data = penguins,
 
 ## Scatterplot (Streudiagramm) {.smallest}
 
-- for visualizing relationships between two continuous (numerical) variables
+-   for visualizing relationships between two continuous (numerical) variables
 
 ```{r}
 #| label: scatterplot-gdp-lifeExp
@@ -616,11 +570,11 @@ ggplot(data = gapminder_2007,
 ## Zusatzaufgaben Abgabedatum
 
 -   Abgabedatum: [Montag, 07. Oktober]{.highlight-yellow}
--   Korrektur- und Feedbackphase bis zu: Donnerstag, 10. Oktober 
+-   Korrektur- und Feedbackphase bis zu: Donnerstag, 10. Oktober
 
 # Danke {background-color="#4C326A"}
 
-## Danke! `r emo::ji("sunflower")` 
+## Danke! `r emo::ji("sunflower")`
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-02-datenvisualisierung.pdf)
 
