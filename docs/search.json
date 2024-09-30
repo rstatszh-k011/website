@@ -800,48 +800,6 @@
     "text": "Artwork by @allison_horst"
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#öffne-die-github-organisation",
-    "href": "folien/md-02-datenvisualisierung.html#öffne-die-github-organisation",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "öffne die GitHub Organisation",
-    "text": "öffne die GitHub Organisation\nFüge diesen Link als Lesezeichen in deinem Browser hinzu!\n\ngithub.com/rstatszh-k009"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-der-github-organisation",
-    "href": "folien/md-02-datenvisualisierung.html#innerhalb-der-github-organisation",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "innerhalb der GitHub Organisation",
-    "text": "innerhalb der GitHub Organisation\n\nSuche in der Suchleiste nach deinem Benutzernamen unter Repositories"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-deines-repositories",
-    "href": "folien/md-02-datenvisualisierung.html#innerhalb-deines-repositories",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "innerhalb deines Repositories",
-    "text": "innerhalb deines Repositories"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud",
-    "href": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "innerhalb Posit Cloud",
-    "text": "innerhalb Posit Cloud\nFüge diesen Link als Lesezeichen in deinem Browser hinzu!\n\nhttps://posit.cloud/spaces/543494/content/"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud-1",
-    "href": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud-1",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "innerhalb Posit Cloud",
-    "text": "innerhalb Posit Cloud"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#versionskontrolle---terminologie-1",
-    "href": "folien/md-02-datenvisualisierung.html#versionskontrolle---terminologie-1",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Versionskontrolle - Terminologie",
-    "text": "Versionskontrolle - Terminologie\nTODO: Diagramm als Übersicht für Git Terminologie"
-  },
-  {
     "objectID": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
     "href": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
@@ -884,11 +842,11 @@
     "text": "R Paket ggplot2\n\n\n\nggplot2 ist das Datenvisualisierungspaket von tidyverse\ngg” in “ggplot2” steht für “Grammar of Graphics”\nInspiriert durch das Buch Grammar of Graphics von Leland Wilkinson\nDokumentation: https://ggplot2.tidyverse.org/\nBuch: https://ggplot2-book.org"
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-r",
-    "href": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-r",
+    "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
+    "href": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Ich bin dran: Arbeiten mit R",
-    "text": "Ich bin dran: Arbeiten mit R\n\n\nZurücklehnen und genießen!"
+    "section": "Ich bin dran: Arbeiten mit Quarto und R",
+    "text": "Ich bin dran: Arbeiten mit Quarto und R\n\n\nZurücklehnen und genießen!"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#code-struktur",
@@ -1008,13 +966,6 @@
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Scatterplot (Streudiagramm)",
     "text": "Scatterplot (Streudiagramm)\n\nfor visualizing relationships between two continuous (numerical) variables\n\n\nggplot(data = gapminder_2007,\n       mapping = aes(x = gdpPercap,\n                     y = lifeExp,\n                     size = pop,\n                     color = continent)) +\n  geom_point() +\n  scale_color_colorblind() +\n  theme_minimal()"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#du-bist-dran-md-02-exercises",
-    "href": "folien/md-02-datenvisualisierung.html#du-bist-dran-md-02-exercises",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Du bist dran: md-02-exercises",
-    "text": "Du bist dran: md-02-exercises\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei TODO: md-02c-diagramm.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#modul-2-dokumentation",
@@ -1259,7 +1210,7 @@
     "href": "module/md-02.html",
     "title": "Modul 2",
     "section": "",
-    "text": "Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren.\nDie Lernenden…",
+    "text": "Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden.",
     "crumbs": [
       "Modul 02"
     ]
@@ -1269,7 +1220,7 @@
     "href": "module/md-02.html#lernziele",
     "title": "Modul 2",
     "section": "",
-    "text": "Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren.\nDie Lernenden…",
+    "text": "Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden.",
     "crumbs": [
       "Modul 02"
     ]
@@ -1279,7 +1230,7 @@
     "href": "module/md-02.html#folien",
     "title": "Modul 2",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung",
+    "text": "Folien\nZeige Folien im Vollbildmodus an | Download slides as PDF",
     "crumbs": [
       "Modul 02"
     ]
@@ -1289,7 +1240,7 @@
     "href": "module/md-02.html#lesematerial",
     "title": "Modul 2",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung",
+    "text": "Lesematerial\n\nLies: R for Data Science - Section 3: Workflow basics\n\nLetzte Woche hatte ich bereits die Kapitel für Daten Visualisierungen aufgelistet. Nachdem wir uns nun intensiver damit beschäftigt haben, möchte ich euch nochmals auf die folgenden Kapitel hinweisen:\n\nR for Data Science - Data visualization - Section 1.1: Introduction\nR for Data Science - Data visualization - Section 1.2: First Steps\nR for Data Science - Data visualization - Section 1.3: ggplot2 calls",
     "crumbs": [
       "Modul 02"
     ]
@@ -1614,12 +1565,5 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
-    "href": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Ich bin dran: Arbeiten mit Quarto und R",
-    "text": "Ich bin dran: Arbeiten mit Quarto und R\n\n\nZurücklehnen und genießen!"
   }
 ]
