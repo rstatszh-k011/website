@@ -538,7 +538,7 @@
     "href": "folien/md-02-datenvisualisierung.html#tipps-für-suchmaschinen",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Tipps für Suchmaschinen",
-    "text": "Tipps für Suchmaschinen\n\nVerwende Verben, die beschreiben, was du tun willst\nSei präzise\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nScrolle durch die ersten 5 Ergebnisse (wähle nicht nur das erste aus)\nSchreibe die Suchanfrage auf Englisch\n\nBeispiel: How to remove a legend from a plot in R ggplot2?"
+    "text": "Tipps für Suchmaschinen\n\nVerwende Verben, die beschreiben, was du tun willst\nSei präzise\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nScrolle durch die ersten 5 Ergebnisse (wähle nicht nur das erste aus)\nSchreibe die Suchanfrage auf Englisch\n\nBeispiel: “How to remove a legend from a plot in R ggplot2”"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#stack-overflow",
@@ -548,18 +548,18 @@
     "text": "Stack Overflow\n\n\n\nWas ist das?\n\nDas größte Unterstützungsnetzwerk für (Coding-)Probleme\nKann anfangs einschüchternd sein\nUpvote-System\n\n\n\n\nArbeitsablauf\n\nLies dir zuerst kurz die Frage durch, die gepostet wurde.\nLies dir dann die Antwort durch, die als “richtig” markiert wurde.\nLies dir dann eine oder zwei weitere Antworten mit vielen Zustimmungen durch.\nSieh dir dann die “linked posts” an."
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#tipps-für-ai-werkzeuge",
-    "href": "folien/md-02-datenvisualisierung.html#tipps-für-ai-werkzeuge",
+    "objectID": "folien/md-02-datenvisualisierung.html#tipps-for-ai-tools",
+    "href": "folien/md-02-datenvisualisierung.html#tipps-for-ai-tools",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Tipps für AI Werkzeuge",
-    "text": "Tipps für AI Werkzeuge\n\nVerwende Verben, die beschreiben, was du tun willst\nPräzise sein ist weniger wichtig\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nSchreibe die Suchanfrage auf Englisch oder Deutsch\n\n\nWie entferne ich eine Legende aus einem Diagramm in R ggplot2?\nLegende in R ggplot2 entfernen."
+    "section": "Tipps for AI tools",
+    "text": "Tipps for AI tools\n\nVerwende Verben, die beschreiben, was du tun willst\nSei präzise\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nSchreibe die Suchanfrage auf Englisch\n\nBeispiel: “How to remove a legend from a plot in R ggplot2”"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
     "href": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Andere Quellen für Hilfe",
-    "text": "Andere Quellen für Hilfe\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDokumentation Webseiten: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+    "text": "Andere Quellen für Hilfe\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDokumentation Webseiten: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\nQuarto GitHub Diskussion: https://github.com/quarto-dev/quarto-cli/discussions\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#section-1",
@@ -569,46 +569,74 @@
     "text": "Artwork by @allison_horst"
   },
   {
+    "objectID": "folien/md-02-datenvisualisierung.html#öffne-die-github-organisation",
+    "href": "folien/md-02-datenvisualisierung.html#öffne-die-github-organisation",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "öffne die GitHub Organisation",
+    "text": "öffne die GitHub Organisation\nFüge diesen Link als Lesezeichen in deinem Browser hinzu!\n\ngithub.com/rstatszh-k009"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-der-github-organisation",
+    "href": "folien/md-02-datenvisualisierung.html#innerhalb-der-github-organisation",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "innerhalb der GitHub Organisation",
+    "text": "innerhalb der GitHub Organisation\n\nSuche in der Suchleiste nach deinem Benutzernamen unter Repositories"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-deines-repositories",
+    "href": "folien/md-02-datenvisualisierung.html#innerhalb-deines-repositories",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "innerhalb deines Repositories",
+    "text": "innerhalb deines Repositories"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud",
+    "href": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "innerhalb Posit Cloud",
+    "text": "innerhalb Posit Cloud\nFüge diesen Link als Lesezeichen in deinem Browser hinzu!\n\nhttps://posit.cloud/spaces/543494/content/"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud-1",
+    "href": "folien/md-02-datenvisualisierung.html#innerhalb-posit-cloud-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "innerhalb Posit Cloud",
+    "text": "innerhalb Posit Cloud"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#versionskontrolle---terminologie-1",
+    "href": "folien/md-02-datenvisualisierung.html#versionskontrolle---terminologie-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Versionskontrolle - Terminologie",
+    "text": "Versionskontrolle - Terminologie\nTODO: Diagramm als Übersicht für Git Terminologie"
+  },
+  {
     "objectID": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
     "href": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden.\nDie Lernenden…"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#triff-das-stat",
     "href": "folien/md-02-datenvisualisierung.html#triff-das-stat",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Triff das STAT",
-    "text": "Triff das STAT\n\n\nPhilipp Bosch\n\n\n\n\n\n\nJob ohne Excel gesucht 🧮\nCommunity Mensch 💙\nData Literacy Fan 💡\n\n\nThomas Knecht\n\n\n\n\n\n\nR-Support gegen Cookies 🍪\nR-Infrastruktur Guru 🧙\nDebug-Master & Kartentyp 🗺️"
+    "text": "Triff das STAT"
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap",
-    "href": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap",
+    "objectID": "folien/md-02-datenvisualisierung.html#triff-die-kursleitung",
+    "href": "folien/md-02-datenvisualisierung.html#triff-die-kursleitung",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Installation auf dem DAP",
-    "text": "Installation auf dem DAP\nUm in den vollen Genuss der R-Analyse Umgebung zu kommen, musst du im Serviceportal folgende Module bestellen:"
+    "section": "Triff die Kursleitung",
+    "text": "Triff die Kursleitung\n\n\nPhilipp Bosch\n\n\n\n\n\n\nPunkt 1\nPunkt 2\nPunkt 3\n\n\nThomas Knecht\n\n\n\n\n\n\nPunkt 1\nPunkt 2\nPunkt 3"
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#community",
-    "href": "folien/md-02-datenvisualisierung.html#community",
+    "objectID": "folien/md-02-datenvisualisierung.html#dap",
+    "href": "folien/md-02-datenvisualisierung.html#dap",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Community",
-    "text": "Community\nIm Kanton haben wir eine Community of Practice für R, welche ihre digitale Heimat in einem Teams-Kanal hat.\nHier geht’s zum Kanal\nIm Kanal könnt ihr:\n\nFragen rund um R stellen (Stackoverflow des Kantons)\nNeue Infos zum R-Bundle erhalten\nUp-to-date bleiben was in der Community läuft"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#r-fachgruppe",
-    "href": "folien/md-02-datenvisualisierung.html#r-fachgruppe",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "R-Fachgruppe",
-    "text": "R-Fachgruppe\n\n\nAufgaben\n\nUpdates des R-Bundles\nWeiterentwicklung der Installation anhand eurer Bedürfnisse\nSupport bei Installationsproblemen\n\n\nVertretungen\n\nThomas Knecht (JI)\nPhilipp Bosch (JI)\nSarah Gerhard (BI)\nMiriam Hofstetter (VD)\nAndreas Gubler (BD)\nGianluca Macauda (GD)\nFabian Berger (SD)\nJörg Sintermann (BD)\nNina Schnyder (JI)\nGian-Marco Alt (BD)\nJoëlle Ninon Albrecht (JI)"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#ihr-seid-dran-fragen",
-    "href": "folien/md-02-datenvisualisierung.html#ihr-seid-dran-fragen",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Ihr seid dran: Fragen",
-    "text": "Ihr seid dran: Fragen\n\n\nStellt eure Fragen an Thomas und Philipp"
+    "section": "DAP",
+    "text": "DAP\n\nPunkt 1"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#pause-machen",
@@ -625,11 +653,11 @@
     "text": "R Paket ggplot2\n\n\n\nggplot2 ist das Datenvisualisierungspaket von tidyverse\ngg” in “ggplot2” steht für “Grammar of Graphics”\nInspiriert durch das Buch Grammar of Graphics von Leland Wilkinson\nDokumentation: https://ggplot2.tidyverse.org/\nBuch: https://ggplot2-book.org"
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
-    "href": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
+    "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-r",
+    "href": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-r",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Ich bin dran: Arbeiten mit Quarto und R",
-    "text": "Ich bin dran: Arbeiten mit Quarto und R\n\n\nZurücklehnen und genießen!"
+    "section": "Ich bin dran: Arbeiten mit R",
+    "text": "Ich bin dran: Arbeiten mit R\n\n\nZurücklehnen und genießen!"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#code-struktur",
@@ -713,7 +741,7 @@
     "href": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Wir sind dran: md-02-uebungen",
-    "text": "Wir sind dran: md-02-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei md-02b-daten-visualisierung.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+    "text": "Wir sind dran: md-02-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei TODO: md-02b-datenvisualisierung.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#pause-machen-1",
@@ -749,6 +777,13 @@
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Scatterplot (Streudiagramm)",
     "text": "Scatterplot (Streudiagramm)\n\nfor visualizing relationships between two continuous (numerical) variables\n\n\nggplot(data = gapminder_2007,\n       mapping = aes(x = gdpPercap,\n                     y = lifeExp,\n                     size = pop,\n                     color = continent)) +\n  geom_point() +\n  scale_color_colorblind() +\n  theme_minimal()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#du-bist-dran-md-02-exercises",
+    "href": "folien/md-02-datenvisualisierung.html#du-bist-dran-md-02-exercises",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Du bist dran: md-02-exercises",
+    "text": "Du bist dran: md-02-exercises\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei TODO: md-02c-diagramm.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#modul-2-dokumentation",
