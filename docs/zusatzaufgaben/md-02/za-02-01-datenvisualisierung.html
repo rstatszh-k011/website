@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modul 2 – rstatsZH - Data Science mit R</title>
+<title>Daten Visualisierung mit ggplot2 – rstatsZH - Data Science mit R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +20,54 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="../module/md-03.html" rel="next">
-<link href="../module/md-01.html" rel="prev">
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -67,7 +97,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../module/md-02.html">Modul 02</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      rstatsZH - Data Science mit R
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -82,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">rstatsZH - Data Science mit R</a> 
+      <a href="../../">rstatsZH - Data Science mit R</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/rstatszh-k009/" title="GitHub Organisation" class="quarto-navigation-tool px-1" aria-label="GitHub Organisation"><i class="bi bi-github"></i></a>
 </div>
@@ -97,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Vorbereitung</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -106,25 +138,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vorbereitung/01-github.html" class="sidebar-item-text sidebar-link">
+  <a href="../../vorbereitung/01-github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schritt 1: GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vorbereitung/02-posit-cloud.html" class="sidebar-item-text sidebar-link">
+  <a href="../../vorbereitung/02-posit-cloud.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schritt 2: Posit Cloud</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vorbereitung/03-r4ds-intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../../vorbereitung/03-r4ds-intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schritt 3: Kursbuch</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vorbereitung/04-umfrage.html" class="sidebar-item-text sidebar-link">
+  <a href="../../vorbereitung/04-umfrage.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schritt 4: Umfrage</span></a>
   </div>
 </li>
@@ -133,68 +165,68 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../kalendar.html" class="sidebar-item-text sidebar-link">
+  <a href="../../kalendar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Kurskalender</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module/md-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 01</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-02.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../module/md-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 02</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module/md-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 03</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module/md-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 04</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module/md-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 05</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-06.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module/md-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 06</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-07.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module/md-07.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 07</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-08.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module/md-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 08</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-09.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module/md-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 09</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../module/md-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../../module/md-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modul 10</span></a>
   </div>
 </li>
@@ -208,10 +240,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lernziele" id="toc-lernziele" class="nav-link active" data-scroll-target="#lernziele">Lernziele</a></li>
-  <li><a href="#folien" id="toc-folien" class="nav-link" data-scroll-target="#folien"><i class="fa-solid fa-display" aria-label="display"></i> Folien</a></li>
-  <li><a href="#lesematerial" id="toc-lesematerial" class="nav-link" data-scroll-target="#lesematerial"><i class="fa-solid fa-book" aria-label="book"></i> Lesematerial</a></li>
-  <li><a href="#zusatzaufgaben" id="toc-zusatzaufgaben" class="nav-link" data-scroll-target="#zusatzaufgaben"><i class="fa-solid fa-code" aria-label="code"></i> Zusatzaufgaben</a></li>
+  <li><a href="#schritt-1-klone-das-repository-für-modul-2" id="toc-schritt-1-klone-das-repository-für-modul-2" class="nav-link active" data-scroll-target="#schritt-1-klone-das-repository-für-modul-2">Schritt 1: Klone das Repository für Modul 2</a></li>
+  <li><a href="#schritt-2-übertrage-deine-änderungen-auf-github" id="toc-schritt-2-übertrage-deine-änderungen-auf-github" class="nav-link" data-scroll-target="#schritt-2-übertrage-deine-änderungen-auf-github">Schritt 2: Übertrage deine Änderungen auf GitHub</a></li>
+  <li><a href="#schritt-3-eröffne-ein-issue-auf-github" id="toc-schritt-3-eröffne-ein-issue-auf-github" class="nav-link" data-scroll-target="#schritt-3-eröffne-ein-issue-auf-github">Schritt 3: Eröffne ein Issue auf GitHub</a></li>
   </ul>
 </nav>
     </div>
@@ -220,8 +251,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modul 2</h1>
-<p class="subtitle lead">Explorative Datenanalyse durch Visualisierung &amp; Digitaler Arbeitsplatz (DAP)</p>
+<h1 class="title">Daten Visualisierung mit ggplot2</h1>
 </div>
 
 
@@ -238,41 +268,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lernziele" class="level2">
-<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
-<div class="cell">
+<section id="schritt-1-klone-das-repository-für-modul-2" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-1-klone-das-repository-für-modul-2">Schritt 1: Klone das Repository für Modul 2</h2>
 <ol type="1">
-<li>Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).</li>
-<li>Die Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.</li>
-<li>Die Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.</li>
-<li>Die Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden.</li>
+<li><p>Öffne github.com in deinem Browser.</p></li>
+<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k009">github.com/rstatszh-k009</a></p></li>
+<li><p>Finde das Repository <span class="highlight-yellow">md-02-zusatzaufgaben-BENUTZERNAME</span>, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.</p></li>
+<li><p>Klicke auf die grüne Schaltfläche “Code”.</p></li>
+<li><p>Kopiere die HTTPS-URL in deine Zwischenablage.</p></li>
+<li><p>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf <a href="https://posit.cloud/spaces/543494/content/all?sort=name_asc">posit.cloud</a></p></li>
+<li><p>Klicke auf “New Project” &gt; “New Project from Git Repository”</p></li>
+<li><p>Füge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. <span class="highlight-yellow"><strong>Beachte:</strong></span> Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.</p></li>
+<li><p>Warte, bis das Projekt bereitgestellt wurde.</p></li>
+<li><p>Öffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:</p></li>
 </ol>
+<ul>
+<li><code>md-02a-erstelle-ein-diagramm.qmd</code></li>
+<li><code>md-02b-daten-zusammenfassen.qmd</code></li>
+</ul>
+<ol start="11" type="1">
+<li>Fahre mit dem nächsten Schritt 2 fort.</li>
+</ol>
+</section>
+<section id="schritt-2-übertrage-deine-änderungen-auf-github" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-2-übertrage-deine-änderungen-auf-github">Schritt 2: Übertrage deine Änderungen auf GitHub</h2>
+<ol type="1">
+<li><p>Navigiere zum Git-Bereich im Fenster oben rechts.</p></li>
+<li><p>Aktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.</p></li>
+<li><p>Klicke auf die Schaltfläche “Commit”.</p></li>
+<li><p>Gib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Zusatzaufgaben abgeschlossen).</p></li>
+<li><p>Klicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.</p></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis: Git configuration aus Zusatzaufgabe von Modul 1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Es ist möglich, dass Git dich erneut darauf hinweist, dass es nicht weiss, wer du bist. Diese Einstellung haben wir in Modul 1 zwar gemacht, jedoch habe ich in der Vergangenheit beobachtet, dass es bei einigen Teilnehmer:innen erneut zu dieser Meldung kommt. In diesem Fall musst du erneut folgenden Schritt ausführen, um deinen Namen und deine E-Mail-Adresse zu konfigurieren.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Dein Name"</span>, <span class="at">user.email =</span> <span class="st">"Deine Email"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li><p>Klicke auf die Schaltfläche “Push”.</p></li>
+<li><p>Gib deinen GitHub-Benutzernamen im Feld Username an.</p></li>
+<li><p>Gib <span class="highlight-yellow">deinen GitHub Personal Access Token (PAT)</span> im Feld <span class="highlight-yellow">“Password”</span> ein.</p></li>
+<li><p>Das Fenster kann geschlossen werden.</p></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Verwende nicht dein GitHub-Passwort
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen.</p>
+</div>
 </div>
 </section>
-<section id="folien" class="level2">
-<h2 class="anchored" data-anchor-id="folien"><i class="fa-solid fa-display" aria-label="display"></i> Folien</h2>
-<p><a href="../folien/md-02-datenvisualisierung.html">Zeige Folien im Vollbildmodus an</a> | <a href="https://github.com/rstatszh-k009/website/raw/main/folien/md-02-datenvisualisierung.pdf">Download slides as PDF</a></p>
-<iframe class="slide-deck" src="../folien/md-02-datenvisualisierung.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
-</section>
-<section id="lesematerial" class="level2">
-<h2 class="anchored" data-anchor-id="lesematerial"><i class="fa-solid fa-book" aria-label="book"></i> Lesematerial</h2>
+<section id="schritt-3-eröffne-ein-issue-auf-github" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-3-eröffne-ein-issue-auf-github">Schritt 3: Eröffne ein Issue auf GitHub</h2>
 <ol type="1">
-<li>Lies: <a href="https://r4ds.hadley.nz/workflow-basics">R for Data Science - Section 3: Workflow basics</a></li>
+<li><p>Öffne <a href="https://github.com/">github.com</a> in deinem Browser.</p></li>
+<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k009">github.com/rstatszh-k009</a></p></li>
+<li><p>Finde das Repository <span class="highlight-yellow">md-02-zusatzaufgaben-BENUTZERNAME</span>, das mit deinem GitHub-Benutzernamen endet.</p></li>
+<li><p>Klicke auf die Schaltfläche “Issues”.</p></li>
+<li><p>Klicke auf die grüne Schaltfläche “New issue”.</p></li>
+<li><p>Schreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.</p></li>
+<li><p>Markiere im Feld “Leave a comment” den Kursleiter mit <span class="citation" data-cites="larnsce">@larnsce</span> und hiterlasse eine Nachricht oder offene Frage.</p></li>
 </ol>
-<p>Letzte Woche hatte ich bereits die Kapitel für Daten Visualisierungen aufgelistet. Nachdem wir uns nun intensiver damit beschäftigt haben, möchte ich euch nochmals auf die folgenden Kapitel hinweisen:</p>
-<ul>
-<li><a href="https://r4ds.hadley.nz/data-visualize#introduction">R for Data Science - Data visualization - Section 1.1: Introduction</a></li>
-<li><a href="https://r4ds.hadley.nz/data-visualize#first-steps">R for Data Science - Data visualization - Section 1.2: First Steps</a></li>
-<li><a href="https://r4ds.hadley.nz/data-visualize#sec-ggplot2-calls">R for Data Science - Data visualization - Section 1.3: ggplot2 calls</a></li>
-</ul>
-</section>
-<section id="zusatzaufgaben" class="level2">
-<h2 class="anchored" data-anchor-id="zusatzaufgaben"><i class="fa-solid fa-code" aria-label="code"></i> Zusatzaufgaben</h2>
-<p>Bitte erledige die folgende Aufgaben bis Montag, den 7. Oktober 2024.</p>
-<ul>
-<li><a href="../zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html">Zusatzaufgabe 1</a>: Datenvisualisierung mit ggplot2</li>
-</ul>
-<p>Vielen Dank für die Bearbeitung der Aufgaben.</p>
 
 
 </section>
@@ -698,18 +772,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../module/md-01.html" class="pagination-link" aria-label="Modul 01">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Modul 01</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../module/md-03.html" class="pagination-link" aria-label="Modul 03">
-        <span class="nav-page-text">Modul 03</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -722,7 +784,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../verhaltenskodex.html">
+    <a class="nav-link" href="../../verhaltenskodex.html">
 <p>Verhaltenskodex</p>
 </a>
   </li>  

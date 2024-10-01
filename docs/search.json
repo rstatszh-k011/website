@@ -324,114 +324,506 @@
     ]
   },
   {
-    "objectID": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
-    "href": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
-    "title": "Bedingte Anweisungen & Datumswerte",
+    "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html",
+    "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html",
+    "title": "Daten Visualisierung mit ggplot2",
+    "section": "",
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-02a-erstelle-ein-diagramm.qmd\nmd-02b-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-1-klone-das-repository-für-modul-2",
+    "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-1-klone-das-repository-für-modul-2",
+    "title": "Daten Visualisierung mit ggplot2",
+    "section": "",
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-02a-erstelle-ein-diagramm.qmd\nmd-02b-daten-zusammenfassen.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-2-übertrage-deine-änderungen-auf-github",
+    "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-2-übertrage-deine-änderungen-auf-github",
+    "title": "Daten Visualisierung mit ggplot2",
+    "section": "Schritt 2: Übertrage deine Änderungen auf GitHub",
+    "text": "Schritt 2: Übertrage deine Änderungen auf GitHub\n\nNavigiere zum Git-Bereich im Fenster oben rechts.\nAktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.\nKlicke auf die Schaltfläche “Commit”.\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Zusatzaufgaben abgeschlossen).\nKlicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\n\n\n\n\n\n\n\nHinweis: Git configuration aus Zusatzaufgabe von Modul 1\n\n\n\nEs ist möglich, dass Git dich erneut darauf hinweist, dass es nicht weiss, wer du bist. Diese Einstellung haben wir in Modul 1 zwar gemacht, jedoch habe ich in der Vergangenheit beobachtet, dass es bei einigen Teilnehmer:innen erneut zu dieser Meldung kommt. In diesem Fall musst du erneut folgenden Schritt ausführen, um deinen Namen und deine E-Mail-Adresse zu konfigurieren.\n\nlibrary(usethis)\nuse_git_config(user.name = \"Dein Name\", user.email = \"Deine Email\")\n\n\n\n\nKlicke auf die Schaltfläche “Push”.\nGib deinen GitHub-Benutzernamen im Feld Username an.\nGib deinen GitHub Personal Access Token (PAT) im Feld “Password” ein.\nDas Fenster kann geschlossen werden.\n\n\n\n\n\n\n\nVerwende nicht dein GitHub-Passwort\n\n\n\nDu musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-3-eröffne-ein-issue-auf-github",
+    "href": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html#schritt-3-eröffne-ein-issue-auf-github",
+    "title": "Daten Visualisierung mit ggplot2",
+    "section": "Schritt 3: Eröffne ein Issue auf GitHub",
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
+    "href": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen."
   },
   {
-    "objectID": "folien/md-05-datumswerte.html#modul-5-dokumentation",
-    "href": "folien/md-05-datumswerte.html#modul-5-dokumentation",
-    "title": "Bedingte Anweisungen & Datumswerte",
-    "section": "Modul 5 Dokumentation",
-    "text": "Modul 5 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-05.html"
+    "objectID": "folien/md-03-datentransformation.html#eine-grammatik-der-datenmanipulation",
+    "href": "folien/md-03-datentransformation.html#eine-grammatik-der-datenmanipulation",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Eine Grammatik der Datenmanipulation…",
+    "text": "Eine Grammatik der Datenmanipulation…\n… basierend auf den Konzepten von Funktionen als Verben, die Dataframes manipulieren\n\n\n\n\n\n\n\n\n\n\n\n\n\nselect: Spalten nach Namen auswählen\narrange: Zeilen neu ordnen\nfilter: wählt Zeilen aus, die den Kriterien entsprechen\nrelocate: ändert die Reihenfolge der Spalten\nmutate: neue Variablen hinzufügen\nsummarise: Variablen auf Werte reduzieren\ngroup_by: für gruppierte Operationen\n… (viele mehr)"
   },
   {
-    "objectID": "folien/md-05-datumswerte.html#zusatzaufgaben-abgabedatum",
-    "href": "folien/md-05-datumswerte.html#zusatzaufgaben-abgabedatum",
-    "title": "Bedingte Anweisungen & Datumswerte",
+    "objectID": "folien/md-03-datentransformation.html#dplyr-rules",
+    "href": "folien/md-03-datentransformation.html#dplyr-rules",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "dplyr rules",
+    "text": "dplyr rules\nRegeln der dplyr-Funktionen:\n\n\nDas erste Argument ist immer ein Dataframe.\nNachfolgende Argumente sagen, was mit diesem Dataframe geschehen soll.\nGibt immer einen Dataframe zurück.\nNichts wird an Ort und Stelle verändert."
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#funktionen-argumente",
+    "href": "folien/md-03-datentransformation.html#funktionen-argumente",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Funktionen & Argumente",
+    "text": "Funktionen & Argumente\n\nlibrary(dplyr)\n\nfilter(.data = gapminder, \n       year == 2007)\n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#objekte",
+    "href": "folien/md-03-datentransformation.html#objekte",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Objekte",
+    "text": "Objekte\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird\nDaten (Objekt): gapminder_2007"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#operatoren",
+    "href": "folien/md-03-datentransformation.html#operatoren",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Operatoren",
+    "text": "Operatoren\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird\nDaten (Objekt): gapminder_2007\nZuweisungsoperator: &lt;-\nPipe Operator: |&gt;"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#grafik",
+    "href": "folien/md-03-datentransformation.html#grafik",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Grafik",
+    "text": "Grafik\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\nggplot(data = gapminder_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp,\n                     fill = continent)) +\n  geom_boxplot(outlier.shape = NA)"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#daten",
+    "href": "folien/md-03-datentransformation.html#daten",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Daten",
+    "text": "Daten\n\ntreibhausgase &lt;- read_csv(\"daten/ktzh-treibhausgase.csv\")\n\n\nhead(treibhausgase)\n\n\n\n\n\n\n\njahr\nhauptgruppe\nuntergruppe\nthg\nthg_agg\nemission\n\n\n\n\n1990\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1991\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1992\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1993\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1994\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1995\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n\n\n\n\n\n\nncol(treibhausgase)\n\n[1] 6\n\n\n\n\n\n\nnrow(treibhausgase)\n\n[1] 1980"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#data",
+    "href": "folien/md-03-datentransformation.html#data",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Data",
+    "text": "Data\n\ntreibhausgase |&gt; \n  distinct(hauptgruppe, untergruppe)\n\n\n\n\n\n\nhauptgruppe\nuntergruppe\n\n\n\n\nAbwasser und Abfall\nAbfalldeponie\n\n\nAbwasser und Abfall\nAbwasserbehandlung\n\n\nAbwasser und Abfall\nAbfallverbrennung\n\n\nLandwirtschaft\nFermentation bei der Verdauung\n\n\nLandwirtschaft\nWirtschaftsdünger-Management\n\n\nLandwirtschaft\nLandwirtschaftliche Böden\n\n\nVerkehr\nMotorräder\n\n\nVerkehr\nPersonenwagen\n\n\nVerkehr\nLinien-/Omnibusse\n\n\nVerkehr\nReisebusse\n\n\nVerkehr\nLastkraftwagen\n\n\nVerkehr\nSattelzugmaschinen\n\n\nLandwirtschaft\nLand- und forstwirtschaftliche Maschinen\n\n\nIndustrie\nIndustrielle Fahrzeuge und Baumaschinen\n\n\nVerkehr\nSchiene\n\n\nVerkehr\nSchiff\n\n\nGebäude\nHeizkessel Dienstleistungen Heizöl\n\n\nGebäude\nHeizkessel Haushalte Heizöl\n\n\nGebäude\nHeizkessel Dienstleistungen Gas\n\n\nGebäude\nHeizkessel Haushalte Gas\n\n\nAbwasser und Abfall\nKVA\n\n\nIndustrie\nIndustrielle Prozesse nichtenergetisch\n\n\nIndustrie\nIndustrielle Prozesse energetisch"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
+    "href": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Wir sind dran: md-03-uebungen",
+    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#pause-machen",
+    "href": "folien/md-03-datentransformation.html#pause-machen",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
+    "href": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Ihr seid dran: 02-dplyr-ihr.qmd",
+    "text": "Ihr seid dran: 02-dplyr-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-dplyr-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#r-terminology",
+    "href": "folien/md-03-datentransformation.html#r-terminology",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "R Terminology",
+    "text": "R Terminology\n\nlibrary(dplyr)\n\ntreibhausgase_verkehr &lt;- treibhausgase |&gt; \n    filter(hauptgruppe == \"Verkehr\", jahr == 2022) \n\n\nFunktion: filter()\nArgumente, die folgen: hauptgruppe == \"Verkehr\" Was ist mit den Daten gemacht wird\nDaten (Objekt): treibhausgase_verkehr\nZuweisungsoperator: &lt;-\nPipe Operator: |&gt;"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram",
+    "href": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Aufgabe 1.3 - Verbundenes Streudiagram",
+    "text": "Aufgabe 1.3 - Verbundenes Streudiagram\n Großartig für Zeitreihendaten \n\n\nBenutze die Funktion ggplot(), um ein verbundenmes Streudiagramm mit geom_point() und geom_line() für die Daten zu erstellen, die du in Aufgabe 1.2 erstellt hast.\nVerwende die Funktion aes(), um die Variable “jahr” auf die x-Achse, die Variable “emission” auf die y-Achse und die Variable “untergruppe” auf die Farbe und die ästhetische Gruppe zu übertragen.\nÄndere die Farben mit scale_color_colorblind().\n\n\n\ntreibhausgase |&gt; \n    filter(hauptgruppe == \"Gebäude\") |&gt; \n    ggplot(aes(x = jahr, y = emission, color = untergruppe)) +\n    geom_point() +\n    geom_path()"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram-output",
+    "href": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram-output",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Aufgabe 1.3 - Verbundenes Streudiagram",
+    "text": "Aufgabe 1.3 - Verbundenes Streudiagram"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
+    "href": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Wir sind dran: 03-dplyr-wir.qmd",
+    "text": "Wir sind dran: 03-dplyr-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#pause-machen-1",
+    "href": "folien/md-03-datentransformation.html#pause-machen-1",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#todo-04-dplyr-ihr.qmd",
+    "href": "folien/md-03-datentransformation.html#todo-04-dplyr-ihr.qmd",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "TODO: 04-dplyr-ihr.qmd",
+    "text": "TODO: 04-dplyr-ihr.qmd\n\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#modul-3-dokumentation",
+    "href": "folien/md-03-datentransformation.html#modul-3-dokumentation",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "section": "Modul 3 Dokumentation",
+    "text": "Modul 3 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-03.html"
+  },
+  {
+    "objectID": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 28. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 31. Oktober"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 14. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 17. Oktober"
   },
   {
-    "objectID": "folien/md-05-datumswerte.html#danke-1",
-    "href": "folien/md-05-datumswerte.html#danke-1",
-    "title": "Bedingte Anweisungen & Datumswerte",
+    "objectID": "folien/md-03-datentransformation.html#danke-1",
+    "href": "folien/md-03-datentransformation.html#danke-1",
+    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
-    "objectID": "folien/md-09-veroeffentlichen.html#lernziele-für-diese-woche",
-    "href": "folien/md-09-veroeffentlichen.html#lernziele-für-diese-woche",
-    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "objectID": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
+    "href": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
+    "title": "Daten Import & Daten Management",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Literaturangaben zu Quarto-Dateien hinzufügen, indem sie das Navigationsmenü des visuellen Editors RStudio verwenden und eine Referenzsammlung im .bib Dateformat erstellen.\nDie Lernenden können Funktionen aus den Paketen knitr und gt anwenden, um Tabellen in Berichten im HTML Ausgabeformat darzustellen.\nDie Lernenden können den GitHub Pages Dienst nutzen, um ein Repository als eigenständige Website zu veröffentlichen."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Daten aus Dateien im CSV-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses und auf GitHub befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten."
   },
   {
-    "objectID": "folien/md-09-veroeffentlichen.html#modul-9-dokumentation",
-    "href": "folien/md-09-veroeffentlichen.html#modul-9-dokumentation",
-    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
-    "section": "Modul 9 Dokumentation",
-    "text": "Modul 9 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-09.html"
+    "objectID": "folien/md-04-daten-management.html#modul-4-dokumentation",
+    "href": "folien/md-04-daten-management.html#modul-4-dokumentation",
+    "title": "Daten Import & Daten Management",
+    "section": "Modul 4 Dokumentation",
+    "text": "Modul 4 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-04.html"
   },
   {
-    "objectID": "folien/md-09-veroeffentlichen.html#zusatzaufgaben-abgabedatum",
-    "href": "folien/md-09-veroeffentlichen.html#zusatzaufgaben-abgabedatum",
-    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "objectID": "folien/md-04-daten-management.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-04-daten-management.html#zusatzaufgaben-abgabedatum",
+    "title": "Daten Import & Daten Management",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 25. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 28. November"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 21. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 24. Oktober"
   },
   {
-    "objectID": "folien/md-09-veroeffentlichen.html#danke-1",
-    "href": "folien/md-09-veroeffentlichen.html#danke-1",
-    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "objectID": "folien/md-04-daten-management.html#danke-1",
+    "href": "folien/md-04-daten-management.html#danke-1",
+    "title": "Daten Import & Daten Management",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
-    "objectID": "folien/md-08-text-daten.html#lernziele-für-diese-woche",
-    "href": "folien/md-08-text-daten.html#lernziele-für-diese-woche",
-    "title": "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II",
+    "objectID": "folien/md-02-datenvisualisierung.html#section",
+    "href": "folien/md-02-datenvisualisierung.html#section",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "",
+    "text": "Artwork by @allison_horst"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#tipps-für-suchmaschinen",
+    "href": "folien/md-02-datenvisualisierung.html#tipps-für-suchmaschinen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Tipps für Suchmaschinen",
+    "text": "Tipps für Suchmaschinen\n\nVerwende Verben, die beschreiben, was du tun willst\nSei präzise\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nScrolle durch die ersten 5 Ergebnisse (wähle nicht nur das erste aus)\nSchreibe die Suchanfrage auf Englisch\n\nBeispiel: How to remove a legend from a plot in R ggplot2?"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#stack-overflow",
+    "href": "folien/md-02-datenvisualisierung.html#stack-overflow",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Stack Overflow",
+    "text": "Stack Overflow\n\n\n\nWas ist das?\n\nDas größte Unterstützungsnetzwerk für (Coding-)Probleme\nKann anfangs einschüchternd sein\nUpvote-System\n\n\n\n\nArbeitsablauf\n\nLies dir zuerst kurz die Frage durch, die gepostet wurde.\nLies dir dann die Antwort durch, die als “richtig” markiert wurde.\nLies dir dann eine oder zwei weitere Antworten mit vielen Zustimmungen durch.\nSieh dir dann die “linked posts” an."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#tipps-für-ai-werkzeuge",
+    "href": "folien/md-02-datenvisualisierung.html#tipps-für-ai-werkzeuge",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Tipps für AI Werkzeuge",
+    "text": "Tipps für AI Werkzeuge\n\nVerwende Verben, die beschreiben, was du tun willst\nPräzise sein ist weniger wichtig\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nSchreibe die Suchanfrage auf Englisch oder Deutsch\n\n\nWie entferne ich eine Legende aus einem Diagramm in R ggplot2?\nLegende in R ggplot2 entfernen."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
+    "href": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Andere Quellen für Hilfe",
+    "text": "Andere Quellen für Hilfe\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDokumentation Webseiten: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#section-1",
+    "href": "folien/md-02-datenvisualisierung.html#section-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "",
+    "text": "Artwork by @allison_horst"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
+    "href": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\nDue Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\nDie Lernenden können einen merge conflict innerhalb eines R-Skriptes lösen."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden."
   },
   {
-    "objectID": "folien/md-08-text-daten.html#modul-8-dokumentation",
-    "href": "folien/md-08-text-daten.html#modul-8-dokumentation",
-    "title": "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II",
-    "section": "Modul 8 Dokumentation",
-    "text": "Modul 8 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-08.html"
+    "objectID": "folien/md-02-datenvisualisierung.html#triff-das-stat",
+    "href": "folien/md-02-datenvisualisierung.html#triff-das-stat",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Triff das STAT",
+    "text": "Triff das STAT\n\n\nPhilipp Bosch\n\n\n\n\n\n\nJob ohne Excel gesucht 🧮\nCommunity Mensch 💙\nData Literacy Fan 💡\n\n\nThomas Knecht\n\n\n\n\n\n\nR-Support gegen Cookies 🍪\nR-Infrastruktur Guru 🧙\nDebug-Master & Kartentyp 🗺️"
   },
   {
-    "objectID": "folien/md-08-text-daten.html#zusatzaufgaben-abgabedatum",
-    "href": "folien/md-08-text-daten.html#zusatzaufgaben-abgabedatum",
-    "title": "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II",
+    "objectID": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap",
+    "href": "folien/md-02-datenvisualisierung.html#installation-auf-dem-dap",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Installation auf dem DAP",
+    "text": "Installation auf dem DAP\nUm in den vollen Genuss der R-Analyse Umgebung zu kommen, musst du im Serviceportal folgende Module bestellen:"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#community",
+    "href": "folien/md-02-datenvisualisierung.html#community",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Community",
+    "text": "Community\nIm Kanton haben wir eine Community of Practice für R, welche ihre digitale Heimat in einem Teams-Kanal hat.\nHier geht’s zum Kanal\nIm Kanal könnt ihr:\n\nFragen rund um R stellen (Stackoverflow des Kantons)\nNeue Infos zum R-Bundle erhalten\nUp-to-date bleiben was in der Community läuft"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#r-fachgruppe",
+    "href": "folien/md-02-datenvisualisierung.html#r-fachgruppe",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "R-Fachgruppe",
+    "text": "R-Fachgruppe\n\n\nAufgaben\n\nUpdates des R-Bundles\nWeiterentwicklung der Installation anhand eurer Bedürfnisse\nSupport bei Installationsproblemen\n\n\nVertretungen\n\nThomas Knecht (JI)\nPhilipp Bosch (JI)\nSarah Gerhard (BI)\nMiriam Hofstetter (VD)\nAndreas Gubler (BD)\nGianluca Macauda (GD)\nFabian Berger (SD)\nJörg Sintermann (BD)\nNina Schnyder (JI)\nGian-Marco Alt (BD)\nJoëlle Ninon Albrecht (JI)"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#ihr-seid-dran-fragen",
+    "href": "folien/md-02-datenvisualisierung.html#ihr-seid-dran-fragen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Ihr seid dran: Fragen",
+    "text": "Ihr seid dran: Fragen\n\n\nStellt eure Fragen an Thomas und Philipp"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#pause-machen",
+    "href": "folien/md-02-datenvisualisierung.html#pause-machen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#r-paket-ggplot2",
+    "href": "folien/md-02-datenvisualisierung.html#r-paket-ggplot2",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "R Paket ggplot2",
+    "text": "R Paket ggplot2\n\n\n\nggplot2 ist das Datenvisualisierungspaket von tidyverse\ngg” in “ggplot2” steht für “Grammar of Graphics”\nInspiriert durch das Buch Grammar of Graphics von Leland Wilkinson\nDokumentation: https://ggplot2.tidyverse.org/\nBuch: https://ggplot2-book.org"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
+    "href": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Ich bin dran: Arbeiten mit Quarto und R",
+    "text": "Ich bin dran: Arbeiten mit Quarto und R\n\n\nZurücklehnen und genießen!"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot() ist die Hauptfunktion von ggplot2\nPlots werden in Schichten aufgebaut\nDie Struktur des Codes für Plots lässt sich wie folgt zusammenfassen\n\n\nggplot(data = [datensatz], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n  geom_xxx() +\n  andere Optionen"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-1",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-2",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-2",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder)"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-3",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-3",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes())"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-4",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-4",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-5",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-5",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-6",
+    "href": "folien/md-02-datenvisualisierung.html#code-struktur-6",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Code Struktur",
+    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#poll-1-was-stellt-die-dicke-linie-innerhalb-des-kastens-eines-boxplots-dar",
+    "href": "folien/md-02-datenvisualisierung.html#poll-1-was-stellt-die-dicke-linie-innerhalb-des-kastens-eines-boxplots-dar",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?",
+    "text": "Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?\n\n\n\nIch weiß es nicht\nder Mittelwert der Beobachtungen\ndie Mitte der Box\nder Median der Beobachtungen"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#poll-2-wie-viel-prozent-der-beobachtungen-befinden-sich-innerhalb-der-box-eines-boxplots-interquartilsbereich",
+    "href": "folien/md-02-datenvisualisierung.html#poll-2-wie-viel-prozent-der-beobachtungen-befinden-sich-innerhalb-der-box-eines-boxplots-interquartilsbereich",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Poll 2: Wie viel Prozent der Beobachtungen befinden sich innerhalb der Box eines Boxplots (Interquartilsbereich)?",
+    "text": "Poll 2: Wie viel Prozent der Beobachtungen befinden sich innerhalb der Box eines Boxplots (Interquartilsbereich)?\n\n\n\nIch weiß es nicht\n25%\nhängt vom Median ab\n50%"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#poll-3-was-ist-der-median-einer-gruppe-von-beobachtungen",
+    "href": "folien/md-02-datenvisualisierung.html#poll-3-was-ist-der-median-einer-gruppe-von-beobachtungen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Poll 3: Was ist der Median einer Gruppe von Beobachtungen?",
+    "text": "Poll 3: Was ist der Median einer Gruppe von Beobachtungen?\n\nIch weiß es nicht\nDer Median ist der am häufigsten vorkommende Wert in einem Datensatz.\nDer Median ist die Summe aller Werte in einem Datensatz geteilt durch die Anzahl der Beobachtungen.\nDer Median ist der Punkt, über und unter dem die Hälfte (50%) der Beobachtungen liegt."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#boxplot-erklärt",
+    "href": "folien/md-02-datenvisualisierung.html#boxplot-erklärt",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Boxplot, erklärt",
+    "text": "Boxplot, erklärt\n\n\nFigure 1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.\n\nBild entnommen aus: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nDie Box ist ein Feld, das den Bereich der mittleren Hälfte der Daten angibt, eine Distanz, die als Interquartilbereich (IQR) bekannt ist und sich vom 25. Perzentil der Verteilung bis zum 75. Perzentil erstreckt.\nIn der Mitte der Box befindet sich eine Linie, die den Median, d. h. das 50. Perzentil, der Verteilung anzeigt.\nDiese drei Linien vermitteln einen Eindruck von der Streuung der Verteilung und davon, ob die Verteilung symmetrisch um den Median oder zu einer Seite hin verzerrt ist.\nVisuelle Punkte, die Beobachtungen anzeigen, die mehr als das 1,5-Fache des IQR von einem der Ränder des Kastens entfernt liegen. Diese Ausreißer sind ungewöhnlich und werden daher einzeln dargestellt.\nEine Linie (oder ein Whisker), die sich von jedem Ende des Kastens bis zum am weitesten entfernten Punkt in der Verteilung erstreckt, der kein Ausreißer ist."
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
+    "href": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Wir sind dran: md-02-uebungen",
+    "text": "Wir sind dran: md-02-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei md-02b-daten-visualisierung.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#pause-machen-1",
+    "href": "folien/md-02-datenvisualisierung.html#pause-machen-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#arten-von-variablen",
+    "href": "folien/md-02-datenvisualisierung.html#arten-von-variablen",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Arten von Variablen",
+    "text": "Arten von Variablen\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage, Schulnoten)"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#histogramm",
+    "href": "folien/md-02-datenvisualisierung.html#histogramm",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Histogramm",
+    "text": "Histogramm\n\nzur Visualisierung der Verteilung von kontinuierlichen (numerischen) Variablen\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g)) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#barplot-säulendiagramm",
+    "href": "folien/md-02-datenvisualisierung.html#barplot-säulendiagramm",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Barplot (Säulendiagramm)",
+    "text": "Barplot (Säulendiagramm)\n\nzur Visualisierung der Verteilung von kategorischen (nicht numerischen) Variablen\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#scatterplot-streudiagramm",
+    "href": "folien/md-02-datenvisualisierung.html#scatterplot-streudiagramm",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Scatterplot (Streudiagramm)",
+    "text": "Scatterplot (Streudiagramm)\n\nfor visualizing relationships between two continuous (numerical) variables\n\n\nggplot(data = gapminder_2007,\n       mapping = aes(x = gdpPercap,\n                     y = lifeExp,\n                     size = pop,\n                     color = continent)) +\n  geom_point() +\n  scale_color_colorblind() +\n  theme_minimal()"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#modul-2-dokumentation",
+    "href": "folien/md-02-datenvisualisierung.html#modul-2-dokumentation",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "section": "Modul 2 Dokumentation",
+    "text": "Modul 2 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-02.html"
+  },
+  {
+    "objectID": "folien/md-02-datenvisualisierung.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-02-datenvisualisierung.html#zusatzaufgaben-abgabedatum",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 18. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 21. November"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 07. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 10. Oktober"
   },
   {
-    "objectID": "folien/md-08-text-daten.html#danke-1",
-    "href": "folien/md-08-text-daten.html#danke-1",
-    "title": "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II",
+    "objectID": "folien/md-02-datenvisualisierung.html#danke-1",
+    "href": "folien/md-02-datenvisualisierung.html#danke-1",
+    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
-    "objectID": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
-    "href": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
-    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "objectID": "folien/md-10-funktionen.html#lernziele-für-diese-woche",
+    "href": "folien/md-10-funktionen.html#lernziele-für-diese-woche",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzepters widergeben."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden verstehen die dplyr-Funktion across() anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen."
   },
   {
-    "objectID": "folien/md-07-daten-formen.html#modul-7-dokumentation",
-    "href": "folien/md-07-daten-formen.html#modul-7-dokumentation",
-    "title": "Datenformen lang und breit & Daten zusammenfügen",
-    "section": "Modul 7 Dokumentation",
-    "text": "Modul 7 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-07.html"
+    "objectID": "folien/md-10-funktionen.html#modul-10-dokumentation",
+    "href": "folien/md-10-funktionen.html#modul-10-dokumentation",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Modul 10 Dokumentation",
+    "text": "Modul 10 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-10.html"
   },
   {
-    "objectID": "folien/md-07-daten-formen.html#zusatzaufgaben-abgabedatum",
-    "href": "folien/md-07-daten-formen.html#zusatzaufgaben-abgabedatum",
-    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "objectID": "folien/md-10-funktionen.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-10-funktionen.html#zusatzaufgaben-abgabedatum",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 11. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 14. November"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 02. Dezember\nKorrektur- und Feedbackphase bis zu: Donnerstag, 05. Dezember"
   },
   {
-    "objectID": "folien/md-07-daten-formen.html#danke-1",
-    "href": "folien/md-07-daten-formen.html#danke-1",
-    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "objectID": "folien/md-10-funktionen.html#danke-1",
+    "href": "folien/md-10-funktionen.html#danke-1",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Danke! 🌻",
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#lernziele-für-diese-woche",
+    "href": "folien/md-06-daten-typen.html#lernziele-für-diese-woche",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Bedeutung von Vektoren mit Bezug auf einen Dataframe erläutern.\nDie Lernenden können drei verschiedene Methoden anwenden um auf einen Vektor in einem dataframe zuzugreifen.\nDie Lernenden können die vier wichtigsten atomaren Vektortypen in R auflisten.\nDie Lernenden können einen for loop verwenden, um durch die Elemente eines Vektors in einem Dataframe zu iterieren und spezifische Operationen auf jedes Element anzuwenden."
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#modul-6-dokumentation",
+    "href": "folien/md-06-daten-typen.html#modul-6-dokumentation",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Modul 6 Dokumentation",
+    "text": "Modul 6 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-06.html"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-06-daten-typen.html#zusatzaufgaben-abgabedatum",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Zusatzaufgaben Abgabedatum",
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 04. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 07. November"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#danke-1",
+    "href": "folien/md-06-daten-typen.html#danke-1",
+    "title": "Daten Typen & Vektoren & For Loops",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
@@ -702,464 +1094,114 @@
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
-    "objectID": "folien/md-06-daten-typen.html#lernziele-für-diese-woche",
-    "href": "folien/md-06-daten-typen.html#lernziele-für-diese-woche",
-    "title": "Daten Typen & Vektoren & For Loops",
+    "objectID": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
+    "href": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Bedeutung von Vektoren mit Bezug auf einen Dataframe erläutern.\nDie Lernenden können drei verschiedene Methoden anwenden um auf einen Vektor in einem dataframe zuzugreifen.\nDie Lernenden können die vier wichtigsten atomaren Vektortypen in R auflisten.\nDie Lernenden können einen for loop verwenden, um durch die Elemente eines Vektors in einem Dataframe zu iterieren und spezifische Operationen auf jedes Element anzuwenden."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzepters widergeben."
   },
   {
-    "objectID": "folien/md-06-daten-typen.html#modul-6-dokumentation",
-    "href": "folien/md-06-daten-typen.html#modul-6-dokumentation",
-    "title": "Daten Typen & Vektoren & For Loops",
-    "section": "Modul 6 Dokumentation",
-    "text": "Modul 6 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-06.html"
+    "objectID": "folien/md-07-daten-formen.html#modul-7-dokumentation",
+    "href": "folien/md-07-daten-formen.html#modul-7-dokumentation",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Modul 7 Dokumentation",
+    "text": "Modul 7 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-07.html"
   },
   {
-    "objectID": "folien/md-06-daten-typen.html#zusatzaufgaben-abgabedatum",
-    "href": "folien/md-06-daten-typen.html#zusatzaufgaben-abgabedatum",
-    "title": "Daten Typen & Vektoren & For Loops",
+    "objectID": "folien/md-07-daten-formen.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-07-daten-formen.html#zusatzaufgaben-abgabedatum",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 04. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 07. November"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 11. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 14. November"
   },
   {
-    "objectID": "folien/md-06-daten-typen.html#danke-1",
-    "href": "folien/md-06-daten-typen.html#danke-1",
-    "title": "Daten Typen & Vektoren & For Loops",
+    "objectID": "folien/md-07-daten-formen.html#danke-1",
+    "href": "folien/md-07-daten-formen.html#danke-1",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
-    "objectID": "folien/md-10-funktionen.html#lernziele-für-diese-woche",
-    "href": "folien/md-10-funktionen.html#lernziele-für-diese-woche",
-    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "objectID": "folien/md-08-text-daten.html#lernziele-für-diese-woche",
+    "href": "folien/md-08-text-daten.html#lernziele-für-diese-woche",
+    "title": "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden verstehen die dplyr-Funktion across() anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\nDue Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\nDie Lernenden können einen merge conflict innerhalb eines R-Skriptes lösen."
   },
   {
-    "objectID": "folien/md-10-funktionen.html#modul-10-dokumentation",
-    "href": "folien/md-10-funktionen.html#modul-10-dokumentation",
-    "title": "Funktionen schreiben & Parameterisierung von Berichten",
-    "section": "Modul 10 Dokumentation",
-    "text": "Modul 10 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-10.html"
+    "objectID": "folien/md-08-text-daten.html#modul-8-dokumentation",
+    "href": "folien/md-08-text-daten.html#modul-8-dokumentation",
+    "title": "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II",
+    "section": "Modul 8 Dokumentation",
+    "text": "Modul 8 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-08.html"
   },
   {
-    "objectID": "folien/md-10-funktionen.html#zusatzaufgaben-abgabedatum",
-    "href": "folien/md-10-funktionen.html#zusatzaufgaben-abgabedatum",
-    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "objectID": "folien/md-08-text-daten.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-08-text-daten.html#zusatzaufgaben-abgabedatum",
+    "title": "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 02. Dezember\nKorrektur- und Feedbackphase bis zu: Donnerstag, 05. Dezember"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 18. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 21. November"
   },
   {
-    "objectID": "folien/md-10-funktionen.html#danke-1",
-    "href": "folien/md-10-funktionen.html#danke-1",
-    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "objectID": "folien/md-08-text-daten.html#danke-1",
+    "href": "folien/md-08-text-daten.html#danke-1",
+    "title": "Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub II",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#section",
-    "href": "folien/md-02-datenvisualisierung.html#section",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "",
-    "text": "Artwork by @allison_horst"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#tipps-für-suchmaschinen",
-    "href": "folien/md-02-datenvisualisierung.html#tipps-für-suchmaschinen",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Tipps für Suchmaschinen",
-    "text": "Tipps für Suchmaschinen\n\nVerwende Verben, die beschreiben, was du tun willst\nSei präzise\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nScrolle durch die ersten 5 Ergebnisse (wähle nicht nur das erste aus)\nSchreibe die Suchanfrage auf Englisch\n\nBeispiel: “How to remove a legend from a plot in R ggplot2”"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#stack-overflow",
-    "href": "folien/md-02-datenvisualisierung.html#stack-overflow",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Stack Overflow",
-    "text": "Stack Overflow\n\n\n\nWas ist das?\n\nDas größte Unterstützungsnetzwerk für (Coding-)Probleme\nKann anfangs einschüchternd sein\nUpvote-System\n\n\n\n\nArbeitsablauf\n\nLies dir zuerst kurz die Frage durch, die gepostet wurde.\nLies dir dann die Antwort durch, die als “richtig” markiert wurde.\nLies dir dann eine oder zwei weitere Antworten mit vielen Zustimmungen durch.\nSieh dir dann die “linked posts” an."
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#tipps-for-ai-tools",
-    "href": "folien/md-02-datenvisualisierung.html#tipps-for-ai-tools",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Tipps for AI tools",
-    "text": "Tipps for AI tools\n\nVerwende Verben, die beschreiben, was du tun willst\nSei präzise\nFüge R zur Suchanfrage hinzu\nFüge den Namen des R-Pakets zur Suchanfrage hinzu (z.B ggplot2)\nSchreibe die Suchanfrage auf Englisch\n\nBeispiel: “How to remove a legend from a plot in R ggplot2”"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
-    "href": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Andere Quellen für Hilfe",
-    "text": "Andere Quellen für Hilfe\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDokumentation Webseiten: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#section-1",
-    "href": "folien/md-02-datenvisualisierung.html#section-1",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "",
-    "text": "Artwork by @allison_horst"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
-    "href": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "objectID": "folien/md-09-veroeffentlichen.html#lernziele-für-diese-woche",
+    "href": "folien/md-09-veroeffentlichen.html#lernziele-für-diese-woche",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Literaturangaben zu Quarto-Dateien hinzufügen, indem sie das Navigationsmenü des visuellen Editors RStudio verwenden und eine Referenzsammlung im .bib Dateformat erstellen.\nDie Lernenden können Funktionen aus den Paketen knitr und gt anwenden, um Tabellen in Berichten im HTML Ausgabeformat darzustellen.\nDie Lernenden können den GitHub Pages Dienst nutzen, um ein Repository als eigenständige Website zu veröffentlichen."
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#triff-das-stat",
-    "href": "folien/md-02-datenvisualisierung.html#triff-das-stat",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Triff das STAT",
-    "text": "Triff das STAT"
+    "objectID": "folien/md-09-veroeffentlichen.html#modul-9-dokumentation",
+    "href": "folien/md-09-veroeffentlichen.html#modul-9-dokumentation",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Modul 9 Dokumentation",
+    "text": "Modul 9 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-09.html"
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#triff-die-kursleitung",
-    "href": "folien/md-02-datenvisualisierung.html#triff-die-kursleitung",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Triff die Kursleitung",
-    "text": "Triff die Kursleitung\n\n\nPhilipp Bosch\n\n\n\n\n\n\nPunkt 1\nPunkt 2\nPunkt 3\n\n\nThomas Knecht\n\n\n\n\n\n\nPunkt 1\nPunkt 2\nPunkt 3"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#dap",
-    "href": "folien/md-02-datenvisualisierung.html#dap",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "DAP",
-    "text": "DAP\n\nPunkt 1"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#pause-machen",
-    "href": "folien/md-02-datenvisualisierung.html#pause-machen",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#r-paket-ggplot2",
-    "href": "folien/md-02-datenvisualisierung.html#r-paket-ggplot2",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "R Paket ggplot2",
-    "text": "R Paket ggplot2\n\n\n\nggplot2 ist das Datenvisualisierungspaket von tidyverse\ngg” in “ggplot2” steht für “Grammar of Graphics”\nInspiriert durch das Buch Grammar of Graphics von Leland Wilkinson\nDokumentation: https://ggplot2.tidyverse.org/\nBuch: https://ggplot2-book.org"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
-    "href": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Ich bin dran: Arbeiten mit Quarto und R",
-    "text": "Ich bin dran: Arbeiten mit Quarto und R\n\n\nZurücklehnen und genießen!"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur",
-    "href": "folien/md-02-datenvisualisierung.html#code-struktur",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Code Struktur",
-    "text": "Code Struktur\n\nggplot() ist die Hauptfunktion von ggplot2\nPlots werden in Schichten aufgebaut\nDie Struktur des Codes für Plots lässt sich wie folgt zusammenfassen\n\n\nggplot(data = [datensatz], \n       mapping = aes(x = [x-variable], \n                     y = [y-variable])) +\n  geom_xxx() +\n  andere Optionen"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-1",
-    "href": "folien/md-02-datenvisualisierung.html#code-struktur-1",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Code Struktur",
-    "text": "Code Struktur\n\nggplot()"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-2",
-    "href": "folien/md-02-datenvisualisierung.html#code-struktur-2",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Code Struktur",
-    "text": "Code Struktur\n\nggplot(data = gapminder)"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-3",
-    "href": "folien/md-02-datenvisualisierung.html#code-struktur-3",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Code Struktur",
-    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes())"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-4",
-    "href": "folien/md-02-datenvisualisierung.html#code-struktur-4",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Code Struktur",
-    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp))"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-5",
-    "href": "folien/md-02-datenvisualisierung.html#code-struktur-5",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Code Struktur",
-    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot()"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#code-struktur-6",
-    "href": "folien/md-02-datenvisualisierung.html#code-struktur-6",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Code Struktur",
-    "text": "Code Struktur\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal()"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#poll-1-was-stellt-die-dicke-linie-innerhalb-des-kastens-eines-boxplots-dar",
-    "href": "folien/md-02-datenvisualisierung.html#poll-1-was-stellt-die-dicke-linie-innerhalb-des-kastens-eines-boxplots-dar",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?",
-    "text": "Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?\n\n\n\nIch weiß es nicht\nder Mittelwert der Beobachtungen\ndie Mitte der Box\nder Median der Beobachtungen"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#poll-2-wie-viel-prozent-der-beobachtungen-befinden-sich-innerhalb-der-box-eines-boxplots-interquartilsbereich",
-    "href": "folien/md-02-datenvisualisierung.html#poll-2-wie-viel-prozent-der-beobachtungen-befinden-sich-innerhalb-der-box-eines-boxplots-interquartilsbereich",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Poll 2: Wie viel Prozent der Beobachtungen befinden sich innerhalb der Box eines Boxplots (Interquartilsbereich)?",
-    "text": "Poll 2: Wie viel Prozent der Beobachtungen befinden sich innerhalb der Box eines Boxplots (Interquartilsbereich)?\n\n\n\nIch weiß es nicht\n25%\nhängt vom Median ab\n50%"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#poll-3-was-ist-der-median-einer-gruppe-von-beobachtungen",
-    "href": "folien/md-02-datenvisualisierung.html#poll-3-was-ist-der-median-einer-gruppe-von-beobachtungen",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Poll 3: Was ist der Median einer Gruppe von Beobachtungen?",
-    "text": "Poll 3: Was ist der Median einer Gruppe von Beobachtungen?\n\nIch weiß es nicht\nDer Median ist der am häufigsten vorkommende Wert in einem Datensatz.\nDer Median ist die Summe aller Werte in einem Datensatz geteilt durch die Anzahl der Beobachtungen.\nDer Median ist der Punkt, über und unter dem die Hälfte (50%) der Beobachtungen liegt."
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#boxplot-erklärt",
-    "href": "folien/md-02-datenvisualisierung.html#boxplot-erklärt",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Boxplot, erklärt",
-    "text": "Boxplot, erklärt\n\n\nFigure 1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.\n\nBild entnommen aus: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nDie Box ist ein Feld, das den Bereich der mittleren Hälfte der Daten angibt, eine Distanz, die als Interquartilbereich (IQR) bekannt ist und sich vom 25. Perzentil der Verteilung bis zum 75. Perzentil erstreckt.\nIn der Mitte der Box befindet sich eine Linie, die den Median, d. h. das 50. Perzentil, der Verteilung anzeigt.\nDiese drei Linien vermitteln einen Eindruck von der Streuung der Verteilung und davon, ob die Verteilung symmetrisch um den Median oder zu einer Seite hin verzerrt ist.\nVisuelle Punkte, die Beobachtungen anzeigen, die mehr als das 1,5-Fache des IQR von einem der Ränder des Kastens entfernt liegen. Diese Ausreißer sind ungewöhnlich und werden daher einzeln dargestellt.\nEine Linie (oder ein Whisker), die sich von jedem Ende des Kastens bis zum am weitesten entfernten Punkt in der Verteilung erstreckt, der kein Ausreißer ist."
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
-    "href": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Wir sind dran: md-02-uebungen",
-    "text": "Wir sind dran: md-02-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei TODO: md-02b-datenvisualisierung.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#pause-machen-1",
-    "href": "folien/md-02-datenvisualisierung.html#pause-machen-1",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#arten-von-variablen",
-    "href": "folien/md-02-datenvisualisierung.html#arten-von-variablen",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Arten von Variablen",
-    "text": "Arten von Variablen\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage, Schulnoten)"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#histogramm",
-    "href": "folien/md-02-datenvisualisierung.html#histogramm",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Histogramm",
-    "text": "Histogramm\n\nzur Visualisierung der Verteilung von kontinuierlichen (numerischen) Variablen\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g)) +\n  geom_histogram()"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#barplot-säulendiagramm",
-    "href": "folien/md-02-datenvisualisierung.html#barplot-säulendiagramm",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Barplot (Säulendiagramm)",
-    "text": "Barplot (Säulendiagramm)\n\nzur Visualisierung der Verteilung von kategorischen (nicht numerischen) Variablen\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar()"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#scatterplot-streudiagramm",
-    "href": "folien/md-02-datenvisualisierung.html#scatterplot-streudiagramm",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Scatterplot (Streudiagramm)",
-    "text": "Scatterplot (Streudiagramm)\n\nfor visualizing relationships between two continuous (numerical) variables\n\n\nggplot(data = gapminder_2007,\n       mapping = aes(x = gdpPercap,\n                     y = lifeExp,\n                     size = pop,\n                     color = continent)) +\n  geom_point() +\n  scale_color_colorblind() +\n  theme_minimal()"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#modul-2-dokumentation",
-    "href": "folien/md-02-datenvisualisierung.html#modul-2-dokumentation",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "Modul 2 Dokumentation",
-    "text": "Modul 2 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-02.html"
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html#zusatzaufgaben-abgabedatum",
-    "href": "folien/md-02-datenvisualisierung.html#zusatzaufgaben-abgabedatum",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "objectID": "folien/md-09-veroeffentlichen.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-09-veroeffentlichen.html#zusatzaufgaben-abgabedatum",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 07. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 10. Oktober"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 25. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 28. November"
   },
   {
-    "objectID": "folien/md-02-datenvisualisierung.html#danke-1",
-    "href": "folien/md-02-datenvisualisierung.html#danke-1",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
+    "objectID": "folien/md-09-veroeffentlichen.html#danke-1",
+    "href": "folien/md-09-veroeffentlichen.html#danke-1",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
-    "objectID": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
-    "href": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
-    "title": "Daten Import & Daten Management",
+    "objectID": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
+    "href": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
+    "title": "Bedingte Anweisungen & Datumswerte",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Daten aus Dateien im CSV-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses und auf GitHub befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern."
   },
   {
-    "objectID": "folien/md-04-daten-management.html#modul-4-dokumentation",
-    "href": "folien/md-04-daten-management.html#modul-4-dokumentation",
-    "title": "Daten Import & Daten Management",
-    "section": "Modul 4 Dokumentation",
-    "text": "Modul 4 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-04.html"
+    "objectID": "folien/md-05-datumswerte.html#modul-5-dokumentation",
+    "href": "folien/md-05-datumswerte.html#modul-5-dokumentation",
+    "title": "Bedingte Anweisungen & Datumswerte",
+    "section": "Modul 5 Dokumentation",
+    "text": "Modul 5 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-05.html"
   },
   {
-    "objectID": "folien/md-04-daten-management.html#zusatzaufgaben-abgabedatum",
-    "href": "folien/md-04-daten-management.html#zusatzaufgaben-abgabedatum",
-    "title": "Daten Import & Daten Management",
+    "objectID": "folien/md-05-datumswerte.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-05-datumswerte.html#zusatzaufgaben-abgabedatum",
+    "title": "Bedingte Anweisungen & Datumswerte",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 21. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 24. Oktober"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 28. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 31. Oktober"
   },
   {
-    "objectID": "folien/md-04-daten-management.html#danke-1",
-    "href": "folien/md-04-daten-management.html#danke-1",
-    "title": "Daten Import & Daten Management",
-    "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
-    "href": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen."
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#eine-grammatik-der-datenmanipulation",
-    "href": "folien/md-03-datentransformation.html#eine-grammatik-der-datenmanipulation",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Eine Grammatik der Datenmanipulation…",
-    "text": "Eine Grammatik der Datenmanipulation…\n… basierend auf den Konzepten von Funktionen als Verben, die Dataframes manipulieren\n\n\n\n\n\n\n\n\n\n\n\n\n\nselect: Spalten nach Namen auswählen\narrange: Zeilen neu ordnen\nfilter: wählt Zeilen aus, die den Kriterien entsprechen\nrelocate: ändert die Reihenfolge der Spalten\nmutate: neue Variablen hinzufügen\nsummarise: Variablen auf Werte reduzieren\ngroup_by: für gruppierte Operationen\n… (viele mehr)"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#dplyr-rules",
-    "href": "folien/md-03-datentransformation.html#dplyr-rules",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "dplyr rules",
-    "text": "dplyr rules\nRegeln der dplyr-Funktionen:\n\n\nDas erste Argument ist immer ein Dataframe.\nNachfolgende Argumente sagen, was mit diesem Dataframe geschehen soll.\nGibt immer einen Dataframe zurück.\nNichts wird an Ort und Stelle verändert."
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#funktionen-argumente",
-    "href": "folien/md-03-datentransformation.html#funktionen-argumente",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Funktionen & Argumente",
-    "text": "Funktionen & Argumente\n\nlibrary(dplyr)\n\nfilter(.data = gapminder, \n       year == 2007)\n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#objekte",
-    "href": "folien/md-03-datentransformation.html#objekte",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Objekte",
-    "text": "Objekte\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird\nDaten (Objekt): gapminder_2007"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#operatoren",
-    "href": "folien/md-03-datentransformation.html#operatoren",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Operatoren",
-    "text": "Operatoren\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird\nDaten (Objekt): gapminder_2007\nZuweisungsoperator: &lt;-\nPipe Operator: |&gt;"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#grafik",
-    "href": "folien/md-03-datentransformation.html#grafik",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Grafik",
-    "text": "Grafik\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\nggplot(data = gapminder_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp,\n                     fill = continent)) +\n  geom_boxplot(outlier.shape = NA)"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#daten",
-    "href": "folien/md-03-datentransformation.html#daten",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Daten",
-    "text": "Daten\n\ntreibhausgase &lt;- read_csv(\"daten/ktzh-treibhausgase.csv\")\n\n\nhead(treibhausgase)\n\n\n\n\n\n\n\njahr\nhauptgruppe\nuntergruppe\nthg\nthg_agg\nemission\n\n\n\n\n1990\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1991\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1992\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1993\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1994\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1995\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n\n\n\n\n\n\nncol(treibhausgase)\n\n[1] 6\n\n\n\n\n\n\nnrow(treibhausgase)\n\n[1] 1980"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#data",
-    "href": "folien/md-03-datentransformation.html#data",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Data",
-    "text": "Data\n\ntreibhausgase |&gt; \n  distinct(hauptgruppe, untergruppe)\n\n\n\n\n\n\nhauptgruppe\nuntergruppe\n\n\n\n\nAbwasser und Abfall\nAbfalldeponie\n\n\nAbwasser und Abfall\nAbwasserbehandlung\n\n\nAbwasser und Abfall\nAbfallverbrennung\n\n\nLandwirtschaft\nFermentation bei der Verdauung\n\n\nLandwirtschaft\nWirtschaftsdünger-Management\n\n\nLandwirtschaft\nLandwirtschaftliche Böden\n\n\nVerkehr\nMotorräder\n\n\nVerkehr\nPersonenwagen\n\n\nVerkehr\nLinien-/Omnibusse\n\n\nVerkehr\nReisebusse\n\n\nVerkehr\nLastkraftwagen\n\n\nVerkehr\nSattelzugmaschinen\n\n\nLandwirtschaft\nLand- und forstwirtschaftliche Maschinen\n\n\nIndustrie\nIndustrielle Fahrzeuge und Baumaschinen\n\n\nVerkehr\nSchiene\n\n\nVerkehr\nSchiff\n\n\nGebäude\nHeizkessel Dienstleistungen Heizöl\n\n\nGebäude\nHeizkessel Haushalte Heizöl\n\n\nGebäude\nHeizkessel Dienstleistungen Gas\n\n\nGebäude\nHeizkessel Haushalte Gas\n\n\nAbwasser und Abfall\nKVA\n\n\nIndustrie\nIndustrielle Prozesse nichtenergetisch\n\n\nIndustrie\nIndustrielle Prozesse energetisch"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
-    "href": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Wir sind dran: md-03-uebungen",
-    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#pause-machen",
-    "href": "folien/md-03-datentransformation.html#pause-machen",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
-    "href": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Ihr seid dran: 02-dplyr-ihr.qmd",
-    "text": "Ihr seid dran: 02-dplyr-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-dplyr-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#r-terminology",
-    "href": "folien/md-03-datentransformation.html#r-terminology",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "R Terminology",
-    "text": "R Terminology\n\nlibrary(dplyr)\n\ntreibhausgase_verkehr &lt;- treibhausgase |&gt; \n    filter(hauptgruppe == \"Verkehr\", jahr == 2022) \n\n\nFunktion: filter()\nArgumente, die folgen: hauptgruppe == \"Verkehr\" Was ist mit den Daten gemacht wird\nDaten (Objekt): treibhausgase_verkehr\nZuweisungsoperator: &lt;-\nPipe Operator: |&gt;"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram",
-    "href": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Aufgabe 1.3 - Verbundenes Streudiagram",
-    "text": "Aufgabe 1.3 - Verbundenes Streudiagram\n Großartig für Zeitreihendaten \n\n\nBenutze die Funktion ggplot(), um ein verbundenmes Streudiagramm mit geom_point() und geom_line() für die Daten zu erstellen, die du in Aufgabe 1.2 erstellt hast.\nVerwende die Funktion aes(), um die Variable “jahr” auf die x-Achse, die Variable “emission” auf die y-Achse und die Variable “untergruppe” auf die Farbe und die ästhetische Gruppe zu übertragen.\nÄndere die Farben mit scale_color_colorblind().\n\n\n\ntreibhausgase |&gt; \n    filter(hauptgruppe == \"Gebäude\") |&gt; \n    ggplot(aes(x = jahr, y = emission, color = untergruppe)) +\n    geom_point() +\n    geom_path()"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram-output",
-    "href": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram-output",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Aufgabe 1.3 - Verbundenes Streudiagram",
-    "text": "Aufgabe 1.3 - Verbundenes Streudiagram"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
-    "href": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Wir sind dran: 03-dplyr-wir.qmd",
-    "text": "Wir sind dran: 03-dplyr-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#pause-machen-1",
-    "href": "folien/md-03-datentransformation.html#pause-machen-1",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#todo-04-dplyr-ihr.qmd",
-    "href": "folien/md-03-datentransformation.html#todo-04-dplyr-ihr.qmd",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "TODO: 04-dplyr-ihr.qmd",
-    "text": "TODO: 04-dplyr-ihr.qmd\n\n\n\n\n\n\n−+\n15:00"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#modul-3-dokumentation",
-    "href": "folien/md-03-datentransformation.html#modul-3-dokumentation",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Modul 3 Dokumentation",
-    "text": "Modul 3 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-03.html"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
-    "href": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 14. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 17. Oktober"
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html#danke-1",
-    "href": "folien/md-03-datentransformation.html#danke-1",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "objectID": "folien/md-05-datumswerte.html#danke-1",
+    "href": "folien/md-05-datumswerte.html#danke-1",
+    "title": "Bedingte Anweisungen & Datumswerte",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
@@ -1246,11 +1288,11 @@
     ]
   },
   {
-    "objectID": "module/md-02.html#übungsaufgaben",
-    "href": "module/md-02.html#übungsaufgaben",
+    "objectID": "module/md-02.html#zusatzaufgaben",
+    "href": "module/md-02.html#zusatzaufgaben",
     "title": "Modul 2",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "section": " Zusatzaufgaben",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgaben bis Montag, den 7. Oktober 2024.\n\nZusatzaufgabe 1: Datenvisualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 02"
     ]

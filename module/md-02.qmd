@@ -53,6 +53,10 @@ Letzte Woche hatte ich bereits die Kapitel für Daten Visualisierungen aufgelist
 - [R for Data Science - Data visualization - Section 1.2: First Steps](https://r4ds.hadley.nz/data-visualize#first-steps)
 - [R for Data Science - Data visualization - Section 1.3: ggplot2 calls](https://r4ds.hadley.nz/data-visualize#sec-ggplot2-calls) 
 
-## {{< fa code >}} Übungsaufgaben
+## {{< fa code >}} Zusatzaufgaben
 
-- In Vorbereitung
+Bitte erledige die folgende Aufgaben bis Montag, den 7. Oktober 2024. 
+
+-   [Zusatzaufgabe 1](../zusatzaufgaben/md-02/za-02-01-datenvisualisierung.qmd): Datenvisualisierung mit ggplot2
+
+Vielen Dank für die Bearbeitung der Aufgaben.
