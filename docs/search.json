@@ -1007,7 +1007,7 @@
     "href": "folien/md-01-willkommen.html#ihr-seid-dran-md-01-uebungen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Ihr seid dran: md-01-uebungen",
-    "text": "Ihr seid dran: md-01-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-01-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei “hallo-quarto.qmd” und klicke darauf, um sie im Fenster oben links zu öffnen.\nRender das Dokument.\nFüge deinen Namen zum Schlüssel author: im YAML-Header hinzu\nRender das Dokument\nUntersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.\nBesprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.\n\n\n\n\n\n−+\n05:00"
+    "text": "Ihr seid dran: md-01-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-01-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei “hallo-quarto.qmd” und klicke darauf, um sie im Fenster oben links zu öffnen.\nRender das Dokument.\nFüge deinen Namen zum Schlüssel author: im YAML-Header hinzu\nRender das Dokument.\nUntersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.\nBesprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#von-deiner-eigenen-arbeitsumgebung-aus",
@@ -1091,7 +1091,7 @@
     "href": "folien/md-01-willkommen.html#danke-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
