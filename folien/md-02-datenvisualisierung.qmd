@@ -192,7 +192,7 @@ Im Kanal könnt ihr:
 -   Neue Infos zum R-Bundle erhalten
 -   Up-to-date bleiben was in der Community läuft
 
-## R-Fachgruppe
+## R-Fachgruppe {.scrollable}
 
 ::: columns
 ::: {.column width="50%"}

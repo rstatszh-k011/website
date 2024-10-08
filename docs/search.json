@@ -298,7 +298,7 @@
     "href": "module/md-03.html#folien",
     "title": "Modul 3",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung",
+    "text": "Folien\nZeige Folien im Vollbildmodus an | Download slides as PDF",
     "crumbs": [
       "Modul 03"
     ]
@@ -308,17 +308,17 @@
     "href": "module/md-03.html#lesematerial",
     "title": "Modul 3",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung",
+    "text": "Lesematerial\n\nLies: R for Data Science - Section 3 - Data transformation",
     "crumbs": [
       "Modul 03"
     ]
   },
   {
-    "objectID": "module/md-03.html#übungsaufgaben",
-    "href": "module/md-03.html#übungsaufgaben",
+    "objectID": "module/md-03.html#zusatzaufgaben",
+    "href": "module/md-03.html#zusatzaufgaben",
     "title": "Modul 3",
-    "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "section": " Zusatzaufgaben",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgaben bis Montag, den 14. Oktober 2024.\n\nZusatzaufgabe 1: Daten Transformation mit dplyr\nZusatzaufgabe 2: Mit OGD Daten arbeiten\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 03"
     ]
@@ -352,151 +352,200 @@
     "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-02-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
   },
   {
+    "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html",
+    "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html",
+    "title": "Mit OGD Daten arbeiten",
+    "section": "",
+    "text": "In dieser Zusatzaufgabe geht es darum einen Datensatz selbst zu identifizieren und zu bearbeiten. Für die Daten nutzen wir den OGD (Open Government Data - offene Behördendaten) Datenkatalog des Statistischen Amts des Kantons Zürich. Das Repository wird von euch selbst auf GitHub erstellt und wir bereiten den Datenimport vor, ein Thema womit wir uns in Modul 4 intensiver beschäftigen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-1-daten-herunterladen",
+    "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-1-daten-herunterladen",
+    "title": "Mit OGD Daten arbeiten",
+    "section": "Schritt 1: Daten herunterladen",
+    "text": "Schritt 1: Daten herunterladen\n\nÖffne: https://www.zh.ch/de/politik-staat/statistik-daten/datenkatalog.html#/\nUnter der Eingabemaske “Thema auswählen” klicke die Auswahl “Daten”. Dies wird nur Datensätze welche als CSV of XLSX abgelegt sind anzeigen.\n\n\n\nDurchsuche nun den Katalog, entweder nach einem Thema in den du auf “Thema auswählen” klickst oder nach einem bestimmten Suchkriterium im Suchfeld “Suchen”.\nKlicke auf einen Datensatz der dich interessiert um weitere Informationen zu erhalten. Stelle sicher, dass der Datensatz als CSV verfügbar ist.\n\n\n\nLade die CSV Datei herunter und speicher diese an einem von dir gewählten Ort auf deinem Arbeitsgerät.\n\n\n\nÖffne die Daten NICHT mit MS Excel. Dies kann zu Problemen führen, da Excel die Daten automatisch formatiert und somit die Daten verfälscht."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
+    "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
+    "title": "Mit OGD Daten arbeiten",
+    "section": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud",
+    "text": "Schritt 2: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k009\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\n\n\n\nIm Feld “Repository name” schreibe ogd-daten-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\n\n\n\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\n\n\n\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\n\n\n\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud",
+    "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud",
+    "title": "Mit OGD Daten arbeiten",
+    "section": "Schritt 3: Lade die Daten in das Projekt auf Posit Cloud",
+    "text": "Schritt 3: Lade die Daten in das Projekt auf Posit Cloud\n\nIm Datei Manager im Fenster unten rechts, klicke auf “Folder” um einen neuen Ordner zu erstellen.\n\n\n\nBenenne den Ordner “daten”.\n\n\n\nKlicke auf den Ordner “daten” im Datei Manager im Fenster unten rechts.\n\n\n\nInnerhalb des Ordners “daten”, klicke auf “Upload” um die CSV Datei hochzuladen.\n\n\n\nIm Dialogfenster unter “File to upload:” klicke auf “Choose file” und navigiere zu der CSV Datei aus Schritt 1. Klicke auf OK.\n\n\n\nSchaue im Fenster unten rechts nach, ob die Datei erfolgreich hochgeladen wurde.\nMache einen Commit für alle Dateien indem du im Git Fenster oben rechts neben allen Dateien das Kontrollkästchen anwählst und dann auf “Commit” klickst. Verwende die Commit-Nachricht “Projekt aufsetzen”."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-3-erstelle-eine-quarto-datei-für-die-datenimportierung",
+    "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-3-erstelle-eine-quarto-datei-für-die-datenimportierung",
+    "title": "Mit OGD Daten arbeiten",
+    "section": "Schritt 3: Erstelle eine Quarto Datei für die Datenimportierung",
+    "text": "Schritt 3: Erstelle eine Quarto Datei für die Datenimportierung\nIn deinem ogd-daten-USERNAME Projekt in RStudio auf Posit Cloud, gehe in der Menüleiste zu [File &gt; New File &gt; Quarto document] um ein Quarto Dokument mit HTML Output zu erstellen. Render das Dokument, welches dich nach einem Namen fragt - du kannst ogd-daten-analyse.qmd verwenden und die Datei im Stammordner speichern.\n\n\nFüge einen Titel und deinen Namen als Autor in die YAML Metadaten am Anfang des Dokuments ein.\nLösche den Text und Code-Blöcke unterhalb der YAML Metadaten.\nFüge eine Sektion formatiert als Heading 2 und Titel: “R Pakete laden” hinzu.\n\n\n\nUnterhalb der Sektion füge einen Code-Block hinzu.\nInnerhalb des Code-Blocks, lade die R-Pakete: readr, dplyr, ggplot2.\nUnterhalb des Code-Blocks, füge eine weitere Sektion formatiert als Heading 2 und Titel: “Daten importieren” hinzu.\nUnterhalb der Sektion füge einen Code-Block hinzu.\n\n\n\nMache einen Commit für alle Dateien und verwende die Commit-Nachricht “Quarto Dokument für Datenimport erstellen”."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-4-übertrage-deine-änderungen-auf-github",
+    "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-4-übertrage-deine-änderungen-auf-github",
+    "title": "Mit OGD Daten arbeiten",
+    "section": "Schritt 4: Übertrage deine Änderungen auf GitHub",
+    "text": "Schritt 4: Übertrage deine Änderungen auf GitHub\n\nNavigiere zum Git-Bereich im Fenster oben rechts und stelle sicher, dass dieses leer ist. Sollte es leer sein, dann überspringe 2. bis 5. und mache bei Unterschritt 6. weiter.\nAktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.\nKlicke auf die Schaltfläche “Commit”.\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. ODG Daten Modul 3 abgeschlossen).\nKlicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\n\n\n\n\n\n\n\nHinweis: Git configuration aus Zusatzaufgabe von Modul 1\n\n\n\nEs ist möglich, dass Git dich erneut darauf hinweist, dass es nicht weiss, wer du bist. Diese Einstellung haben wir in Modul 1 zwar gemacht, jedoch habe ich in der Vergangenheit beobachtet, dass es bei einigen Teilnehmer:innen erneut zu dieser Meldung kommt. In diesem Fall musst du erneut folgenden Schritt ausführen, um deinen Namen und deine E-Mail-Adresse zu konfigurieren.\n\n\n\nKlicke auf die Schaltfläche “Push”.\nGib deinen GitHub-Benutzernamen im Feld Username an.\nGib deinen GitHub Personal Access Token (PAT) im Feld “Password” ein.\nDas Fenster kann geschlossen werden.\n\n\n\n\n\n\n\nVerwende nicht dein GitHub-Passwort\n\n\n\nDu musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-3-eröffne-ein-issue-auf-github",
+    "href": "zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html#schritt-3-eröffne-ein-issue-auf-github",
+    "title": "Mit OGD Daten arbeiten",
+    "section": "Schritt 3: Eröffne ein Issue auf GitHub",
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository ogd-daten-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
+  },
+  {
     "objectID": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
     "href": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Lernziele (für diese Woche)",
     "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen."
   },
   {
     "objectID": "folien/md-03-datentransformation.html#eine-grammatik-der-datenmanipulation",
     "href": "folien/md-03-datentransformation.html#eine-grammatik-der-datenmanipulation",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Eine Grammatik der Datenmanipulation…",
-    "text": "Eine Grammatik der Datenmanipulation…\n… basierend auf den Konzepten von Funktionen als Verben, die Dataframes manipulieren\n\n\n\n\n\n\n\n\n\n\n\n\n\nselect: Spalten nach Namen auswählen\narrange: Zeilen neu ordnen\nfilter: wählt Zeilen aus, die den Kriterien entsprechen\nrelocate: ändert die Reihenfolge der Spalten\nmutate: neue Variablen hinzufügen\nsummarise: Variablen auf Werte reduzieren\ngroup_by: für gruppierte Operationen\n… (viele mehr)"
+    "text": "Eine Grammatik der Datenmanipulation…\n… basierend auf den Konzepten von Funktionen als Verben, die Dataframes manipulieren\n\n\n\n\n\n\n\n\n\n\n\n\n\nfilter: wählt Zeilen aus, die den Kriterien entsprechen\narrange: Zeilen neu ordnen\nselect: Spalten nach Namen auswählen\nrename: Spalten umbenennen\nmutate: neue Variablen hinzufügen\nsummarise: Variablen auf Werte reduzieren\ngroup_by: für gruppierte Operationen\n… (viele mehr)"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#dplyr-rules",
     "href": "folien/md-03-datentransformation.html#dplyr-rules",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "dplyr rules",
     "text": "dplyr rules\nRegeln der dplyr-Funktionen:\n\n\nDas erste Argument ist immer ein Dataframe.\nNachfolgende Argumente sagen, was mit diesem Dataframe geschehen soll.\nGibt immer einen Dataframe zurück.\nNichts wird an Ort und Stelle verändert."
   },
   {
     "objectID": "folien/md-03-datentransformation.html#funktionen-argumente",
     "href": "folien/md-03-datentransformation.html#funktionen-argumente",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Funktionen & Argumente",
     "text": "Funktionen & Argumente\n\nlibrary(dplyr)\n\nfilter(.data = gapminder, \n       year == 2007)\n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#objekte",
     "href": "folien/md-03-datentransformation.html#objekte",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Objekte",
     "text": "Objekte\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- filter(.data = gapminder, \n                            year == 2007)\n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird\nDaten (Objekt): gapminder_2007"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#operatoren",
     "href": "folien/md-03-datentransformation.html#operatoren",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Operatoren",
     "text": "Operatoren\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\n\nFunktion: filter()\nArgument: .data =\nArgumente, die folgen: year == 2007 Was ist mit den Daten gemacht wird\nDaten (Objekt): gapminder_2007\nZuweisungsoperator: &lt;-\nPipe Operator: |&gt;"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#grafik",
     "href": "folien/md-03-datentransformation.html#grafik",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Grafik",
     "text": "Grafik\n\nlibrary(dplyr)\n\ngapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007) \n\nggplot(data = gapminder_2007,\n       mapping = aes(x = continent,\n                     y = lifeExp,\n                     fill = continent)) +\n  geom_boxplot(outlier.shape = NA)"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#daten",
     "href": "folien/md-03-datentransformation.html#daten",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Daten",
     "text": "Daten\n\ntreibhausgase &lt;- read_csv(\"daten/ktzh-treibhausgase.csv\")\n\n\nhead(treibhausgase)\n\n\n\n\n\n\n\njahr\nhauptgruppe\nuntergruppe\nthg\nthg_agg\nemission\n\n\n\n\n1990\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1991\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1992\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1993\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1994\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1995\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n\n\n\n\n\n\nncol(treibhausgase)\n\n[1] 6\n\n\n\n\n\n\nnrow(treibhausgase)\n\n[1] 1980"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#data",
     "href": "folien/md-03-datentransformation.html#data",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Data",
     "text": "Data\n\ntreibhausgase |&gt; \n  distinct(hauptgruppe, untergruppe)\n\n\n\n\n\n\nhauptgruppe\nuntergruppe\n\n\n\n\nAbwasser und Abfall\nAbfalldeponie\n\n\nAbwasser und Abfall\nAbwasserbehandlung\n\n\nAbwasser und Abfall\nAbfallverbrennung\n\n\nLandwirtschaft\nFermentation bei der Verdauung\n\n\nLandwirtschaft\nWirtschaftsdünger-Management\n\n\nLandwirtschaft\nLandwirtschaftliche Böden\n\n\nVerkehr\nMotorräder\n\n\nVerkehr\nPersonenwagen\n\n\nVerkehr\nLinien-/Omnibusse\n\n\nVerkehr\nReisebusse\n\n\nVerkehr\nLastkraftwagen\n\n\nVerkehr\nSattelzugmaschinen\n\n\nLandwirtschaft\nLand- und forstwirtschaftliche Maschinen\n\n\nIndustrie\nIndustrielle Fahrzeuge und Baumaschinen\n\n\nVerkehr\nSchiene\n\n\nVerkehr\nSchiff\n\n\nGebäude\nHeizkessel Dienstleistungen Heizöl\n\n\nGebäude\nHeizkessel Haushalte Heizöl\n\n\nGebäude\nHeizkessel Dienstleistungen Gas\n\n\nGebäude\nHeizkessel Haushalte Gas\n\n\nAbwasser und Abfall\nKVA\n\n\nIndustrie\nIndustrielle Prozesse nichtenergetisch\n\n\nIndustrie\nIndustrielle Prozesse energetisch"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
     "href": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Wir sind dran: md-03-uebungen",
     "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#pause-machen",
     "href": "folien/md-03-datentransformation.html#pause-machen",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Pause machen",
     "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
     "href": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Ihr seid dran: 02-dplyr-ihr.qmd",
-    "text": "Ihr seid dran: 02-dplyr-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-dplyr-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: 02-dplyr-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-dplyr-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
   },
   {
-    "objectID": "folien/md-03-datentransformation.html#r-terminology",
-    "href": "folien/md-03-datentransformation.html#r-terminology",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "R Terminology",
-    "text": "R Terminology\n\nlibrary(dplyr)\n\ntreibhausgase_verkehr &lt;- treibhausgase |&gt; \n    filter(hauptgruppe == \"Verkehr\", jahr == 2022) \n\n\nFunktion: filter()\nArgumente, die folgen: hauptgruppe == \"Verkehr\" Was ist mit den Daten gemacht wird\nDaten (Objekt): treibhausgase_verkehr\nZuweisungsoperator: &lt;-\nPipe Operator: |&gt;"
+    "objectID": "folien/md-03-datentransformation.html#r-terminologie",
+    "href": "folien/md-03-datentransformation.html#r-terminologie",
+    "title": "Daten Transformation mit dplyr",
+    "section": "R Terminologie",
+    "text": "R Terminologie\n\nlibrary(dplyr)\n\ntreibhausgase_verkehr &lt;- treibhausgase |&gt; \n    filter(hauptgruppe == \"Verkehr\", jahr == 2022) \n\n\nFunktion: filter()\nArgumente, die folgen: hauptgruppe == \"Verkehr\" Was ist mit den Daten gemacht wird\nDaten (Objekt): treibhausgase_verkehr\nZuweisungsoperator: &lt;-\nPipe Operator: |&gt;"
   },
   {
-    "objectID": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram",
-    "href": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Aufgabe 1.3 - Verbundenes Streudiagram",
-    "text": "Aufgabe 1.3 - Verbundenes Streudiagram\n Großartig für Zeitreihendaten \n\n\nBenutze die Funktion ggplot(), um ein verbundenmes Streudiagramm mit geom_point() und geom_line() für die Daten zu erstellen, die du in Aufgabe 1.2 erstellt hast.\nVerwende die Funktion aes(), um die Variable “jahr” auf die x-Achse, die Variable “emission” auf die y-Achse und die Variable “untergruppe” auf die Farbe und die ästhetische Gruppe zu übertragen.\nÄndere die Farben mit scale_color_colorblind().\n\n\n\ntreibhausgase |&gt; \n    filter(hauptgruppe == \"Gebäude\") |&gt; \n    ggplot(aes(x = jahr, y = emission, color = untergruppe)) +\n    geom_point() +\n    geom_path()"
+    "objectID": "folien/md-03-datentransformation.html#aufgabe-verbundenes-streudiagram",
+    "href": "folien/md-03-datentransformation.html#aufgabe-verbundenes-streudiagram",
+    "title": "Daten Transformation mit dplyr",
+    "section": "Aufgabe: Verbundenes Streudiagram",
+    "text": "Aufgabe: Verbundenes Streudiagram\n Großartig für Zeitreihendaten \n\n\nNutze die Daten treibhausgase_gebaeude und die Funktion ggplot(), um ein verbundenmes Streudiagramm mit geom_point() und geom_line() zu erstellen.\n\nDefiniere folgende visuellen Eigenschaften:\n\njahr auf der x-Achse;\nemission auf der y-Achse;\nuntergruppe zur Einfärbung mit dem Argument color = untergruppe innerhalb von aes()\n\n\nÄndere die Farben mit scale_color_colorblind().\n\n\n\ntreibhausgase |&gt; \n    filter(hauptgruppe == \"Gebäude\") |&gt; \n    ggplot(aes(x = jahr, y = emission, color = untergruppe)) +\n    geom_point() +\n    geom_path() +\n    scale_color_colorblind()"
   },
   {
-    "objectID": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram-output",
-    "href": "folien/md-03-datentransformation.html#aufgabe-1.3---verbundenes-streudiagram-output",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "Aufgabe 1.3 - Verbundenes Streudiagram",
-    "text": "Aufgabe 1.3 - Verbundenes Streudiagram"
+    "objectID": "folien/md-03-datentransformation.html#aufgabe-verbundenes-streudiagram-output",
+    "href": "folien/md-03-datentransformation.html#aufgabe-verbundenes-streudiagram-output",
+    "title": "Daten Transformation mit dplyr",
+    "section": "Aufgabe: Verbundenes Streudiagram",
+    "text": "Aufgabe: Verbundenes Streudiagram"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
     "href": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Wir sind dran: 03-dplyr-wir.qmd",
     "text": "Wir sind dran: 03-dplyr-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#pause-machen-1",
     "href": "folien/md-03-datentransformation.html#pause-machen-1",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Pause machen",
     "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
-    "objectID": "folien/md-03-datentransformation.html#todo-04-dplyr-ihr.qmd",
-    "href": "folien/md-03-datentransformation.html#todo-04-dplyr-ihr.qmd",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
-    "section": "TODO: 04-dplyr-ihr.qmd",
-    "text": "TODO: 04-dplyr-ihr.qmd\n\n\n\n\n\n\n−+\n15:00"
+    "objectID": "folien/md-03-datentransformation.html#zeitpuffer-03-dplyr-wir.qmd",
+    "href": "folien/md-03-datentransformation.html#zeitpuffer-03-dplyr-wir.qmd",
+    "title": "Daten Transformation mit dplyr",
+    "section": "Zeitpuffer: 03-dplyr-wir.qmd",
+    "text": "Zeitpuffer: 03-dplyr-wir.qmd\n\nWelche Konzepte kann ich nochmals erklären?\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#modul-3-dokumentation",
     "href": "folien/md-03-datentransformation.html#modul-3-dokumentation",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Modul 3 Dokumentation",
     "text": "Modul 3 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-03.html"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
     "href": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Zusatzaufgaben Abgabedatum",
     "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 14. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 17. Oktober"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#danke-1",
     "href": "folien/md-03-datentransformation.html#danke-1",
-    "title": "Daten Transformation mit dplyr & Kollaboratives Arbeiten mit GitHub I",
+    "title": "Daten Transformation mit dplyr",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
     "objectID": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
@@ -1206,6 +1255,34 @@
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
+    "objectID": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html",
+    "href": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html",
+    "title": "Daten Transformation mit dplyr",
+    "section": "",
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-03a-daten-transformation.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-1-klone-das-repository-für-modul-3",
+    "href": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-1-klone-das-repository-für-modul-3",
+    "title": "Daten Transformation mit dplyr",
+    "section": "",
+    "text": "Öffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-03a-daten-transformation.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-2-übertrage-deine-änderungen-auf-github",
+    "href": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-2-übertrage-deine-änderungen-auf-github",
+    "title": "Daten Transformation mit dplyr",
+    "section": "Schritt 2: Übertrage deine Änderungen auf GitHub",
+    "text": "Schritt 2: Übertrage deine Änderungen auf GitHub\n\nNavigiere zum Git-Bereich im Fenster oben rechts.\nAktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.\nKlicke auf die Schaltfläche “Commit”.\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Zusatzaufgaben Modul 3 abgeschlossen).\nKlicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\n\n\n\n\n\n\n\nHinweis: Git configuration aus Zusatzaufgabe von Modul 1\n\n\n\nEs ist möglich, dass Git dich erneut darauf hinweist, dass es nicht weiss, wer du bist. Diese Einstellung haben wir in Modul 1 zwar gemacht, jedoch habe ich in der Vergangenheit beobachtet, dass es bei einigen Teilnehmer:innen erneut zu dieser Meldung kommt. In diesem Fall musst du erneut folgenden Schritt ausführen, um deinen Namen und deine E-Mail-Adresse zu konfigurieren.\n\nlibrary(usethis)\nuse_git_config(user.name = \"Dein Name\", user.email = \"Deine Email\")\n\n\n\n\nKlicke auf die Schaltfläche “Push”.\nGib deinen GitHub-Benutzernamen im Feld Username an.\nGib deinen GitHub Personal Access Token (PAT) im Feld “Password” ein.\nDas Fenster kann geschlossen werden.\n\n\n\n\n\n\n\nVerwende nicht dein GitHub-Passwort\n\n\n\nDu musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-3-eröffne-ein-issue-auf-github",
+    "href": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html#schritt-3-eröffne-ein-issue-auf-github",
+    "title": "Daten Transformation mit dplyr",
+    "section": "Schritt 3: Eröffne ein Issue auf GitHub",
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-03-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hiterlasse eine Nachricht oder offene Frage."
+  },
+  {
     "objectID": "zusatzaufgaben/md-01/za-01-01-git-configuration.html",
     "href": "zusatzaufgaben/md-01/za-01-01-git-configuration.html",
     "title": "rstatsZH - Data Science mit R",
@@ -1282,7 +1359,7 @@
     "href": "module/md-02.html#lesematerial",
     "title": "Modul 2",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nLies: R for Data Science - Section 3: Workflow basics\n\nLetzte Woche hatte ich bereits die Kapitel für Daten Visualisierungen aufgelistet. Nachdem wir uns nun intensiver damit beschäftigt haben, möchte ich euch nochmals auf die folgenden Kapitel hinweisen:\n\nR for Data Science - Data visualization - Section 1.1: Introduction\nR for Data Science - Data visualization - Section 1.2: First Steps\nR for Data Science - Data visualization - Section 1.3: ggplot2 calls",
+    "text": "Lesematerial\n\nLies: R for Data Science - Section 2: Workflow basics\n\nLetzte Woche hatte ich bereits die Kapitel für Daten Visualisierungen aufgelistet. Nachdem wir uns nun intensiver damit beschäftigt haben, möchte ich euch nochmals auf die folgenden Kapitel hinweisen:\n\nR for Data Science - Data visualization - Section 1.1: Introduction\nR for Data Science - Data visualization - Section 1.2: First Steps\nR for Data Science - Data visualization - Section 1.3: ggplot2 calls",
     "crumbs": [
       "Modul 02"
     ]
@@ -1292,7 +1369,7 @@
     "href": "module/md-02.html#zusatzaufgaben",
     "title": "Modul 2",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgaben bis Montag, den 7. Oktober 2024.\n\nZusatzaufgabe 1: Datenvisualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgaben bis Montag, den 7. Oktober 2024.\n\nZusatzaufgabe 1: Daten Visualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 02"
     ]
