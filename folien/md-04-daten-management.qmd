@@ -20,12 +20,37 @@ editor_options:
   chunk_output_type: console
 ---
 
+# Resourcen
+
+- https://github.com/openZH
+- https://www.web.statistik.zh.ch/ogd/daten/ressourcen/KTZH_00001341_00002921.pdf
+- OGD: https://docs.google.com/presentation/d/1FKm8-ybTiIfU6l3AImm42H0DuWWxbjhmM58TXJfNRjk/edit#slide=id.g164f80efa60_0_14
+- Leitlinien: https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780
+
+Was kann man damit machen?
+
+- Leerwohnungsziffer nach Gemeinden: https://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html#-291192554
+- Gewaltopfer Häusliche Gewalt: https://www.zh.ch/de/sicherheit-justiz/delikte-praevention/kriminalstatistik/gewaltopfer.html
+- Decarb-Monitoring (Daten sind semi OGD, da sie in einem offenen GitHub-repo liegen): https://www.zh.ch/de/umwelt-tiere/klima/langfristige-klimastrategie/monitoring.html
+- Kurzzeitmessung NIS: https://www.zh.ch/de/umwelt-tiere/luft-strahlung/mobilfunk.html#1645502451
+
+
+und die Seite https://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#1132125233 könnte auch noch als Beispiel genutzt werden. Da hat Corinna schon vor langer Zeit eine hübsche App erstellt. Die dargestellten Messdaten stehen auch als OGD zur Verfügung
+
 ```{r}
 #| include: false
 library(countdown)
 library(tidyverse)
 library(epoxy)
 library(gapminder)
+```
+
+```{r}
+
+link <- "https://raw.githubusercontent.com/rstatszh-dev/data/refs/heads/main/data/ktzh-bevoelkerungsbefragung-zufriedenheit/KTZH_00001341_00002759_frage7a1.csv"
+
+ktzh_befragung <- read_csv(link)
+
 ```
 
 ## Lernziele (für diese Woche)
@@ -42,6 +67,211 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 ```{epoxy}
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
 ```
+
+# GitHub
+
+## Begriffe
+
+# Faktoren in R {background-color="#4C326A"}
+
+## Arten von Variablen
+
+::: incremental
+::: columns
+::: {.column width="50%"}
+### Numerisch
+
+**Diskrete Variablen**
+
+-   nicht negative
+-   zählbare
+-   ganze Zahlen
+-   z.B. Anzahl Schüler, Würfelwurf
+
+**Stetige (kontinuierliche) Variablen**
+
+-   unendliche Anzahl von Werten
+-   zwischen zwei Werten
+-   auch Datums/Uhrzeitwerte
+-   z.B. Länge, Gewicht, Grösse
+:::
+
+::: {.column width="50%"}
+### Nicht numerisch
+
+**Kategoriale Variablen**
+
+-   endliche Anzahl von Werten
+-   eindeutige Gruppen (z.B. EU Länder)
+-   **ordinal**, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)
+:::
+:::
+:::
+
+## Ich bin dran: Faktoren in R
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Zurücklehnen und genießen!
+:::
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Ihr seid dran: 02-faktoren-ihr.qmd
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-04-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei [`02-faktoren-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5. Folge den Anweisungen in der Datei.
+:::
+```{r}
+countdown(25)
+```
+
+
+# Daten importieren import {background-color="#4C326A"}
+
+## Rechteckige Daten in R einlesen
+
+::: columns
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="80%"}
+knitr::include_graphics("img/md-04/readr.png")
+```
+:::
+
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="80%"}
+knitr::include_graphics("img/md-04/readr.png")
+```
+:::
+:::
+
+## CSV & XLSX {.smaller}
+
+::: columns
+::: {.column width="50%"}
+### readr
+
+-   `read_csv()` - durch Kommas getrennte Werte 
+-   `read_csv2()` - durch Semicolon getrennte Werte ([Tipp für das Konvertieren von xlsx als csv](https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien/xls-zu-csv-konvertieren.md))
+-   `read_tsv()` - durch Tab getrennte Werte
+-   `read_delim()` - liest Dateien mit beliebigem Trennzeichen
+-   ...
+:::
+
+::: {.column width="50%"}
+### readxl
+
+-   `read_excel()` - liest xls oder xlsx Dateien
+-   ...
+:::
+:::
+
+## Daten aus CSV-Dateien lesen {.smaller}
+
+-  Import von unbearbeiteten Rohdaten
+
+```{r}
+#| echo: true
+befragung <- read_csv(here::here("folien/daten/raw/KTZH_00001341_00002759_frage7a1.csv"))
+
+befragung
+```
+
+## Daten als CSV-Datei schreiben {.smaller}
+
+-   transformiere Daten
+-   exportiere verarbeitete, analysereife Daten
+
+```{r}
+#| echo: true
+
+antwort_levels <- c("viel zu hoch", "eher zu hoch", "gerade angemessen", 
+                    "eher zu tief", "viel zu tief")
+
+befragung_fct <- befragung |>
+    mutate(antwort = factor(antwort, levels = antwort_levels)) 
+
+write_csv(befragung_fct, 
+          here::here("folien/daten/processed/ktzh-befragung-zufriedenheit.csv"))
+```
+
+## Analysefertige Daten einlesen {.smaller}
+
+- Was ist aus unserem Faktor geworden?
+
+```{r}
+#| echo: true
+
+befragung <- read_csv(here::here("folien/daten/processed/ktzh-befragung-zufriedenheit.csv"))
+
+befragung
+```
+
+## 
+
+- Faktoren können in CSV nicht gespeichert werden
+
+```{r}
+knitr::include_graphics("img/md-04/raw-csv-github.png")
+```
+
+## .rds Datei format
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 5)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+
+## Ihr seid dran: 02-faktoren-ihr.qmd
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-04-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei [`02-faktoren-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5. Folge den Anweisungen in der Datei.
+:::
+```{r}
+countdown(15)
+```
+
+# Open Government Data {background-color="#4C326A"}
+
+## Datenkatalog Kanton Zurich
+
+## opendata.swiss
+
+## Leitlinien 
+
+## OGD für rstatszh
+
 
 # Zusatzaufgaben Modul 4 {background-color="#4C326A"}
 

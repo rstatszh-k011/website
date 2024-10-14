@@ -1684,5 +1684,131 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#begriffe",
+    "href": "folien/md-04-daten-management.html#begriffe",
+    "title": "Daten Import & Daten Management",
+    "section": "Begriffe",
+    "text": "Begriffe"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#arten-von-variablen",
+    "href": "folien/md-04-daten-management.html#arten-von-variablen",
+    "title": "Daten Import & Daten Management",
+    "section": "Arten von Variablen",
+    "text": "Arten von Variablen\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#ich-bin-dran-faktoren-in-r",
+    "href": "folien/md-04-daten-management.html#ich-bin-dran-faktoren-in-r",
+    "title": "Daten Import & Daten Management",
+    "section": "Ich bin dran: Faktoren in R",
+    "text": "Ich bin dran: Faktoren in R\n\n\nZurücklehnen und genießen!"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#pause-machen",
+    "href": "folien/md-04-daten-management.html#pause-machen",
+    "title": "Daten Import & Daten Management",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#ihr-seid-dran-02-faktoren-ihr.qmd",
+    "href": "folien/md-04-daten-management.html#ihr-seid-dran-02-faktoren-ihr.qmd",
+    "title": "Daten Import & Daten Management",
+    "section": "Ihr seid dran: 02-faktoren-ihr.qmd",
+    "text": "Ihr seid dran: 02-faktoren-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-faktoren-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#rechteckige-daten-in-r-einlesen",
+    "href": "folien/md-04-daten-management.html#rechteckige-daten-in-r-einlesen",
+    "title": "Daten Import & Daten Management",
+    "section": "Rechteckige Daten in R einlesen",
+    "text": "Rechteckige Daten in R einlesen"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#csv-xlsx",
+    "href": "folien/md-04-daten-management.html#csv-xlsx",
+    "title": "Daten Import & Daten Management",
+    "section": "CSV & XLSX",
+    "text": "CSV & XLSX\n\n\nreadr\n\nread_csv() - durch Kommas getrennte Werte\nread_csv2() - durch Semicolon getrennte Werte (Tipp für das Konvertieren von xlsx als csv)\nread_tsv() - durch Tab getrennte Werte\nread_delim() - liest Dateien mit beliebigem Trennzeichen\n…\n\n\nreadxl\n\nread_excel() - liest xls oder xlsx Dateien\n…"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#daten-aus-csv-dateien-lesen",
+    "href": "folien/md-04-daten-management.html#daten-aus-csv-dateien-lesen",
+    "title": "Daten Import & Daten Management",
+    "section": "Daten aus CSV-Dateien lesen",
+    "text": "Daten aus CSV-Dateien lesen\n\nImport von unbearbeiteten Rohdaten\n\n\nbefragung &lt;- read_csv(here::here(\"folien/daten/raw/KTZH_00001341_00002759_frage7a1.csv\"))\n\nbefragung\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#daten-als-csv-datei-schreiben",
+    "href": "folien/md-04-daten-management.html#daten-als-csv-datei-schreiben",
+    "title": "Daten Import & Daten Management",
+    "section": "Daten als CSV-Datei schreiben",
+    "text": "Daten als CSV-Datei schreiben\n\ntransformiere Daten\nexportiere verarbeitete, analysereife Daten\n\n\nantwort_levels &lt;- c(\"viel zu hoch\", \"eher zu hoch\", \"gerade angemessen\", \n                    \"eher zu tief\", \"viel zu tief\")\n\nbefragung_fct &lt;- befragung |&gt;\n    mutate(antwort = factor(antwort, levels = antwort_levels)) \n\nwrite_csv(befragung_fct, \n          here::here(\"folien/daten/processed/ktzh-befragung-zufriedenheit.csv\"))"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#analysefertige-daten-einlesen",
+    "href": "folien/md-04-daten-management.html#analysefertige-daten-einlesen",
+    "title": "Daten Import & Daten Management",
+    "section": "Analysefertige Daten einlesen",
+    "text": "Analysefertige Daten einlesen\n\nWas ist aus unserem Faktor geworden?\n\n\nbefragung &lt;- read_csv(here::here(\"folien/daten/processed/ktzh-befragung-zufriedenheit.csv\"))\n\nbefragung\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#section",
+    "href": "folien/md-04-daten-management.html#section",
+    "title": "Daten Import & Daten Management",
+    "section": "",
+    "text": "Faktoren können in CSV nicht gespeichert werden"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#rds-datei-format",
+    "href": "folien/md-04-daten-management.html#rds-datei-format",
+    "title": "Daten Import & Daten Management",
+    "section": ".rds Datei format",
+    "text": ".rds Datei format"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#pause-machen-1",
+    "href": "folien/md-04-daten-management.html#pause-machen-1",
+    "title": "Daten Import & Daten Management",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#ihr-seid-dran-02-faktoren-ihr.qmd-1",
+    "href": "folien/md-04-daten-management.html#ihr-seid-dran-02-faktoren-ihr.qmd-1",
+    "title": "Daten Import & Daten Management",
+    "section": "Ihr seid dran: 02-faktoren-ihr.qmd",
+    "text": "Ihr seid dran: 02-faktoren-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-faktoren-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#datenkatalog-kanton-zurich",
+    "href": "folien/md-04-daten-management.html#datenkatalog-kanton-zurich",
+    "title": "Daten Import & Daten Management",
+    "section": "Datenkatalog Kanton Zurich",
+    "text": "Datenkatalog Kanton Zurich"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#opendata.swiss",
+    "href": "folien/md-04-daten-management.html#opendata.swiss",
+    "title": "Daten Import & Daten Management",
+    "section": "opendata.swiss",
+    "text": "opendata.swiss"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#leitlinien",
+    "href": "folien/md-04-daten-management.html#leitlinien",
+    "title": "Daten Import & Daten Management",
+    "section": "Leitlinien",
+    "text": "Leitlinien"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#ogd-für-rstatszh",
+    "href": "folien/md-04-daten-management.html#ogd-für-rstatszh",
+    "title": "Daten Import & Daten Management",
+    "section": "OGD für rstatszh",
+    "text": "OGD für rstatszh"
   }
 ]
