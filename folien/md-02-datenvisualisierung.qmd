@@ -482,7 +482,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 # Daten visualisieren {background-color="#4C326A"}
 
-## Arten von Variablen
+## Arten von Variablen {.smaller}
 
 ::: incremental
 ::: columns

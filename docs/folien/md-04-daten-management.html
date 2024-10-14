@@ -451,7 +451,7 @@ Lars Schöbitz
 <h1>Faktoren in R</h1>
 
 </section>
-<section id="arten-von-variablen" class="slide level2">
+<section id="arten-von-variablen" class="slide level2 smaller">
 <h2>Arten von Variablen</h2>
 <div>
 <div class="columns">
@@ -495,7 +495,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_c523e463" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_8dfd641e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -518,7 +518,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_c6885c30" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_80ce8e48" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -526,8 +526,8 @@ Lars Schöbitz
 </div>
 </section></section>
 <section>
-<section id="daten-importieren-import" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Daten importieren import</h1>
+<section id="daten-einlesen" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Daten einlesen</h1>
 
 </section>
 <section id="rechteckige-daten-in-r-einlesen" class="slide level2">
@@ -565,25 +565,25 @@ Lars Schöbitz
 <li><code>read_csv2()</code> - durch Semicolon getrennte Werte (<a href="https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien/xls-zu-csv-konvertieren.md">Tipp für das Konvertieren von xlsx als csv</a>)</li>
 <li><code>read_tsv()</code> - durch Tab getrennte Werte</li>
 <li><code>read_delim()</code> - liest Dateien mit beliebigem Trennzeichen</li>
-<li>…</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <h3 id="readxl">readxl</h3>
 <ul>
 <li><code>read_excel()</code> - liest xls oder xlsx Dateien</li>
-<li>…</li>
 </ul>
 </div></div>
 </section>
 <section id="daten-aus-csv-dateien-lesen" class="slide level2 smaller">
 <h2>Daten aus CSV-Dateien lesen</h2>
 <ul>
-<li>Import von unbearbeiteten Rohdaten</li>
+<li>Import von <span class="highlight-yellow">unbearbeiteten Rohdaten</span></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>befragung <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"folien/daten/raw/KTZH_00001341_00002759_frage7a1.csv"</span>))</span>
-<span id="cb1-2"><a></a></span>
-<span id="cb1-3"><a></a>befragung</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>befragung <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"raw/KTZH_00001341_00002759_frage7a1.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>befragung</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -601,22 +601,44 @@ Lars Schöbitz
 # ℹ 1,203 more rows</code></pre>
 </div>
 </div>
+</div>
 </section>
 <section id="daten-als-csv-datei-schreiben" class="slide level2 smaller">
 <h2>Daten als CSV-Datei schreiben</h2>
 <ul>
 <li>transformiere Daten</li>
-<li>exportiere verarbeitete, analysereife Daten</li>
+<li>exportiere <span class="highlight-yellow">verarbeitete, analysereife Daten</span></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>antwort_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"viel zu hoch"</span>, <span class="st">"eher zu hoch"</span>, <span class="st">"gerade angemessen"</span>, </span>
-<span id="cb3-2"><a></a>                    <span class="st">"eher zu tief"</span>, <span class="st">"viel zu tief"</span>)</span>
-<span id="cb3-3"><a></a></span>
-<span id="cb3-4"><a></a>befragung_fct <span class="ot">&lt;-</span> befragung <span class="sc">|&gt;</span></span>
-<span id="cb3-5"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort =</span> <span class="fu">factor</span>(antwort, <span class="at">levels =</span> antwort_levels)) </span>
-<span id="cb3-6"><a></a></span>
-<span id="cb3-7"><a></a><span class="fu">write_csv</span>(befragung_fct, </span>
-<span id="cb3-8"><a></a>          here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"folien/daten/processed/ktzh-befragung-zufriedenheit.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>antwort_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"viel zu hoch"</span>, <span class="st">"eher zu hoch"</span>, <span class="st">"gerade angemessen"</span>, </span>
+<span id="cb4-2"><a></a>                    <span class="st">"eher zu tief"</span>, <span class="st">"viel zu tief"</span>)</span>
+<span id="cb4-3"><a></a></span>
+<span id="cb4-4"><a></a>befragung_fct <span class="ot">&lt;-</span> befragung <span class="sc">|&gt;</span></span>
+<span id="cb4-5"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort =</span> <span class="fu">factor</span>(antwort, <span class="at">levels =</span> antwort_levels)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1,213 × 5
+   geschlecht alter     gemeinde_groesse bezirk_name antwort          
+   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            
+ 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     
+ 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     
+ 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     
+ 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     
+ 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     
+ 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen
+ 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     
+ 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     
+ 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     
+10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     
+# ℹ 1,203 more rows</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">write_csv</span>(befragung_fct, <span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </section>
 <section id="analysefertige-daten-einlesen" class="slide level2 smaller">
@@ -625,9 +647,10 @@ Lars Schöbitz
 <li>Was ist aus unserem Faktor geworden?</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>befragung <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"folien/daten/processed/ktzh-befragung-zufriedenheit.csv"</span>))</span>
-<span id="cb4-2"><a></a></span>
-<span id="cb4-3"><a></a>befragung</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>befragung_fct <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -646,15 +669,186 @@ Lars Schöbitz
 </div>
 </div>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="wo-ist-der-faktor" class="slide level2">
+<h2>Wo ist der Faktor?</h2>
 <ul>
-<li>Faktoren können in CSV nicht gespeichert werden</li>
+<li>Faktoren können in CSV Dateien nicht gespeichert werden</li>
+<li>Eine CSV Datei enthält lediglich Werte, getrennt durch ein Komma</li>
 </ul>
 
 <img data-src="img/md-04/raw-csv-github.png" width="731" class="r-stretch"></section>
-<section id="rds-datei-format" class="slide level2">
-<h2>.rds Datei format</h2>
+<section id="wie-speichern-wir-faktoren" class="slide level2 smaller">
+<h2>Wie speichern wir Faktoren?</h2>
+<ul>
+<li>In R können Daten als <code>.rds</code> Datei gespeichert werden</li>
+<li><code>.rds</code> Dateien speichern die Struktur der Daten</li>
+<li>Faktoren und andere Datenstrukturen bleiben erhalten</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">write_rds</span>(befragung_fct, <span class="st">"folien/daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>befragung_rds <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>befragung_rds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1,213 × 5
+   geschlecht alter     gemeinde_groesse bezirk_name antwort          
+   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            
+ 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     
+ 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     
+ 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     
+ 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     
+ 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     
+ 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen
+ 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     
+ 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     
+ 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     
+10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     
+# ℹ 1,203 more rows</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="daten-zusammenfassen" class="slide level2 smaller">
+<h2>Daten zusammenfassen</h2>
+<ul>
+<li>für eine Visualisierung oder Tabelle in einer veröffentlichten Arbeit</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>befragung_sum_alter <span class="ot">&lt;-</span> befragung_rds <span class="sc">|&gt;</span> </span>
+<span id="cb15-2"><a></a>    <span class="fu">group_by</span>(alter, antwort) <span class="sc">|&gt;</span> </span>
+<span id="cb15-3"><a></a>    <span class="fu">summarise</span>(<span class="at">antwort_anzahl =</span> <span class="fu">n</span>()) <span class="sc">|&gt;</span> </span>
+<span id="cb15-4"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort_prozent =</span> antwort_anzahl <span class="sc">/</span> <span class="fu">sum</span>(antwort_anzahl) <span class="sc">*</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="daten-visualisieren" class="slide level2">
+<h2>Daten visualisieren</h2>
+<ul>
+<li>in einer Veröffentlichung</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> befragung_sum_alter,</span>
+<span id="cb16-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> antwort_prozent, </span>
+<span id="cb16-3"><a></a>                     <span class="at">y =</span> alter, </span>
+<span id="cb16-4"><a></a>                     <span class="at">fill =</span> antwort)) <span class="sc">+</span></span>
+<span id="cb16-5"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb16-6"><a></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(antwort_prozent, <span class="dv">0</span>)),  </span>
+<span id="cb16-7"><a></a>              <span class="at">position =</span> <span class="fu">position_stack</span>(<span class="at">vjust =</span> <span class="fl">0.5</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="md-04-daten-management_files/figure-revealjs/unnamed-chunk-24-1.png" width="960" class="r-stretch"></section>
+<section id="daten-exportieren" class="slide level2">
+<h2>Daten exportieren</h2>
+<ul>
+<li><span class="highlight-yellow">Daten, die einer Veröffentlichung zugrunde liegen</span></li>
+<li>als CSV-Datei</li>
+<li>erhöht die Wiederverwendbarkeit</li>
+</ul>
+</section>
+<section id="daten-management" class="slide level2 smaller">
+<h2>Daten Management</h2>
+<table class="table-striped table-hover caption-top">
+<caption>Beispiele für Begriffe, die bei der Datenverwaltung verwendet werden.</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 10%">
+<col style="width: 50%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Begriff</th>
+<th>Ordnername</th>
+<th>Erklärung</th>
+<th>Dateiformat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>unbearbeitete Rohdaten</td>
+<td>data/raw</td>
+<td>Daten, die nicht bearbeitet wurden und in ihrer <span class="highlight-yellow">ursprünglichen Form und Datei bleiben</span></td>
+<td>often XLSX, also CSV, JSON, and others</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="daten-management-1" class="slide level2 smaller">
+<h2>Daten Management</h2>
+<table class="table-striped table-hover caption-top">
+<caption>Beispiele für Begriffe, die bei der Datenverwaltung verwendet werden.</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 10%">
+<col style="width: 50%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Begriff</th>
+<th>Ordnername</th>
+<th>Erklärung</th>
+<th>Dateiformat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>unbearbeitete Rohdaten</td>
+<td>data/raw</td>
+<td>Daten, die nicht bearbeitet wurden und in ihrer <span class="highlight-yellow">ursprünglichen Form und Datei bleiben</span></td>
+<td>often XLSX, also CSV, JSON, and others</td>
+</tr>
+<tr class="even">
+<td>verarbeitete, analysefähige Daten</td>
+<td>data/processed</td>
+<td>Daten, die zur Vorbereitung einer Analyse verarbeitet werden und in ihrer <span class="highlight-yellow">neuen Form als neue Datei</span> gespeichert werden</td>
+<td>CSV, RDS, JSON</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="daten-management-2" class="slide level2 smaller">
+<h2>Daten Management</h2>
+<table class="table-striped table-hover caption-top">
+<caption>Beispiele für Begriffe, die bei der Datenverwaltung verwendet werden.</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 10%">
+<col style="width: 50%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Begriff</th>
+<th>Ordnername</th>
+<th>Erklärung</th>
+<th>Dateiformat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>unbearbeitete Rohdaten</td>
+<td>data/raw</td>
+<td>Daten, die nicht bearbeitet wurden und in ihrer <span class="highlight-yellow">ursprünglichen Form und Datei bleiben</span></td>
+<td>often XLSX, also CSV, JSON, and others</td>
+</tr>
+<tr class="even">
+<td>verarbeitete, analysefähige Daten</td>
+<td>data/processed</td>
+<td>Daten, die zur Vorbereitung einer Analyse verarbeitet werden und in ihrer <span class="highlight-yellow">neuen Form als neue Datei</span> gespeichert werden</td>
+<td>CSV, RDS, JSON</td>
+</tr>
+<tr class="odd">
+<td>Daten, die einer Veröffentlichung zugrunde liegen</td>
+<td>data/final</td>
+<td>Daten, die das <span class="highlight-yellow">Ergebnis einer Analyse</span> sind (z. B. deskriptive Statistik oder Datenvisualisierung) und in einem Bericht angezeigt werden, dann aber auch in ihrer neuen Form als neue Datei exportiert werden</td>
+<td>CSV</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="pause-machen-1" class="slide level2">
 <h2>Pause machen</h2>
@@ -662,7 +856,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_2af3ca9f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_b964823b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -672,20 +866,20 @@ Lars Schöbitz
 <p>Bild erzeugt mit <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
 </div>
 </section>
-<section id="ihr-seid-dran-02-faktoren-ihr.qmd-1" class="slide level2">
-<h2>Ihr seid dran: 02-faktoren-ihr.qmd</h2>
+<section id="ihr-seid-dran-03-daten-import-ihr.qmd" class="slide level2">
+<h2>Ihr seid dran: 03-daten-import-ihr.qmd</h2>
 <div class="task">
 <ol type="1">
 <li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
 <li>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.</li>
 <li>Klicke auf <span class="highlight-yellow">Continue</span> neben <span class="highlight-yellow">md-04-uebungen</span>.</li>
-<li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>02-faktoren-ihr.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
+<li>Suche im Dateimanager im Fenster unten rechts die Datei <code>03-daten-import-ihr.qmd</code> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
 <li>Folge den Anweisungen in der Datei.</li>
 </ol>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_0cdd6c00" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_3358c6f3" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -718,7 +912,8 @@ Lars Schöbitz
 <h2>Modul 4 Dokumentation</h2>
 <div class="learn-more">
 <p><a href="https://rstatszh-k009.github.io/website/module/md-04.html">rstatszh-k009.github.io/website/module/md-04.html</a></p>
-<iframe src="https://rstatszh-k009.github.io/website/module/md-04.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 4 Dokumentation"></iframe>
+<iframe src="https://rstatszh-k009.github.io/website/module/md-04.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 4 Dokumentation">
+</iframe>
 </div>
 </section>
 <section id="zusatzaufgaben-abgabedatum" class="slide level2">

@@ -1732,28 +1732,28 @@
     "href": "folien/md-04-daten-management.html#csv-xlsx",
     "title": "Daten Import & Daten Management",
     "section": "CSV & XLSX",
-    "text": "CSV & XLSX\n\n\nreadr\n\nread_csv() - durch Kommas getrennte Werte\nread_csv2() - durch Semicolon getrennte Werte (Tipp für das Konvertieren von xlsx als csv)\nread_tsv() - durch Tab getrennte Werte\nread_delim() - liest Dateien mit beliebigem Trennzeichen\n…\n\n\nreadxl\n\nread_excel() - liest xls oder xlsx Dateien\n…"
+    "text": "CSV & XLSX\n\n\nreadr\n\nread_csv() - durch Kommas getrennte Werte\nread_csv2() - durch Semicolon getrennte Werte (Tipp für das Konvertieren von xlsx als csv)\nread_tsv() - durch Tab getrennte Werte\nread_delim() - liest Dateien mit beliebigem Trennzeichen\n\n\nreadxl\n\nread_excel() - liest xls oder xlsx Dateien"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-aus-csv-dateien-lesen",
     "href": "folien/md-04-daten-management.html#daten-aus-csv-dateien-lesen",
     "title": "Daten Import & Daten Management",
     "section": "Daten aus CSV-Dateien lesen",
-    "text": "Daten aus CSV-Dateien lesen\n\nImport von unbearbeiteten Rohdaten\n\n\nbefragung &lt;- read_csv(here::here(\"folien/daten/raw/KTZH_00001341_00002759_frage7a1.csv\"))\n\nbefragung\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
+    "text": "Daten aus CSV-Dateien lesen\n\nImport von unbearbeiteten Rohdaten\n\n\nbefragung &lt;- read_csv(\"raw/KTZH_00001341_00002759_frage7a1.csv\")\n\n\n\nbefragung\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-als-csv-datei-schreiben",
     "href": "folien/md-04-daten-management.html#daten-als-csv-datei-schreiben",
     "title": "Daten Import & Daten Management",
     "section": "Daten als CSV-Datei schreiben",
-    "text": "Daten als CSV-Datei schreiben\n\ntransformiere Daten\nexportiere verarbeitete, analysereife Daten\n\n\nantwort_levels &lt;- c(\"viel zu hoch\", \"eher zu hoch\", \"gerade angemessen\", \n                    \"eher zu tief\", \"viel zu tief\")\n\nbefragung_fct &lt;- befragung |&gt;\n    mutate(antwort = factor(antwort, levels = antwort_levels)) \n\nwrite_csv(befragung_fct, \n          here::here(\"folien/daten/processed/ktzh-befragung-zufriedenheit.csv\"))"
+    "text": "Daten als CSV-Datei schreiben\n\ntransformiere Daten\nexportiere verarbeitete, analysereife Daten\n\n\nantwort_levels &lt;- c(\"viel zu hoch\", \"eher zu hoch\", \"gerade angemessen\", \n                    \"eher zu tief\", \"viel zu tief\")\n\nbefragung_fct &lt;- befragung |&gt;\n    mutate(antwort = factor(antwort, levels = antwort_levels)) \n\n\n\nbefragung_fct\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows\n\n\n\nwrite_csv(befragung_fct, \"daten/processed/ktzh-befragung-zufriedenheit.csv\")"
   },
   {
     "objectID": "folien/md-04-daten-management.html#analysefertige-daten-einlesen",
     "href": "folien/md-04-daten-management.html#analysefertige-daten-einlesen",
     "title": "Daten Import & Daten Management",
     "section": "Analysefertige Daten einlesen",
-    "text": "Analysefertige Daten einlesen\n\nWas ist aus unserem Faktor geworden?\n\n\nbefragung &lt;- read_csv(here::here(\"folien/daten/processed/ktzh-befragung-zufriedenheit.csv\"))\n\nbefragung\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
+    "text": "Analysefertige Daten einlesen\n\nWas ist aus unserem Faktor geworden?\n\n\nbefragung_fct &lt;- read_csv(\"daten/processed/ktzh-befragung-zufriedenheit.csv\")\n\n\nbefragung_fct\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
   },
   {
     "objectID": "folien/md-04-daten-management.html#section",
@@ -1810,5 +1810,68 @@
     "title": "Daten Import & Daten Management",
     "section": "OGD für rstatszh",
     "text": "OGD für rstatszh"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#wo-ist-der-faktor",
+    "href": "folien/md-04-daten-management.html#wo-ist-der-faktor",
+    "title": "Daten Import & Daten Management",
+    "section": "Wo ist der Faktor?",
+    "text": "Wo ist der Faktor?\n\nFaktoren können in CSV Dateien nicht gespeichert werden\nEine CSV Datei enthält lediglich Werte, getrennt durch ein Komma"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#wie-speichern-wir-faktoren",
+    "href": "folien/md-04-daten-management.html#wie-speichern-wir-faktoren",
+    "title": "Daten Import & Daten Management",
+    "section": "Wie speichern wir Faktoren?",
+    "text": "Wie speichern wir Faktoren?\n\nIn R können Daten als .rds Datei gespeichert werden\n.rds Dateien speichern die Struktur der Daten\nFaktoren und andere Datenstrukturen bleiben erhalten\n\n\nwrite_rds(befragung_fct, \"folien/daten/processed/ktzh-befragung-zufriedenheit.rds\")\n\n\n\nbefragung_rds &lt;- read_rds(\"daten/processed/ktzh-befragung-zufriedenheit.rds\")\n\n\nbefragung_rds\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#daten-visualisieren",
+    "href": "folien/md-04-daten-management.html#daten-visualisieren",
+    "title": "Daten Import & Daten Management",
+    "section": "Daten visualisieren",
+    "text": "Daten visualisieren\n\nin einer Veröffentlichung\n\n\nggplot(data = befragung_sum_alter,\n       mapping = aes(x = antwort_prozent, \n                     y = alter, \n                     fill = antwort)) +\n    geom_col() +\n    geom_text(aes(label = round(antwort_prozent, 0)),  \n              position = position_stack(vjust = 0.5))"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#daten-zusammenfassen",
+    "href": "folien/md-04-daten-management.html#daten-zusammenfassen",
+    "title": "Daten Import & Daten Management",
+    "section": "Daten zusammenfassen",
+    "text": "Daten zusammenfassen\n\nfür eine Visualisierung oder Tabelle in einer veröffentlichten Arbeit\n\n\nbefragung_sum_alter &lt;- befragung_rds |&gt; \n    group_by(alter, antwort) |&gt; \n    summarise(antwort_anzahl = n()) |&gt; \n    mutate(antwort_prozent = antwort_anzahl / sum(antwort_anzahl) * 100)"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#daten-exportieren",
+    "href": "folien/md-04-daten-management.html#daten-exportieren",
+    "title": "Daten Import & Daten Management",
+    "section": "Daten exportieren",
+    "text": "Daten exportieren\n\nDaten, die einer Veröffentlichung zugrunde liegen\nals CSV-Datei\nerhöht die Wiederverwendbarkeit"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#daten-management",
+    "href": "folien/md-04-daten-management.html#daten-management",
+    "title": "Daten Import & Daten Management",
+    "section": "Daten Management",
+    "text": "Daten Management\n\nBeispiele für Begriffe, die bei der Datenverwaltung verwendet werden.\n\n\n\n\n\n\n\n\nBegriff\nOrdnername\nErklärung\nDateiformat\n\n\n\n\nunbearbeitete Rohdaten\ndata/raw\nDaten, die nicht bearbeitet wurden und in ihrer ursprünglichen Form und Datei bleiben\noften XLSX, also CSV, JSON, and others"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#daten-management-1",
+    "href": "folien/md-04-daten-management.html#daten-management-1",
+    "title": "Daten Import & Daten Management",
+    "section": "Daten Management",
+    "text": "Daten Management\n\nBeispiele für Begriffe, die bei der Datenverwaltung verwendet werden.\n\n\n\n\n\n\n\n\nBegriff\nOrdnername\nErklärung\nDateiformat\n\n\n\n\nunbearbeitete Rohdaten\ndata/raw\nDaten, die nicht bearbeitet wurden und in ihrer ursprünglichen Form und Datei bleiben\noften XLSX, also CSV, JSON, and others\n\n\nverarbeitete, analysefähige Daten\ndata/processed\nDaten, die zur Vorbereitung einer Analyse verarbeitet werden und in ihrer neuen Form als neue Datei gespeichert werden\nCSV, RDS, JSON"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#daten-management-2",
+    "href": "folien/md-04-daten-management.html#daten-management-2",
+    "title": "Daten Import & Daten Management",
+    "section": "Daten Management",
+    "text": "Daten Management\n\nBeispiele für Begriffe, die bei der Datenverwaltung verwendet werden.\n\n\n\n\n\n\n\n\nBegriff\nOrdnername\nErklärung\nDateiformat\n\n\n\n\nunbearbeitete Rohdaten\ndata/raw\nDaten, die nicht bearbeitet wurden und in ihrer ursprünglichen Form und Datei bleiben\noften XLSX, also CSV, JSON, and others\n\n\nverarbeitete, analysefähige Daten\ndata/processed\nDaten, die zur Vorbereitung einer Analyse verarbeitet werden und in ihrer neuen Form als neue Datei gespeichert werden\nCSV, RDS, JSON\n\n\nDaten, die einer Veröffentlichung zugrunde liegen\ndata/final\nDaten, die das Ergebnis einer Analyse sind (z. B. deskriptive Statistik oder Datenvisualisierung) und in einem Bericht angezeigt werden, dann aber auch in ihrer neuen Form als neue Datei exportiert werden\nCSV"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#ihr-seid-dran-03-daten-import-ihr.qmd",
+    "href": "folien/md-04-daten-management.html#ihr-seid-dran-03-daten-import-ihr.qmd",
+    "title": "Daten Import & Daten Management",
+    "section": "Ihr seid dran: 03-daten-import-ihr.qmd",
+    "text": "Ihr seid dran: 03-daten-import-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-daten-import-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
   }
 ]
