@@ -66,9 +66,66 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
 ```
 
-# GitHub
+# Git Befehle {background-color="#4C326A"}
 
-## Begriffe
+## 
+
+![](img/md-04/git-clone-push-00.drawio.png)
+## 
+
+![](img/md-04/git-clone-push-01.drawio.png)
+## 
+
+![](img/md-04/git-clone-push-02.drawio.png)
+
+## 
+
+![](img/md-04/git.drawio-00.png)
+
+## 
+
+![](img/md-04/git.drawio-01.png)
+
+## 
+
+![](img/md-04/git.drawio-02.png)
+
+## 
+
+![](img/md-04/git.drawio-03.png)
+
+## 
+
+![](img/md-04/git.drawio-04.png)
+
+## 
+
+![](img/md-04/git.drawio-05.png)
+
+## 
+
+![](img/md-04/git.drawio-06.png)
+
+## 
+
+![](img/md-04/git.drawio-07.png)
+
+## 
+
+![](img/md-04/git.drawio-08.png)
+
+## 
+
+![](img/md-04/git.drawio-09.png)
+## 
+
+![](img/md-04/git-clone-push-02.drawio.png)
+## 
+
+![](img/md-04/git-clone-push-03.drawio.png)
+## 
+
+![](img/md-04/git-clone-push-04.drawio.png)
 
 # Faktoren in R {background-color="#4C326A"}
 

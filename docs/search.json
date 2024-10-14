@@ -1760,7 +1760,7 @@
     "href": "folien/md-04-daten-management.html#section",
     "title": "Daten Import & Daten Management",
     "section": "",
-    "text": "Faktoren können in CSV nicht gespeichert werden"
+    "text": "##\n ##"
   },
   {
     "objectID": "folien/md-04-daten-management.html#rds-datei-format",
@@ -1873,5 +1873,19 @@
     "title": "Daten Import & Daten Management",
     "section": "Ihr seid dran: 03-daten-import-ihr.qmd",
     "text": "Ihr seid dran: 03-daten-import-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-daten-import-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#section-1",
+    "href": "folien/md-04-daten-management.html#section-1",
+    "title": "Daten Import & Daten Management",
+    "section": "",
+    "text": "##"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#section-10",
+    "href": "folien/md-04-daten-management.html#section-10",
+    "title": "Daten Import & Daten Management",
+    "section": "",
+    "text": "##\n ##\n ##"
   }
 ]
