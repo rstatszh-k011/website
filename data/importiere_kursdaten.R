@@ -29,10 +29,3 @@ lernziele <- "https://docs.google.com/spreadsheets/d/1Psu_bKUJ0evgDUorkoeV3KUGND
 
 read_sheet(ss = lernziele) |> 
     write_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv"))
-
-
-
-
-
-
-
