@@ -82,7 +82,7 @@ In dieser Zusatzaufgabe geht es darum einen Datensatz selbst zu identifizieren u
 
 ![](images/13-git-dateien-hinzufuegen.png){width=80%}
 
-## Schritt 3: Erstelle eine Quarto Datei für die Datenimportierung
+## Schritt 4: Erstelle eine Quarto Datei für die Datenimportierung
 
 In deinem ogd-daten-USERNAME Projekt in RStudio auf Posit Cloud, gehe in der Menüleiste zu [File > New File > Quarto document] um ein Quarto Dokument mit HTML Output zu erstellen. Render das Dokument, welches dich nach einem Namen fragt - du kannst `ogd-daten-analyse.qmd` verwenden und die Datei im Stammordner speichern.
 
@@ -110,7 +110,7 @@ In deinem ogd-daten-USERNAME Projekt in RStudio auf Posit Cloud, gehe in der Men
 
 ![](images/17-git-dateien-hinzufuegen.png){width=80%}
 
-## Schritt 4: Übertrage deine Änderungen auf GitHub
+## Schritt 5: Übertrage deine Änderungen auf GitHub
 
 1. Navigiere zum Git-Bereich im Fenster oben rechts und stelle sicher, dass dieses leer ist. Sollte es leer sein, dann überspringe 2. bis 5. und mache bei Unterschritt 6. weiter.
 
@@ -147,7 +147,7 @@ use_git_config(user.name = "Dein Name", user.email = "Deine Email")
 Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen.
 :::
 
-## Schritt 3: Eröffne ein Issue auf GitHub
+## Schritt 6: Eröffne ein Issue auf GitHub
 
 1. Öffne [github.com](https://github.com/) in deinem Browser.
 
