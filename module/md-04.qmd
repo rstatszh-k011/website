@@ -51,6 +51,5 @@ Bitte erledige die folgende Aufgaben bis Montag, den 21. Oktober 2024.
 
 -   [Zusatzaufgabe 1](../zusatzaufgaben/md-04/za-04-01-r4ds-uebungen): R for Data Science (r4ds) Übungen
 -   [Zusatzaufgabe 2](../zusatzaufgaben/md-04/za-04-02-ogd-erkunden): OGD Daten importieren und erkunden
--   [Zusatzaufgabe 3](../zusatzaufgaben/md-03/za-04-03-ktzh-odg): Ressourcen für OGD im Kanton Zürich 
 
 Vielen Dank für die Bearbeitung der Aufgaben.
