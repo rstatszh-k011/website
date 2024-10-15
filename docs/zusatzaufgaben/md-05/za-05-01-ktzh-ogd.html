@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mit OGD Daten arbeiten – rstatsZH - Data Science mit R</title>
+<title>Ressourcen für OGD im Kanton Zürich – rstatsZH - Data Science mit R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -206,12 +206,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#schritt-1-daten-herunterladen" id="toc-schritt-1-daten-herunterladen" class="nav-link active" data-scroll-target="#schritt-1-daten-herunterladen">Schritt 1: Daten herunterladen</a></li>
-  <li><a href="#schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud" id="toc-schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud" class="nav-link" data-scroll-target="#schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud">Schritt 2: Erstelle ein neues Repository auf GitHub &amp; clone es in die Posit Cloud</a></li>
-  <li><a href="#schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud" id="toc-schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud" class="nav-link" data-scroll-target="#schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud">Schritt 3: Lade die Daten in das Projekt auf Posit Cloud</a></li>
-  <li><a href="#schritt-3-erstelle-eine-quarto-datei-für-die-datenimportierung" id="toc-schritt-3-erstelle-eine-quarto-datei-für-die-datenimportierung" class="nav-link" data-scroll-target="#schritt-3-erstelle-eine-quarto-datei-für-die-datenimportierung">Schritt 3: Erstelle eine Quarto Datei für die Datenimportierung</a></li>
-  <li><a href="#schritt-4-übertrage-deine-änderungen-auf-github" id="toc-schritt-4-übertrage-deine-änderungen-auf-github" class="nav-link" data-scroll-target="#schritt-4-übertrage-deine-änderungen-auf-github">Schritt 4: Übertrage deine Änderungen auf GitHub</a></li>
-  <li><a href="#schritt-3-eröffne-ein-issue-auf-github" id="toc-schritt-3-eröffne-ein-issue-auf-github" class="nav-link" data-scroll-target="#schritt-3-eröffne-ein-issue-auf-github">Schritt 3: Eröffne ein Issue auf GitHub</a></li>
+  <li><a href="#ogd-ressourcen" id="toc-ogd-ressourcen" class="nav-link active" data-scroll-target="#ogd-ressourcen">OGD Ressourcen</a></li>
+  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
+  <li><a href="#ogd-community" id="toc-ogd-community" class="nav-link" data-scroll-target="#ogd-community">OGD Community</a></li>
+  <li><a href="#ogd-beispiele" id="toc-ogd-beispiele" class="nav-link" data-scroll-target="#ogd-beispiele">OGD Beispiele</a></li>
   </ul>
 </nav>
     </div>
@@ -220,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mit OGD Daten arbeiten</h1>
+<h1 class="title">Ressourcen für OGD im Kanton Zürich</h1>
 </div>
 
 
@@ -237,156 +235,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In dieser Zusatzaufgabe geht es darum einen Datensatz selbst zu identifizieren und zu bearbeiten. Für die Daten nutzen wir den OGD (Open Government Data - offene Behördendaten) Datenkatalog des Statistischen Amts des Kantons Zürich. Das Repository wird von euch selbst auf GitHub erstellt und wir bereiten den Datenimport vor, ein Thema womit wir uns in Modul 4 intensiver beschäftigen.</p>
-<section id="schritt-1-daten-herunterladen" class="level2">
-<h2 class="anchored" data-anchor-id="schritt-1-daten-herunterladen">Schritt 1: Daten herunterladen</h2>
-<ol type="1">
-<li><p>Öffne: <a href="https://www.zh.ch/de/politik-staat/statistik-daten/datenkatalog.html#/" class="uri">https://www.zh.ch/de/politik-staat/statistik-daten/datenkatalog.html#/</a></p></li>
-<li><p>Unter der Eingabemaske “Thema auswählen” klicke die Auswahl “Daten”. Dies wird nur Datensätze welche als CSV of XLSX abgelegt sind anzeigen.</p></li>
-</ol>
-<p><img src="images/01-ogd-katalog.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="3" type="1">
-<li><p>Durchsuche nun den Katalog, entweder nach einem Thema in den du auf “Thema auswählen” klickst oder nach einem bestimmten Suchkriterium im Suchfeld “Suchen”.</p></li>
-<li><p>Klicke auf einen Datensatz der dich interessiert um weitere Informationen zu erhalten. Stelle sicher, dass der Datensatz als CSV verfügbar ist.</p></li>
-</ol>
-<p><img src="images/02-ogd-daten.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="5" type="1">
-<li>Lade die CSV Datei herunter und speicher diese an einem von dir gewählten Ort auf deinem Arbeitsgerät.</li>
-</ol>
-<p><img src="images/03-ogd-daten-download.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="6" type="1">
-<li>Öffne die Daten <span class="highlight-yellow"><strong>NICHT</strong> mit MS Excel</span>. Dies kann zu Problemen führen, da Excel die Daten automatisch formatiert und somit die Daten verfälscht.</li>
-</ol>
+<section id="ogd-ressourcen" class="level1">
+<h1>OGD Ressourcen</h1>
+<ul>
+<li>OGD Folien: https://docs.google.com/presentation/d/1FKm8-ybTiIfU6l3AImm42H0DuWWxbjhmM58TXJfNRjk/edit#slide=id.g164f80efa60_0_14</li>
+<li>OGD Leitlinien: https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780</li>
+<li><ul>
+<li>OGD Handbook Publikationsleitlinien: https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md</li>
+</ul></li>
+</ul>
 </section>
-<section id="schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud" class="level2">
-<h2 class="anchored" data-anchor-id="schritt-2-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud">Schritt 2: Erstelle ein neues Repository auf GitHub &amp; clone es in die Posit Cloud</h2>
-<ol type="1">
-<li>Öffne die GitHub Organisation für den Kurs <a href="https://github.com/rstatszh-k009" class="uri">https://github.com/rstatszh-k009</a></li>
-<li>Rechts neben dem Feld <span class="highlight-yellow">“Find a repository”</span> klicke auf den grünen <span class="highlight-yellow">“New”</span> Button.</li>
-</ol>
-<p><img src="images/04-oeffne-github-org.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="3" type="1">
-<li>Im Feld <span class="highlight-yellow">“Repository name”</span> schreibe <code>ogd-daten-USERNAME</code>. <span class="highlight-yellow">Ersetze USERNAME durch deinen GitHub Benutzernamen</span>. Vermeide Leerzeichen.</li>
-</ol>
-<p><img src="images/05-ogd-username.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="4" type="1">
-<li>Skrolle auf der gleichen Seite nach unten und klicke auf <span class="highlight-yellow">“Create repository”</span>.</li>
-</ol>
-<p><img src="images/06-create-repository.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="5" type="1">
-<li>Im Feld <span class="highlight-yellow">“Quick setup”</span> klicke auf das Clipboard neben der HTTPs URL.</li>
-</ol>
-<p><img src="images/07-quick-setup.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="6" type="1">
-<li><p>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf <a href="https://posit.cloud/spaces/543494/content/all?sort=name_asc">posit.cloud</a></p></li>
-<li><p>Klicke auf “New Project” &gt; “New Project from Git Repository”</p></li>
-<li><p>Füge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. <span class="highlight-yellow"><strong>Beachte:</strong></span> Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.</p></li>
-<li><p>Warte, bis das Projekt bereitgestellt wurde.</p></li>
-</ol>
+<section id="github" class="level1">
+<h1>GitHub</h1>
+<ul>
+<li>GitHub Organisation openZH: https://github.com/openZH</li>
+<li>GitHub Organisation statistikZH: https://github.com/statistikZH/</li>
+</ul>
 </section>
-<section id="schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud" class="level2">
-<h2 class="anchored" data-anchor-id="schritt-3-lade-die-daten-in-das-projekt-auf-posit-cloud">Schritt 3: Lade die Daten in das Projekt auf Posit Cloud</h2>
-<ol type="1">
-<li>Im Datei Manager im Fenster unten rechts, klicke auf “Folder” um einen neuen Ordner zu erstellen.</li>
-</ol>
-<p><img src="images/08-neuer-ordner.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="2" type="1">
-<li>Benenne den Ordner “daten”.</li>
-</ol>
-<p><img src="images/09-name-ordner.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="3" type="1">
-<li>Klicke auf den Ordner “daten” im Datei Manager im Fenster unten rechts.</li>
-</ol>
-<p><img src="images/10-klick-daten.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="4" type="1">
-<li>Innerhalb des Ordners “daten”, klicke auf “Upload” um die CSV Datei hochzuladen.</li>
-</ol>
-<p><img src="images/11-klick-upload.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="5" type="1">
-<li>Im Dialogfenster unter “File to upload:” klicke auf “Choose file” und navigiere zu der CSV Datei aus Schritt 1. Klicke auf OK.</li>
-</ol>
-<p><img src="images/12-datei-auswaehlen.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="6" type="1">
-<li><p>Schaue im Fenster unten rechts nach, ob die Datei erfolgreich hochgeladen wurde.</p></li>
-<li><p>Mache einen Commit für alle Dateien indem du im Git Fenster oben rechts neben allen Dateien das Kontrollkästchen anwählst und dann auf “Commit” klickst. Verwende die Commit-Nachricht “Projekt aufsetzen”.</p></li>
-</ol>
-<p><img src="images/13-git-dateien-hinzufuegen.png" class="img-fluid" style="width:80.0%"></p>
+<section id="ogd-community" class="level1">
+<h1>OGD Community</h1>
+<ul>
+<li><p>Viva Engage Einstiegs Community “Data” im neuen Intranet &amp; Tool: https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9</p></li>
+<li><p>Teams Data Community of Practice: https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&amp;tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58</p></li>
+<li><p>R Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. (https://statistikzh.github.io/rstats_ktzh/)</p></li>
+</ul>
 </section>
-<section id="schritt-3-erstelle-eine-quarto-datei-für-die-datenimportierung" class="level2">
-<h2 class="anchored" data-anchor-id="schritt-3-erstelle-eine-quarto-datei-für-die-datenimportierung">Schritt 3: Erstelle eine Quarto Datei für die Datenimportierung</h2>
-<p>In deinem ogd-daten-USERNAME Projekt in RStudio auf Posit Cloud, gehe in der Menüleiste zu [File &gt; New File &gt; Quarto document] um ein Quarto Dokument mit HTML Output zu erstellen. Render das Dokument, welches dich nach einem Namen fragt - du kannst <code>ogd-daten-analyse.qmd</code> verwenden und die Datei im Stammordner speichern.</p>
-<p><img src="images/14-speicher-quarto.png" class="img-fluid" style="width:80.0%"></p>
-<ol type="1">
-<li><p>Füge einen Titel und deinen Namen als Autor in die YAML Metadaten am Anfang des Dokuments ein.</p></li>
-<li><p>Lösche den Text und Code-Blöcke unterhalb der YAML Metadaten.</p></li>
-<li><p>Füge eine Sektion formatiert als Heading 2 und Titel: “R Pakete laden” hinzu.</p></li>
-</ol>
-<p><img src="images/15-pakete-laden.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="4" type="1">
-<li><p>Unterhalb der Sektion füge einen Code-Block hinzu.</p></li>
-<li><p>Innerhalb des Code-Blocks, lade die R-Pakete: <code>readr</code>, <code>dplyr</code>, <code>ggplot2</code>.</p></li>
-<li><p>Unterhalb des Code-Blocks, füge eine weitere Sektion formatiert als Heading 2 und Titel: “Daten importieren” hinzu.</p></li>
-<li><p>Unterhalb der Sektion füge einen Code-Block hinzu.</p></li>
-</ol>
-<p><img src="images/16-daten-importieren.png" class="img-fluid" style="width:80.0%"></p>
-<ol start="8" type="1">
-<li>Mache einen Commit für alle Dateien und verwende die Commit-Nachricht “Quarto Dokument für Datenimport erstellen”.</li>
-</ol>
-<p><img src="images/17-git-dateien-hinzufuegen.png" class="img-fluid" style="width:80.0%"></p>
-</section>
-<section id="schritt-4-übertrage-deine-änderungen-auf-github" class="level2">
-<h2 class="anchored" data-anchor-id="schritt-4-übertrage-deine-änderungen-auf-github">Schritt 4: Übertrage deine Änderungen auf GitHub</h2>
-<ol type="1">
-<li><p>Navigiere zum Git-Bereich im Fenster oben rechts und stelle sicher, dass dieses leer ist. Sollte es leer sein, dann überspringe 2. bis 5. und mache bei Unterschritt 6. weiter.</p></li>
-<li><p>Aktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.</p></li>
-<li><p>Klicke auf die Schaltfläche “Commit”.</p></li>
-<li><p>Gib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. ODG Daten Modul 3 abgeschlossen).</p></li>
-<li><p>Klicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.</p></li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hinweis: Git configuration aus Zusatzaufgabe von Modul 1
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Es ist möglich, dass Git dich erneut darauf hinweist, dass es nicht weiss, wer du bist. Diese Einstellung haben wir in Modul 1 zwar gemacht, jedoch habe ich in der Vergangenheit beobachtet, dass es bei einigen Teilnehmer:innen erneut zu dieser Meldung kommt. In diesem Fall musst du erneut folgenden Schritt ausführen, um deinen Namen und deine E-Mail-Adresse zu konfigurieren.</p>
-</div>
-</div>
-<ol start="6" type="1">
-<li><p>Klicke auf die Schaltfläche “Push”.</p></li>
-<li><p>Gib deinen GitHub-Benutzernamen im Feld Username an.</p></li>
-<li><p>Gib <span class="highlight-yellow">deinen GitHub Personal Access Token (PAT)</span> im Feld <span class="highlight-yellow">“Password”</span> ein.</p></li>
-<li><p>Das Fenster kann geschlossen werden.</p></li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Verwende nicht dein GitHub-Passwort
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Du musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen.</p>
-</div>
-</div>
-</section>
-<section id="schritt-3-eröffne-ein-issue-auf-github" class="level2">
-<h2 class="anchored" data-anchor-id="schritt-3-eröffne-ein-issue-auf-github">Schritt 3: Eröffne ein Issue auf GitHub</h2>
-<ol type="1">
-<li><p>Öffne <a href="https://github.com/">github.com</a> in deinem Browser.</p></li>
-<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k009">github.com/rstatszh-k009</a></p></li>
-<li><p>Finde das Repository <span class="highlight-yellow">ogd-daten-USERNAME</span>, das mit deinem GitHub-Benutzernamen endet.</p></li>
-<li><p>Klicke auf die Schaltfläche “Issues”.</p></li>
-<li><p>Klicke auf die grüne Schaltfläche “New issue”.</p></li>
-<li><p>Schreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.</p></li>
-<li><p>Markiere im Feld “Leave a comment” den Kursleiter mit <span class="citation" data-cites="larnsce">@larnsce</span> und hinterlasse eine Nachricht oder offene Frage.</p></li>
-</ol>
+<section id="ogd-beispiele" class="level1">
+<h1>OGD Beispiele</h1>
+<p>Was kann man mit OGD machen damit machen?</p>
+<ul>
+<li><p>Leerwohnungsziffer nach Gemeinden: https://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html#-291192554</p></li>
+<li><p>Gewaltopfer Häusliche Gewalt: https://www.zh.ch/de/sicherheit-justiz/delikte-praevention/kriminalstatistik/gewaltopfer.html</p></li>
+<li><p>Decarb-Monitoring (Daten sind semi OGD, da sie in einem offenen GitHub-repo liegen): https://www.zh.ch/de/umwelt-tiere/klima/langfristige-klimastrategie/monitoring.html</p></li>
+<li><p>Kurzzeitmessung NIS: https://www.zh.ch/de/umwelt-tiere/luft-strahlung/mobilfunk.html#1645502451</p></li>
+<li><p>und die Seite https://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#1132125233 könnte auch noch als Beispiel genutzt werden.</p>
+<ul>
+<li>App: https://openzh.shinyapps.io/Lokalklima/</li>
+<li>Die dargestellten Messdaten stehen auch als OGD zur Verfügung: https://opendata.swiss/de/dataset/lufttemperatur-und-luftfeuchte-lora-sensor-messwerte</li>
+</ul></li>
+<li><p>statistikZH/decarb_monitoring: Repository für den Bezug der Daten fürs Dekarbonisierungsmonitoring des Kantons Zürich (github.com): https://github.com/statistikZH/decarb_monitoring</p></li>
+<li><p>awelZH/nis_meas_school: Repository for NIS measurements on school grounds within the Canton of Zurich (github.com): https://github.com/awelZH/nis_meas_school</p></li>
+</ul>
 
 
 </section>
