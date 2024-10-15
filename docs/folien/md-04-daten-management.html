@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Lars Schöbitz">
-  <title>rstatsZH - Data Science mit R – Daten Import &amp; Daten Management</title>
+  <title>rstatsZH - Data Science mit R – Daten Import &amp; Daten Management &amp; Kollaboratives Arbeiten mit GitHub II</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -397,7 +397,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Daten Import &amp; Daten Management</h1>
+  <h1 class="title">Daten Import &amp; Daten Management &amp; Kollaboratives Arbeiten mit GitHub II</h1>
   <p class="subtitle">rstatsZH - Data Science mit R</p>
 
 <div class="quarto-title-authors">
@@ -410,34 +410,17 @@ Lars Schöbitz
 
   <p class="date">Oct 15, 2024</p>
 </section>
-<section>
-<section id="resourcen" class="title-slide slide level1 center">
-<h1>Resourcen</h1>
-<ul>
-<li>https://github.com/openZH</li>
-<li>https://www.web.statistik.zh.ch/ogd/daten/ressourcen/KTZH_00001341_00002921.pdf</li>
-<li>OGD: https://docs.google.com/presentation/d/1FKm8-ybTiIfU6l3AImm42H0DuWWxbjhmM58TXJfNRjk/edit#slide=id.g164f80efa60_0_14</li>
-<li>Leitlinien: https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780</li>
-</ul>
-<p>Was kann man damit machen?</p>
-<ul>
-<li>Leerwohnungsziffer nach Gemeinden: https://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html#-291192554</li>
-<li>Gewaltopfer Häusliche Gewalt: https://www.zh.ch/de/sicherheit-justiz/delikte-praevention/kriminalstatistik/gewaltopfer.html</li>
-<li>Decarb-Monitoring (Daten sind semi OGD, da sie in einem offenen GitHub-repo liegen): https://www.zh.ch/de/umwelt-tiere/klima/langfristige-klimastrategie/monitoring.html</li>
-<li>Kurzzeitmessung NIS: https://www.zh.ch/de/umwelt-tiere/luft-strahlung/mobilfunk.html#1645502451</li>
-</ul>
-<p>und die Seite https://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#1132125233 könnte auch noch als Beispiel genutzt werden. Da hat Corinna schon vor langer Zeit eine hübsche App erstellt. Die dargestellten Messdaten stehen auch als OGD zur Verfügung</p>
-</section>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
 <div class="cell">
 <ol type="1">
-<li>Die Lernenden können Daten aus Dateien im CSV-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses und auf GitHub befinden.</li>
+<li>Die Lernenden können Daten aus Dateien im CSV und XLSX-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses, und auf GitHub, befinden.</li>
 <li>Die Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.</li>
-<li>Die Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten.</li>
+<li>Die Lernenden können die Anwendung der Git Befehle clone, commit, push beschreiben.</li>
+<li>Die Lernenden können die Begriffe local und remote Repository unterscheiden.</li>
 </ol>
 </div>
-</section></section>
+</section>
 <section>
 <section id="git-befehle" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Git Befehle</h1>
@@ -445,60 +428,75 @@ Lars Schöbitz
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-<p><img data-src="img/md-04/git-clone-push-00.drawio.png"> ##</p>
-<p><img data-src="img/md-04/git-clone-push-01.drawio.png"> ##</p>
-<p><img data-src="img/md-04/git-clone-push-02.drawio.png"></p>
-</section>
+
+<img data-src="img/md-04/git-clone-push-00.drawio.png" class="r-stretch"></section>
 <section id="section-1" class="slide level2">
 <h2></h2>
 
-<img data-src="img/md-04/git.drawio-00.png" class="r-stretch"></section>
+<img data-src="img/md-04/git-clone-push-01.drawio.png" class="r-stretch"></section>
 <section id="section-2" class="slide level2">
 <h2></h2>
 
-<img data-src="img/md-04/git.drawio-01.png" class="r-stretch"></section>
+<img data-src="img/md-04/git-clone-push-02.drawio.png" class="r-stretch"></section>
 <section id="section-3" class="slide level2">
 <h2></h2>
 
-<img data-src="img/md-04/git.drawio-02.png" class="r-stretch"></section>
+<img data-src="img/md-04/git.drawio-00.png" class="r-stretch"></section>
 <section id="section-4" class="slide level2">
 <h2></h2>
 
-<img data-src="img/md-04/git.drawio-03.png" class="r-stretch"></section>
+<img data-src="img/md-04/git.drawio-01.png" class="r-stretch"></section>
 <section id="section-5" class="slide level2">
 <h2></h2>
 
-<img data-src="img/md-04/git.drawio-04.png" class="r-stretch"></section>
+<img data-src="img/md-04/git.drawio-02.png" class="r-stretch"></section>
 <section id="section-6" class="slide level2">
 <h2></h2>
 
-<img data-src="img/md-04/git.drawio-05.png" class="r-stretch"></section>
+<img data-src="img/md-04/git.drawio-03.png" class="r-stretch"></section>
 <section id="section-7" class="slide level2">
 <h2></h2>
 
-<img data-src="img/md-04/git.drawio-06.png" class="r-stretch"></section>
+<img data-src="img/md-04/git.drawio-04.png" class="r-stretch"></section>
 <section id="section-8" class="slide level2">
 <h2></h2>
 
-<img data-src="img/md-04/git.drawio-07.png" class="r-stretch"></section>
+<img data-src="img/md-04/git.drawio-05.png" class="r-stretch"></section>
 <section id="section-9" class="slide level2">
 <h2></h2>
 
-<img data-src="img/md-04/git.drawio-08.png" class="r-stretch"></section>
+<img data-src="img/md-04/git.drawio-06.png" class="r-stretch"></section>
 <section id="section-10" class="slide level2">
 <h2></h2>
-<p><img data-src="img/md-04/git.drawio-09.png"> ##</p>
-<p><img data-src="img/md-04/git-clone-push-02.drawio.png"> ##</p>
-<p><img data-src="img/md-04/git-clone-push-03.drawio.png"> ##</p>
-<p><img data-src="img/md-04/git-clone-push-04.drawio.png"></p>
-</section></section>
+
+<img data-src="img/md-04/git.drawio-07.png" class="r-stretch"></section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+
+<img data-src="img/md-04/git.drawio-08.png" class="r-stretch"></section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+
+<img data-src="img/md-04/git.drawio-09.png" class="r-stretch"></section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+
+<img data-src="img/md-04/git-clone-push-02.drawio.png" class="r-stretch"></section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+
+<img data-src="img/md-04/git-clone-push-03.drawio.png" class="r-stretch"></section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+
+<img data-src="img/md-04/git-clone-push-04.drawio.png" class="r-stretch"></section></section>
 <section>
 <section id="faktoren-in-r" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Faktoren in R</h1>
 
 </section>
-<section id="arten-von-variablen" class="slide level2 smaller">
-<h2>Arten von Variablen</h2>
+<section id="variablen-typen" class="slide level2 smaller">
+<h2>Variablen Typen</h2>
 <div>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -523,9 +521,66 @@ Lars Schöbitz
 <ul>
 <li class="fragment">endliche Anzahl von Werten</li>
 <li class="fragment">eindeutige Gruppen (z.B. EU Länder)</li>
-<li class="fragment"><strong>ordinal</strong>, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)</li>
+<li class="fragment"><span class="highlight-yellow">ordinal</span>, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)</li>
 </ul>
 </div></div>
+</div>
+</section>
+<section id="ordinal-skalierte-daten-in-r" class="slide level2 smaller">
+<h2>ordinal skalierte Daten in R</h2>
+<div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment">ordinal skalierte Daten sind kategoriale Daten, die eine logische Reihenfolge aufweisen</li>
+<li class="fragment">in R werden Text-Daten standardmässig als <code>character</code> gespeichert</li>
+<li class="fragment">Beurteilungen: sehr gut, gut, mittel, schlecht, sehr schlecht</li>
+<li class="fragment">die Reihenfolge von Text Daten ist aplhabetisch</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>df <span class="sc">|&gt;</span> </span>
+<span id="cb1-2"><a></a>    <span class="fu">arrange</span>(beurteilung) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 2
+  name    beurteilung  
+  &lt;chr&gt;   &lt;chr&gt;        
+1 Bob     gut          
+2 Charlie mittel       
+3 Diana   schlecht     
+4 Alice   sehr gut     
+5 Eve     sehr schlecht</code></pre>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+<section id="ordinal-skalierte-daten-in-r-1" class="slide level2 smaller">
+<h2>ordinal skalierte Daten in R</h2>
+<ul>
+<li>in R können wir ordinal skalierte Daten mit dem <code>factor</code> Datentyp speichern</li>
+<li>die Level geben die Reihenfolge der Kategorien an</li>
+<li>die Umwandlung beeinflusst das Verhalten der Daten in Tabellen und Diagrammen</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="2|6|8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># Faktor Level werden in einem Vektor definiert</span></span>
+<span id="cb3-2"><a></a>beurteilung_level <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"sehr schlecht"</span>, <span class="st">"schlecht"</span>, <span class="st">"mittel"</span>, <span class="st">"gut"</span>, <span class="st">"sehr gut"</span>)</span>
+<span id="cb3-3"><a></a></span>
+<span id="cb3-4"><a></a>df <span class="sc">|&gt;</span> </span>
+<span id="cb3-5"><a></a>    <span class="co"># Die Spalte wird in einen Faktor umgewandelt</span></span>
+<span id="cb3-6"><a></a>    <span class="fu">mutate</span>(<span class="at">beurteilung =</span> <span class="fu">factor</span>(beurteilung, <span class="at">levels =</span> beurteilung_level)) <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a></a>    <span class="co"># Die Tabelle wird nach der Reihenfolge sortiert</span></span>
+<span id="cb3-8"><a></a>    <span class="fu">arrange</span>(beurteilung)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 2
+  name    beurteilung  
+  &lt;chr&gt;   &lt;fct&gt;        
+1 Eve     sehr schlecht
+2 Diana   schlecht     
+3 Charlie mittel       
+4 Bob     gut          
+5 Alice   sehr gut     </code></pre>
+</div>
 </div>
 </section>
 <section id="ich-bin-dran-faktoren-in-r" class="slide level2">
@@ -541,7 +596,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_e399f84a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_15118d67" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -557,14 +612,14 @@ Lars Schöbitz
 <ol type="1">
 <li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
 <li>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.</li>
-<li>Klicke auf <span class="highlight-yellow">Continue</span> neben <span class="highlight-yellow">md-04-uebungen</span>.</li>
+<li>Klicke auf <span class="highlight-yellow">Start</span> neben <span class="highlight-yellow">md-04-uebungen</span>.</li>
 <li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>02-faktoren-ihr.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
 <li>Folge den Anweisungen in der Datei.</li>
 </ol>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_dade01bd" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_78375f96" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -625,11 +680,11 @@ Lars Schöbitz
 <li>Import von <span class="highlight-yellow">unbearbeiteten Rohdaten</span></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>befragung <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"raw/KTZH_00001341_00002759_frage7a1.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>befragung <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"raw/KTZH_00001341_00002759_frage7a1.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>befragung</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>befragung</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -656,15 +711,15 @@ Lars Schöbitz
 <li>exportiere <span class="highlight-yellow">verarbeitete, analysereife Daten</span></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>antwort_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"viel zu hoch"</span>, <span class="st">"eher zu hoch"</span>, <span class="st">"gerade angemessen"</span>, </span>
-<span id="cb4-2"><a></a>                    <span class="st">"eher zu tief"</span>, <span class="st">"viel zu tief"</span>)</span>
-<span id="cb4-3"><a></a></span>
-<span id="cb4-4"><a></a>befragung_fct <span class="ot">&lt;-</span> befragung <span class="sc">|&gt;</span></span>
-<span id="cb4-5"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort =</span> <span class="fu">factor</span>(antwort, <span class="at">levels =</span> antwort_levels)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>antwort_levels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"viel zu hoch"</span>, <span class="st">"eher zu hoch"</span>, <span class="st">"gerade angemessen"</span>, </span>
+<span id="cb8-2"><a></a>                    <span class="st">"eher zu tief"</span>, <span class="st">"viel zu tief"</span>)</span>
+<span id="cb8-3"><a></a></span>
+<span id="cb8-4"><a></a>befragung_fct <span class="ot">&lt;-</span> befragung <span class="sc">|&gt;</span></span>
+<span id="cb8-5"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort =</span> <span class="fu">factor</span>(antwort, <span class="at">levels =</span> antwort_levels)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -683,7 +738,7 @@ Lars Schöbitz
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">write_csv</span>(befragung_fct, <span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">write_csv</span>(befragung_fct, <span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -693,10 +748,10 @@ Lars Schöbitz
 <li>Was ist aus unserem Faktor geworden?</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>befragung_fct <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>befragung_fct <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>befragung_fct</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -731,14 +786,14 @@ Lars Schöbitz
 <li>Faktoren und andere Datenstrukturen bleiben erhalten</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">write_rds</span>(befragung_fct, <span class="st">"folien/daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">write_rds</span>(befragung_fct, <span class="st">"folien/daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>befragung_rds <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>befragung_rds <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"daten/processed/ktzh-befragung-zufriedenheit.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>befragung_rds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>befragung_rds</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,213 × 5
    geschlecht alter     gemeinde_groesse bezirk_name antwort          
@@ -764,28 +819,49 @@ Lars Schöbitz
 <li>für eine Visualisierung oder Tabelle in einer veröffentlichten Arbeit</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>befragung_sum_alter <span class="ot">&lt;-</span> befragung_rds <span class="sc">|&gt;</span> </span>
-<span id="cb15-2"><a></a>    <span class="fu">group_by</span>(alter, antwort) <span class="sc">|&gt;</span> </span>
-<span id="cb15-3"><a></a>    <span class="fu">summarise</span>(<span class="at">antwort_anzahl =</span> <span class="fu">n</span>()) <span class="sc">|&gt;</span> </span>
-<span id="cb15-4"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort_prozent =</span> antwort_anzahl <span class="sc">/</span> <span class="fu">sum</span>(antwort_anzahl) <span class="sc">*</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>befragung_sum_alter <span class="ot">&lt;-</span> befragung_rds <span class="sc">|&gt;</span> </span>
+<span id="cb19-2"><a></a>    <span class="fu">group_by</span>(alter, antwort) <span class="sc">|&gt;</span> </span>
+<span id="cb19-3"><a></a>    <span class="fu">summarise</span>(<span class="at">antwort_anzahl =</span> <span class="fu">n</span>()) <span class="sc">|&gt;</span> </span>
+<span id="cb19-4"><a></a>    <span class="fu">mutate</span>(<span class="at">antwort_prozent =</span> antwort_anzahl <span class="sc">/</span> <span class="fu">sum</span>(antwort_anzahl) <span class="sc">*</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>befragung_sum_alter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 52 × 4
+# Groups:   alter [13]
+   alter     antwort           antwort_anzahl antwort_prozent
+   &lt;chr&gt;     &lt;fct&gt;                      &lt;int&gt;           &lt;dbl&gt;
+ 1 18 bis 24 viel zu hoch                  12           18.2 
+ 2 18 bis 24 eher zu hoch                  24           36.4 
+ 3 18 bis 24 gerade angemessen             29           43.9 
+ 4 18 bis 24 viel zu tief                   1            1.52
+ 5 25 bis 29 viel zu hoch                  15           25   
+ 6 25 bis 29 eher zu hoch                  20           33.3 
+ 7 25 bis 29 gerade angemessen             23           38.3 
+ 8 25 bis 29 eher zu tief                   2            3.33
+ 9 30 bis 34 viel zu hoch                   9           14.1 
+10 30 bis 34 eher zu hoch                  25           39.1 
+# ℹ 42 more rows</code></pre>
+</div>
 </div>
 </section>
-<section id="daten-visualisieren" class="slide level2">
+<section id="daten-visualisieren" class="slide level2 smaller">
 <h2>Daten visualisieren</h2>
 <ul>
 <li>in einer Veröffentlichung</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> befragung_sum_alter,</span>
-<span id="cb16-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> antwort_prozent, </span>
-<span id="cb16-3"><a></a>                     <span class="at">y =</span> alter, </span>
-<span id="cb16-4"><a></a>                     <span class="at">fill =</span> antwort)) <span class="sc">+</span></span>
-<span id="cb16-5"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb16-6"><a></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(antwort_prozent, <span class="dv">0</span>)),  </span>
-<span id="cb16-7"><a></a>              <span class="at">position =</span> <span class="fu">position_stack</span>(<span class="at">vjust =</span> <span class="fl">0.5</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> befragung_sum_alter,</span>
+<span id="cb22-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> antwort_prozent, </span>
+<span id="cb22-3"><a></a>                     <span class="at">y =</span> alter, </span>
+<span id="cb22-4"><a></a>                     <span class="at">fill =</span> antwort)) <span class="sc">+</span></span>
+<span id="cb22-5"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb22-6"><a></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(antwort_prozent, <span class="dv">0</span>)),  </span>
+<span id="cb22-7"><a></a>              <span class="at">position =</span> <span class="fu">position_stack</span>(<span class="at">vjust =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
+<span id="cb22-8"><a></a>    <span class="fu">scale_fill_colorblind</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-04-daten-management_files/figure-revealjs/unnamed-chunk-24-1.png" width="960" class="r-stretch"></section>
+<img data-src="md-04-daten-management_files/figure-revealjs/unnamed-chunk-28-1.png" width="576" class="r-stretch"></section>
 <section id="daten-exportieren" class="slide level2">
 <h2>Daten exportieren</h2>
 <ul>
@@ -793,6 +869,10 @@ Lars Schöbitz
 <li>als CSV-Datei</li>
 <li>erhöht die Wiederverwendbarkeit</li>
 </ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">write_csv</span>(befragung_sum_alter, </span>
+<span id="cb23-2"><a></a>          <span class="st">"daten/final/ktzh-befragung-zufriedenheit-sum.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="daten-management" class="slide level2 smaller">
 <h2>Daten Management</h2>
@@ -902,7 +982,7 @@ Lars Schöbitz
 
 <img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_81ef0289" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_4762d6d3" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -925,29 +1005,34 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_0c142421" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_fcd5f503" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="zeitpuffer-modul-4" class="slide level2 smaller">
+<h2>Zeitpuffer: Modul 4</h2>
+<div class="cell">
+<ol type="1">
+<li>Die Lernenden können Daten aus Dateien im CSV und XLSX-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses, und auf GitHub, befinden.</li>
+<li>Die Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.</li>
+<li>Die Lernenden können die Anwendung der Git Befehle clone, commit, push beschreiben.</li>
+<li>Die Lernenden können die Begriffe local und remote Repository unterscheiden.</li>
+</ol>
+</div>
+<div class="hand-purple-large" style="text-align: center;">
+<p>Welche Konzepte kann ich nochmals erklären?</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_de153df1" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
-</section></section>
-<section>
-<section id="open-government-data" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Open Government Data</h1>
-
-</section>
-<section id="datenkatalog-kanton-zurich" class="slide level2">
-<h2>Datenkatalog Kanton Zurich</h2>
-</section>
-<section id="opendata.swiss" class="slide level2">
-<h2>opendata.swiss</h2>
-</section>
-<section id="leitlinien" class="slide level2">
-<h2>Leitlinien</h2>
-</section>
-<section id="ogd-für-rstatszh" class="slide level2">
-<h2>OGD für rstatszh</h2>
 </section></section>
 <section>
 <section id="zusatzaufgaben-modul-4" class="title-slide slide level1 center" data-background-color="#4C326A">

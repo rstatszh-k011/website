@@ -26,6 +26,7 @@ library(countdown)
 library(tidyverse)
 library(epoxy)
 library(gapminder)
+library(ggthemes)
 ```
 
 ```{r}
@@ -34,22 +35,6 @@ befragung <- read_csv(
     here::here("folien/daten/raw/KTZH_00001341_00002759_frage7a1.csv"))
 
 ```
-
-# Resourcen
-
--   https://github.com/openZH
--   https://www.web.statistik.zh.ch/ogd/daten/ressourcen/KTZH_00001341_00002921.pdf
--   OGD: https://docs.google.com/presentation/d/1FKm8-ybTiIfU6l3AImm42H0DuWWxbjhmM58TXJfNRjk/edit#slide=id.g164f80efa60_0_14
--   Leitlinien: https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780
-
-Was kann man damit machen?
-
--   Leerwohnungsziffer nach Gemeinden: https://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html#-291192554
--   Gewaltopfer Häusliche Gewalt: https://www.zh.ch/de/sicherheit-justiz/delikte-praevention/kriminalstatistik/gewaltopfer.html
--   Decarb-Monitoring (Daten sind semi OGD, da sie in einem offenen GitHub-repo liegen): https://www.zh.ch/de/umwelt-tiere/klima/langfristige-klimastrategie/monitoring.html
--   Kurzzeitmessung NIS: https://www.zh.ch/de/umwelt-tiere/luft-strahlung/mobilfunk.html#1645502451
-
-und die Seite https://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#1132125233 könnte auch noch als Beispiel genutzt werden. Da hat Corinna schon vor langer Zeit eine hübsche App erstellt. Die dargestellten Messdaten stehen auch als OGD zur Verfügung
 
 ## Lernziele (für diese Woche)
 
@@ -71,9 +56,11 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 ## 
 
 ![](img/md-04/git-clone-push-00.drawio.png)
+
 ## 
 
 ![](img/md-04/git-clone-push-01.drawio.png)
+
 ## 
 
 ![](img/md-04/git-clone-push-02.drawio.png)
@@ -117,19 +104,22 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 ## 
 
 ![](img/md-04/git.drawio-09.png)
+
 ## 
 
 ![](img/md-04/git-clone-push-02.drawio.png)
+
 ## 
 
 ![](img/md-04/git-clone-push-03.drawio.png)
+
 ## 
 
 ![](img/md-04/git-clone-push-04.drawio.png)
 
 # Faktoren in R {background-color="#4C326A"}
 
-## Arten von Variablen {.smaller}
+## Variablen Typen {.smaller}
 
 :::::: incremental
 ::::: columns
@@ -158,10 +148,62 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 -   endliche Anzahl von Werten
 -   eindeutige Gruppen (z.B. EU Länder)
--   **ordinal**, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)
+-   [ordinal]{.highlight-yellow}, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)
 :::
 :::::
 ::::::
+
+## ordinal skalierte Daten in R {.smaller}
+
+:::::: incremental
+::::: columns
+::: {.column width="50%"}
+
+- ordinal skalierte Daten sind kategoriale Daten, die eine logische Reihenfolge aufweisen
+- in R werden Text-Daten standardmässig als `character` gespeichert
+- Beurteilungen: sehr gut, gut, mittel, schlecht, sehr schlecht
+- die Reihenfolge von Text Daten ist aplhabetisch
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+df <- tibble(
+    name = c("Alice", "Bob", "Charlie", "Diana", "Eve"),
+    beurteilung = c("sehr gut", "gut", "mittel", "schlecht", "sehr schlecht"))
+```
+
+```{r}
+#| echo: true
+df |> 
+    arrange(beurteilung) 
+```
+
+:::
+:::::
+::::::
+
+
+## ordinal skalierte Daten in R {.smaller}
+
+- in R können wir ordinal skalierte Daten mit dem `factor` Datentyp speichern
+- die Level geben die Reihenfolge der Kategorien an
+- die Umwandlung beeinflusst das Verhalten der Daten in Tabellen und Diagrammen
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2|6|8"
+# Faktor Level werden in einem Vektor definiert
+beurteilung_level <- c("sehr schlecht", "schlecht", "mittel", "gut", "sehr gut")
+
+df |> 
+    # Die Spalte wird in einen Faktor umgewandelt
+    mutate(beurteilung = factor(beurteilung, levels = beurteilung_level)) |>
+    # Die Tabelle wird nach der Reihenfolge sortiert
+    arrange(beurteilung)
+```
+
 
 ## Ich bin dran: Faktoren in R
 
@@ -190,7 +232,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
 2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
-3.  Klicke auf [Continue]{.highlight-yellow} neben [md-04-uebungen]{.highlight-yellow}.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-04-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-faktoren-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5.  Folge den Anweisungen in der Datei.
 :::
@@ -370,19 +412,27 @@ befragung_sum_alter <- befragung_rds |>
     mutate(antwort_prozent = antwort_anzahl / sum(antwort_anzahl) * 100)
 ```
 
-## Daten visualisieren
+```{r}
+#| echo: true
+befragung_sum_alter
+```
+
+## Daten visualisieren {.smaller}
 
 -   in einer Veröffentlichung
 
 ```{r}
 #| echo: true
+#| fig-width: 6
+#| fig-asp: 0.618
 ggplot(data = befragung_sum_alter,
        mapping = aes(x = antwort_prozent, 
                      y = alter, 
                      fill = antwort)) +
     geom_col() +
     geom_text(aes(label = round(antwort_prozent, 0)),  
-              position = position_stack(vjust = 0.5)) 
+              position = position_stack(vjust = 0.5)) +
+    scale_fill_colorblind() 
 ```
 
 ## Daten exportieren
@@ -393,7 +443,9 @@ ggplot(data = befragung_sum_alter,
 
 ```{r}
 #| eval: false
-write_csv(befragung_sum_alter, "daten/final/ktzh-befragung-zufriedenheit-sum.csv")
+#| echo: true 
+write_csv(befragung_sum_alter, 
+          "daten/final/ktzh-befragung-zufriedenheit-sum.csv")
 ```
 
 ## Daten Management {.smaller}
@@ -448,18 +500,21 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
 ```{r}
-countdown(15)
+countdown(25)
 ```
 
-# Open Government Data {background-color="#4C326A"}
+## Zeitpuffer: Modul 4 {.smaller}
 
-## Datenkatalog Kanton Zurich
+```{epoxy}
+{1:length(lernziele)}. {lernziele[1:length(lernziele)]}
+```
 
-## opendata.swiss
-
-## Leitlinien
-
-## OGD für rstatszh
+::: {.hand-purple-large style="text-align: center;"}
+Welche Konzepte kann ich nochmals erklären?
+:::
+```{r}
+countdown(15)
+```
 
 # Zusatzaufgaben Modul 4 {background-color="#4C326A"}
 

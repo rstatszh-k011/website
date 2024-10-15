@@ -550,28 +550,28 @@
   {
     "objectID": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
     "href": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Daten aus Dateien im CSV-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses und auf GitHub befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Daten aus Dateien im CSV und XLSX-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses, und auf GitHub, befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können die Anwendung der Git Befehle clone, commit, push beschreiben.\nDie Lernenden können die Begriffe local und remote Repository unterscheiden."
   },
   {
     "objectID": "folien/md-04-daten-management.html#modul-4-dokumentation",
     "href": "folien/md-04-daten-management.html#modul-4-dokumentation",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Modul 4 Dokumentation",
     "text": "Modul 4 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-04.html"
   },
   {
     "objectID": "folien/md-04-daten-management.html#zusatzaufgaben-abgabedatum",
     "href": "folien/md-04-daten-management.html#zusatzaufgaben-abgabedatum",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Zusatzaufgaben Abgabedatum",
     "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 21. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 24. Oktober"
   },
   {
     "objectID": "folien/md-04-daten-management.html#danke-1",
     "href": "folien/md-04-daten-management.html#danke-1",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
@@ -1702,56 +1702,56 @@
   {
     "objectID": "folien/md-04-daten-management.html#ich-bin-dran-faktoren-in-r",
     "href": "folien/md-04-daten-management.html#ich-bin-dran-faktoren-in-r",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Ich bin dran: Faktoren in R",
     "text": "Ich bin dran: Faktoren in R\n\n\nZurücklehnen und genießen!"
   },
   {
     "objectID": "folien/md-04-daten-management.html#pause-machen",
     "href": "folien/md-04-daten-management.html#pause-machen",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Pause machen",
     "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-04-daten-management.html#ihr-seid-dran-02-faktoren-ihr.qmd",
     "href": "folien/md-04-daten-management.html#ihr-seid-dran-02-faktoren-ihr.qmd",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Ihr seid dran: 02-faktoren-ihr.qmd",
-    "text": "Ihr seid dran: 02-faktoren-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-faktoren-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
+    "text": "Ihr seid dran: 02-faktoren-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-faktoren-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-04-daten-management.html#rechteckige-daten-in-r-einlesen",
     "href": "folien/md-04-daten-management.html#rechteckige-daten-in-r-einlesen",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Rechteckige Daten in R einlesen",
     "text": "Rechteckige Daten in R einlesen"
   },
   {
     "objectID": "folien/md-04-daten-management.html#csv-xlsx",
     "href": "folien/md-04-daten-management.html#csv-xlsx",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "CSV & XLSX",
     "text": "CSV & XLSX\n\n\nreadr\n\nread_csv() - durch Kommas getrennte Werte\nread_csv2() - durch Semicolon getrennte Werte (Tipp für das Konvertieren von xlsx als csv)\nread_tsv() - durch Tab getrennte Werte\nread_delim() - liest Dateien mit beliebigem Trennzeichen\n\n\nreadxl\n\nread_excel() - liest xls oder xlsx Dateien"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-aus-csv-dateien-lesen",
     "href": "folien/md-04-daten-management.html#daten-aus-csv-dateien-lesen",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten aus CSV-Dateien lesen",
     "text": "Daten aus CSV-Dateien lesen\n\nImport von unbearbeiteten Rohdaten\n\n\nbefragung &lt;- read_csv(\"raw/KTZH_00001341_00002759_frage7a1.csv\")\n\n\n\nbefragung\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-als-csv-datei-schreiben",
     "href": "folien/md-04-daten-management.html#daten-als-csv-datei-schreiben",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten als CSV-Datei schreiben",
     "text": "Daten als CSV-Datei schreiben\n\ntransformiere Daten\nexportiere verarbeitete, analysereife Daten\n\n\nantwort_levels &lt;- c(\"viel zu hoch\", \"eher zu hoch\", \"gerade angemessen\", \n                    \"eher zu tief\", \"viel zu tief\")\n\nbefragung_fct &lt;- befragung |&gt;\n    mutate(antwort = factor(antwort, levels = antwort_levels)) \n\n\n\nbefragung_fct\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows\n\n\n\nwrite_csv(befragung_fct, \"daten/processed/ktzh-befragung-zufriedenheit.csv\")"
   },
   {
     "objectID": "folien/md-04-daten-management.html#analysefertige-daten-einlesen",
     "href": "folien/md-04-daten-management.html#analysefertige-daten-einlesen",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Analysefertige Daten einlesen",
     "text": "Analysefertige Daten einlesen\n\nWas ist aus unserem Faktor geworden?\n\n\nbefragung_fct &lt;- read_csv(\"daten/processed/ktzh-befragung-zufriedenheit.csv\")\n\n\nbefragung_fct\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
   },
@@ -1772,7 +1772,7 @@
   {
     "objectID": "folien/md-04-daten-management.html#pause-machen-1",
     "href": "folien/md-04-daten-management.html#pause-machen-1",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Pause machen",
     "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
@@ -1814,65 +1814,65 @@
   {
     "objectID": "folien/md-04-daten-management.html#wo-ist-der-faktor",
     "href": "folien/md-04-daten-management.html#wo-ist-der-faktor",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Wo ist der Faktor?",
     "text": "Wo ist der Faktor?\n\nFaktoren können in CSV Dateien nicht gespeichert werden\nEine CSV Datei enthält lediglich Werte, getrennt durch ein Komma"
   },
   {
     "objectID": "folien/md-04-daten-management.html#wie-speichern-wir-faktoren",
     "href": "folien/md-04-daten-management.html#wie-speichern-wir-faktoren",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Wie speichern wir Faktoren?",
     "text": "Wie speichern wir Faktoren?\n\nIn R können Daten als .rds Datei gespeichert werden\n.rds Dateien speichern die Struktur der Daten\nFaktoren und andere Datenstrukturen bleiben erhalten\n\n\nwrite_rds(befragung_fct, \"folien/daten/processed/ktzh-befragung-zufriedenheit.rds\")\n\n\n\nbefragung_rds &lt;- read_rds(\"daten/processed/ktzh-befragung-zufriedenheit.rds\")\n\n\nbefragung_rds\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-visualisieren",
     "href": "folien/md-04-daten-management.html#daten-visualisieren",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten visualisieren",
-    "text": "Daten visualisieren\n\nin einer Veröffentlichung\n\n\nggplot(data = befragung_sum_alter,\n       mapping = aes(x = antwort_prozent, \n                     y = alter, \n                     fill = antwort)) +\n    geom_col() +\n    geom_text(aes(label = round(antwort_prozent, 0)),  \n              position = position_stack(vjust = 0.5))"
+    "text": "Daten visualisieren\n\nin einer Veröffentlichung\n\n\nggplot(data = befragung_sum_alter,\n       mapping = aes(x = antwort_prozent, \n                     y = alter, \n                     fill = antwort)) +\n    geom_col() +\n    geom_text(aes(label = round(antwort_prozent, 0)),  \n              position = position_stack(vjust = 0.5)) +\n    scale_fill_colorblind()"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-zusammenfassen",
     "href": "folien/md-04-daten-management.html#daten-zusammenfassen",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten zusammenfassen",
-    "text": "Daten zusammenfassen\n\nfür eine Visualisierung oder Tabelle in einer veröffentlichten Arbeit\n\n\nbefragung_sum_alter &lt;- befragung_rds |&gt; \n    group_by(alter, antwort) |&gt; \n    summarise(antwort_anzahl = n()) |&gt; \n    mutate(antwort_prozent = antwort_anzahl / sum(antwort_anzahl) * 100)"
+    "text": "Daten zusammenfassen\n\nfür eine Visualisierung oder Tabelle in einer veröffentlichten Arbeit\n\n\nbefragung_sum_alter &lt;- befragung_rds |&gt; \n    group_by(alter, antwort) |&gt; \n    summarise(antwort_anzahl = n()) |&gt; \n    mutate(antwort_prozent = antwort_anzahl / sum(antwort_anzahl) * 100)\n\n\nbefragung_sum_alter\n\n# A tibble: 52 × 4\n# Groups:   alter [13]\n   alter     antwort           antwort_anzahl antwort_prozent\n   &lt;chr&gt;     &lt;fct&gt;                      &lt;int&gt;           &lt;dbl&gt;\n 1 18 bis 24 viel zu hoch                  12           18.2 \n 2 18 bis 24 eher zu hoch                  24           36.4 \n 3 18 bis 24 gerade angemessen             29           43.9 \n 4 18 bis 24 viel zu tief                   1            1.52\n 5 25 bis 29 viel zu hoch                  15           25   \n 6 25 bis 29 eher zu hoch                  20           33.3 \n 7 25 bis 29 gerade angemessen             23           38.3 \n 8 25 bis 29 eher zu tief                   2            3.33\n 9 30 bis 34 viel zu hoch                   9           14.1 \n10 30 bis 34 eher zu hoch                  25           39.1 \n# ℹ 42 more rows"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-exportieren",
     "href": "folien/md-04-daten-management.html#daten-exportieren",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten exportieren",
-    "text": "Daten exportieren\n\nDaten, die einer Veröffentlichung zugrunde liegen\nals CSV-Datei\nerhöht die Wiederverwendbarkeit"
+    "text": "Daten exportieren\n\nDaten, die einer Veröffentlichung zugrunde liegen\nals CSV-Datei\nerhöht die Wiederverwendbarkeit\n\n\nwrite_csv(befragung_sum_alter, \n          \"daten/final/ktzh-befragung-zufriedenheit-sum.csv\")"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-management",
     "href": "folien/md-04-daten-management.html#daten-management",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten Management",
     "text": "Daten Management\n\nBeispiele für Begriffe, die bei der Datenverwaltung verwendet werden.\n\n\n\n\n\n\n\n\nBegriff\nOrdnername\nErklärung\nDateiformat\n\n\n\n\nunbearbeitete Rohdaten\ndata/raw\nDaten, die nicht bearbeitet wurden und in ihrer ursprünglichen Form und Datei bleiben\noften XLSX, also CSV, JSON, and others"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-management-1",
     "href": "folien/md-04-daten-management.html#daten-management-1",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten Management",
     "text": "Daten Management\n\nBeispiele für Begriffe, die bei der Datenverwaltung verwendet werden.\n\n\n\n\n\n\n\n\nBegriff\nOrdnername\nErklärung\nDateiformat\n\n\n\n\nunbearbeitete Rohdaten\ndata/raw\nDaten, die nicht bearbeitet wurden und in ihrer ursprünglichen Form und Datei bleiben\noften XLSX, also CSV, JSON, and others\n\n\nverarbeitete, analysefähige Daten\ndata/processed\nDaten, die zur Vorbereitung einer Analyse verarbeitet werden und in ihrer neuen Form als neue Datei gespeichert werden\nCSV, RDS, JSON"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-management-2",
     "href": "folien/md-04-daten-management.html#daten-management-2",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten Management",
     "text": "Daten Management\n\nBeispiele für Begriffe, die bei der Datenverwaltung verwendet werden.\n\n\n\n\n\n\n\n\nBegriff\nOrdnername\nErklärung\nDateiformat\n\n\n\n\nunbearbeitete Rohdaten\ndata/raw\nDaten, die nicht bearbeitet wurden und in ihrer ursprünglichen Form und Datei bleiben\noften XLSX, also CSV, JSON, and others\n\n\nverarbeitete, analysefähige Daten\ndata/processed\nDaten, die zur Vorbereitung einer Analyse verarbeitet werden und in ihrer neuen Form als neue Datei gespeichert werden\nCSV, RDS, JSON\n\n\nDaten, die einer Veröffentlichung zugrunde liegen\ndata/final\nDaten, die das Ergebnis einer Analyse sind (z. B. deskriptive Statistik oder Datenvisualisierung) und in einem Bericht angezeigt werden, dann aber auch in ihrer neuen Form als neue Datei exportiert werden\nCSV"
   },
   {
     "objectID": "folien/md-04-daten-management.html#ihr-seid-dran-03-daten-import-ihr.qmd",
     "href": "folien/md-04-daten-management.html#ihr-seid-dran-03-daten-import-ihr.qmd",
-    "title": "Daten Import & Daten Management",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Ihr seid dran: 03-daten-import-ihr.qmd",
-    "text": "Ihr seid dran: 03-daten-import-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-daten-import-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: 03-daten-import-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-daten-import-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-04-daten-management.html#section-1",
@@ -1887,5 +1887,47 @@
     "title": "Daten Import & Daten Management",
     "section": "",
     "text": "##\n ##\n ##"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#section-12",
+    "href": "folien/md-04-daten-management.html#section-12",
+    "title": "Daten Import & Daten Management",
+    "section": "",
+    "text": "##\n ##"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#variablen-typen",
+    "href": "folien/md-04-daten-management.html#variablen-typen",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
+    "section": "Variablen Typen",
+    "text": "Variablen Typen\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#ordinal-skalierte-daten-in-r",
+    "href": "folien/md-04-daten-management.html#ordinal-skalierte-daten-in-r",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
+    "section": "ordinal skalierte Daten in R",
+    "text": "ordinal skalierte Daten in R\n\n\n\n\nordinal skalierte Daten sind kategoriale Daten, die eine logische Reihenfolge aufweisen\nin R werden Text-Daten standardmässig als character gespeichert\nBeurteilungen: sehr gut, gut, mittel, schlecht, sehr schlecht\ndie Reihenfolge von Text Daten ist aplhabetisch\n\n\n\ndf |&gt; \n    arrange(beurteilung) \n\n# A tibble: 5 × 2\n  name    beurteilung  \n  &lt;chr&gt;   &lt;chr&gt;        \n1 Bob     gut          \n2 Charlie mittel       \n3 Diana   schlecht     \n4 Alice   sehr gut     \n5 Eve     sehr schlecht"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#ord",
+    "href": "folien/md-04-daten-management.html#ord",
+    "title": "Daten Import & Daten Management",
+    "section": "ord",
+    "text": "ord\n\n\nin R können wir ordinal skalierte Daten mit dem factor Datentyp speichern\ndie Umwandlung beeinflusst das Verhalten der Daten in Tabellen und Diagrammen\ndie Level geben die Reihenfolge der Kategorien an\n\n\nbeurteilung_levels &lt;- c(\"sehr schlecht\", \n                        \"schlecht\", \n                        \"mittel\", \n                        \"gut\", \n                        \"sehr gut\")\n\ndf |&gt; \n    mutate(beurteilung = factor(beurteilung, \n                                levels = beurteilung_levels)) |&gt; \n    arrange(beurteilung)\n\n# A tibble: 5 × 2\n  name    beurteilung  \n  &lt;chr&gt;   &lt;fct&gt;        \n1 Eve     sehr schlecht\n2 Diana   schlecht     \n3 Charlie mittel       \n4 Bob     gut          \n5 Alice   sehr gut"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#ordinal-skalierte-daten-in-r-1",
+    "href": "folien/md-04-daten-management.html#ordinal-skalierte-daten-in-r-1",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
+    "section": "ordinal skalierte Daten in R",
+    "text": "ordinal skalierte Daten in R\n\nin R können wir ordinal skalierte Daten mit dem factor Datentyp speichern\ndie Level geben die Reihenfolge der Kategorien an\ndie Umwandlung beeinflusst das Verhalten der Daten in Tabellen und Diagrammen\n\n\n# Faktor Level werden in einem Vektor definiert\nbeurteilung_level &lt;- c(\"sehr schlecht\", \"schlecht\", \"mittel\", \"gut\", \"sehr gut\")\n\ndf |&gt; \n    # Die Spalte wird in einen Faktor umgewandelt\n    mutate(beurteilung = factor(beurteilung, levels = beurteilung_level)) |&gt;\n    # Die Tabelle wird nach der Reihenfolge sortiert\n    arrange(beurteilung)\n\n# A tibble: 5 × 2\n  name    beurteilung  \n  &lt;chr&gt;   &lt;fct&gt;        \n1 Eve     sehr schlecht\n2 Diana   schlecht     \n3 Charlie mittel       \n4 Bob     gut          \n5 Alice   sehr gut"
+  },
+  {
+    "objectID": "folien/md-04-daten-management.html#zeitpuffer-modul-4",
+    "href": "folien/md-04-daten-management.html#zeitpuffer-modul-4",
+    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
+    "section": "Zeitpuffer: Modul 4",
+    "text": "Zeitpuffer: Modul 4\n\n\nDie Lernenden können Daten aus Dateien im CSV und XLSX-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses, und auf GitHub, befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können die Anwendung der Git Befehle clone, commit, push beschreiben.\nDie Lernenden können die Begriffe local und remote Repository unterscheiden.\n\n\n\nWelche Konzepte kann ich nochmals erklären?\n\n\n\n\n−+\n15:00"
   }
 ]
