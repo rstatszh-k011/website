@@ -20,6 +20,12 @@ editor_options:
   chunk_output_type: console
 ---
 
+## Ressourcen
+
+- https://rstatszh.github.io/website/ha-04-mehr-dplyr.html
+- https://rbtl-fs24.github.io/website/modules/md-05.html
+
+
 ```{r}
 #| include: false
 library(countdown)

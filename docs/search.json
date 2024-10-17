@@ -1610,7 +1610,7 @@
     "href": "module/md-05.html",
     "title": "Modul 5",
     "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
+    "text": "Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten.",
     "crumbs": [
       "Modul 05"
     ]
@@ -1620,7 +1620,7 @@
     "href": "module/md-05.html#lernziele",
     "title": "Modul 5",
     "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernended können die vier Fenster der RStudio IDE identifizieren.",
+    "text": "Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten.",
     "crumbs": [
       "Modul 05"
     ]
