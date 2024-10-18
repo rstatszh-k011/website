@@ -398,7 +398,7 @@
     "href": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
     "title": "Bedingte Anweisungen & Datumswerte",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten."
   },
   {
     "objectID": "folien/md-05-datumswerte.html#modul-5-dokumentation",
@@ -1915,5 +1915,12 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#ressourcen",
+    "href": "folien/md-05-datumswerte.html#ressourcen",
+    "title": "Bedingte Anweisungen & Datumswerte",
+    "section": "Ressourcen",
+    "text": "Ressourcen\n\nhttps://rstatszh.github.io/website/ha-04-mehr-dplyr.html\nhttps://rbtl-fs24.github.io/website/modules/md-05.html"
   }
 ]
