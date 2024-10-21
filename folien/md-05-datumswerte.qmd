@@ -55,6 +55,82 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 <img src="https://imgs.xkcd.com/comics/iso_8601.png" alt="XKCD comic about ISO 8601 date format" title="ISO 8601 was published on 1988-06-05.">
 
+## My turn: Conditional statements
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Sit back and enjoy!
+:::
+
+```{r}
+countdown(20)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-05/pixel-art-beach.png){width="50%" fig-alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Your turn: md-05-exercises - conditions
+
+::: task
+1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3.  In the File Manager in the bottom right window, locate the [`md-05a-conditions-your-turn.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4.  Follow instructions in the file
+:::
+
+```{r}
+countdown(20)
+```
+
+
+
+# Dates and times {background-color="#4C326A"}
+
+## Dates and times in R
+
+-   Dates and times are stored as numbers in R
+-   Dates are stored as the number of days since 1970-01-01
+-   Times are stored as the number of seconds since 1970-01-01 00:00:00
+-   Dates and times are stored as numeric values, but can be formatted to look like dates and times
+
+## My turn: Dates
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Sit back and enjoy!
+:::
+
+```{r}
+countdown(15)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-05/pixel-art-beach.png){width="50%" fig-alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
 
 
 # Zusatzaufgaben Modul 5 {background-color="#4C326A"}

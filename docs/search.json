@@ -328,7 +328,7 @@
     "href": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html",
     "title": "Ressourcen für OGD im Kanton Zürich",
     "section": "",
-    "text": "OGD Ressourcen\n\nOGD Folien: https://docs.google.com/presentation/d/1FKm8-ybTiIfU6l3AImm42H0DuWWxbjhmM58TXJfNRjk/edit#slide=id.g164f80efa60_0_14\nOGD Leitlinien: https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780\nOGD Handbook Publikationsleitlinien: https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md\n\n\n\nGitHub\n\nGitHub Organisation openZH: https://github.com/openZH\nGitHub Organisation statistikZH: https://github.com/statistikZH/\n\n\n\nOGD Community\n\nViva Engage Einstiegs Community “Data” im neuen Intranet & Tool: https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9\nTeams Data Community of Practice: https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58\nR Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. (https://statistikzh.github.io/rstats_ktzh/)\nOpen Data Beer: opendatabeer.ch\nadminR: adminR meetup: https://www.meetup.com/adminr/\n\n\n\nOGD Beispiele\nWas kann man mit OGD machen damit machen?\n\nLeerwohnungsziffer nach Gemeinden: https://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html#-291192554\nGewaltopfer Häusliche Gewalt: https://www.zh.ch/de/sicherheit-justiz/delikte-praevention/kriminalstatistik/gewaltopfer.html\nDecarb-Monitoring (Daten sind semi OGD, da sie in einem offenen GitHub-repo liegen): https://www.zh.ch/de/umwelt-tiere/klima/langfristige-klimastrategie/monitoring.html\nKurzzeitmessung NIS: https://www.zh.ch/de/umwelt-tiere/luft-strahlung/mobilfunk.html#1645502451\nund die Seite https://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#1132125233 könnte auch noch als Beispiel genutzt werden.\n\nApp: https://openzh.shinyapps.io/Lokalklima/\nDie dargestellten Messdaten stehen auch als OGD zur Verfügung: https://opendata.swiss/de/dataset/lufttemperatur-und-luftfeuchte-lora-sensor-messwerte\n\nstatistikZH/decarb_monitoring: Repository für den Bezug der Daten fürs Dekarbonisierungsmonitoring des Kantons Zürich (github.com): https://github.com/statistikZH/decarb_monitoring\nawelZH/nis_meas_school: Repository for NIS measurements on school grounds within the Canton of Zurich (github.com): https://github.com/awelZH/nis_meas_school"
+    "text": "Es gibt inzwischen eine ganze Reihe an Ressourcen für das Arbeiten mit öffentlichen Behördendaten (open government data - OGD) im Kanton Zürich und der Schweiz."
   },
   {
     "objectID": "zusatzaufgaben/md-03/za-03-01-daten-transformation.html",
@@ -398,7 +398,7 @@
     "href": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
     "title": "Bedingte Anweisungen & Datumswerte",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten."
+    "text": "Lernziele (für diese Woche)\n\nlernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-k009-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 34 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten."
   },
   {
     "objectID": "folien/md-05-datumswerte.html#modul-5-dokumentation",
@@ -419,7 +419,7 @@
     "href": "folien/md-05-datumswerte.html#danke-1",
     "title": "Bedingte Anweisungen & Datumswerte",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "folien/md-09-veroeffentlichen.html#lernziele-für-diese-woche",
@@ -1920,7 +1920,161 @@
     "objectID": "folien/md-05-datumswerte.html#ressourcen",
     "href": "folien/md-05-datumswerte.html#ressourcen",
     "title": "Bedingte Anweisungen & Datumswerte",
-    "section": "Ressourcen",
-    "text": "Ressourcen\n\nhttps://rstatszh.github.io/website/ha-04-mehr-dplyr.html\nhttps://rbtl-fs24.github.io/website/modules/md-05.html"
+    "section": "",
+    "text": "https://rstatszh.github.io/website/ha-04-mehr-dplyr.html\nhttps://rbtl-fs24.github.io/website/modules/md-05.html"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-beispiele-kanton-zürich",
+    "href": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-beispiele-kanton-zürich",
+    "title": "Ressourcen für OGD im Kanton Zürich",
+    "section": "OGD Beispiele Kanton Zürich",
+    "text": "OGD Beispiele Kanton Zürich\nWas ist eigentlich machbar sobald Daten als OGD publiziert sind? Zum Einen sind diese Daten von Anderen nutzbar und können in eigenen Projekten verwendet werden. Zum Anderen können die Daten auch direkt in Visualisierungen oder Apps im ZH Web eingebunden werden.\nDas Team Data im Statistischen Amt des Kantons Zürich hat bereits einige Beispiele für die Nutzung von OGD Daten umgesetzt. Die Visualisierungen werden nicht mir R gemacht, sondern mit JavaScript. Das müsst ihr nicht lernen, sondern könnt diese gemeinsam mit dem Team Data erarbeiten. Die Beispiele lassen sich jedoch auch mit R reproduzieren.\nHier sind einige Beispiele:\n\nLeerwohnungsziffer nach Gemeinden\nhttps://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html#-291192554\n\n\nGewaltopfer Häusliche Gewalt\nhttps://www.zh.ch/de/sicherheit-justiz/delikte-praevention/kriminalstatistik/gewaltopfer.html\n\n\nMonitoring zur Klimastrategie\nSpannend an dieser Seite ist, dass die Daten nicht im Datenkatalog als OGD abgelegt sind, sondern der Zugriff direkt über GitHub stattfindet. Eine Möglichkeit, welche ihr auch innerhalb des Kurses kennengelernt habt.\nhttps://www.zh.ch/de/umwelt-tiere/klima/langfristige-klimastrategie/monitoring.html\nIm GitHub Repository statistikZH/decarb_monitoring werden die Daten für das Monitoring bezogen und regelmässig aktualisiert: https://github.com/statistikZH/decarb_monitoring\n\n\nKurzzeitmessung nichtionisierender Strahlung\nhttps://www.zh.ch/de/umwelt-tiere/luft-strahlung/mobilfunk.html#1645502451\nAuch hier werden die Daten über GitHub bereitgestellt: https://github.com/awelZH/nis_meas_school\n\n\nKlimakarten und -daten\nhttps://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#1132125233\nFür diese Daten wurde eine R Shiny App durch das Team Data erstellt. Die App könnt ihr hier finden: https://openzh.shinyapps.io/Lokalklima/\nDie dargestellten Daten stehen als OGD zur Verfügung: https://opendata.swiss/de/dataset/lufttemperatur-und-luftfeuchte-lora-sensor-messwerte\n\n\nGitHub\nEs gibt auch einige GitHub Organisationen, die sich mit OGD und Open Source in der Verwaltung beschäftigen. Die folgenden werden durch das Statistische Amt des Kantons Zürich betrieben:\n\nGitHub Organisation openZH: https://github.com/openZH\nGitHub Organisation statistikZH: https://github.com/statistikZH/"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-community",
+    "href": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-community",
+    "title": "Ressourcen für OGD im Kanton Zürich",
+    "section": "OGD Community",
+    "text": "OGD Community\nInnerhalb, und auch ausserhalb der Verwaltung, gibt es verschiedene Communities, die sich mit OGD, R und Open Source beschäftigen. Hier sind einige Beispiele:\nViva Engage Einstiegs Community “Data” im neuen Intranet & Tool: https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9\nKanton Zurich MS Teams Data Community of Practice: https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58\nR Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. https://statistikzh.github.io/rstats_ktzh/\nOpen Data Beer: opendatabeer.ch\nadminR meetup: https://www.meetup.com/adminr/"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-kanton-zürich",
+    "href": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-kanton-zürich",
+    "title": "Ressourcen für OGD im Kanton Zürich",
+    "section": "OGD Kanton Zürich",
+    "text": "OGD Kanton Zürich\n\nDaten\nDer OGD Datenkatalog des Kantons Zürich ist hier zu finden: https://zh.ch/daten. Für alle Datensätze gibt es Starter Code für R und Python um die Daten direkt in R oder Python zu laden. Es braucht keinen Download der Daten, da direkt auf die Ressource zugegriffen wird. Bei Daten die periodisch aktualisiert werden (vor Allem monatlich bis täglich) kann dies sehr hilfreich sein.\nhttps://github.com/openZH/starter-code-openZH\n\n\nPodcast Statistisch gesehen\nDaten und Zahlen, die unseren Alltag im Kanton Zürich prägen. Wozu nutzen wir die Statistiken und welche Geschichten erzählen sie? Der Kanton, wie Du ihn noch nie gehört hast.\nEin grossartiger Podcast! Eine Folge spezifisch zu OGD gibt es hier: https://statistisch-gesehen.captivate.fm/episode/muellabfuhrkalender"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#über-die-grenzen-hinweg",
+    "href": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#über-die-grenzen-hinweg",
+    "title": "Ressourcen für OGD im Kanton Zürich",
+    "section": "Über die Grenzen hinweg",
+    "text": "Über die Grenzen hinweg\nEine Sammlung an Links auf GitHub über den Kanton Zürich und die Schweiz hinaus: https://github.com/rnckp/awesome-ogd-switzerland"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html",
+    "href": "folien/md-05-datumswerte.html",
+    "title": "Bedingte Anweisungen & Datumswerte",
+    "section": "",
+    "text": "https://rstatszh.github.io/website/ha-04-mehr-dplyr.html\nhttps://rbtl-fs24.github.io/website/modules/md-05.html"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#my-turn-conditional-statements",
+    "href": "folien/md-05-datumswerte.html#my-turn-conditional-statements",
+    "title": "Bedingte Anweisungen & Datumswerte",
+    "section": "My turn: Conditional statements",
+    "text": "My turn: Conditional statements\n\n\nSit back and enjoy!\n\n\ncountdown(20)\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#take-a-break",
+    "href": "folien/md-05-datumswerte.html#take-a-break",
+    "title": "Bedingte Anweisungen & Datumswerte",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#your-turn-md-05-exercises---conditions",
+    "href": "folien/md-05-datumswerte.html#your-turn-md-05-exercises---conditions",
+    "title": "Bedingte Anweisungen & Datumswerte",
+    "section": "Your turn: md-05-exercises - conditions",
+    "text": "Your turn: md-05-exercises - conditions\n\n\nOpen posit.cloud in your browser (use your bookmark).\nOpen the ds4owd workspace for the course.\nIn the File Manager in the bottom right window, locate the md-05a-conditions-your-turn.qmd file and click on it to open it in the top left window.\nFollow instructions in the file\n\n\n\ncountdown(20)\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#dates-and-times-in-r",
+    "href": "folien/md-05-datumswerte.html#dates-and-times-in-r",
+    "title": "Bedingte Anweisungen & Datumswerte",
+    "section": "Dates and times in R",
+    "text": "Dates and times in R\n\nDates and times are stored as numbers in R\nDates are stored as the number of days since 1970-01-01\nTimes are stored as the number of seconds since 1970-01-01 00:00:00\nDates and times are stored as numeric values, but can be formatted to look like dates and times"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#my-turn-dates",
+    "href": "folien/md-05-datumswerte.html#my-turn-dates",
+    "title": "Bedingte Anweisungen & Datumswerte",
+    "section": "My turn: Dates",
+    "text": "My turn: Dates\n\n\nSit back and enjoy!\n\n\ncountdown(15)\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#take-a-break-1",
+    "href": "folien/md-05-datumswerte.html#take-a-break-1",
+    "title": "Bedingte Anweisungen & Datumswerte",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Let your emails rest in peace.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#aufgabe",
+    "href": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#aufgabe",
+    "title": "Ressourcen für OGD im Kanton Zürich",
+    "section": "Aufgabe",
+    "text": "Aufgabe\nIn dieser Zusatzaufgabe geht es darum, dass ihr euch durch die von mir geteilen Links klickt. Schaut euch die Ressourcen an, holt euch Inspiration und schreibt mir in einem kurzen Text, was euch besonders interessiert hat. Ihr könnt mir auch Fragen teilen.\nBitte teilt euer Feedback hier: https://github.com/rstatszh-dev/ogd-ressourcen/issues/1\n\nOGD Leitlienen\nDie folgenden Resourcen unterstützen ich in der Vorbereitung und Publikation von OGD:\n\nOGD Leitlinien: https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780\nOGD Einleitung und Dokumentation (SharePoint Kanton Zürich)\nOGD Handbook Publikationsleitlinien (GitHub): https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md\nOGD Folien: https://docs.google.com/presentation/d/1FKm8-ybTiIfU6l3AImm42H0DuWWxbjhmM58TXJfNRjk/edit#slide=id.g164f80efa60_0_14"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html",
+    "title": "Abschlussprojekt",
+    "section": "",
+    "text": "Am Ende des Kurses steht ein Abschlussprojekt in welchem ihr die Möglichkeit bekommt mit einem Datensatz eurer Wahl zu arbeiten und die im Kurs erlernten Methoden und Techniken anzuwenden und zu vertiefen. Die Auswahl des Datenprojekts ist frei, es sollte jedoch ein Datensatz sein, welcher öffentlich geteilt werden kann. Dies bedeutet nicht zwingend, dass der Datensatz als OGD Ressource im Datenkatalog verfügbar sein muss, aber es sollte die Möglichkeit bestehen, dass dieser über GitHub geteilt werden kann.\nDazu gibt es bei der Auswahl des Datensatzes folgendes zu beachten:"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#nicht-schützenswerte-daten",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#nicht-schützenswerte-daten",
+    "title": "Abschlussprojekt",
+    "section": "Nicht schützenswerte Daten",
+    "text": "Nicht schützenswerte Daten\nAuf Grundlage des Gesetzes über die Information und den Datenschutz (IDG) dürfen Verwaltungseinheiten und Organe des Kantons Zürich nicht schützenswerte Daten, die unter ihrer Hoheit stehen, als offene Behördendaten publizieren.\n‘Nicht schützenswert’ bedeutet, dass die bereitgestellten Daten\nVorteile:\n\nnicht die Privatsphäre verletzen\nnicht sicherheitskritisch sind und\nkeinen Drittrechten (wie zum Beispiel Copyrights) unterliegen.\n\nInfo aus: https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#daten-auswählen",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#daten-auswählen",
+    "title": "Abschlussprojekt",
+    "section": "Daten auswählen",
+    "text": "Daten auswählen\nFolgende Fragen stellen sich:\n\nHabe ich Daten welche die oben genannten Kriterien erfüllen?\nHabe ich ein bestimmtes Ziel für das Arbeiten mit diesen Daten?\n\nFalls keine “nicht schützenswerten” Daten zur Verfügung stehen, kann ein offener Datensatz genutzt werden. Dazu gibt es den Datenkatalog des Kantons Zürich und andere offene Datenquellen, welche in Zusatzaufgabe 1: Ressourcen für OGD im Kanton Zürich beschrieben sind."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#daten-struktur",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#daten-struktur",
+    "title": "Abschlussprojekt",
+    "section": "Daten Struktur",
+    "text": "Daten Struktur\nDie Daten müssen nicht bereits in den vorgegeben Kriterien der Leitlienen vorhanden sein. Das Abschlussprojekt selbst könnte auch die Aufbereitung beinhalten. Ansonsten gelten die Leitlinien des Kantons Zürich für einfach nutzbare Behördendaten."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud",
+    "title": "Abschlussprojekt",
+    "section": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud",
+    "text": "Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud\n\nÖffne die GitHub Organisation für den Kurs https://github.com/rstatszh-k009\nRechts neben dem Feld “Find a repository” klicke auf den grünen “New” Button.\nIm Feld “Repository name” schreibe projekt-USERNAME. Ersetze USERNAME durch deinen GitHub Benutzernamen. Vermeide Leerzeichen.\nSkrolle auf der gleichen Seite nach unten und klicke auf “Create repository”.\nIm Feld “Quick setup” klicke auf das Clipboard neben der HTTPs URL.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-2-erstelle-neue-ordner",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-2-erstelle-neue-ordner",
+    "title": "Abschlussprojekt",
+    "section": "Schritt 2: Erstelle neue Ordner",
+    "text": "Schritt 2: Erstelle neue Ordner\n\nIm Datei Manager im Fenster unten rechts, klicke auf “Folder” um einen neuen Ordner zu erstellen.\nBenenne den Ordner “daten”.\nKlicke auf den Ordner “daten” im Datei Manager im Fenster unten rechts.\nErstelle einen weiteren Ordner “raw” im Ordner “daten”.\nKlicke auf den Ordner “raw” im Datei Manager im Fenster unten rechts."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-3-daten-hochladen",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-3-daten-hochladen",
+    "title": "Abschlussprojekt",
+    "section": "Schritt 3: Daten hochladen",
+    "text": "Schritt 3: Daten hochladen\n\nVerwende den Datei Manager im unteren rechten Fenster, um die identifizierten Daten aus Aufgabe 1 in den raw Ordner hochzuladen. Für detaillierte Schritte, siehe Zusatzaufgabe 2 aus Modul 3."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-4-quarto-datei-erstellen",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-4-quarto-datei-erstellen",
+    "title": "Abschlussprojekt",
+    "section": "Schritt 4: Quarto Datei erstellen",
+    "text": "Schritt 4: Quarto Datei erstellen\n\nNavigiere zurück zum Hauptverzeichnis deines Projekts, indem du auf den blauen R-Würfel klickst.\nErstelle einen neuen Ordner “docs” im Hauptverzeichnis deines Projekts.\nKlicke auf den Ordner docs.\nErstelle ein neues Quarto-Dokument und speichere es als index.qmd im docs-Ordner.\nLösche den Inhalt des Quarto-Dokuments bis auf die YAML Metadaten zu Beginn des Dokuments.\nErstelle die folgenden Abschnitte in deinem Quarto-Dokument:\n\n\nEinleitung (formatiert als Heading 1)\nDaten (formatiert als Heading 2)\nAnalyseziele (formatiert als Heading 2)\nDaten Aufbereitung (formatiert als Heading 1)\nDaten Visualisierung (formatiert als Heading 1)\n\n\nIn der Einleitung, beschreibe kurz das Projekt, die Daten, und deine Analyseziele."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-5-r-pakete-laden-und-daten-importieren",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-5-r-pakete-laden-und-daten-importieren",
+    "title": "Abschlussprojekt",
+    "section": "Schritt 5: R-Pakete laden und Daten importieren",
+    "text": "Schritt 5: R-Pakete laden und Daten importieren\n\nVor der Einleitung, füge einen Code-Block hinzu und schreibe library(tidyverse) um die R-Pakete zu laden, welche du in diesem Kurs gelernt hast.\n\n\n```{r}\nlibrary(tidyverse)\n```\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\nImportiere deine Daten, indem du den folgenden Code in einem weiteren Code-Block schreibst (in diesem Beispiel verwenden wir eine CSV-Datei):\n\n\nread_csv(here::here(\"data/raw/your-file-name.csv\"))\n\n\n\n\n\n\n\nDas R-Paket here\n\n\n\nWir empfehlen das R-Paket here zu verwenden, um auf Dateien in deinem Projekt zu verweisen. Das here R-Paket hilft dabei, den richtigen Dateipfad zu deinen Daten zu finden. Wir werden Dateipfade und das Paket selbst in einem anderen Modul besprechen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#daten-struktur-leitlinien",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#daten-struktur-leitlinien",
+    "title": "Abschlussprojekt",
+    "section": "Daten Struktur & Leitlinien",
+    "text": "Daten Struktur & Leitlinien\nDie Daten müssen nicht bereits in den vorgegeben Kriterien der Leitlinien des Kantons Zürich für einfach nutzbare Behördendaten vorliegen. Das Abschlussprojekt selbst könnte auch die Aufbereitung beinhalten und somit die Daten in ein Format bringen, welches den Leitlinien entspricht."
   }
 ]
