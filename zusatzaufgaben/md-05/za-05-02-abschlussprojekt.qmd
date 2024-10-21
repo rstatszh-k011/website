@@ -70,7 +70,7 @@ Die Daten müssen nicht bereits in den vorgegeben Kriterien der [Leitlinien des 
 
 ## Schritt 3: Daten hochladen
 
-1. Verwende den Datei Manager im unteren rechten Fenster, um die identifizierten Daten aus Aufgabe 1 in den `raw` Ordner hochzuladen. Für detaillierte Schritte, siehe [Zusatzaufgabe 2 aus Modul 3](../zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.qmd). 
+1. Verwende den Datei Manager im unteren rechten Fenster, um die identifizierten Daten aus Aufgabe 1 in den `raw` Ordner hochzuladen. Für detaillierte Schritte, siehe [Zusatzaufgabe 2 aus Modul 3](../md-03/za-03-02-github-repo-erstellen.qmd). 
 
 ## Schritt 4: Quarto Datei erstellen
 
