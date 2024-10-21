@@ -1,0 +1,117 @@
+---
+title: "Abschlussprojekt"
+---
+
+Am Ende des Kurses steht ein Abschlussprojekt in welchem ihr die Möglichkeit bekommt mit einem Datensatz eurer Wahl zu arbeiten und die im Kurs erlernten Methoden und Techniken anzuwenden und zu vertiefen. Die Auswahl des Datenprojekts ist frei, es sollte jedoch ein Datensatz sein, welcher öffentlich geteilt werden kann. Dies bedeutet nicht zwingend, dass der Datensatz als OGD Ressource im Datenkatalog verfügbar sein muss, aber es sollte die Möglichkeit bestehen, dass dieser über GitHub geteilt werden kann. 
+
+Dazu gibt es bei der Auswahl des Datensatzes folgendes zu beachten:
+
+## Nicht schützenswerte Daten
+
+Auf Grundlage des [Gesetzes über die Information und den Datenschutz (IDG)](http://www.zhlex.zh.ch/Erlass.html?Open&Ordnr=170.4) dürfen Verwaltungseinheiten und Organe des Kantons Zürich nicht schützenswerte Daten, die unter ihrer Hoheit stehen, als offene Behördendaten publizieren.
+
+'Nicht schützenswert' bedeutet, dass die bereitgestellten Daten
+
+Vorteile:
+
+- nicht die Privatsphäre verletzen
+- nicht sicherheitskritisch sind und
+- keinen Drittrechten (wie zum Beispiel Copyrights) unterliegen.
+
+Info aus: <https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780>
+
+## Daten auswählen
+
+Folgende Fragen stellen sich:
+
+1. Habe ich Daten welche die oben genannten Kriterien erfüllen? 
+
+2. Habe ich ein bestimmtes Ziel für das Arbeiten mit diesen Daten?
+
+Falls keine "nicht schützenswerten" Daten zur Verfügung stehen, kann ein offener Datensatz genutzt werden. Dazu gibt es den Datenkatalog des Kantons Zürich und andere offene Datenquellen, welche in [Zusatzaufgabe 1: Ressourcen für OGD im Kanton Zürich](za-05-01-ktzh-ogd.qmd) beschrieben sind. 
+
+## Daten Struktur & Leitlinien
+
+Die Daten müssen nicht bereits in den vorgegeben Kriterien der [Leitlinien des Kantons Zürich für einfach nutzbare Behördendaten](https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md) vorliegen. Das Abschlussprojekt selbst könnte auch die Aufbereitung beinhalten und somit die Daten in ein Format bringen, welches den Leitlinien entspricht. 
+
+# Arbeitsschritte
+
+## Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud
+
+1. Öffne die GitHub Organisation für den Kurs <https://github.com/rstatszh-k009>
+
+2. Rechts neben dem Feld ["Find a repository"]{.highlight-yellow} klicke auf den grünen ["New"]{.highlight-yellow} Button.
+
+3. Im Feld ["Repository name"]{.highlight-yellow} schreibe `projekt-USERNAME`. [Ersetze USERNAME durch deinen GitHub Benutzernamen]{.highlight-yellow}. Vermeide Leerzeichen.
+
+4. Skrolle auf der gleichen Seite nach unten und klicke auf ["Create repository"]{.highlight-yellow}.
+
+5. Im Feld ["Quick setup"]{.highlight-yellow} klicke auf das Clipboard neben der HTTPs URL.
+
+6. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/543494/content/all?sort=name_asc)
+
+7. Klicke auf "New Project" > "New Project from Git Repository"
+
+8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein. [**Beachte:**]{.highlight-yellow} Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.
+
+9. Warte, bis das Projekt bereitgestellt wurde.
+
+## Schritt 2: Erstelle neue Ordner
+
+1. Im Datei Manager im Fenster unten rechts, klicke auf "Folder" um einen neuen Ordner zu erstellen.
+
+2. Benenne den Ordner "daten".
+
+3. Klicke auf den Ordner "daten" im Datei Manager im Fenster unten rechts.
+
+4. Erstelle einen weiteren Ordner "raw" im Ordner "daten".
+
+5. Klicke auf den Ordner "raw" im Datei Manager im Fenster unten rechts.
+
+## Schritt 3: Daten hochladen
+
+1. Verwende den Datei Manager im unteren rechten Fenster, um die identifizierten Daten aus Aufgabe 1 in den `raw` Ordner hochzuladen. Für detaillierte Schritte, siehe [Zusatzaufgabe 2 aus Modul 3](../zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.qmd). 
+
+## Schritt 4: Quarto Datei erstellen
+
+1. Navigiere zurück zum Hauptverzeichnis deines Projekts, indem du auf den blauen R-Würfel klickst.
+
+2. Erstelle einen neuen Ordner "docs" im Hauptverzeichnis deines Projekts.
+
+3. Klicke auf den Ordner `docs`.
+
+4. Erstelle ein neues Quarto-Dokument und speichere es als `index.qmd` im `docs`-Ordner.
+
+5. Lösche den Inhalt des Quarto-Dokuments bis auf die YAML Metadaten zu Beginn des Dokuments.
+
+6. Erstelle die folgenden Abschnitte in deinem Quarto-Dokument:
+
+- Einleitung (formatiert als Heading 1)
+- Daten (formatiert als Heading 2)
+- Analyseziele (formatiert als Heading 2)
+- Daten Aufbereitung (formatiert als Heading 1)
+- Daten Visualisierung (formatiert als Heading 1)
+
+7. In der Einleitung, beschreibe kurz das Projekt, die Daten, und deine Analyseziele. 
+
+## Schritt 5: R-Pakete laden und Daten importieren
+
+1. Vor der Einleitung, füge einen Code-Block hinzu und schreibe `library(tidyverse)` um die R-Pakete zu laden, welche du in diesem Kurs gelernt hast.
+
+```{r}
+#| echo: fenced
+library(tidyverse)
+```
+
+2. Importiere deine Daten, indem du den folgenden Code in einem weiteren Code-Block schreibst (in diesem Beispiel verwenden wir eine CSV-Datei):
+
+```{r}
+#| eval: false
+read_csv(here::here("data/raw/your-file-name.csv"))
+```
+
+::: callout-tip
+## Das R-Paket `here`
+Wir empfehlen das R-Paket `here` zu verwenden, um auf Dateien in deinem Projekt zu verweisen. Das `here` R-Paket hilft dabei, den richtigen Dateipfad zu deinen Daten zu finden. Wir werden Dateipfade und das Paket selbst in einem anderen Modul besprechen.
+:::
+
