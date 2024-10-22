@@ -1488,9 +1488,9 @@
   {
     "objectID": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
     "href": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
-    "title": "Bedingte Anweisungen & Datumswerte",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\nlernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-k009-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 34 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können auf Ressourcen für das Arbeiten mit OGD zugreifen um eigene Daten für eine Publikation vorzubereiten."
   },
   {
     "objectID": "folien/md-05-datumswerte.html#my-turn-conditional-statements",
@@ -1537,21 +1537,21 @@
   {
     "objectID": "folien/md-05-datumswerte.html#modul-5-dokumentation",
     "href": "folien/md-05-datumswerte.html#modul-5-dokumentation",
-    "title": "Bedingte Anweisungen & Datumswerte",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Modul 5 Dokumentation",
     "text": "Modul 5 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-05.html"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#zusatzaufgaben-abgabedatum",
     "href": "folien/md-05-datumswerte.html#zusatzaufgaben-abgabedatum",
-    "title": "Bedingte Anweisungen & Datumswerte",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Zusatzaufgaben Abgabedatum",
     "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 28. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 31. Oktober"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#danke-1",
     "href": "folien/md-05-datumswerte.html#danke-1",
-    "title": "Bedingte Anweisungen & Datumswerte",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Danke! 🌻",
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
@@ -2062,5 +2062,89 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#dplyr-funktionen-mutate-case_when",
+    "href": "folien/md-05-datumswerte.html#dplyr-funktionen-mutate-case_when",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "dplyr Funktionen mutate() & case_when()",
+    "text": "dplyr Funktionen mutate() & case_when()\n\nmutate() fügt neue Variablen zu einem Datenrahmen hinzu\ncase_when() ist eine andere Form einer if-else Anweisung (in Excel: WENN, DANN, SONST)\ndie Kombination dieser Funktionen wird verwendet, um Variablen mit neuen Werten zu erstellen oder bestehende zu korrigieren"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#ich-bin-dran-bedingte-anweisungen-in-r",
+    "href": "folien/md-05-datumswerte.html#ich-bin-dran-bedingte-anweisungen-in-r",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Ich bin dran: Bedingte Anweisungen in R",
+    "text": "Ich bin dran: Bedingte Anweisungen in R\n\n\nZurücklehnen und Fragen stellen!\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#ihr-seid-dran-02-bedingungen-ihr.qmd",
+    "href": "folien/md-05-datumswerte.html#ihr-seid-dran-02-bedingungen-ihr.qmd",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Ihr seid dran: 02-bedingungen-ihr.qmd",
+    "text": "Ihr seid dran: 02-bedingungen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-bedingungen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#pause-machen",
+    "href": "folien/md-05-datumswerte.html#pause-machen",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#iso-8601",
+    "href": "folien/md-05-datumswerte.html#iso-8601",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "ISO 8601",
+    "text": "ISO 8601"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#datums--und-zeitwerte-in-r-1",
+    "href": "folien/md-05-datumswerte.html#datums--und-zeitwerte-in-r-1",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Datums- und Zeitwerte in R",
+    "text": "Datums- und Zeitwerte in R\n\nDatums- und Zeitwerte werden als Zahlen Vektoren in R gespeichert\nDatumswerte werden als die Anzahl der Tage seit 1970-01-01 gespeichert\nZeitwerte werden als die Anzahl der Sekunden seit 1970-01-01 00:00:00 gespeichert\nDatum,s- und Zeitwerte werden als numerische Werte gespeichert, können aber formatiert werden, um wie Datum und Zeit auszusehen"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#ich-bin-dran-datums--und-zeitwerte-in-r",
+    "href": "folien/md-05-datumswerte.html#ich-bin-dran-datums--und-zeitwerte-in-r",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Ich bin dran: Datums- und Zeitwerte in R",
+    "text": "Ich bin dran: Datums- und Zeitwerte in R\n\n\nZurücklehnen und Fragen stellen!\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#ihr-seid-dran-03-datumswerte-ihr.qmd",
+    "href": "folien/md-05-datumswerte.html#ihr-seid-dran-03-datumswerte-ihr.qmd",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Ihr seid dran: 03-datumswerte-ihr.qmd",
+    "text": "Ihr seid dran: 03-datumswerte-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 04-datumswerte-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#du-bist-dran-abschlussprojekt",
+    "href": "folien/md-05-datumswerte.html#du-bist-dran-abschlussprojekt",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Du bist dran: Abschlussprojekt",
+    "text": "Du bist dran: Abschlussprojekt\n\n\nÖffne die Kurswebseite: rstatszh-k009.github.io/website/\nNavigiere zu den Zusatzaufgaben für Modul 5 und öffne Zusatzaufgabe 2: Abschlussprojekt.\nLies die Anweisungen bis “Arbeitsschritte” und mache dir Notizen.\nHinterlasse Fragen und Kommentare hier: github.com/rstatszh-k009/abschlussprojekte/issues/1\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#zeitpuffer-modul-5",
+    "href": "folien/md-05-datumswerte.html#zeitpuffer-modul-5",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Zeitpuffer: Modul 5",
+    "text": "Zeitpuffer: Modul 5\n\nWelche Fragen zur Beschreibung des Abschlussprojektes können wir noch klären?\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#pause-machen-1",
+    "href": "folien/md-05-datumswerte.html#pause-machen-1",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-05-datumswerte.html#ihr-seid-dran-04-datumswerte-ihr.qmd",
+    "href": "folien/md-05-datumswerte.html#ihr-seid-dran-04-datumswerte-ihr.qmd",
+    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
+    "section": "Ihr seid dran: 04-datumswerte-ihr.qmd",
+    "text": "Ihr seid dran: 04-datumswerte-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 04-datumswerte-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   }
 ]

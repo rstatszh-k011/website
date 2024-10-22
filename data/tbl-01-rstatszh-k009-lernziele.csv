@@ -13,7 +13,7 @@ datum,modul,titel,lernziele
 2024-10-15T00:00:00Z,4,Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II,"Die Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen."
 2024-10-15T00:00:00Z,4,Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II,"Die Lernenden können die Anwendung der Git Befehle clone, commit, push beschreiben."
 2024-10-15T00:00:00Z,4,Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II,Die Lernenden können die Begriffe local und remote Repository unterscheiden.
-2024-10-22T00:00:00Z,5,Bedingte Anweisungen & Datumswerte & OGD Ressourcen,"Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern."
+2024-10-22T00:00:00Z,5,Bedingte Anweisungen & Datumswerte & OGD Ressourcen,"Die Lernenden können Funktionen aus dem R-Paket `dplyr` anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern."
 2024-10-22T00:00:00Z,5,Bedingte Anweisungen & Datumswerte & OGD Ressourcen,"Die Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern."
 2024-10-22T00:00:00Z,5,Bedingte Anweisungen & Datumswerte & OGD Ressourcen,Die Lernenden können auf Ressourcen für das Arbeiten mit OGD zugreifen um eigene Daten für eine Publikation vorzubereiten.
 2024-10-29T00:00:00Z,6,Daten Typen & Vektoren & Iteration I (for loops),Die Lernenden können die Bedeutung von Vektoren mit Bezug auf einen Dataframe erläutern.

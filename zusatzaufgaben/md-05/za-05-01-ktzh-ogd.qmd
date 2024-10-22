@@ -60,10 +60,11 @@ Die dargestellten Daten stehen als OGD zur Verfügung: <https://opendata.swiss/d
 
 ### GitHub
 
-Es gibt auch einige GitHub Organisationen, die sich mit OGD und Open Source in der Verwaltung beschäftigen. Die folgenden werden durch das Statistische Amt des Kantons Zürich betrieben:
+Es gibt auch einige Vewaltungseinheiten, welche GitHub Organisationen nutzen um Daten und Code öffentlich zu teilen.
 
--   GitHub Organisation openZH: <https://github.com/openZH>
--   GitHub Organisation statistikZH: <https://github.com/statistikZH/>
+-   Specialist Unit for Open Government Data Canton of Zurich  - GitHub Organisation: <https://github.com/openZH>
+-   Statistisches Amt Kanton Zürich - GitHub Organisation statistikZH: <https://github.com/statistikZH/>
+-   Staatsarchiv Kanton Zürich - GitHUb Organisation : <https://github.com/stazh>
 
 ## OGD Community
 
