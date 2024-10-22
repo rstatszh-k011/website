@@ -15,15 +15,13 @@ Dazu gibt es bei der Auswahl des Datensatzes folgendes zu beachten:
 
 Auf Grundlage des [Gesetzes über die Information und den Datenschutz (IDG)](http://www.zhlex.zh.ch/Erlass.html?Open&Ordnr=170.4) dürfen Verwaltungseinheiten und Organe des Kantons Zürich nicht schützenswerte Daten, die unter ihrer Hoheit stehen, als offene Behördendaten publizieren.
 
-'Nicht schützenswert' bedeutet, dass die bereitgestellten Daten
-
-Vorteile:
+'Nicht schützenswert' bedeutet, dass die bereitgestellten Daten:
 
 - nicht die Privatsphäre verletzen
 - nicht sicherheitskritisch sind und
 - keinen Drittrechten (wie zum Beispiel Copyrights) unterliegen.
 
-Info aus: <https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780>
+Info entnommen aus: <https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780>
 
 ## Daten auswählen
 
