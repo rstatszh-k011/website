@@ -363,7 +363,7 @@
     "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-2-erstelle-neue-ordner",
     "title": "Abschlussprojekt",
     "section": "Schritt 2: Erstelle neue Ordner",
-    "text": "Schritt 2: Erstelle neue Ordner\n\nIm Datei Manager im Fenster unten rechts, klicke auf “Folder” um einen neuen Ordner zu erstellen.\nBenenne den Ordner “daten”.\nKlicke auf den Ordner “daten” im Datei Manager im Fenster unten rechts.\nErstelle einen weiteren Ordner “raw” im Ordner “daten”.\nKlicke auf den Ordner “raw” im Datei Manager im Fenster unten rechts."
+    "text": "Schritt 2: Erstelle neue Ordner\n\nIm Datei Manager im Fenster unten rechts, klicke auf “Folder” um einen neuen Ordner zu erstellen.\nBenenne den Ordner daten.\nKlicke auf den Ordner daten im Datei Manager im Fenster unten rechts.\nErstelle einen weiteren Ordner raw im Ordner daten.\nKlicke auf den Ordner raw im Datei Manager im Fenster unten rechts."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-3-daten-hochladen",
@@ -377,14 +377,14 @@
     "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-4-quarto-datei-erstellen",
     "title": "Abschlussprojekt",
     "section": "Schritt 4: Quarto Datei erstellen",
-    "text": "Schritt 4: Quarto Datei erstellen\n\nNavigiere zurück zum Hauptverzeichnis deines Projekts, indem du auf den blauen R-Würfel klickst.\nErstelle einen neuen Ordner “docs” im Hauptverzeichnis deines Projekts.\nKlicke auf den Ordner docs.\nErstelle ein neues Quarto-Dokument und speichere es als index.qmd im docs-Ordner.\nLösche den Inhalt des Quarto-Dokuments bis auf die YAML Metadaten zu Beginn des Dokuments.\nErstelle die folgenden Abschnitte in deinem Quarto-Dokument:\n\n\nEinleitung (formatiert als Heading 1)\nDaten (formatiert als Heading 2)\nAnalyseziele (formatiert als Heading 2)\nDaten Aufbereitung (formatiert als Heading 1)\nDaten Visualisierung (formatiert als Heading 1)\n\n\nIn der Einleitung, beschreibe kurz das Projekt, die Daten, und deine Analyseziele."
+    "text": "Schritt 4: Quarto Datei erstellen\n\nNavigiere zurück zum Hauptverzeichnis deines Projekts, indem du auf den blauen R-Würfel klickst.\n\n 2. Erstelle einen neuen Ordner docs im Hauptverzeichnis deines Projekts.\n\nKlicke auf den Ordner docs.\nErstelle ein neues Quarto-Dokument und speichere es als index.qmd im docs-Ordner.\n\n\n\nLösche den Inhalt des Quarto-Dokuments bis auf die YAML Metadaten zu Beginn des Dokuments.\nErstelle die folgenden Abschnitte in deinem Quarto-Dokument:\n\n\nEinleitung (formatiert als Heading 1)\nDaten (formatiert als Heading 2)\nAnalyseziele (formatiert als Heading 2)\nDaten Aufbereitung (formatiert als Heading 1)\nDaten Visualisierung (formatiert als Heading 1)\n\n\nIn der Einleitung, beschreibe kurz das Projekt, die Daten, und deine Analyseziele."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-5-r-pakete-laden-und-daten-importieren",
     "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-5-r-pakete-laden-und-daten-importieren",
     "title": "Abschlussprojekt",
     "section": "Schritt 5: R-Pakete laden und Daten importieren",
-    "text": "Schritt 5: R-Pakete laden und Daten importieren\n\nVor der Einleitung, füge einen Code-Block hinzu und schreibe library(tidyverse) um die R-Pakete zu laden, welche du in diesem Kurs gelernt hast.\n\n\n```{r}\nlibrary(tidyverse)\n```\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\nImportiere deine Daten, indem du den folgenden Code in einem weiteren Code-Block schreibst (in diesem Beispiel verwenden wir eine CSV-Datei):\n\n\nread_csv(here::here(\"data/raw/your-file-name.csv\"))\n\n\n\n\n\n\n\nDas R-Paket here\n\n\n\nWir empfehlen das R-Paket here zu verwenden, um auf Dateien in deinem Projekt zu verweisen. Das here R-Paket hilft dabei, den richtigen Dateipfad zu deinen Daten zu finden. Wir werden Dateipfade und das Paket selbst in einem anderen Modul besprechen."
+    "text": "Schritt 5: R-Pakete laden und Daten importieren\n\nVor der Einleitung, füge einen Code-Block hinzu und schreibe library(tidyverse) um die R-Pakete zu laden, welche du in diesem Kurs gelernt hast.\n\n\n```{r}\nlibrary(tidyverse)\n```\n\n\nImportiere deine Daten, indem du den folgenden Code in einem weiteren Code-Block schreibst (in diesem Beispiel verwenden wir eine CSV-Datei):\n\n\n```{r}\nread_csv(here::here(\"daten/raw/your-file-name.csv\"))\n```\n\n\n\n\n\n\n\nDas R-Paket here\n\n\n\nWir empfehlen das R-Paket here zu verwenden, um auf Dateien in deinem Projekt zu verweisen. Das here R-Paket hilft dabei, den richtigen Dateipfad zu deinen Daten zu finden. Wir werden Dateipfade und das Paket selbst in einem anderen Modul besprechen."
   },
   {
     "objectID": "zusatzaufgaben/md-02/za-02-01-datenvisualisierung.html",
@@ -1637,14 +1637,14 @@
     "href": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-beispiele-kanton-zürich",
     "title": "Ressourcen für OGD im Kanton Zürich",
     "section": "OGD Beispiele Kanton Zürich",
-    "text": "OGD Beispiele Kanton Zürich\nWas ist eigentlich machbar sobald Daten als OGD publiziert sind? Zum Einen sind diese Daten von Anderen nutzbar und können in eigenen Projekten verwendet werden. Zum Anderen können die Daten auch direkt in Visualisierungen oder Apps im ZH Web eingebunden werden.\nDas Team Data im Statistischen Amt des Kantons Zürich hat bereits einige Beispiele für die Nutzung von OGD Daten umgesetzt. Die Visualisierungen werden nicht mir R gemacht, sondern mit JavaScript. Das müsst ihr nicht lernen, sondern könnt diese gemeinsam mit dem Team Data erarbeiten. Die Beispiele lassen sich jedoch auch mit R reproduzieren.\nHier sind einige Beispiele:\n\nLeerwohnungsziffer nach Gemeinden\nhttps://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html#-291192554\n\n\nGewaltopfer Häusliche Gewalt\nhttps://www.zh.ch/de/sicherheit-justiz/delikte-praevention/kriminalstatistik/gewaltopfer.html\n\n\nMonitoring zur Klimastrategie\nSpannend an dieser Seite ist, dass die Daten nicht im Datenkatalog als OGD abgelegt sind, sondern der Zugriff direkt über GitHub stattfindet. Eine Möglichkeit, welche ihr auch innerhalb des Kurses kennengelernt habt.\nhttps://www.zh.ch/de/umwelt-tiere/klima/langfristige-klimastrategie/monitoring.html\nIm GitHub Repository statistikZH/decarb_monitoring werden die Daten für das Monitoring bezogen und regelmässig aktualisiert: https://github.com/statistikZH/decarb_monitoring\n\n\nKurzzeitmessung nichtionisierender Strahlung\nhttps://www.zh.ch/de/umwelt-tiere/luft-strahlung/mobilfunk.html#1645502451\nAuch hier werden die Daten über GitHub bereitgestellt: https://github.com/awelZH/nis_meas_school\n\n\nKlimakarten und -daten\nhttps://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#1132125233\nFür diese Daten wurde eine R Shiny App durch das Team Data erstellt. Die App könnt ihr hier finden: https://openzh.shinyapps.io/Lokalklima/\nDie dargestellten Daten stehen als OGD zur Verfügung: https://opendata.swiss/de/dataset/lufttemperatur-und-luftfeuchte-lora-sensor-messwerte\n\n\nGitHub\nEs gibt auch einige GitHub Organisationen, die sich mit OGD und Open Source in der Verwaltung beschäftigen. Die folgenden werden durch das Statistische Amt des Kantons Zürich betrieben:\n\nGitHub Organisation openZH: https://github.com/openZH\nGitHub Organisation statistikZH: https://github.com/statistikZH/"
+    "text": "OGD Beispiele Kanton Zürich\nWas ist eigentlich machbar sobald Daten als OGD publiziert sind? Zum Einen sind diese Daten von Anderen nutzbar und können in eigenen Projekten verwendet werden. Zum Anderen können die Daten auch direkt in Visualisierungen oder Apps im ZH Web eingebunden werden.\nDas Team Data im Statistischen Amt des Kantons Zürich hat bereits einige Beispiele für die Nutzung von OGD Daten umgesetzt. Die Visualisierungen werden nicht mir R gemacht, sondern mit JavaScript. Das müsst ihr nicht lernen, sondern könnt diese gemeinsam mit dem Team Data erarbeiten. Die Beispiele lassen sich jedoch auch mit R reproduzieren.\nHier sind einige Beispiele:\n\nLeerwohnungsziffer nach Gemeinden\nhttps://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html#-291192554\n\n\nGewaltopfer Häusliche Gewalt\nhttps://www.zh.ch/de/sicherheit-justiz/delikte-praevention/kriminalstatistik/gewaltopfer.html\n\n\nMonitoring zur Klimastrategie\nSpannend an dieser Seite ist, dass die Daten nicht im Datenkatalog als OGD abgelegt sind, sondern der Zugriff direkt über GitHub stattfindet. Eine Möglichkeit, welche ihr auch innerhalb des Kurses kennengelernt habt.\nhttps://www.zh.ch/de/umwelt-tiere/klima/langfristige-klimastrategie/monitoring.html\nIm GitHub Repository statistikZH/decarb_monitoring werden die Daten für das Monitoring bezogen und regelmässig aktualisiert: https://github.com/statistikZH/decarb_monitoring\n\n\nKurzzeitmessung nichtionisierender Strahlung\nhttps://www.zh.ch/de/umwelt-tiere/luft-strahlung/mobilfunk.html#1645502451\nAuch hier werden die Daten über GitHub bereitgestellt: https://github.com/awelZH/nis_meas_school\n\n\nKlimakarten und -daten\nhttps://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#1132125233\nFür diese Daten wurde eine R Shiny App durch das Team Data erstellt. Die App könnt ihr hier finden: https://openzh.shinyapps.io/Lokalklima/\nDie dargestellten Daten stehen als OGD zur Verfügung: https://opendata.swiss/de/dataset/lufttemperatur-und-luftfeuchte-lora-sensor-messwerte\n\n\nGitHub\nEs gibt auch einige Vewaltungseinheiten, welche GitHub Organisationen nutzen um Daten und Code öffentlich zu teilen.\n\nSpecialist Unit for Open Government Data Canton of Zurich - GitHub Organisation: https://github.com/openZH\nStatistisches Amt Kanton Zürich - GitHub Organisation statistikZH: https://github.com/statistikZH/\nStaatsarchiv Kanton Zürich - GitHUb Organisation : https://github.com/stazh"
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-community",
     "href": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-community",
     "title": "Ressourcen für OGD im Kanton Zürich",
     "section": "OGD Community",
-    "text": "OGD Community\nInnerhalb, und auch ausserhalb der Verwaltung, gibt es verschiedene Communities, die sich mit OGD, R und Open Source beschäftigen. Hier sind einige Beispiele:\nViva Engage Einstiegs Community “Data” im neuen Intranet & Tool: https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9\nKanton Zurich MS Teams Data Community of Practice: https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58\nR Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. https://statistikzh.github.io/rstats_ktzh/\nOpen Data Beer: opendatabeer.ch\nadminR meetup: https://www.meetup.com/adminr/"
+    "text": "OGD Community\nInnerhalb, und auch ausserhalb der Verwaltung, gibt es verschiedene Communities, die sich mit OGD, R und Open Source beschäftigen. Hier sind einige Beispiele:\n\nViva Engage Einstiegs Community “Data” im neuen Intranet & Tool: https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9\nKanton Zurich MS Teams Data Community of Practice: https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58\nR Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. https://statistikzh.github.io/rstats_ktzh/\nOpen Data Beer: https://opendatabeer.ch/\nadminR meetup: https://www.meetup.com/adminr/"
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-kanton-zürich",
@@ -1757,7 +1757,7 @@
     "href": "module/md-05.html",
     "title": "Modul 5",
     "section": "",
-    "text": "Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten.",
+    "text": "Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können auf Ressourcen für das Arbeiten mit OGD zugreifen um eigene Daten für eine Publikation vorzubereiten.",
     "crumbs": [
       "Modul 05"
     ]
@@ -1767,7 +1767,7 @@
     "href": "module/md-05.html#lernziele",
     "title": "Modul 5",
     "section": "",
-    "text": "Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten.",
+    "text": "Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können auf Ressourcen für das Arbeiten mit OGD zugreifen um eigene Daten für eine Publikation vorzubereiten.",
     "crumbs": [
       "Modul 05"
     ]
@@ -1777,7 +1777,7 @@
     "href": "module/md-05.html#folien",
     "title": "Modul 5",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung",
+    "text": "Folien\nZeige Folien im Vollbildmodus an | Download slides as PDF",
     "crumbs": [
       "Modul 05"
     ]
@@ -1787,7 +1787,7 @@
     "href": "module/md-05.html#lesematerial",
     "title": "Modul 5",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung",
+    "text": "Lesematerial\n\nLies: R for Data Science - Section 17.1 bis 17.3 - Dates and times\n\n\n\n\n\n\n\nr4ds-USERNAME Repository\n\n\n\nIch überlasse es dir ob du in deinem r4ds-USERNAME Repository ein neues Quarto-Dokument für dieses Kapitel erstellent möchtest.",
     "crumbs": [
       "Modul 05"
     ]
@@ -1797,7 +1797,7 @@
     "href": "module/md-05.html#übungsaufgaben",
     "title": "Modul 5",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "text": "Übungsaufgaben\nBitte erledige die folgende Aufgaben bis Montag, den 28. Oktober 2024.\n\nZusatzaufgabe 1: OGD Ressourcen\nZusatzaufgabe 2: Abschlussprojekt - Daten auswählen\nZusatzaufgabe 3: Mit R arbeiten - Lernende im Kanton Zürich\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 05"
     ]
@@ -2146,5 +2146,54 @@
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Ihr seid dran: 04-datumswerte-ihr.qmd",
     "text": "Ihr seid dran: 04-datumswerte-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 04-datumswerte-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-1-klone-das-repository-für-modul-5",
+    "href": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-1-klone-das-repository-für-modul-5",
+    "title": "Mit R arbeiten - Lernende im Kanton Zürich",
+    "section": "Schritt 1: Klone das Repository für Modul 5",
+    "text": "Schritt 1: Klone das Repository für Modul 5\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-05-ktzh-lernende.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-2-übertrage-deine-änderungen-auf-github",
+    "href": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-2-übertrage-deine-änderungen-auf-github",
+    "title": "Mit R arbeiten - Lernende im Kanton Zürich",
+    "section": "Schritt 2: Übertrage deine Änderungen auf GitHub",
+    "text": "Schritt 2: Übertrage deine Änderungen auf GitHub\n\nNavigiere zum Git-Bereich im Fenster oben rechts.\nAktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.\nKlicke auf die Schaltfläche “Commit”.\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Zusatzaufgaben Modul 5 abgeschlossen).\nKlicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\nKlicke auf die Schaltfläche “Push”.\nGib deinen GitHub-Benutzernamen im Feld Username an.\nGib deinen GitHub Personal Access Token (PAT) im Feld “Password” ein.\nDas Fenster kann geschlossen werden.\n\n\n\n\n\n\n\nVerwende nicht dein GitHub-Passwort\n\n\n\nDu musst GitHub Personal Access Token (PAT) eingeben, den du in der Vorbereitung auf den Kurs erstellt hast um deine Änderungen zurück an GitHub zu übertragen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-3-eröffne-ein-issue-auf-github",
+    "href": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-3-eröffne-ein-issue-auf-github",
+    "title": "Mit R arbeiten - Lernende im Kanton Zürich",
+    "section": "Schritt 3: Eröffne ein Issue auf GitHub",
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-03-lernende.html",
+    "href": "zusatzaufgaben/md-05/za-05-03-lernende.html",
+    "title": "Mit R arbeiten - Lernende im Kanton Zürich",
+    "section": "",
+    "text": "In dieser Zusatzaufgabe geht es darum, ein Diagramm zu rekonstruieren, das die Anzahl der Lernenden im Kanton Zürich nach Staatsangehörigkeit und Stufe im Jahr 2022 zeigt. Die Daten werden von dir vorbereitet und das Diagramm wird mit ggplot2 erstellt. Du bekommst auch die Möglichkeit nochmals bedingte Anweisungen mit mutate() und case_when() zu üben."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-03-lernende.html#aufgabe-rekonstruiere-folgendes-diagramm",
+    "href": "zusatzaufgaben/md-05/za-05-03-lernende.html#aufgabe-rekonstruiere-folgendes-diagramm",
+    "title": "Mit R arbeiten - Lernende im Kanton Zürich",
+    "section": "",
+    "text": "In dieser Zusatzaufgabe geht es darum, ein Diagramm zu rekonstruieren, das die Anzahl der Lernenden im Kanton Zürich nach Staatsangehörigkeit und Stufe im Jahr 2022 zeigt. Die Daten werden von dir vorbereitet und das Diagramm wird mit ggplot2 erstellt. Du bekommst auch die Möglichkeit nochmals bedingte Anweisungen mit mutate() und case_when() zu üben."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-6-übertrage-deine-änderungen-auf-github",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-6-übertrage-deine-änderungen-auf-github",
+    "title": "Abschlussprojekt",
+    "section": "Schritt 6: Übertrage deine Änderungen auf GitHub",
+    "text": "Schritt 6: Übertrage deine Änderungen auf GitHub\n\nÜberprüfe ob dein Projekt den gleichen Aufbau hat wie das Projekt von Rainbow Train: https://github.com/rstatszh-k009/projekt-rainbow-train\nFalls der Aufbau nicht übereinstimmt, nehme nochmals Veränderungen vor.\nSobald du den Aufbau abgeschlossen hast, navigiere zum Git-Bereich im Fenster oben rechts.\nAktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.\nKlicke auf die Schaltfläche “Commit”.\nGib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Projekt aufsetzen).\nKlicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.\nKlicke auf die Schaltfläche “Push”.\nGib deinen GitHub-Benutzernamen im Feld Username an.\nGib deinen GitHub Personal Access Token (PAT) im Feld “Password” ein.\nDas Fenster kann geschlossen werden."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-7-eröffne-ein-issue-auf-github",
+    "href": "zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html#schritt-7-eröffne-ein-issue-auf-github",
+    "title": "Abschlussprojekt",
+    "section": "Schritt 7: Eröffne ein Issue auf GitHub",
+    "text": "Schritt 7: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Daten für das Abschlussprojekt ausgewählt”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse mir ein Kommentar, falls du möchtest."
   }
 ]

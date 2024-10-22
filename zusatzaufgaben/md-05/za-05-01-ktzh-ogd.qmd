@@ -70,15 +70,15 @@ Es gibt auch einige Vewaltungseinheiten, welche GitHub Organisationen nutzen um 
 
 Innerhalb, und auch ausserhalb der Verwaltung, gibt es verschiedene Communities, die sich mit OGD, R und Open Source beschäftigen. Hier sind einige Beispiele:
 
-Viva Engage Einstiegs Community "Data" im neuen Intranet & Tool: <https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9>
+- Viva Engage Einstiegs Community "Data" im neuen Intranet & Tool: <https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9>
 
-Kanton Zurich MS Teams Data Community of Practice: <https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58>
+- Kanton Zurich MS Teams Data Community of Practice: <https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58>
 
-R Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. <https://statistikzh.github.io/rstats_ktzh/>
+- R Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. <https://statistikzh.github.io/rstats_ktzh/>
 
-Open Data Beer: opendatabeer.ch
+- Open Data Beer: <https://opendatabeer.ch/>
 
-adminR meetup: https://www.meetup.com/adminr/
+- adminR meetup: <https://www.meetup.com/adminr/>
 
 ## OGD Kanton Zürich
 

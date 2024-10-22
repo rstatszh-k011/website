@@ -1,5 +1,10 @@
 ---
 title: "Abschlussprojekt"
+subtitle: "Daten auswählen"
+execute:
+    message: false
+    warning: false
+    eval: false
 ---
 
 Am Ende des Kurses steht ein Abschlussprojekt in welchem ihr die Möglichkeit bekommt mit einem Datensatz eurer Wahl zu arbeiten und die im Kurs erlernten Methoden und Techniken anzuwenden und zu vertiefen. Die Auswahl des Datenprojekts ist frei, es sollte jedoch ein Datensatz sein, welcher öffentlich geteilt werden kann. Dies bedeutet nicht zwingend, dass der Datensatz als OGD Ressource im Datenkatalog verfügbar sein muss, aber es sollte die Möglichkeit bestehen, dass dieser über GitHub geteilt werden kann. 
@@ -60,13 +65,13 @@ Die Daten müssen nicht bereits in den vorgegeben Kriterien der [Leitlinien des 
 
 1. Im Datei Manager im Fenster unten rechts, klicke auf "Folder" um einen neuen Ordner zu erstellen.
 
-2. Benenne den Ordner "daten".
+2. Benenne den Ordner `daten`.
 
-3. Klicke auf den Ordner "daten" im Datei Manager im Fenster unten rechts.
+3. Klicke auf den Ordner `daten` im Datei Manager im Fenster unten rechts.
 
-4. Erstelle einen weiteren Ordner "raw" im Ordner "daten".
+4. Erstelle einen weiteren Ordner `raw` im Ordner `daten`.
 
-5. Klicke auf den Ordner "raw" im Datei Manager im Fenster unten rechts.
+5. Klicke auf den Ordner `raw` im Datei Manager im Fenster unten rechts.
 
 ## Schritt 3: Daten hochladen
 
@@ -76,11 +81,14 @@ Die Daten müssen nicht bereits in den vorgegeben Kriterien der [Leitlinien des 
 
 1. Navigiere zurück zum Hauptverzeichnis deines Projekts, indem du auf den blauen R-Würfel klickst.
 
-2. Erstelle einen neuen Ordner "docs" im Hauptverzeichnis deines Projekts.
+![](images/01-file-manager-hauptverzeichnis.png){width=80%}
+2. Erstelle einen neuen Ordner `docs` im Hauptverzeichnis deines Projekts.
 
 3. Klicke auf den Ordner `docs`.
 
 4. Erstelle ein neues Quarto-Dokument und speichere es als `index.qmd` im `docs`-Ordner.
+
+![](images/02-docs-index.png){width=80%}
 
 5. Lösche den Inhalt des Quarto-Dokuments bis auf die YAML Metadaten zu Beginn des Dokuments.
 
@@ -106,8 +114,8 @@ library(tidyverse)
 2. Importiere deine Daten, indem du den folgenden Code in einem weiteren Code-Block schreibst (in diesem Beispiel verwenden wir eine CSV-Datei):
 
 ```{r}
-#| eval: false
-read_csv(here::here("data/raw/your-file-name.csv"))
+#| echo: fenced
+read_csv(here::here("daten/raw/your-file-name.csv"))
 ```
 
 ::: callout-tip
@@ -115,3 +123,42 @@ read_csv(here::here("data/raw/your-file-name.csv"))
 Wir empfehlen das R-Paket `here` zu verwenden, um auf Dateien in deinem Projekt zu verweisen. Das `here` R-Paket hilft dabei, den richtigen Dateipfad zu deinen Daten zu finden. Wir werden Dateipfade und das Paket selbst in einem anderen Modul besprechen.
 :::
 
+## Schritt 6: Übertrage deine Änderungen auf GitHub
+
+1. Überprüfe ob dein Projekt den gleichen Aufbau hat wie das Projekt von Rainbow Train: <https://github.com/rstatszh-k009/projekt-rainbow-train>
+
+2. Falls der Aufbau nicht übereinstimmt, nehme nochmals Veränderungen vor.
+
+3. Sobald du den Aufbau abgeschlossen hast, navigiere zum Git-Bereich im Fenster oben rechts.
+
+4. Aktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.
+
+5. Klicke auf die Schaltfläche "Commit".
+
+6. Gib eine Commit-Nachricht in das Feld "Commit Message" ein (z.B. Projekt aufsetzen).
+
+7. Klicke auf die Schaltfläche "Commit". Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.
+
+8. Klicke auf die Schaltfläche "Push".
+
+9. Gib deinen GitHub-Benutzernamen im Feld Username an. 
+
+10. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Password"]{.highlight-yellow} ein.
+
+11. Das Fenster kann geschlossen werden.
+
+## Schritt 7: Eröffne ein Issue auf GitHub
+
+1. Öffne [github.com](https://github.com/) in deinem Browser.
+
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
+
+3. Finde das Repository [projekt-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
+
+4. Klicke auf die Schaltfläche "Issues".
+
+5. Klicke auf die grüne Schaltfläche "New issue".
+
+6. Schreibe in das Feld "Title": "Daten für das Abschlussprojekt ausgewählt".
+
+7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce und hinterlasse mir ein Kommentar, falls du möchtest.
