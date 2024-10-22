@@ -151,7 +151,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 ::: task
 1. Öffne die Kurswebseite: [rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
 
-2. Navigiere zu den Zusatzaufgaben für Modul 5 und öffne Zusatzaufgabe 2: Abschlussprojekt.
+2. Navigiere zu den Zusatzaufgaben für Modul 5 und öffne ["Zusatzaufgabe 2 - Abschlussprojekt - Daten auswählen"](https://rstatszh-k009.github.io/website/zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html).
 
 3. Lies die Anweisungen bis "Arbeitsschritte" und mache dir Notizen.
 
