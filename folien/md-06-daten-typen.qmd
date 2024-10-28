@@ -381,11 +381,7 @@ survey_data_small |>
 
 ```
 
-## Iteration I
-
-TODO
-
-## Ich bin dran: Vektoren und Iteration mit for loops
+## Ich bin dran: Vektoren und Iteration mit for-Schleifen
 
 <br><br>
 
@@ -438,6 +434,44 @@ countdown(minutes = 10)
 ::: footer
 Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
+
+# Sensitive Daten und GitHub
+
+## schützenswerte Daten dürfen nicht auf GitHub
+
+- verletzen die Privatsphäre (z.B. Einzeldaten)
+- sind sicherheitskritisch (z.B. Passwörter)
+- unterliegen Drittrechten (z.B. Copyrights)
+
+## Lösung: `.gitignore`
+
+- Dateien und Verzeichnisse in `.gitignore` eintragen
+- werden nicht auf GitHub hochgeladen
+
+::: {.callout-important}
+## Daten teilen 
+Damit eine Analyse reproduzierbar ist, müssen die Daten für andere zugänglich sein. Die Dateien können auf anderen Wegen geteilt werden, z.B. per E-Mail, USB-Stick, Cloud-Dienst, etc.
+:::
+
+## Informationssicherheit
+
+Folgender Dateipfad enthält Informationen zum Dateisystem und sollte nicht auf GitHub hochgeladen werden:
+
+```{r}
+#| eval: false
+#| echo: true
+read_csv("C:/Users/Lars/Documents/Projekte/projekt-umfrage/daten/umfrage_daten.csv")
+```
+
+Ein guter Weg dies zu vermeiden ist die Verwendung von relativen Pfaden in Kombination mit der `here()` Funktion aus dem gleichnamigen Paket.
+
+Im RStudio Project / GitHub repository mit dem Namen `projekt-umfrage`:
+
+```{r}
+#| eval: false
+#| echo: true
+read_csv(here::here("daten/umfrage_daten.csv"))
+```
 
 # Zusatzaufgaben Modul 6 {background-color="#4C326A"}
 
