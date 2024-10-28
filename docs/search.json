@@ -2139,5 +2139,117 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
+    "href": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Modul 5 - Zusatzaufgabe 3",
+    "text": "Modul 5 - Zusatzaufgabe 3"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#why-care-about-data-types-warum-sind-daten-typen-wichtig",
+    "href": "folien/md-06-daten-typen.html#why-care-about-data-types-warum-sind-daten-typen-wichtig",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Why care about data types? Warum sind Daten Typen wichtig?",
+    "text": "Why care about data types? Warum sind Daten Typen wichtig?\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#beispiel-recycling-umfrage-in-zürich",
+    "href": "folien/md-06-daten-typen.html#beispiel-recycling-umfrage-in-zürich",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Beispiel: Recycling Umfrage in Zürich",
+    "text": "Beispiel: Recycling Umfrage in Zürich\nEine Umfrage zum Recycling-Verhalten in der Stadt Zürich:\n\njob: Was ist dein Berug?\nprice_glass: Welchen monatlichen Betrag wärst du bereit für eine Metall/Glas-Tonne vor deinem Haus zu zahlen?\n\n\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n5-10\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5-10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5\n\n\n\n\n\n\nDaten aus [@benaleya2022researcha]"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#oh-warum-klappt-das-nicht",
+    "href": "folien/md-06-daten-typen.html#oh-warum-klappt-das-nicht",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Oh warum klappt das nicht?!",
+    "text": "Oh warum klappt das nicht?!\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#oh-warum-klappt-das-immernoch-nicht",
+    "href": "folien/md-06-daten-typen.html#oh-warum-klappt-das-immernoch-nicht",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Oh warum klappt das immernoch nicht!!??",
+    "text": "Oh warum klappt das immernoch nicht!!??\n\nsurvey_data_small |&gt; \n  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#atme-tief-durch-und-schau-dir-deine-daten-an",
+    "href": "folien/md-06-daten-typen.html#atme-tief-durch-und-schau-dir-deine-daten-an",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Atme tief durch und schau dir deine Daten an",
+    "text": "Atme tief durch und schau dir deine Daten an\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n5-10\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5-10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#atme-tief-durch-und-schau-dir-deine-daten-an-1",
+    "href": "folien/md-06-daten-typen.html#atme-tief-durch-und-schau-dir-deine-daten-an-1",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Atme tief durch und schau dir deine Daten an",
+    "text": "Atme tief durch und schau dir deine Daten an\n\n\n# A tibble: 22 × 3\n      id job      price_glass\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;      \n 1     1 Student  0          \n 2     2 Retired  0          \n 3     3 Other    0          \n 4     4 Employed 10         \n 5     5 Employed See comment\n 6     6 Student  5-10       \n 7     7 Student  0          \n 8     8 Retired  0          \n 9     9 Student  10         \n10    10 Employed 0          \n# ℹ 12 more rows"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#ein-sehr-typischer-schritt-in-der-datenbereinigung",
+    "href": "folien/md-06-daten-typen.html#ein-sehr-typischer-schritt-in-der-datenbereinigung",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Ein sehr typischer Schritt in der Datenbereinigung!",
+    "text": "Ein sehr typischer Schritt in der Datenbereinigung!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#ein-sehr-typischer-schritt-in-der-datenbereinigung-1",
+    "href": "folien/md-06-daten-typen.html#ein-sehr-typischer-schritt-in-der-datenbereinigung-1",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Ein sehr typischer Schritt in der Datenbereinigung!",
+    "text": "Ein sehr typischer Schritt in der Datenbereinigung!\n\n\n\n\n\n\n\n\n\n\n\nid\njob\nprice_glass_new\nprice_glass\n\n\n\n\n1\nStudent\n0\n0\n\n\n2\nRetired\n0\n0\n\n\n3\nOther\n0\n0\n\n\n4\nEmployed\n10\n10\n\n\n5\nEmployed\nNA\nSee comment\n\n\n6\nStudent\n7.5\n5-10\n\n\n7\nStudent\n0\n0\n\n\n8\nRetired\n0\n0\n\n\n9\nStudent\n10\n10\n\n\n10\nEmployed\n0\n0\n\n\n11\nEmployed\n20\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n10\n\n\n13\nStudent\n10\n10\n\n\n14\nEmployed\n0\n0\n\n\n15\nStudent\n10\n10\n\n\n16\nStudent\n0\n0\n\n\n17\nEmployed\n7.5\n5-10\n\n\n18\nOther\n0\n0\n\n\n19\nStudent\n0\n0\n\n\n20\nEmployed\n10\n10\n\n\n21\nEmployed\n0\n0\n\n\n22\nEmployed\n5\n5"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#summarise-argh",
+    "href": "folien/md-06-daten-typen.html#summarise-argh",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Summarise? Argh!!!!",
+    "text": "Summarise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#respektiere-deine-daten-typen",
+    "href": "folien/md-06-daten-typen.html#respektiere-deine-daten-typen",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Respektiere deine Daten Typen!",
+    "text": "Respektiere deine Daten Typen!\n\n\n\n\n\n\nDen Durchschnitt von einem Vektor mit Typ “character” zu berechnen ist nicht möglich.\n\n\n\n\n\n# A tibble: 22 × 4\n      id job      price_glass price_glass_new\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;          \n 1     1 Student  0           0              \n 2     2 Retired  0           0              \n 3     3 Other    0           0              \n 4     4 Employed 10          10             \n 5     5 Employed See comment &lt;NA&gt;           \n 6     6 Student  5-10        7.5            \n 7     7 Student  0           0              \n 8     8 Retired  0           0              \n 9     9 Student  10          10             \n10    10 Employed 0           0              \n# ℹ 12 more rows"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#respektiere-deine-daten-typen-1",
+    "href": "folien/md-06-daten-typen.html#respektiere-deine-daten-typen-1",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Respektiere deine Daten Typen!",
+    "text": "Respektiere deine Daten Typen!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             4.76"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#iteration-i",
+    "href": "folien/md-06-daten-typen.html#iteration-i",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Iteration I",
+    "text": "Iteration I\nTODO"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#ich-bin-dran-vektoren-und-iteration-mit-for-loops",
+    "href": "folien/md-06-daten-typen.html#ich-bin-dran-vektoren-und-iteration-mit-for-loops",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Ich bin dran: Vektoren und Iteration mit for loops",
+    "text": "Ich bin dran: Vektoren und Iteration mit for loops\n\n\nZurücklehnen und Fragen stellen!\n\n\n\n\n−+\n25:00"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#pause-machen",
+    "href": "folien/md-06-daten-typen.html#pause-machen",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#pause-machen-1",
+    "href": "folien/md-06-daten-typen.html#pause-machen-1",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   }
 ]

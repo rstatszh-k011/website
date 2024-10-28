@@ -26,6 +26,62 @@ library(countdown)
 library(tidyverse)
 library(epoxy)
 library(gapminder)
+library(ggthemes)
+```
+
+```{r}
+# Die Daten werden hier direkt von der URL gelesen. Bei einem Update der Daten
+# wird hier immer auf die aktuellste Version zugegriffen.
+link <- "https://www.web.statistik.zh.ch/ogd/data/bista/ZH_Uebersicht_alle_Lernende.csv"
+
+# Hier wird nun das Objekt "link" genutzt um die CSV zu lesen
+lernende_in <- read_csv(file = link)
+
+lernende <- lernende_in |> 
+    filter(Geschlecht != 2) |> 
+    mutate(Geschlecht = case_when(
+        Geschlecht %in% c("m", "M") ~ "männlich",
+        Geschlecht %in% c("f", "F") ~ "weiblich"
+    )) |> 
+    mutate(Traegerschaft = case_when(
+        Traegerschaft == "oef" ~ "öffentlich",
+        Traegerschaft == "priv" ~ "privat"
+    )) |>
+    mutate(Finanzierung = case_when(
+        Finanzierung == "oef" ~ "öffentlich",
+        Finanzierung == "priv" ~ "privat"))
+
+lernende2022 <- lernende |> 
+    filter(Jahr == max(Jahr))
+
+lernende2022_stufe_staat_sum <- lernende2022 |> 
+    group_by(Stufe, Staatsangehoerigkeit)  |> 
+    summarise(
+        Total = sum(Anzahl)
+    ) |> 
+    mutate(Prozent = Total / sum(Total) * 100) 
+
+```
+
+## Modul 5 - Zusatzaufgabe 3
+
+```{r}
+ggplot(data = lernende2022_stufe_staat_sum,
+       mapping = aes(x = Stufe, 
+                     y = Prozent, 
+                     fill = Staatsangehoerigkeit)) +
+    coord_flip() +
+    geom_col() +
+    geom_text(aes(label = paste0(round(Prozent, 0), "%")),  
+              position = position_stack(vjust = 0.5)) +
+    labs(title = "Lernende im Kanton Zürich ",
+         subtitle = "nach Staatsangehörigkeit und Stufe im Jahr 2022",
+         fill = "Staatsangehörigkeit",
+         caption = "Daten: zh.ch/daten",
+         y = NULL,
+         x = NULL) +
+    theme_minimal() +
+    theme(legend.position = "bottom", panel.grid.major.y = element_blank())
 ```
 
 ## Lernziele (für diese Woche)
@@ -125,7 +181,7 @@ waste_data_tidy <- waste_data_untidy |>
   mutate(percent = weight / sum(weight) * 100)
 
 waste_data_tidy |> 
-  write_rds(here::here("slides/data/intermediate_data/waste-characterisation-lord-of-the-bins-tidy.rds"))
+  write_rds(here::here("folien/daten/processed/waste-characterisation-lord-of-the-bins-tidy.rds"))
 
 ```
 
@@ -355,7 +411,7 @@ countdown(minutes = 10)
 Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# Ihr seid dran: 02-vektor-typen-ihr.qmd
+## Ihr seid dran: 02-vektor-typen-ihr.qmd
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
