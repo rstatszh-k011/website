@@ -2271,7 +2271,7 @@
     "href": "folien/md-06-daten-typen.html#schützenswerte-daten-dürfen-nicht-auf-github",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "schützenswerte Daten dürfen nicht auf GitHub",
-    "text": "schützenswerte Daten dürfen nicht auf GitHub\n\nverletzen die Privatsphäre (z.B. Einzeldaten)\nsind sicherheitskritisch (z.B. Passwörter)\nunterliegen Drittrechten (z.B. Copyrights)"
+    "text": "schützenswerte Daten dürfen nicht auf GitHub\nschützenswerte Daten:\n\nverletzen die Privatsphäre (z.B. Einzeldaten)\nsind sicherheitskritisch (z.B. Passwörter)\nunterliegen Drittrechten (z.B. Copyrights)\n\n\nMehr info: Gesetze über die Information und den Datenschutz (IDG)"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#dateipfade-nicht-ausschreiben",
@@ -2356,5 +2356,12 @@
     "title": "Abschlussprojekt",
     "section": "Fragen? Braucht es Unterstützung?",
     "text": "Fragen? Braucht es Unterstützung?\nDu hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\n\n… eröffne eine Issue."
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#zeitpuffer-modul-6-uebungen-1",
+    "href": "folien/md-06-daten-typen.html#zeitpuffer-modul-6-uebungen-1",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Zeitpuffer: Modul 6 Uebungen",
+    "text": "Zeitpuffer: Modul 6 Uebungen\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\n\n\n−+\n10:00"
   }
 ]

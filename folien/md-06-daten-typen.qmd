@@ -426,7 +426,7 @@ countdown(30)
 ## Zeitpuffer: Modul 6 Uebungen {.smaller}
 
 ::: {.hand-purple-large style="text-align: center;"}
-Kann ich noch etwas zu den Übungen in 02-vektor-typen-ihr.qmd sagen?  
+Kann ich noch etwas zu den Übungen in `02-vektor-typen-ihr.qmd` sagen?  
 :::
 ```{r}
 countdown(15)
@@ -450,9 +450,15 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ## schützenswerte Daten dürfen nicht auf GitHub
 
+schützenswerte Daten:
+
 - verletzen die Privatsphäre (z.B. Einzeldaten)
 - sind sicherheitskritisch (z.B. Passwörter)
 - unterliegen Drittrechten (z.B. Copyrights)
+
+::: footer
+Mehr info: [Gesetze über die Information und den Datenschutz (IDG)](http://www.zhlex.zh.ch/Erlass.html?Open&Ordnr=170.4)
+:::
 
 ## Lösung: `.gitignore`
 
@@ -493,6 +499,15 @@ read_csv(here::here("daten/umfrage_daten.csv"))
 
 ```{r}
 countdown(20)
+```
+
+## Zeitpuffer: Modul 6 Uebungen {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Kann ich noch etwas zum heutigen Modul erklären?
+:::
+```{r}
+countdown(10)
 ```
 
 # Zusatzaufgaben Modul 6 {background-color="#4C326A"}
