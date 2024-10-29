@@ -148,7 +148,7 @@
     "href": "module/md-06.html#folien",
     "title": "Modul 6",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung",
+    "text": "Folien\nZeige Folien im Vollbildmodus an | Download slides as PDF",
     "crumbs": [
       "Modul 06"
     ]
@@ -158,7 +158,7 @@
     "href": "module/md-06.html#lesematerial",
     "title": "Modul 6",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung",
+    "text": "Lesematerial\n\nLies aus dem Buch “What they forgot to teach you about R”: Sektion 3 - Project-oriented workflow”\nLies aus dem Buch “What they forgot to teach you about R”: Sektion 4 - Practice safe paths”\nLies: R for Data Science - Section 9 - Layers",
     "crumbs": [
       "Modul 06"
     ]
@@ -168,7 +168,7 @@
     "href": "module/md-06.html#übungsaufgaben",
     "title": "Modul 6",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\n\nIn Vorbereitung",
+    "text": "Übungsaufgaben\n\nZusatzaufgabe 1: Abschlussprojekt",
     "crumbs": [
       "Modul 06"
     ]
@@ -2335,5 +2335,26 @@
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd",
     "text": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-gitignore-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html",
+    "href": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html",
+    "title": "Abschlussprojekt",
+    "section": "",
+    "text": "Steht das Repository für dein Proejtk? Hast du deine Daten ausgewählt und importiert? Falls nicht, dann gehe nochmals in die Zusatzaufgabe 2 aus Modul 5. Falls ja, dann kannst du nun etwas Zeit damit verbringen die Daten zu bereinigen, erste Fragen an den Datensatz zu stellen und diese mittels Visualisierungen, und Tabellen mit zusammenfassenden Statistiken zu beantworten."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html#anforderungen",
+    "href": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html#anforderungen",
+    "title": "Abschlussprojekt",
+    "section": "Anforderungen",
+    "text": "Anforderungen\nDu bekommst von mir noch eine detaillierte Liste über die Anforderungen an das Abschlussprojekt, aber du kannst bereits jetzt an den folgenden Punkten arbeiten:\n\nDaten Visualierung\n\n\nDer Bericht enthält mindestens eine Datenvisualisierungen.\nJede Datenvisualisierung enthält bearbeitete menschenlesbare Beschriftungen (z.B. Achsenbeschriftungen, Legendentitel).\nJede Datenvisualisierung verwendet mindestens eine Skalierungsfunktion (z.B. Farbe/Füllung, Achsen).\n\n\nTabellen\n\n\nDer Bericht enthält mindestens eine Tabelle mit deskriptiven Statistiken (z.B. Anzahl, Mittelwert, Median, Standardabweichung usw.)."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html#fragen-braucht-es-unterstützung",
+    "href": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html#fragen-braucht-es-unterstützung",
+    "title": "Abschlussprojekt",
+    "section": "Fragen? Braucht es Unterstützung?",
+    "text": "Fragen? Braucht es Unterstützung?\nDu hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\n\n… eröffne eine Issue."
   }
 ]
