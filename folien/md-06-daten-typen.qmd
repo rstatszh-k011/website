@@ -63,9 +63,15 @@ lernende2022_stufe_staat_sum <- lernende2022 |>
 
 ```
 
-## Modul 5 - Zusatzaufgabe 3
+## Modul 5 - Zusatzaufgabe 3 {.smallest}
 
 ```{r}
+#| fig-width: 6
+#| fig-asp: 0.618
+#| echo: true
+#| output-location: column
+#| code-line-numbers: "|1-6|7-8|9-14|15-17"
+
 ggplot(data = lernende2022_stufe_staat_sum,
        mapping = aes(x = Stufe, 
                      y = Prozent, 
@@ -81,7 +87,8 @@ ggplot(data = lernende2022_stufe_staat_sum,
          y = NULL,
          x = NULL) +
     theme_minimal() +
-    theme(legend.position = "bottom", panel.grid.major.y = element_blank())
+    theme(legend.position = "bottom", 
+          panel.grid.major.y = element_blank())
 ```
 
 ## Lernziele (für diese Woche)
@@ -246,19 +253,14 @@ waste_data_tidy |>
 
 Eine Umfrage zum Recycling-Verhalten in der Stadt Zürich:
 
-- `job`: Was ist dein Berug?
+- `job`: Was ist dein Beruf?
 - `price_glass`: Welchen monatlichen Betrag wärst du bereit für eine Metall/Glas-Tonne vor deinem Haus zu zahlen? 
-- 
 
 ```{r}
 #| echo: false
 survey_data_small |> 
   knitr::kable()
 ```
-
-::: footer
-Daten aus [@benaleya2022researcha]
-:::
 
 ## Oh warum klappt das nicht?! 
 
@@ -284,7 +286,7 @@ survey_data_small |>
   knitr::kable()
 ```
 
-## Atme tief durch und schau dir deine Daten an {.smaller .scrollable}
+## Atme tief durch und schau dir deine Daten an 
 
 ```{r}
 #| echo: false
@@ -390,7 +392,7 @@ Zurücklehnen und Fragen stellen!
 :::
 
 ```{r}
-countdown(minutes = 25)
+countdown(minutes = 30)
 ```
 
 ## Pause machen
@@ -407,18 +409,27 @@ countdown(minutes = 10)
 Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-## Ihr seid dran: 02-vektor-typen-ihr.qmd
+## Ihr seid dran: `02-vektor-typen-ihr.qmd`
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
 2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
-3.  Klicke auf [Start]{.highlight-yellow} neben [md-05-uebungen]{.highlight-yellow}.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-06-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-vektor-typen-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5.  Folge den Anweisungen in der Datei.
 :::
 
 ```{r}
-countdown(35)
+countdown(30)
+```
+
+## Zeitpuffer: Modul 6 Uebungen {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Kann ich noch etwas zu den Übungen in 02-vektor-typen-ihr.qmd sagen?  
+:::
+```{r}
+countdown(15)
 ```
 
 ## Pause machen
@@ -428,14 +439,14 @@ countdown(35)
 ![](img/md-04/pixel-art-tree.png){width="50%"}
 
 ```{r}
-countdown(minutes = 10)
+countdown(minutes = 5)
 ```
 
 ::: footer
 Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# Sensitive Daten und GitHub
+# Sensitive Daten und GitHub {background-color="#4C326A"}
 
 ## schützenswerte Daten dürfen nicht auf GitHub
 
@@ -453,24 +464,35 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 Damit eine Analyse reproduzierbar ist, müssen die Daten für andere zugänglich sein. Die Dateien können auf anderen Wegen geteilt werden, z.B. per E-Mail, USB-Stick, Cloud-Dienst, etc.
 :::
 
-## Informationssicherheit
+## Informationssicherheit {.small}
 
 Folgender Dateipfad enthält Informationen zum Dateisystem und sollte nicht auf GitHub hochgeladen werden:
 
 ```{r}
 #| eval: false
 #| echo: true
-read_csv("C:/Users/Lars/Documents/Projekte/projekt-umfrage/daten/umfrage_daten.csv")
+read_csv("C:/Users/Lars/Documents/projekt-umfrage/daten/umfrage_daten.csv")
 ```
 
-Ein guter Weg dies zu vermeiden ist die Verwendung von relativen Pfaden in Kombination mit der `here()` Funktion aus dem gleichnamigen Paket.
-
-Im RStudio Project / GitHub repository mit dem Namen `projekt-umfrage`:
+Ein guter Weg dies zu vermeiden ist die Verwendung von relativen Pfaden in Kombination mit der `here()` Funktion aus dem gleichnamigen R-Paket `here`. Im RStudio Project / GitHub Repository mit dem Namen `projekt-umfrage`:
 
 ```{r}
 #| eval: false
 #| echo: true
 read_csv(here::here("daten/umfrage_daten.csv"))
+```
+
+## Wir sind dran: `03-gitignore-wir.qmd` & `docs/04-dateipfade.qmd`
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-06-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei [`03-gitignore-wir.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+:::
+
+```{r}
+countdown(20)
 ```
 
 # Zusatzaufgaben Modul 6 {background-color="#4C326A"}

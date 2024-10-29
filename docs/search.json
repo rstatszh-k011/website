@@ -2145,7 +2145,7 @@
     "href": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Modul 5 - Zusatzaufgabe 3",
-    "text": "Modul 5 - Zusatzaufgabe 3"
+    "text": "Modul 5 - Zusatzaufgabe 3\n\n\nggplot(data = lernende2022_stufe_staat_sum,\n       mapping = aes(x = Stufe, \n                     y = Prozent, \n                     fill = Staatsangehoerigkeit)) +\n    coord_flip() +\n    geom_col() +\n    geom_text(aes(label = paste0(round(Prozent, 0), \"%\")),  \n              position = position_stack(vjust = 0.5)) +\n    labs(title = \"Lernende im Kanton Zürich \",\n         subtitle = \"nach Staatsangehörigkeit und Stufe im Jahr 2022\",\n         fill = \"Staatsangehörigkeit\",\n         caption = \"Daten: zh.ch/daten\",\n         y = NULL,\n         x = NULL) +\n    theme_minimal() +\n    theme(legend.position = \"bottom\", \n          panel.grid.major.y = element_blank())"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#why-care-about-data-types-warum-sind-daten-typen-wichtig",
@@ -2159,7 +2159,7 @@
     "href": "folien/md-06-daten-typen.html#beispiel-recycling-umfrage-in-zürich",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Beispiel: Recycling Umfrage in Zürich",
-    "text": "Beispiel: Recycling Umfrage in Zürich\nEine Umfrage zum Recycling-Verhalten in der Stadt Zürich:\n\njob: Was ist dein Berug?\nprice_glass: Welchen monatlichen Betrag wärst du bereit für eine Metall/Glas-Tonne vor deinem Haus zu zahlen?\n\n\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n5-10\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5-10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5\n\n\n\n\n\n\nDaten aus [@benaleya2022researcha]"
+    "text": "Beispiel: Recycling Umfrage in Zürich\nEine Umfrage zum Recycling-Verhalten in der Stadt Zürich:\n\njob: Was ist dein Beruf?\nprice_glass: Welchen monatlichen Betrag wärst du bereit für eine Metall/Glas-Tonne vor deinem Haus zu zahlen?\n\n\n\n\n\n\nid\njob\nprice_glass\n\n\n\n\n1\nStudent\n0\n\n\n2\nRetired\n0\n\n\n3\nOther\n0\n\n\n4\nEmployed\n10\n\n\n5\nEmployed\nSee comment\n\n\n6\nStudent\n5-10\n\n\n7\nStudent\n0\n\n\n8\nRetired\n0\n\n\n9\nStudent\n10\n\n\n10\nEmployed\n0\n\n\n11\nEmployed\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n\n\n13\nStudent\n10\n\n\n14\nEmployed\n0\n\n\n15\nStudent\n10\n\n\n16\nStudent\n0\n\n\n17\nEmployed\n5-10\n\n\n18\nOther\n0\n\n\n19\nStudent\n0\n\n\n20\nEmployed\n10\n\n\n21\nEmployed\n0\n\n\n22\nEmployed\n5"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#oh-warum-klappt-das-nicht",
@@ -2250,21 +2250,21 @@
     "href": "folien/md-06-daten-typen.html#pause-machen-1",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#ich-bin-dran-vektoren-und-iteration-mit-for-schleifen",
     "href": "folien/md-06-daten-typen.html#ich-bin-dran-vektoren-und-iteration-mit-for-schleifen",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Ich bin dran: Vektoren und Iteration mit for-Schleifen",
-    "text": "Ich bin dran: Vektoren und Iteration mit for-Schleifen\n\n\nZurücklehnen und Fragen stellen!\n\n\n\n\n−+\n25:00"
+    "text": "Ich bin dran: Vektoren und Iteration mit for-Schleifen\n\n\nZurücklehnen und Fragen stellen!\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#ihr-seid-dran-02-vektor-typen-ihr.qmd",
     "href": "folien/md-06-daten-typen.html#ihr-seid-dran-02-vektor-typen-ihr.qmd",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Ihr seid dran: 02-vektor-typen-ihr.qmd",
-    "text": "Ihr seid dran: 02-vektor-typen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-vektor-typen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n35:00"
+    "text": "Ihr seid dran: 02-vektor-typen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-vektor-typen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#schützenswerte-daten-dürfen-nicht-auf-github",
@@ -2292,6 +2292,48 @@
     "href": "folien/md-06-daten-typen.html#informationssicherheit",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Informationssicherheit",
-    "text": "Informationssicherheit\nFolgender Dateipfad enthält Informationen zum Dateisystem und sollte nicht auf GitHub hochgeladen werden:\n\nread_csv(\"C:/Users/Lars/Documents/Projekte/projekt-umfrage/daten/umfrage_daten.csv\")\n\nEin guter Weg dies zu vermeiden ist die Verwendung von relativen Pfaden in Kombination mit der here() Funktion aus dem gleichnamigen Paket.\nIm RStudio Project / GitHub repository mit dem Namen projekt-umfrage:\n\nread_csv(here::here(\"daten/umfrage_daten.csv\"))"
+    "text": "Informationssicherheit\nFolgender Dateipfad enthält Informationen zum Dateisystem und sollte nicht auf GitHub hochgeladen werden:\n\nread_csv(\"C:/Users/Lars/Documents/projekt-umfrage/daten/umfrage_daten.csv\")\n\nEin guter Weg dies zu vermeiden ist die Verwendung von relativen Pfaden in Kombination mit der here() Funktion aus dem gleichnamigen R-Paket here. Im RStudio Project / GitHub Repository mit dem Namen projekt-umfrage:\n\nread_csv(here::here(\"daten/umfrage_daten.csv\"))"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3-output",
+    "href": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3-output",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Modul 5 - Zusatzaufgabe 3",
+    "text": "Modul 5 - Zusatzaufgabe 3"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#atme-tief-durch-und-schau-dir-deine-daten-an--scrollable",
+    "href": "folien/md-06-daten-typen.html#atme-tief-durch-und-schau-dir-deine-daten-an--scrollable",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Atme tief durch und schau dir deine Daten an {-scrollable}",
+    "text": "Atme tief durch und schau dir deine Daten an {-scrollable}\n\n\n# A tibble: 22 × 3\n      id job      price_glass\n   &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;      \n 1     1 Student  0          \n 2     2 Retired  0          \n 3     3 Other    0          \n 4     4 Employed 10         \n 5     5 Employed See comment\n 6     6 Student  5-10       \n 7     7 Student  0          \n 8     8 Retired  0          \n 9     9 Student  10         \n10    10 Employed 0          \n# ℹ 12 more rows"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#zeitpuffer-modul-6-uebungen",
+    "href": "folien/md-06-daten-typen.html#zeitpuffer-modul-6-uebungen",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Zeitpuffer: Modul 6 Uebungen",
+    "text": "Zeitpuffer: Modul 6 Uebungen\n\nKann ich noch etwas zu den Übungen in 02-vektor-typen-ihr.qmd sagen?\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#wir-sind-dran-md-06-uebungen",
+    "href": "folien/md-06-daten-typen.html#wir-sind-dran-md-06-uebungen",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Wir sind dran: md-06-uebungen",
+    "text": "Wir sind dran: md-06-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#wir-sind-dran-03-gitignore-wir.qmd",
+    "href": "folien/md-06-daten-typen.html#wir-sind-dran-03-gitignore-wir.qmd",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Wir sind dran: 03-gitignore-wir.qmd",
+    "text": "Wir sind dran: 03-gitignore-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-gitignore-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "folien/md-06-daten-typen.html#wir-sind-dran-03-gitignore-wir.qmd-docs04-dateipfade.qmd",
+    "href": "folien/md-06-daten-typen.html#wir-sind-dran-03-gitignore-wir.qmd-docs04-dateipfade.qmd",
+    "title": "Daten Typen & Vektoren & For Loops",
+    "section": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd",
+    "text": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-gitignore-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   }
 ]
