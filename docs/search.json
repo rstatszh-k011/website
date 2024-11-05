@@ -1588,7 +1588,7 @@
     "href": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzepters widergeben.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzeptes widergeben."
   },
   {
     "objectID": "folien/md-07-daten-formen.html#modul-7-dokumentation",
@@ -2320,7 +2320,7 @@
     "href": "folien/md-07-daten-formen.html#ihr-seid-dran-01-treibhausgase-ihr.qmd",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Ihr seid dran: 01-treibhausgase-ihr.qmd",
-    "text": "Ihr seid dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
+    "text": "Ihr seid dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#daten-struktur-treibhausgase",
@@ -2382,8 +2382,8 @@
     "objectID": "folien/md-07-daten-formen.html#wie-wirds-gemacht",
     "href": "folien/md-07-daten-formen.html#wie-wirds-gemacht",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
-    "section": "Wie wird’s gemacht",
-    "text": "Wie wird’s gemacht\n\nghg\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJahr\nStrom\nKerosin\nDiesel\nBenzin\nHolz_UW_BG_SK\nFernwaerme\nErdgas\nHeizoel_EL\n\n\n\n\n1990\n0.324\n0.638\n0.418\n1.087\n0.021\n0.228\n1.015\n2.445\n\n\n1991\n0.292\n0.614\n0.415\n1.081\n0.020\n0.227\n1.037\n2.338\n\n\n1992\n0.263\n0.637\n0.418\n1.083\n0.020\n0.229\n1.071\n2.258\n\n\n1993\n0.243\n0.651\n0.419\n1.093\n0.020\n0.232\n1.108\n2.185\n\n\n1994\n0.229\n0.661\n0.416\n1.099\n0.020\n0.234\n1.143\n2.109\n\n\n1995\n0.242\n0.689\n0.415\n1.102\n0.020\n0.237\n1.178\n2.033\n\n\n1996\n0.256\n0.706\n0.415\n1.112\n0.021\n0.240\n1.217\n1.963\n\n\n1997\n0.397\n0.730\n0.417\n1.118\n0.021\n0.243\n1.256\n1.892\n\n\n1998\n0.539\n0.759\n0.418\n1.115\n0.021\n0.245\n1.290\n1.813\n\n\n1999\n0.667\n0.803\n0.422\n1.107\n0.020\n0.246\n1.319\n1.728\n\n\n2000\n0.790\n0.833\n0.432\n1.095\n0.021\n0.248\n1.353\n1.650\n\n\n2001\n1.091\n0.782\n0.445\n1.080\n0.019\n0.250\n1.450\n1.189\n\n\n2002\n1.381\n0.719\n0.453\n1.057\n0.019\n0.251\n1.374\n1.498\n\n\n2003\n1.169\n0.642\n0.470\n1.032\n0.018\n0.286\n1.490\n1.317\n\n\n2004\n0.954\n0.601\n0.486\n1.003\n0.019\n0.298\n1.508\n1.305\n\n\n2005\n0.170\n0.605\n0.503\n0.970\n0.020\n0.300\n1.602\n1.281\n\n\n2006\n0.176\n0.629\n0.504\n0.889\n0.019\n0.255\n1.450\n1.425\n\n\n2007\n0.176\n0.665\n0.508\n0.809\n0.017\n0.218\n1.347\n1.210\n\n\n2008\n0.180\n0.701\n0.507\n0.738\n0.018\n0.243\n1.409\n1.155\n\n\n2009\n0.183\n0.666\n0.516\n0.683\n0.020\n0.227\n1.261\n1.246\n\n\n2010\n0.179\n0.671\n0.519\n0.639\n0.024\n0.250\n1.321\n1.255\n\n\n2011\n0.180\n0.708\n0.508\n0.621\n0.020\n0.145\n1.323\n1.205\n\n\n2012\n0.185\n0.717\n0.565\n0.596\n0.028\n0.181\n1.342\n1.252\n\n\n2013\n0.195\n0.720\n0.590\n0.573\n0.036\n0.222\n1.301\n1.170\n\n\n2014\n0.346\n0.716\n0.597\n0.545\n0.035\n0.142\n1.166\n0.922\n\n\n2015\n0.398\n0.732\n0.607\n0.491\n0.038\n0.181\n1.156\n0.867\n\n\n2016\n0.460\n0.750\n0.651\n0.479\n0.059\n0.197\n1.253\n0.896"
+    "section": "Wie wird’s gemacht?",
+    "text": "Wie wird’s gemacht?\n\nghg\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJahr\nStrom\nKerosin\nDiesel\nBenzin\nHolz_UW_BG_SK\nFernwaerme\nErdgas\nHeizoel_EL\n\n\n\n\n1990\n0.324\n0.638\n0.418\n1.087\n0.021\n0.228\n1.015\n2.445\n\n\n1991\n0.292\n0.614\n0.415\n1.081\n0.020\n0.227\n1.037\n2.338\n\n\n1992\n0.263\n0.637\n0.418\n1.083\n0.020\n0.229\n1.071\n2.258\n\n\n1993\n0.243\n0.651\n0.419\n1.093\n0.020\n0.232\n1.108\n2.185\n\n\n1994\n0.229\n0.661\n0.416\n1.099\n0.020\n0.234\n1.143\n2.109\n\n\n1995\n0.242\n0.689\n0.415\n1.102\n0.020\n0.237\n1.178\n2.033\n\n\n1996\n0.256\n0.706\n0.415\n1.112\n0.021\n0.240\n1.217\n1.963\n\n\n1997\n0.397\n0.730\n0.417\n1.118\n0.021\n0.243\n1.256\n1.892\n\n\n1998\n0.539\n0.759\n0.418\n1.115\n0.021\n0.245\n1.290\n1.813\n\n\n1999\n0.667\n0.803\n0.422\n1.107\n0.020\n0.246\n1.319\n1.728\n\n\n2000\n0.790\n0.833\n0.432\n1.095\n0.021\n0.248\n1.353\n1.650\n\n\n2001\n1.091\n0.782\n0.445\n1.080\n0.019\n0.250\n1.450\n1.189\n\n\n2002\n1.381\n0.719\n0.453\n1.057\n0.019\n0.251\n1.374\n1.498\n\n\n2003\n1.169\n0.642\n0.470\n1.032\n0.018\n0.286\n1.490\n1.317\n\n\n2004\n0.954\n0.601\n0.486\n1.003\n0.019\n0.298\n1.508\n1.305\n\n\n2005\n0.170\n0.605\n0.503\n0.970\n0.020\n0.300\n1.602\n1.281\n\n\n2006\n0.176\n0.629\n0.504\n0.889\n0.019\n0.255\n1.450\n1.425\n\n\n2007\n0.176\n0.665\n0.508\n0.809\n0.017\n0.218\n1.347\n1.210\n\n\n2008\n0.180\n0.701\n0.507\n0.738\n0.018\n0.243\n1.409\n1.155\n\n\n2009\n0.183\n0.666\n0.516\n0.683\n0.020\n0.227\n1.261\n1.246\n\n\n2010\n0.179\n0.671\n0.519\n0.639\n0.024\n0.250\n1.321\n1.255\n\n\n2011\n0.180\n0.708\n0.508\n0.621\n0.020\n0.145\n1.323\n1.205\n\n\n2012\n0.185\n0.717\n0.565\n0.596\n0.028\n0.181\n1.342\n1.252\n\n\n2013\n0.195\n0.720\n0.590\n0.573\n0.036\n0.222\n1.301\n1.170\n\n\n2014\n0.346\n0.716\n0.597\n0.545\n0.035\n0.142\n1.166\n0.922\n\n\n2015\n0.398\n0.732\n0.607\n0.491\n0.038\n0.181\n1.156\n0.867\n\n\n2016\n0.460\n0.750\n0.651\n0.479\n0.059\n0.197\n1.253\n0.896"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#how-to",
@@ -2418,7 +2418,7 @@
     "href": "folien/md-07-daten-formen.html#wir-sind-dran-01-treibhausgase-ihr.qmd",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Wir sind dran: 01-treibhausgase-ihr.qmd",
-    "text": "Wir sind dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n15:00"
+    "text": "Wir sind dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#eigenschaften-von-tidy-data",
@@ -2657,5 +2657,19 @@
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Ihr seid dran: 02-joins-ihr.qmd",
     "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#mit-mehreren-dataframes-arbeiten",
+    "href": "folien/md-07-daten-formen.html#mit-mehreren-dataframes-arbeiten",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Mit mehreren Dataframes arbeiten",
+    "text": "Mit mehreren Dataframes arbeiten\nWir haben mehrere Dataframes und wollen diese zusammenbringen:\n\nprofessions &lt;- read_csv(\"daten/scientists/professions.csv\")\ndates &lt;- read_csv(\"daten/scientists/dates.csv\")\nworks &lt;- read_csv(\"daten/scientists/works.csv\")"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#pause-machen-1",
+    "href": "folien/md-07-daten-formen.html#pause-machen-1",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   }
 ]

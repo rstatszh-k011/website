@@ -77,7 +77,7 @@ ghg_long <- ghg |>
 :::
 
 ```{r}
-countdown(30)
+countdown(20)
 ```
 
 ## Daten-Struktur: Treibhausgase {.smallest .scrollable}
@@ -161,8 +161,7 @@ ggplot(data = ghg_long,
     theme_minimal()
 ```
 
-## Wie wird's gemacht {.smaller .scrollable auto-animate="true"} 
-
+## Wie wird's gemacht? {.smaller .scrollable auto-animate="true"} 
 
 ```{r}
 #| echo: true
@@ -175,7 +174,6 @@ ghg
 ghg |> 
     knitr::kable()
 ```
-
 
 ## Wie wird's gemacht?  {.smaller .scrollable auto-animate="true"}
 
@@ -232,34 +230,7 @@ ggplot(data = ghg_long,
     theme_minimal()
 ```
 
-## Pause machen
-
-[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
-
-![](img/md-04/pixel-art-tree.png){width="50%"}
-
-```{r}
-countdown(minutes = 10)
-```
-
-::: footer
-Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
-:::
-
-## Wir sind dran: `01-treibhausgase-ihr.qmd`
-
-::: task
-1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
-3. Klicke auf [Continue]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
-4. Suche im Dateimanager im Fenster unten rechts die Datei [`01-treibhausgase-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
-:::
-
-```{r}
-countdown(15)
-```
-
-# Tidy data
+# Tidy data {background-color="#4C326A"}
 
 ## Eigenschaften von Tidy data
 
@@ -432,11 +403,38 @@ Siehe OGD Leitlinien für Hinweis auf Tidy Data: <https://github.com/openZH/ogd-
 :::
 
 
-# Mit mehreren Dataframes arbeiten 
+## Pause machen
 
-## Wir...
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
 
-...haben mehrere Dataframes und wollen diese zusammenbringen
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Wir sind dran: `01-treibhausgase-ihr.qmd`
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei [`01-treibhausgase-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+:::
+
+```{r}
+countdown(25)
+```
+
+# Teil 2: Daten zusammenfügen {background-color="#4C326A"}
+
+## Mit mehreren Dataframes arbeiten 
+
+Wir haben mehrere Dataframes und wollen diese zusammenbringen:
 
 ```{r}
 #| echo: false
@@ -751,6 +749,20 @@ professions |>
  
 ```
 
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 5)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
 ## Ihr seid dran: `02-joins-ihr.qmd`
 
 ::: task
@@ -773,8 +785,6 @@ Kann ich noch etwas zum heutigen Modul erklären?
 ```{r}
 countdown(10)
 ```
-
-
 
 # Zusatzaufgaben Modul 7 {background-color="#4C326A"}
 
