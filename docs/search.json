@@ -1588,7 +1588,7 @@
     "href": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzepters widergeben."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzepters widergeben.\nDie Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten."
   },
   {
     "objectID": "folien/md-07-daten-formen.html#modul-7-dokumentation",
@@ -2314,5 +2314,236 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#ihr-seid-dran-01-treibhausgase-ihr.qmd",
+    "href": "folien/md-07-daten-formen.html#ihr-seid-dran-01-treibhausgase-ihr.qmd",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Ihr seid dran: 01-treibhausgase-ihr.qmd",
+    "text": "Ihr seid dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#daten-struktur-treibhausgase",
+    "href": "folien/md-07-daten-formen.html#daten-struktur-treibhausgase",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Daten-Struktur: Treibhausgase",
+    "text": "Daten-Struktur: Treibhausgase\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJahr\nStrom\nKerosin\nDiesel\nBenzin\nHolz_UW_BG_SK\nFernwaerme\nErdgas\nHeizoel_EL\n\n\n\n\n1990\n0.324\n0.638\n0.418\n1.087\n0.021\n0.228\n1.015\n2.445\n\n\n1991\n0.292\n0.614\n0.415\n1.081\n0.020\n0.227\n1.037\n2.338\n\n\n1992\n0.263\n0.637\n0.418\n1.083\n0.020\n0.229\n1.071\n2.258\n\n\n1993\n0.243\n0.651\n0.419\n1.093\n0.020\n0.232\n1.108\n2.185\n\n\n1994\n0.229\n0.661\n0.416\n1.099\n0.020\n0.234\n1.143\n2.109\n\n\n1995\n0.242\n0.689\n0.415\n1.102\n0.020\n0.237\n1.178\n2.033\n\n\n1996\n0.256\n0.706\n0.415\n1.112\n0.021\n0.240\n1.217\n1.963\n\n\n1997\n0.397\n0.730\n0.417\n1.118\n0.021\n0.243\n1.256\n1.892\n\n\n1998\n0.539\n0.759\n0.418\n1.115\n0.021\n0.245\n1.290\n1.813\n\n\n1999\n0.667\n0.803\n0.422\n1.107\n0.020\n0.246\n1.319\n1.728\n\n\n2000\n0.790\n0.833\n0.432\n1.095\n0.021\n0.248\n1.353\n1.650\n\n\n2001\n1.091\n0.782\n0.445\n1.080\n0.019\n0.250\n1.450\n1.189\n\n\n2002\n1.381\n0.719\n0.453\n1.057\n0.019\n0.251\n1.374\n1.498\n\n\n2003\n1.169\n0.642\n0.470\n1.032\n0.018\n0.286\n1.490\n1.317\n\n\n2004\n0.954\n0.601\n0.486\n1.003\n0.019\n0.298\n1.508\n1.305\n\n\n2005\n0.170\n0.605\n0.503\n0.970\n0.020\n0.300\n1.602\n1.281\n\n\n2006\n0.176\n0.629\n0.504\n0.889\n0.019\n0.255\n1.450\n1.425\n\n\n2007\n0.176\n0.665\n0.508\n0.809\n0.017\n0.218\n1.347\n1.210\n\n\n2008\n0.180\n0.701\n0.507\n0.738\n0.018\n0.243\n1.409\n1.155\n\n\n2009\n0.183\n0.666\n0.516\n0.683\n0.020\n0.227\n1.261\n1.246\n\n\n2010\n0.179\n0.671\n0.519\n0.639\n0.024\n0.250\n1.321\n1.255\n\n\n2011\n0.180\n0.708\n0.508\n0.621\n0.020\n0.145\n1.323\n1.205\n\n\n2012\n0.185\n0.717\n0.565\n0.596\n0.028\n0.181\n1.342\n1.252\n\n\n2013\n0.195\n0.720\n0.590\n0.573\n0.036\n0.222\n1.301\n1.170\n\n\n2014\n0.346\n0.716\n0.597\n0.545\n0.035\n0.142\n1.166\n0.922\n\n\n2015\n0.398\n0.732\n0.607\n0.491\n0.038\n0.181\n1.156\n0.867\n\n\n2016\n0.460\n0.750\n0.651\n0.479\n0.059\n0.197\n1.253\n0.896"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#wie-würdest-du-dieses-diagramm-erstellen",
+    "href": "folien/md-07-daten-formen.html#wie-würdest-du-dieses-diagramm-erstellen",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Wie würdest du dieses Diagramm erstellen?",
+    "text": "Wie würdest du dieses Diagramm erstellen?"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#zwei-variablen",
+    "href": "folien/md-07-daten-formen.html#zwei-variablen",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Zwei Variablen",
+    "text": "Zwei Variablen\n\n\n# A tibble: 27 × 2\n    Jahr Erdgas\n   &lt;dbl&gt;  &lt;dbl&gt;\n 1  1990   1.01\n 2  1991   1.04\n 3  1992   1.07\n 4  1993   1.11\n 5  1994   1.14\n 6  1995   1.18\n 7  1996   1.22\n 8  1997   1.26\n 9  1998   1.29\n10  1999   1.32\n# ℹ 17 more rows"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#zwei-variablen---zwei-visuelle-eigenschaften-aesthetics",
+    "href": "folien/md-07-daten-formen.html#zwei-variablen---zwei-visuelle-eigenschaften-aesthetics",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Zwei Variablen -> Zwei visuelle Eigenschaften (aesthetics)",
+    "text": "Zwei Variablen -&gt; Zwei visuelle Eigenschaften (aesthetics)\n\nggplot(data = ghg,\n       mapping = aes(x = Jahr, y = Erdgas)) +\n    geom_line() +\n    theme_minimal()"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#wie-würdest-du-dieses-diagramm-erstellen-1",
+    "href": "folien/md-07-daten-formen.html#wie-würdest-du-dieses-diagramm-erstellen-1",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Wie würdest du dieses Diagramm erstellen?",
+    "text": "Wie würdest du dieses Diagramm erstellen?"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#daten-sind-in-einem-breitem-format",
+    "href": "folien/md-07-daten-formen.html#daten-sind-in-einem-breitem-format",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Daten sind in einem breitem Format",
+    "text": "Daten sind in einem breitem Format\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJahr\nStrom\nKerosin\nDiesel\nBenzin\nHolz_UW_BG_SK\nFernwaerme\nErdgas\nHeizoel_EL\n\n\n\n\n1990\n0.324\n0.638\n0.418\n1.087\n0.021\n0.228\n1.015\n2.445\n\n\n1991\n0.292\n0.614\n0.415\n1.081\n0.020\n0.227\n1.037\n2.338\n\n\n1992\n0.263\n0.637\n0.418\n1.083\n0.020\n0.229\n1.071\n2.258\n\n\n1993\n0.243\n0.651\n0.419\n1.093\n0.020\n0.232\n1.108\n2.185\n\n\n1994\n0.229\n0.661\n0.416\n1.099\n0.020\n0.234\n1.143\n2.109\n\n\n1995\n0.242\n0.689\n0.415\n1.102\n0.020\n0.237\n1.178\n2.033\n\n\n1996\n0.256\n0.706\n0.415\n1.112\n0.021\n0.240\n1.217\n1.963\n\n\n1997\n0.397\n0.730\n0.417\n1.118\n0.021\n0.243\n1.256\n1.892\n\n\n1998\n0.539\n0.759\n0.418\n1.115\n0.021\n0.245\n1.290\n1.813\n\n\n1999\n0.667\n0.803\n0.422\n1.107\n0.020\n0.246\n1.319\n1.728\n\n\n2000\n0.790\n0.833\n0.432\n1.095\n0.021\n0.248\n1.353\n1.650\n\n\n2001\n1.091\n0.782\n0.445\n1.080\n0.019\n0.250\n1.450\n1.189\n\n\n2002\n1.381\n0.719\n0.453\n1.057\n0.019\n0.251\n1.374\n1.498\n\n\n2003\n1.169\n0.642\n0.470\n1.032\n0.018\n0.286\n1.490\n1.317\n\n\n2004\n0.954\n0.601\n0.486\n1.003\n0.019\n0.298\n1.508\n1.305\n\n\n2005\n0.170\n0.605\n0.503\n0.970\n0.020\n0.300\n1.602\n1.281\n\n\n2006\n0.176\n0.629\n0.504\n0.889\n0.019\n0.255\n1.450\n1.425\n\n\n2007\n0.176\n0.665\n0.508\n0.809\n0.017\n0.218\n1.347\n1.210\n\n\n2008\n0.180\n0.701\n0.507\n0.738\n0.018\n0.243\n1.409\n1.155\n\n\n2009\n0.183\n0.666\n0.516\n0.683\n0.020\n0.227\n1.261\n1.246\n\n\n2010\n0.179\n0.671\n0.519\n0.639\n0.024\n0.250\n1.321\n1.255\n\n\n2011\n0.180\n0.708\n0.508\n0.621\n0.020\n0.145\n1.323\n1.205\n\n\n2012\n0.185\n0.717\n0.565\n0.596\n0.028\n0.181\n1.342\n1.252\n\n\n2013\n0.195\n0.720\n0.590\n0.573\n0.036\n0.222\n1.301\n1.170\n\n\n2014\n0.346\n0.716\n0.597\n0.545\n0.035\n0.142\n1.166\n0.922\n\n\n2015\n0.398\n0.732\n0.607\n0.491\n0.038\n0.181\n1.156\n0.867\n\n\n2016\n0.460\n0.750\n0.651\n0.479\n0.059\n0.197\n1.253\n0.896"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#du-brauchst-ein-langes-format",
+    "href": "folien/md-07-daten-formen.html#du-brauchst-ein-langes-format",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Du brauchst: ein langes Format",
+    "text": "Du brauchst: ein langes Format\n\n\n\n\n\nJahr\nEnergietraeger\nEmissionen\n\n\n\n\n1990\nStrom\n0.324\n\n\n1990\nKerosin\n0.638\n\n\n1990\nDiesel\n0.418\n\n\n1990\nBenzin\n1.087\n\n\n1990\nHolz_UW_BG_SK\n0.021\n\n\n1990\nFernwaerme\n0.228\n\n\n1990\nErdgas\n1.015\n\n\n1990\nHeizoel_EL\n2.445\n\n\n1991\nStrom\n0.292\n\n\n1991\nKerosin\n0.614\n\n\n1991\nDiesel\n0.415\n\n\n1991\nBenzin\n1.081\n\n\n1991\nHolz_UW_BG_SK\n0.020\n\n\n1991\nFernwaerme\n0.227\n\n\n1991\nErdgas\n1.037\n\n\n1991\nHeizoel_EL\n2.338\n\n\n1992\nStrom\n0.263\n\n\n1992\nKerosin\n0.637\n\n\n1992\nDiesel\n0.418\n\n\n1992\nBenzin\n1.083\n\n\n1992\nHolz_UW_BG_SK\n0.020\n\n\n1992\nFernwaerme\n0.229\n\n\n1992\nErdgas\n1.071\n\n\n1992\nHeizoel_EL\n2.258\n\n\n1993\nStrom\n0.243\n\n\n1993\nKerosin\n0.651\n\n\n1993\nDiesel\n0.419\n\n\n1993\nBenzin\n1.093\n\n\n1993\nHolz_UW_BG_SK\n0.020\n\n\n1993\nFernwaerme\n0.232\n\n\n1993\nErdgas\n1.108\n\n\n1993\nHeizoel_EL\n2.185\n\n\n1994\nStrom\n0.229\n\n\n1994\nKerosin\n0.661\n\n\n1994\nDiesel\n0.416\n\n\n1994\nBenzin\n1.099\n\n\n1994\nHolz_UW_BG_SK\n0.020\n\n\n1994\nFernwaerme\n0.234\n\n\n1994\nErdgas\n1.143\n\n\n1994\nHeizoel_EL\n2.109\n\n\n1995\nStrom\n0.242\n\n\n1995\nKerosin\n0.689\n\n\n1995\nDiesel\n0.415\n\n\n1995\nBenzin\n1.102\n\n\n1995\nHolz_UW_BG_SK\n0.020\n\n\n1995\nFernwaerme\n0.237\n\n\n1995\nErdgas\n1.178\n\n\n1995\nHeizoel_EL\n2.033\n\n\n1996\nStrom\n0.256\n\n\n1996\nKerosin\n0.706\n\n\n1996\nDiesel\n0.415\n\n\n1996\nBenzin\n1.112\n\n\n1996\nHolz_UW_BG_SK\n0.021\n\n\n1996\nFernwaerme\n0.240\n\n\n1996\nErdgas\n1.217\n\n\n1996\nHeizoel_EL\n1.963\n\n\n1997\nStrom\n0.397\n\n\n1997\nKerosin\n0.730\n\n\n1997\nDiesel\n0.417\n\n\n1997\nBenzin\n1.118\n\n\n1997\nHolz_UW_BG_SK\n0.021\n\n\n1997\nFernwaerme\n0.243\n\n\n1997\nErdgas\n1.256\n\n\n1997\nHeizoel_EL\n1.892\n\n\n1998\nStrom\n0.539\n\n\n1998\nKerosin\n0.759\n\n\n1998\nDiesel\n0.418\n\n\n1998\nBenzin\n1.115\n\n\n1998\nHolz_UW_BG_SK\n0.021\n\n\n1998\nFernwaerme\n0.245\n\n\n1998\nErdgas\n1.290\n\n\n1998\nHeizoel_EL\n1.813\n\n\n1999\nStrom\n0.667\n\n\n1999\nKerosin\n0.803\n\n\n1999\nDiesel\n0.422\n\n\n1999\nBenzin\n1.107\n\n\n1999\nHolz_UW_BG_SK\n0.020\n\n\n1999\nFernwaerme\n0.246\n\n\n1999\nErdgas\n1.319\n\n\n1999\nHeizoel_EL\n1.728\n\n\n2000\nStrom\n0.790\n\n\n2000\nKerosin\n0.833\n\n\n2000\nDiesel\n0.432\n\n\n2000\nBenzin\n1.095\n\n\n2000\nHolz_UW_BG_SK\n0.021\n\n\n2000\nFernwaerme\n0.248\n\n\n2000\nErdgas\n1.353\n\n\n2000\nHeizoel_EL\n1.650\n\n\n2001\nStrom\n1.091\n\n\n2001\nKerosin\n0.782\n\n\n2001\nDiesel\n0.445\n\n\n2001\nBenzin\n1.080\n\n\n2001\nHolz_UW_BG_SK\n0.019\n\n\n2001\nFernwaerme\n0.250\n\n\n2001\nErdgas\n1.450\n\n\n2001\nHeizoel_EL\n1.189\n\n\n2002\nStrom\n1.381\n\n\n2002\nKerosin\n0.719\n\n\n2002\nDiesel\n0.453\n\n\n2002\nBenzin\n1.057\n\n\n2002\nHolz_UW_BG_SK\n0.019\n\n\n2002\nFernwaerme\n0.251\n\n\n2002\nErdgas\n1.374\n\n\n2002\nHeizoel_EL\n1.498\n\n\n2003\nStrom\n1.169\n\n\n2003\nKerosin\n0.642\n\n\n2003\nDiesel\n0.470\n\n\n2003\nBenzin\n1.032\n\n\n2003\nHolz_UW_BG_SK\n0.018\n\n\n2003\nFernwaerme\n0.286\n\n\n2003\nErdgas\n1.490\n\n\n2003\nHeizoel_EL\n1.317\n\n\n2004\nStrom\n0.954\n\n\n2004\nKerosin\n0.601\n\n\n2004\nDiesel\n0.486\n\n\n2004\nBenzin\n1.003\n\n\n2004\nHolz_UW_BG_SK\n0.019\n\n\n2004\nFernwaerme\n0.298\n\n\n2004\nErdgas\n1.508\n\n\n2004\nHeizoel_EL\n1.305\n\n\n2005\nStrom\n0.170\n\n\n2005\nKerosin\n0.605\n\n\n2005\nDiesel\n0.503\n\n\n2005\nBenzin\n0.970\n\n\n2005\nHolz_UW_BG_SK\n0.020\n\n\n2005\nFernwaerme\n0.300\n\n\n2005\nErdgas\n1.602\n\n\n2005\nHeizoel_EL\n1.281\n\n\n2006\nStrom\n0.176\n\n\n2006\nKerosin\n0.629\n\n\n2006\nDiesel\n0.504\n\n\n2006\nBenzin\n0.889\n\n\n2006\nHolz_UW_BG_SK\n0.019\n\n\n2006\nFernwaerme\n0.255\n\n\n2006\nErdgas\n1.450\n\n\n2006\nHeizoel_EL\n1.425\n\n\n2007\nStrom\n0.176\n\n\n2007\nKerosin\n0.665\n\n\n2007\nDiesel\n0.508\n\n\n2007\nBenzin\n0.809\n\n\n2007\nHolz_UW_BG_SK\n0.017\n\n\n2007\nFernwaerme\n0.218\n\n\n2007\nErdgas\n1.347\n\n\n2007\nHeizoel_EL\n1.210\n\n\n2008\nStrom\n0.180\n\n\n2008\nKerosin\n0.701\n\n\n2008\nDiesel\n0.507\n\n\n2008\nBenzin\n0.738\n\n\n2008\nHolz_UW_BG_SK\n0.018\n\n\n2008\nFernwaerme\n0.243\n\n\n2008\nErdgas\n1.409\n\n\n2008\nHeizoel_EL\n1.155\n\n\n2009\nStrom\n0.183\n\n\n2009\nKerosin\n0.666\n\n\n2009\nDiesel\n0.516\n\n\n2009\nBenzin\n0.683\n\n\n2009\nHolz_UW_BG_SK\n0.020\n\n\n2009\nFernwaerme\n0.227\n\n\n2009\nErdgas\n1.261\n\n\n2009\nHeizoel_EL\n1.246\n\n\n2010\nStrom\n0.179\n\n\n2010\nKerosin\n0.671\n\n\n2010\nDiesel\n0.519\n\n\n2010\nBenzin\n0.639\n\n\n2010\nHolz_UW_BG_SK\n0.024\n\n\n2010\nFernwaerme\n0.250\n\n\n2010\nErdgas\n1.321\n\n\n2010\nHeizoel_EL\n1.255\n\n\n2011\nStrom\n0.180\n\n\n2011\nKerosin\n0.708\n\n\n2011\nDiesel\n0.508\n\n\n2011\nBenzin\n0.621\n\n\n2011\nHolz_UW_BG_SK\n0.020\n\n\n2011\nFernwaerme\n0.145\n\n\n2011\nErdgas\n1.323\n\n\n2011\nHeizoel_EL\n1.205\n\n\n2012\nStrom\n0.185\n\n\n2012\nKerosin\n0.717\n\n\n2012\nDiesel\n0.565\n\n\n2012\nBenzin\n0.596\n\n\n2012\nHolz_UW_BG_SK\n0.028\n\n\n2012\nFernwaerme\n0.181\n\n\n2012\nErdgas\n1.342\n\n\n2012\nHeizoel_EL\n1.252\n\n\n2013\nStrom\n0.195\n\n\n2013\nKerosin\n0.720\n\n\n2013\nDiesel\n0.590\n\n\n2013\nBenzin\n0.573\n\n\n2013\nHolz_UW_BG_SK\n0.036\n\n\n2013\nFernwaerme\n0.222\n\n\n2013\nErdgas\n1.301\n\n\n2013\nHeizoel_EL\n1.170\n\n\n2014\nStrom\n0.346\n\n\n2014\nKerosin\n0.716\n\n\n2014\nDiesel\n0.597\n\n\n2014\nBenzin\n0.545\n\n\n2014\nHolz_UW_BG_SK\n0.035\n\n\n2014\nFernwaerme\n0.142\n\n\n2014\nErdgas\n1.166\n\n\n2014\nHeizoel_EL\n0.922\n\n\n2015\nStrom\n0.398\n\n\n2015\nKerosin\n0.732\n\n\n2015\nDiesel\n0.607\n\n\n2015\nBenzin\n0.491\n\n\n2015\nHolz_UW_BG_SK\n0.038\n\n\n2015\nFernwaerme\n0.181\n\n\n2015\nErdgas\n1.156\n\n\n2015\nHeizoel_EL\n0.867\n\n\n2016\nStrom\n0.460\n\n\n2016\nKerosin\n0.750\n\n\n2016\nDiesel\n0.651\n\n\n2016\nBenzin\n0.479\n\n\n2016\nHolz_UW_BG_SK\n0.059\n\n\n2016\nFernwaerme\n0.197\n\n\n2016\nErdgas\n1.253\n\n\n2016\nHeizoel_EL\n0.896"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#drei-variablen---drei-visuelle-eigenschaften-aesthetics",
+    "href": "folien/md-07-daten-formen.html#drei-variablen---drei-visuelle-eigenschaften-aesthetics",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Drei Variablen -> Drei visuelle Eigenschaften (aesthetics)",
+    "text": "Drei Variablen -&gt; Drei visuelle Eigenschaften (aesthetics)\n\nggplot(data = ghg_long,\n       mapping = aes(x = Jahr, \n                     y = Emissionen, \n                     color = Energietraeger)) +\n    geom_line() +\n    scale_color_colorblind() +\n    theme_minimal()"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#wie-wirds-gemacht",
+    "href": "folien/md-07-daten-formen.html#wie-wirds-gemacht",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Wie wird’s gemacht",
+    "text": "Wie wird’s gemacht\n\nghg\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJahr\nStrom\nKerosin\nDiesel\nBenzin\nHolz_UW_BG_SK\nFernwaerme\nErdgas\nHeizoel_EL\n\n\n\n\n1990\n0.324\n0.638\n0.418\n1.087\n0.021\n0.228\n1.015\n2.445\n\n\n1991\n0.292\n0.614\n0.415\n1.081\n0.020\n0.227\n1.037\n2.338\n\n\n1992\n0.263\n0.637\n0.418\n1.083\n0.020\n0.229\n1.071\n2.258\n\n\n1993\n0.243\n0.651\n0.419\n1.093\n0.020\n0.232\n1.108\n2.185\n\n\n1994\n0.229\n0.661\n0.416\n1.099\n0.020\n0.234\n1.143\n2.109\n\n\n1995\n0.242\n0.689\n0.415\n1.102\n0.020\n0.237\n1.178\n2.033\n\n\n1996\n0.256\n0.706\n0.415\n1.112\n0.021\n0.240\n1.217\n1.963\n\n\n1997\n0.397\n0.730\n0.417\n1.118\n0.021\n0.243\n1.256\n1.892\n\n\n1998\n0.539\n0.759\n0.418\n1.115\n0.021\n0.245\n1.290\n1.813\n\n\n1999\n0.667\n0.803\n0.422\n1.107\n0.020\n0.246\n1.319\n1.728\n\n\n2000\n0.790\n0.833\n0.432\n1.095\n0.021\n0.248\n1.353\n1.650\n\n\n2001\n1.091\n0.782\n0.445\n1.080\n0.019\n0.250\n1.450\n1.189\n\n\n2002\n1.381\n0.719\n0.453\n1.057\n0.019\n0.251\n1.374\n1.498\n\n\n2003\n1.169\n0.642\n0.470\n1.032\n0.018\n0.286\n1.490\n1.317\n\n\n2004\n0.954\n0.601\n0.486\n1.003\n0.019\n0.298\n1.508\n1.305\n\n\n2005\n0.170\n0.605\n0.503\n0.970\n0.020\n0.300\n1.602\n1.281\n\n\n2006\n0.176\n0.629\n0.504\n0.889\n0.019\n0.255\n1.450\n1.425\n\n\n2007\n0.176\n0.665\n0.508\n0.809\n0.017\n0.218\n1.347\n1.210\n\n\n2008\n0.180\n0.701\n0.507\n0.738\n0.018\n0.243\n1.409\n1.155\n\n\n2009\n0.183\n0.666\n0.516\n0.683\n0.020\n0.227\n1.261\n1.246\n\n\n2010\n0.179\n0.671\n0.519\n0.639\n0.024\n0.250\n1.321\n1.255\n\n\n2011\n0.180\n0.708\n0.508\n0.621\n0.020\n0.145\n1.323\n1.205\n\n\n2012\n0.185\n0.717\n0.565\n0.596\n0.028\n0.181\n1.342\n1.252\n\n\n2013\n0.195\n0.720\n0.590\n0.573\n0.036\n0.222\n1.301\n1.170\n\n\n2014\n0.346\n0.716\n0.597\n0.545\n0.035\n0.142\n1.166\n0.922\n\n\n2015\n0.398\n0.732\n0.607\n0.491\n0.038\n0.181\n1.156\n0.867\n\n\n2016\n0.460\n0.750\n0.651\n0.479\n0.059\n0.197\n1.253\n0.896"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#how-to",
+    "href": "folien/md-07-daten-formen.html#how-to",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "How to",
+    "text": "How to\n\nghg_long &lt;- ghg |&gt; \n    pivot_longer(cols = !Jahr, \n                 names_to = \"Energietraeger\", \n                 values_to = \"Emissionen\") \n\n\n\n\n\n\nJahr\nEnergietraeger\nEmissionen\n\n\n\n\n1990\nStrom\n0.324\n\n\n1990\nKerosin\n0.638\n\n\n1990\nDiesel\n0.418\n\n\n1990\nBenzin\n1.087\n\n\n1990\nHolz_UW_BG_SK\n0.021\n\n\n1990\nFernwaerme\n0.228\n\n\n1990\nErdgas\n1.015\n\n\n1990\nHeizoel_EL\n2.445\n\n\n1991\nStrom\n0.292\n\n\n1991\nKerosin\n0.614\n\n\n1991\nDiesel\n0.415\n\n\n1991\nBenzin\n1.081\n\n\n1991\nHolz_UW_BG_SK\n0.020\n\n\n1991\nFernwaerme\n0.227\n\n\n1991\nErdgas\n1.037\n\n\n1991\nHeizoel_EL\n2.338\n\n\n1992\nStrom\n0.263\n\n\n1992\nKerosin\n0.637\n\n\n1992\nDiesel\n0.418\n\n\n1992\nBenzin\n1.083\n\n\n1992\nHolz_UW_BG_SK\n0.020\n\n\n1992\nFernwaerme\n0.229\n\n\n1992\nErdgas\n1.071\n\n\n1992\nHeizoel_EL\n2.258\n\n\n1993\nStrom\n0.243\n\n\n1993\nKerosin\n0.651\n\n\n1993\nDiesel\n0.419\n\n\n1993\nBenzin\n1.093\n\n\n1993\nHolz_UW_BG_SK\n0.020\n\n\n1993\nFernwaerme\n0.232\n\n\n1993\nErdgas\n1.108\n\n\n1993\nHeizoel_EL\n2.185\n\n\n1994\nStrom\n0.229\n\n\n1994\nKerosin\n0.661\n\n\n1994\nDiesel\n0.416\n\n\n1994\nBenzin\n1.099\n\n\n1994\nHolz_UW_BG_SK\n0.020\n\n\n1994\nFernwaerme\n0.234\n\n\n1994\nErdgas\n1.143\n\n\n1994\nHeizoel_EL\n2.109\n\n\n1995\nStrom\n0.242\n\n\n1995\nKerosin\n0.689\n\n\n1995\nDiesel\n0.415\n\n\n1995\nBenzin\n1.102\n\n\n1995\nHolz_UW_BG_SK\n0.020\n\n\n1995\nFernwaerme\n0.237\n\n\n1995\nErdgas\n1.178\n\n\n1995\nHeizoel_EL\n2.033\n\n\n1996\nStrom\n0.256\n\n\n1996\nKerosin\n0.706\n\n\n1996\nDiesel\n0.415\n\n\n1996\nBenzin\n1.112\n\n\n1996\nHolz_UW_BG_SK\n0.021\n\n\n1996\nFernwaerme\n0.240\n\n\n1996\nErdgas\n1.217\n\n\n1996\nHeizoel_EL\n1.963\n\n\n1997\nStrom\n0.397\n\n\n1997\nKerosin\n0.730\n\n\n1997\nDiesel\n0.417\n\n\n1997\nBenzin\n1.118\n\n\n1997\nHolz_UW_BG_SK\n0.021\n\n\n1997\nFernwaerme\n0.243\n\n\n1997\nErdgas\n1.256\n\n\n1997\nHeizoel_EL\n1.892\n\n\n1998\nStrom\n0.539\n\n\n1998\nKerosin\n0.759\n\n\n1998\nDiesel\n0.418\n\n\n1998\nBenzin\n1.115\n\n\n1998\nHolz_UW_BG_SK\n0.021\n\n\n1998\nFernwaerme\n0.245\n\n\n1998\nErdgas\n1.290\n\n\n1998\nHeizoel_EL\n1.813\n\n\n1999\nStrom\n0.667\n\n\n1999\nKerosin\n0.803\n\n\n1999\nDiesel\n0.422\n\n\n1999\nBenzin\n1.107\n\n\n1999\nHolz_UW_BG_SK\n0.020\n\n\n1999\nFernwaerme\n0.246\n\n\n1999\nErdgas\n1.319\n\n\n1999\nHeizoel_EL\n1.728\n\n\n2000\nStrom\n0.790\n\n\n2000\nKerosin\n0.833\n\n\n2000\nDiesel\n0.432\n\n\n2000\nBenzin\n1.095\n\n\n2000\nHolz_UW_BG_SK\n0.021\n\n\n2000\nFernwaerme\n0.248\n\n\n2000\nErdgas\n1.353\n\n\n2000\nHeizoel_EL\n1.650\n\n\n2001\nStrom\n1.091\n\n\n2001\nKerosin\n0.782\n\n\n2001\nDiesel\n0.445\n\n\n2001\nBenzin\n1.080\n\n\n2001\nHolz_UW_BG_SK\n0.019\n\n\n2001\nFernwaerme\n0.250\n\n\n2001\nErdgas\n1.450\n\n\n2001\nHeizoel_EL\n1.189\n\n\n2002\nStrom\n1.381\n\n\n2002\nKerosin\n0.719\n\n\n2002\nDiesel\n0.453\n\n\n2002\nBenzin\n1.057\n\n\n2002\nHolz_UW_BG_SK\n0.019\n\n\n2002\nFernwaerme\n0.251\n\n\n2002\nErdgas\n1.374\n\n\n2002\nHeizoel_EL\n1.498\n\n\n2003\nStrom\n1.169\n\n\n2003\nKerosin\n0.642\n\n\n2003\nDiesel\n0.470\n\n\n2003\nBenzin\n1.032\n\n\n2003\nHolz_UW_BG_SK\n0.018\n\n\n2003\nFernwaerme\n0.286\n\n\n2003\nErdgas\n1.490\n\n\n2003\nHeizoel_EL\n1.317\n\n\n2004\nStrom\n0.954\n\n\n2004\nKerosin\n0.601\n\n\n2004\nDiesel\n0.486\n\n\n2004\nBenzin\n1.003\n\n\n2004\nHolz_UW_BG_SK\n0.019\n\n\n2004\nFernwaerme\n0.298\n\n\n2004\nErdgas\n1.508\n\n\n2004\nHeizoel_EL\n1.305\n\n\n2005\nStrom\n0.170\n\n\n2005\nKerosin\n0.605\n\n\n2005\nDiesel\n0.503\n\n\n2005\nBenzin\n0.970\n\n\n2005\nHolz_UW_BG_SK\n0.020\n\n\n2005\nFernwaerme\n0.300\n\n\n2005\nErdgas\n1.602\n\n\n2005\nHeizoel_EL\n1.281\n\n\n2006\nStrom\n0.176\n\n\n2006\nKerosin\n0.629\n\n\n2006\nDiesel\n0.504\n\n\n2006\nBenzin\n0.889\n\n\n2006\nHolz_UW_BG_SK\n0.019\n\n\n2006\nFernwaerme\n0.255\n\n\n2006\nErdgas\n1.450\n\n\n2006\nHeizoel_EL\n1.425\n\n\n2007\nStrom\n0.176\n\n\n2007\nKerosin\n0.665\n\n\n2007\nDiesel\n0.508\n\n\n2007\nBenzin\n0.809\n\n\n2007\nHolz_UW_BG_SK\n0.017\n\n\n2007\nFernwaerme\n0.218\n\n\n2007\nErdgas\n1.347\n\n\n2007\nHeizoel_EL\n1.210\n\n\n2008\nStrom\n0.180\n\n\n2008\nKerosin\n0.701\n\n\n2008\nDiesel\n0.507\n\n\n2008\nBenzin\n0.738\n\n\n2008\nHolz_UW_BG_SK\n0.018\n\n\n2008\nFernwaerme\n0.243\n\n\n2008\nErdgas\n1.409\n\n\n2008\nHeizoel_EL\n1.155\n\n\n2009\nStrom\n0.183\n\n\n2009\nKerosin\n0.666\n\n\n2009\nDiesel\n0.516\n\n\n2009\nBenzin\n0.683\n\n\n2009\nHolz_UW_BG_SK\n0.020\n\n\n2009\nFernwaerme\n0.227\n\n\n2009\nErdgas\n1.261\n\n\n2009\nHeizoel_EL\n1.246\n\n\n2010\nStrom\n0.179\n\n\n2010\nKerosin\n0.671\n\n\n2010\nDiesel\n0.519\n\n\n2010\nBenzin\n0.639\n\n\n2010\nHolz_UW_BG_SK\n0.024\n\n\n2010\nFernwaerme\n0.250\n\n\n2010\nErdgas\n1.321\n\n\n2010\nHeizoel_EL\n1.255\n\n\n2011\nStrom\n0.180\n\n\n2011\nKerosin\n0.708\n\n\n2011\nDiesel\n0.508\n\n\n2011\nBenzin\n0.621\n\n\n2011\nHolz_UW_BG_SK\n0.020\n\n\n2011\nFernwaerme\n0.145\n\n\n2011\nErdgas\n1.323\n\n\n2011\nHeizoel_EL\n1.205\n\n\n2012\nStrom\n0.185\n\n\n2012\nKerosin\n0.717\n\n\n2012\nDiesel\n0.565\n\n\n2012\nBenzin\n0.596\n\n\n2012\nHolz_UW_BG_SK\n0.028\n\n\n2012\nFernwaerme\n0.181\n\n\n2012\nErdgas\n1.342\n\n\n2012\nHeizoel_EL\n1.252\n\n\n2013\nStrom\n0.195\n\n\n2013\nKerosin\n0.720\n\n\n2013\nDiesel\n0.590\n\n\n2013\nBenzin\n0.573\n\n\n2013\nHolz_UW_BG_SK\n0.036\n\n\n2013\nFernwaerme\n0.222\n\n\n2013\nErdgas\n1.301\n\n\n2013\nHeizoel_EL\n1.170\n\n\n2014\nStrom\n0.346\n\n\n2014\nKerosin\n0.716\n\n\n2014\nDiesel\n0.597\n\n\n2014\nBenzin\n0.545\n\n\n2014\nHolz_UW_BG_SK\n0.035\n\n\n2014\nFernwaerme\n0.142\n\n\n2014\nErdgas\n1.166\n\n\n2014\nHeizoel_EL\n0.922\n\n\n2015\nStrom\n0.398\n\n\n2015\nKerosin\n0.732\n\n\n2015\nDiesel\n0.607\n\n\n2015\nBenzin\n0.491\n\n\n2015\nHolz_UW_BG_SK\n0.038\n\n\n2015\nFernwaerme\n0.181\n\n\n2015\nErdgas\n1.156\n\n\n2015\nHeizoel_EL\n0.867\n\n\n2016\nStrom\n0.460\n\n\n2016\nKerosin\n0.750\n\n\n2016\nDiesel\n0.651\n\n\n2016\nBenzin\n0.479\n\n\n2016\nHolz_UW_BG_SK\n0.059\n\n\n2016\nFernwaerme\n0.197\n\n\n2016\nErdgas\n1.253\n\n\n2016\nHeizoel_EL\n0.896"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#drei-variablen---drei-visuelle-eigenschaften-aesthetics-1",
+    "href": "folien/md-07-daten-formen.html#drei-variablen---drei-visuelle-eigenschaften-aesthetics-1",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Drei Variablen -> Drei visuelle Eigenschaften (aesthetics)",
+    "text": "Drei Variablen -&gt; Drei visuelle Eigenschaften (aesthetics)\n\nggplot(data = ghg_long,\n       mapping = aes(x = Jahr, \n                     y = Emissionen, \n                     color = Energietraeger)) +\n    geom_line() +\n    scale_color_colorblind() +\n    theme_minimal()"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#pause-machen",
+    "href": "folien/md-07-daten-formen.html#pause-machen",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#daten-drehen",
+    "href": "folien/md-07-daten-formen.html#daten-drehen",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Daten drehen",
+    "text": "Daten drehen"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#wir-sind-dran-01-treibhausgase-ihr.qmd",
+    "href": "folien/md-07-daten-formen.html#wir-sind-dran-01-treibhausgase-ihr.qmd",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Wir sind dran: 01-treibhausgase-ihr.qmd",
+    "text": "Wir sind dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#eigenschaften-von-tidy-data",
+    "href": "folien/md-07-daten-formen.html#eigenschaften-von-tidy-data",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Eigenschaften von Tidy data",
+    "text": "Eigenschaften von Tidy data\n\nEigenschaft 1: Jede Spalte ist eine Variable\nEigenschaft 2: Jede Reihe ist eine Beobachtung\nEigenschaft 3: Jede Zelle enthält eine Messung"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#penguins",
+    "href": "folien/md-07-daten-formen.html#penguins",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Penguins",
+    "text": "Penguins\nErfüllen die Daten die Eingeschaften für Tidy data?\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\nAdelie\nTorgersen\n38.9\n17.8\n181\n3625\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.2\n19.6\n195\n4675\nmale\n2007\n\n\nAdelie\nTorgersen\n34.1\n18.1\n193\n3475\nNA\n2007\n\n\nAdelie\nTorgersen\n42.0\n20.2\n190\n4250\nNA\n2007"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section",
+    "href": "folien/md-07-daten-formen.html#section",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Ständige Wohnbevölkerung nach Altersklasse und Altersmasszahlen nach Kanton, Provisorische Jahresergebnisse, 2020"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-1",
+    "href": "folien/md-07-daten-formen.html#section-1",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Ständige Wohnbevölkerung nach Altersklasse und Altersmasszahlen nach Kanton, Provisorische Jahresergebnisse, 2020"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-2",
+    "href": "folien/md-07-daten-formen.html#section-2",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Ständige Wohnbevölkerung nach Altersklasse und Altersmasszahlen nach Kanton, Provisorische Jahresergebnisse, 2020"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-3",
+    "href": "folien/md-07-daten-formen.html#section-3",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Kosten des Gesundheitswesens nach Leistungen"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-4",
+    "href": "folien/md-07-daten-formen.html#section-4",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Kosten des Gesundheitswesens nach Leistungen"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-5",
+    "href": "folien/md-07-daten-formen.html#section-5",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Kosten des Gesundheitswesens nach Leistungen"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-6",
+    "href": "folien/md-07-daten-formen.html#section-6",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-7",
+    "href": "folien/md-07-daten-formen.html#section-7",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-8",
+    "href": "folien/md-07-daten-formen.html#section-8",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-9",
+    "href": "folien/md-07-daten-formen.html#section-9",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-10",
+    "href": "folien/md-07-daten-formen.html#section-10",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-11",
+    "href": "folien/md-07-daten-formen.html#section-11",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage\n\n\n\n6 Tabellen in 6 Tabs -&gt; Eine Variable (typ_tag)\nIn Zeile 1 steckt eine Variable (Name: typ_tag)\nIn Zeile 4 steckt eine Definition für die Variable: typ_tag\nIn Zeile 4 stecke eine Definition für einen Mittelwert auf Zeile 8\nLinks lässt sich erkennen, dass Zeile “versteckt” sind? Doch nicht. Zeilen klein gemacht, aber leer.\nZeile 6 enthält eine Variable für den Ort der Messstation.\nZeile 7 enthält eine Variable für dier Höhe der Messstation\nSpalte A, ab Zeile 11 enthält das Jahr der Messungen\nSpalten B bis N enthalten die Messungen nach Messstationen\nEinige Zeilen sind blau markiert, aber es scheint nur eine Lesehilfe zu sein\nMetadaten und Bemerkungen sind in den Zeilen 75 bis 81 abgelegt"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#relevanter-unterschied---ziel-der-daten-publikation",
+    "href": "folien/md-07-daten-formen.html#relevanter-unterschied---ziel-der-daten-publikation",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Relevanter Unterschied - Ziel der Daten Publikation",
+    "text": "Relevanter Unterschied - Ziel der Daten Publikation\n\n\nDaten in Tabellen darstellen\n\nLayout\n\nGut leserlich\nKompakt\nErkenntnis bringend\n\nMetadaten\n\n\nDaten für weitere Nutzung bereitstellen\n\nLayout (Tidy data)\n\nEigenschaft 1: Jede Spalte ist eine Variable\nEigenschaft 2: Jede Reihe ist eine Beobachtung\nEigenschaft 3: Jede Zelle enthält eine Messung\n\nKeine Metadaten\nKeine Farben, Formatierungen, etc.\nFolgt Standards (Datum: ISO 8601)\netc.\n\n\n\nSiehe OGD Leitlinien für Hinweis auf Tidy Data: https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#zeitpuffer-modul-7",
+    "href": "folien/md-07-daten-formen.html#zeitpuffer-modul-7",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Zeitpuffer: Modul 7",
+    "text": "Zeitpuffer: Modul 7\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#wie-wirds-gemacht-1",
+    "href": "folien/md-07-daten-formen.html#wie-wirds-gemacht-1",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Wie wird’s gemacht?",
+    "text": "Wie wird’s gemacht?\n\n\n\nghg |&gt; \n    pivot_longer(cols = !Jahr, \n                 names_to = \"Energietraeger\", \n                 values_to = \"Emissionen\") \n\n\n\n\n\n\n\nJahr\nEnergietraeger\nEmissionen\n\n\n\n\n1990\nStrom\n0.324\n\n\n1990\nKerosin\n0.638\n\n\n1990\nDiesel\n0.418\n\n\n1990\nBenzin\n1.087\n\n\n1990\nHolz_UW_BG_SK\n0.021\n\n\n1990\nFernwaerme\n0.228\n\n\n1990\nErdgas\n1.015\n\n\n1990\nHeizoel_EL\n2.445\n\n\n1991\nStrom\n0.292\n\n\n1991\nKerosin\n0.614\n\n\n1991\nDiesel\n0.415\n\n\n1991\nBenzin\n1.081\n\n\n1991\nHolz_UW_BG_SK\n0.020\n\n\n1991\nFernwaerme\n0.227\n\n\n1991\nErdgas\n1.037\n\n\n1991\nHeizoel_EL\n2.338\n\n\n1992\nStrom\n0.263\n\n\n1992\nKerosin\n0.637\n\n\n1992\nDiesel\n0.418\n\n\n1992\nBenzin\n1.083\n\n\n1992\nHolz_UW_BG_SK\n0.020\n\n\n1992\nFernwaerme\n0.229\n\n\n1992\nErdgas\n1.071\n\n\n1992\nHeizoel_EL\n2.258\n\n\n1993\nStrom\n0.243\n\n\n1993\nKerosin\n0.651\n\n\n1993\nDiesel\n0.419\n\n\n1993\nBenzin\n1.093\n\n\n1993\nHolz_UW_BG_SK\n0.020\n\n\n1993\nFernwaerme\n0.232\n\n\n1993\nErdgas\n1.108\n\n\n1993\nHeizoel_EL\n2.185\n\n\n1994\nStrom\n0.229\n\n\n1994\nKerosin\n0.661\n\n\n1994\nDiesel\n0.416\n\n\n1994\nBenzin\n1.099\n\n\n1994\nHolz_UW_BG_SK\n0.020\n\n\n1994\nFernwaerme\n0.234\n\n\n1994\nErdgas\n1.143\n\n\n1994\nHeizoel_EL\n2.109\n\n\n1995\nStrom\n0.242\n\n\n1995\nKerosin\n0.689\n\n\n1995\nDiesel\n0.415\n\n\n1995\nBenzin\n1.102\n\n\n1995\nHolz_UW_BG_SK\n0.020\n\n\n1995\nFernwaerme\n0.237\n\n\n1995\nErdgas\n1.178\n\n\n1995\nHeizoel_EL\n2.033\n\n\n1996\nStrom\n0.256\n\n\n1996\nKerosin\n0.706\n\n\n1996\nDiesel\n0.415\n\n\n1996\nBenzin\n1.112\n\n\n1996\nHolz_UW_BG_SK\n0.021\n\n\n1996\nFernwaerme\n0.240\n\n\n1996\nErdgas\n1.217\n\n\n1996\nHeizoel_EL\n1.963\n\n\n1997\nStrom\n0.397\n\n\n1997\nKerosin\n0.730\n\n\n1997\nDiesel\n0.417\n\n\n1997\nBenzin\n1.118\n\n\n1997\nHolz_UW_BG_SK\n0.021\n\n\n1997\nFernwaerme\n0.243\n\n\n1997\nErdgas\n1.256\n\n\n1997\nHeizoel_EL\n1.892\n\n\n1998\nStrom\n0.539\n\n\n1998\nKerosin\n0.759\n\n\n1998\nDiesel\n0.418\n\n\n1998\nBenzin\n1.115\n\n\n1998\nHolz_UW_BG_SK\n0.021\n\n\n1998\nFernwaerme\n0.245\n\n\n1998\nErdgas\n1.290\n\n\n1998\nHeizoel_EL\n1.813\n\n\n1999\nStrom\n0.667\n\n\n1999\nKerosin\n0.803\n\n\n1999\nDiesel\n0.422\n\n\n1999\nBenzin\n1.107\n\n\n1999\nHolz_UW_BG_SK\n0.020\n\n\n1999\nFernwaerme\n0.246\n\n\n1999\nErdgas\n1.319\n\n\n1999\nHeizoel_EL\n1.728\n\n\n2000\nStrom\n0.790\n\n\n2000\nKerosin\n0.833\n\n\n2000\nDiesel\n0.432\n\n\n2000\nBenzin\n1.095\n\n\n2000\nHolz_UW_BG_SK\n0.021\n\n\n2000\nFernwaerme\n0.248\n\n\n2000\nErdgas\n1.353\n\n\n2000\nHeizoel_EL\n1.650\n\n\n2001\nStrom\n1.091\n\n\n2001\nKerosin\n0.782\n\n\n2001\nDiesel\n0.445\n\n\n2001\nBenzin\n1.080\n\n\n2001\nHolz_UW_BG_SK\n0.019\n\n\n2001\nFernwaerme\n0.250\n\n\n2001\nErdgas\n1.450\n\n\n2001\nHeizoel_EL\n1.189\n\n\n2002\nStrom\n1.381\n\n\n2002\nKerosin\n0.719\n\n\n2002\nDiesel\n0.453\n\n\n2002\nBenzin\n1.057\n\n\n2002\nHolz_UW_BG_SK\n0.019\n\n\n2002\nFernwaerme\n0.251\n\n\n2002\nErdgas\n1.374\n\n\n2002\nHeizoel_EL\n1.498\n\n\n2003\nStrom\n1.169\n\n\n2003\nKerosin\n0.642\n\n\n2003\nDiesel\n0.470\n\n\n2003\nBenzin\n1.032\n\n\n2003\nHolz_UW_BG_SK\n0.018\n\n\n2003\nFernwaerme\n0.286\n\n\n2003\nErdgas\n1.490\n\n\n2003\nHeizoel_EL\n1.317\n\n\n2004\nStrom\n0.954\n\n\n2004\nKerosin\n0.601\n\n\n2004\nDiesel\n0.486\n\n\n2004\nBenzin\n1.003\n\n\n2004\nHolz_UW_BG_SK\n0.019\n\n\n2004\nFernwaerme\n0.298\n\n\n2004\nErdgas\n1.508\n\n\n2004\nHeizoel_EL\n1.305\n\n\n2005\nStrom\n0.170\n\n\n2005\nKerosin\n0.605\n\n\n2005\nDiesel\n0.503\n\n\n2005\nBenzin\n0.970\n\n\n2005\nHolz_UW_BG_SK\n0.020\n\n\n2005\nFernwaerme\n0.300\n\n\n2005\nErdgas\n1.602\n\n\n2005\nHeizoel_EL\n1.281\n\n\n2006\nStrom\n0.176\n\n\n2006\nKerosin\n0.629\n\n\n2006\nDiesel\n0.504\n\n\n2006\nBenzin\n0.889\n\n\n2006\nHolz_UW_BG_SK\n0.019\n\n\n2006\nFernwaerme\n0.255\n\n\n2006\nErdgas\n1.450\n\n\n2006\nHeizoel_EL\n1.425\n\n\n2007\nStrom\n0.176\n\n\n2007\nKerosin\n0.665\n\n\n2007\nDiesel\n0.508\n\n\n2007\nBenzin\n0.809\n\n\n2007\nHolz_UW_BG_SK\n0.017\n\n\n2007\nFernwaerme\n0.218\n\n\n2007\nErdgas\n1.347\n\n\n2007\nHeizoel_EL\n1.210\n\n\n2008\nStrom\n0.180\n\n\n2008\nKerosin\n0.701\n\n\n2008\nDiesel\n0.507\n\n\n2008\nBenzin\n0.738\n\n\n2008\nHolz_UW_BG_SK\n0.018\n\n\n2008\nFernwaerme\n0.243\n\n\n2008\nErdgas\n1.409\n\n\n2008\nHeizoel_EL\n1.155\n\n\n2009\nStrom\n0.183\n\n\n2009\nKerosin\n0.666\n\n\n2009\nDiesel\n0.516\n\n\n2009\nBenzin\n0.683\n\n\n2009\nHolz_UW_BG_SK\n0.020\n\n\n2009\nFernwaerme\n0.227\n\n\n2009\nErdgas\n1.261\n\n\n2009\nHeizoel_EL\n1.246\n\n\n2010\nStrom\n0.179\n\n\n2010\nKerosin\n0.671\n\n\n2010\nDiesel\n0.519\n\n\n2010\nBenzin\n0.639\n\n\n2010\nHolz_UW_BG_SK\n0.024\n\n\n2010\nFernwaerme\n0.250\n\n\n2010\nErdgas\n1.321\n\n\n2010\nHeizoel_EL\n1.255\n\n\n2011\nStrom\n0.180\n\n\n2011\nKerosin\n0.708\n\n\n2011\nDiesel\n0.508\n\n\n2011\nBenzin\n0.621\n\n\n2011\nHolz_UW_BG_SK\n0.020\n\n\n2011\nFernwaerme\n0.145\n\n\n2011\nErdgas\n1.323\n\n\n2011\nHeizoel_EL\n1.205\n\n\n2012\nStrom\n0.185\n\n\n2012\nKerosin\n0.717\n\n\n2012\nDiesel\n0.565\n\n\n2012\nBenzin\n0.596\n\n\n2012\nHolz_UW_BG_SK\n0.028\n\n\n2012\nFernwaerme\n0.181\n\n\n2012\nErdgas\n1.342\n\n\n2012\nHeizoel_EL\n1.252\n\n\n2013\nStrom\n0.195\n\n\n2013\nKerosin\n0.720\n\n\n2013\nDiesel\n0.590\n\n\n2013\nBenzin\n0.573\n\n\n2013\nHolz_UW_BG_SK\n0.036\n\n\n2013\nFernwaerme\n0.222\n\n\n2013\nErdgas\n1.301\n\n\n2013\nHeizoel_EL\n1.170\n\n\n2014\nStrom\n0.346\n\n\n2014\nKerosin\n0.716\n\n\n2014\nDiesel\n0.597\n\n\n2014\nBenzin\n0.545\n\n\n2014\nHolz_UW_BG_SK\n0.035\n\n\n2014\nFernwaerme\n0.142\n\n\n2014\nErdgas\n1.166\n\n\n2014\nHeizoel_EL\n0.922\n\n\n2015\nStrom\n0.398\n\n\n2015\nKerosin\n0.732\n\n\n2015\nDiesel\n0.607\n\n\n2015\nBenzin\n0.491\n\n\n2015\nHolz_UW_BG_SK\n0.038\n\n\n2015\nFernwaerme\n0.181\n\n\n2015\nErdgas\n1.156\n\n\n2015\nHeizoel_EL\n0.867\n\n\n2016\nStrom\n0.460\n\n\n2016\nKerosin\n0.750\n\n\n2016\nDiesel\n0.651\n\n\n2016\nBenzin\n0.479\n\n\n2016\nHolz_UW_BG_SK\n0.059\n\n\n2016\nFernwaerme\n0.197\n\n\n2016\nErdgas\n1.253\n\n\n2016\nHeizoel_EL\n0.896"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#section-12",
+    "href": "folien/md-07-daten-formen.html#section-12",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "",
+    "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage\n\n\n\n6 Tabellen in 6 Tabs -&gt; Eine Variable (typ_tag)\nIn Zeile 1 steckt eine Variable (Name: typ_tag)\nIn Zeile 4 steckt eine Definition für die Variable: typ_tag\nIn Zeile 4 stecke eine Definition für einen Mittelwert auf Zeile 8\nLinks lässt sich erkennen, dass Zeile “versteckt” sind? Doch nicht. Zeilen klein gemacht, aber leer.\nZeile 6 enthält eine Variable für den Ort der Messstation.\nZeile 7 enthält eine Variable für dier Höhe der Messstation\nSpalte A, ab Zeile 11 enthält das Jahr der Messungen\nSpalten B bis N enthalten die Messungen nach Messstationen\nEinige Zeilen sind blau markiert, aber es scheint nur eine Lesehilfe zu sein\nMetadaten und Bemerkungen sind in den Zeilen 75 bis 81 abgelegt"
   }
 ]
