@@ -2545,5 +2545,117 @@
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "",
     "text": "Welche Eigenschaften von Tidy data sind hier nicht erfüllt?\n\n\nQuelle: Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage\n\n\n\n6 Tabellen in 6 Tabs -&gt; Eine Variable (typ_tag)\nIn Zeile 1 steckt eine Variable (Name: typ_tag)\nIn Zeile 4 steckt eine Definition für die Variable: typ_tag\nIn Zeile 4 stecke eine Definition für einen Mittelwert auf Zeile 8\nLinks lässt sich erkennen, dass Zeile “versteckt” sind? Doch nicht. Zeilen klein gemacht, aber leer.\nZeile 6 enthält eine Variable für den Ort der Messstation.\nZeile 7 enthält eine Variable für dier Höhe der Messstation\nSpalte A, ab Zeile 11 enthält das Jahr der Messungen\nSpalten B bis N enthalten die Messungen nach Messstationen\nEinige Zeilen sind blau markiert, aber es scheint nur eine Lesehilfe zu sein\nMetadaten und Bemerkungen sind in den Zeilen 75 bis 81 abgelegt"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#wir",
+    "href": "folien/md-07-daten-formen.html#wir",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Wir…",
+    "text": "Wir…\n…haben mehrere Dataframes und wollen diese zusammenbringen\n\nprofessions &lt;- read_csv(\"daten/scientists/professions.csv\")\ndates &lt;- read_csv(\"daten/scientists/dates.csv\")\nworks &lt;- read_csv(\"daten/scientists/works.csv\")"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#daten-women-in-science",
+    "href": "folien/md-07-daten-formen.html#daten-women-in-science",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Daten: Women in science",
+    "text": "Daten: Women in science\nInformationen zu 10 Frauen in der Wissenschaft welche die Welt verändert haben\n\n\n\n\n\nname\n\n\n\n\nAda Lovelace\n\n\nMarie Curie\n\n\nJanaki Ammal\n\n\nChien-Shiung Wu\n\n\nKatherine Johnson\n\n\nRosalind Franklin\n\n\nVera Rubin\n\n\nGladys West\n\n\nFlossie Wong-Staal\n\n\nJennifer Doudna\n\n\n\n\n\n\nQuelle: Discover Magazine"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#inputs",
+    "href": "folien/md-07-daten-formen.html#inputs",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Inputs",
+    "text": "Inputs\n\nprofessionsdatesworks\n\n\n\n\n# A tibble: 10 × 2\n   name               profession                        \n   &lt;chr&gt;              &lt;chr&gt;                             \n 1 Ada Lovelace       Mathematician                     \n 2 Marie Curie        Physicist and Chemist             \n 3 Janaki Ammal       Botanist                          \n 4 Chien-Shiung Wu    Physicist                         \n 5 Katherine Johnson  Mathematician                     \n 6 Rosalind Franklin  Chemist                           \n 7 Vera Rubin         Astronomer                        \n 8 Gladys West        Mathematician                     \n 9 Flossie Wong-Staal Virologist and Molecular Biologist\n10 Jennifer Doudna    Biochemist                        \n\n\n\n\n\n\n# A tibble: 8 × 3\n  name               birth_year death_year\n  &lt;chr&gt;                   &lt;dbl&gt;      &lt;dbl&gt;\n1 Janaki Ammal             1897       1984\n2 Chien-Shiung Wu          1912       1997\n3 Katherine Johnson        1918       2020\n4 Rosalind Franklin        1920       1958\n5 Vera Rubin               1928       2016\n6 Gladys West              1930         NA\n7 Flossie Wong-Staal       1947         NA\n8 Jennifer Doudna          1964         NA\n\n\n\n\n\n\n# A tibble: 9 × 2\n  name               known_for                                                  \n  &lt;chr&gt;              &lt;chr&gt;                                                      \n1 Ada Lovelace       first computer algorithm                                   \n2 Marie Curie        theory of radioactivity,  discovery of elements polonium a…\n3 Janaki Ammal       hybrid species, biodiversity protection                    \n4 Chien-Shiung Wu    confim and refine theory of radioactive beta decy, Wu expe…\n5 Katherine Johnson  calculations of orbital mechanics critical to sending the …\n6 Vera Rubin         existence of dark matter                                   \n7 Gladys West        mathematical modeling of the shape of the Earth which serv…\n8 Flossie Wong-Staal first scientist to clone HIV and create a map of its genes…\n9 Jennifer Doudna    one of the primary developers of CRISPR, a ground-breaking…"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#gewünschter-output",
+    "href": "folien/md-07-daten-formen.html#gewünschter-output",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Gewünschter Output",
+    "text": "Gewünschter Output\n\n\n# A tibble: 10 × 5\n   name               profession                 birth_year death_year known_for\n   &lt;chr&gt;              &lt;chr&gt;                           &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    \n 1 Ada Lovelace       Mathematician                      NA         NA first co…\n 2 Marie Curie        Physicist and Chemist              NA         NA theory o…\n 3 Janaki Ammal       Botanist                         1897       1984 hybrid s…\n 4 Chien-Shiung Wu    Physicist                        1912       1997 confim a…\n 5 Katherine Johnson  Mathematician                    1918       2020 calculat…\n 6 Rosalind Franklin  Chemist                          1920       1958 &lt;NA&gt;     \n 7 Vera Rubin         Astronomer                       1928       2016 existenc…\n 8 Gladys West        Mathematician                    1930         NA mathemat…\n 9 Flossie Wong-Staal Virologist and Molecular …       1947         NA first sc…\n10 Jennifer Doudna    Biochemist                       1964         NA one of t…"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#inputs-als-erinnerung",
+    "href": "folien/md-07-daten-formen.html#inputs-als-erinnerung",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Inputs als Erinnerung",
+    "text": "Inputs als Erinnerung\n\n\n\nnames(professions)\n\n[1] \"name\"       \"profession\"\n\nnames(dates)\n\n[1] \"name\"       \"birth_year\" \"death_year\"\n\nnames(works)\n\n[1] \"name\"      \"known_for\"\n\n\n\n\n\n\nnrow(professions)\n\n[1] 10\n\nnrow(dates)\n\n[1] 8\n\nnrow(works)\n\n[1] 9"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#dataframes-zusammenfügen",
+    "href": "folien/md-07-daten-formen.html#dataframes-zusammenfügen",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Dataframes zusammenfügen",
+    "text": "Dataframes zusammenfügen\n\netwas_join(x, y)\n\n\nleft_join(): alle Reihen aus x\nright_join(): alle Reihen aus y\nfull_join(): alle Reihen aus x und y\n…"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#beispiel",
+    "href": "folien/md-07-daten-formen.html#beispiel",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Beispiel",
+    "text": "Beispiel\n\n\n\nx &lt;- tibble(\n  id = c(1, 2, 3),\n  value_x = c(\"x1\", \"x2\", \"x3\")\n  )\n\n\nx\n\n# A tibble: 3 × 2\n     id value_x\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 x1     \n2     2 x2     \n3     3 x3     \n\n\n\n\n\n\ny &lt;- tibble(\n  id = c(1, 2, 4),\n  value_y = c(\"y1\", \"y2\", \"y4\")\n  )\n\n\ny\n\n# A tibble: 3 × 2\n     id value_y\n  &lt;dbl&gt; &lt;chr&gt;  \n1     1 y1     \n2     2 y2     \n3     4 y4"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#left_join",
+    "href": "folien/md-07-daten-formen.html#left_join",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "left_join()",
+    "text": "left_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nleft_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#left_join-1",
+    "href": "folien/md-07-daten-formen.html#left_join-1",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "left_join()",
+    "text": "left_join()\n\nprofessions |&gt;\n  left_join(dates) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#right_join",
+    "href": "folien/md-07-daten-formen.html#right_join",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "right_join()",
+    "text": "right_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nright_join(x, y)\n\n# A tibble: 3 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     4 &lt;NA&gt;    y4"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#right_join-1",
+    "href": "folien/md-07-daten-formen.html#right_join-1",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "right_join()",
+    "text": "right_join()\n\nprofessions |&gt;\n  right_join(dates)\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\n\n\n\n\nJanaki Ammal\nBotanist\n1897\n1984\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\n\n\nKatherine Johnson\nMathematician\n1918\n2020\n\n\nRosalind Franklin\nChemist\n1920\n1958\n\n\nVera Rubin\nAstronomer\n1928\n2016\n\n\nGladys West\nMathematician\n1930\nNA\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\n\n\nJennifer Doudna\nBiochemist\n1964\nNA"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#full_join",
+    "href": "folien/md-07-daten-formen.html#full_join",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "full_join()",
+    "text": "full_join()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfull_join(x, y)\n\n# A tibble: 4 × 3\n     id value_x value_y\n  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;  \n1     1 x1      y1     \n2     2 x2      y2     \n3     3 x3      &lt;NA&gt;   \n4     4 &lt;NA&gt;    y4"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#full_join-1",
+    "href": "folien/md-07-daten-formen.html#full_join-1",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "full_join()",
+    "text": "full_join()\n\ndates |&gt;\n  full_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\nname\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nJanaki Ammal\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\n1920\n1958\nNA\n\n\nVera Rubin\n1928\n2016\nexistence of dark matter\n\n\nGladys West\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes\n\n\nAda Lovelace\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#alles-in-einer-code-sequenz",
+    "href": "folien/md-07-daten-formen.html#alles-in-einer-code-sequenz",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Alles in einer Code Sequenz",
+    "text": "Alles in einer Code Sequenz\n\nprofessions |&gt;\n  left_join(dates) |&gt;\n  left_join(works) \n\n\n\n\n\n\n\n\n\n\n\n\n\nname\nprofession\nbirth_year\ndeath_year\nknown_for\n\n\n\n\nAda Lovelace\nMathematician\nNA\nNA\nfirst computer algorithm\n\n\nMarie Curie\nPhysicist and Chemist\nNA\nNA\ntheory of radioactivity, discovery of elements polonium and radium, first woman to win a Nobel Prize\n\n\nJanaki Ammal\nBotanist\n1897\n1984\nhybrid species, biodiversity protection\n\n\nChien-Shiung Wu\nPhysicist\n1912\n1997\nconfim and refine theory of radioactive beta decy, Wu experiment overturning theory of parity\n\n\nKatherine Johnson\nMathematician\n1918\n2020\ncalculations of orbital mechanics critical to sending the first Americans into space\n\n\nRosalind Franklin\nChemist\n1920\n1958\nNA\n\n\nVera Rubin\nAstronomer\n1928\n2016\nexistence of dark matter\n\n\nGladys West\nMathematician\n1930\nNA\nmathematical modeling of the shape of the Earth which served as the foundation of GPS technology\n\n\nFlossie Wong-Staal\nVirologist and Molecular Biologist\n1947\nNA\nfirst scientist to clone HIV and create a map of its genes which led to a test for the virus\n\n\nJennifer Doudna\nBiochemist\n1964\nNA\none of the primary developers of CRISPR, a ground-breaking technology for editing genomes"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#fehlende-daten-ergänzen",
+    "href": "folien/md-07-daten-formen.html#fehlende-daten-ergänzen",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Fehlende Daten ergänzen",
+    "text": "Fehlende Daten ergänzen\n\nprofessions |&gt; \n  left_join(dates) |&gt; \n  mutate(birth_year = case_when( \n    name == \"Ada Lovelace\" ~ 1815, \n    name == \"Marie Curie\" ~ 1867, \n    .default = birth_year\n  ))\n\n\n\n# A tibble: 10 × 4\n  name              profession            birth_year death_year\n  &lt;chr&gt;             &lt;chr&gt;                      &lt;dbl&gt;      &lt;dbl&gt;\n1 Ada Lovelace      Mathematician               1815         NA\n2 Marie Curie       Physicist and Chemist       1867         NA\n3 Janaki Ammal      Botanist                    1897       1984\n4 Chien-Shiung Wu   Physicist                   1912       1997\n5 Katherine Johnson Mathematician               1918       2020\n6 Rosalind Franklin Chemist                     1920       1958\n7 Vera Rubin        Astronomer                  1928       2016\n# ℹ 3 more rows"
+  },
+  {
+    "objectID": "folien/md-07-daten-formen.html#ihr-seid-dran-02-joins-ihr.qmd",
+    "href": "folien/md-07-daten-formen.html#ihr-seid-dran-02-joins-ihr.qmd",
+    "title": "Datenformen lang und breit & Daten zusammenfügen",
+    "section": "Ihr seid dran: 02-joins-ihr.qmd",
+    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
   }
 ]
