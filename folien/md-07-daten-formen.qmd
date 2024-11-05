@@ -34,14 +34,659 @@ library(gapminder)
 #| label: lernziele
 
 lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
-  dplyr::filter(modul == params$modul) |>
-  dplyr::pull(lernziele)
+    dplyr::filter(modul == params$modul) |>
+    dplyr::pull(lernziele)
 
 ```
 
 ```{epoxy}
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
 ```
+
+```{r}
+#| include: false
+library(countdown)
+library(tidyverse)
+library(epoxy)
+library(ggthemes)
+```
+
+
+```{r}
+#| eval: true
+
+ghg <- read_csv(here::here("folien/daten/ugz_treibhausgasbilanz.csv"))
+
+ghg_long <- ghg |> 
+    pivot_longer(cols = !Jahr, 
+                 names_to = "Energietraeger", 
+                 values_to = "Emissionen") 
+```
+
+
+# Part 1: Pivoting data {background-color="#4C326A"}
+
+## Ihr seid dran: `01-treibhausgase-ihr.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`01-treibhausgase-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(30)
+```
+
+## Daten-Struktur: Treibhausgase
+
+```{r}
+ghg |> 
+    knitr::kable() 
+```
+
+## Wie würdest du dieses Diagramm erstellen?
+
+```{r}
+#| echo: false
+ggplot(data = ghg,
+       mapping = aes(x = Jahr, y = Erdgas)) +
+    geom_line() +
+    theme_minimal()
+```
+
+## Zwei Variablen
+
+```{r}
+ghg |> 
+    select(Jahr, Erdgas)
+```
+
+## Zwei Variablen -> Zwei visuelle Eigenschaften (aesthetics)
+
+```{r}
+#| code-line-numbers: "2"
+ggplot(data = ghg,
+       mapping = aes(x = Jahr, y = Erdgas)) +
+    geom_line() +
+    theme_minimal()
+```
+
+## Pivoting data
+
+```{r}
+knitr::include_graphics("img/lec-04/tidyr-longer-wider.gif")
+```
+
+## Wie würdest du dieses Diagramm erstellen?
+
+```{r}
+
+ggplot(data = ghg_long,
+       mapping = aes(x = Jahr, 
+                     y = Emissionen, 
+                     color = Energietraeger)) +
+    geom_line() +
+    scale_color_colorblind() +
+    theme_minimal()
+
+```
+
+## Daten sind in einem breitem Format {.smaller .scrollable}
+
+```{r}
+ghg |> 
+    knitr::kable() 
+```
+
+## Du brauchst: ein langes Format {.smaller .scrollable}
+
+```{r}
+ghg_long |> 
+    knitr::kable()
+```
+
+## Drei Variablen -> Drei visuelle Eigenschaften (aesthetics)
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = ghg_long,
+       mapping = aes(x = Jahr, 
+                     y = Emissionen, 
+                     color = Energietraeger)) +
+    geom_line() +
+    scale_color_colorblind() +
+    theme_minimal()
+```
+
+## Wie wird's gemacht {.smaller .scrollable auto-animate="true"}
+
+```{r}
+
+```
+
+```{r}
+#| echo: true
+#| eval: false
+ghg_long
+```
+
+```{r}
+#| echo: false
+ghg_long |> 
+    knitr::kable()
+```
+
+## How to {.smaller .scrollable auto-animate="true"}
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "2-4"
+ghg_long <- ghg |> 
+    pivot_longer(cols = !Jahr, 
+                 names_to = "Energietraeger", 
+                 values_to = "Emissionen") 
+```
+
+```{r}
+#| echo: false
+ghg_long <- ghg |> 
+    pivot_longer(cols = !Jahr, 
+                 names_to = "Energietraeger", 
+                 values_to = "Emissionen") 
+    knitr::kable()
+```
+
+## Drei Variablen -> Drei visuelle Eigenschaften (aesthetics)
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = ghg_long,
+       mapping = aes(x = Jahr, 
+                     y = Emissionen, 
+                     color = Energietraeger)) +
+    geom_line() +
+    scale_color_colorblind() +
+    theme_minimal()
+```
+
+
+## Your turn: md-07-exercises - pivoting data
+
+::: task
+1.  Open [posit.cloud](https://posit.cloud) in your browser (use your bookmark).
+2.  Open the [ds4owd workspace]{.highlight-yellow} for the course.
+3.  In the File Manager in the bottom right window, locate the [`md-07a-pivoting-your-turn.qmd`]{.highlight-yellow} file and click on it to open it in the top left window.
+4.  Follow instructions in the file
+:::
+
+```{r}
+countdown(30)
+```
+
+## Take a break
+
+[Please get up and move!]{.highlight-yellow} Let your emails rest in peace.
+
+![](img/lec-05/pixel-art-beach.png){width="50%" fig-alt="A pixel art style image of a serene beach scene. The beach is lined with tall, lush palm trees swaying gently in the breeze. The sand is golden and pristine, meeting the clear blue waters of the ocean. The sky is a gradient of soft blues, with a few fluffy white clouds drifting lazily. The sun is setting in the background, casting warm orange and pink hues across the sky and sea, creating a tranquil and picturesque setting."}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+# Part 2: Joining data {background-color="#4C326A"}
+
+##  We... {.smaller}
+
+...have multiple data frames
+
+...want to bring them together
+
+```{r}
+#| echo: false 
+
+professions <- read_csv(here::here("slides/data/scientists/professions.csv")) 
+
+dates <- read_csv(here::here("slides/data/scientists/dates.csv")) 
+
+works <- read_csv(here::here("slides/data/scientists/works.csv")) 
+```
+
+```{r}
+#| echo: true
+#| eval: false
+professions <- read_csv(here::here("data/scientists/professions.csv")) 
+dates <- read_csv(here::here("data/scientists/dates.csv")) 
+works <- read_csv(here::here("scientists/works.csv")) 
+```
+
+## Data: Women in science {.smaller}
+
+Information on 10 women in science who changed the world
+
+```{r echo=FALSE}
+professions %>% select(name) %>% kable()
+```
+
+::: aside
+Source: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-10-women-in-science-who-changed-the-world)
+:::
+
+## Inputs {.smaller}
+
+::: {.panel-tabset}
+
+### professions
+
+```{r}
+professions |> kable()
+```
+
+### dates
+
+```{r}
+dates |> kable()
+```
+
+### works
+
+```{r}
+works |> kable()
+```
+
+:::
+
+## Desired output {.smallest .scrollable}
+
+```{r}
+professions %>%
+    left_join(dates) %>%
+    left_join(works) |> 
+    kable()
+```
+
+## Inputs, reminder {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+names(professions)
+names(dates)
+names(works)
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+nrow(professions)
+nrow(dates)
+nrow(works)
+```
+:::
+
+::::
+
+## Joining data frames
+
+```{r}
+#| echo: true
+#| eval: false
+something_join(x, y)
+```
+
+- `left_join()`: all rows from x
+- `right_join()`: all rows from y
+- `full_join()`: all rows from both x and y
+- ...
+
+## Setup {.smaller}
+
+For the next few slides...
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+x <- tibble(
+    id = c(1, 2, 3),
+    value_x = c("x1", "x2", "x3")
+)
+```
+
+```{r}
+#| echo: true
+x
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+y <- tibble(
+    id = c(1, 2, 4),
+    value_y = c("y1", "y2", "y4")
+)
+```
+```{r}
+#| echo: true
+y
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/left-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+left_join(x, y)
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+```{r}
+#| echo: true
+#| eval: false
+professions %>%
+    left_join(dates) 
+```
+
+```{r}
+#| echo: false
+professions %>%
+    left_join(dates) |> 
+    kable()
+```
+
+## `right_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/right-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+right_join(x, y)
+```
+:::
+
+::::
+
+## `right_join()` {.smaller}
+
+```{r}
+#| echo: true
+#| eval: false
+professions %>%
+    right_join(dates)
+```
+
+```{r}
+#| echo: false
+professions %>%
+    right_join(dates) |> 
+    kable()
+```
+
+## `full_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics("img/lec-05/full-join.gif")
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+full_join(x, y)
+```
+:::
+
+::::
+
+## `full_join()` {.smallest}
+
+
+```{r}
+#| echo: true
+#| eval: false
+dates %>%
+    full_join(works) 
+```
+
+```{r}
+#| echo: false
+dates %>%
+    full_join(works) |> 
+    kable()
+```
+
+## Putting it altogether {.smallest}
+
+```{r}
+#| echo: true
+#| eval: false
+professions %>%
+    left_join(dates) %>%
+    left_join(works) 
+```
+
+```{r}
+#| echo: false
+professions %>%
+    left_join(dates) %>%
+    left_join(works) |> 
+    kable()
+```
+
+# Part 3: Metadata {background-color="#4C326A"}
+
+## Metadata: data about data
+
+WHAT!?
+
+## Faecal sludge samples
+
+Imagine:
+
+- you are new to WASH research and you have never heard of feacal sludge management. 
+- you are interested in learning more about the topic and you want to find some data to play with. 
+- you find a publication with a dataset on faecal sludge characteristics. 
+
+## Faecal sludge samples
+
+You download the XLSX file that contains the data and you open it in Excel. You see the following:
+
+```{r}
+knitr::include_graphics("img/lec-07/sludge-xlsx.png")
+```
+
+## Faecal sludge samples {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Open questions:
+
+- What unit does `users` refer to?
+- What does `ts` stand for?
+- The `date` of what?
+- Where was this data collected?
+- Which method was used to collect the samples?
+:::
+
+
+::: {.column width="60%"}
+```{r}
+knitr::include_graphics("img/lec-07/sludge-xlsx.png")
+```
+:::
+
+::::
+
+. . .
+
+[Questions that only the original author may have the answers to.]{.highlight-yellow}
+
+## You as an author {.center-align}
+
+have the chance to document your data properly [once]{.highlight-yellow} to make it easier for [everyone else]{.highlight-yellow} to know what it contains.
+
+## Documentation {.smaller}
+
+Goes into a separate README file
+
+- [General information]{.highlight-yellow} (authors, title, date, geographic location, etc.)
+- [Sharing / access information]{.highlight-yellow} (license, links to publications, citation)
+- [Methodological information]{.highlight-yellow} (sampling, analysis, etc.)
+
+## Data dictionary
+
+Goes into a separate file (`dictionary.csv`).
+
+Minimum required information
+
+- Variable name
+- Variable description
+
+## Data dictionary for faecal sludge samples
+
+- Edit in spreadsheet software (e.g. MS Excel)
+
+```{r}
+knitr::include_graphics("img/lec-07/dictionary-xlsx.png")
+```
+
+
+## Data dictionary for faecal sludge samples
+
+- Save as CSV file
+
+```{r}
+knitr::include_graphics("img/lec-07/dictionary-csv.png")
+```
+
+## Directory tree of a project {.smaller}
+
+Capstone project of Rainbow Train:
+<https://github.com/ds4owd-001/project-rainbow-train>
+
+```
+.
+├── R
+│   └── 01-data-preparation.R
+├── data
+│   ├── processed
+│   │   ├── README.md
+│   │   ├── dictionary.csv
+│   │   └── faecal-sludge-analysis.csv
+│   └── raw
+│       └── Faecal sludge Analysis_05112023.xlsx
+├── docs
+│   ├── index.html
+│   ├── index.qmd
+│   └── index_files
+│       └── libs
+└── project.Rproj
+```
+
+## Directory tree of a project
+
+- `R` folder: R scripts for data cleaning
+- `data` folder: raw and processed data
+- `docs` folder: the actual report that imports the processed data 
+- `project.Rproj`: RStudio project file
+
+## Inside the `data` folder
+
+- `raw`: data as it was downloaded / as you received it (e.g. Excel file)
+- `processed`: data that is ready to be used in the report
+
+## Inside the `processed` folder
+
+- `README.md`: general information about the data
+- `dictionary.csv`: data dictionary
+- `faecal-sludge-analysis.csv`: cleaned data for which `dictionary.csv` applies
+
+## My turn: A tour of Rainbow Train's project
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Sit back and enjoy!
+:::
+
+```{r}
+countdown(10)
+```
+
+# Homework assignments module 7 {background-color="#4C326A"}
+
+## Module 7 documentation
+
+::: learn-more
+[ds4owd-001.github.io/website/modules/md-07.html](https://ds4owd-001.github.io/website/modules/md-07.html)
+
+```{=html}
+<iframe src="https://ds4owd-001.github.io/website/modules/md-07.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 7 documentation"></iframe>
+```
+:::
+
 
 # Zusatzaufgaben Modul 7 {background-color="#4C326A"}
 
