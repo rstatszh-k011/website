@@ -22,7 +22,7 @@ datum,modul,titel,lernziele
 2024-10-29T00:00:00Z,6,Daten Typen & Vektoren & Iteration I (for loops),"Die Lernenden können einen for loop verwenden, um durch die Elemente eines Vektors in einem Dataframe zu iterieren und spezifische Operationen auf jedes Element anzuwenden."
 2024-11-05T00:00:00Z,7,Datenformen lang und breit & Daten zusammenfügen,"Die Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln."
 2024-11-05T00:00:00Z,7,Datenformen lang und breit & Daten zusammenfügen,"Die Lernenden können Funktionen aus dem `dplyr` R-Paket anwenden, um mehrere Datensätze zu verknüpfen."
-2024-11-05T00:00:00Z,7,Datenformen lang und breit & Daten zusammenfügen,Die Lernenden können die drei grundlegenden Elemente des Tidy Data Konzepters widergeben.
+2024-11-05T00:00:00Z,7,Datenformen lang und breit & Daten zusammenfügen,Die Lernenden können die drei grundlegenden Elemente des Tidy Data Konzeptes widergeben.
 2024-11-12T00:00:00Z,8,Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub III,Die Lernenden können die Funktion `str_detect()` aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.
 2024-11-12T00:00:00Z,8,Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub III,"Due Lernenden können `str_detect()` mit `dplyr` Funktionen wie `filter()` oder `mutate()` nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen."
 2024-11-12T00:00:00Z,8,Mit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub III,Die Lernenden können mittels Branches und einem Pull Request gemeinsam an einem GitHub Repository arbeiten.
