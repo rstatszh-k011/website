@@ -47,4 +47,4 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ## {{< fa code >}} Zusatzaufgaben
 
-- [Zusatzaufgabe 1](../zusatzaufgaben/md-06/za-06-01-abschlussprojekt.qmd): Abschlussprojekt - Dokumentation 
+- [Zusatzaufgabe 1](../zusatzaufgaben/md-07/za-07-01-abschlussprojekt.qmd): Abschlussprojekt - Dokumentation 
