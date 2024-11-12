@@ -20,13 +20,22 @@ editor_options:
   chunk_output_type: console
 ---
 
+
 ```{r}
 #| include: false
 library(countdown)
 library(tidyverse)
 library(epoxy)
 library(gapminder)
+library(gt)
+library(knitr)
+library(statR)
 ```
+
+```{r}
+vornamen <- read_csv(here::here("folien/daten/bfs-vornamen-schweiz.csv"))
+```
+
 
 ## Lernziele (für diese Woche)
 
@@ -34,14 +43,365 @@ library(gapminder)
 #| label: lernziele
 
 lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
-  dplyr::filter(modul == params$modul) |>
-  dplyr::pull(lernziele)
+    dplyr::filter(modul == params$modul) |>
+    dplyr::pull(lernziele)
 
 ```
 
 ```{epoxy}
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
 ```
+
+## Arbeiten mit Strings in R
+
+::: columns
+::: {.column width="70%"}
+- Strings -> Zeichenkette (eine folge von Zeichen)
+- Werden verwendet um Textdaten darzustellen
+- Können beliebige Länge haben
+- Erstellt mit einfachen oder doppelten Anführungszeichen
+- Sonderzeichen können mit dem Backslash  `\` "ausgenommen" werden
+:::
+
+::: {.column width="50%"}
+
+:::
+:::
+
+## Anführungszeichen {.smaller}
+
+- Erstellt mit einfachen oder doppelten Anführungszeichen
+
+```{r}
+#| echo: true
+string1 <- "Dies ist eine Zeichenkette"
+string2 <- 'Wenn ich ein "Anführungszeichen" in eine Zeichenkette einfügen 
+            möchte, verwende ich einfache Anführungszeichen'
+```
+
+## Der Backslash `\` {.smaller}
+
+::: fragment
+
+Um ein einfaches oder doppeltes Anführungszeichen in einer Zeichenkette zu verwenden, kann `\`, um es "auszunehmen":
+
+```{r}
+#| echo: true
+double_quote <- "\"" 
+single_quote <- '\''
+```
+
+:::
+
+::: fragment
+
+Falls du ein wörtliches Backslash in deiner Zeichenkette verwenden möchtest, musst du es "ausnehmen": `"\\"`:
+
+```{r}
+#| echo: true
+backslash <- "\\"
+```
+
+:::
+
+::: fragment
+
+Beachte dass die gedruckte Darstellung einer Zeichenkette in der Console nicht identisch mit der Zeichenkette selbst ist:
+
+```{r}
+#| echo: true
+x <- c(single_quote, double_quote, backslash)
+x
+```
+:::
+
+::: fragment
+
+Um den Rohinhalt der Zeichenkette zu sehen, verwende `str_view()`
+
+```{r}
+#| echo: true
+str_view(x)
+```
+
+:::
+
+::: notes
+Beachte dass die gedruckte Darstellung einer Zeichenkette nicht identisch mit der Zeichenkette selbst ist, da die gedruckte Darstellung die Zeichen zeigt, welche die ausgenommenen Zeichen darstellen. Um den Rohinhalt der Zeichenkette zu sehen, verwende `str_view()`:
+:::
+
+## Vornamen Statistik {.smaller}
+
+**Daten: Vornamen der Bevölkerung nach Jahrgang, Schweiz, 2023**
+
+::: columns
+::: {.column width="50%"}
+
+- jährlich aktualisierte Daten
+- Vornamen mit weniger als 3 Nennungen werden ausgeschlossen
+- Datenquelle: Bundesamt für Statistik
+
+:::
+
+::: {.column width="50%"}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Wieviele einzigartige Vornamen gibt es in der Schweiz?
+:::
+
+1. 2.0 mio
+2. 0.2 mio
+3. 1.0 mio
+4. 3.0 mio
+
+::: fragment
+
+```{r}
+vornamen 
+```
+
+:::
+
+:::
+
+:::
+
+::: footer
+Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
+:::
+
+## Vornamen Statistik {.smaller}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?
+:::
+
+```{r}
+#| echo: true
+#| output-location: column
+#| code-line-numbers: "1-3"
+vornamen |> 
+    count(vorname, geschlecht, 
+          wt = wert, sort = TRUE) |>
+    head(n = 10) 
+```
+
+::: footer
+Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
+:::
+
+## Vornamen Statistik {.smaller}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?
+:::
+
+```{r}
+#| echo: true
+#| output-location: column
+#| code-line-numbers: "5-6"
+
+vornamen |> 
+    count(vorname, geschlecht, 
+          wt = wert, sort = TRUE) |>
+    head(n = 10) |>
+    # aus dem knitr R-Paket
+    kable()
+```
+
+::: footer
+Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
+:::
+
+## Vornamen Statistik {.smaller}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?
+:::
+
+```{r}
+#| echo: true
+#| output-location: column
+#| code-line-numbers: "5-6"
+
+vornamen |> 
+    count(vorname, geschlecht, 
+          wt = wert, sort = TRUE) |>
+    head(n = 10) |>
+    # aus dem gt R-Paket
+    gt()
+```
+
+::: footer
+Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
+:::
+    
+## Vornamen Statistik {.smaller}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?
+:::
+
+```{r}
+#| echo: true
+#| output-location: column
+#| code-line-numbers: "7-13"
+vornamen |> 
+    count(vorname, geschlecht, 
+          wt = wert, sort = TRUE) |>
+    head(n = 10) |>
+    # nutze gt R-Package für die Darstellung
+    gt() |> 
+    tab_style(
+        style = cell_fill(color = "#AFF0ED"),
+        locations = cells_body(
+            columns = everything(),
+            rows = geschlecht == "m"
+        )
+    ) |>
+    tab_style(
+        style = cell_fill(color = "#FFD700"),
+        locations = cells_body(
+            columns = everything(),
+            rows = geschlecht == "w"
+        )
+    )
+```
+
+::: footer
+Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
+:::
+
+## Vornamen Statistik {.smaller}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Was ist die Verteilung der Vornamenlängen in der Schweiz?
+:::
+
+```{r}
+#| echo: true
+#| output-location: column
+
+vornamen |>
+    count(length = str_length(vorname), 
+          wt = wert) |> 
+    print(n = 19)
+```
+
+::: footer
+Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
+:::
+
+## Vornamen Statistik {.smaller}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Was ist die Verteilung der Vornamenlängen in der Schweiz?
+:::
+
+```{r}
+#| echo: true
+#| fig-width: 6
+#| fig-asp: 0.618
+vornamen |>
+    count(length = str_length(vorname), 
+          wt = wert) |> 
+    ggplot(aes(x = length, y = n)) +
+    geom_col() +
+    theme_minimal(base_size = 12)
+```
+
+::: footer
+Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
+:::
+
+## Ihr seid dran: Vornamen Statistik {.smaller}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Welche Fragen könnten wir noch zu den Vornamen in der Schweiz stellen?
+:::
+
+1. Macht ein paar Notizen. 
+2. Teilt sie im Chat.
+
+```{r}
+countdown(3)
+```
+
+## stringr: Zeichenkettenmanipulation in R
+
+::: columns
+::: {.column width="50%"}
+
+Hauptmerkmale:
+
+- Teil der tidyverse R-Pakete
+- Konsistente Syntax mit str_-Präfix
+
+Kernfunktionen:
+
+- str_length(): Stringlänge ermitteln
+- str_sub(): Teilstrings extrahieren/ersetzen
+- str_c(): Strings verketten
+- str_detect(): Mustererkennung
+- str_replace(): Muster ersetzen
+- str_split(): Strings aufteilen
+
+:::
+
+::: {.column width="50%"}
+![]("img/md-08/stringr-logo.png")
+:::
+:::
+
+## Ich bin dran: stringr R-Paket
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Zurücklehnen und Fragen stellen!
+:::
+
+```{r}
+countdown(minutes = 30)
+```
+
+
+# Kanton Zürich - Corporate Design
+
+## Vornamen Statistik mit statR R-Paket {.smaller} 
+
+```{r}
+vornamen |>
+    count(length = str_length(vorname), wt = wert) |> 
+    ggplot(aes(x = factor(length), y = n)) +
+    geom_col(width = 0.8, fill = zhpal$zhwebdataviz[[1]]) +
+    geom_text(aes(label = gt::vec_fmt_number(x = n,
+                                             decimals = 1,
+                                             suffixing = TRUE,
+                                             sep_mark = "'"),
+                  vjust = -0.5),
+              size = 3) +
+    labs(x = "Anzahl Buchstaben",
+         y = NULL,
+         title = "Anzahl Buchstaben in Vornamen, Schweiz",
+         subtitle = "Jahrgänge 1915 bis 2023") +
+    scale_fill_manual() +
+    theme_stat() +
+    theme(
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line.y = element_blank(),
+        panel.grid.major.y = element_blank()
+    ) 
+```
+
+::: footer
+Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
+:::
+
+##
+
+
 
 # Zusatzaufgaben Modul 8 {background-color="#4C326A"}
 
@@ -65,5 +425,5 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 ## Danke! `r emo::ji("sunflower")` 
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-08-text-daten.pdf)
-
+    
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
