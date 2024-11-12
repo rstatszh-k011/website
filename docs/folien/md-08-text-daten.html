@@ -431,7 +431,7 @@ Lars Schöbitz
 <li>Erstellt mit einfachen oder doppelten Anführungszeichen</li>
 <li>Sonderzeichen können mit dem Backslash <code>\</code> “ausgenommen” werden</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:30%;">
 
 </div></div>
 </section>
@@ -511,13 +511,25 @@ Lars Schöbitz
 <p>Frage: Wieviele einzigartige Vornamen gibt es in der Schweiz?</p>
 </div>
 <ol type="1">
-<li>2.0 mio</li>
-<li>0.2 mio</li>
+<li>200’000</li>
+<li>1’000</li>
 <li>1.0 mio</li>
-<li>3.0 mio</li>
+<li>50’000</li>
 </ol>
-<div class="fragment">
+</div></div>
+<div class="footer">
+<p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
+</div>
+</section>
+<section id="vornamen-statistik-1" class="slide level2 smaller">
+<h2>Vornamen Statistik</h2>
+<div class="hand-purple" style="text-align: left;">
+<p>Frage: Wieviele einzigartige Vornamen gibt es in der Schweiz?</p>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>vornamen</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 976,068 × 4
    vorname  geburtsjahr  wert geschlecht
@@ -535,23 +547,42 @@ Lars Schöbitz
 # ℹ 976,058 more rows</code></pre>
 </div>
 </div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a></a>    <span class="fu">distinct</span>(vorname)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 65,401 × 1
+   vorname 
+   &lt;chr&gt;   
+ 1 Olivier 
+ 2 Florian 
+ 3 Max     
+ 4 Albert  
+ 5 Co      
+ 6 Julian  
+ 7 Victor  
+ 8 Alfred  
+ 9 Valentin
+10 Walter  
+# ℹ 65,391 more rows</code></pre>
+</div>
+</div>
 </div>
 </div></div>
-<div class="footer">
-<p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
-</div>
 </section>
-<section id="vornamen-statistik-1" class="slide level2 smaller">
+<section id="vornamen-statistik-2" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?</p>
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="1-3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb9-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb9-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb9-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="1-3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb12-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb12-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 3
@@ -573,19 +604,19 @@ Lars Schöbitz
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="vornamen-statistik-2" class="slide level2 smaller">
+<section id="vornamen-statistik-3" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?</p>
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb11-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb11-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb11-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb11-5"><a></a>    <span class="co"># aus dem knitr R-Paket</span></span>
-<span id="cb11-6"><a></a>    <span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb14-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb14-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-5"><a></a>    <span class="co"># aus dem knitr R-Paket</span></span>
+<span id="cb14-6"><a></a>    <span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <table class="caption-top">
@@ -655,38 +686,38 @@ Lars Schöbitz
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="vornamen-statistik-3" class="slide level2 smaller">
+<section id="vornamen-statistik-4" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?</p>
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb12-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb12-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb12-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb12-5"><a></a>    <span class="co"># aus dem gt R-Paket</span></span>
-<span id="cb12-6"><a></a>    <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb15-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb15-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a></a>    <span class="co"># aus dem gt R-Paket</span></span>
+<span id="cb15-6"><a></a>    <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
-<div id="fbxdodermb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fbxdodermb table {
+<div id="wuggspmjcg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wuggspmjcg table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fbxdodermb thead, #fbxdodermb tbody, #fbxdodermb tfoot, #fbxdodermb tr, #fbxdodermb td, #fbxdodermb th {
+#wuggspmjcg thead, #wuggspmjcg tbody, #wuggspmjcg tfoot, #wuggspmjcg tr, #wuggspmjcg td, #wuggspmjcg th {
   border-style: none;
 }
 
-#fbxdodermb p {
+#wuggspmjcg p {
   margin: 0;
   padding: 0;
 }
 
-#fbxdodermb .gt_table {
+#wuggspmjcg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -712,12 +743,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_caption {
+#wuggspmjcg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fbxdodermb .gt_title {
+#wuggspmjcg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -729,7 +760,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#fbxdodermb .gt_subtitle {
+#wuggspmjcg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -741,7 +772,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#fbxdodermb .gt_heading {
+#wuggspmjcg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -753,13 +784,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_bottom_border {
+#wuggspmjcg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_col_headings {
+#wuggspmjcg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -774,7 +805,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_col_heading {
+#wuggspmjcg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -794,7 +825,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#fbxdodermb .gt_column_spanner_outer {
+#wuggspmjcg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -806,15 +837,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#fbxdodermb .gt_column_spanner_outer:first-child {
+#wuggspmjcg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fbxdodermb .gt_column_spanner_outer:last-child {
+#wuggspmjcg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fbxdodermb .gt_column_spanner {
+#wuggspmjcg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -826,11 +857,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#fbxdodermb .gt_spanner_row {
+#wuggspmjcg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fbxdodermb .gt_group_heading {
+#wuggspmjcg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -856,7 +887,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#fbxdodermb .gt_empty_group_heading {
+#wuggspmjcg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -871,15 +902,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#fbxdodermb .gt_from_md > :first-child {
+#wuggspmjcg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fbxdodermb .gt_from_md > :last-child {
+#wuggspmjcg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fbxdodermb .gt_row {
+#wuggspmjcg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -898,7 +929,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#fbxdodermb .gt_stub {
+#wuggspmjcg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -911,7 +942,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fbxdodermb .gt_stub_row_group {
+#wuggspmjcg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -925,15 +956,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#fbxdodermb .gt_row_group_first td {
+#wuggspmjcg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fbxdodermb .gt_row_group_first th {
+#wuggspmjcg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fbxdodermb .gt_summary_row {
+#wuggspmjcg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -943,16 +974,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fbxdodermb .gt_first_summary_row {
+#wuggspmjcg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_first_summary_row.thick {
+#wuggspmjcg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fbxdodermb .gt_last_summary_row {
+#wuggspmjcg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -962,7 +993,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_grand_summary_row {
+#wuggspmjcg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -972,7 +1003,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fbxdodermb .gt_first_grand_summary_row {
+#wuggspmjcg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -982,7 +1013,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_last_grand_summary_row_top {
+#wuggspmjcg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -992,11 +1023,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_striped {
+#wuggspmjcg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fbxdodermb .gt_table_body {
+#wuggspmjcg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1005,7 +1036,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_footnotes {
+#wuggspmjcg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1019,7 +1050,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_footnote {
+#wuggspmjcg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1028,7 +1059,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fbxdodermb .gt_sourcenotes {
+#wuggspmjcg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1042,7 +1073,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#fbxdodermb .gt_sourcenote {
+#wuggspmjcg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1050,63 +1081,63 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fbxdodermb .gt_left {
+#wuggspmjcg .gt_left {
   text-align: left;
 }
 
-#fbxdodermb .gt_center {
+#wuggspmjcg .gt_center {
   text-align: center;
 }
 
-#fbxdodermb .gt_right {
+#wuggspmjcg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fbxdodermb .gt_font_normal {
+#wuggspmjcg .gt_font_normal {
   font-weight: normal;
 }
 
-#fbxdodermb .gt_font_bold {
+#wuggspmjcg .gt_font_bold {
   font-weight: bold;
 }
 
-#fbxdodermb .gt_font_italic {
+#wuggspmjcg .gt_font_italic {
   font-style: italic;
 }
 
-#fbxdodermb .gt_super {
+#wuggspmjcg .gt_super {
   font-size: 65%;
 }
 
-#fbxdodermb .gt_footnote_marks {
+#wuggspmjcg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fbxdodermb .gt_asterisk {
+#wuggspmjcg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fbxdodermb .gt_indent_1 {
+#wuggspmjcg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fbxdodermb .gt_indent_2 {
+#wuggspmjcg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fbxdodermb .gt_indent_3 {
+#wuggspmjcg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fbxdodermb .gt_indent_4 {
+#wuggspmjcg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fbxdodermb .gt_indent_5 {
+#wuggspmjcg .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1180,52 +1211,52 @@ Lars Schöbitz
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="vornamen-statistik-4" class="slide level2 smaller">
+<section id="vornamen-statistik-5" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was sind die häufigsten 10 Vornamen in der Schweiz?</p>
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="7-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
-<span id="cb13-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
-<span id="cb13-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb13-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
-<span id="cb13-5"><a></a>    <span class="co"># nutze gt R-Package für die Darstellung</span></span>
-<span id="cb13-6"><a></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb13-7"><a></a>    <span class="fu">tab_style</span>(</span>
-<span id="cb13-8"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#AFF0ED"</span>),</span>
-<span id="cb13-9"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
-<span id="cb13-10"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
-<span id="cb13-11"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"m"</span></span>
-<span id="cb13-12"><a></a>        )</span>
-<span id="cb13-13"><a></a>    ) <span class="sc">|&gt;</span></span>
-<span id="cb13-14"><a></a>    <span class="fu">tab_style</span>(</span>
-<span id="cb13-15"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#FFD700"</span>),</span>
-<span id="cb13-16"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
-<span id="cb13-17"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
-<span id="cb13-18"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"w"</span></span>
-<span id="cb13-19"><a></a>        )</span>
-<span id="cb13-20"><a></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="7-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb16-2"><a></a>    <span class="fu">count</span>(vorname, geschlecht, </span>
+<span id="cb16-3"><a></a>          <span class="at">wt =</span> wert, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-4"><a></a>    <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-5"><a></a>    <span class="co"># nutze gt R-Package für die Darstellung</span></span>
+<span id="cb16-6"><a></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb16-7"><a></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb16-8"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#AFF0ED"</span>),</span>
+<span id="cb16-9"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb16-10"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
+<span id="cb16-11"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"m"</span></span>
+<span id="cb16-12"><a></a>        )</span>
+<span id="cb16-13"><a></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb16-14"><a></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb16-15"><a></a>        <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"#FFD700"</span>),</span>
+<span id="cb16-16"><a></a>        <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb16-17"><a></a>            <span class="at">columns =</span> <span class="fu">everything</span>(),</span>
+<span id="cb16-18"><a></a>            <span class="at">rows =</span> geschlecht <span class="sc">==</span> <span class="st">"w"</span></span>
+<span id="cb16-19"><a></a>        )</span>
+<span id="cb16-20"><a></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
-<div id="fqpefqnpwg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fqpefqnpwg table {
+<div id="jctxxpbwwh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jctxxpbwwh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fqpefqnpwg thead, #fqpefqnpwg tbody, #fqpefqnpwg tfoot, #fqpefqnpwg tr, #fqpefqnpwg td, #fqpefqnpwg th {
+#jctxxpbwwh thead, #jctxxpbwwh tbody, #jctxxpbwwh tfoot, #jctxxpbwwh tr, #jctxxpbwwh td, #jctxxpbwwh th {
   border-style: none;
 }
 
-#fqpefqnpwg p {
+#jctxxpbwwh p {
   margin: 0;
   padding: 0;
 }
 
-#fqpefqnpwg .gt_table {
+#jctxxpbwwh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1251,12 +1282,12 @@ Lars Schöbitz
   border-left-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_caption {
+#jctxxpbwwh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fqpefqnpwg .gt_title {
+#jctxxpbwwh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1268,7 +1299,7 @@ Lars Schöbitz
   border-bottom-width: 0;
 }
 
-#fqpefqnpwg .gt_subtitle {
+#jctxxpbwwh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1280,7 +1311,7 @@ Lars Schöbitz
   border-top-width: 0;
 }
 
-#fqpefqnpwg .gt_heading {
+#jctxxpbwwh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1292,13 +1323,13 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_bottom_border {
+#jctxxpbwwh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_col_headings {
+#jctxxpbwwh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1313,7 +1344,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_col_heading {
+#jctxxpbwwh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1333,7 +1364,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#fqpefqnpwg .gt_column_spanner_outer {
+#jctxxpbwwh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1345,15 +1376,15 @@ Lars Schöbitz
   padding-right: 4px;
 }
 
-#fqpefqnpwg .gt_column_spanner_outer:first-child {
+#jctxxpbwwh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fqpefqnpwg .gt_column_spanner_outer:last-child {
+#jctxxpbwwh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fqpefqnpwg .gt_column_spanner {
+#jctxxpbwwh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1365,11 +1396,11 @@ Lars Schöbitz
   width: 100%;
 }
 
-#fqpefqnpwg .gt_spanner_row {
+#jctxxpbwwh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fqpefqnpwg .gt_group_heading {
+#jctxxpbwwh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1395,7 +1426,7 @@ Lars Schöbitz
   text-align: left;
 }
 
-#fqpefqnpwg .gt_empty_group_heading {
+#jctxxpbwwh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1410,15 +1441,15 @@ Lars Schöbitz
   vertical-align: middle;
 }
 
-#fqpefqnpwg .gt_from_md > :first-child {
+#jctxxpbwwh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fqpefqnpwg .gt_from_md > :last-child {
+#jctxxpbwwh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fqpefqnpwg .gt_row {
+#jctxxpbwwh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1437,7 +1468,7 @@ Lars Schöbitz
   overflow-x: hidden;
 }
 
-#fqpefqnpwg .gt_stub {
+#jctxxpbwwh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1450,7 +1481,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fqpefqnpwg .gt_stub_row_group {
+#jctxxpbwwh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1464,15 +1495,15 @@ Lars Schöbitz
   vertical-align: top;
 }
 
-#fqpefqnpwg .gt_row_group_first td {
+#jctxxpbwwh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fqpefqnpwg .gt_row_group_first th {
+#jctxxpbwwh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fqpefqnpwg .gt_summary_row {
+#jctxxpbwwh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1482,16 +1513,16 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fqpefqnpwg .gt_first_summary_row {
+#jctxxpbwwh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_first_summary_row.thick {
+#jctxxpbwwh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fqpefqnpwg .gt_last_summary_row {
+#jctxxpbwwh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1501,7 +1532,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_grand_summary_row {
+#jctxxpbwwh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1511,7 +1542,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fqpefqnpwg .gt_first_grand_summary_row {
+#jctxxpbwwh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1521,7 +1552,7 @@ Lars Schöbitz
   border-top-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_last_grand_summary_row_top {
+#jctxxpbwwh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1531,11 +1562,11 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_striped {
+#jctxxpbwwh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fqpefqnpwg .gt_table_body {
+#jctxxpbwwh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1544,7 +1575,7 @@ Lars Schöbitz
   border-bottom-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_footnotes {
+#jctxxpbwwh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1558,7 +1589,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_footnote {
+#jctxxpbwwh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1567,7 +1598,7 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fqpefqnpwg .gt_sourcenotes {
+#jctxxpbwwh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1581,7 +1612,7 @@ Lars Schöbitz
   border-right-color: #D3D3D3;
 }
 
-#fqpefqnpwg .gt_sourcenote {
+#jctxxpbwwh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1589,63 +1620,63 @@ Lars Schöbitz
   padding-right: 5px;
 }
 
-#fqpefqnpwg .gt_left {
+#jctxxpbwwh .gt_left {
   text-align: left;
 }
 
-#fqpefqnpwg .gt_center {
+#jctxxpbwwh .gt_center {
   text-align: center;
 }
 
-#fqpefqnpwg .gt_right {
+#jctxxpbwwh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fqpefqnpwg .gt_font_normal {
+#jctxxpbwwh .gt_font_normal {
   font-weight: normal;
 }
 
-#fqpefqnpwg .gt_font_bold {
+#jctxxpbwwh .gt_font_bold {
   font-weight: bold;
 }
 
-#fqpefqnpwg .gt_font_italic {
+#jctxxpbwwh .gt_font_italic {
   font-style: italic;
 }
 
-#fqpefqnpwg .gt_super {
+#jctxxpbwwh .gt_super {
   font-size: 65%;
 }
 
-#fqpefqnpwg .gt_footnote_marks {
+#jctxxpbwwh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fqpefqnpwg .gt_asterisk {
+#jctxxpbwwh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fqpefqnpwg .gt_indent_1 {
+#jctxxpbwwh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fqpefqnpwg .gt_indent_2 {
+#jctxxpbwwh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fqpefqnpwg .gt_indent_3 {
+#jctxxpbwwh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fqpefqnpwg .gt_indent_4 {
+#jctxxpbwwh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fqpefqnpwg .gt_indent_5 {
+#jctxxpbwwh .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1719,62 +1750,66 @@ Lars Schöbitz
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="vornamen-statistik-5" class="slide level2 smaller">
+<section id="vornamen-statistik-6" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was ist die Verteilung der Vornamenlängen in der Schweiz?</p>
 </div>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>vornamen <span class="sc">|&gt;</span></span>
-<span id="cb14-2"><a></a>    <span class="fu">count</span>(<span class="at">length =</span> <span class="fu">str_length</span>(vorname), </span>
-<span id="cb14-3"><a></a>          <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
-<span id="cb14-4"><a></a>    <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">19</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb17-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
+<span id="cb17-3"><a></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
+<span id="cb17-4"><a></a>    <span class="fu">count</span>(laenge) <span class="sc">|&gt;</span> </span>
+<span id="cb17-5"><a></a>    <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">19</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 19 × 2
-   length       n
-    &lt;int&gt;   &lt;dbl&gt;
- 1      2    4699
- 2      3  272683
- 3      4 1221416
- 4      5 2016910
- 5      6 2259924
- 6      7 1439223
- 7      8  800811
- 8      9  488483
- 9     10  134828
-10     11   31151
-11     12   19855
-12     13    8225
-13     14    4023
-14     15    3459
-15     16     994
-16     17     307
-17     18     132
-18     19      36
-19     20      17</code></pre>
+   laenge     n
+    &lt;int&gt; &lt;int&gt;
+ 1      2   128
+ 2      3  1094
+ 3      4  5780
+ 4      5 13793
+ 5      6 16075
+ 6      7 12114
+ 7      8  7294
+ 8      9  3719
+ 9     10  2013
+10     11  1155
+11     12   811
+12     13   559
+13     14   384
+14     15   233
+15     16   131
+16     17    75
+17     18    30
+18     19     9
+19     20     4</code></pre>
 </div>
 </div></div>
 <div class="footer">
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="vornamen-statistik-6" class="slide level2 smaller">
+<section id="vornamen-statistik-7" class="slide level2 smaller">
 <h2>Vornamen Statistik</h2>
 <div class="hand-purple" style="text-align: left;">
 <p>Frage: Was ist die Verteilung der Vornamenlängen in der Schweiz?</p>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>vornamen <span class="sc">|&gt;</span></span>
-<span id="cb16-2"><a></a>    <span class="fu">count</span>(<span class="at">length =</span> <span class="fu">str_length</span>(vorname), </span>
-<span id="cb16-3"><a></a>          <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
-<span id="cb16-4"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> length, <span class="at">y =</span> n)) <span class="sc">+</span></span>
-<span id="cb16-5"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb16-6"><a></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>vornamen_laenge_sum <span class="ot">&lt;-</span> vornamen <span class="sc">|&gt;</span> </span>
+<span id="cb19-2"><a></a>    <span class="fu">count</span>(vorname, <span class="at">wt =</span> wert) <span class="sc">|&gt;</span> </span>
+<span id="cb19-3"><a></a>    <span class="fu">mutate</span>(<span class="at">laenge =</span> <span class="fu">str_length</span>(vorname)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-4"><a></a>    <span class="fu">count</span>(laenge)</span>
+<span id="cb19-5"><a></a></span>
+<span id="cb19-6"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> vornamen_laenge_sum, </span>
+<span id="cb19-7"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> laenge, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb19-8"><a></a>    <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb19-9"><a></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-08-text-daten_files/figure-revealjs/unnamed-chunk-16-1.png" width="576" class="r-stretch"><div class="footer">
+<img data-src="md-08-text-daten_files/figure-revealjs/unnamed-chunk-17-1.png" width="576" class="r-stretch"><div class="footer">
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
@@ -1789,39 +1824,162 @@ Lars Schöbitz
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_da3306d8" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_6f433cb2" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
 </section>
-<section id="string-manipulation-mit-stringr-r-paket" class="slide level2">
-<h2>String Manipulation mit stringr R-Paket</h2>
+<section id="stringr-zeichenkettenmanipulation-in-r" class="slide level2 smaller">
+<h2>stringr: Zeichenkettenmanipulation in R</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-
+<p>Hauptmerkmale:</p>
+<ul>
+<li>Teil der tidyverse R-Pakete</li>
+<li>Konsistente Syntax mit str_-Präfix</li>
+</ul>
 </div><div class="column" style="width:50%;">
-<p><a href="https://stringr.tidyverse.org/logo.png"></a></p>
+<p>Funktionen:</p>
+<ul>
+<li><code>str_length()</code>: Stringlänge ermitteln</li>
+<li><code>str_c()</code>: Strings verketten</li>
+<li><code>str_sub()</code>: Teilstrings extrahieren/ersetzen</li>
+<li><code>str_detect()</code>: Mustererkennung</li>
+<li><code>str_count()</code>: Anzahl Vorkommen eines Musters</li>
+<li>…</li>
+</ul>
 </div></div>
+<div class="footer">
+<p>stringr Dokumentation: <a href="https://stringr.tidyverse.org/" class="uri">https://stringr.tidyverse.org/</a></p>
+</div>
 </section>
 <section id="ich-bin-dran-stringr-r-paket" class="slide level2">
 <h2>Ich bin dran: stringr R-Paket</h2>
+<p><br><br></p>
+<div class="hand-purple-large" style="text-align: center;">
+<p>Zurücklehnen und Fragen stellen!</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_eebd91b8" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="pause-machen" class="slide level2">
+<h2>Pause machen</h2>
+<p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span> Lasst eure E-Mails in Frieden ruhen.</p>
+
+<img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_b6bb2869" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Bild erzeugt mit <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
+</div>
 </section>
 <section>
-<section id="kanton-zürich---corporate-design" class="title-slide slide level1 center">
+<section id="kanton-zürich---corporate-design" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Kanton Zürich - Corporate Design</h1>
 
 </section>
 <section id="vornamen-statistik-mit-statr-r-paket" class="slide level2 smaller">
 <h2>Vornamen Statistik mit statR R-Paket</h2>
 
-<img data-src="md-08-text-daten_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"><div class="footer">
+<img data-src="md-08-text-daten_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"><div class="footer">
 <p>Datenquelle: <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html">Weibliche Vornamen</a> &amp; <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html">Männliche Vornamen</a></p>
 </div>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="statr-r-paket" class="slide level2">
+<h2><code>statR</code> R-Paket</h2>
+<ul>
+<li>Erstellt Corporate Design Visualisierungen für den Kanton Zürich</li>
+<li>Enthält ein benutzerdefiniertes <code>ggplot2</code>-Theme</li>
+<li>Bietet generische Farbpaletten für Datenvisualisierungen</li>
+<li>Export von Datensätzen als XLSX-Dateien mit Quellinformationen und zusätzlichen Metadaten</li>
+<li>Stellt eine HTML-Berichtsvorlage zur Verfügung</li>
+<li>Offen auf GitHub verfügbar: <a href="https://github.com/statistikZH/statR" class="uri">https://github.com/statistikZH/statR</a></li>
+</ul>
+<div class="footer">
+<p>statR Dokumentation: <a href="https://statistikzh.github.io/statR/articles/Visualisierungen.html" class="uri">https://statistikzh.github.io/statR/articles/Visualisierungen.html</a></p>
+</div>
+</section>
+<section id="wir-sind-dran-02-statr-wir.qmd" class="slide level2">
+<h2>Wir sind dran: <code>02-statR-wir.qmd</code></h2>
+<div class="task">
+<ol type="1">
+<li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
+<li>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Klicke auf <span class="highlight-yellow">Start</span> neben <span class="highlight-yellow">md-08-uebungen</span>.</li>
+<li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>02-statR-wir.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_f4aa676f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="pause-machen-1" class="slide level2">
+<h2>Pause machen</h2>
+<p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span> Lasst eure E-Mails in Frieden ruhen.</p>
+
+<img data-src="img/md-04/pixel-art-tree.png" style="width:50.0%" class="r-stretch"><div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_be41432d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Bild erzeugt mit <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
+</div>
+</section>
+<section id="ihr-seid-dran-03-vornamen-ihr.qmd" class="slide level2">
+<h2>Ihr seid dran: <code>03-vornamen-ihr.qmd</code></h2>
+<div class="task">
+<ol type="1">
+<li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
+<li>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Klicke auf <span class="highlight-yellow">Continue</span> neben <span class="highlight-yellow">md-08-uebungen</span>.</li>
+<li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>03-vornamen-ihr.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
+<li>Folge den Anweisungen in der Datei.</li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_cfde44d8" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="zeitpuffer-modul-8" class="slide level2 smaller">
+<h2>Zeitpuffer: Modul 8</h2>
+<div class="hand-purple-large" style="text-align: center;">
+<p>Kann ich noch etwas zum heutigen Modul erklären?</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_fd376971" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
 </section></section>
 <section>
 <section id="zusatzaufgaben-modul-8" class="title-slide slide level1 center" data-background-color="#4C326A">

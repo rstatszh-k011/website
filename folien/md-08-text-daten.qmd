@@ -63,7 +63,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 - Sonderzeichen können mit dem Backslash  `\` "ausgenommen" werden
 :::
 
-::: {.column width="50%"}
+::: {.column width="30%"}
 
 :::
 :::
@@ -149,18 +149,10 @@ Beachte dass die gedruckte Darstellung einer Zeichenkette nicht identisch mit de
 Frage: Wieviele einzigartige Vornamen gibt es in der Schweiz?
 :::
 
-1. 2.0 mio
-2. 0.2 mio
+1. 200'000 
+2. 1'000 
 3. 1.0 mio
-4. 3.0 mio
-
-::: fragment
-
-```{r}
-vornamen 
-```
-
-:::
+4. 50'000
 
 :::
 
@@ -168,6 +160,36 @@ vornamen
 
 ::: footer
 Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
+:::
+
+## Vornamen Statistik {.smaller}
+
+::: {.hand-purple style="text-align: left;"}
+Frage: Wieviele einzigartige Vornamen gibt es in der Schweiz?
+:::
+
+::: columns
+::: {.column width="50%"}
+```{r}
+#| echo: true
+vornamen
+```
+:::
+
+
+::: {.column width="50%"}
+
+::: fragment
+
+```{r}
+#| echo: true
+vornamen |> 
+    distinct(vorname)
+```
+
+::: 
+
+::: 
 :::
 
 ## Vornamen Statistik {.smaller}
@@ -235,7 +257,7 @@ vornamen |>
 ::: footer
 Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
 :::
-    
+
 ## Vornamen Statistik {.smaller}
 
 ::: {.hand-purple style="text-align: left;"}
@@ -282,9 +304,10 @@ Frage: Was ist die Verteilung der Vornamenlängen in der Schweiz?
 #| echo: true
 #| output-location: column
 
-vornamen |>
-    count(length = str_length(vorname), 
-          wt = wert) |> 
+vornamen |> 
+    count(vorname, wt = wert) |> 
+    mutate(laenge = str_length(vorname)) |> 
+    count(laenge) |> 
     print(n = 19)
 ```
 
@@ -302,12 +325,17 @@ Frage: Was ist die Verteilung der Vornamenlängen in der Schweiz?
 #| echo: true
 #| fig-width: 6
 #| fig-asp: 0.618
-vornamen |>
-    count(length = str_length(vorname), 
-          wt = wert) |> 
-    ggplot(aes(x = length, y = n)) +
+
+vornamen_laenge_sum <- vornamen |> 
+    count(vorname, wt = wert) |> 
+    mutate(laenge = str_length(vorname)) |> 
+    count(laenge)
+
+ggplot(data = vornamen_laenge_sum, 
+       mapping = aes(x = laenge, y = n)) +
     geom_col() +
     theme_minimal(base_size = 12)
+
 ```
 
 ::: footer
@@ -324,33 +352,35 @@ Frage: Welche Fragen könnten wir noch zu den Vornamen in der Schweiz stellen?
 2. Teilt sie im Chat.
 
 ```{r}
-countdown(3)
+countdown(2)
 ```
 
-## stringr: Zeichenkettenmanipulation in R
+## stringr: Zeichenkettenmanipulation in R {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
-
 Hauptmerkmale:
 
 - Teil der tidyverse R-Pakete
 - Konsistente Syntax mit str_-Präfix
 
-Kernfunktionen:
-
-- str_length(): Stringlänge ermitteln
-- str_sub(): Teilstrings extrahieren/ersetzen
-- str_c(): Strings verketten
-- str_detect(): Mustererkennung
-- str_replace(): Muster ersetzen
-- str_split(): Strings aufteilen
-
 :::
 
 ::: {.column width="50%"}
-![]("img/md-08/stringr-logo.png")
+Funktionen:
+
+- `str_length()`: Stringlänge ermitteln
+- `str_c()`: Strings verketten
+- `str_sub()`: Teilstrings extrahieren/ersetzen
+- `str_detect()`: Mustererkennung
+- `str_count()`: Anzahl Vorkommen eines Musters
+- ...
+
 :::
+:::
+
+::: footer
+stringr Dokumentation: <https://stringr.tidyverse.org/>
 :::
 
 ## Ich bin dran: stringr R-Paket
@@ -365,43 +395,108 @@ Zurücklehnen und Fragen stellen!
 countdown(minutes = 30)
 ```
 
+## Pause machen
 
-# Kanton Zürich - Corporate Design
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+# Kanton Zürich - Corporate Design {background-color="#4C326A"}
 
 ## Vornamen Statistik mit statR R-Paket {.smaller} 
 
 ```{r}
-vornamen |>
-    count(length = str_length(vorname), wt = wert) |> 
-    ggplot(aes(x = factor(length), y = n)) +
-    geom_col(width = 0.8, fill = zhpal$zhwebdataviz[[1]]) +
-    geom_text(aes(label = gt::vec_fmt_number(x = n,
-                                             decimals = 1,
+ggplot(vornamen_laenge_sum, aes(x = factor(laenge), y = n)) +
+    geom_col(fill = zhpal$zhblue[1], width = 0.8) +
+    geom_text(aes(label = gt::vec_fmt_number(n,
+                                             sep_mark = "'",
                                              suffixing = TRUE,
-                                             sep_mark = "'"),
-                  vjust = -0.5),
-              size = 3) +
+                                             decimals = 0)),
+              size = 3, 
+              vjust = -0.5) +
     labs(x = "Anzahl Buchstaben",
          y = NULL,
          title = "Anzahl Buchstaben in Vornamen, Schweiz",
          subtitle = "Jahrgänge 1915 bis 2023") +
-    scale_fill_manual() +
     theme_stat() +
-    theme(
-        axis.text.y = element_blank(),
-        axis.ticks.y = element_blank(),
-        axis.line.y = element_blank(),
-        panel.grid.major.y = element_blank()
-    ) 
+    theme(axis.text.y = element_blank(),
+          panel.grid.major.y = element_blank())
 ```
 
 ::: footer
 Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208758.html) & [Männliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistiken/katalog.assetdetail.32208755.html)
 :::
 
-##
+## `statR` R-Paket 
 
+- Erstellt Corporate Design Visualisierungen für den Kanton Zürich
+- Enthält ein benutzerdefiniertes `ggplot2`-Theme
+- Bietet generische Farbpaletten für Datenvisualisierungen
+- Export von Datensätzen als XLSX-Dateien mit Quellinformationen und zusätzlichen Metadaten
+- Stellt eine HTML-Berichtsvorlage zur Verfügung
+- Offen auf GitHub verfügbar: <https://github.com/statistikZH/statR>
 
+::: footer
+statR Dokumentation: <https://statistikzh.github.io/statR/articles/Visualisierungen.html>
+:::
+
+## Wir sind dran: `02-statR-wir.qmd`
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Start]{.highlight-yellow} neben [md-08-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei [`02-statR-wir.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+:::
+
+```{r}
+countdown(30)
+```
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Ihr seid dran: `03-vornamen-ihr.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Continue]{.highlight-yellow} neben [md-08-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`03-vornamen-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(30)
+```
+
+## Zeitpuffer: Modul 8 {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Kann ich noch etwas zum heutigen Modul erklären?
+:::
+```{r}
+countdown(10)
+```
 
 # Zusatzaufgaben Modul 8 {background-color="#4C326A"}
 
@@ -425,5 +520,5 @@ Datenquelle: [Weibliche Vornamen](https://www.bfs.admin.ch/bfs/de/home/statistik
 ## Danke! `r emo::ji("sunflower")` 
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-08-text-daten.pdf)
-    
+
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
