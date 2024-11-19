@@ -2860,5 +2860,264 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#lernziele-für-diese-woche",
+    "href": "folien/md-09-quarto.html#lernziele-für-diese-woche",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Literaturangaben zu Quarto-Dateien hinzufügen, indem sie das Navigationsmenü des visuellen Editors RStudio verwenden und eine Referenzsammlung im .bib Dateformat erstellen.\nDie Lernenden können Funktionen aus den Paketen knitr und gt anwenden, um Tabellen in Berichten im HTML Ausgabeformat darzustellen.\nDie Lernenden können den GitHub Pages Dienst nutzen, um ein Repository als eigenständige Website zu veröffentlichen."
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#quarto-1",
+    "href": "folien/md-09-quarto.html#quarto-1",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Quarto …",
+    "text": "Quarto …\n\nist ein neues, open-source, wissenschaftliches und technisches Publikationssystem\nzielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#artikel-berichte-html",
+    "href": "folien/md-09-quarto.html#artikel-berichte-html",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Artikel & Berichte (HTML)",
+    "text": "Artikel & Berichte (HTML)\n\nquarto-dev.github.io/quarto-gallery/articles/html/html.html"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#artikel-berichte-html-1",
+    "href": "folien/md-09-quarto.html#artikel-berichte-html-1",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Artikel & Berichte (HTML)",
+    "text": "Artikel & Berichte (HTML)\nBesuche quarto.org!\n\nquarto.org/docs/output-formats/html-basics.html"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#folien-html-revealjs",
+    "href": "folien/md-09-quarto.html#folien-html-revealjs",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Folien (HTML revealjs)",
+    "text": "Folien (HTML revealjs)\n\napreshill.github.io/palmerpenguins-useR-2022/#/title-slide"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#folien-html-revealjs-1",
+    "href": "folien/md-09-quarto.html#folien-html-revealjs-1",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Folien (HTML revealjs)",
+    "text": "Folien (HTML revealjs)\nBesuche quarto.org!\n\nquarto.org/docs/presentations/revealjs/"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#dashboards",
+    "href": "folien/md-09-quarto.html#dashboards",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Dashboards",
+    "text": "Dashboards\n\npub.demo.posit.team/public/nz-quakes/quakes.html"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#dashboards-1",
+    "href": "folien/md-09-quarto.html#dashboards-1",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Dashboards",
+    "text": "Dashboards\nBesuche quarto.org!\n\nquarto.org/docs/dashboards/"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#gallery-auf-quarto.org",
+    "href": "folien/md-09-quarto.html#gallery-auf-quarto.org",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Gallery auf quarto.org",
+    "text": "Gallery auf quarto.org\n\nquarto.org/docs/gallery/"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#komponenten",
+    "href": "folien/md-09-quarto.html#komponenten",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Komponenten",
+    "text": "Komponenten\n\nMetadaten: YAML\nText: Markdown\nCode: Ausgeführt via knitr (R) oder jupyter (python)\n\n\nFüge alles zusammen und du erhältst anschauliche, schöne und nützliche Ergebnisse!"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#literate-programming",
+    "href": "folien/md-09-quarto.html#literate-programming",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Literate programming",
+    "text": "Literate programming\nDE: wortgetreue Progammierung\nBei der wortgetreuen Programmierung wird die Programmlogik in einer menschlichen Sprache mit eingeschlossenen Codeschnipseln geschrieben.\n---\ntitle: \"ggplot2 demo\"\ndate: \"19/11/2024\"\nformat: html\n---\n\n## Pinguine\n\nEs gibt einen linearen Zusammenhang zwischen Länge und Tiefe des Schnabels, abhängig von der Art.\n\n```{r}\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\nggplot(penguins, aes(x = bill_length_mm, \n                     y = bill_depth_mm,\n                     color = species)) +\n  geom_point()\n```\n\n\nSource: https://en.wikipedia.org/wiki/Literate_programming"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#yaml",
+    "href": "folien/md-09-quarto.html#yaml",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "YAML",
+    "text": "YAML\n“Yet Another Markup Language” oder “YAML Ain’t Markup Language” wird verwendet, um Metadaten auf Dokumentebene bereitzustellen.\n---\nkey: value\n---"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#output-options",
+    "href": "folien/md-09-quarto.html#output-options",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Output options",
+    "text": "Output options\n---\nformat: something\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#output-option-arguments",
+    "href": "folien/md-09-quarto.html#output-option-arguments",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Output option arguments",
+    "text": "Output option arguments\nIndentation matters!\n---\nformat: \n  html:\n    toc: true\n    code-fold: true\n---"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#yaml-validation",
+    "href": "folien/md-09-quarto.html#yaml-validation",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "YAML validation",
+    "text": "YAML validation\n\nInvalid: No space after :\n\n---\nformat:html\n---\n\nInvalid: Read as missing\n\n---\nformat:\nhtml\n---"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#yaml-validation-1",
+    "href": "folien/md-09-quarto.html#yaml-validation-1",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "YAML validation",
+    "text": "YAML validation\nThere are multiple ways of formatting valid YAML:\n\nValid: There’s a space after :\n\nformat: html\n\nValid: format: html with selections made with proper indentation\n\nformat: \n  html:\n    toc: true"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#quarto-linting",
+    "href": "folien/md-09-quarto.html#quarto-linting",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Quarto linting",
+    "text": "Quarto linting\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#quarto-yaml-intelligence",
+    "href": "folien/md-09-quarto.html#quarto-yaml-intelligence",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Quarto YAML Intelligence",
+    "text": "Quarto YAML Intelligence\nRStudio + VSCode provide rich tab-completion - start a word and tab to complete, or Ctrl + space to see all available options."
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#list-of-valid-yaml-fields",
+    "href": "folien/md-09-quarto.html#list-of-valid-yaml-fields",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "List of valid YAML fields",
+    "text": "List of valid YAML fields\n\nMany YAML fields are common across various outputs\nBut also each output type has its own set of valid YAML fields and options\nDefinitive list: quarto.org/docs/reference/formats/html"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#text-formatting",
+    "href": "folien/md-09-quarto.html#text-formatting",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Text Formatting",
+    "text": "Text Formatting\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#headings",
+    "href": "folien/md-09-quarto.html#headings",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Headings",
+    "text": "Headings\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#links",
+    "href": "folien/md-09-quarto.html#links",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Links",
+    "text": "Links\nEs gibt verschiedene Arten von “Links” oder Hyperlinks.\n\n\nMarkdown\nDu kannst [benannte Hyperlinks] (https://quarto.org/),\ndirekte URLs wie &lt;https://quarto.org/&gt; und Links zu \n[anderen Orten](#quarto-anatomy) in \ndas Dokument einbetten. Die Syntax für das Einbetten eines\nInline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](images/penguins-quarto-ball.png).\n\nAusgabe\nDu kannst [benannte Hyperlinks] (https://quarto.org/), direkte URLs wie https://quarto.org/ und Links zu anderen Orten in das Dokument einbetten. Die Syntax für das Einbetten eines Inline-Bildes ist ähnlich: ."
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#lists",
+    "href": "folien/md-09-quarto.html#lists",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Lists",
+    "text": "Lists\nUnordered list:\n\n\nMarkdown:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1 \n\nOutput\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nOrdered list:\n\n\nMarkdown:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nOutput\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#quotes",
+    "href": "folien/md-09-quarto.html#quotes",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Quotes",
+    "text": "Quotes\nMarkdown:\n&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. \n&gt; - Donald Knuth, Literate Programming\n\nOutput:\n\nLet us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming\n\n\n\n\n@knuth1984literate"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#your-turn",
+    "href": "folien/md-09-quarto.html#your-turn",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen markdown-syntax.qmd in RStudio.\nUse the source editor mode\nFollow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.\n\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#modul-9-dokumentation",
+    "href": "folien/md-09-quarto.html#modul-9-dokumentation",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Modul 9 Dokumentation",
+    "text": "Modul 9 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-09.html"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#zusatzaufgaben-abgabedatum",
+    "href": "folien/md-09-quarto.html#zusatzaufgaben-abgabedatum",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Zusatzaufgaben Abgabedatum",
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 25. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 28. November"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#danke-1",
+    "href": "folien/md-09-quarto.html#danke-1",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Danke! 🌻",
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#output-ausgabe-optionen",
+    "href": "folien/md-09-quarto.html#output-ausgabe-optionen",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Output (Ausgabe) Optionen",
+    "text": "Output (Ausgabe) Optionen\n---\nformat: etwas\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#output-ausgabe-optionen-argumente",
+    "href": "folien/md-09-quarto.html#output-ausgabe-optionen-argumente",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Output (Ausgabe) Optionen Argumente",
+    "text": "Output (Ausgabe) Optionen Argumente\nEinrückung ist wichtig!\n---\nformat: \n  html:\n    toc: true\n    code-fold: true\n---"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#yaml-validierung",
+    "href": "folien/md-09-quarto.html#yaml-validierung",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "YAML Validierung",
+    "text": "YAML Validierung\n\nUngültig: Kein Leerzeichen nach :\n\n---\nformat:html\n---\n\nUngültig: Als fehlend gelesen\n\n---\nformat:\nhtml\n---"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#yaml-validierung-1",
+    "href": "folien/md-09-quarto.html#yaml-validierung-1",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "YAML Validierung",
+    "text": "YAML Validierung\nEs gibt mehrere Möglichkeiten, gültiges YAML zu formatieren:\n\nGültig: Es gibt ein Leerzeichen nach :\n\nformat: html\n\nGültig: format: html mit Auswahlen, die mit korrekter Einrückung erfolgen\n\nformat: \n  html:\n    toc: true"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#quarto-linter",
+    "href": "folien/md-09-quarto.html#quarto-linter",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Quarto linter",
+    "text": "Quarto linter\nLint oder ein Linter ist ein statisches Code-Analyse-Tool, das Programmierfehler, Bugs, stilistische Fehler und verdächtige Konstrukte aufzeigt.\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#quarto-yaml-intelligenz",
+    "href": "folien/md-09-quarto.html#quarto-yaml-intelligenz",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Quarto YAML Intelligenz",
+    "text": "Quarto YAML Intelligenz\nRStudio + VSCode bieten eine umfangreiche Tab-Vervollständigung – fange mit einem Wort an und tippe auf die Tab-Taste, um es zu vervollständigen, oder Strg + Leertaste um alle möglichen Optionen zu sehen."
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#liste-der-gültigen-yaml-felder",
+    "href": "folien/md-09-quarto.html#liste-der-gültigen-yaml-felder",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Liste der gültigen YAML-Felder",
+    "text": "Liste der gültigen YAML-Felder\n\nViele YAML-Felder sind bei verschiedenen Ausgaben gleich\nAber auch jeder Ausgabetyp hat einen eigenen Satz an gültigen YAML-Feldern und Optionen\nKomplette Liste: quarto.org/docs/reference/formats/html"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#text-formatierung",
+    "href": "folien/md-09-quarto.html#text-formatierung",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Text Formatierung",
+    "text": "Text Formatierung\n\n\n\n\n\n\n\n\nMarkdown Syntax\nAusgabe\n\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n\n~~strikethrough~~\nstrikethrough\n\n\n\n`verbatim code`\nverbatim code"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#headings-überschriften",
+    "href": "folien/md-09-quarto.html#headings-überschriften",
+    "title": "Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages",
+    "section": "Headings (Überschriften)",
+    "text": "Headings (Überschriften)\n\n\n\n\n\n\n\n\nMarkdown Syntax\nAusgabe\n\n\n\n\n\n# Header 1\nHeader 1\n\n\n\n## Header 2\nHeader 2\n\n\n\n### Header 3\nHeader 3\n\n\n\n#### Header 4\nHeader 4\n\n\n\n##### Header 5\nHeader 5\n\n\n\n###### Header 6\nHeader 6"
   }
 ]

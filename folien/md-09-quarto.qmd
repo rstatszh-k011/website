@@ -43,6 +43,427 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
 ```
 
+# Quarto {background-color="#4C326A"}
+
+## Quarto ...
+
+- ist ein neues, open-source, wissenschaftliches und technisches Publikationssystem
+- zielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](img/md-01/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
+
+## Artikel & Berichte (HTML)
+
+::: learn-more
+[quarto-dev.github.io/quarto-gallery/articles/html/html.html](https://quarto-dev.github.io/quarto-gallery/articles/html/html.html)
+
+```{=html}
+<iframe src="https://quarto-dev.github.io/quarto-gallery/articles/html/html.html" width="100%" height="500" style="border:2px solid #123233;" title="Quarto HTML Berichte"></iframe>
+```
+:::
+
+## Artikel & Berichte (HTML)
+
+Besuche [quarto.org](https://quarto.org)!
+
+::: learn-more
+[quarto.org/docs/output-formats/html-basics.html](https://quarto.org/docs/output-formats/html-basics.html)
+
+```{=html}
+<iframe src="https://quarto.org/docs/output-formats/html-basics.html" width="100%" height="500" style="border:2px solid #123233;" title="Quarto HTML Berichte"></iframe>
+```
+:::
+
+## Folien (HTML revealjs)
+
+::: learn-more
+[apreshill.github.io/palmerpenguins-useR-2022/#/title-slide](https://apreshill.github.io/palmerpenguins-useR-2022/#/title-slide)
+
+```{=html}
+<iframe src="https://apreshill.github.io/palmerpenguins-useR-2022/#/title-slide" width="100%" height="500" style="border:2px solid #123233;" title="Quarto revealjs Folien"></iframe>
+```
+:::
+
+## Folien (HTML revealjs)
+
+Besuche [quarto.org](https://quarto.org)!
+
+::: learn-more
+[quarto.org/docs/presentations/revealjs/](https://quarto.org/docs/presentations/revealjs/)
+
+```{=html}
+<iframe src="https://quarto.org/docs/presentations/revealjs/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto revealjs Folien"></iframe>
+```
+:::
+
+## Dashboards
+
+::: learn-more
+[pub.demo.posit.team/public/nz-quakes/quakes.html](https://pub.demo.posit.team/public/nz-quakes/quakes.html)
+
+```{=html}
+<iframe src="https://pub.demo.posit.team/public/nz-quakes/quakes.html" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Dashboard Earthquakes"></iframe>
+```
+:::
+
+
+## Dashboards
+
+Besuche [quarto.org](https://quarto.org)!
+
+::: learn-more
+[quarto.org/docs/dashboards/](https://quarto.org/docs/dashboards/)
+
+```{=html}
+<iframe src="https://quarto.org/docs/dashboards/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Dashboards Dokumentation"></iframe>
+```
+:::
+
+## Gallery auf quarto.org
+
+::: learn-more
+[quarto.org/docs/gallery/](https://quarto.org/docs/gallery/)
+
+```{=html}
+<iframe src="https://quarto.org/docs/gallery/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Gallery"></iframe>
+```
+:::
+
+
+# Anatomie eines Quarto-Dokuments {#quarto-anatomie background-color="#4C326A"}
+
+## Komponenten
+
+1.  Metadaten: YAML
+
+2.  Text: Markdown
+
+3.  Code: Ausgeführt via `knitr` (R) oder `jupyter` (python)
+
+. . .
+
+**Füge alles zusammen** und du erhältst anschauliche, schöne und nützliche Ergebnisse!
+
+## Literate programming {.smaller}
+
+DE: wortgetreue Progammierung
+
+Bei der wortgetreuen Programmierung wird die Programmlogik in einer menschlichen Sprache mit eingeschlossenen Codeschnipseln geschrieben.
+
+````         
+---
+title: "ggplot2 demo"
+date: "19/11/2024"
+format: html
+---
+
+## Pinguine
+
+Es gibt einen linearen Zusammenhang zwischen Länge und Tiefe des Schnabels, abhängig von der Art.
+
+```{{r}}
+library(ggplot2)
+library(palmerpenguins)
+
+ggplot(penguins, aes(x = bill_length_mm, 
+                     y = bill_depth_mm,
+                     color = species)) +
+  geom_point()
+```
+````
+::: aside
+Source: <https://en.wikipedia.org/wiki/Literate_programming>
+:::
+
+# Metadaten {background-color="#4C326A"}
+
+## YAML
+
+"Yet Another Markup Language" oder "YAML Ain't Markup Language" wird verwendet, um Metadaten auf Dokumentebene bereitzustellen.
+
+``` yaml
+---
+key: value
+---
+```
+
+## Output (Ausgabe) Optionen
+
+``` yaml
+---
+format: etwas
+---
+```
+
+. . .
+
+<br>
+
+``` yaml
+---
+format: html
+---
+```
+
+``` yaml
+---
+format: pdf
+---
+```
+
+``` yaml
+---
+format: revealjs
+---
+```
+
+## Output (Ausgabe) Optionen Argumente
+
+Einrückung ist wichtig!
+
+``` yaml
+---
+format: 
+  html:
+    toc: true
+    code-fold: true
+---
+```
+
+## YAML Validierung {.smaller}
+
+-   Ungültig: Kein Leerzeichen nach `:`
+
+``` yaml
+---
+format:html
+---
+```
+
+-   Ungültig: Als fehlend gelesen
+
+``` yaml
+---
+format:
+html
+---
+```
+
+## YAML Validierung {.smaller}
+
+Es gibt mehrere Möglichkeiten, gültiges YAML zu formatieren:
+
+-   Gültig: Es gibt ein Leerzeichen nach `:`
+
+``` yaml
+format: html
+```
+
+-   Gültig: `format: html` mit Auswahlen, die mit korrekter Einrückung erfolgen
+
+``` yaml
+format: 
+  html:
+    toc: true
+```
+
+## Quarto linter
+
+Lint oder ein Linter ist ein statisches Code-Analyse-Tool, das Programmierfehler, Bugs, stilistische Fehler und verdächtige Konstrukte aufzeigt.
+
+<br>
+
+![](images/lint-rstudio.png){fig-alt="Linter zeigt Meldung für schlecht formatiertes YAML an."}
+
+::: aside
+Source: <https://en.wikipedia.org/wiki/Lint_(software)>
+:::
+
+## Quarto YAML Intelligenz
+
+RStudio + VSCode bieten eine umfangreiche Tab-Vervollständigung – fange mit einem Wort an und tippe auf die Tab-Taste, um es zu vervollständigen, oder  <kbd>`Strg + Leertaste`</kbd> um alle möglichen Optionen zu sehen.
+
+<br>
+
+![](images/quarto-tab-complete.png){fig-align="center" width="600"}
+
+## Liste der gültigen YAML-Felder
+
+- Viele YAML-Felder sind bei verschiedenen Ausgaben gleich
+
+- Aber auch jeder Ausgabetyp hat einen eigenen Satz an gültigen YAML-Feldern und Optionen
+
+-   Komplette Liste: [quarto.org/docs/reference/formats/html](https://quarto.org/docs/reference/formats/html.html)
+
+# Text {background-color="#4C326A"}
+
+## Text Formatierung
+
++-------------------------------+-------------------------------+
+| Markdown Syntax               | Ausgabe                        |
++===============================+===============================+
+| ```                           | *italics* and **bold**        |
+| *italics* and **bold**        |                               |
+| ```                           |                               |
++-------------------------------+-------------------------------+
+| ```                           | superscript^2^ / subscript~2~ |
+| superscript^2^ / subscript~2~ |                               |
+| ```                           |                               |
++-------------------------------+-------------------------------+
+| ```                           | ~~strikethrough~~             |
+| ~~strikethrough~~             |                               |
+| ```                           |                               |
++-------------------------------+-------------------------------+
+| ```                           | `verbatim code`               |
+| `verbatim code`               |                               |
+| ```                           |                               |
++-------------------------------+-------------------------------+
+
+: {tbl-colwidths="\[50,50\]"}
+
+## Headings (Überschriften) {.smaller}
+
++-----------------+-----------------+
+| Markdown Syntax | Ausgabe          |
++=================+=================+
+| ```             | # Header 1      |
+| # Header 1      |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | ## Header 2     |
+| ## Header 2     |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | ### Header 3    |
+| ### Header 3    |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | #### Header 4   |
+| #### Header 4   |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | ##### Header 5  |
+| ##### Header 5  |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | ###### Header 6 |
+| ###### Header 6 |                 |
+| ```             |                 |
++-----------------+-----------------+
+
+: {tbl-colwidths="\[50,50\]"}
+
+## Links {.smaller}
+
+Es gibt verschiedene Arten von "Links" oder Hyperlinks.
+
+::: columns
+::: {.column width="70%"}
+**Markdown**
+
+``` markdown
+Du kannst [benannte Hyperlinks] (https://quarto.org/),
+direkte URLs wie <https://quarto.org/> und Links zu 
+[anderen Orten](#quarto-anatomy) in 
+das Dokument einbetten. Die Syntax für das Einbetten eines
+Inline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](images/penguins-quarto-ball.png).
+```
+:::
+
+::: {.column .fragment width="30%"}
+**Ausgabe**
+
+Du kannst [benannte Hyperlinks] (https://quarto.org/),
+direkte URLs wie <https://quarto.org/> und Links zu [anderen Orten](#quarto-anatomie) in  das Dokument einbetten. Die Syntax für das Einbetten eines Inline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](images/penguins-quarto-ball.png){style="width:250px;"}.
+:::
+:::
+
+## Listen {.smaller}
+
+Ungeordnete Liste:
+
+::: columns
+::: {.column width="50%"}
+**Markdown:**
+
+``` markdown
+-   unordered list         
+    -   sub-item 1         
+    -   sub-item 1         
+        -   sub-sub-item 1 
+```
+:::
+
+::: {.column .fragment width="50%" fragment-index="1"}
+**Ausgabe**
+
+-   unordered list
+    -   sub-item 1\
+    -   sub-item 1
+        -   sub-sub-item 1
+:::
+:::
+
+Geordnete Liste:
+
+::: columns
+::: {.column width="50%"}
+**Markdown:**
+
+``` markdown
+1. ordered list            
+2. item 2                  
+    i. sub-item 1          
+         A.  sub-sub-item 1
+```
+:::
+
+::: {.column .fragment width="50%" fragment-index="2"}
+**Ausgabe**
+
+1.  ordered list\
+2.  item 2
+    i.  sub-item 1
+        A.  sub-sub-item 1
+:::
+:::
+
+## Zitate
+
+**Markdown:**
+
+``` markdown
+> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. 
+> - Donald Knuth, Literate Programming
+```
+
+. . .
+
+**Output:**
+
+> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming
+
+::: aside
+@knuth1984literate
+:::
+
+## Ihr seid dran: `01-markdown-syntax.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Continue]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`01-markdown-syntax.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5. Verwende den [Quelltexteditor (Source editor)]{.highlight-yellow} Modus
+6.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(20)
+```
+
+
+
 # Zusatzaufgaben Modul 9 {background-color="#4C326A"}
 
 ## Modul 9 Dokumentation
