@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Lars Schöbitz">
-  <title>rstatsZH - Data Science mit R – Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages</title>
+  <title>rstatsZH - Data Science mit R – Erstellung von Berichten und Folien mit Quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -397,7 +397,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Erstellung und Veröffentlichung analytischer Artikel mit Quarto und GitHub Pages</h1>
+  <h1 class="title">Erstellung von Berichten und Folien mit Quarto</h1>
   <p class="subtitle">rstatsZH - Data Science mit R</p>
 
 <div class="quarto-title-authors">
@@ -602,7 +602,7 @@ Lars Schöbitz
 <h2>Quarto linter</h2>
 <p>Lint oder ein Linter ist ein statisches Code-Analyse-Tool, das Programmierfehler, Bugs, stilistische Fehler und verdächtige Konstrukte aufzeigt.</p>
 <p><br></p>
-<p><img data-src="images/lint-rstudio.png" alt="Linter zeigt Meldung für schlecht formatiertes YAML an."></p>
+<p><img data-src="img/md-09/lint-rstudio.png" alt="Linter zeigt Meldung für schlecht formatiertes YAML an."></p>
 
 <aside><div>
 <p>Source: <a href="https://en.wikipedia.org/wiki/Lint_(software)" class="uri">https://en.wikipedia.org/wiki/Lint_(software)</a></p>
@@ -612,7 +612,7 @@ Lars Schöbitz
 <p>RStudio + VSCode bieten eine umfangreiche Tab-Vervollständigung – fange mit einem Wort an und tippe auf die Tab-Taste, um es zu vervollständigen, oder <kbd><code>Strg + Leertaste</code></kbd> um alle möglichen Optionen zu sehen.</p>
 <p><br></p>
 
-<img data-src="images/quarto-tab-complete.png" class="quarto-figure quarto-figure-center r-stretch" width="600"></section>
+<img data-src="img/md-09/quarto-tab-complete.png" class="quarto-figure quarto-figure-center r-stretch" width="600"></section>
 <section id="liste-der-gültigen-yaml-felder" class="slide level2">
 <h2>Liste der gültigen YAML-Felder</h2>
 <ul>
@@ -724,15 +724,15 @@ Lars Schöbitz
 <span id="cb22-2"><a></a>direkte URLs wie <span class="ot">&lt;https://quarto.org/&gt;</span> und Links zu </span>
 <span id="cb22-3"><a></a><span class="co">[</span><span class="ot">anderen Orten</span><span class="co">](#quarto-anatomy)</span> in </span>
 <span id="cb22-4"><a></a>das Dokument einbetten. Die Syntax für das Einbetten eines</span>
-<span id="cb22-5"><a></a>Inline-Bildes ist ähnlich: <span class="al">![Pinguine spielen mit Ball](images/penguins-quarto-ball.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-5"><a></a>Inline-Bildes ist ähnlich: <span class="al">![Pinguine spielen mit Ball](img/md-09/penguins-quarto-ball.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:30%;">
 <p><strong>Ausgabe</strong></p>
-<p>Du kannst [benannte Hyperlinks] (https://quarto.org/), direkte URLs wie <a href="https://quarto.org/" class="uri">https://quarto.org/</a> und Links zu <a href="#/quarto-anatomie">anderen Orten</a> in das Dokument einbetten. Die Syntax für das Einbetten eines Inline-Bildes ist ähnlich: <img data-src="images/penguins-quarto-ball.png" style="width:250px;" alt="Pinguine spielen mit Ball">.</p>
+<p>Du kannst [benannte Hyperlinks] (https://quarto.org/), direkte URLs wie <a href="https://quarto.org/" class="uri">https://quarto.org/</a> und Links zu <a href="#/quarto-anatomie">anderen Orten</a> in das Dokument einbetten. Die Syntax für das Einbetten eines Inline-Bildes ist ähnlich: <img data-src="img/md-09/penguins-quarto-ball.png" style="width:250px;" alt="Pinguine spielen mit Ball">.</p>
 </div></div>
 </section>
-<section id="lists" class="slide level2 smaller">
-<h2>Lists</h2>
-<p>Unordered list:</p>
+<section id="listen" class="slide level2 smaller">
+<h2>Listen</h2>
+<p>Ungeordnete Liste:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Markdown:</strong></p>
@@ -741,7 +741,7 @@ Lars Schöbitz
 <span id="cb23-3"><a></a><span class="ss">    -   </span>sub-item 1         </span>
 <span id="cb23-4"><a></a><span class="ss">        -   </span>sub-sub-item 1 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" data-fragment-index="1" style="width:50%;">
-<p><strong>Output</strong></p>
+<p><strong>Ausgabe</strong></p>
 <ul>
 <li>unordered list
 <ul>
@@ -754,7 +754,7 @@ Lars Schöbitz
 </ul></li>
 </ul>
 </div></div>
-<p>Ordered list:</p>
+<p>Geordnete Liste:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Markdown:</strong></p>
@@ -763,7 +763,7 @@ Lars Schöbitz
 <span id="cb24-3"><a></a>    i. sub-item 1          </span>
 <span id="cb24-4"><a></a>         A.  sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" data-fragment-index="2" style="width:50%;">
-<p><strong>Output</strong></p>
+<p><strong>Ausgabe</strong></p>
 <ol type="1">
 <li>ordered list<br>
 </li>
@@ -777,8 +777,8 @@ Lars Schöbitz
 </ol>
 </div></div>
 </section>
-<section id="quotes" class="slide level2">
-<h2>Quotes</h2>
+<section id="zitate" class="slide level2">
+<h2>Zitate</h2>
 <p><strong>Markdown:</strong></p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a></a><span class="at">&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. </span></span>
 <span id="cb25-2"><a></a><span class="at">&gt; - Donald Knuth, Literate Programming</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -792,20 +792,1593 @@ Lars Schöbitz
 <aside><div>
 <p><span class="citation" data-cites="knuth1984literate">@knuth1984literate</span></p>
 </div></aside></section>
-<section id="your-turn" class="slide level2">
-<h2>Your turn</h2>
+<section id="ihr-seid-dran-01-markdown-syntax.qmd" class="slide level2">
+<h2>Ihr seid dran: <code>01-markdown-syntax.qmd</code></h2>
 <div class="task">
+<ol type="1">
+<li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
+<li>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Klicke auf <span class="highlight-yellow">Start</span> neben <span class="highlight-yellow">md-09-uebungen</span>.</li>
+<li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>01-markdown-syntax.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
+<li>Verwende den <span class="highlight-yellow">Quelltexteditor (Source editor)</span> Modus</li>
+<li>Folge den Anweisungen in der Datei.</li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_d64fc2a7" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="fussnoten" class="slide level2">
+<h2>Fussnoten</h2>
+<p>Die Nummerierung und Formatierung von Fussnoten wird unterstützt.</p>
+</section>
+<section id="inline-fussnoten" class="slide level2">
+<h2>Inline-Fussnoten</h2>
+<pre><code>Hier ist eine Inline-Notiz.^[Inline-Notizen sind einfacher zu schreiben,
+da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um
+um die Notiz zu schreiben.]</code></pre>
+<p>Hier ist eine Inline-Notiz.<sup>1</sup></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Verwende den visuellen Editor-Modus (Visual editor)</strong></p>
+</div>
+<div class="callout-content">
+<p>Für das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.</p>
+</div>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Inline-Notizen sind einfacher zu schreiben, da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um die Notiz zu schreiben.</p></li></ol></aside></section></section>
+<section>
+<section id="code" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Code</h1>
+
+</section>
+<section id="anatomie-eines-code-block" class="slide level2 small">
+<h2>Anatomie eines Code-Block</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb27-2"><a></a><span class="in">#| label: penguins</span></span>
+<span id="cb27-3"><a></a><span class="in">#| message: false</span></span>
+<span id="cb27-4"><a></a></span>
+<span id="cb27-5"><a></a><span class="in">library(tidyverse)</span></span>
+<span id="cb27-6"><a></a><span class="in">library(palmerpenguins)</span></span>
+<span id="cb27-7"><a></a><span class="in">library(knitr)</span></span>
+<span id="cb27-8"><a></a></span>
+<span id="cb27-9"><a></a><span class="in">penguins |&gt; </span></span>
+<span id="cb27-10"><a></a><span class="in">  count(species) |&gt; </span></span>
+<span id="cb27-11"><a></a><span class="in">  kable()</span></span>
+<span id="cb27-12"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">species</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: right;">152</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chinstrap</td>
+<td style="text-align: right;">68</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gentoo</td>
+<td style="text-align: right;">124</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div><div class="column fragment" style="width:50%;">
 <ul>
-<li>Open <code>markdown-syntax.qmd</code> in RStudio.</li>
-<li>Use the <span class="highlight-yellow">source editor</span> mode</li>
-<li>Follow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.</li>
+<li>Hat 3x Backticks an jedem Ende</li>
+<li>Engine (<code>r</code>) wird zwischen geschweiften Klammern <code>{r}</code> angegeben</li>
+<li>Optionen, die mit dem Zeichen <code>#|</code> angegeben werden (Hashpipe)</li>
+</ul>
+</div></div>
+</section>
+<section id="code-für-wen-ist-es" class="slide level2">
+<h2>Code, für wen ist es?</h2>
+<div>
+<ul>
+<li class="fragment">Die Art und Weise, wie du Code anzeigst, ist in verschiedenen Kontexten sehr unterschiedlich.</li>
+<li class="fragment">In einem Lehrszenario wie heute möchte ich <em>wirklich</em> Code anzeigen.</li>
+<li class="fragment">In einem Unternehmen möchtest du vielleicht eine datenwissenschaftliche Ausgabe haben, die den Quellcode anzeigt, UND eine Ausgabe, die sich an die Nutzer:innen richtet und den Code verbirgt.</li>
+</ul>
+</div>
+</section>
+<section id="ein--und-ausblenden-von-code-mit-echo" class="slide level2">
+<h2>Ein- und Ausblenden von Code mit <code>echo</code></h2>
+<ul>
+<li>Die Option <code>echo</code> zeigt den Code an, wenn sie auf <code>true</code> gesetzt ist, und verbirgt ihn, wenn sie auf <code>false</code> gesetzt ist.</li>
+</ul>
+</section>
+<section id="tabellen-und-diagramme" class="slide level2">
+<h2>Tabellen und Diagramme</h2>
+<ul>
+<li>In reproduzierbaren Berichten und Manuskripten sind <strong>Tabellen</strong> und <strong>Figuren</strong> die am häufigsten enthaltenen Codeausgaben.</li>
+</ul>
+</section></section>
+<section>
+<section id="tabellen" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Tabellen</h1>
+
+</section>
+<section id="markdown-tabellen" class="slide level2 small">
+<h2>Markdown Tabellen</h2>
+<p><strong>Markdown:</strong></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a></a>| Right | Left | Default | Center |</span>
+<span id="cb28-2"><a></a>|------:|:-----|---------|:------:|</span>
+<span id="cb28-3"><a></a>|   12  |  12  |    12   |    12  |</span>
+<span id="cb28-4"><a></a>|  123  |  123 |   123   |   123  |</span>
+<span id="cb28-5"><a></a>|    1  |    1 |     1   |     1  |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Verwende den visuellen Editor-Modus (Visual editor)</strong></p>
+</div>
+<div class="callout-content">
+<p>Für das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><strong>Ausgabe:</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Right</th>
+<th style="text-align: left;">Left</th>
+<th>Default</th>
+<th style="text-align: center;">Center</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">12</td>
+<td>12</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">123</td>
+<td style="text-align: left;">123</td>
+<td>123</td>
+<td style="text-align: center;">123</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1</td>
+<td>1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="tabellen-mit-code" class="slide level2 smaller">
+<h2>Tabellen mit Code</h2>
+<p>Das Paket <strong>knitr</strong> kann Datenrahmen in Tabellen umwandeln mit <code>knitr::kable()</code>:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">species</th>
+<th style="text-align: left;">island</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: left;">Dream</td>
+<td style="text-align: right;">56</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: left;">Torgersen</td>
+<td style="text-align: right;">52</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chinstrap</td>
+<td style="text-align: left;">Dream</td>
+<td style="text-align: right;">68</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gentoo</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">124</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="tabellen-mit-code-1" class="slide level2 smaller">
+<h2>Tabellen mit Code</h2>
+<p>Wenn du umfangreichere Tabellen möchtest, probiere das <strong>gt</strong>-Paket und <a href="https://gt.rstudio.com/">alles, was es bietet</a>!</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="bipwppkmkv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bipwppkmkv table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bipwppkmkv thead, #bipwppkmkv tbody, #bipwppkmkv tfoot, #bipwppkmkv tr, #bipwppkmkv td, #bipwppkmkv th {
+  border-style: none;
+}
+
+#bipwppkmkv p {
+  margin: 0;
+  padding: 0;
+}
+
+#bipwppkmkv .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#bipwppkmkv .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#bipwppkmkv .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#bipwppkmkv .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#bipwppkmkv .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#bipwppkmkv .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#bipwppkmkv .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#bipwppkmkv .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#bipwppkmkv .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#bipwppkmkv .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#bipwppkmkv .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#bipwppkmkv .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#bipwppkmkv .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#bipwppkmkv .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#bipwppkmkv .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bipwppkmkv .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#bipwppkmkv .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#bipwppkmkv .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#bipwppkmkv .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bipwppkmkv .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#bipwppkmkv .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bipwppkmkv .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#bipwppkmkv .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bipwppkmkv .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bipwppkmkv .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bipwppkmkv .gt_left {
+  text-align: left;
+}
+
+#bipwppkmkv .gt_center {
+  text-align: center;
+}
+
+#bipwppkmkv .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#bipwppkmkv .gt_font_normal {
+  font-weight: normal;
+}
+
+#bipwppkmkv .gt_font_bold {
+  font-weight: bold;
+}
+
+#bipwppkmkv .gt_font_italic {
+  font-style: italic;
+}
+
+#bipwppkmkv .gt_super {
+  font-size: 65%;
+}
+
+#bipwppkmkv .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#bipwppkmkv .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#bipwppkmkv .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#bipwppkmkv .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#bipwppkmkv .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#bipwppkmkv .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#bipwppkmkv .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="species" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">species</th>
+<th id="island" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">island</th>
+<th id="bill_length_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">bill_length_mm</th>
+<th id="bill_depth_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">bill_depth_mm</th>
+<th id="flipper_length_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">flipper_length_mm</th>
+<th id="body_mass_g" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">body_mass_g</th>
+<th id="sex" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">sex</th>
+<th id="year" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">year</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">39.1</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">18.7</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">181</td>
+<td class="gt_row gt_right" headers="body_mass_g">3750</td>
+<td class="gt_row gt_center" headers="sex">male</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">39.5</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">17.4</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">186</td>
+<td class="gt_row gt_right" headers="body_mass_g">3800</td>
+<td class="gt_row gt_center" headers="sex">female</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm" style="background-color: #FFC0CB; font-style: italic">40.3</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">18.0</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">195</td>
+<td class="gt_row gt_right" headers="body_mass_g">3250</td>
+<td class="gt_row gt_center" headers="sex">female</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">NA</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">NA</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">NA</td>
+<td class="gt_row gt_right" headers="body_mass_g">NA</td>
+<td class="gt_row gt_center" headers="sex">NA</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">36.7</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">19.3</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">193</td>
+<td class="gt_row gt_right" headers="body_mass_g">3450</td>
+<td class="gt_row gt_center" headers="sex">female</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">39.3</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">20.6</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">190</td>
+<td class="gt_row gt_right" headers="body_mass_g">3650</td>
+<td class="gt_row gt_center" headers="sex">male</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="abbildungen-diagramme" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Abbildungen &amp; Diagramme</h1>
+
+</section>
+<section id="markdown-abbildungen" class="slide level2">
+<h2>Markdown Abbildungen</h2>
+<pre><code>![Pinguine spielen mit einem Quarto-Ball](img/md-09/penguins-quarto-ball.png)</code></pre>
+
+<img data-src="img/md-09/penguins-quarto-ball.png" class="r-stretch quarto-figure-center"><p class="caption">Pinguine spielen mit einem Quarto-Ball</p></section>
+<section id="unterabbildungen" class="slide level2">
+<h2>Unterabbildungen</h2>
+<p><strong>Markdown:</strong></p>
+<pre><code>::: {#fig-penguins layout-ncol=2}
+
+![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue width="250px"}
+
+![Orangefarbener Pinguin](img/md-09/orange-penguin.png){#fig-orange width="250px"}
+
+Zwei Pinguine
+
+:::</code></pre>
+</section>
+<section id="unterabbildungen-1" class="slide level2">
+<h2>Unterabbildungen</h2>
+<p><strong>Ausgabe:</strong></p>
+<div id="fig-penguins" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-penguins" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-blue" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-subfloat-fig">
+<div aria-describedby="fig-blue-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="img/md-09/blue-penguin.png" data-ref-parent="fig-penguins" width="250">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-blue-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Blauer Pinguin
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-penguins" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-sleep" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-subfloat-fig">
+<div aria-describedby="fig-sleep-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="img/md-09/orange-penguin.png" data-ref-parent="fig-penguins" width="250">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-sleep-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Orangefarbener Pinguin
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Zwei Pinguine
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="suche-nach-den-abbildungen" class="slide level2">
+<h2>Suche nach den Abbildungen</h2>
+<p>An Orten wie Markdown, YAML oder beim Einlesen von Dateien musst du <strong>absolute</strong> oder <strong>relative</strong> Dateipfade verwenden:</p>
+<div class="fragment">
+<ul>
+<li>Absolut = Schlecht: <code>"/Users/lars/uebungen"</code> - Auf wessen Computer wird das funktionieren?</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Relativ = Besser:</p>
+<ul>
+<li><code>"../</code> = ein Verzeichnis nach oben, <code>../../</code> = zwei Verzeichnisse nach oben, etc.</li>
+<li><code>/..</code> oder <code>/</code> = beginnen im “root”-Verzeichnis deines aktuellen Computers</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="abbildungen-mit-code-diagramme" class="slide level2">
+<h2>Abbildungen mit Code (Diagramme)</h2>
+<div class="cell" data-layout-align="right">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb31-2"><a></a><span class="in">#| fig-width: 4</span></span>
+<span id="cb31-3"><a></a><span class="in">#| fig-align: right</span></span>
+<span id="cb31-4"><a></a></span>
+<span id="cb31-5"><a></a><span class="in">knitr::include_graphics("img/md-09/penguins-quarto-ball.png")</span></span>
+<span id="cb31-6"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="img/md-09/penguins-quarto-ball.png" class="quarto-figure quarto-figure-right r-stretch" width="1920"></section>
+<section id="pfade-in-r-code-referenzieren" class="slide level2">
+<h2>Pfade in R-Code referenzieren</h2>
+<p>Verwende das <strong>here</strong>-Paket, um auf das Projektverzeichnis zu verweisen, da <code>here::here()</code> immer im obersten Verzeichnis einer <code>.Rproj</code> beginnt:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "/Users/lschoebitz/Documents/gitrepos/gh-org-rstatszh-k009/website"</code></pre>
+</div>
+</div>
+</section>
+<section id="abbildungen-mit-code-diagramme-1" class="slide level2">
+<h2>Abbildungen mit Code (Diagramme)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a><span class="in">```{r}</span></span>
+<span id="cb33-2"><a></a><span class="in">ggplot(penguins, aes(x = species, fill = species)) +</span></span>
+<span id="cb33-3"><a></a><span class="in">  geom_bar(show.legend = FALSE)</span></span>
+<span id="cb33-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="md-09-quarto_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section></section>
+<section>
+<section id="querverweise-cross-references" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Querverweise (cross references)</h1>
+
+</section>
+<section id="querverweise-cross-references-1" class="slide level2">
+<h2>Querverweise (cross references)</h2>
+<ul>
+<li><p>Unterstützen Leser:innen sich in deinem Dokument zurechtzufinden, indem du nummerierte Verweise und Hyperlinks zu Elementen wie Abbildungen und Tabellen einfügst.</p></li>
+<li><p>Querverweise Schritte:</p>
+<ul>
+<li>Füge der Abbildung oder Tabelle eine Beschriftung hinzu: <code>#| tbl-cap:</code> oder <code>#| fig-cap:</code>.</li>
+<li>Füge der Abbildung oder Tabelle eine Bezeichungen hinzu: <code>#| label:</code> beginnend mit <code>fig-</code> oder <code>tbl-</code>.</li>
+<li>Verweise im Text auf die Abbildung oder Tabelle mit <code>@fig-...</code> oder <code>@tbl-...</code>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="abbildung-querverweise" class="slide level2 smaller">
+<h2>Abbildung Querverweise</h2>
+<p>Das Vorhandensein der Beschriftung (<code>Blauer Pinguin</code>) und der Bezeichnung (<code>#fig-blue-penguin</code>) machen diese Abbildung referenzierbar:</p>
+<div class="columns">
+<div class="column" style="width:75%;">
+<p><strong>Markdown:</strong></p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a>Siehe @fig-blue-penguin für einen süssen blauen Pinguin.</span>
+<span id="cb34-2"><a></a><span class="al">![Blauer Pinguin](img/md-09/blue-penguin.png)</span>{#fig-blue-penguin}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:25%;">
+<p><strong>Ausgabe:</strong></p>
+<p>Siehe <a href="#/abbildung-querverweise" class="quarto-xref">Figure&nbsp;2</a> für einen süssen blauen Pinguin.</p>
+<div id="fig-blue-penguin" class="quarto-float quarto-figure quarto-figure-center" alt="Ein blauer Pinguin">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-blue-penguin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="img/md-09/blue-penguin.png" alt="Ein blauer Pinguin" width="150">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-blue-penguin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Blauer Pinguin
+</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="tabelle-querverweise" class="slide level2 smaller">
+<h2>Tabelle Querverweise</h2>
+<p>Das Vorhandensein der Überschrift (<code>Ein paar Pinguine</code>) und der Bezeichnung (<code>#tbl-pinguine</code>) machen diese Tabelle referenzierbar:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Markdown:</strong></p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a></a>Siehe @tbl-penguins für Daten über einige Pinguine.</span>
+<span id="cb35-2"><a></a></span>
+<span id="cb35-3"><a></a><span class="in">```{r}</span></span>
+<span id="cb35-4"><a></a><span class="in">#| label: tbl-pinguine</span></span>
+<span id="cb35-5"><a></a><span class="in">#| tbl-cap: Ein paar Pinguine</span></span>
+<span id="cb35-6"><a></a></span>
+<span id="cb35-7"><a></a><span class="in">head(penguins) |&gt; </span></span>
+<span id="cb35-8"><a></a><span class="in">  gt()</span></span>
+<span id="cb35-9"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p><strong>Ausgabe:</strong></p>
+<p>Siehe <a href="#/tabelle-querverweise" class="quarto-xref">Table&nbsp;1</a> für Daten über einige Pinguine.</p>
+<div class="cell">
+<div id="tbl-penguins" class="cell quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Ein paar Pinguine
+</figcaption>
+<div aria-describedby="tbl-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="tjrymmhtcj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tjrymmhtcj table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#tjrymmhtcj thead, #tjrymmhtcj tbody, #tjrymmhtcj tfoot, #tjrymmhtcj tr, #tjrymmhtcj td, #tjrymmhtcj th {
+  border-style: none;
+}
+
+#tjrymmhtcj p {
+  margin: 0;
+  padding: 0;
+}
+
+#tjrymmhtcj .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#tjrymmhtcj .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#tjrymmhtcj .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#tjrymmhtcj .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#tjrymmhtcj .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#tjrymmhtcj .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#tjrymmhtcj .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#tjrymmhtcj .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#tjrymmhtcj .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#tjrymmhtcj .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#tjrymmhtcj .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#tjrymmhtcj .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#tjrymmhtcj .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#tjrymmhtcj .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#tjrymmhtcj .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tjrymmhtcj .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#tjrymmhtcj .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#tjrymmhtcj .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#tjrymmhtcj .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tjrymmhtcj .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#tjrymmhtcj .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tjrymmhtcj .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#tjrymmhtcj .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tjrymmhtcj .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#tjrymmhtcj .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tjrymmhtcj .gt_left {
+  text-align: left;
+}
+
+#tjrymmhtcj .gt_center {
+  text-align: center;
+}
+
+#tjrymmhtcj .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#tjrymmhtcj .gt_font_normal {
+  font-weight: normal;
+}
+
+#tjrymmhtcj .gt_font_bold {
+  font-weight: bold;
+}
+
+#tjrymmhtcj .gt_font_italic {
+  font-style: italic;
+}
+
+#tjrymmhtcj .gt_super {
+  font-size: 65%;
+}
+
+#tjrymmhtcj .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#tjrymmhtcj .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#tjrymmhtcj .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#tjrymmhtcj .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#tjrymmhtcj .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#tjrymmhtcj .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#tjrymmhtcj .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="species" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">species</th>
+<th id="island" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">island</th>
+<th id="bill_length_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">bill_length_mm</th>
+<th id="bill_depth_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">bill_depth_mm</th>
+<th id="flipper_length_mm" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">flipper_length_mm</th>
+<th id="body_mass_g" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">body_mass_g</th>
+<th id="sex" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">sex</th>
+<th id="year" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">year</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">39.1</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">18.7</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">181</td>
+<td class="gt_row gt_right" headers="body_mass_g">3750</td>
+<td class="gt_row gt_center" headers="sex">male</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">39.5</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">17.4</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">186</td>
+<td class="gt_row gt_right" headers="body_mass_g">3800</td>
+<td class="gt_row gt_center" headers="sex">female</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">40.3</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">18.0</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">195</td>
+<td class="gt_row gt_right" headers="body_mass_g">3250</td>
+<td class="gt_row gt_center" headers="sex">female</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">NA</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">NA</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">NA</td>
+<td class="gt_row gt_right" headers="body_mass_g">NA</td>
+<td class="gt_row gt_center" headers="sex">NA</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">36.7</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">19.3</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">193</td>
+<td class="gt_row gt_right" headers="body_mass_g">3450</td>
+<td class="gt_row gt_center" headers="sex">female</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="species">Adelie</td>
+<td class="gt_row gt_center" headers="island">Torgersen</td>
+<td class="gt_row gt_right" headers="bill_length_mm">39.3</td>
+<td class="gt_row gt_right" headers="bill_depth_mm">20.6</td>
+<td class="gt_row gt_right" headers="flipper_length_mm">190</td>
+<td class="gt_row gt_right" headers="body_mass_g">3650</td>
+<td class="gt_row gt_center" headers="sex">male</td>
+<td class="gt_row gt_right" headers="year">2007</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="querverweise-schritte" class="slide level2">
+<h2>Querverweise Schritte:</h2>
+<ol type="1">
+<li>Füge der Abbildung oder Tabelle eine Beschriftung hinzu:
+<ul>
+<li><code>#| tbl-cap:</code> oder <code>#| fig-cap:</code>.</li>
+</ul></li>
+<li>Füge der Abbildung oder Tabelle eine Bezeichungen hinzu:
+<ul>
+<li><code>#| label:</code> beginnend mit <code>fig-</code> oder <code>tbl-</code>.</li>
+</ul></li>
+<li>Verweise im Text auf die Abbildung oder Tabelle mit:
+<ul>
+<li><code>@fig-...</code> oder <code>@tbl-...</code>.</li>
+</ul></li>
+</ol>
+</section>
+<section id="ihr-seid-dran-02-querverweise.qmd" class="slide level2">
+<h2>Ihr seid dran: <code>02-querverweise.qmd</code></h2>
+<div class="task">
+<ol type="1">
+<li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
+<li>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Klicke auf <span class="highlight-yellow">Continue</span> neben <span class="highlight-yellow">md-09-uebungen</span>.</li>
+<li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>02-querverweise.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
+<li>Verwende den <span class="highlight-yellow">Quelltexteditor (Source editor)</span> Modus</li>
+<li>Folge den Anweisungen in der Datei.</li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_3ba2b603" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="gehts-auch-auf-deutsch" class="slide level2">
+<h2>Geht’s auch auf Deutsch?</h2>
+<p>Ja!</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb36-1"><a></a><span class="pp">---</span></span>
+<span id="cb36-2"><a></a><span class="fu">lang</span><span class="kw">:</span><span class="at"> de</span></span>
+<span id="cb36-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section></section>
+<section>
+<section id="anatomie-einer-quarto-präsentation-folien" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Anatomie einer Quarto-Präsentation (Folien)</h1>
+
+</section>
+<section id="komponenten-1" class="slide level2">
+<h2>Komponenten</h2>
+<ol type="1">
+<li><p>Metadaten: YAML</p></li>
+<li><p>Text: Markdown</p></li>
+<li><p>Code: Ausgeführt via <code>knitr</code> (R) oder <code>jupyter</code> (python)</p></li>
+</ol>
+<div class="fragment">
+<p><strong>Füge alles zusammen</strong> und du erhältst anschauliche, schöne und nützliche Folien!</p>
+</div>
+</section>
+<section id="wir-sind-dran-03-folien.qmd" class="slide level2">
+<h2>Wir sind dran: <code>03-folien.qmd</code></h2>
+<div class="task">
+<ol type="1">
+<li>Öffne <a href="https://posit.cloud">posit.cloud</a> in deinem Browser (verwende dein Lesezeichen).</li>
+<li>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.</li>
+<li>Klicke auf <span class="highlight-yellow">Continue</span> neben <span class="highlight-yellow">md-09-uebungen</span>.</li>
+<li>Suche im Dateimanager im Fenster unten rechts die Datei <span class="highlight-yellow"><code>03-folien.qmd</code></span> und klicke darauf, um sie im Fenster oben links zu öffnen.</li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_0e754b37" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="ihr-seid-dran-03-folien.qmd" class="slide level2">
+<h2>Ihr seid dran: <code>03-folien.qmd</code></h2>
+<div class="task">
+<p>Mach da weiter, wo wir aufgehört haben, und:</p>
+<ul>
+<li><p>Ändere den Folien Übergang <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions">(transition style)</a> zwischen den Folien (<span class="highlight-yellow">auf quarto.org</span>: Suche nach <span class="highlight-yellow">“slide transitions”</span> im <i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> Suchfeld oben rechts)</p></li>
+<li><p>Füge Folien Nummern <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#slide-numbers">(slide numbers)</a> zu deinen Folien (<span class="highlight-yellow">auf quarto.org</span>: Suche nach <span class="highlight-yellow">“slide numbers”</span> im <i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> Suchfeld oben rechts)</p></li>
 </ul>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_c490f962" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_dcc816dc" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">07</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="quarto-präsentation-formate" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>Quarto Präsentation Formate</h1>
+
+</section>
+<section id="quarto-präsentation-formate-1" class="slide level2">
+<h2>Quarto Präsentation Formate</h2>
+<ul>
+<li><p><a href="https://quarto.org/docs/presentations/revealjs"><code>revealjs</code></a> für HTML-Folien</p>
+<ul>
+<li>Im Wesentlichen der Ersatz für <code>xaringan</code>, aber mit Pandoc-nativer Syntax</li>
+</ul></li>
+<li><p><a href="https://quarto.org/docs/presentations/beamer.html"><code>beamer</code></a> für LaTeX-Folien</p></li>
+<li><p><a href="https://quarto.org/docs/presentations/powerpoint.html">PowerPoint</a> für den Fall, dass du über MS Office zusammenarbeiten <em>musst</em></p></li>
+</ul>
+</section>
+<section id="besuche-quarto.org" class="slide level2">
+<h2>Besuche quarto.org</h2>
+<div class="learn-more">
+<p><a href="https://quarto.org/docs/presentations">quarto.org/docs/presentations</a></p>
+<iframe src="https://quarto.org/docs/presentations/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Präsentationen"></iframe>
+</div>
+</section>
+<section id="zeitpuffer-modul-9" class="slide level2 smaller">
+<h2>Zeitpuffer: Modul 9</h2>
+<div class="hand-purple-large" style="text-align: center;">
+<p>Kann ich noch etwas zum heutigen Modul erklären?</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_b7d59f6a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
@@ -836,7 +2409,8 @@ Lars Schöbitz
 </section>
 <section id="danke-1" class="slide level2">
 <h2>Danke! 🌻</h2>
-<p>Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als <a href="https://github.com/rstatszh-k009/website/raw/main/folien/md-09-text-daten.pdf">PDF auf GitHub</a></p>
+<p>Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/</p>
+<p>Zugang zu Folien als <a href="https://github.com/rstatszh-k009/website/raw/main/folien/md-09-text-daten.pdf">PDF auf GitHub</a></p>
 <p>Alle Materialien sind lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 
 <div class="quarto-auto-generated-content">
@@ -845,6 +2419,7 @@ Lars Schöbitz
 </div>
 </div>
 </section></section>
+
     </div>
   </div>
 

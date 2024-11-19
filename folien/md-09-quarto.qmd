@@ -273,7 +273,7 @@ Lint oder ein Linter ist ein statisches Code-Analyse-Tool, das Programmierfehler
 
 <br>
 
-![](images/lint-rstudio.png){fig-alt="Linter zeigt Meldung für schlecht formatiertes YAML an."}
+![](img/md-09/lint-rstudio.png){fig-alt="Linter zeigt Meldung für schlecht formatiertes YAML an."}
 
 ::: aside
 Source: <https://en.wikipedia.org/wiki/Lint_(software)>
@@ -285,7 +285,7 @@ RStudio + VSCode bieten eine umfangreiche Tab-Vervollständigung – fange mit e
 
 <br>
 
-![](images/quarto-tab-complete.png){fig-align="center" width="600"}
+![](img/md-09/quarto-tab-complete.png){fig-align="center" width="600"}
 
 ## Liste der gültigen YAML-Felder
 
@@ -366,7 +366,7 @@ Du kannst [benannte Hyperlinks] (https://quarto.org/),
 direkte URLs wie <https://quarto.org/> und Links zu 
 [anderen Orten](#quarto-anatomy) in 
 das Dokument einbetten. Die Syntax für das Einbetten eines
-Inline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](images/penguins-quarto-ball.png).
+Inline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](img/md-09/penguins-quarto-ball.png).
 ```
 :::
 
@@ -374,7 +374,7 @@ Inline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](images/penguins-quarto-
 **Ausgabe**
 
 Du kannst [benannte Hyperlinks] (https://quarto.org/),
-direkte URLs wie <https://quarto.org/> und Links zu [anderen Orten](#quarto-anatomie) in  das Dokument einbetten. Die Syntax für das Einbetten eines Inline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](images/penguins-quarto-ball.png){style="width:250px;"}.
+direkte URLs wie <https://quarto.org/> und Links zu [anderen Orten](#quarto-anatomie) in  das Dokument einbetten. Die Syntax für das Einbetten eines Inline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](img/md-09/penguins-quarto-ball.png){style="width:250px;"}.
 :::
 :::
 
@@ -452,7 +452,7 @@ Geordnete Liste:
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
 2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
-3.  Klicke auf [Continue]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [`01-markdown-syntax.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5. Verwende den [Quelltexteditor (Source editor)]{.highlight-yellow} Modus
 6.  Folge den Anweisungen in der Datei.
@@ -596,10 +596,10 @@ head(penguins) |>
 ## Markdown Abbildungen
 
 ```         
-![Pinguine spielen mit einem Quarto-Ball](images/penguins-quarto-ball.png)
+![Pinguine spielen mit einem Quarto-Ball](img/md-09/penguins-quarto-ball.png)
 ```
 
-![Pinguine spielen mit einem Quarto-Ball](images/penguins-quarto-ball.png)
+![Pinguine spielen mit einem Quarto-Ball](img/md-09/penguins-quarto-ball.png)
 
 ## Unterabbildungen
 
@@ -608,9 +608,9 @@ head(penguins) |>
 ```         
 ::: {#fig-penguins layout-ncol=2}
 
-![Blauer Pinguin](images/blue-penguin.png){#fig-blue width="250px"}
+![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue width="250px"}
 
-![Orangefarbener Pinguin](images/orange-penguin.png){#fig-orange width="250px"}
+![Orangefarbener Pinguin](img/md-09/orange-penguin.png){#fig-orange width="250px"}
 
 Zwei Pinguine
 
@@ -622,9 +622,9 @@ Zwei Pinguine
 **Ausgabe:**
 
 ::: {#fig-penguins layout-ncol="2"}
-![Blauer Pinguin](images/blue-penguin.png){#fig-blue width="250px"}
+![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue width="250px"}
 
-![Orangefarbener Pinguin](images/orange-penguin.png){#fig-sleep width="250px"}
+![Orangefarbener Pinguin](img/md-09/orange-penguin.png){#fig-sleep width="250px"}
 
 Zwei Pinguine
 :::
@@ -651,7 +651,7 @@ An Orten wie Markdown, YAML oder beim Einlesen von Dateien  musst du **absolute*
 #| fig-width: 4
 #| fig-align: right
 
-knitr::include_graphics("images/penguins-quarto-ball.png")
+knitr::include_graphics("img/md-09/penguins-quarto-ball.png")
 ```
 
 ## Pfade in R-Code referenzieren
@@ -679,9 +679,9 @@ ggplot(penguins, aes(x = species, fill = species)) +
 
 -   Querverweise Schritte:
 
-    -   Füge deiner Abbildung oder Tabelle eine Beschriftung hinzu.
-    -   Gib deiner Figur oder Tabelle eine ID, beginnend mit `fig-` oder `tbl-`.
-    -   Verweise darauf mit `@fig-...` oder `@tbl-...`.
+    -   Füge der Abbildung oder Tabelle eine Beschriftung hinzu: `#| tbl-cap:` oder `#| fig-cap:`.
+    -   Füge der Abbildung oder Tabelle eine Bezeichungen hinzu: `#| label:` beginnend mit `fig-` oder `tbl-`.
+    -   Verweise im Text auf die Abbildung oder Tabelle mit `@fig-...` oder `@tbl-...`.
 
 ## Abbildung Querverweise {.smaller}
 
@@ -693,7 +693,7 @@ Das Vorhandensein der Beschriftung (`Blauer Pinguin`) und der Bezeichnung (`#fig
 
 ``` markdown
 Siehe @fig-blue-penguin für einen süssen blauen Pinguin.
-![Blauer Pinguin](images/blue-penguin.png){#fig-blue-penguin}
+![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue-penguin}
 ```
 :::
 
@@ -702,7 +702,7 @@ Siehe @fig-blue-penguin für einen süssen blauen Pinguin.
 
 Siehe @fig-blue-penguin für einen süssen blauen Pinguin.
 
-![Blauer Pinguin](images/blue-penguin.png){#fig-blue-penguin fig-alt="Ein blauer Pinguin" width="150"}
+![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue-penguin fig-alt="Ein blauer Pinguin" width="150"}
 :::
 :::
 
@@ -714,8 +714,9 @@ Das Vorhandensein der Überschrift (`Ein paar Pinguine`) und der Bezeichnung (`#
 ::: {.column width="50%"}
 **Markdown:**
 
-```` markdown
+````markdown
 Siehe @tbl-penguins für Daten über einige Pinguine.
+
 ```{{r}}
 #| label: tbl-pinguine
 #| tbl-cap: Ein paar Pinguine
@@ -723,7 +724,9 @@ Siehe @tbl-penguins für Daten über einige Pinguine.
 head(penguins) |> 
   gt()
 ```
+
 ````
+
 :::
 
 ::: {.column width="50%"}
@@ -740,6 +743,114 @@ head(penguins) |>
 ```
 :::
 :::
+
+## Querverweise Schritte:
+
+1.   Füge der Abbildung oder Tabelle eine Beschriftung hinzu: 
+        - `#| tbl-cap:` oder `#| fig-cap:`.
+2.   Füge der Abbildung oder Tabelle eine Bezeichungen hinzu: 
+        - `#| label:` beginnend mit `fig-` oder `tbl-`.
+3.   Verweise im Text auf die Abbildung oder Tabelle mit:
+        - `@fig-...` oder `@tbl-...`.
+
+## Ihr seid dran: `02-querverweise.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Continue]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-querverweise.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5. Verwende den [Quelltexteditor (Source editor)]{.highlight-yellow} Modus
+6.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(20)
+```
+
+## Geht's auch auf Deutsch?
+
+Ja! 
+
+``` yaml
+---
+lang: de
+---
+```
+
+# Anatomie einer Quarto-Präsentation (Folien) {background-color="#4C326A"}
+
+## Komponenten
+
+1.  Metadaten: YAML
+
+2.  Text: Markdown
+
+3.  Code: Ausgeführt via `knitr` (R) oder `jupyter` (python)
+
+. . .
+
+**Füge alles zusammen** und du erhältst anschauliche, schöne und nützliche Folien!
+
+## Wir sind dran: `03-folien.qmd`
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei [`03-folien.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+:::
+
+```{r}
+countdown(20)
+```
+
+## Ihr seid dran: `03-folien.qmd`
+
+::: task
+Mach da weiter, wo wir aufgehört haben, und:
+
+-   Ändere den Folien Übergang [(transition style)](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions) zwischen den Folien ([auf quarto.org]{.highlight-yellow}: Suche nach ["slide transitions"]{.highlight-yellow} im {{< fa magnifying-glass >}} Suchfeld oben rechts)
+
+-  Füge Folien Nummern [(slide numbers)](https://quarto.org/docs/presentations/revealjs/presenting.html#slide-numbers) zu deinen Folien ([auf quarto.org]{.highlight-yellow}: Suche nach ["slide numbers"]{.highlight-yellow} im {{< fa magnifying-glass >}} Suchfeld oben rechts)
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
+
+# Quarto Präsentation Formate {background-color="#4C326A"}
+
+## Quarto Präsentation Formate
+
+-   [`revealjs`](https://quarto.org/docs/presentations/revealjs) für HTML-Folien
+
+    -   Im Wesentlichen der Ersatz für `xaringan`, aber mit Pandoc-nativer Syntax
+
+-   [`beamer`](https://quarto.org/docs/presentations/beamer.html) für LaTeX-Folien
+
+-   [PowerPoint](https://quarto.org/docs/presentations/powerpoint.html) für den Fall, dass du über MS Office zusammenarbeiten *musst*
+
+## Besuche quarto.org
+
+::: learn-more
+[quarto.org/docs/presentations](https://quarto.org/docs/presentations)
+
+```{=html}
+<iframe src="https://quarto.org/docs/presentations/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Präsentationen"></iframe>
+```
+:::
+
+## Zeitpuffer: Modul 9 {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Kann ich noch etwas zum heutigen Modul erklären?
+:::
+```{r}
+countdown(10)
+```
 
 # Zusatzaufgaben Modul 9 {background-color="#4C326A"}
 
@@ -762,6 +873,8 @@ head(penguins) |>
 
 ## Danke! `r emo::ji("sunflower")` 
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-09-text-daten.pdf)
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Zugang zu Folien als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-09-text-daten.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
