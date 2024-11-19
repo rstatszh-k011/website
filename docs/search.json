@@ -3307,7 +3307,7 @@
     "href": "folien/md-09-quarto.html#wir-sind-dran-03-folien.qmd",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Wir sind dran: 03-folien.qmd",
-    "text": "Wir sind dran: 03-folien.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-folien.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+    "text": "Wir sind dran: 03-folien.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-folien.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#our-turn",
@@ -3363,7 +3363,7 @@
     "href": "folien/md-09-quarto.html#zeitpuffer-modul-9",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Zeitpuffer: Modul 9",
-    "text": "Zeitpuffer: Modul 9\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\n\n\n−+\n10:00"
+    "text": "Zeitpuffer: Modul 9\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#quarto-präsentation-formate-1",
@@ -3371,5 +3371,19 @@
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Quarto Präsentation Formate",
     "text": "Quarto Präsentation Formate\n\nrevealjs für HTML-Folien\n\nIm Wesentlichen der Ersatz für xaringan, aber mit Pandoc-nativer Syntax\n\nbeamer für LaTeX-Folien\nPowerPoint für den Fall, dass du über MS Office zusammenarbeiten musst"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#pause-machen",
+    "href": "folien/md-09-quarto.html#pause-machen",
+    "title": "Erstellung von Berichten und Folien mit Quarto",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-09-quarto.html#pause-machen-1",
+    "href": "folien/md-09-quarto.html#pause-machen-1",
+    "title": "Erstellung von Berichten und Folien mit Quarto",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   }
 ]
