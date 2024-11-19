@@ -2866,7 +2866,7 @@
     "href": "folien/md-09-quarto.html#lernziele-für-diese-woche",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Literaturangaben zu Quarto-Dateien hinzufügen, indem sie das Navigationsmenü des visuellen Editors RStudio verwenden und eine Referenzsammlung im .bib Dateformat erstellen.\nDie Lernenden können Funktionen aus den Paketen knitr und gt anwenden, um Tabellen in Berichten im HTML Ausgabeformat darzustellen.\nDie Lernenden können den GitHub Pages Dienst nutzen, um ein Repository als eigenständige Website zu veröffentlichen."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen."
   },
   {
     "objectID": "folien/md-09-quarto.html#quarto-1",
