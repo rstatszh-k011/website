@@ -1,0 +1,30 @@
+---
+title: "Abschlussprojekt"
+subtitle: "Querverweise"
+execute:
+    message: false
+    warning: false
+    eval: false
+---
+
+Hast du Fragen an den Datensatz gestellt? Hast du begonnen mittels Visualisierungen und Tabellen die Fragen zu beantworten? Falls nicht, dann wäre jetzt ein guter Zeitpunkt damit zu beginnen. 
+
+## Aufgaben
+
+1. Erstelle eine Datenvisualisierung, die eine deiner Fragen beantwortet.
+
+2. Erstelle eine Tabelle mit deskriptiven Statistiken, die eine deiner Fragen beantwortet.
+
+3. Erstelle Querverweise in deinem Bericht, die die Datenvisualisierung und die Tabelle einbetten.
+
+## Fragen? Braucht es Unterstützung?
+
+Du hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.
+
+1. Öffne [github.com](https://github.com/) in deinem Browser.
+
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
+
+3. Finde das Repository [projekt-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
+
+... eröffne eine Issue.

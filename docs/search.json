@@ -78,7 +78,7 @@
     "href": "module/md-09.html",
     "title": "Modul 9",
     "section": "",
-    "text": "Die Lernenden können Literaturangaben zu Quarto-Dateien hinzufügen, indem sie das Navigationsmenü des visuellen Editors RStudio verwenden und eine Referenzsammlung im .bib Dateformat erstellen.\nDie Lernenden können Funktionen aus den Paketen knitr und gt anwenden, um Tabellen in Berichten im HTML Ausgabeformat darzustellen.\nDie Lernenden können den GitHub Pages Dienst nutzen, um ein Repository als eigenständige Website zu veröffentlichen.",
+    "text": "Die Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen.",
     "crumbs": [
       "Modul 09"
     ]
@@ -88,7 +88,7 @@
     "href": "module/md-09.html#lernziele",
     "title": "Modul 9",
     "section": "",
-    "text": "Die Lernenden können Literaturangaben zu Quarto-Dateien hinzufügen, indem sie das Navigationsmenü des visuellen Editors RStudio verwenden und eine Referenzsammlung im .bib Dateformat erstellen.\nDie Lernenden können Funktionen aus den Paketen knitr und gt anwenden, um Tabellen in Berichten im HTML Ausgabeformat darzustellen.\nDie Lernenden können den GitHub Pages Dienst nutzen, um ein Repository als eigenständige Website zu veröffentlichen.",
+    "text": "Die Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen.",
     "crumbs": [
       "Modul 09"
     ]
@@ -98,7 +98,7 @@
     "href": "module/md-09.html#folien",
     "title": "Modul 9",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung",
+    "text": "Folien\nZeige Folien im Vollbildmodus an | Download slides as PDF",
     "crumbs": [
       "Modul 09"
     ]
@@ -108,7 +108,7 @@
     "href": "module/md-09.html#lesematerial",
     "title": "Modul 9",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung",
+    "text": "Lesematerial\n\nLies: R for Data Science - Section 28 - Quarto\nLies: R for Data Science - Section 29 - Quarto formats",
     "crumbs": [
       "Modul 09"
     ]
@@ -3385,5 +3385,36 @@
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Pause machen",
     "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-09/za-09-01-abschlussprojekt.html",
+    "href": "zusatzaufgaben/md-09/za-09-01-abschlussprojekt.html",
+    "title": "Abschlussprojekt",
+    "section": "",
+    "text": "Hast du Fragen an den Datensatz gestellt? Hast du begonnen mittels Visualisierungen und Tabellen die Fragen zu beantworten? Falls nicht, dann wäre jetzt ein guter Zeitpunkt damit zu beginnen."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-09/za-09-01-abschlussprojekt.html#aufgaben",
+    "href": "zusatzaufgaben/md-09/za-09-01-abschlussprojekt.html#aufgaben",
+    "title": "Abschlussprojekt",
+    "section": "Aufgaben",
+    "text": "Aufgaben\n\nErstelle eine Datenvisualisierung, die eine deiner Fragen beantwortet.\nErstelle eine Tabelle mit deskriptiven Statistiken, die eine deiner Fragen beantwortet.\nErstelle Querverweise in deinem Bericht, die die Datenvisualisierung und die Tabelle einbetten."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-09/za-09-01-abschlussprojekt.html#fragen-braucht-es-unterstützung",
+    "href": "zusatzaufgaben/md-09/za-09-01-abschlussprojekt.html#fragen-braucht-es-unterstützung",
+    "title": "Abschlussprojekt",
+    "section": "Fragen? Braucht es Unterstützung?",
+    "text": "Fragen? Braucht es Unterstützung?\nDu hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\n\n… eröffne eine Issue."
+  },
+  {
+    "objectID": "module/md-09.html#zusatzaufgabe",
+    "href": "module/md-09.html#zusatzaufgabe",
+    "title": "Modul 9",
+    "section": " Zusatzaufgabe",
+    "text": "Zusatzaufgabe\n\nZusatzaufgabe 1: Abschlussprojekt - Querverweise",
+    "crumbs": [
+      "Modul 09"
+    ]
   }
 ]
