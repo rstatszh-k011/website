@@ -462,7 +462,284 @@ Geordnete Liste:
 countdown(20)
 ```
 
+## Fussnoten
 
+Die Nummerierung und Formatierung von Fussnoten wird unterstützt.
+
+## Inline-Fussnoten
+
+```         
+Hier ist eine Inline-Notiz.^[Inline-Notizen sind einfacher zu schreiben,
+da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um
+um die Notiz zu schreiben.]
+```
+
+Hier ist eine Inline-Notiz.[^1]
+
+[^1]: Inline-Notizen sind einfacher zu schreiben, da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um die Notiz zu schreiben.
+
+::: callout-tip
+## Verwende den visuellen Editor-Modus (Visual editor)
+Für das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.
+:::
+
+# Code {background-color="#4C326A"}
+
+## Anatomie eines Code-Block {.small}
+
+::: columns
+::: {.column width="50%"}
+```{r}
+#| label: penguins
+#| message: false
+#| echo: fenced
+
+library(tidyverse)
+library(palmerpenguins)
+library(knitr)
+
+penguins |> 
+  count(species) |> 
+  kable()
+```
+:::
+
+::: {.column .fragment width="50%"}
+-   Hat 3x Backticks an jedem Ende
+-   Engine (`r`) wird zwischen geschweiften Klammern `{r}` angegeben
+-   Optionen, die mit dem Zeichen `#|` angegeben werden (Hashpipe)
+:::
+:::
+
+## Code, für wen ist es?
+
+::: incremental
+- Die Art und Weise, wie du Code anzeigst, ist in verschiedenen Kontexten sehr unterschiedlich.
+- In einem Lehrszenario wie heute möchte ich *wirklich* Code anzeigen.
+- In einem Unternehmen möchtest du vielleicht eine datenwissenschaftliche Ausgabe haben, die den Quellcode anzeigt, UND eine Ausgabe, die sich an die Nutzer:innen richtet und den Code verbirgt.
+:::
+
+## Ein- und Ausblenden von Code mit `echo`
+
+-   Die Option `echo` zeigt den Code an, wenn sie auf `true` gesetzt ist, und verbirgt ihn, wenn sie auf `false` gesetzt ist.
+
+## Tabellen und Diagramme
+
+-   In reproduzierbaren Berichten und Manuskripten sind **Tabellen** und **Figuren** die am häufigsten enthaltenen Codeausgaben.
+
+# Tabellen {background-color="#4C326A"}
+
+## Markdown Tabellen {.small}
+
+**Markdown:**
+
+``` markdown
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+```
+
+::: callout-tip
+## Verwende den visuellen Editor-Modus (Visual editor)
+Für das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.
+:::
+
+. . .
+
+**Ausgabe:**
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+## Tabellen mit Code {.smaller}
+
+Das Paket **knitr** kann Datenrahmen in Tabellen umwandeln mit `knitr::kable()`:
+
+```{r}
+library(knitr)
+
+penguins |> 
+  count(species, island) |> 
+  kable()
+```
+
+## Tabellen mit Code {.smaller}
+
+Wenn du umfangreichere Tabellen möchtest, probiere das **gt**-Paket und [alles, was es bietet](https://gt.rstudio.com/)!
+
+```{r}
+#| output-location: column-fragment
+
+library(gt)
+
+head(penguins) |> 
+  gt() |>
+  tab_style(
+    style = list(
+      cell_fill(color = "pink"),
+      cell_text(style = "italic")
+      ),
+    locations = cells_body(
+      columns = bill_length_mm,
+      rows = bill_length_mm > 40
+    )
+  )
+```
+
+# Abbildungen & Diagramme {background-color="#4C326A"}
+
+## Markdown Abbildungen
+
+```         
+![Pinguine spielen mit einem Quarto-Ball](images/penguins-quarto-ball.png)
+```
+
+![Pinguine spielen mit einem Quarto-Ball](images/penguins-quarto-ball.png)
+
+## Unterabbildungen
+
+**Markdown:**
+
+```         
+::: {#fig-penguins layout-ncol=2}
+
+![Blauer Pinguin](images/blue-penguin.png){#fig-blue width="250px"}
+
+![Orangefarbener Pinguin](images/orange-penguin.png){#fig-orange width="250px"}
+
+Zwei Pinguine
+
+:::
+```
+
+## Unterabbildungen
+
+**Ausgabe:**
+
+::: {#fig-penguins layout-ncol="2"}
+![Blauer Pinguin](images/blue-penguin.png){#fig-blue width="250px"}
+
+![Orangefarbener Pinguin](images/orange-penguin.png){#fig-sleep width="250px"}
+
+Zwei Pinguine
+:::
+
+## Suche nach den Abbildungen
+
+An Orten wie Markdown, YAML oder beim Einlesen von Dateien  musst du **absolute** oder **relative** Dateipfade verwenden:
+
+. . .
+
+-   Absolut = Schlecht: `"/Users/lars/uebungen"` - Auf wessen Computer wird das funktionieren?
+
+. . .
+
+-   Relativ = Besser:
+
+    -   `"../` = ein Verzeichnis nach oben, `../../` = zwei Verzeichnisse nach oben, etc.
+    -   `/..` oder `/` = beginnen im "root"-Verzeichnis deines aktuellen Computers
+
+## Abbildungen mit Code (Diagramme)
+
+```{r}
+#| echo: fenced
+#| fig-width: 4
+#| fig-align: right
+
+knitr::include_graphics("images/penguins-quarto-ball.png")
+```
+
+## Pfade in R-Code referenzieren
+
+Verwende das **here**-Paket, um auf das Projektverzeichnis zu verweisen, da `here::here()` immer im obersten Verzeichnis einer `.Rproj` beginnt:
+
+```{r}
+here::here()
+```
+
+## Abbildungen mit Code (Diagramme)
+
+```{r}
+#| echo: fenced
+
+ggplot(penguins, aes(x = species, fill = species)) +
+  geom_bar(show.legend = FALSE)
+```
+
+# Querverweise (cross references) {background-color="#4C326A"}
+
+## Querverweise (cross references)
+
+-   Unterstützen Leser:innen sich in deinem Dokument zurechtzufinden, indem du nummerierte Verweise und Hyperlinks zu Elementen wie Abbildungen und Tabellen einfügst.
+
+-   Querverweise Schritte:
+
+    -   Füge deiner Abbildung oder Tabelle eine Beschriftung hinzu.
+    -   Gib deiner Figur oder Tabelle eine ID, beginnend mit `fig-` oder `tbl-`.
+    -   Verweise darauf mit `@fig-...` oder `@tbl-...`.
+
+## Abbildung Querverweise {.smaller}
+
+Das Vorhandensein der Beschriftung (`Blauer Pinguin`) und der Bezeichnung (`#fig-blue-penguin`) machen diese Abbildung referenzierbar:
+
+::: columns
+::: {.column width="75%"}
+**Markdown:**
+
+``` markdown
+Siehe @fig-blue-penguin für einen süssen blauen Pinguin.
+![Blauer Pinguin](images/blue-penguin.png){#fig-blue-penguin}
+```
+:::
+
+::: {.column width="25%"}
+**Ausgabe:**
+
+Siehe @fig-blue-penguin für einen süssen blauen Pinguin.
+
+![Blauer Pinguin](images/blue-penguin.png){#fig-blue-penguin fig-alt="Ein blauer Pinguin" width="150"}
+:::
+:::
+
+## Tabelle Querverweise{.smaller}
+
+Das Vorhandensein der Überschrift (`Ein paar Pinguine`) und der Bezeichnung (`#tbl-pinguine`) machen diese Tabelle referenzierbar:
+
+::: columns
+::: {.column width="50%"}
+**Markdown:**
+
+```` markdown
+Siehe @tbl-penguins für Daten über einige Pinguine.
+```{{r}}
+#| label: tbl-pinguine
+#| tbl-cap: Ein paar Pinguine
+
+head(penguins) |> 
+  gt()
+```
+````
+:::
+
+::: {.column width="50%"}
+**Ausgabe:**
+
+Siehe @tbl-penguins für Daten über einige Pinguine.
+
+```{r}
+#| label: tbl-penguins
+#| tbl-cap: Ein paar Pinguine
+
+head(penguins) |> 
+  gt()
+```
+:::
+:::
 
 # Zusatzaufgaben Modul 9 {background-color="#4C326A"}
 
