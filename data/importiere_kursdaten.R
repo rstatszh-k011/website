@@ -29,3 +29,10 @@ lernziele <- "https://docs.google.com/spreadsheets/d/1Psu_bKUJ0evgDUorkoeV3KUGND
 
 read_sheet(ss = lernziele) |> 
     write_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv"))
+
+## abschlussprojekt
+
+abschlussprojekt <- "https://docs.google.com/spreadsheets/d/1kyPzhG_0oZ7njXaKh6uIIW0yICEHySSEShlfPmzxviM/edit?gid=0#gid=0"
+
+read_sheet(ss = abschlussprojekt) |> 
+    write_csv(here::here("data/tbl-02-rstatszh-k009-abschlussprojekt.csv"))

@@ -33,3 +33,6 @@ datum,modul,titel,lernziele
 2024-11-26T00:00:00Z,10,Funktionen schreiben & Iteration II (`across()`) & Parameterisierung von Berichten,"Die Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt."
 2024-11-26T00:00:00Z,10,Funktionen schreiben & Iteration II (`across()`) & Parameterisierung von Berichten,"Die Lernenden verstehen die `dplyr`-Funktion `across()` anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird."
 2024-11-26T00:00:00Z,10,Funktionen schreiben & Iteration II (`across()`) & Parameterisierung von Berichten,"Die Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen."
+2024-12-10T00:00:00Z,11,Abgabe Abschlussprojekt,"Die Lernenden können die im Kurs erworbenen Fähigkeiten anwenden, um einen kurzen Projektbericht zu einer Daten-Analyse zu verfassen."
+2024-12-10T00:00:00Z,11,Abgabe Abschlussprojekt,"Die Lernenden können ihre Daten manipulieren und analysieren, um ihre Fragen zu beantworten."
+2024-12-10T00:00:00Z,11,Abgabe Abschlussprojekt,DIe Lernenden können ihren Abschlussbericht mittels GitHub Pages öffentlich publizieren.
