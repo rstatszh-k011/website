@@ -828,6 +828,76 @@
     "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
+    "objectID": "abschlussprojekt/index.html",
+    "href": "abschlussprojekt/index.html",
+    "title": "Abschlussprojekt",
+    "section": "",
+    "text": "Das abschliessende Abschlussprojekt bietet den Teilnehmer:innen die Möglichkeit, ihre Fähigkeiten und Techniken auf reale Datensätze anzuwenden. Jede:r Teilnehmer:in nutzt eigene Daten für dieses Projekt, entweder aus der tagtäglich Arbeit in der Verwaltung oder aus einem offenen Datenkatalog.",
+    "crumbs": [
+      "Abschlussprojekt"
+    ]
+  },
+  {
+    "objectID": "abschlussprojekt/index.html#lernziele",
+    "href": "abschlussprojekt/index.html#lernziele",
+    "title": "Abschlussprojekt",
+    "section": "Lernziele",
+    "text": "Lernziele\n\n\nDie Lernenden können die im Kurs erworbenen Fähigkeiten anwenden, um einen kurzen Projektbericht zu einer Daten-Analyse zu verfassen.\nDie Lernenden können ihre Daten manipulieren und analysieren, um ihre Fragen zu beantworten.\nDIe Lernenden können ihren Abschlussbericht mittels GitHub Pages öffentlich publizieren.",
+    "crumbs": [
+      "Abschlussprojekt"
+    ]
+  },
+  {
+    "objectID": "abschlussprojekt/index.html#github-repository",
+    "href": "abschlussprojekt/index.html#github-repository",
+    "title": "Abschlussprojekt",
+    "section": "GitHub Repository",
+    "text": "GitHub Repository\nDas GitHub-Repository für dieses Projekt war eine Aufgabe aus Modul 5. Dieses Repository wird nun zur Vorbereitung der Daten und des Abschlussberichts verwendet:\n\nModule 5 - Übungsaufgabe 2: Abschlussprojekt - Daten auswählen",
+    "crumbs": [
+      "Abschlussprojekt"
+    ]
+  },
+  {
+    "objectID": "abschlussprojekt/index.html#github-issue-tracker",
+    "href": "abschlussprojekt/index.html#github-issue-tracker",
+    "title": "Abschlussprojekt",
+    "section": "GitHub Issue Tracker",
+    "text": "GitHub Issue Tracker\nDer GitHub Issue Tracker des Abschlussbericht Repositories jede:r Teilnehmer:in wird zur Kommunikation und für Fragen zum Bericht genutzt. Die folgenden GitHub-Benutzernamen können getaggt werden: @larnsce.",
+    "crumbs": [
+      "Abschlussprojekt"
+    ]
+  },
+  {
+    "objectID": "abschlussprojekt/index.html#abgabedatum",
+    "href": "abschlussprojekt/index.html#abgabedatum",
+    "title": "Abschlussprojekt",
+    "section": "Abgabedatum",
+    "text": "Abgabedatum\nDer Termin für die Einreichung des Berichts ist Dienstag, 10. Dezember 2024.",
+    "crumbs": [
+      "Abschlussprojekt"
+    ]
+  },
+  {
+    "objectID": "abschlussprojekt/index.html#erforderliche-elemente",
+    "href": "abschlussprojekt/index.html#erforderliche-elemente",
+    "title": "Abschlussprojekt",
+    "section": "Erforderliche Elemente",
+    "text": "Erforderliche Elemente\nTable 1 ist eine detaillierte Liste der Punkte, die für eine vollständige Einreichung des Abschlussprojektberichts erforderlich sind. Die Punkte sind in technische, datenbezogene und intellektuelle Aufgaben eingeteilt. Wenn ein Punkt unklar ist, wende dich bitte an die Kursleitung.\nDiese Liste ist auch als Google Sheet verfügbar, von wo aus du dir eine Kopie erstellen und deinen Fortschritt als Checkliste verfolgen kannst:: https://docs.google.com/spreadsheets/d/1kyPzhG_0oZ7njXaKh6uIIW0yICEHySSEShlfPmzxviM/edit?gid=0#gid=0\n\n\n\n\nTable 1: Liste der Punkte, die für einen kompletten Abschlussprojekt erforderlich sind.\n\n\n\n\n\n\n\n\n\n\n\nnr\nkategorie\naufgaben\n\n\n\n\n1\ntechnisch\nDer Bericht wird fehlerfrei im HTML-Format wiedergegeben (gerendert) und enthält mindestens fünf Kapitel der Überschriftenebene 1 mit den folgenden Namen: Einleitung, Daten, Ergebnisse, Schlussfolgerungen.\n\n\n2\ntechnisch\nDer YAML-Berichtskopf enthält Titel, Autor, Datum und Inhaltsverzeichnis, die in der kompilierten HTML-Ausgabe korrekt angezeigt werden.\n\n\n3\ntechnisch\nWarnungen werden in der kompilierten Ausgabe ausgeblendet, aber der Code wird in der kompilierten Ausgabe angezeigt.\n\n\n4\ntechnisch\nDer Bericht enthält mindestens zwei Datenvisualisierungen.\n\n\n5\ntechnisch\nJede Datenvisualisierung hat bearbeitete, für Menschen lesbare Beschriftungen (z. B. Achsenbeschriftungen, Legendentitel).\n\n\n6\ntechnisch\nJede Datenvisualisierung verwendet mindestens eine Skalierungsfunktion (z. B. Farbe/Füllung mit scale_color_XYZ, Achsen mit Funktionen scale_x_XYZ).\n\n\n7\ntechnisch\nJede Datenvisualisierung hat eine Bezeichnung (label), die in den Code-Block-Optionen definiert ist.\n\n\n8\ntechnisch\nJede Datenvisualisierung hat eine Beschriftung (caption), die in den Code-Block-Optionen definiert ist.\n\n\n9\ntechnisch\nJede Datenvisualisierung wird im Bericht mit einem Querverweis versehen, wobei die definierte Bezeichnung (label) aus den Code-Block-Optionen verwendet wird.\n\n\n10\ntechnisch\nDer Bericht enthält mindestens eine Tabelle mit zusammenfassenden Statistiken (z. B. Anzahl, Mittelwert, Median, Standardabweichung usw.).\n\n\n11\ntechnisch\nJede Tabelle wird in der gerenderten Ausgabe mit einer im Kurs erlernten Funktion (z. B. kable()-Funktion oder gt()-Funktion) formatiert.\n\n\n12\ntechnisch\nJede Tabelle hat eine Bezeichnung (label), die in den Code-Block-Optionen definiert ist.\n\n\n13\ntechnisch\nJede Tabelle hat eine Beschriftung (caption), die in den Code-Block-Optionen definiert ist.\n\n\n14\ntechnisch\nJede Tabelle hat bearbeitete, für Menschen lesbare Beschriftungen (z. B. Achsenbeschriftungen, Legendentitel).\n\n\n15\ntechnisch\nDas Projekt-Verzeichnis (Repository) ist mittels GitHub Pages öffentlich publiziert.\n\n\n16\ndaten\nDie Daten aus dem Ordner daten/raw wurden importiert, bereinigt und als analysefertige verarbeitete Daten im Ordner daten/processed gespeichert.\n\n\n17\ndaten\nDer Ordner daten/processed enthält eine codebook.csv Datei mit zwei Spalten (variable_name, beschreibung), die jede Variable der Daten im selben Ordner dokumentieren.\n\n\n18\ndaten\nDas Hauptverzeichnis enthält eine README.md Datei aus einer Vorlage und die Dokumentation für das Abschlussprojekt und die Daten.\n\n\n19\nintellektuell\nDer Abschnitt Einleitung führt mit 3 bis 5 Sätzen in den Kontext ein in dem das Projekt erstellt wurde.\n\n\n20\nintellektuell\nDer Abschnitt Daten beschreibt die Daten mit 3 bis 5 Sätzen. Die Datenquelle mit Link (falls vorhanden) ist angegeben.\n\n\n21\nintellektuell\nDer Abschnitt Ergebnisse beschreibt und interpretiert die Diagramme und Tabellen welche erstellt wurden.\n\n\n22\nintellektuell\nDer Abschnitt Schlussfolgerungen fasst die Ergebnisse in Form von Aufzählungspunkten zusammen.",
+    "crumbs": [
+      "Abschlussprojekt"
+    ]
+  },
+  {
+    "objectID": "abschlussprojekt/index.html#bericht-auf-github-pages-veröffentlichen-und-einreichen",
+    "href": "abschlussprojekt/index.html#bericht-auf-github-pages-veröffentlichen-und-einreichen",
+    "title": "Abschlussprojekt",
+    "section": "Bericht auf GitHub Pages veröffentlichen und einreichen",
+    "text": "Bericht auf GitHub Pages veröffentlichen und einreichen\nDein Bericht wird durch die Veröffentlichung auf GitHub Pages und die Übermittlung des Links über ein GitHub Issue in deinem Abschlussnericht-Repository abgeschlossen. Bitte tagge die Kursleitung in dem GitHub Issue: @larnsce. Wir werden den Bericht prüfen und Feedback geben.\n\nNavigate to your repository\n\nÖffne github.com in deinem Browser und navigiere zur GitHub-Organisation für den Kurs: https://github.com/rstatszh-k009.\n\n\n\n\n\n\n\n\n\n\n\nVerwende das Suchfeld unter “Repositories”, um das Repository für dein Abschlussprojekt zu finden.\n\n\n\n\n\n\n\n\n\n\n\nÖffne dein Repository für das Abschlussprojekt.\n\n\n\n\n\n\n\n\n\n\n\n\nRepository öffentlich machen\nWenn die Sichtbarkeit deines Repositorys auf “privat” eingestellt ist (erkennbar an einem kleinen Vorhängeschloss neben dem Namen des Repositorys), musst du es zunächst auf “public” (öffentlich) umstellen, indem du die folgenden Schritte ausführst:\n\nKlick aus “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nBleibe auf “General” und scrolle bis zum Ende der Seite zu “Danger Zone”.\n\n\n\n\n\n\n\n\n\n\n\nNeben dem ersten Unterkapitel “Change repository visibility”, klicke auf “Change visibility”, dann “Change to public”.\n\n\n\n\n\n\n\n\n\n\n\nKlick “I want to make this repository public”.\n\n\n\n\n\n\n\n\n\n\n\nKlick “I have read and understand these effects”.\nKlick “Make this repository public”.\nGebe die notwendigen Details an.\nFertig.\n\n\n\nVeröffentlichen mit GitHub Pages\n\nÖffne dein Repository für das Abschlussprojekt und klick auf “Settings”.\n\n\n\n\n\n\n\n\n\n\n\nKlicke im linken Navigationsbereich auf “Pages” unter “Code and automation”.\n\n\n\n\n\n\n\n\n\n\n\nUnter “Build and deployment”, dann unter Branch, klick auf das Dropbown mit dem Titel “None”.\n\n\n\n\n\n\n\n\n\n\n\nIm Dropdown, selektiere “master” (bei einigen von euch vielleicht “main”).\n\n\n\n\n\n\n\n\n\n\n\nKlick auf das Dropdown mit dem Titel “/ (root)”. Im Dropdown, selektiere “/docs”.\n\n\n\n\n\n\n\n\n\n\n\nKlick “Save”.\n\n\n\n\n\n\n\n\n\n\n\n\nBearbeite “About” des Repositorys\n\nÖffne dein Repository für das Abschlussprojekt.\n\n\n\n\n\n\n\n\n\n\n\nKlicke auf der rechten Seite neben “About” auf das Zahnradsymbol.\n\n\n\n\n\n\n\n\n\n\n\nUnter “Description” kannst du folgenden, oder einen von dir gewählten, Text schreiben: ‘Dieser Bericht wurde für den Kurs “rstatsZH - Data Science mit R’ erstellt.\n\n\n\n\n\n\n\n\n\n\n\nUnter “Website”, klick “Use your GitHub Pages website” and under “Include in the home page” kannst du die angekreuzten Kästchen entfernen.\n\n\n\n\n\n\n\n\n\n\n\nClick “Save changes”.\nDie öffentliche URL deines Repositorys wird nun unter “About” auf der rechten Seite angezeigt.\n\n\n\n\n\n\n\n\n\n\n\nÖffne deine veröffentlichte Website und sei stolz auf dein Ergebnis.\nReiche den Link zu deinem Bericht in einem GitHub-Issue in deinem Abschlussbericht Repository ein. Tagge die Kursleitung: @larnsce",
+    "crumbs": [
+      "Abschlussprojekt"
+    ]
+  },
+  {
     "objectID": "folien/md-01-willkommen.html#triff-die-kursleitung",
     "href": "folien/md-01-willkommen.html#triff-die-kursleitung",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
