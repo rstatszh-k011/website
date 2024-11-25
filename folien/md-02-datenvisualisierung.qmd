@@ -192,7 +192,7 @@ Im Kanal könnt ihr:
 -   Neue Infos zum R-Bundle erhalten
 -   Up-to-date bleiben was in der Community läuft
 
-## R-Fachgruppe
+## R-Fachgruppe {.scrollable}
 
 ::: columns
 ::: {.column width="50%"}
@@ -482,7 +482,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 # Daten visualisieren {background-color="#4C326A"}
 
-## Arten von Variablen
+## Variablen Typen {.smaller}
 
 ::: incremental
 ::: columns
@@ -511,7 +511,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 -   endliche Anzahl von Werten
 -   eindeutige Gruppen (z.B. EU Länder)
--   **ordinal**, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage, Schulnoten)
+-   **ordinal**, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)
 :::
 :::
 :::

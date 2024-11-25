@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Abschlussprojekt – rstatsZH - Data Science mit R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" data-domain="rstatszh-k009.github.io/website" src="https://plausible.io/js/script.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      rstatsZH - Data Science mit R
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">rstatsZH - Data Science mit R</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/rstatszh-k009/" title="GitHub Organisation" class="quarto-navigation-tool px-1" aria-label="GitHub Organisation"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vorbereitung</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../vorbereitung/01-github.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schritt 1: GitHub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../vorbereitung/02-posit-cloud.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schritt 2: Posit Cloud</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../vorbereitung/03-r4ds-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schritt 3: Kursbuch</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../vorbereitung/04-umfrage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schritt 4: Umfrage</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../kalendar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kurskalender</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 01</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 02</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 03</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 04</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 05</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 06</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 07</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 08</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 09</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../module/md-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modul 10</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#nicht-schützenswerte-daten" id="toc-nicht-schützenswerte-daten" class="nav-link active" data-scroll-target="#nicht-schützenswerte-daten">Nicht schützenswerte Daten</a></li>
+  <li><a href="#daten-auswählen" id="toc-daten-auswählen" class="nav-link" data-scroll-target="#daten-auswählen">Daten auswählen</a></li>
+  <li><a href="#daten-struktur-leitlinien" id="toc-daten-struktur-leitlinien" class="nav-link" data-scroll-target="#daten-struktur-leitlinien">Daten Struktur &amp; Leitlinien</a></li>
+  <li><a href="#arbeitsschritte" id="toc-arbeitsschritte" class="nav-link" data-scroll-target="#arbeitsschritte">Arbeitsschritte</a>
+  <ul class="collapse">
+  <li><a href="#schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud" id="toc-schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud" class="nav-link" data-scroll-target="#schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud">Schritt 1: Erstelle ein neues Repository auf GitHub &amp; clone es in die Posit Cloud</a></li>
+  <li><a href="#schritt-2-erstelle-neue-ordner" id="toc-schritt-2-erstelle-neue-ordner" class="nav-link" data-scroll-target="#schritt-2-erstelle-neue-ordner">Schritt 2: Erstelle neue Ordner</a></li>
+  <li><a href="#schritt-3-daten-hochladen" id="toc-schritt-3-daten-hochladen" class="nav-link" data-scroll-target="#schritt-3-daten-hochladen">Schritt 3: Daten hochladen</a></li>
+  <li><a href="#schritt-4-quarto-datei-erstellen" id="toc-schritt-4-quarto-datei-erstellen" class="nav-link" data-scroll-target="#schritt-4-quarto-datei-erstellen">Schritt 4: Quarto Datei erstellen</a></li>
+  <li><a href="#schritt-5-r-pakete-laden-und-daten-importieren" id="toc-schritt-5-r-pakete-laden-und-daten-importieren" class="nav-link" data-scroll-target="#schritt-5-r-pakete-laden-und-daten-importieren">Schritt 5: R-Pakete laden und Daten importieren</a></li>
+  <li><a href="#schritt-6-übertrage-deine-änderungen-auf-github" id="toc-schritt-6-übertrage-deine-änderungen-auf-github" class="nav-link" data-scroll-target="#schritt-6-übertrage-deine-änderungen-auf-github">Schritt 6: Übertrage deine Änderungen auf GitHub</a></li>
+  <li><a href="#schritt-7-eröffne-ein-issue-auf-github" id="toc-schritt-7-eröffne-ein-issue-auf-github" class="nav-link" data-scroll-target="#schritt-7-eröffne-ein-issue-auf-github">Schritt 7: Eröffne ein Issue auf GitHub</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Abschlussprojekt</h1>
+<p class="subtitle lead">Daten auswählen</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Am Ende des Kurses steht ein Abschlussprojekt in welchem ihr die Möglichkeit bekommt mit einem Datensatz eurer Wahl zu arbeiten und die im Kurs erlernten Methoden und Techniken anzuwenden und zu vertiefen. Die Auswahl des Datenprojekts ist frei, es sollte jedoch ein Datensatz sein, welcher öffentlich geteilt werden kann. Dies bedeutet nicht zwingend, dass der Datensatz als OGD Ressource im Datenkatalog verfügbar sein muss, aber es sollte die Möglichkeit bestehen, dass dieser über GitHub geteilt werden kann.</p>
+<p>Dazu gibt es bei der Auswahl des Datensatzes folgendes zu beachten:</p>
+<section id="nicht-schützenswerte-daten" class="level2">
+<h2 class="anchored" data-anchor-id="nicht-schützenswerte-daten">Nicht schützenswerte Daten</h2>
+<p>Auf Grundlage des <a href="http://www.zhlex.zh.ch/Erlass.html?Open&amp;Ordnr=170.4">Gesetzes über die Information und den Datenschutz (IDG)</a> dürfen Verwaltungseinheiten und Organe des Kantons Zürich nicht schützenswerte Daten, die unter ihrer Hoheit stehen, als offene Behördendaten publizieren.</p>
+<p>‘Nicht schützenswert’ bedeutet, dass die bereitgestellten Daten:</p>
+<ul>
+<li>nicht die Privatsphäre verletzen</li>
+<li>nicht sicherheitskritisch sind und</li>
+<li>keinen Drittrechten (wie zum Beispiel Copyrights) unterliegen.</li>
+</ul>
+<p>Info entnommen aus: <a href="https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780" class="uri">https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780</a></p>
+</section>
+<section id="daten-auswählen" class="level2">
+<h2 class="anchored" data-anchor-id="daten-auswählen">Daten auswählen</h2>
+<p>Folgende Fragen stellen sich:</p>
+<ol type="1">
+<li><p>Habe ich Daten welche die oben genannten Kriterien erfüllen?</p></li>
+<li><p>Habe ich ein bestimmtes Ziel für das Arbeiten mit diesen Daten?</p></li>
+</ol>
+<p>Falls keine “nicht schützenswerten” Daten zur Verfügung stehen, kann ein offener Datensatz genutzt werden. Dazu gibt es den Datenkatalog des Kantons Zürich und andere offene Datenquellen, welche in <a href="../../zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html">Zusatzaufgabe 1: Ressourcen für OGD im Kanton Zürich</a> beschrieben sind.</p>
+</section>
+<section id="daten-struktur-leitlinien" class="level2">
+<h2 class="anchored" data-anchor-id="daten-struktur-leitlinien">Daten Struktur &amp; Leitlinien</h2>
+<p>Die Daten müssen nicht bereits in den vorgegeben Kriterien der <a href="https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md">Leitlinien des Kantons Zürich für einfach nutzbare Behördendaten</a> vorliegen. Das Abschlussprojekt selbst könnte auch die Aufbereitung beinhalten und somit die Daten in ein Format bringen, welches den Leitlinien entspricht.</p>
+</section>
+<section id="arbeitsschritte" class="level1">
+<h1>Arbeitsschritte</h1>
+<section id="schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-1-erstelle-ein-neues-repository-auf-github-clone-es-in-die-posit-cloud">Schritt 1: Erstelle ein neues Repository auf GitHub &amp; clone es in die Posit Cloud</h2>
+<ol type="1">
+<li><p>Öffne die GitHub Organisation für den Kurs <a href="https://github.com/rstatszh-k009" class="uri">https://github.com/rstatszh-k009</a></p></li>
+<li><p>Rechts neben dem Feld <span class="highlight-yellow">“Find a repository”</span> klicke auf den grünen <span class="highlight-yellow">“New”</span> Button.</p></li>
+<li><p>Im Feld <span class="highlight-yellow">“Repository name”</span> schreibe <code>projekt-USERNAME</code>. <span class="highlight-yellow">Ersetze USERNAME durch deinen GitHub Benutzernamen</span>. Vermeide Leerzeichen.</p></li>
+<li><p>Skrolle auf der gleichen Seite nach unten und klicke auf <span class="highlight-yellow">“Create repository”</span>.</p></li>
+<li><p>Im Feld <span class="highlight-yellow">“Quick setup”</span> klicke auf das Clipboard neben der HTTPs URL.</p></li>
+<li><p>Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf <a href="https://posit.cloud/spaces/543494/content/all?sort=name_asc">posit.cloud</a></p></li>
+<li><p>Klicke auf “New Project” &gt; “New Project from Git Repository”</p></li>
+<li><p>Füge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. <span class="highlight-yellow"><strong>Beachte:</strong></span> Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.</p></li>
+<li><p>Warte, bis das Projekt bereitgestellt wurde.</p></li>
+</ol>
+</section>
+<section id="schritt-2-erstelle-neue-ordner" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-2-erstelle-neue-ordner">Schritt 2: Erstelle neue Ordner</h2>
+<ol type="1">
+<li><p>Im Datei Manager im Fenster unten rechts, klicke auf “Folder” um einen neuen Ordner zu erstellen.</p></li>
+<li><p>Benenne den Ordner <code>daten</code>.</p></li>
+<li><p>Klicke auf den Ordner <code>daten</code> im Datei Manager im Fenster unten rechts.</p></li>
+<li><p>Erstelle einen weiteren Ordner <code>raw</code> im Ordner <code>daten</code>.</p></li>
+<li><p>Klicke auf den Ordner <code>raw</code> im Datei Manager im Fenster unten rechts.</p></li>
+</ol>
+</section>
+<section id="schritt-3-daten-hochladen" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-3-daten-hochladen">Schritt 3: Daten hochladen</h2>
+<ol type="1">
+<li>Verwende den Datei Manager im unteren rechten Fenster, um die identifizierten Daten aus Aufgabe 1 in den <code>raw</code> Ordner hochzuladen. Für detaillierte Schritte, siehe <a href="../../zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.html">Zusatzaufgabe 2 aus Modul 3</a>.</li>
+</ol>
+</section>
+<section id="schritt-4-quarto-datei-erstellen" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-4-quarto-datei-erstellen">Schritt 4: Quarto Datei erstellen</h2>
+<ol type="1">
+<li>Navigiere zurück zum Hauptverzeichnis deines Projekts, indem du auf den blauen R-Würfel klickst.</li>
+</ol>
+<p><img src="images/01-file-manager-hauptverzeichnis.png" class="img-fluid" style="width:80.0%"> 2. Erstelle einen neuen Ordner <code>docs</code> im Hauptverzeichnis deines Projekts.</p>
+<ol start="3" type="1">
+<li><p>Klicke auf den Ordner <code>docs</code>.</p></li>
+<li><p>Erstelle ein neues Quarto-Dokument und speichere es als <code>index.qmd</code> im <code>docs</code>-Ordner.</p></li>
+</ol>
+<p><img src="images/02-docs-index.png" class="img-fluid" style="width:80.0%"></p>
+<ol start="5" type="1">
+<li><p>Lösche den Inhalt des Quarto-Dokuments bis auf die YAML Metadaten zu Beginn des Dokuments.</p></li>
+<li><p>Erstelle die folgenden Abschnitte in deinem Quarto-Dokument:</p></li>
+</ol>
+<ul>
+<li>Einleitung (formatiert als Heading 1)</li>
+<li>Daten (formatiert als Heading 2)</li>
+<li>Analyseziele (formatiert als Heading 2)</li>
+<li>Daten Aufbereitung (formatiert als Heading 1)</li>
+<li>Daten Visualisierung (formatiert als Heading 1)</li>
+</ul>
+<ol start="7" type="1">
+<li>In der Einleitung, beschreibe kurz das Projekt, die Daten, und deine Analyseziele.</li>
+</ol>
+</section>
+<section id="schritt-5-r-pakete-laden-und-daten-importieren" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-5-r-pakete-laden-und-daten-importieren">Schritt 5: R-Pakete laden und Daten importieren</h2>
+<ol type="1">
+<li>Vor der Einleitung, füge einen Code-Block hinzu und schreibe <code>library(tidyverse)</code> um die R-Pakete zu laden, welche du in diesem Kurs gelernt hast.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Importiere deine Daten, indem du den folgenden Code in einem weiteren Code-Block schreibst (in diesem Beispiel verwenden wir eine CSV-Datei):</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="in">read_csv(here::here("daten/raw/your-file-name.csv"))</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Das R-Paket <code>here</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wir empfehlen das R-Paket <code>here</code> zu verwenden, um auf Dateien in deinem Projekt zu verweisen. Das <code>here</code> R-Paket hilft dabei, den richtigen Dateipfad zu deinen Daten zu finden. Wir werden Dateipfade und das Paket selbst in einem anderen Modul besprechen.</p>
+</div>
+</div>
+</section>
+<section id="schritt-6-übertrage-deine-änderungen-auf-github" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-6-übertrage-deine-änderungen-auf-github">Schritt 6: Übertrage deine Änderungen auf GitHub</h2>
+<ol type="1">
+<li><p>Überprüfe ob dein Projekt den gleichen Aufbau hat wie das Projekt von Rainbow Train: <a href="https://github.com/rstatszh-k009/projekt-rainbow-train" class="uri">https://github.com/rstatszh-k009/projekt-rainbow-train</a></p></li>
+<li><p>Falls der Aufbau nicht übereinstimmt, nehme nochmals Veränderungen vor.</p></li>
+<li><p>Sobald du den Aufbau abgeschlossen hast, navigiere zum Git-Bereich im Fenster oben rechts.</p></li>
+<li><p>Aktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.</p></li>
+<li><p>Klicke auf die Schaltfläche “Commit”.</p></li>
+<li><p>Gib eine Commit-Nachricht in das Feld “Commit Message” ein (z.B. Projekt aufsetzen).</p></li>
+<li><p>Klicke auf die Schaltfläche “Commit”. Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.</p></li>
+<li><p>Klicke auf die Schaltfläche “Push”.</p></li>
+<li><p>Gib deinen GitHub-Benutzernamen im Feld Username an.</p></li>
+<li><p>Gib <span class="highlight-yellow">deinen GitHub Personal Access Token (PAT)</span> im Feld <span class="highlight-yellow">“Password”</span> ein.</p></li>
+<li><p>Das Fenster kann geschlossen werden.</p></li>
+</ol>
+</section>
+<section id="schritt-7-eröffne-ein-issue-auf-github" class="level2">
+<h2 class="anchored" data-anchor-id="schritt-7-eröffne-ein-issue-auf-github">Schritt 7: Eröffne ein Issue auf GitHub</h2>
+<ol type="1">
+<li><p>Öffne <a href="https://github.com/">github.com</a> in deinem Browser.</p></li>
+<li><p>Navigiere zur GitHub-Organisation für den Kurs: <a href="https://github.com/rstatszh-k009">github.com/rstatszh-k009</a></p></li>
+<li><p>Finde das Repository <span class="highlight-yellow">projekt-USERNAME</span>, das mit deinem GitHub-Benutzernamen endet.</p></li>
+<li><p>Klicke auf die Schaltfläche “Issues”.</p></li>
+<li><p>Klicke auf die grüne Schaltfläche “New issue”.</p></li>
+<li><p>Schreibe in das Feld “Title”: “Daten für das Abschlussprojekt ausgewählt”.</p></li>
+<li><p>Markiere im Feld “Leave a comment” den Kursleiter mit <span class="citation" data-cites="larnsce">@larnsce</span> und hinterlasse mir ein Kommentar, falls du möchtest.</p></li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/rstatszh-k009\.github\.io\/website");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Dieser Kurs wird vom <a href="https://www.zh.ch/de/politik-staat/statistik-daten.html">Statistischen Amt Kanton Zürich</a> angeboten</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../verhaltenskodex.html">
+<p>Verhaltenskodex</p>
+</a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:datashop@statistik.zh.ch">
+      <i class="bi bi-envelope-at" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rstatszh-k009/website">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,99 @@
+---
+title: "R for Data Science (r4ds) Übungen"
+---
+
+Das Buch [R for Data Science](https://r4ds.hadley.nz/) (r4ds) von Hadley Wickham und Garrett Grolemund ist ein beliebtes Buch für den Einstieg in die Datenanalyse mit R. In diesem Buch werden viele Konzepte und Techniken der Datenanalyse mit R erklärt. In diesem Kurs verwenden wir dieses Buch als Grundlage für die Lerninhalte.
+
+Bisher habe ich euch Kapitel aus dem Buch zum Lesen gegeben. Das Lernen wird jedoch noch effektiver, wenn ihr das Gelesene auch direkt selbst anwendet. Der dargestellte Code aus dem Buch kann jeweils kopiert werden, ausgeführt und verändert werden.
+
+In dieser Übung erstellt ihr ein neues Repository wie in [Zusatzaufgabe 2 aus Modul 3](../md-03/za-03-02-github-repo-erstellen.qmd). 
+
+## Schritt 1: Erstelle ein neues Repository auf GitHub & clone es in die Posit Cloud
+
+1. Öffne die GitHub Organisation für den Kurs <https://github.com/rstatszh-k009>
+
+2. Rechts neben dem Feld ["Find a repository"]{.highlight-yellow} klicke auf den grünen ["New"]{.highlight-yellow} Button.
+
+3. Im Feld ["Repository name"]{.highlight-yellow} schreibe `r4ds-uebungen-USERNAME`. [Ersetze USERNAME durch deinen GitHub Benutzernamen]{.highlight-yellow}. Vermeide Leerzeichen.
+
+4. Skrolle auf der gleichen Seite nach unten und klicke auf ["Create repository"]{.highlight-yellow}.
+
+5. Im Feld ["Quick setup"]{.highlight-yellow} klicke auf das Clipboard neben der HTTPs URL.
+
+6. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/543494/content/all?sort=name_asc)
+
+7. Klicke auf "New Project" > "New Project from Git Repository"
+
+8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein. [**Beachte:**]{.highlight-yellow} Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.
+
+9. Warte, bis das Projekt bereitgestellt wurde.
+
+## Schritt 2: Erstelle eine Quarto Datei für Übungen aus dem Kapitel 16 "Factors"
+
+In deinem r4ds-uebungen-USERNAME Projekt in RStudio auf Posit Cloud, gehe in der Menüleiste zu [File > New File > Quarto document] um ein Quarto Dokument mit HTML Output zu erstellen. Render das Dokument, welches dich nach einem Namen fragt - du kannst `16-factors.qmd` verwenden und die Datei im Stammordner speichern.
+
+1. Füge einen Titel und deinen Namen als Autor in die YAML Metadaten am Anfang des Dokuments ein.
+
+2. Lösche den Text und Code-Blöcke unterhalb der YAML Metadaten.
+
+3. Füge eine Sektion formatiert als Heading 2 und Titel: "R Pakete laden" hinzu.
+
+4. Unterhalb der Sektion füge einen Code-Block hinzu.
+
+5. Innerhalb des Code-Blocks, lade das R-Paket: `tidyverse` (dieses R-Paket beinhaltet alle R-Pakete die wir bisher gelernt haben)
+
+6. Unterhalb des Code-Blocks, füge eine weitere Sektion formatiert als Heading 2 und Titel: "General Social Survey" hinzu.
+
+7. Unterhalb der Sektion füge einen Code-Block hinzu.
+
+8. Öffne Kapitel 16.3 aus dem Buch R4DS: <https://r4ds.hadley.nz/factors#general-social-survey>
+
+9. Kopiere den Code aus dem Buh in deine Quarto Datei und lasse den Code laufen. Siehe Beispiel unten.
+
+10. Arbeite dich Schritt für Schritt durch den Code und zusätzliche Übungen wenn du möchtest.
+
+```{r}
+#| eval: false
+gss_cat
+
+gss_cat |>
+  count(race)
+
+```
+## Schritt 3: Übertrage deine Änderungen auf GitHub
+
+1. Navigiere zum Git-Bereich im Fenster oben rechts.
+
+2. Aktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.
+
+3. Klicke auf die Schaltfläche "Commit".
+
+4. Gib eine Commit-Nachricht in das Feld "Commit Message" ein (z.B. Übungsdatei für Faktoren erstellt).
+
+5. Klicke auf die Schaltfläche "Commit". Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.
+
+6. Klicke auf die Schaltfläche "Push".
+
+7. Gib deinen GitHub-Benutzernamen im Feld Username an. 
+
+8. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Password"]{.highlight-yellow} ein.
+
+9. Das Fenster kann geschlossen werden.
+
+## Schritt 4: Eröffne ein Issue auf GitHub
+
+1. Öffne [github.com](https://github.com/) in deinem Browser.
+
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
+
+3. Finde das Repository [r4ds-uebungen-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
+
+4. Klicke auf die Schaltfläche "Issues".
+
+5. Klicke auf die grüne Schaltfläche "New issue".
+
+6. Schreibe in das Feld "Title": "Repository für Übungen erstellt".
+
+7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage.
+
+

@@ -1,5 +1,5 @@
 ---
-title: "Daten Visualisierung mit ggplot2"
+title: "Daten Visualisierung mit `ggplot2`"
 ---
 
 ## Schritt 1: Klone das Repository für Modul 2

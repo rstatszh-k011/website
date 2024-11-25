@@ -1,0 +1,63 @@
+---
+title: "OGD importieren und erkunden"
+---
+
+In dieser Übungen arbeiten wir weiter mit dem Repository welches du in [Zusatzaufgabe 2 aus Modul 3](../zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.qmd) erstellt hast.
+
+## Schritt 1: öffne das Projekt in der Posit Cloud
+
+1. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/543494/content/all?sort=name_asc)
+
+2. Finde das Projekt [ogd-daten-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
+
+3. Klicke auf das Projekt um es zu öffnen.
+
+## Schritt 2: Daten importieren
+
+1. In der Sektion "Daten importieren", nutze die Funktion `read_csv()` um die Daten aus dem Ordner `daten` zu importieren.
+
+2. Nutze den Zuweisungsoperator `<-` um die Daten in einem Objekt mit einem Namen deiner Wahl zu speichern.
+
+3. Erkunde die Daten mit den dir bekannten Funktionen.
+
+4. Mache dir Notizen in der Quarto Datei. Schreibe auf was dir auffällt oder welche Fragen du mittels der Daten beantworten könntest.
+
+5. Versuche mindestens zwei Fragen zu formulieren, die du mit den Daten beantworten könntest.
+
+6. Versuche ein Diagramm zu erstellen, das dir hilft eine der Fragen zu beantworten. Notiere welche Hürden du dabei hattest.
+
+## Schritt 3: Übertrage deine Änderungen auf GitHub
+
+1. Navigiere zum Git-Bereich im Fenster oben rechts.
+
+2. Aktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.
+
+3. Klicke auf die Schaltfläche "Commit".
+
+4. Gib eine Commit-Nachricht in das Feld "Commit Message" ein (z.B. Daten importieren und erkunden).
+
+5. Klicke auf die Schaltfläche "Commit". Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.
+
+6. Klicke auf die Schaltfläche "Push".
+
+7. Gib deinen GitHub-Benutzernamen im Feld Username an. 
+
+8. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Password"]{.highlight-yellow} ein.
+
+9. Das Fenster kann geschlossen werden.
+
+## Schritt 4: Eröffne ein Issue auf GitHub
+
+1. Öffne [github.com](https://github.com/) in deinem Browser.
+
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
+
+3. Finde das Repository [ogd-daten-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
+
+4. Klicke auf die Schaltfläche "Issues".
+
+5. Klicke auf die grüne Schaltfläche "New issue".
+
+6. Schreibe in das Feld "Title": "Zwei Fragen an den Datensatz".
+
+7. Markiere im Feld "Leave a comment" den Kursleiter mit @larnsce, deine Fragen an den Datensatz, und mögliche Hürden bei welchen ich dich unterstützen könnte.

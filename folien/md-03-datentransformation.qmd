@@ -26,6 +26,7 @@ library(countdown)
 library(tidyverse)
 library(epoxy)
 library(gapminder)
+library(ggthemes)
 ```
 
 ## Lernziele (für diese Woche)
@@ -61,10 +62,10 @@ knitr::include_graphics("img/md-03/dplyr-part-of-tidyverse.png")
 
 ::: {.column width="60%"}
 
-- `select`: Spalten nach Namen auswählen
-- `arrange`: Zeilen neu ordnen
 - `filter`: wählt Zeilen aus, die den Kriterien entsprechen
-- `relocate`: ändert die Reihenfolge der Spalten
+- `arrange`: Zeilen neu ordnen
+- `select`: Spalten nach Namen auswählen
+- `rename`: Spalten umbenennen
 - `mutate`: neue Variablen hinzufügen
 - `summarise`: Variablen auf Werte reduzieren
 - `group_by`: für gruppierte Operationen
@@ -233,7 +234,7 @@ treibhausgase |>
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
 2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
-3. Klicke auf [Start]{.highlight-yellow} neben [md-03-uebungen]{.highlight-yellow}.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-03-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei [`01-dplyr-wir.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::
 
@@ -265,10 +266,10 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 5. Folge den Anweisungen in der Datei.
 :::
 ```{r}
-countdown(15)
+countdown(25)
 ```
 
-## R Terminology
+## R Terminologie
 
 ```{r}
 #| eval: false
@@ -285,15 +286,19 @@ treibhausgase_verkehr <- treibhausgase |>
 -   Zuweisungsoperator: `<-`
 -   Pipe Operator: `|>`
 
-## Aufgabe 1.3 - Verbundenes Streudiagram 
+## Aufgabe: Verbundenes Streudiagram {.scrollable}
 
 {{< fa thumbs-up >}} Großartig für Zeitreihendaten {{< fa calendar >}}
 
 ::: small
 
-1.  Benutze die Funktion `ggplot()`, um ein verbundenmes Streudiagramm mit `geom_point()` und `geom_line()` für die Daten zu erstellen, die du in Aufgabe 1.2 erstellt hast.
+1.  Nutze die Daten treibhausgase_gebaeude und die Funktion `ggplot()`, um ein verbundenmes Streudiagramm mit `geom_point()` und `geom_line()` zu erstellen.
 
-2.  Verwende die Funktion `aes()`, um die Variable "jahr" auf die x-Achse, die Variable "emission" auf die y-Achse und die Variable "untergruppe" auf die Farbe und die ästhetische Gruppe zu übertragen.
+Definiere folgende visuellen Eigenschaften:
+
+-   jahr auf der x-Achse;
+-   emission auf der y-Achse;
+-   untergruppe zur Einfärbung mit dem Argument `color = untergruppe` innerhalb von `aes()`
 
 3.  Ändere die Farben mit `scale_color_colorblind()`.
 
@@ -310,8 +315,8 @@ treibhausgase |>
     filter(hauptgruppe == "Gebäude") |> 
     ggplot(aes(x = jahr, y = emission, color = untergruppe)) +
     geom_point() +
-    geom_path()
-
+    geom_path() +
+    scale_color_colorblind()
 ```
 
 ## Wir sind dran: 03-dplyr-wir.qmd
@@ -319,7 +324,7 @@ treibhausgase |>
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
 2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
-3. Klicke auf [Start]{.highlight-yellow} neben [md-03-uebungen]{.highlight-yellow}.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-03-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei [`03-dplyr-wir.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::
 ```{r}
@@ -340,10 +345,10 @@ countdown(minutes = 5)
 Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-## TODO: 04-dplyr-ihr.qmd
+## Zeitpuffer: 03-dplyr-wir.qmd
 
-::: task
-
+::: {.hand-purple-large style="text-align: center;"}
+Welche Konzepte kann ich nochmals erklären?
 :::
 ```{r}
 countdown(15)
@@ -370,6 +375,8 @@ countdown(15)
 
 ## Danke! `r emo::ji("sunflower")` 
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-03-datentransformation.pdf)
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-03-datentransformation.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

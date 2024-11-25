@@ -410,6 +410,13 @@ Lars Schöbitz
 
   <p class="date">Oct 1, 2024</p>
 </section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>gapminder_2007 <span class="ot">&lt;-</span> gapminder <span class="sc">|&gt;</span> </span>
+<span id="cb1-2"><a></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2007</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
 <section id="section" class="slide level2" data-background-image="img/md-02/r_rollercoaster.png" data-background-size="contain">
 <h2></h2>
 
@@ -496,6 +503,22 @@ Legende in R ggplot2 entfernen.</p>
 <section id="lernziele-für-diese-woche" class="slide level2">
 <h2>Lernziele (für diese Woche)</h2>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>lernziele <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/tbl-01-rstatszh-k009-lernziele.csv"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(modul <span class="sc">==</span> params<span class="sc">$</span>modul) <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a></a>  dplyr<span class="sc">::</span><span class="fu">pull</span>(lernziele)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 34 Columns: 4
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (2): titel, lernziele
+dbl  (1): modul
+dttm (1): datum
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
+<div class="cell">
 <ol type="1">
 <li>Die Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).</li>
 <li>Die Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.</li>
@@ -561,7 +584,7 @@ Legende in R ggplot2 entfernen.</p>
 <li>Up-to-date bleiben was in der Community läuft</li>
 </ul>
 </section>
-<section id="r-fachgruppe" class="slide level2">
+<section id="r-fachgruppe" class="slide level2 scrollable">
 <h2>R-Fachgruppe</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -600,8 +623,9 @@ Legende in R ggplot2 entfernen.</p>
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span> Lasst eure E-Mails in Frieden ruhen.</p>
 
 <img data-src="img/md-02/emails-rest-in-peace.png" style="width:50.0%" class="r-stretch"><div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_b00074b6" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_ae245ffb" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -629,6 +653,9 @@ Legende in R ggplot2 entfernen.</p>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="img/md-02/ggplot2-part-of-tidyverse.png"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="co">#knitr::include_graphics(here::here("slides/img/md-02/ggplot2-part-of-tidyverse.png"))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div></div>
 </section>
 <section id="ich-bin-dran-arbeiten-mit-quarto-und-r" class="slide level2">
@@ -646,65 +673,65 @@ Legende in R ggplot2 entfernen.</p>
 <li>Die Struktur des Codes für Plots lässt sich wie folgt zusammenfassen</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> [datensatz], </span>
-<span id="cb1-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> [x<span class="sc">-</span>variable], </span>
-<span id="cb1-3"><a></a>                     <span class="at">y =</span> [y<span class="sc">-</span>variable])) <span class="sc">+</span></span>
-<span id="cb1-4"><a></a>  <span class="fu">geom_xxx</span>() <span class="sc">+</span></span>
-<span id="cb1-5"><a></a>  andere Optionen </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> [datensatz], </span>
+<span id="cb6-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> [x<span class="sc">-</span>variable], </span>
+<span id="cb6-3"><a></a>                     <span class="at">y =</span> [y<span class="sc">-</span>variable])) <span class="sc">+</span></span>
+<span id="cb6-4"><a></a>  <span class="fu">geom_xxx</span>() <span class="sc">+</span></span>
+<span id="cb6-5"><a></a>  andere Optionen </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="code-struktur-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code Struktur</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb2-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-02-datenvisualisierung_files/figure-revealjs/unnamed-chunk-8-1.png" width="672" class="r-stretch"></section>
+<img data-src="md-02-datenvisualisierung_files/figure-html/unnamed-chunk-8-1.png" width="672" class="r-stretch"></section>
 <section id="code-struktur-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code Struktur</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-02-datenvisualisierung_files/figure-revealjs/unnamed-chunk-9-1.png" width="672" class="r-stretch"></section>
+<img data-src="md-02-datenvisualisierung_files/figure-html/unnamed-chunk-9-1.png" width="672" class="r-stretch"></section>
 <section id="code-struktur-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code Struktur</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
-<span id="cb4-2" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
+<span id="cb9-2" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>()) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-02-datenvisualisierung_files/figure-revealjs/unnamed-chunk-10-1.png" width="672" class="r-stretch"></section>
+<img data-src="md-02-datenvisualisierung_files/figure-html/unnamed-chunk-10-1.png" width="672" class="r-stretch"></section>
 <section id="code-struktur-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code Struktur</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
-<span id="cb5-2" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb5-3" class="hljs-ln-code"><a></a>                     <span class="at">y =</span> lifeExp))  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb10-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
+<span id="cb10-2" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb10-3" class="hljs-ln-code"><a></a>                     <span class="at">y =</span> lifeExp))  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-02-datenvisualisierung_files/figure-revealjs/unnamed-chunk-11-1.png" width="672" class="r-stretch"></section>
+<img data-src="md-02-datenvisualisierung_files/figure-html/unnamed-chunk-11-1.png" width="672" class="r-stretch"></section>
 <section id="code-struktur-5" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code Struktur</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
-<span id="cb6-2" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb6-3" class="hljs-ln-code"><a></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
-<span id="cb6-4" class="hljs-ln-code"><a></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
+<span id="cb11-2" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb11-3" class="hljs-ln-code"><a></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
+<span id="cb11-4" class="hljs-ln-code"><a></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-02-datenvisualisierung_files/figure-revealjs/unnamed-chunk-12-1.png" width="672" class="r-stretch"></section>
+<img data-src="md-02-datenvisualisierung_files/figure-html/unnamed-chunk-12-1.png" width="672" class="r-stretch"></section>
 <section id="code-struktur-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Code Struktur</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
-<span id="cb7-2" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
-<span id="cb7-3" class="hljs-ln-code"><a></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
-<span id="cb7-4" class="hljs-ln-code"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb7-5" class="hljs-ln-code"><a></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
+<span id="cb12-2" class="hljs-ln-code"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb12-3" class="hljs-ln-code"><a></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
+<span id="cb12-4" class="hljs-ln-code"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb12-5" class="hljs-ln-code"><a></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-02-datenvisualisierung_files/figure-revealjs/unnamed-chunk-13-1.png" width="672" class="r-stretch"></section></section>
+<img data-src="md-02-datenvisualisierung_files/figure-html/unnamed-chunk-13-1.png" width="672" class="r-stretch"></section></section>
 <section>
 <section id="polls" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Polls</h1>
@@ -722,10 +749,15 @@ Legende in R ggplot2 entfernen.</p>
 </ol>
 </div><div class="column" style="width:70%;">
 <div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
+<span id="cb13-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb13-3"><a></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
+<span id="cb13-4"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb13-5"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="md-02-datenvisualisierung_files/figure-revealjs/unnamed-chunk-14-1.png" width="672"></p>
+<p><img data-src="md-02-datenvisualisierung_files/figure-html/unnamed-chunk-14-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -744,10 +776,15 @@ Legende in R ggplot2 entfernen.</p>
 </ol>
 </div><div class="column" style="width:70%;">
 <div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder,</span>
+<span id="cb14-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent,</span>
+<span id="cb14-3"><a></a>                     <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
+<span id="cb14-4"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb14-5"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="md-02-datenvisualisierung_files/figure-revealjs/unnamed-chunk-15-1.png" width="672"></p>
+<p><img data-src="md-02-datenvisualisierung_files/figure-html/unnamed-chunk-15-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -802,8 +839,9 @@ Figure&nbsp;1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.
 </ol>
 </div>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">countdown</span>(<span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_d53c0e86" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_3ad19cbb" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -815,8 +853,9 @@ Figure&nbsp;1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.
 <p><span class="highlight-yellow">Bitte steh auf und beweg dich.</span> Lasst eure E-Mails in Frieden ruhen.</p>
 
 <img data-src="img/md-02/emails-rest-in-peace.png" style="width:50.0%" class="r-stretch"><div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_bad50b6e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_dd7c2b84" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -831,8 +870,8 @@ Figure&nbsp;1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.
 <h1>Daten visualisieren</h1>
 
 </section>
-<section id="arten-von-variablen" class="slide level2">
-<h2>Arten von Variablen</h2>
+<section id="variablen-typen" class="slide level2 smaller">
+<h2>Variablen Typen</h2>
 <div>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -857,7 +896,7 @@ Figure&nbsp;1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.
 <ul>
 <li class="fragment">endliche Anzahl von Werten</li>
 <li class="fragment">eindeutige Gruppen (z.B. EU Länder)</li>
-<li class="fragment"><strong>ordinal</strong>, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage, Schulnoten)</li>
+<li class="fragment"><strong>ordinal</strong>, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)</li>
 </ul>
 </div></div>
 </div>
@@ -868,41 +907,48 @@ Figure&nbsp;1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.
 <li>zur Visualisierung der Verteilung von kontinuierlichen (numerischen) Variablen</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
-<span id="cb8-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g)) <span class="sc">+</span></span>
-<span id="cb8-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb17-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g)) <span class="sc">+</span></span>
+<span id="cb17-3"><a></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
 
 </div>
-<img data-src="md-02-datenvisualisierung_files/figure-revealjs/histogram-penguins-1.png" width="576" class="r-stretch"></section>
+<img data-src="md-02-datenvisualisierung_files/figure-html/histogram-penguins-1.png" width="576" class="r-stretch"></section>
 <section id="barplot-säulendiagramm" class="slide level2">
 <h2>Barplot (Säulendiagramm)</h2>
 <ul>
 <li>zur Visualisierung der Verteilung von kategorischen (nicht numerischen) Variablen</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
-<span id="cb9-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
-<span id="cb9-3"><a></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb20-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
+<span id="cb20-3"><a></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-02-datenvisualisierung_files/figure-revealjs/barplot-penguins-1.png" width="576" class="r-stretch"></section>
+<img data-src="md-02-datenvisualisierung_files/figure-html/barplot-penguins-1.png" width="576" class="r-stretch"></section>
 <section id="scatterplot-streudiagramm" class="slide level2 smallest">
 <h2>Scatterplot (Streudiagramm)</h2>
 <ul>
 <li>for visualizing relationships between two continuous (numerical) variables</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007,</span>
-<span id="cb10-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap,</span>
-<span id="cb10-3"><a></a>                     <span class="at">y =</span> lifeExp,</span>
-<span id="cb10-4"><a></a>                     <span class="at">size =</span> pop,</span>
-<span id="cb10-5"><a></a>                     <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb10-6"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb10-7"><a></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
-<span id="cb10-8"><a></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21" data-code-line-numbers="|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder_2007,</span>
+<span id="cb21-2"><a></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap,</span>
+<span id="cb21-3"><a></a>                     <span class="at">y =</span> lifeExp,</span>
+<span id="cb21-4"><a></a>                     <span class="at">size =</span> pop,</span>
+<span id="cb21-5"><a></a>                     <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb21-6"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb21-7"><a></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
+<span id="cb21-8"><a></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="md-02-datenvisualisierung_files/figure-revealjs/scatterplot-gdp-lifeExp-1.png" width="576" class="r-stretch"></section></section>
+<img data-src="md-02-datenvisualisierung_files/figure-html/scatterplot-gdp-lifeExp-1.png" width="576" class="r-stretch"></section></section>
 <section>
 <section id="zusatzaufgaben-modul-2" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Zusatzaufgaben Modul 2</h1>
@@ -1150,44 +1196,6 @@ Figure&nbsp;1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

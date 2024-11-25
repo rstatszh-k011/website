@@ -1,0 +1,111 @@
+---
+title: "Abschlussprojekt"
+subtitle: "Dokumentation"
+execute:
+    message: false
+    warning: false
+    eval: false
+---
+
+```{r}
+library(readr)
+```
+
+
+## Schritt 1: Erstelle einen neuen Ordner
+
+1. Öffne dein Abschlussprojekt auf posit.cloud.
+
+2. Navigiere zum `daten` Ordner im unteren rechten Fenster.
+
+3. Klicke auf den Ordner `daten` im Datei Manager im Fenster unten rechts.
+
+4. Erstelle einen weiteren Ordner `processed` im Ordner `daten`.
+
+5. Klicke auf den Ordner `processed` im Datei Manager im Fenster unten rechts.
+
+## Schritt 2: Erstelle eine `README.md` Datei im Hauptverzeichnis 
+
+1. Navigiere zum Files Tab im unteren rechten Fenster von RStudio. Stelle sicher, dass du im Hauptverzeichnis deines Abschlussprojekts bist.
+
+2. Klick auf den "Blank File" Button um eine neue Datei zu erstellen.
+
+3. Selektiere die Option "Text file".
+
+4. Bennene die Datei `README.md` und klicke auf "OK". 
+
+5. Öffne die leere `README.md` Datei und schreibe `# Abschlussprojekt rstatsZH` auf eine Zeile. Wir werden die `README.md` Datei später mit Informationen zu deinem Abschlussprojekt füllen.
+
+6. Speicher die Datei.
+
+## Schritt 3: Übertrage deine Änderungen auf GitHub
+
+1. Öffne den Git-Tab im oberen rechten Fenster von RStudio.
+
+2. Aktiviere die Kontrollkästchen neben allen Dateien, um sie für den Commit vorzubereiten.
+
+3. Klicke auf die Schaltfläche "Commit".
+
+4. Gib eine Commit-Nachricht in das Feld "Commit Message" ein (z.B. README hinzufügen).
+
+5. Klicke auf die Schaltfläche "Commit". Das Fenster, welches sich daraufhin öffnet kann geschlossen werden.
+
+6. Klicke auf die Schaltfläche "Push".
+
+7. Gib deinen GitHub-Benutzernamen im Feld Username an. 
+
+8. Gib [deinen GitHub Personal Access Token (PAT)]{.highlight-yellow} im Feld ["Password"]{.highlight-yellow} ein.
+
+9. Das Fenster kann geschlossen werden.
+
+## Schritt 3: Erstelle eine `codebook.xlsx` Datei
+
+1. Nutze ein Spreadsheet-Tool deiner Wahl und erstelle eine Datei namens `codebook.xlsx`.
+
+2. Füge zwei Spaltennamen zur Tabelle hinzu: `variable_name` und `beschreibung`.
+
+3. Speichere die Datei auch als  `codebook.csv`. 
+
+## Schritt 4: Lade das Dictionary hoch
+
+1. Öffne dein Abschlussprojekt auf posit.cloud.
+
+2. Nutze den Files Tab im unteren rechten Fenster, um das Datenwörterbuch im CSV-Format in den Ordner `data/processed` hochzuladen.
+
+## Schritt 5: Bereite deine verarbeitete, analysefähige (processed) Daten vor
+
+::: callout-important
+## Wir werden diesen Schritt mehrmals wiederholen.
+Dieser Schritt wird mehrmals wiederholt, abhängig von der Komplexität deiner Rohdaten. Wichtig ist, dass du dies für die erste Iteration dieser Hausaufgabe durchführst, damit ich die Komplexität deines Projekts einschätzen können.
+:::
+ 
+1. Öffne die `index.qmd` Datei in deinem Abschlussprojekt.
+
+2. Falls die Daten noch nicht importiert sind, füge den folgenden Code in einen Code Chunk ein:
+
+```{r}
+#| echo: fenced
+read_csv(here::here("daten/raw/your-file-name.csv"))
+```
+
+4. Schreibe Code, um deine Daten in einen Zustand zu bringen, in dem sie für die Analyse bereit sind (z.B. Umbenennen von Spalten, Auswahl von Spalten, die für deine Analyse relevant sind, Entfernen von NAs, Zusammenfügen mehrerer Dataframes usw.)
+
+5. Sobald du deine Daten in einem Zustand hast, in dem sie für die Analyse bereit sind, speichere sie als CSV-Datei im Ordner `daten/processed`.
+
+```{r}
+#| echo: fenced
+write_csv(x = your_data_object_name, 
+          here::here("daten/processed/your-file-name.csv"))
+```
+
+## Schritt 6: Übertrage deine Änderungen auf GitHub
+
+Du weisst wie. :) 
+
+## Schritt 7: Eröffne ein Issue auf GitHub
+
+Mache dies in deinem Repository [projekt-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
+
+Du weisst wie. :)
+
+

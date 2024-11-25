@@ -26,6 +26,14 @@ library(countdown)
 library(tidyverse)
 library(epoxy)
 library(gapminder)
+library(ggthemes)
+```
+
+```{r}
+
+befragung <- read_csv(
+    here::here("folien/daten/raw/KTZH_00001341_00002759_frage7a1.csv"))
+
 ```
 
 ## Lernziele (für diese Woche)
@@ -43,6 +51,471 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
 ```
 
+# Git Befehle {background-color="#4C326A"}
+
+## 
+
+![](img/md-04/git-clone-push-00.drawio.png)
+
+## 
+
+![](img/md-04/git-clone-push-01.drawio.png)
+
+## 
+
+![](img/md-04/git-clone-push-02.drawio.png)
+
+## 
+
+![](img/md-04/git.drawio-00.png)
+
+## 
+
+![](img/md-04/git.drawio-01.png)
+
+## 
+
+![](img/md-04/git.drawio-02.png)
+
+## 
+
+![](img/md-04/git.drawio-03.png)
+
+## 
+
+![](img/md-04/git.drawio-04.png)
+
+## 
+
+![](img/md-04/git.drawio-05.png)
+
+## 
+
+![](img/md-04/git.drawio-06.png)
+
+## 
+
+![](img/md-04/git.drawio-07.png)
+
+## 
+
+![](img/md-04/git.drawio-08.png)
+
+## 
+
+![](img/md-04/git.drawio-09.png)
+
+## 
+
+![](img/md-04/git-clone-push-02.drawio.png)
+
+## 
+
+![](img/md-04/git-clone-push-03.drawio.png)
+
+## 
+
+![](img/md-04/git-clone-push-04.drawio.png)
+
+# Faktoren in R {background-color="#4C326A"}
+
+## Variablen Typen {.smaller}
+
+:::::: incremental
+::::: columns
+::: {.column width="50%"}
+### Numerisch
+
+**Diskrete Variablen**
+
+-   nicht negative
+-   zählbare
+-   ganze Zahlen
+-   z.B. Anzahl Schüler, Würfelwurf
+
+**Stetige (kontinuierliche) Variablen**
+
+-   unendliche Anzahl von Werten
+-   zwischen zwei Werten
+-   auch Datums/Uhrzeitwerte
+-   z.B. Länge, Gewicht, Grösse
+:::
+
+::: {.column width="50%"}
+### Nicht numerisch
+
+**Kategoriale Variablen**
+
+-   endliche Anzahl von Werten
+-   eindeutige Gruppen (z.B. EU Länder)
+-   [ordinal]{.highlight-yellow}, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)
+:::
+:::::
+::::::
+
+## ordinal skalierte Daten in R {.smaller}
+
+:::::: incremental
+::::: columns
+::: {.column width="50%"}
+
+- ordinal skalierte Daten sind kategoriale Daten, die eine logische Reihenfolge aufweisen
+- in R werden Text-Daten standardmässig als `character` gespeichert
+- Beurteilungen: sehr gut, gut, mittel, schlecht, sehr schlecht
+- die Reihenfolge von Text Daten ist aplhabetisch
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+df <- tibble(
+    name = c("Alice", "Bob", "Charlie", "Diana", "Eve"),
+    beurteilung = c("sehr gut", "gut", "mittel", "schlecht", "sehr schlecht"))
+```
+
+```{r}
+#| echo: true
+df |> 
+    arrange(beurteilung) 
+```
+
+:::
+:::::
+::::::
+
+
+## ordinal skalierte Daten in R {.smaller}
+
+- in R können wir ordinal skalierte Daten mit dem `factor` Datentyp speichern
+- die Level geben die Reihenfolge der Kategorien an
+- die Umwandlung beeinflusst das Verhalten der Daten in Tabellen und Diagrammen
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2|6|8"
+# Faktor Level werden in einem Vektor definiert
+beurteilung_level <- c("sehr schlecht", "schlecht", "mittel", "gut", "sehr gut")
+
+df |> 
+    # Die Spalte wird in einen Faktor umgewandelt
+    mutate(beurteilung = factor(beurteilung, levels = beurteilung_level)) |>
+    # Die Tabelle wird nach der Reihenfolge sortiert
+    arrange(beurteilung)
+```
+
+
+## Ich bin dran: Faktoren in R
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Zurücklehnen und genießen!
+:::
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Ihr seid dran: 02-faktoren-ihr.qmd
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-04-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-faktoren-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(25)
+```
+
+# Daten einlesen {background-color="#4C326A"}
+
+## Rechteckige Daten in R einlesen
+
+::::: columns
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="80%"}
+knitr::include_graphics("img/md-04/readr.png")
+```
+:::
+
+::: {.column width="50%"}
+```{r echo=FALSE, out.width="80%"}
+knitr::include_graphics("img/md-04/readr.png")
+```
+:::
+:::::
+
+## CSV & XLSX {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+### readr
+
+-   `read_csv()` - durch Kommas getrennte Werte
+-   `read_csv2()` - durch Semicolon getrennte Werte ([Tipp für das Konvertieren von xlsx als csv](https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien/xls-zu-csv-konvertieren.md))
+-   `read_tsv()` - durch Tab getrennte Werte
+-   `read_delim()` - liest Dateien mit beliebigem Trennzeichen
+:::
+
+::: {.column width="50%"}
+### readxl
+
+-   `read_excel()` - liest xls oder xlsx Dateien
+:::
+:::::
+
+## Daten aus CSV-Dateien lesen {.smaller}
+
+-   Import von [unbearbeiteten Rohdaten]{.highlight-yellow}
+
+```{r}
+#| echo: true
+#| eval: false
+
+befragung <- read_csv("raw/KTZH_00001341_00002759_frage7a1.csv")
+```
+
+. . .
+
+```{r}
+#| echo: true
+#| eval: true 
+befragung
+```
+
+## Daten als CSV-Datei schreiben {.smaller}
+
+-   transformiere Daten
+-   exportiere [verarbeitete, analysereife Daten]{.highlight-yellow}
+
+```{r}
+#| echo: true
+
+antwort_levels <- c("viel zu hoch", "eher zu hoch", "gerade angemessen", 
+                    "eher zu tief", "viel zu tief")
+
+befragung_fct <- befragung |>
+    mutate(antwort = factor(antwort, levels = antwort_levels)) 
+
+```
+
+. . .
+
+```{r}
+#| echo: true
+befragung_fct
+```
+
+```{r}
+#| echo: true
+#| eval: false
+write_csv(befragung_fct, "daten/processed/ktzh-befragung-zufriedenheit.csv")
+```
+
+## Analysefertige Daten einlesen {.smaller}
+
+-   Was ist aus unserem Faktor geworden?
+
+```{r}
+#| echo: true
+#| eval: false
+
+befragung_fct <- read_csv("daten/processed/ktzh-befragung-zufriedenheit.csv")
+```
+
+```{r}
+#| echo: false
+#| eval: true
+
+befragung_fct <- read_csv(here::here("folien/daten/processed/ktzh-befragung-zufriedenheit.csv"))
+```
+
+```{r}
+#| echo: true
+#| eval: true
+befragung_fct
+```
+
+```{r}
+befragung_fct <- befragung_fct |>
+    mutate(antwort = factor(antwort, levels = antwort_levels)) 
+```
+
+## Wo ist der Faktor?
+
+-   Faktoren können in CSV Dateien nicht gespeichert werden
+-   Eine CSV Datei enthält lediglich Werte, getrennt durch ein Komma
+
+```{r}
+knitr::include_graphics("img/md-04/raw-csv-github.png")
+```
+
+## Wie speichern wir Faktoren? {.smaller}
+
+-   In R können Daten als `.rds` Datei gespeichert werden
+-   `.rds` Dateien speichern die Struktur der Daten
+-   Faktoren und andere Datenstrukturen bleiben erhalten
+
+```{r}
+#| echo: true
+#| eval: false
+
+write_rds(befragung_fct, "folien/daten/processed/ktzh-befragung-zufriedenheit.rds")
+```
+
+. . .
+
+```{r}
+#| echo: true
+#| eval: false
+
+befragung_rds <- read_rds("daten/processed/ktzh-befragung-zufriedenheit.rds")
+```
+
+```{r}
+write_rds(befragung_fct, 
+          here::here("folien/daten/processed/ktzh-befragung-zufriedenheit.rds"))
+
+befragung_rds <- read_rds(
+    here::here("folien/daten/processed/ktzh-befragung-zufriedenheit.rds"))
+```
+
+```{r}
+#| echo: true
+#| eval: true
+befragung_rds
+```
+
+## Daten zusammenfassen {.smaller}
+
+-   für eine Visualisierung oder Tabelle in einer veröffentlichten Arbeit
+
+```{r}
+#| echo: true
+befragung_sum_alter <- befragung_rds |> 
+    group_by(alter, antwort) |> 
+    summarise(antwort_anzahl = n()) |> 
+    mutate(antwort_prozent = antwort_anzahl / sum(antwort_anzahl) * 100)
+```
+
+```{r}
+#| echo: true
+befragung_sum_alter
+```
+
+## Daten visualisieren {.smaller}
+
+-   in einer Veröffentlichung
+
+```{r}
+#| echo: true
+#| fig-width: 6
+#| fig-asp: 0.618
+ggplot(data = befragung_sum_alter,
+       mapping = aes(x = antwort_prozent, 
+                     y = alter, 
+                     fill = antwort)) +
+    geom_col() +
+    geom_text(aes(label = round(antwort_prozent, 0)),  
+              position = position_stack(vjust = 0.5)) +
+    scale_fill_colorblind() 
+```
+
+## Daten exportieren
+
+-   [Daten, die einer Veröffentlichung zugrunde liegen]{.highlight-yellow}
+-   als CSV-Datei
+-   erhöht die Wiederverwendbarkeit
+
+```{r}
+#| eval: false
+#| echo: true 
+write_csv(befragung_sum_alter, 
+          "daten/final/ktzh-befragung-zufriedenheit-sum.csv")
+```
+
+## Daten Management {.smaller}
+
+| Begriff | Ordnername | Erklärung | Dateiformat |
+|------------------|------------------|------------------|------------------|
+| unbearbeitete Rohdaten | data/raw | Daten, die nicht bearbeitet wurden und in ihrer [ursprünglichen Form und Datei bleiben]{.highlight-yellow} | often XLSX, also CSV, JSON, and others |
+
+: Beispiele für Begriffe, die bei der Datenverwaltung verwendet werden. {.striped .hover tbl-colwidths="\[20, 10, 50, 20\]"}
+
+## Daten Management {.smaller}
+
+| Begriff | Ordnername | Erklärung | Dateiformat |
+|------------------|------------------|------------------|------------------|
+| unbearbeitete Rohdaten | data/raw | Daten, die nicht bearbeitet wurden und in ihrer [ursprünglichen Form und Datei bleiben]{.highlight-yellow} | often XLSX, also CSV, JSON, and others |
+| verarbeitete, analysefähige Daten | data/processed | Daten, die zur Vorbereitung einer Analyse verarbeitet werden und in ihrer [neuen Form als neue Datei]{.highlight-yellow} gespeichert werden | CSV, RDS, JSON |
+
+: Beispiele für Begriffe, die bei der Datenverwaltung verwendet werden. {.striped .hover tbl-colwidths="\[20, 10, 50, 20\]"}
+
+## Daten Management {.smaller}
+
+| Begriff | Ordnername | Erklärung | Dateiformat |
+|------------------|------------------|------------------|------------------|
+| unbearbeitete Rohdaten | data/raw | Daten, die nicht bearbeitet wurden und in ihrer [ursprünglichen Form und Datei bleiben]{.highlight-yellow} | often XLSX, also CSV, JSON, and others |
+| verarbeitete, analysefähige Daten | data/processed | Daten, die zur Vorbereitung einer Analyse verarbeitet werden und in ihrer [neuen Form als neue Datei]{.highlight-yellow} gespeichert werden | CSV, RDS, JSON |
+| Daten, die einer Veröffentlichung zugrunde liegen | data/final | Daten, die das [Ergebnis einer Analyse]{.highlight-yellow} sind (z. B. deskriptive Statistik oder Datenvisualisierung) und in einem Bericht angezeigt werden, dann aber auch in ihrer neuen Form als neue Datei exportiert werden | CSV |
+
+: Beispiele für Begriffe, die bei der Datenverwaltung verwendet werden. {.striped .hover tbl-colwidths="\[20, 10, 50, 20\]"}
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 5)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Ihr seid dran: 03-daten-import-ihr.qmd
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Continue]{.highlight-yellow} neben [md-04-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei `03-daten-import-ihr.qmd` und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(25)
+```
+
+## Zeitpuffer: Modul 4 {.smaller}
+
+```{epoxy}
+{1:length(lernziele)}. {lernziele[1:length(lernziele)]}
+```
+
+::: {.hand-purple-large style="text-align: center;"}
+Welche Konzepte kann ich nochmals erklären?
+:::
+```{r}
+countdown(15)
+```
+
 # Zusatzaufgaben Modul 4 {background-color="#4C326A"}
 
 ## Modul 4 Dokumentation
@@ -50,19 +523,19 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 ::: learn-more
 [rstatszh-k009.github.io/website/module/md-04.html](https://rstatszh-k009.github.io/website/module/md-04.html)
 
-```{=html}
-<iframe src="https://rstatszh-k009.github.io/website/module/md-04.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 4 Dokumentation"></iframe>
-```
+<iframe src="https://rstatszh-k009.github.io/website/module/md-04.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 4 Dokumentation">
+
+</iframe>
 :::
 
 ## Zusatzaufgaben Abgabedatum
 
 -   Abgabedatum: [Montag, 21. Oktober]{.highlight-yellow}
--   Korrektur- und Feedbackphase bis zu: Donnerstag, 24. Oktober 
+-   Korrektur- und Feedbackphase bis zu: Donnerstag, 24. Oktober
 
 # Danke {background-color="#4C326A"}
 
-## Danke! `r emo::ji("sunflower")` 
+## Danke! `r emo::ji("sunflower")`
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-04-daten-management.pdf)
 

@@ -1,0 +1,908 @@
+---
+title: "{{< var md-09.titel >}}"
+subtitle: "{{< var course.long-titel >}}"
+author: "Lars Schöbitz"
+date: "2024-11-19"
+date-format: "MMM D, YYYY"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    chalkboard: true
+footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
+editor: source
+execute:
+  freeze: auto
+params:
+    modul: 9
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+library(countdown)
+library(tidyverse)
+library(epoxy)
+library(gapminder)
+```
+
+## Lernziele (für diese Woche)
+
+```{r}
+#| label: lernziele
+
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+  dplyr::filter(modul == params$modul) |>
+  dplyr::pull(lernziele)
+
+```
+
+```{epoxy}
+{1:length(lernziele)}. {lernziele[1:length(lernziele)]}
+```
+
+# Quarto {background-color="#4C326A"}
+
+## Quarto ...
+
+- ist ein neues, open-source, wissenschaftliches und technisches Publikationssystem
+- zielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](img/md-01/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
+
+## Artikel & Berichte (HTML)
+
+::: learn-more
+[quarto-dev.github.io/quarto-gallery/articles/html/html.html](https://quarto-dev.github.io/quarto-gallery/articles/html/html.html)
+
+```{=html}
+<iframe src="https://quarto-dev.github.io/quarto-gallery/articles/html/html.html" width="100%" height="500" style="border:2px solid #123233;" title="Quarto HTML Berichte"></iframe>
+```
+:::
+
+## Artikel & Berichte (HTML)
+
+Besuche [quarto.org](https://quarto.org)!
+
+::: learn-more
+[quarto.org/docs/output-formats/html-basics.html](https://quarto.org/docs/output-formats/html-basics.html)
+
+```{=html}
+<iframe src="https://quarto.org/docs/output-formats/html-basics.html" width="100%" height="500" style="border:2px solid #123233;" title="Quarto HTML Berichte"></iframe>
+```
+:::
+
+## Folien (HTML revealjs)
+
+::: learn-more
+[apreshill.github.io/palmerpenguins-useR-2022/#/title-slide](https://apreshill.github.io/palmerpenguins-useR-2022/#/title-slide)
+
+```{=html}
+<iframe src="https://apreshill.github.io/palmerpenguins-useR-2022/#/title-slide" width="100%" height="500" style="border:2px solid #123233;" title="Quarto revealjs Folien"></iframe>
+```
+:::
+
+## Folien (HTML revealjs)
+
+Besuche [quarto.org](https://quarto.org)!
+
+::: learn-more
+[quarto.org/docs/presentations/revealjs/](https://quarto.org/docs/presentations/revealjs/)
+
+```{=html}
+<iframe src="https://quarto.org/docs/presentations/revealjs/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto revealjs Folien"></iframe>
+```
+:::
+
+## Dashboards
+
+::: learn-more
+[pub.demo.posit.team/public/nz-quakes/quakes.html](https://pub.demo.posit.team/public/nz-quakes/quakes.html)
+
+```{=html}
+<iframe src="https://pub.demo.posit.team/public/nz-quakes/quakes.html" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Dashboard Earthquakes"></iframe>
+```
+:::
+
+
+## Dashboards
+
+Besuche [quarto.org](https://quarto.org)!
+
+::: learn-more
+[quarto.org/docs/dashboards/](https://quarto.org/docs/dashboards/)
+
+```{=html}
+<iframe src="https://quarto.org/docs/dashboards/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Dashboards Dokumentation"></iframe>
+```
+:::
+
+## Gallery auf quarto.org
+
+::: learn-more
+[quarto.org/docs/gallery/](https://quarto.org/docs/gallery/)
+
+```{=html}
+<iframe src="https://quarto.org/docs/gallery/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Gallery"></iframe>
+```
+:::
+
+
+# Anatomie eines Quarto-Dokuments {#quarto-anatomie background-color="#4C326A"}
+
+## Komponenten
+
+1.  Metadaten: YAML
+
+2.  Text: Markdown
+
+3.  Code: Ausgeführt via `knitr` (R) oder `jupyter` (python)
+
+. . .
+
+**Füge alles zusammen** und du erhältst anschauliche, schöne und nützliche Ergebnisse!
+
+## Literate programming {.smaller}
+
+DE: wortgetreue Progammierung
+
+Bei der wortgetreuen Programmierung wird die Programmlogik in einer menschlichen Sprache mit eingeschlossenen Codeschnipseln geschrieben.
+
+````         
+---
+title: "ggplot2 demo"
+date: "19/11/2024"
+format: html
+---
+
+## Pinguine
+
+Es gibt einen linearen Zusammenhang zwischen Länge und Tiefe des Schnabels, abhängig von der Art.
+
+```{{r}}
+library(ggplot2)
+library(palmerpenguins)
+
+ggplot(penguins, aes(x = bill_length_mm, 
+                     y = bill_depth_mm,
+                     color = species)) +
+  geom_point()
+```
+````
+::: aside
+Source: <https://en.wikipedia.org/wiki/Literate_programming>
+:::
+
+# Metadaten {background-color="#4C326A"}
+
+## YAML
+
+"Yet Another Markup Language" oder "YAML Ain't Markup Language" wird verwendet, um Metadaten auf Dokumentebene bereitzustellen.
+
+``` yaml
+---
+key: value
+---
+```
+
+## Output (Ausgabe) Optionen
+
+``` yaml
+---
+format: etwas
+---
+```
+
+. . .
+
+<br>
+
+``` yaml
+---
+format: html
+---
+```
+
+``` yaml
+---
+format: pdf
+---
+```
+
+``` yaml
+---
+format: revealjs
+---
+```
+
+## Output (Ausgabe) Optionen Argumente
+
+Einrückung ist wichtig!
+
+``` yaml
+---
+format: 
+  html:
+    toc: true
+    code-fold: true
+---
+```
+
+## YAML Validierung {.smaller}
+
+-   Ungültig: Kein Leerzeichen nach `:`
+
+``` yaml
+---
+format:html
+---
+```
+
+-   Ungültig: Als fehlend gelesen
+
+``` yaml
+---
+format:
+html
+---
+```
+
+## YAML Validierung {.smaller}
+
+Es gibt mehrere Möglichkeiten, gültiges YAML zu formatieren:
+
+-   Gültig: Es gibt ein Leerzeichen nach `:`
+
+``` yaml
+format: html
+```
+
+-   Gültig: `format: html` mit Auswahlen, die mit korrekter Einrückung erfolgen
+
+``` yaml
+format: 
+  html:
+    toc: true
+```
+
+## Quarto linter
+
+Lint oder ein Linter ist ein statisches Code-Analyse-Tool, das Programmierfehler, Bugs, stilistische Fehler und verdächtige Konstrukte aufzeigt.
+
+<br>
+
+![](img/md-09/lint-rstudio.png){fig-alt="Linter zeigt Meldung für schlecht formatiertes YAML an."}
+
+::: aside
+Source: <https://en.wikipedia.org/wiki/Lint_(software)>
+:::
+
+## Quarto YAML Intelligenz
+
+RStudio + VSCode bieten eine umfangreiche Tab-Vervollständigung – fange mit einem Wort an und tippe auf die Tab-Taste, um es zu vervollständigen, oder  <kbd>`Strg + Leertaste`</kbd> um alle möglichen Optionen zu sehen.
+
+<br>
+
+![](img/md-09/quarto-tab-complete.png){fig-align="center" width="600"}
+
+## Liste der gültigen YAML-Felder
+
+- Viele YAML-Felder sind bei verschiedenen Ausgaben gleich
+
+- Aber auch jeder Ausgabetyp hat einen eigenen Satz an gültigen YAML-Feldern und Optionen
+
+-   Komplette Liste: [quarto.org/docs/reference/formats/html](https://quarto.org/docs/reference/formats/html.html)
+
+# Text {background-color="#4C326A"}
+
+## Text Formatierung
+
++-------------------------------+-------------------------------+
+| Markdown Syntax               | Ausgabe                        |
++===============================+===============================+
+| ```                           | *italics* and **bold**        |
+| *italics* and **bold**        |                               |
+| ```                           |                               |
++-------------------------------+-------------------------------+
+| ```                           | superscript^2^ / subscript~2~ |
+| superscript^2^ / subscript~2~ |                               |
+| ```                           |                               |
++-------------------------------+-------------------------------+
+| ```                           | ~~strikethrough~~             |
+| ~~strikethrough~~             |                               |
+| ```                           |                               |
++-------------------------------+-------------------------------+
+| ```                           | `verbatim code`               |
+| `verbatim code`               |                               |
+| ```                           |                               |
++-------------------------------+-------------------------------+
+
+: {tbl-colwidths="\[50,50\]"}
+
+## Headings (Überschriften) {.smaller}
+
++-----------------+-----------------+
+| Markdown Syntax | Ausgabe          |
++=================+=================+
+| ```             | # Header 1      |
+| # Header 1      |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | ## Header 2     |
+| ## Header 2     |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | ### Header 3    |
+| ### Header 3    |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | #### Header 4   |
+| #### Header 4   |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | ##### Header 5  |
+| ##### Header 5  |                 |
+| ```             |                 |
++-----------------+-----------------+
+| ```             | ###### Header 6 |
+| ###### Header 6 |                 |
+| ```             |                 |
++-----------------+-----------------+
+
+: {tbl-colwidths="\[50,50\]"}
+
+## Links {.smaller}
+
+Es gibt verschiedene Arten von "Links" oder Hyperlinks.
+
+::: columns
+::: {.column width="70%"}
+**Markdown**
+
+``` markdown
+Du kannst [benannte Hyperlinks] (https://quarto.org/),
+direkte URLs wie <https://quarto.org/> und Links zu 
+[anderen Orten](#quarto-anatomy) in 
+das Dokument einbetten. Die Syntax für das Einbetten eines
+Inline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](img/md-09/penguins-quarto-ball.png).
+```
+:::
+
+::: {.column .fragment width="30%"}
+**Ausgabe**
+
+Du kannst [benannte Hyperlinks] (https://quarto.org/),
+direkte URLs wie <https://quarto.org/> und Links zu [anderen Orten](#quarto-anatomie) in  das Dokument einbetten. Die Syntax für das Einbetten eines Inline-Bildes ist ähnlich: ![Pinguine spielen mit Ball](img/md-09/penguins-quarto-ball.png){style="width:250px;"}.
+:::
+:::
+
+## Listen {.smaller}
+
+Ungeordnete Liste:
+
+::: columns
+::: {.column width="50%"}
+**Markdown:**
+
+``` markdown
+-   unordered list         
+    -   sub-item 1         
+    -   sub-item 1         
+        -   sub-sub-item 1 
+```
+:::
+
+::: {.column .fragment width="50%" fragment-index="1"}
+**Ausgabe**
+
+-   unordered list
+    -   sub-item 1\
+    -   sub-item 1
+        -   sub-sub-item 1
+:::
+:::
+
+Geordnete Liste:
+
+::: columns
+::: {.column width="50%"}
+**Markdown:**
+
+``` markdown
+1. ordered list            
+2. item 2                  
+    i. sub-item 1          
+         A.  sub-sub-item 1
+```
+:::
+
+::: {.column .fragment width="50%" fragment-index="2"}
+**Ausgabe**
+
+1.  ordered list\
+2.  item 2
+    i.  sub-item 1
+        A.  sub-sub-item 1
+:::
+:::
+
+## Zitate
+
+**Markdown:**
+
+``` markdown
+> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. 
+> - Donald Knuth, Literate Programming
+```
+
+. . .
+
+**Output:**
+
+> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming
+
+::: aside
+@knuth1984literate
+:::
+
+## Fussnoten
+
+Die Nummerierung und Formatierung von Fussnoten wird unterstützt.
+
+## Inline-Fussnoten
+
+```         
+Hier ist eine Inline-Notiz.^[Inline-Notizen sind einfacher zu schreiben,
+da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um
+um die Notiz zu schreiben.]
+```
+
+Hier ist eine Inline-Notiz.[^1]
+
+[^1]: Inline-Notizen sind einfacher zu schreiben, da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um die Notiz zu schreiben.
+
+::: callout-tip
+## Verwende den visuellen Editor-Modus (Visual editor)
+Für das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.
+:::
+
+## Ihr seid dran: `01-markdown-syntax.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`01-markdown-syntax.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5. Verwende den [Quelltexteditor (Source editor)]{.highlight-yellow} Modus
+6.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(20)
+```
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+# Code {background-color="#4C326A"}
+
+## Anatomie eines Code-Block {.small}
+
+::: columns
+::: {.column width="50%"}
+```{r}
+#| label: penguins
+#| message: false
+#| echo: fenced
+
+library(tidyverse)
+library(palmerpenguins)
+library(knitr)
+
+penguins |> 
+  count(species) |> 
+  kable()
+```
+:::
+
+::: {.column .fragment width="50%"}
+-   Hat 3x Backticks an jedem Ende
+-   Engine (`r`) wird zwischen geschweiften Klammern `{r}` angegeben
+-   Optionen, die mit dem Zeichen `#|` angegeben werden (Hashpipe)
+:::
+:::
+
+## Code, für wen ist es?
+
+::: incremental
+- Die Art und Weise, wie du Code anzeigst, ist in verschiedenen Kontexten sehr unterschiedlich.
+- In einem Lehrszenario wie heute möchte ich *wirklich* Code anzeigen.
+- In einem Unternehmen möchtest du vielleicht eine datenwissenschaftliche Ausgabe haben, die den Quellcode anzeigt, UND eine Ausgabe, die sich an die Nutzer:innen richtet und den Code verbirgt.
+:::
+
+## Ein- und Ausblenden von Code mit `echo`
+
+-   Die Option `echo` zeigt den Code an, wenn sie auf `true` gesetzt ist, und verbirgt ihn, wenn sie auf `false` gesetzt ist.
+
+## Tabellen und Diagramme
+
+-   In reproduzierbaren Berichten und Manuskripten sind **Tabellen** und **Figuren** die am häufigsten enthaltenen Codeausgaben.
+
+# Tabellen {background-color="#4C326A"}
+
+## Markdown Tabellen {.small}
+
+**Markdown:**
+
+``` markdown
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+```
+
+::: callout-tip
+## Verwende den visuellen Editor-Modus (Visual editor)
+Für das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.
+:::
+
+. . .
+
+**Ausgabe:**
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+## Tabellen mit Code {.smaller}
+
+Das Paket **knitr** kann Datenrahmen in Tabellen umwandeln mit `knitr::kable()`:
+
+```{r}
+library(knitr)
+
+penguins |> 
+  count(species, island) |> 
+  kable()
+```
+
+## Tabellen mit Code {.smaller}
+
+Wenn du umfangreichere Tabellen möchtest, probiere das **gt**-Paket und [alles, was es bietet](https://gt.rstudio.com/)!
+
+```{r}
+#| output-location: column-fragment
+
+library(gt)
+
+head(penguins) |> 
+  gt() |>
+  tab_style(
+    style = list(
+      cell_fill(color = "pink"),
+      cell_text(style = "italic")
+      ),
+    locations = cells_body(
+      columns = bill_length_mm,
+      rows = bill_length_mm > 40
+    )
+  )
+```
+
+# Abbildungen & Diagramme {background-color="#4C326A"}
+
+## Markdown Abbildungen
+
+```         
+![Pinguine spielen mit einem Quarto-Ball](img/md-09/penguins-quarto-ball.png)
+```
+
+![Pinguine spielen mit einem Quarto-Ball](img/md-09/penguins-quarto-ball.png)
+
+## Unterabbildungen
+
+**Markdown:**
+
+```         
+::: {#fig-penguins layout-ncol=2}
+
+![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue width="250px"}
+
+![Orangefarbener Pinguin](img/md-09/orange-penguin.png){#fig-orange width="250px"}
+
+Zwei Pinguine
+
+:::
+```
+
+## Unterabbildungen
+
+**Ausgabe:**
+
+::: {#fig-penguins layout-ncol="2"}
+![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue width="250px"}
+
+![Orangefarbener Pinguin](img/md-09/orange-penguin.png){#fig-sleep width="250px"}
+
+Zwei Pinguine
+:::
+
+## Suche nach den Abbildungen
+
+An Orten wie Markdown, YAML oder beim Einlesen von Dateien  musst du **absolute** oder **relative** Dateipfade verwenden:
+
+. . .
+
+-   Absolut = Schlecht: `"/Users/lars/uebungen"` - Auf wessen Computer wird das funktionieren?
+
+. . .
+
+-   Relativ = Besser:
+
+    -   `"../` = ein Verzeichnis nach oben, `../../` = zwei Verzeichnisse nach oben, etc.
+    -   `/..` oder `/` = beginnen im "root"-Verzeichnis deines aktuellen Computers
+
+## Abbildungen mit Code (Diagramme)
+
+```{r}
+#| echo: fenced
+#| fig-width: 4
+#| fig-align: right
+
+knitr::include_graphics("img/md-09/penguins-quarto-ball.png")
+```
+
+## Pfade in R-Code referenzieren
+
+Verwende das **here**-Paket, um auf das Projektverzeichnis zu verweisen, da `here::here()` immer im obersten Verzeichnis einer `.Rproj` beginnt:
+
+```{r}
+here::here()
+```
+
+## Abbildungen mit Code (Diagramme)
+
+```{r}
+#| echo: fenced
+
+ggplot(penguins, aes(x = species, fill = species)) +
+  geom_bar(show.legend = FALSE)
+```
+
+# Querverweise (cross references) {background-color="#4C326A"}
+
+## Querverweise (cross references)
+
+-   Unterstützen Leser:innen sich in deinem Dokument zurechtzufinden, indem du nummerierte Verweise und Hyperlinks zu Elementen wie Abbildungen und Tabellen einfügst.
+
+-   Querverweise Schritte:
+
+    -   Füge der Abbildung oder Tabelle eine Beschriftung hinzu: `#| tbl-cap:` oder `#| fig-cap:`.
+    -   Füge der Abbildung oder Tabelle eine Bezeichungen hinzu: `#| label:` beginnend mit `fig-` oder `tbl-`.
+    -   Verweise im Text auf die Abbildung oder Tabelle mit `@fig-...` oder `@tbl-...`.
+
+## Abbildung Querverweise {.smaller}
+
+Das Vorhandensein der Beschriftung (`Blauer Pinguin`) und der Bezeichnung (`#fig-blue-penguin`) machen diese Abbildung referenzierbar:
+
+::: columns
+::: {.column width="75%"}
+**Markdown:**
+
+``` markdown
+Siehe @fig-blue-penguin für einen süssen blauen Pinguin.
+![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue-penguin}
+```
+:::
+
+::: {.column width="25%"}
+**Ausgabe:**
+
+Siehe @fig-blue-penguin für einen süssen blauen Pinguin.
+
+![Blauer Pinguin](img/md-09/blue-penguin.png){#fig-blue-penguin fig-alt="Ein blauer Pinguin" width="150"}
+:::
+:::
+
+## Tabelle Querverweise{.smaller}
+
+Das Vorhandensein der Überschrift (`Ein paar Pinguine`) und der Bezeichnung (`#tbl-pinguine`) machen diese Tabelle referenzierbar:
+
+::: columns
+::: {.column width="50%"}
+**Markdown:**
+
+````markdown
+Siehe @tbl-penguins für Daten über einige Pinguine.
+
+```{{r}}
+#| label: tbl-pinguine
+#| tbl-cap: Ein paar Pinguine
+
+head(penguins) |> 
+  gt()
+```
+
+````
+
+:::
+
+::: {.column width="50%"}
+**Ausgabe:**
+
+Siehe @tbl-penguins für Daten über einige Pinguine.
+
+```{r}
+#| label: tbl-penguins
+#| tbl-cap: Ein paar Pinguine
+
+head(penguins) |> 
+  gt()
+```
+:::
+:::
+
+## Querverweise Schritte:
+
+1.   Füge der Abbildung oder Tabelle eine Beschriftung hinzu: 
+        - `#| tbl-cap:` oder `#| fig-cap:`.
+2.   Füge der Abbildung oder Tabelle eine Bezeichungen hinzu: 
+        - `#| label:` beginnend mit `fig-` oder `tbl-`.
+3.   Verweise im Text auf die Abbildung oder Tabelle mit:
+        - `@fig-...` oder `@tbl-...`.
+
+## Ihr seid dran: `02-querverweise.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Continue]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-querverweise.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5. Verwende den [Quelltexteditor (Source editor)]{.highlight-yellow} Modus
+6.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(20)
+```
+
+## Geht's auch auf Deutsch?
+
+Ja! 
+
+``` yaml
+---
+lang: de
+---
+```
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+# Anatomie einer Quarto-Präsentation (Folien) {background-color="#4C326A"}
+
+## Komponenten
+
+1.  Metadaten: YAML
+
+2.  Text: Markdown
+
+3.  Code: Ausgeführt via `knitr` (R) oder `jupyter` (python)
+
+. . .
+
+**Füge alles zusammen** und du erhältst anschauliche, schöne und nützliche Folien!
+
+## Wir sind dran: `03-folien.qmd`
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei [`03-folien.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+:::
+
+```{r}
+countdown(30)
+```
+
+## Ihr seid dran: `03-folien.qmd`
+
+::: task
+Mach da weiter, wo wir aufgehört haben, und:
+
+-   Ändere den Folien Übergang [(transition style)](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions) zwischen den Folien ([auf quarto.org]{.highlight-yellow}: Suche nach ["slide transitions"]{.highlight-yellow} im {{< fa magnifying-glass >}} Suchfeld oben rechts)
+
+-  Füge Folien Nummern [(slide numbers)](https://quarto.org/docs/presentations/revealjs/presenting.html#slide-numbers) zu deinen Folien ([auf quarto.org]{.highlight-yellow}: Suche nach ["slide numbers"]{.highlight-yellow} im {{< fa magnifying-glass >}} Suchfeld oben rechts)
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
+
+# Quarto Präsentation Formate {background-color="#4C326A"}
+
+## Quarto Präsentation Formate
+
+-   [`revealjs`](https://quarto.org/docs/presentations/revealjs) für HTML-Folien
+
+    -   Im Wesentlichen der Ersatz für `xaringan`, aber mit Pandoc-nativer Syntax
+
+-   [`beamer`](https://quarto.org/docs/presentations/beamer.html) für LaTeX-Folien
+
+-   [PowerPoint](https://quarto.org/docs/presentations/powerpoint.html) für den Fall, dass du über MS Office zusammenarbeiten *musst*
+
+## Besuche quarto.org
+
+::: learn-more
+[quarto.org/docs/presentations](https://quarto.org/docs/presentations)
+
+```{=html}
+<iframe src="https://quarto.org/docs/presentations/" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Präsentationen"></iframe>
+```
+:::
+
+## Zeitpuffer: Modul 9 {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Kann ich noch etwas zum heutigen Modul erklären?
+:::
+```{r}
+countdown(5)
+```
+
+# Zusatzaufgaben Modul 9 {background-color="#4C326A"}
+
+## Modul 9 Dokumentation
+
+::: learn-more
+[rstatszh-k009.github.io/website/module/md-09.html](https://rstatszh-k009.github.io/website/module/md-09.html)
+
+```{=html}
+<iframe src="https://rstatszh-k009.github.io/website/module/md-09.html" width="100%" height="500" style="border:2px solid #123233;" title="Modul 9 Dokumentation"></iframe>
+```
+:::
+
+## Zusatzaufgaben Abgabedatum
+
+-   Abgabedatum: [Montag, 25. November]{.highlight-yellow}
+-   Korrektur- und Feedbackphase bis zu: Donnerstag, 28. November 
+
+# Danke {background-color="#4C326A"}
+
+## Danke! `r emo::ji("sunflower")` 
+
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Zugang zu Folien als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-09-text-daten.pdf)
+
+Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

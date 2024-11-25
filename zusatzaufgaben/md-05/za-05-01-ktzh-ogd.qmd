@@ -1,0 +1,99 @@
+---
+title: "Ressourcen für OGD im Kanton Zürich"
+---
+
+Es gibt inzwischen eine ganze Reihe an Ressourcen für das Arbeiten mit öffentlichen Behördendaten (open government data - OGD) im Kanton Zürich und der Schweiz.
+
+## Aufgabe
+
+In dieser Zusatzaufgabe geht es darum, dass ihr euch durch die von mir geteilen Links klickt. Schaut euch die Ressourcen an, holt euch Inspiration und schreibt mir in einem kurzen Text, was euch besonders interessiert hat. Ihr könnt mir auch Fragen teilen.
+
+Bitte teilt euer Feedback hier: <https://github.com/rstatszh-dev/ogd-ressourcen/issues/1>
+
+### OGD Leitlienen 
+
+Die folgenden Resourcen unterstützen ich in der Vorbereitung und Publikation von OGD:
+
+-   OGD Leitlinien: <https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-932898780>
+-   [OGD Einleitung und Dokumentation (SharePoint Kanton Zürich)](https://ktzuerich.sharepoint.com/sites/zh-vorgabenundfachwissen/SitePages/Veroeffentlichung-von-Daten.aspx?xsdata=MDV8MDJ8fGEyZTQ4N2JiNWZkZTQ1OTAyMjhlMDhkY2VjZjZlZWE3fGEwMjBkMGFlMDk0YTRkNDRiNjZjYWMzZmU4ZTkwYzU4fDB8MHw2Mzg2NDU3OTI0ODk4MDg1MjZ8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxMM1JsWVcxekx6RTVPbWMxWVVkSFZXMWZkM0JxVFZoTU1XMTFUblZMYVc5Rlkyd3dXVWt3TkRGWWVra3djakZ6T0RkTE5EZ3hRSFJvY21WaFpDNTBZV04yTWk5amFHRnVibVZzY3k4eE9UcGtPVEV6T1dSbFpHWTJNREEwWWpnM1lUSmhabVEyTkRNM1ptTmhZV1l3WlVCMGFISmxZV1F1ZEdGamRqSXZiV1Z6YzJGblpYTXZNVGN5T0RrNE1qUTBPRGMyTlE9PXwyYWUzMjI4NWM1NDg0M2Y4MjI4ZTA4ZGNlY2Y2ZWVhN3xiMTVkYWVlNzZkMDA0NGJiYjE5YjE2NDIwMDgzOGE4Mw%3D%3D&sdata=ZGxxZDZtdFh6bXVTbkJCMHZ5cUQyRW96d1lwWHVpR0Z1cktqbnJ4ZVJsQT0%3D&ovuser=a020d0ae-094a-4d44-b66c-ac3fe8e90c58%2Clars%40lse.de&OR=Teams-HL&CT=1729535565691&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNDA5MDEwMTQyMSJ9)
+-   OGD Handbook Publikationsleitlinien (GitHub): <https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md>
+-   OGD Folien: <https://docs.google.com/presentation/d/1FKm8-ybTiIfU6l3AImm42H0DuWWxbjhmM58TXJfNRjk/edit#slide=id.g164f80efa60_0_14>
+
+
+## OGD Beispiele Kanton Zürich
+
+Was ist eigentlich machbar sobald Daten als OGD publiziert sind? Zum Einen sind diese Daten von Anderen nutzbar und können in eigenen Projekten verwendet werden. Zum Anderen können die Daten auch direkt in Visualisierungen oder Apps im ZH Web eingebunden werden.
+
+Das Team Data im Statistischen Amt des Kantons Zürich hat bereits einige Beispiele für die Nutzung von OGD Daten umgesetzt. Die Visualisierungen werden nicht mir R gemacht, sondern mit JavaScript. Das müsst ihr nicht lernen, sondern könnt diese gemeinsam mit dem Team Data erarbeiten. Die Beispiele lassen sich jedoch auch mit R reproduzieren. 
+
+Hier sind einige Beispiele:
+
+### Leerwohnungsziffer nach Gemeinden
+
+<https://www.zh.ch/de/planen-bauen/raumplanung/immobilienmarkt/leerwohnungen.html#-291192554>
+
+### Gewaltopfer Häusliche Gewalt
+
+<https://www.zh.ch/de/sicherheit-justiz/delikte-praevention/kriminalstatistik/gewaltopfer.html>
+
+### Monitoring zur Klimastrategie
+
+Spannend an dieser Seite ist, dass die Daten nicht im Datenkatalog als OGD abgelegt sind, sondern der Zugriff direkt über GitHub stattfindet. Eine Möglichkeit, welche ihr auch innerhalb des Kurses kennengelernt habt.
+
+<https://www.zh.ch/de/umwelt-tiere/klima/langfristige-klimastrategie/monitoring.html>
+
+Im GitHub Repository `statistikZH/decarb_monitoring` werden die Daten für das Monitoring bezogen und regelmässig aktualisiert: <https://github.com/statistikZH/decarb_monitoring>
+
+### Kurzzeitmessung nichtionisierender Strahlung
+
+<https://www.zh.ch/de/umwelt-tiere/luft-strahlung/mobilfunk.html#1645502451>
+
+Auch hier werden die Daten über GitHub bereitgestellt: <https://github.com/awelZH/nis_meas_school>
+
+### Klimakarten und -daten
+
+<https://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#1132125233> 
+
+Für diese Daten wurde eine R Shiny App durch das Team Data erstellt. Die App könnt ihr hier finden: <https://openzh.shinyapps.io/Lokalklima/>
+
+Die dargestellten Daten stehen als OGD zur Verfügung: <https://opendata.swiss/de/dataset/lufttemperatur-und-luftfeuchte-lora-sensor-messwerte>
+
+### GitHub
+
+Es gibt auch einige Vewaltungseinheiten, welche GitHub Organisationen nutzen um Daten und Code öffentlich zu teilen.
+
+-   Specialist Unit for Open Government Data Canton of Zurich  - GitHub Organisation: <https://github.com/openZH>
+-   Statistisches Amt Kanton Zürich - GitHub Organisation statistikZH: <https://github.com/statistikZH/>
+-   Staatsarchiv Kanton Zürich - GitHUb Organisation : <https://github.com/stazh>
+
+## OGD Community
+
+Innerhalb, und auch ausserhalb der Verwaltung, gibt es verschiedene Communities, die sich mit OGD, R und Open Source beschäftigen. Hier sind einige Beispiele:
+
+- Viva Engage Einstiegs Community "Data" im neuen Intranet & Tool: <https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9>
+
+- Kanton Zurich MS Teams Data Community of Practice: <https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58>
+
+- R Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. <https://statistikzh.github.io/rstats_ktzh/>
+
+- Open Data Beer: <https://opendatabeer.ch/>
+
+- adminR meetup: <https://www.meetup.com/adminr/>
+
+## OGD Kanton Zürich
+
+### Daten
+
+Der OGD Datenkatalog des Kantons Zürich ist hier zu finden: <https://zh.ch/daten>. Für alle Datensätze gibt es Starter Code für R und Python um die Daten direkt in R oder Python zu laden. Es braucht keinen Download der Daten, da direkt auf die Ressource zugegriffen wird. Bei Daten die periodisch aktualisiert werden (vor Allem monatlich bis täglich) kann dies sehr hilfreich sein.
+
+<https://github.com/openZH/starter-code-openZH>
+
+### Podcast Statistisch gesehen
+
+Daten und Zahlen, die unseren Alltag im Kanton Zürich prägen. Wozu nutzen wir die Statistiken und welche Geschichten erzählen sie? Der Kanton, wie Du ihn noch nie gehört hast. 
+
+Ein grossartiger Podcast! Eine Folge spezifisch zu OGD gibt es hier: <https://statistisch-gesehen.captivate.fm/episode/muellabfuhrkalender>
+
+## Über die Grenzen hinweg
+
+Eine Sammlung an Links auf GitHub über den Kanton Zürich und die Schweiz hinaus: <https://github.com/rnckp/awesome-ogd-switzerland>

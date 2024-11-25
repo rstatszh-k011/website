@@ -3,7 +3,7 @@ title: "Modul 5"
 subtitle: "{{< var md-05.titel >}}"
 editor: source
 params:
-    modul: 1
+    modul: 5
 execute: 
   echo: false
   warning: false
@@ -35,12 +35,27 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ## {{< fa display >}} Folien
 
-- In Vorbereitung
+[Zeige Folien im Vollbildmodus an](../folien/md-05-datumswerte.html) | [Download slides as PDF](https://github.com/rstatszh-k009/website/raw/main/folien/md-05-datumswerte.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="../folien/md-05-datumswerte.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
 
 ## {{< fa book >}} Lesematerial
 
-- In Vorbereitung
+1. Lies: [R for Data Science - Section 17.1 bis 17.3 - Dates and times](https://r4ds.hadley.nz/datetimes)
+
+::: {.callout-note}
+## `r4ds-USERNAME` Repository
+Ich überlasse es dir ob du in deinem `r4ds-USERNAME` Repository ein neues Quarto-Dokument für dieses Kapitel erstellent möchtest.
+:::
 
 ## {{< fa code >}} Übungsaufgaben
 
-- In Vorbereitung
+Bitte erledige die folgende Aufgaben bis Montag, den 28. Oktober 2024. 
+
+-   [Zusatzaufgabe 1](../zusatzaufgaben/md-05/za-05-01-ktzh-ogd.qmd): OGD Ressourcen
+-   [Zusatzaufgabe 2](../zusatzaufgaben/md-05/za-05-02-abschlussprojekt.qmd): Abschlussprojekt - Daten auswählen
+-   [Zusatzaufgabe 3](../zusatzaufgaben/md-05/za-05-03-lernende.qmd): Mit R arbeiten - Lernende im Kanton Zürich
+
+Vielen Dank für die Bearbeitung der Aufgaben.

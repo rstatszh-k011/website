@@ -1,0 +1,36 @@
+---
+title: "Abschlussprojekt"
+subtitle: "Beginne mit der Bearbeitung"
+execute:
+    message: false
+    warning: false
+    eval: false
+---
+
+Steht das Repository für dein Proejtk? Hast du deine Daten ausgewählt und importiert? Falls nicht, dann gehe nochmals in die [Zusatzaufgabe 2 aus Modul 5](../md-05/za-05-02-abschlussprojekt.qmd). Falls ja, dann kannst du nun etwas Zeit damit verbringen die Daten zu bereinigen, erste Fragen an den Datensatz zu stellen und diese mittels Visualisierungen, und Tabellen mit zusammenfassenden Statistiken zu beantworten.
+
+## Anforderungen
+
+Du bekommst von mir noch eine detaillierte Liste über die Anforderungen an das Abschlussprojekt, aber du kannst bereits jetzt an den folgenden Punkten arbeiten:
+
+1. Daten Visualierung
+
+- Der Bericht enthält mindestens eine Datenvisualisierungen.
+- Jede Datenvisualisierung enthält bearbeitete menschenlesbare Beschriftungen (z.B. Achsenbeschriftungen, Legendentitel).
+- Jede Datenvisualisierung verwendet mindestens eine Skalierungsfunktion (z.B. Farbe/Füllung, Achsen).
+
+2. Tabellen
+
+- Der Bericht enthält mindestens eine Tabelle mit deskriptiven Statistiken (z.B. Anzahl, Mittelwert, Median, Standardabweichung usw.).
+
+## Fragen? Braucht es Unterstützung?
+
+Du hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.
+
+1. Öffne [github.com](https://github.com/) in deinem Browser.
+
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
+
+3. Finde das Repository [projekt-USERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet.
+
+... eröffne eine Issue.

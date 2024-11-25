@@ -26,6 +26,7 @@ library(countdown)
 library(tidyverse)
 library(epoxy)
 library(gapminder)
+library(knitr)
 ```
 
 ## Lernziele (für diese Woche)
@@ -34,13 +35,769 @@ library(gapminder)
 #| label: lernziele
 
 lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
-  dplyr::filter(modul == params$modul) |>
-  dplyr::pull(lernziele)
+    dplyr::filter(modul == params$modul) |>
+    dplyr::pull(lernziele)
 
 ```
 
 ```{epoxy}
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
+```
+
+```{r}
+#| include: false
+library(countdown)
+library(tidyverse)
+library(epoxy)
+library(ggthemes)
+```
+
+
+```{r}
+#| eval: true
+
+ghg <- read_csv(here::here("folien/daten/ugz_treibhausgasbilanz.csv"))
+
+ghg_long <- ghg |> 
+    pivot_longer(cols = !Jahr, 
+                 names_to = "Energietraeger", 
+                 values_to = "Emissionen") 
+```
+
+# Teil 1: Daten drehen {background-color="#4C326A"}
+
+## Ihr seid dran: `01-treibhausgase-ihr.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`01-treibhausgase-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(20)
+```
+
+## Daten-Struktur: Treibhausgase {.smallest .scrollable}
+
+```{r}
+ghg |> 
+    knitr::kable() 
+```
+
+## Wie würdest du dieses Diagramm erstellen?
+
+```{r}
+#| echo: false
+ggplot(data = ghg,
+       mapping = aes(x = Jahr, y = Erdgas)) +
+    geom_line() +
+    theme_minimal()
+```
+
+## Zwei Variablen
+
+```{r}
+ghg |> 
+    select(Jahr, Erdgas)
+```
+
+## Zwei Variablen -> Zwei visuelle Eigenschaften (aesthetics) {.small}
+
+```{r}
+#| fig-width: 6
+#| fig-asp: 0.618
+#| echo: true
+#| code-line-numbers: "2"
+ggplot(data = ghg,
+       mapping = aes(x = Jahr, y = Erdgas)) +
+    geom_line() +
+    theme_minimal()
+```
+
+## Wie würdest du dieses Diagramm erstellen?
+
+```{r}
+#| fig-width: 6
+#| fig-asp: 0.618
+ggplot(data = ghg_long,
+       mapping = aes(x = Jahr, 
+                     y = Emissionen, 
+                     color = Energietraeger)) +
+    geom_line() +
+    scale_color_colorblind() +
+    theme_minimal()
+```
+
+## Daten sind in einem breitem Format {.smallest .scrollable}
+
+```{r}
+ghg |> 
+    knitr::kable() 
+```
+
+## Du brauchst: ein langes Format {.smaller .scrollable}
+
+```{r}
+ghg_long |> 
+    knitr::kable()
+```
+
+## Drei Variablen -> Drei visuelle Eigenschaften (aesthetics) {.smaller}
+
+```{r}
+#| echo: true
+#| fig-width: 6
+#| fig-asp: 0.618
+#| code-line-numbers: "2-4"
+ggplot(data = ghg_long,
+       mapping = aes(x = Jahr, 
+                     y = Emissionen, 
+                     color = Energietraeger)) +
+    geom_line() +
+    scale_color_colorblind() +
+    theme_minimal()
+```
+
+## Wie wird's gemacht? {.smaller .scrollable auto-animate="true"} 
+
+```{r}
+#| echo: true
+#| eval: false
+ghg
+```
+
+```{r}
+#| echo: false
+ghg |> 
+    knitr::kable()
+```
+
+## Wie wird's gemacht?  {.smaller .scrollable auto-animate="true"}
+
+::: columns
+::: {.column width="55%"}
+
+```{r}
+#| echo: true
+#| eval: false
+ghg |> 
+    pivot_longer(cols = !Jahr, 
+                 names_to = "Energietraeger", 
+                 values_to = "Emissionen") 
+```
+:::
+
+
+::: {.column width="45%"}
+
+```{r}
+#| echo: false
+#| eval: true
+ghg |> 
+    pivot_longer(cols = !Jahr, 
+                 names_to = "Energietraeger", 
+                 values_to = "Emissionen") |> 
+    knitr::kable()
+```
+
+:::
+:::
+
+```{r}
+#| echo: false
+#| eval: true
+ghg_long <- ghg |> 
+    pivot_longer(cols = !Jahr, 
+                 names_to = "Energietraeger", 
+                 values_to = "Emissionen")
+```
+
+## Drei Variablen -> Drei visuelle Eigenschaften (aesthetics) {.smaller}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "2-4"
+ggplot(data = ghg_long,
+       mapping = aes(x = Jahr, 
+                     y = Emissionen, 
+                     color = Energietraeger)) +
+    geom_line() +
+    scale_color_colorblind() +
+    theme_minimal()
+```
+
+# Tidy data {background-color="#4C326A"}
+
+## Eigenschaften von Tidy data
+
+- Eigenschaft 1: Jede Spalte ist eine Variable
+- Eigenschaft 2: Jede Reihe ist eine Beobachtung
+- Eigenschaft 3: Jede Zelle enthält eine Messung
+
+## Penguins 
+
+Erfüllen die Daten die Eingeschaften für Tidy data?
+
+```{r}
+library(palmerpenguins)
+
+penguins |> 
+    head(10) |> 
+    knitr::kable(format = "html") |> 
+    kableExtra::kable_styling(font_size = 20)
+```
+
+## {background-image="img/md-07/untidy-data.001.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer
+
+Quelle: [Bundesamt für Statistik - Ständige Wohnbevölkerung nach Altersklasse und Altersmasszahlen nach Kanton, Provisorische Jahresergebnisse, 2020]( https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.16404478.html)
+
+::: 
+
+## {background-image="img/md-07/untidy-data.002.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer 
+Quelle: [Bundesamt für Statistik - Ständige Wohnbevölkerung nach Altersklasse und Altersmasszahlen nach Kanton, Provisorische Jahresergebnisse, 2020]( https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.16404478.html)
+:::
+
+## {background-image="img/md-07/untidy-data.003.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer
+Quelle: [Bundesamt für Statistik - Ständige Wohnbevölkerung nach Altersklasse und Altersmasszahlen nach Kanton, Provisorische Jahresergebnisse, 2020]( https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.16404478.html)
+:::
+
+## {background-image="img/md-07/untidy-data.004.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer 
+Quelle: [Bundesamt für Statistik - Kosten des Gesundheitswesens nach Leistungen]( https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.14840808.html)
+:::
+
+## {background-image="img/md-07/untidy-data.005.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer 
+Quelle: [Bundesamt für Statistik - Kosten des Gesundheitswesens nach Leistungen]( https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.14840808.html)
+:::
+
+## {background-image="img/md-07/untidy-data.006.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer
+Quelle: [Bundesamt für Statistik - Kosten des Gesundheitswesens nach Leistungen](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.14840808.html)
+:::
+
+## {background-image="img/md-07/untidy-data.007.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer
+Quelle: [Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.15964164.html)
+:::
+
+## {background-image="img/md-07/untidy-data.008.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer
+Quelle: [Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.15964164.html)
+:::
+
+## {background-image="img/md-07/untidy-data.009.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer
+Quelle: [Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.15964164.html)
+:::
+
+## {background-image="img/md-07/untidy-data.010.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+
+::: footer
+Quelle: [Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.15964164.html)
+:::
+
+## {background-image="img/md-07/untidy-data.011.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+
+::: footer
+Quelle: [Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.15964164.html)
+:::
+
+
+## {background-image="img/md-07/untidy-data.012.png" background-size="contain"}
+
+- Welche Eigenschaften von Tidy data sind hier nicht erfüllt?
+
+::: footer
+Quelle: [Bundesamt für Statistik - Klimadaten: Eistage, Frosttage, Sommertage, Hitzetage, Tropennächte und Niederschlagstage](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/tabellen.assetdetail.15964164.html)
+:::
+
+::: notes
+- 6 Tabellen in 6 Tabs -> Eine Variable (typ_tag)
+- In Zeile 1 steckt eine Variable (Name: typ_tag)
+- In Zeile 4 steckt eine Definition für die Variable: typ_tag
+- In Zeile 4 stecke eine Definition für einen Mittelwert auf Zeile 8
+- Links lässt sich erkennen, dass Zeile "versteckt" sind? Doch nicht. Zeilen klein gemacht, aber leer.
+- Zeile 6 enthält eine Variable für den Ort der Messstation.
+- Zeile 7 enthält eine Variable für dier Höhe der Messstation
+- Spalte A, ab Zeile 11 enthält das Jahr der Messungen
+- Spalten B bis N enthalten die Messungen nach Messstationen
+- Einige Zeilen sind blau markiert, aber es scheint nur eine Lesehilfe zu sein
+- Metadaten und Bemerkungen sind in den Zeilen 75 bis 81 abgelegt
+:::
+
+
+## Relevanter Unterschied - Ziel der Daten Publikation {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+**Daten in Tabellen darstellen**
+
+- Layout
+   - Gut leserlich
+   - Kompakt
+   - Erkenntnis bringend
+- Metadaten
+
+:::
+
+::: {.column width="50%"}
+
+**Daten für weitere Nutzung bereitstellen**
+
+- Layout (Tidy data)
+   - Eigenschaft 1: Jede Spalte ist eine Variable
+   - Eigenschaft 2: Jede Reihe ist eine Beobachtung
+   - Eigenschaft 3: Jede Zelle enthält eine Messung
+- Keine Metadaten
+- Keine Farben, Formatierungen, etc.
+- Folgt Standards (Datum: ISO 8601)
+- etc.
+
+:::
+:::
+
+::: footer
+Siehe OGD Leitlinien für Hinweis auf Tidy Data: <https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md>
+:::
+
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Wir sind dran: `01-treibhausgase-ihr.qmd`
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei [`01-treibhausgase-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+:::
+
+```{r}
+countdown(25)
+```
+
+# Teil 2: Daten zusammenfügen {background-color="#4C326A"}
+
+## Mit mehreren Dataframes arbeiten 
+
+Wir haben mehrere Dataframes und wollen diese zusammenbringen:
+
+```{r}
+#| echo: false
+#| eval: true
+professions <- read_csv(here::here("folien/daten/scientists/professions.csv"))
+dates <- read_csv(here::here("folien/daten/scientists/dates.csv"))
+works <- read_csv(here::here("folien/daten/scientists/works.csv"))
+```
+
+```{r}
+#| echo: true
+#| eval: true
+professions <- read_csv("daten/scientists/professions.csv")
+dates <- read_csv("daten/scientists/dates.csv")
+works <- read_csv("daten/scientists/works.csv")
+```
+
+## Daten: Women in science 
+
+Informationen zu 10 Frauen in der Wissenschaft welche die Welt verändert haben
+
+```{r}
+#| echo: false
+professions |>  
+    select(name) |>  
+    kable()
+```
+
+::: footer
+Quelle: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-10-women-in-science-who-changed-the-world)
+:::
+
+## Inputs 
+
+::: {.panel-tabset}
+
+### professions
+
+```{r}
+professions
+```
+
+### dates
+
+```{r}
+dates 
+```
+
+### works
+
+```{r}
+works 
+```
+
+:::
+
+## Gewünschter Output {.small .scrollable}
+
+```{r}
+#| echo: false
+professions |>
+  left_join(dates) |>
+  left_join(works) |> 
+  print(n = 10)
+```
+
+
+## Inputs als Erinnerung
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+names(professions)
+names(dates)
+names(works)
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+nrow(professions)
+nrow(dates)
+nrow(works)
+```
+:::
+
+::::
+
+## Dataframes zusammenfügen
+
+```{r}
+#| echo: true
+#| eval: false
+etwas_join(x, y)
+```
+
+- `left_join()`: alle Reihen aus x
+- `right_join()`: alle Reihen aus y
+- `full_join()`: alle Reihen aus x und y
+- ...
+ 
+## Beispiel 
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+x <- tibble(
+  id = c(1, 2, 3),
+  value_x = c("x1", "x2", "x3")
+  )
+```
+
+```{r}
+#| echo: true
+x
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+y <- tibble(
+  id = c(1, 2, 4),
+  value_y = c("y1", "y2", "y4")
+  )
+```
+```{r}
+#| echo: true
+y
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics(here::here("folien/img/md-07/left-join.gif"))
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+left_join(x, y)
+```
+:::
+
+::::
+
+## `left_join()` {.smaller}
+
+```{r}
+#| echo: true
+#| eval: false
+professions |>
+  left_join(dates) 
+```
+
+```{r}
+#| echo: false
+professions |>
+  left_join(dates) |> 
+  kable()
+```
+
+
+## `right_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics(here::here("folien/img/md-07/right-join.gif"))
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+right_join(x, y)
+```
+:::
+
+::::
+
+## `right_join()` {.smaller}
+
+```{r}
+#| echo: true
+#| eval: false
+professions |>
+  right_join(dates)
+```
+
+```{r}
+#| echo: false
+professions |>
+  right_join(dates) |> 
+  kable()
+```
+
+## `full_join()` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+```{r echo=FALSE, out.width="80%", out.extra ='style="background-color: #FDF6E3"'}
+include_graphics(here::here("folien/img/md-07/full-join.gif"))
+```
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="47.5%"}
+```{r}
+#| echo: true
+full_join(x, y)
+```
+:::
+
+::::
+
+
+## `full_join()` {.smallest}
+
+```{r}
+#| echo: true
+#| eval: false
+dates |>
+  full_join(works) 
+```
+
+```{r}
+#| echo: false
+dates |>
+  full_join(works) |> 
+  kable()
+```
+
+## Alles in einer Code Sequenz {.smallest}
+
+```{r}
+#| echo: true
+#| eval: false
+professions |>
+  left_join(dates) |>
+  left_join(works) 
+```
+
+```{r}
+#| echo: false
+professions |>
+  left_join(dates) |>
+  left_join(works) |> 
+  kable()
+```
+
+## Fehlende Daten ergänzen
+
+```{r}
+#| echo: true
+#| eval: false
+professions |> 
+  left_join(dates) |> 
+  mutate(birth_year = case_when( 
+    name == "Ada Lovelace" ~ 1815, 
+    name == "Marie Curie" ~ 1867, 
+    .default = birth_year
+  ))
+
+```
+
+
+```{r, echo=FALSE, eval=TRUE}
+#| echo: false
+#| eval: true
+professions |> 
+  left_join(dates) |> 
+  mutate(birth_year = case_when( 
+    name == "Ada Lovelace" ~ 1815, 
+    name == "Marie Curie" ~ 1867,
+    .default = birth_year
+  )) |> 
+  print(n = 7)
+ 
+```
+
+## Ihr seid dran: `02-joins-ihr.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-joins-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(15)
+```
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 5)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Ihr seid dran: `02-joins-ihr.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-joins-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(20)
+```
+
+## Zeitpuffer: Modul 7 {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Kann ich noch etwas zum heutigen Modul erklären?
+:::
+```{r}
+countdown(10)
 ```
 
 # Zusatzaufgaben Modul 7 {background-color="#4C326A"}

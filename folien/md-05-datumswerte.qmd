@@ -28,7 +28,7 @@ library(epoxy)
 library(gapminder)
 ```
 
-## Lernziele (für diese Woche)
+## Lernziele (für diese Woche) 
 
 ```{r}
 #| label: lernziele
@@ -41,6 +41,136 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ```{epoxy}
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
+```
+
+# Bedingte Anweisungen in R {background-color="#4C326A"}
+
+## dplyr Funktionen `mutate()` & `case_when()`
+
+- `mutate()` fügt neue Variablen zu einem Datenrahmen hinzu
+- `case_when()` ist eine andere Form einer if-else Anweisung (in Excel: WENN, DANN, SONST)
+- die Kombination dieser Funktionen wird verwendet, um Variablen mit neuen Werten zu erstellen oder bestehende zu korrigieren
+
+## Ich bin dran: Bedingte Anweisungen in R
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Zurücklehnen und Fragen stellen!
+:::
+
+```{r}
+countdown(minutes = 25)
+```
+
+## Ihr seid dran: 02-bedingungen-ihr.qmd
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-05-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-bedingungen-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(20)
+```
+
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+
+# Datums- und Zeitwerte in R  {background-color="#4C326A"}
+
+## ISO 8601
+
+<img src="https://imgs.xkcd.com/comics/iso_8601.png" alt="XKCD comic about ISO 8601 date format" title="ISO 8601 was published on 1988-06-05.">
+
+## Datums- und Zeitwerte in R
+
+-   Datums- und Zeitwerte werden als Zahlen Vektoren in R gespeichert
+-   Datumswerte werden als die Anzahl der Tage seit 1970-01-01 gespeichert
+-   Zeitwerte werden als die Anzahl der Sekunden seit 1970-01-01 00:00:00 gespeichert
+-   Datum,s- und Zeitwerte werden als numerische Werte gespeichert, können aber formatiert werden, um wie Datum und Zeit auszusehen
+
+## Ich bin dran: Datums- und Zeitwerte in R 
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Zurücklehnen und Fragen stellen!
+:::
+
+```{r}
+countdown(minutes = 25)
+```
+
+## Ihr seid dran: 04-datumswerte-ihr.qmd
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-05-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`04-datumswerte-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(20)
+```
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 5)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Du bist dran: Abschlussprojekt
+
+::: task
+1. Öffne die Kurswebseite: [rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
+
+2. Navigiere zu den Zusatzaufgaben für Modul 5 und öffne ["Zusatzaufgabe 2 - Abschlussprojekt - Daten auswählen"](https://rstatszh-k009.github.io/website/zusatzaufgaben/md-05/za-05-02-abschlussprojekt.html).
+
+3. Lies die Anweisungen bis "Arbeitsschritte" und mache dir Notizen.
+
+4. Hinterlasse Fragen und Kommentare hier: [github.com/rstatszh-k009/abschlussprojekte/issues/1](https://github.com/rstatszh-k009/abschlussprojekte/issues/1)
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 10)
+```
+
+## Zeitpuffer: Modul 5 {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Welche Fragen zur Beschreibung des Abschlussprojektes können wir noch klären?
+:::
+```{r}
+countdown(15)
 ```
 
 # Zusatzaufgaben Modul 5 {background-color="#4C326A"}

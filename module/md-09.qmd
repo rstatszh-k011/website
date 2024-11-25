@@ -35,12 +35,17 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ## {{< fa display >}} Folien
 
-- In Vorbereitung
+[Zeige Folien im Vollbildmodus an](../folien/md-09-quarto.html) | [Download slides as PDF](https://github.com/rstatszh-k009/website/blob/main/folien/md-09-quarto.pdf)
+
+```{=html}
+<iframe class="slide-deck" src="../folien/md-09-quarto.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
 
 ## {{< fa book >}} Lesematerial
 
-- In Vorbereitung
+- Lies: [R for Data Science - Section 28 - Quarto](https://r4ds.hadley.nz/quarto)
+- Lies: [R for Data Science - Section 29 - Quarto formats](https://r4ds.hadley.nz/quarto-formats)
 
-## {{< fa code >}} Übungsaufgaben
+## {{< fa code >}} Zusatzaufgabe
 
-- In Vorbereitung
+- [Zusatzaufgabe 1](../zusatzaufgaben/md-09/za-09-01-abschlussprojekt.qmd): Abschlussprojekt - Querverweise 

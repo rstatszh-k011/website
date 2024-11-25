@@ -26,6 +26,69 @@ library(countdown)
 library(tidyverse)
 library(epoxy)
 library(gapminder)
+library(ggthemes)
+```
+
+```{r}
+# Die Daten werden hier direkt von der URL gelesen. Bei einem Update der Daten
+# wird hier immer auf die aktuellste Version zugegriffen.
+link <- "https://www.web.statistik.zh.ch/ogd/data/bista/ZH_Uebersicht_alle_Lernende.csv"
+
+# Hier wird nun das Objekt "link" genutzt um die CSV zu lesen
+lernende_in <- read_csv(file = link)
+
+lernende <- lernende_in |> 
+    filter(Geschlecht != 2) |> 
+    mutate(Geschlecht = case_when(
+        Geschlecht %in% c("m", "M") ~ "männlich",
+        Geschlecht %in% c("f", "F") ~ "weiblich"
+    )) |> 
+    mutate(Traegerschaft = case_when(
+        Traegerschaft == "oef" ~ "öffentlich",
+        Traegerschaft == "priv" ~ "privat"
+    )) |>
+    mutate(Finanzierung = case_when(
+        Finanzierung == "oef" ~ "öffentlich",
+        Finanzierung == "priv" ~ "privat"))
+
+lernende2022 <- lernende |> 
+    filter(Jahr == max(Jahr))
+
+lernende2022_stufe_staat_sum <- lernende2022 |> 
+    group_by(Stufe, Staatsangehoerigkeit)  |> 
+    summarise(
+        Total = sum(Anzahl)
+    ) |> 
+    mutate(Prozent = Total / sum(Total) * 100) 
+
+```
+
+## Modul 5 - Zusatzaufgabe 3 {.smallest}
+
+```{r}
+#| fig-width: 6
+#| fig-asp: 0.618
+#| echo: true
+#| output-location: column
+#| code-line-numbers: "|1-6|7-8|9-14|15-17"
+
+ggplot(data = lernende2022_stufe_staat_sum,
+       mapping = aes(x = Stufe, 
+                     y = Prozent, 
+                     fill = Staatsangehoerigkeit)) +
+    coord_flip() +
+    geom_col() +
+    geom_text(aes(label = paste0(round(Prozent, 0), "%")),  
+              position = position_stack(vjust = 0.5)) +
+    labs(title = "Lernende im Kanton Zürich ",
+         subtitle = "nach Staatsangehörigkeit und Stufe im Jahr 2022",
+         fill = "Staatsangehörigkeit",
+         caption = "Daten: zh.ch/daten",
+         y = NULL,
+         x = NULL) +
+    theme_minimal() +
+    theme(legend.position = "bottom", 
+          panel.grid.major.y = element_blank())
 ```
 
 ## Lernziele (für diese Woche)
@@ -41,6 +104,410 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ```{epoxy}
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
+```
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(gt)
+library(epoxy)
+library(palmerpenguins)
+library(countdown)
+
+ggplot2::theme_set(ggplot2::theme_gray(base_size = 16))
+
+```
+
+```{r}
+
+waste_data_lord1 <- read_csv("https://raw.githubusercontent.com/rbtl-fs22/rbtl-fs22-data/main/raw_data/lord-of-the-bins/04-05-2022_rbtl_data_sheet1.csv")
+
+waste_data_lord2 <- read_csv("https://raw.githubusercontent.com/rbtl-fs22/rbtl-fs22-data/main/raw_data/lord-of-the-bins/04-05-2022_rbtl_data_sheet2.csv")
+
+survey_data <- read_csv("https://raw.githubusercontent.com/rbtl-fs22/rbtl-fs22-data/main/raw_data/partners-in-grime/2022-05-04_survey-data.csv") |> 
+  mutate(id = seq(1:n()))
+
+survey_data_small <- survey_data |> 
+  select(id, job, price_glass)
+
+survey_data_tidy <- survey_data |> 
+  select(id, job, residence_situation, starts_with("price")) |> 
+  pivot_longer(cols = starts_with("price"),
+               names_to = "waste_category",
+               values_to = "price") |> 
+  mutate(waste_category = str_remove(waste_category, pattern = "price_")) |> 
+  mutate(price_new = case_when(
+    price == "5 to 10" ~ "7.5",
+    price == "05-Oct" ~ "7.5",
+    str_detect(price, pattern = "20") == TRUE ~ "20",
+    str_detect(price, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price
+  )) |> 
+  mutate(price = as.numeric(price_new)) |> 
+  select(-price_new)
+
+#survey_data_tidy |>
+#  count(job, residence_situation, waste_category, price) |>
+#  ggplot(aes(x = factor(price), y = n, fill = job)) +
+#  geom_col()
+# 
+```
+
+```{r}
+#| eval: true
+
+waste_data <- bind_rows(waste_data_lord1, waste_data_lord2)
+
+waste_data_untidy <- waste_data |> 
+  filter(!is.na(objid)) |> 
+  rename(non_recyclable_Kg = `non_recyclables_ Kg`,
+         recyclable_Kg = recyclables_Kg) |>
+  relocate(c(recyclable_Kg, non_recyclable_Kg), .before = weight_total_kg) |> 
+  select(objid, location, pet_Kg:weight_total_kg) |> 
+  mutate(objid = factor(objid)) |>
+  rename_with(~str_remove(.x, "_Kg|_kg")) |> 
+  rename_with(~str_remove(.x, "_content")) |> 
+  rename(total = weight_total)
+
+
+waste_category_levels <- c("glass", "metal_alu", "paper", "pet", "other")
+
+waste_data_tidy <- waste_data_untidy |> 
+  select(objid:paper, non_recyclable) |> 
+  rename(other = non_recyclable) |> 
+  mutate(objid = factor(objid)) |>
+  pivot_longer(cols = pet:other,
+               names_to = "waste_category",
+               values_to = "weight") |> 
+  mutate(waste_category = factor(waste_category, levels = waste_category_levels)) |> 
+  mutate(type = case_when(
+    waste_category == "other" ~ "non_recyclable",
+    TRUE ~ "recyclable")) |> 
+  relocate(type, .before = weight) |> 
+  group_by(objid) |> 
+  mutate(percent = weight / sum(weight) * 100)
+
+waste_data_tidy |> 
+  write_rds(here::here("folien/daten/processed/waste-characterisation-lord-of-the-bins-tidy.rds"))
+
+```
+
+```{r}
+#| eval: false
+
+waste_data_tidy |> 
+  group_by(location, waste_category) |> 
+  summarise(weight = mean(weight)) |> 
+  group_by(location) |> 
+  mutate(percent = weight / sum(weight) * 100) 
+
+waste_data_tidy |> 
+  
+  ggplot(mapping = aes(x = waste_category, y = weight, color = type)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.2) +
+  facet_wrap(~location)
+
+waste_data_tidy |> 
+  ggplot(mapping = aes(x = objid, y = weight)) +
+  geom_col() 
+
+waste_data_tidy |> 
+  ggplot(mapping = aes(x = objid, y = weight, fill = waste_category)) +
+  geom_col() 
+
+waste_data_tidy |> 
+  ggplot(mapping = aes(x = waste_category, y = percent, color = type)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.2) +
+  facet_wrap(~location)
+
+
+waste_data_tidy |> 
+  ggplot(aes(x = objid, y = percent, fill = waste_category)) +
+  geom_col() 
+
+waste_data_tidy |> 
+  ggplot(aes(x = objid, y = percent, fill = type)) +
+  geom_col() 
+
+waste_data_tidy |> 
+  ggplot(aes(x = objid, y = percent, fill = location)) +
+  geom_col() +
+  facet_wrap(~waste_category, ncol = 5)
+```
+
+# Daten Typen und Vektoren {background-color="#4C326A"}
+
+## Why care about data types? Warum sind Daten Typen wichtig?
+
+::: {style="width:75%;height:0;padding-bottom:83%;position:relative;"}
+<iframe src="https://giphy.com/embed/SvRuvlSEa67wNNHuHy" width="75%" height="75%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+:::
+
+<p><a href="https://giphy.com/gifs/Friends-episode-20-friends-tv-the-one-with-baby-shower-SvRuvlSEa67wNNHuHy">via GIPHY</a></p>
+
+## Beispiel: Recycling Umfrage in Zürich {.smaller .scrollable}
+
+Eine Umfrage zum Recycling-Verhalten in der Stadt Zürich:
+
+- `job`: Was ist dein Beruf?
+- `price_glass`: Welchen monatlichen Betrag wärst du bereit für eine Metall/Glas-Tonne vor deinem Haus zu zahlen? 
+
+```{r}
+#| echo: false
+survey_data_small |> 
+  knitr::kable()
+```
+
+## Oh warum klappt das nicht?! 
+
+```{r}
+#| echo: true
+survey_data_small |> 
+  summarise(mean_price_glass = mean(price_glass))
+```
+
+## Oh warum klappt das immernoch nicht!!??
+
+```{r}
+#| echo: true
+survey_data_small |> 
+  summarise(mean_price_glass = mean(price_glass, na.rm = TRUE))
+```
+
+## Atme tief durch und schau dir deine Daten an {.smaller .scrollable}
+
+```{r}
+#| echo: false
+survey_data_small |> 
+  knitr::kable()
+```
+
+## Atme tief durch und schau dir deine Daten an 
+
+```{r}
+#| echo: false
+survey_data_small 
+```
+
+## Ein sehr typischer Schritt in der Datenbereinigung! {.small}
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "|2|3,4|5,6|7"
+
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) 
+```
+
+## Ein sehr typischer Schritt in der Datenbereinigung!  {.scrollable .small}
+
+```{r}
+#| echo: false
+#| eval: true
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) |> 
+  relocate(price_glass_new, .after = job) |> 
+  knitr::kable()
+```
+
+## Summarise? Argh!!!! {.small auto-animate="true"}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "9"
+
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) |> 
+  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))
+
+```
+
+## Respektiere deine Daten Typen!
+
+::: {.callout-important appearance="simple"}
+Den Durchschnitt von einem Vektor mit Typ **"character"** zu berechnen ist nicht möglich.
+:::
+
+```{r}
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) 
+```
+
+## Respektiere deine Daten Typen! {.smaller auto-animate="true"}
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "9|10"
+
+survey_data_small |> 
+  mutate(price_glass_new = case_when(
+    price_glass == "5-10" ~ "7.5",
+    price_glass == "05-Oct" ~ "7.5",
+    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
+    TRUE ~ price_glass
+  )) |> 
+  mutate(price_glass_new = as.numeric(price_glass_new)) |> 
+  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))
+
+```
+
+## Ich bin dran: Vektoren und Iteration mit for-Schleifen
+
+<br><br>
+
+::: {.hand-purple-large style="text-align: center;"}
+Zurücklehnen und Fragen stellen!
+:::
+
+```{r}
+countdown(minutes = 30)
+```
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## Ihr seid dran: `02-vektor-typen-ihr.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-06-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-vektor-typen-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(30)
+```
+
+## Zeitpuffer: Modul 6 Uebungen {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Kann ich noch etwas zu den Übungen in `02-vektor-typen-ihr.qmd` sagen?  
+:::
+```{r}
+countdown(15)
+```
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 5)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+# Sensitive Daten und GitHub {background-color="#4C326A"}
+
+## schützenswerte Daten dürfen nicht auf GitHub
+
+schützenswerte Daten:
+
+- verletzen die Privatsphäre (z.B. Einzeldaten)
+- sind sicherheitskritisch (z.B. Passwörter)
+- unterliegen Drittrechten (z.B. Copyrights)
+
+::: footer
+Mehr info: [Gesetze über die Information und den Datenschutz (IDG)](http://www.zhlex.zh.ch/Erlass.html?Open&Ordnr=170.4)
+:::
+
+## Lösung: `.gitignore`
+
+- Dateien und Verzeichnisse in `.gitignore` eintragen
+- werden nicht auf GitHub hochgeladen
+
+::: {.callout-important}
+## Daten teilen 
+Damit eine Analyse reproduzierbar ist, müssen die Daten für andere zugänglich sein. Die Dateien können auf anderen Wegen geteilt werden, z.B. per E-Mail, USB-Stick, Cloud-Dienst, etc.
+:::
+
+## Informationssicherheit {.small}
+
+Folgender Dateipfad enthält Informationen zum Dateisystem und sollte nicht auf GitHub hochgeladen werden:
+
+```{r}
+#| eval: false
+#| echo: true
+read_csv("C:/Users/Lars/Documents/projekt-umfrage/daten/umfrage_daten.csv")
+```
+
+Ein guter Weg dies zu vermeiden ist die Verwendung von relativen Pfaden in Kombination mit der `here()` Funktion aus dem gleichnamigen R-Paket `here`. Im RStudio Project / GitHub Repository mit dem Namen `projekt-umfrage`:
+
+```{r}
+#| eval: false
+#| echo: true
+read_csv(here::here("daten/umfrage_daten.csv"))
+```
+
+## Wir sind dran: `03-gitignore-wir.qmd` & `docs/04-dateipfade.qmd`
+
+::: task
+1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3. Klicke auf [Continue]{.highlight-yellow} neben [md-06-uebungen]{.highlight-yellow}.
+4. Suche im Dateimanager im Fenster unten rechts die Datei [`03-gitignore-wir.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+:::
+
+```{r}
+countdown(20)
+```
+
+## Zeitpuffer: Modul 6 Uebungen {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Kann ich noch etwas zum heutigen Modul erklären?
+:::
+```{r}
+countdown(10)
 ```
 
 # Zusatzaufgaben Modul 6 {background-color="#4C326A"}
