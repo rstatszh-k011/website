@@ -70,7 +70,7 @@ library(readr)
 
 1. Öffne dein Abschlussprojekt auf posit.cloud.
 
-2. Nutze den Files Tab im unteren rechten Fenster, um das Datenwörterbuch im CSV-Format in den Ordner `data/processed` hochzuladen.
+2. Nutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook im CSV-Format in den Ordner `daten/processed` hochzuladen.
 
 ## Schritt 5: Bereite deine verarbeitete, analysefähige (processed) Daten vor
 
