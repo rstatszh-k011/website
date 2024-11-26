@@ -1154,7 +1154,7 @@
     "href": "folien/md-10-funktionen.html#danke-1",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k009.github.io/website/"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
@@ -3519,7 +3519,154 @@
     "objectID": "folien/md-10-funktionen.html#aufgabenstellung",
     "href": "folien/md-10-funktionen.html#aufgabenstellung",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
-    "section": "Aufgabenstellung:",
-    "text": "Aufgabenstellung:"
+    "section": "Aufgabenstellung",
+    "text": "Aufgabenstellung\n\nErstelle einen Bericht für die Daten zum Wohnungsbestand und der Leerwohnungen im Kanton Zürich.\nDer Bericht soll für alle Gemeinden erstellt werden. Ein PDF Bericht pro Gemeinde.\nIn jedem Bericht wird mittels einer Daten-Visualisierung ein einzelnes Jahr hervorgehoben (z.B. 2018) und mittels einer Tabelle alle Jahre dargestellt."
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#klone-das-repository-md-10-paramater-benutzername",
+    "href": "folien/md-10-funktionen.html#klone-das-repository-md-10-paramater-benutzername",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Klone das Repository md-10-paramater-BENUTZERNAME",
+    "text": "Klone das Repository md-10-paramater-BENUTZERNAME\n\nÖffne https://www.github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-10-parameter-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#zeitpuffer-modul-9",
+    "href": "folien/md-10-funktionen.html#zeitpuffer-modul-9",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Zeitpuffer: Modul 9",
+    "text": "Zeitpuffer: Modul 9\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\ncountdown(5)\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#pause-machen",
+    "href": "folien/md-10-funktionen.html#pause-machen",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#züruck-zu-md-10-paramater-benutzername",
+    "href": "folien/md-10-funktionen.html#züruck-zu-md-10-paramater-benutzername",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Züruck zu md-10-paramater-BENUTZERNAME",
+    "text": "Züruck zu md-10-paramater-BENUTZERNAME\n\nWir machen weiter mit Abschnitt 2 bis 5"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#pause-machen-1",
+    "href": "folien/md-10-funktionen.html#pause-machen-1",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Pause machen",
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\ncountdown(minutes = 5)\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#github-pages",
+    "href": "folien/md-10-funktionen.html#github-pages",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nGitHub Pages ist ein kostenloser Dienst für das Hosting statischer Websites. Dieser ist ideal für Blogs, Kurs- oder Projektwebseiten, Bücher, Präsentationen und persönliche Hobbyseiten."
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#umfrage",
+    "href": "folien/md-10-funktionen.html#umfrage",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Umfrage",
+    "text": "Umfrage"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#abschlussprojekt",
+    "href": "folien/md-10-funktionen.html#abschlussprojekt",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Abschlussprojekt",
+    "text": "Abschlussprojekt\n\nrstatszh-k009.github.io/website/abschlussprojekt/"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#raus-aus-posit-cloud",
+    "href": "folien/md-10-funktionen.html#raus-aus-posit-cloud",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Raus aus Posit Cloud",
+    "text": "Raus aus Posit Cloud\n\nDie Inhalte verschwinden nicht\nIhr könnt vorerst die Cloud auch weiter nutzen\nSchritt für Schritt Software über den DAP selbst intallieren\n\n\n# Einmalig in Console ausführen\ninstall.packages(\"tidyverse\")\n\n# In jedem Skript\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#rein-in-die-kantons-communities",
+    "href": "folien/md-10-funktionen.html#rein-in-die-kantons-communities",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Rein in die Kantons-Communities",
+    "text": "Rein in die Kantons-Communities\n\nViva Engage Einstiegs Community “Data” im neuen Intranet & Tool\nKanton Zurich MS Teams Data Community of Practice"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#besucht-die-meetups",
+    "href": "folien/md-10-funktionen.html#besucht-die-meetups",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Besucht die Meetups",
+    "text": "Besucht die Meetups\n\nOpen Data Beer: https://opendatabeer.ch/\nadminR meetup: https://www.meetup.com/adminr/\nZurich R User Group: https://www.meetup.com/zurich-r-user-group/"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#ihr-seid-dran-5-min-nachdenken-notizen-machen",
+    "href": "folien/md-10-funktionen.html#ihr-seid-dran-5-min-nachdenken-notizen-machen",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Ihr seid dran: 5 min Nachdenken + Notizen machen",
+    "text": "Ihr seid dran: 5 min Nachdenken + Notizen machen\n\nWas sind die drei nützlichsten Dinge die du gelernt hast?\nWelches Thema war besonders schwer zu folgen?\nWas hat dir gefehlt?\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#bitte-ausfüllen",
+    "href": "folien/md-10-funktionen.html#bitte-ausfüllen",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Bitte ausfüllen",
+    "text": "Bitte ausfüllen\n\nhttps://forms.gle/tKf16kWzhNmEogU16"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#zeitpuffer-modul-10",
+    "href": "folien/md-10-funktionen.html#zeitpuffer-modul-10",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Zeitpuffer: Modul 10",
+    "text": "Zeitpuffer: Modul 10\n\nKann ich noch etwas zum heutigen Modul erklären?\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#lernziele-des-kurses",
+    "href": "folien/md-10-funktionen.html#lernziele-des-kurses",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Lernziele des Kurses",
+    "text": "Lernziele des Kurses\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n\n\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten."
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#beispiel---vorrausetzungen",
+    "href": "folien/md-10-funktionen.html#beispiel---vorrausetzungen",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Beispiel - Vorrausetzungen",
+    "text": "Beispiel - Vorrausetzungen\n\nHauptseite muss als index.qmd gespeichert sein.\nDie index.qmd muss im docs Ordner gespeichert sein.\nDas Beispiel eignet sich gut für einen Bericht/Artikel als eigenständige Seite.\nQuarto bietet ein Framework und Beispiele für komplexere Webseiten: https://quarto.org/docs/websites/"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#quartopub",
+    "href": "folien/md-10-funktionen.html#quartopub",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "QuartoPub",
+    "text": "QuartoPub\n\nQuarto Pub ist ein kostenloser Veröffentlichungsdienst für mit Quarto erstellte Inhalte. Dieser ist ideal für Blogs, Kurs- oder Projektwebseiten, Bücher, Präsentationen und persönliche Hobbyseiten.\nPubliziere mit quarto publish:\n\n\n\nTerminal\n\nquarto publish quarto-pub\n\n\nErhalte eine _publish.yml, die sicher in die Versionskontrolle geschickt werden kann."
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#andere-dienste",
+    "href": "folien/md-10-funktionen.html#andere-dienste",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Andere Dienste",
+    "text": "Andere Dienste\n\nPosit Connect\nNetlify\nConfluence\nNoch mehr Dienste"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#abschlussveranstaltung",
+    "href": "folien/md-10-funktionen.html#abschlussveranstaltung",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Abschlussveranstaltung",
+    "text": "Abschlussveranstaltung\n\n2024-12-17\n15:00 bis 15:30 / 16:00 Uhr\nMS Teams"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#wie-es-für-mich-weiter-geht",
+    "href": "folien/md-10-funktionen.html#wie-es-für-mich-weiter-geht",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Wie es für mich weiter geht",
+    "text": "Wie es für mich weiter geht\n\nBeratung: Projektbezogener Support, Code Review, Coaching\nrstatsZH Kursleitung: Info über den 10. Kurs verbreiten. Start: 25.02.2025\nKurse zu vertiefenden Themen: Entwicklung von 3-Stunden Workshops"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#md-10-paramater-benutzername",
+    "href": "folien/md-10-funktionen.html#md-10-paramater-benutzername",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "md-10-paramater-BENUTZERNAME",
+    "text": "md-10-paramater-BENUTZERNAME\n\nWir machen weiter mit Abschnitt 2 bis 5"
   }
 ]

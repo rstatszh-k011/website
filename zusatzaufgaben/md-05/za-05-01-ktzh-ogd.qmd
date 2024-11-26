@@ -80,6 +80,8 @@ Innerhalb, und auch ausserhalb der Verwaltung, gibt es verschiedene Communities,
 
 - adminR meetup: <https://www.meetup.com/adminr/>
 
+- Zurich R User Group: <https://www.meetup.com/zurich-r-user-group/>
+
 ## OGD Kanton Zürich
 
 ### Daten
