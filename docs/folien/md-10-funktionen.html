@@ -31,6 +31,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -349,15 +414,2922 @@ Lars Schöbitz
 <ol type="1">
 <li>Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko</li>
 <li>Die Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.</li>
-<li>Die Lernenden verstehen die dplyr-Funktion across() anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird.</li>
+<li>Die Lernenden verstehen die <code>dplyr</code>-Funktion <code>across()</code> anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird.</li>
 <li>Die Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen.</li>
 </ol>
 </div>
 </section>
-<section>
 <section id="zusatzaufgaben-modul-10" class="title-slide slide level1 center" data-background-color="#4C326A">
 <h1>Zusatzaufgaben Modul 10</h1>
 
+</section>
+
+<section>
+<section id="funktionen" class="title-slide slide level1 center">
+<h1>Funktionen</h1>
+
+</section>
+<section id="lernende-kanton-zürich" class="slide level2">
+<h2>Lernende Kanton Zürich</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb1-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
+<span id="cb1-3"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="cpzcctjfpx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cpzcctjfpx table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#cpzcctjfpx thead, #cpzcctjfpx tbody, #cpzcctjfpx tfoot, #cpzcctjfpx tr, #cpzcctjfpx td, #cpzcctjfpx th {
+  border-style: none;
+}
+
+#cpzcctjfpx p {
+  margin: 0;
+  padding: 0;
+}
+
+#cpzcctjfpx .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#cpzcctjfpx .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#cpzcctjfpx .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#cpzcctjfpx .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#cpzcctjfpx .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cpzcctjfpx .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#cpzcctjfpx .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#cpzcctjfpx .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#cpzcctjfpx .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#cpzcctjfpx .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#cpzcctjfpx .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cpzcctjfpx .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#cpzcctjfpx .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#cpzcctjfpx .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#cpzcctjfpx .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpzcctjfpx .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#cpzcctjfpx .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#cpzcctjfpx .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#cpzcctjfpx .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpzcctjfpx .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#cpzcctjfpx .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpzcctjfpx .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#cpzcctjfpx .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpzcctjfpx .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cpzcctjfpx .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cpzcctjfpx .gt_left {
+  text-align: left;
+}
+
+#cpzcctjfpx .gt_center {
+  text-align: center;
+}
+
+#cpzcctjfpx .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#cpzcctjfpx .gt_font_normal {
+  font-weight: normal;
+}
+
+#cpzcctjfpx .gt_font_bold {
+  font-weight: bold;
+}
+
+#cpzcctjfpx .gt_font_italic {
+  font-style: italic;
+}
+
+#cpzcctjfpx .gt_super {
+  font-size: 65%;
+}
+
+#cpzcctjfpx .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#cpzcctjfpx .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#cpzcctjfpx .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#cpzcctjfpx .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#cpzcctjfpx .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#cpzcctjfpx .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#cpzcctjfpx .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="stand" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">stand</th>
+<th id="kanton" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">kanton</th>
+<th id="jahr" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">jahr</th>
+<th id="stufe" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">stufe</th>
+<th id="schultyp" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">schultyp</th>
+<th id="geschlecht" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">geschlecht</th>
+<th id="staatsangehoerigkeit" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">staatsangehoerigkeit</th>
+<th id="traegerschaft" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">traegerschaft</th>
+<th id="finanzierung" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">finanzierung</th>
+<th id="anzahl" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">anzahl</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">11014</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">4367</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">577</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">431</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">11723</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">4587</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">592</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">452</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">26</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">28</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">28</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">19</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">66</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">49</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">59</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">56</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">33617</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">12298</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">1416</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">977</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">34996</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">12321</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">1616</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">1192</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">115</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">102</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">151</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">98</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">231</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">183</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">486</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">301</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">12007</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">4203</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">1222</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">520</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">13135</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">4476</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">1510</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Volksschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">661</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">3657</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">656</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">195</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">54</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">3206</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">549</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">196</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">75</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">62</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">41</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">150</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">62</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">109</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">61</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">314</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">180</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">5231</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">863</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">960</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">574</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">4040</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">747</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">849</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Mittelschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">570</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">36</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">26</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">31</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">14</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">72</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">30</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">37</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Heim- und Sonderschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">29</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">480</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">382</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">84</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">16</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">515</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">464</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">35</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Brückenangebot</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">10483</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">3106</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">4087</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">1053</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">1984</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">251</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">15607</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">4460</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">2524</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">609</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">1224</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_left" headers="schultyp">Berufsfachschule</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">164</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">1356</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">206</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">2661</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">370</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">4425</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">weiblich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">622</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">1525</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">öffentlich</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">211</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">2280</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">öffentlich</td>
+<td class="gt_row gt_right" headers="anzahl">273</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Schweiz</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">4809</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="stand">2023-09-01</td>
+<td class="gt_row gt_left" headers="kanton">zh</td>
+<td class="gt_row gt_right" headers="jahr">2022</td>
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_left" headers="schultyp">Höhere Berufsbildung</td>
+<td class="gt_row gt_left" headers="geschlecht">männlich</td>
+<td class="gt_row gt_left" headers="staatsangehoerigkeit">Ausland</td>
+<td class="gt_row gt_left" headers="traegerschaft">privat</td>
+<td class="gt_row gt_left" headers="finanzierung">privat</td>
+<td class="gt_row gt_right" headers="anzahl">826</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="prozentrechnung" class="slide level2">
+<h2>Prozentrechnung</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
+<span id="cb2-3"><a></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
+<span id="cb2-4"><a></a>    <span class="fu">summarise</span>(</span>
+<span id="cb2-5"><a></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
+<span id="cb2-6"><a></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="udtcjptlrr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#udtcjptlrr table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#udtcjptlrr thead, #udtcjptlrr tbody, #udtcjptlrr tfoot, #udtcjptlrr tr, #udtcjptlrr td, #udtcjptlrr th {
+  border-style: none;
+}
+
+#udtcjptlrr p {
+  margin: 0;
+  padding: 0;
+}
+
+#udtcjptlrr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#udtcjptlrr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#udtcjptlrr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#udtcjptlrr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#udtcjptlrr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#udtcjptlrr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#udtcjptlrr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#udtcjptlrr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#udtcjptlrr .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#udtcjptlrr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#udtcjptlrr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#udtcjptlrr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#udtcjptlrr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#udtcjptlrr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#udtcjptlrr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#udtcjptlrr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#udtcjptlrr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#udtcjptlrr .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#udtcjptlrr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#udtcjptlrr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#udtcjptlrr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#udtcjptlrr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#udtcjptlrr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#udtcjptlrr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#udtcjptlrr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#udtcjptlrr .gt_left {
+  text-align: left;
+}
+
+#udtcjptlrr .gt_center {
+  text-align: center;
+}
+
+#udtcjptlrr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#udtcjptlrr .gt_font_normal {
+  font-weight: normal;
+}
+
+#udtcjptlrr .gt_font_bold {
+  font-weight: bold;
+}
+
+#udtcjptlrr .gt_font_italic {
+  font-style: italic;
+}
+
+#udtcjptlrr .gt_super {
+  font-size: 65%;
+}
+
+#udtcjptlrr .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#udtcjptlrr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#udtcjptlrr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#udtcjptlrr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#udtcjptlrr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#udtcjptlrr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#udtcjptlrr .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="stufe" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">stufe</th>
+<th id="total" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">total</th>
+<th id="prozent" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">prozent</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_right" headers="total">34074</td>
+<td class="gt_row gt_right" headers="prozent">12.969603</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_right" headers="total">100100</td>
+<td class="gt_row gt_right" headers="prozent">38.101111</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_right" headers="total">47317</td>
+<td class="gt_row gt_right" headers="prozent">18.010292</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_right" headers="total">61667</td>
+<td class="gt_row gt_right" headers="prozent">23.472340</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_right" headers="total">19564</td>
+<td class="gt_row gt_right" headers="prozent">7.446655</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="prozentrechnung-formel" class="slide level2">
+<h2>Prozentrechnung: Formel</h2>
+<p>Für die Prozentrechnung, gilt immer folgende Formel:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>total <span class="sc">/</span> <span class="fu">sum</span>(total) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb3-2"><a></a></span>
+<span id="cb3-3"><a></a>x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="prozentrechnung-funktion" class="slide level2 smaller">
+<h2>Prozentrechnung: Funktion</h2>
+<p>Die Formel für die Prozenrechnung kann als eine Funktion festgehalten werden. Es braucht drei Dinge:</p>
+<ol type="1">
+<li><p>Einen <strong>Namen</strong>: <span class="highlight-yellow"><code>berechne_prozent</code></span> beschreibt was die Funktion macht.</p></li>
+<li><p>Die <strong>Argumente</strong>: Argumente variieren bei jedem Aufruf. Es sind dien Platzhalter für die Werte, die die Funktion verarbeiten soll. Wir nennen es <span class="highlight-yellow"><code>x</code></span>, ein üblicher Name für einen numerischen Vektor.</p></li>
+<li><p>Den <strong>Körper</strong>: Der Körper <span class="highlight-yellow"><code>x / sum(x) * 100</code></span> ist der Code, der in allen Aufrufen wiederholt wird.</p></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb4-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb4-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="prozentrechnung-funktion-anwenden" class="slide level2">
+<h2>Prozentrechnung: Funktion anwenden</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 100</code></pre>
+</div>
+</div>
+<p><br></p>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11.53846 19.23077 69.23077</code></pre>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA NA NA NA</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="prozentrechnung-funktion-anwenden-1" class="slide level2">
+<h2>Prozentrechnung: Funktion anwenden</h2>
+<ul>
+<li>die Funktion <span class="highlight-yellow"><code>berechne_prozent</code></span> funktioniert nicht, wenn es fehlende Werte gibt.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb11-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb11-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA NA NA NA</code></pre>
+</div>
+</div>
+</section>
+<section id="prozentrechnung-funktion-anpassen" class="slide level2">
+<h2>Prozentrechnung: Funktion anpassen</h2>
+<ul>
+<li><span class="highlight-yellow"><code>na.rm = TRUE</code></span> entfernt fehlende Werte von der Berechnung (ignoriert die Werte)</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb14-2"><a></a>    x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb14-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11.53846 19.23077 69.23077       NA</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="prozentrechnung-funktion-anpassen-1" class="slide level2">
+<h2>Prozentrechnung: Funktion anpassen</h2>
+<ul>
+<li><span class="highlight-yellow"><code>round</code></span> rundet die Ergebnisse auf eine Dezimalstelle</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>berechne_prozent <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb17-2"><a></a>    <span class="fu">round</span>(x <span class="sc">/</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>)</span>
+<span id="cb17-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">berechne_prozent</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">90</span>, <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11.5 19.2 69.2   NA</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="prozentrechnung-funktion-anwenden-2" class="slide level2">
+<h2>Prozentrechnung: Funktion anwenden</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>lernende_ktzh <span class="sc">|&gt;</span> </span>
+<span id="cb20-2"><a></a>    <span class="fu">filter</span>(jahr <span class="sc">==</span> <span class="fu">max</span>(jahr)) <span class="sc">|&gt;</span> </span>
+<span id="cb20-3"><a></a>    <span class="fu">group_by</span>(stufe) <span class="sc">|&gt;</span> </span>
+<span id="cb20-4"><a></a>    <span class="fu">summarise</span>(</span>
+<span id="cb20-5"><a></a>        <span class="at">total =</span> <span class="fu">sum</span>(anzahl)</span>
+<span id="cb20-6"><a></a>    ) <span class="sc">|&gt;</span> </span>
+<span id="cb20-7"><a></a>    <span class="fu">mutate</span>(<span class="at">prozent =</span> <span class="fu">berechne_prozent</span>(total)) <span class="sc">|&gt;</span> </span>
+<span id="cb20-8"><a></a>    gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="azxowzwtvy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#azxowzwtvy table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#azxowzwtvy thead, #azxowzwtvy tbody, #azxowzwtvy tfoot, #azxowzwtvy tr, #azxowzwtvy td, #azxowzwtvy th {
+  border-style: none;
+}
+
+#azxowzwtvy p {
+  margin: 0;
+  padding: 0;
+}
+
+#azxowzwtvy .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#azxowzwtvy .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#azxowzwtvy .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#azxowzwtvy .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#azxowzwtvy .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#azxowzwtvy .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#azxowzwtvy .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#azxowzwtvy .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#azxowzwtvy .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#azxowzwtvy .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#azxowzwtvy .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#azxowzwtvy .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#azxowzwtvy .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#azxowzwtvy .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#azxowzwtvy .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#azxowzwtvy .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#azxowzwtvy .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#azxowzwtvy .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#azxowzwtvy .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#azxowzwtvy .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#azxowzwtvy .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#azxowzwtvy .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#azxowzwtvy .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#azxowzwtvy .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#azxowzwtvy .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#azxowzwtvy .gt_left {
+  text-align: left;
+}
+
+#azxowzwtvy .gt_center {
+  text-align: center;
+}
+
+#azxowzwtvy .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#azxowzwtvy .gt_font_normal {
+  font-weight: normal;
+}
+
+#azxowzwtvy .gt_font_bold {
+  font-weight: bold;
+}
+
+#azxowzwtvy .gt_font_italic {
+  font-style: italic;
+}
+
+#azxowzwtvy .gt_super {
+  font-size: 65%;
+}
+
+#azxowzwtvy .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#azxowzwtvy .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#azxowzwtvy .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#azxowzwtvy .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#azxowzwtvy .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#azxowzwtvy .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#azxowzwtvy .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="stufe" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">stufe</th>
+<th id="total" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">total</th>
+<th id="prozent" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">prozent</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="stufe">Primarstufe 1-2</td>
+<td class="gt_row gt_right" headers="total">34074</td>
+<td class="gt_row gt_right" headers="prozent">13.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="stufe">Primarstufe 3-8</td>
+<td class="gt_row gt_right" headers="total">100100</td>
+<td class="gt_row gt_right" headers="prozent">38.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe I</td>
+<td class="gt_row gt_right" headers="total">47317</td>
+<td class="gt_row gt_right" headers="prozent">18.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="stufe">Sekundarstufe II</td>
+<td class="gt_row gt_right" headers="total">61667</td>
+<td class="gt_row gt_right" headers="prozent">23.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="stufe">Tertiärstufe</td>
+<td class="gt_row gt_right" headers="total">19564</td>
+<td class="gt_row gt_right" headers="prozent">7.4</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="funktionen-zusammenfassung" class="slide level2">
+<h2>Funktionen: Zusammenfassung</h2>
 </section>
 <section id="modul-10-dokumentation" class="slide level2">
 <h2>Modul 10 Dokumentation</h2>
