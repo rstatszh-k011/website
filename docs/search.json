@@ -3479,5 +3479,47 @@
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Funktionen: Zusammenfassung",
     "text": "Funktionen: Zusammenfassung"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#ihr-seid-dran-01-funktionen.qmd",
+    "href": "folien/md-10-funktionen.html#ihr-seid-dran-01-funktionen.qmd",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Ihr seid dran: 01-funktionen.qmd",
+    "text": "Ihr seid dran: 01-funktionen.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-funktionen.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#parameter",
+    "href": "folien/md-10-funktionen.html#parameter",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Parameter",
+    "text": "Parameter\n\n\n---\nformat: html\nparams:\n  jahr: 2022\n---\n\n```{r}\nlibrary(tidyverse)\nlernende_ktzh &lt;- read_csv(here::here(\"folien/daten/lernende_ktzh.csv\"))\n```\n\n# Lernende im Jahr `r params$jahr`\n\n```{r}\nlernende_ktzh |&gt; \n    filter(jahr == params$jahr)\n```"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten",
+    "href": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Parameter in Quarto Dokumenten",
+    "text": "Parameter in Quarto Dokumenten\n\n\n---\nformat: html\nparams:\n  jahr: 2022\n---\n\n```{r}\nlibrary(tidyverse)\nlernende_ktzh &lt;- read_csv(here::here(\"folien/daten/lernende_ktzh.csv\"))\n```\n\n# Lernende im Jahr `r params$jahr`\n\n```{r}\nlernende_ktzh |&gt; \n    filter(jahr == params$jahr)\n```"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten-1",
+    "href": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten-1",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Parameter in Quarto Dokumenten",
+    "text": "Parameter in Quarto Dokumenten\n\ninline code macht es möglich R code direkt in Text einzubetten\n\nLernende im Jahr `r params$jahr` ...\n… wird zu: Lernende im Jahr 2022"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten-2",
+    "href": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten-2",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Parameter in Quarto Dokumenten",
+    "text": "Parameter in Quarto Dokumenten\n\nParameter werden folgendermassen im Code angegeben:\n\n\nlernende_ktzh |&gt; \n    filter(jahr == params$jahr)\n\n# A tibble: 111 × 10\n   stand      kanton  jahr stufe        schultyp geschlecht staatsangehoerigkeit\n   &lt;date&gt;     &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;               \n 1 2023-09-01 zh      2022 Primarstufe… Volkssc… weiblich   Schweiz             \n 2 2023-09-01 zh      2022 Primarstufe… Volkssc… weiblich   Ausland             \n 3 2023-09-01 zh      2022 Primarstufe… Volkssc… weiblich   Schweiz             \n 4 2023-09-01 zh      2022 Primarstufe… Volkssc… weiblich   Ausland             \n 5 2023-09-01 zh      2022 Primarstufe… Volkssc… männlich   Schweiz             \n 6 2023-09-01 zh      2022 Primarstufe… Volkssc… männlich   Ausland             \n 7 2023-09-01 zh      2022 Primarstufe… Volkssc… männlich   Schweiz             \n 8 2023-09-01 zh      2022 Primarstufe… Volkssc… männlich   Ausland             \n 9 2023-09-01 zh      2022 Primarstufe… Heim- u… weiblich   Schweiz             \n10 2023-09-01 zh      2022 Primarstufe… Heim- u… weiblich   Ausland             \n# ℹ 101 more rows\n# ℹ 3 more variables: traegerschaft &lt;chr&gt;, finanzierung &lt;chr&gt;, anzahl &lt;dbl&gt;"
+  },
+  {
+    "objectID": "folien/md-10-funktionen.html#aufgabenstellung",
+    "href": "folien/md-10-funktionen.html#aufgabenstellung",
+    "title": "Funktionen schreiben & Parameterisierung von Berichten",
+    "section": "Aufgabenstellung:",
+    "text": "Aufgabenstellung:"
   }
 ]

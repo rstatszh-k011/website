@@ -17,6 +17,7 @@ execute:
   echo: true
 params:
     modul: 10
+    jahr: 2022
 editor_options: 
   chunk_output_type: console
 ---
@@ -60,6 +61,9 @@ lernende <- lernende_in |>
 # Daten transofmieren
 lernende_ktzh <- lernende |> 
     janitor::clean_names()
+
+# Daten schreiben
+write_csv(lernende_ktzh, here::here("folien/daten/lernende_ktzh.csv"))
 ```
 
 ## Lernziele (für diese Woche)
@@ -133,7 +137,7 @@ berechne_prozent <- function(x) {
     x / sum(x) * 100
 }
 ```
- 
+
 ## Prozentrechnung: Funktion anwenden
 
 ```{r}
@@ -222,6 +226,7 @@ lernende_ktzh |>
     gt::gt()
 ```
 
+
 ## Ihr seid dran: `01-funktionen.qmd`
 
 ::: task
@@ -234,10 +239,41 @@ lernende_ktzh |>
 :::
 
 ```{r}
-countdown(20)
+countdown(15)
 ```
 
-## Funktionen: Zusammenfassung
+# Paramter in Quarto Dokumenten 
+
+## Parameter in Quarto Dokumenten
+
+```{r}
+#| echo: false
+#| out-width: "100%"
+#| comment: ""
+
+cat(readr::read_file(here::here("folien/quarto/lernende.qmd")))
+```
+
+## Parameter in Quarto Dokumenten
+
+- inline code macht es möglich R code direkt in Text einzubetten
+
+```{verbatim}
+Lernende im Jahr `r params$jahr` ...
+```
+
+... wird zu: Lernende im Jahr `r params$jahr`
+
+## Parameter in Quarto Dokumenten
+
+- Parameter werden folgendermassen im Code angegeben:
+
+```{r}
+lernende_ktzh |> 
+    filter(jahr == params$jahr)
+```
+
+## Aufgabenstellung: 
 
 ## Modul 10 Dokumentation
 
