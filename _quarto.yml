@@ -69,6 +69,9 @@ website:
         href: module/md-09.qmd
       - text: "Modul 10"
         href: module/md-10.qmd
+      - text: "---"
+      - href: abschlussprojekt/index.qmd
+        text: Abschlussprojekt
 
 format:
   html:

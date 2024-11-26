@@ -1,0 +1,17 @@
+---
+format: html
+params:
+  jahr: 2022
+---
+
+```{r}
+library(tidyverse)
+lernende_ktzh <- read_csv(here::here("folien/daten/lernende_ktzh.csv"))
+```
+
+# Lernende im Jahr `r params$jahr`
+
+```{r}
+lernende_ktzh |> 
+    filter(jahr == params$jahr)
+```

@@ -14,8 +14,10 @@ footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}}
 editor: source
 execute:
   freeze: auto
+  echo: true
 params:
     modul: 10
+    jahr: 2022
 editor_options: 
   chunk_output_type: console
 ---
@@ -28,19 +30,442 @@ library(epoxy)
 library(gapminder)
 ```
 
+```{r}
+#| echo: false
+# Die Daten werden hier direkt von der URL gelesen. Bei einem Update der Daten
+# wird hier immer auf die aktuellste Version zugegriffen.
+link <- "https://www.web.statistik.zh.ch/ogd/data/bista/ZH_Uebersicht_alle_Lernende.csv"
+
+# Hier wird nun das Objekt "link" genutzt um die CSV zu lesen
+lernende_in <- read_csv(file = link)
+```
+
+```{r}
+#| echo: false
+# Daten transformation
+lernende <- lernende_in |> 
+    filter(Geschlecht != 2) |> 
+    mutate(Geschlecht = case_when(
+        Geschlecht %in% c("m", "M") ~ "männlich",
+        Geschlecht %in% c("f", "F") ~ "weiblich"
+    )) |> 
+    mutate(Traegerschaft = case_when(
+        Traegerschaft == "oef" ~ "öffentlich",
+        Traegerschaft == "priv" ~ "privat"
+    )) |>
+    mutate(Finanzierung = case_when(
+        Finanzierung == "oef" ~ "öffentlich",
+        Finanzierung == "priv" ~ "privat")
+    ) 
+
+# Daten transofmieren
+lernende_ktzh <- lernende |> 
+    janitor::clean_names()
+
+# Daten schreiben
+write_csv(lernende_ktzh, here::here("folien/daten/lernende_ktzh.csv"))
+```
+
 ## Lernziele (für diese Woche)
 
 ```{r}
+#| echo: false
 #| label: lernziele
 
 lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
-  dplyr::filter(modul == params$modul) |>
-  dplyr::pull(lernziele)
+    dplyr::filter(modul == params$modul) |>
+    dplyr::pull(lernziele)
 
 ```
 
 ```{epoxy}
+#| echo: false
 {1:length(lernziele)}. {lernziele[1:length(lernziele)]}
+```
+
+# Funktionen {background-color="#4C326A"}
+
+## Lernende Kanton Zürich
+
+```{r}
+lernende_ktzh |> 
+    filter(jahr == max(jahr)) |> 
+    gt::gt()
+```
+
+## Prozentrechnung
+
+```{r}
+#| code-line-numbers: "7"
+lernende_ktzh |> 
+    filter(jahr == max(jahr)) |> 
+    group_by(stufe) |> 
+    summarise(
+        total = sum(anzahl)
+    ) |> 
+    mutate(prozent = total / sum(total) * 100) |> 
+    gt::gt()
+```
+
+## Prozentrechnung: Formel
+
+Für die Prozentrechnung, gilt immer folgende Formel:
+
+```{r}
+#| eval: false
+
+total / sum(total) * 100
+
+x / sum(x) * 100
+
+```
+
+## Prozentrechnung: Funktion {.smaller}
+
+Die Formel für die Prozenrechnung kann als eine Funktion festgehalten werden. Es braucht drei Dinge:
+
+1. Einen **Namen**: [`berechne_prozent`]{.highlight-yellow} beschreibt was die Funktion macht.
+
+2. Die **Argumente**: Argumente variieren bei jedem Aufruf. Es sind dien Platzhalter für die Werte, die die Funktion verarbeiten soll. Wir nennen es [`x`]{.highlight-yellow}, ein üblicher Name für einen numerischen Vektor.
+
+3. Den **Körper**: Der Körper [`x / sum(x) * 100`]{.highlight-yellow} ist der Code, der in allen Aufrufen wiederholt wird.
+
+```{r}
+berechne_prozent <- function(x) {
+    x / sum(x) * 100
+}
+```
+
+## Prozentrechnung: Funktion anwenden
+
+```{r}
+berechne_prozent(x = 5)
+```
+
+<br>
+
+::: fragment
+```{r}
+berechne_prozent(x = c(15, 25, 90))
+```
+:::
+
+<br>
+
+::: fragment
+```{r}
+berechne_prozent(x = c(15, 25, 90, NA))
+```
+:::
+
+## Prozentrechnung: Funktion anwenden 
+
+- die Funktion [`berechne_prozent`]{.highlight-yellow} funktioniert nicht, wenn es fehlende Werte gibt.
+
+```{r}
+berechne_prozent <- function(x) {
+    x / sum(x) * 100
+}
+```
+
+<br> 
+
+```{r}
+berechne_prozent(x = c(15, 25, 90, NA))
+```
+
+## Prozentrechnung: Funktion anpassen 
+
+- [`na.rm = TRUE`]{.highlight-yellow} entfernt fehlende Werte von der Berechnung (ignoriert die Werte)
+
+```{r}
+berechne_prozent <- function(x) {
+    x / sum(x, na.rm = TRUE) * 100
+}
+```
+
+<br> 
+
+::: fragment
+```{r}
+berechne_prozent(x = c(15, 25, 90, NA))
+```
+:::
+
+## Prozentrechnung: Funktion anpassen
+
+- [`round`]{.highlight-yellow} rundet die Ergebnisse auf eine Dezimalstelle
+
+```{r}
+berechne_prozent <- function(x) {
+    round(x / sum(x, na.rm = TRUE) * 100, 1)
+}
+```
+
+<br> 
+
+::: fragment
+```{r}
+berechne_prozent(x = c(15, 25, 90, NA))
+```
+:::
+
+## Prozentrechnung: Funktion anwenden
+
+```{r}
+#| code-line-numbers: "7"
+lernende_ktzh |> 
+    filter(jahr == max(jahr)) |> 
+    group_by(stufe) |> 
+    summarise(
+        total = sum(anzahl)
+    ) |> 
+    mutate(prozent = berechne_prozent(total)) |> 
+    gt::gt()
+```
+
+
+## Ihr seid dran: `01-funktionen.qmd`
+
+::: task
+1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
+2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+3.  Klicke auf [Start]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
+4.  Suche im Dateimanager im Fenster unten rechts die Datei [`01-funktionen.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
+5. Verwende den [Quelltexteditor (Source editor)]{.highlight-yellow} Modus
+6.  Folge den Anweisungen in der Datei.
+:::
+
+```{r}
+countdown(15)
+```
+
+# Paramter in Quarto Dokumenten {background-color="#4C326A"}
+
+## Parameter in Quarto Dokumenten
+
+```{r}
+#| echo: false
+#| out-width: "100%"
+#| comment: ""
+
+cat(readr::read_file(here::here("folien/quarto/lernende.qmd")))
+```
+
+## Parameter in Quarto Dokumenten
+
+- inline code macht es möglich R code direkt in Text einzubetten
+
+```{verbatim}
+Lernende im Jahr `r params$jahr` ...
+```
+
+... wird zu: Lernende im Jahr `r params$jahr`
+
+## Parameter in Quarto Dokumenten
+
+- Parameter werden folgendermassen im Code angegeben:
+
+```{r}
+lernende_ktzh |> 
+    filter(jahr == params$jahr)
+```
+
+## Aufgabenstellung
+
+- Erstelle einen Bericht für die Daten zum Wohnungsbestand und der Leerwohnungen im Kanton Zürich. 
+- Der Bericht soll für alle Gemeinden erstellt werden. Ein PDF Bericht pro Gemeinde.
+- In jedem Bericht wird mittels einer Daten-Visualisierung ein einzelnes Jahr hervorgehoben (z.B. 2018) und mittels einer Tabelle alle Jahre dargestellt.
+
+## Klone das Repository md-10-paramater-BENUTZERNAME {.smaller}
+
+1. Öffne <https://www.github.com> in deinem Browser.
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
+3. Finde das Repository [md-10-parameter-BENUTZERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.
+4. Klicke auf die grüne Schaltfläche "Code".
+5. Kopiere die HTTPS-URL in deine Zwischenablage.
+6. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/543494/content/all?sort=name_asc)
+7. Klicke auf "New Project" > "New Project from Git Repository"
+8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein. [**Beachte:**]{.highlight-yellow} Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.
+9. Warte, bis das Projekt bereitgestellt wurde.
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 10)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+## md-10-paramater-BENUTZERNAME
+
+- Wir machen weiter mit Abschnitt 2 bis 5
+
+## Pause machen
+
+[Bitte steh auf und beweg dich.]{.highlight-yellow} Lasst eure E-Mails in Frieden ruhen.
+
+![](img/md-04/pixel-art-tree.png){width="50%"}
+
+```{r}
+countdown(minutes = 5)
+```
+
+::: footer
+Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
+:::
+
+# Webseiten publizieren {background-color="#4C326A"}
+
+## Beispiel - Vorrausetzungen
+
+- Hauptseite muss als `index.qmd` gespeichert sein.
+- Die `index.qmd` muss im `docs` Ordner gespeichert sein.
+- Das Beispiel eignet sich gut für einen Bericht/Artikel als eigenständige Seite.
+- Quarto bietet ein Framework und Beispiele für komplexere Webseiten: https://quarto.org/docs/websites/
+
+## GitHub Pages
+
+-  [GitHub Pages](https://pages.github.com/) ist ein kostenloser Dienst für das Hosting statischer Websites. Dieser ist ideal für Blogs, Kurs- oder Projektwebseiten, Bücher, Präsentationen und persönliche Hobbyseiten.
+
+```{r}
+#| echo: false
+knitr::include_graphics(here::here("folien/img/md-10/screenshot-gh-pages.png"))
+```
+
+## QuartoPub
+
+-   [Quarto Pub](https://quartopub.com/) ist ein kostenloser Veröffentlichungsdienst für mit Quarto erstellte Inhalte. Dieser ist ideal für Blogs, Kurs- oder Projektwebseiten, Bücher, Präsentationen und persönliche Hobbyseiten.
+
+-   Publiziere mit `quarto publish`:
+
+``` {.bash filename="Terminal"}
+quarto publish quarto-pub
+```
+
+-   Erhalte eine `_publish.yml`, die sicher in die Versionskontrolle geschickt werden kann.
+
+## Andere Dienste
+
+-   Posit Connect
+-   Netlify
+-   Confluence
+-   [Noch mehr Dienste](https://quarto.org/docs/publishing/other.html)
+
+
+# Wie geht's weiter? {background-color="#4C326A"}
+
+## Abschlussprojekt
+
+::: learn-more
+[rstatszh-k009.github.io/website/abschlussprojekt/](https://rstatszh-k009.github.io/website/abschlussprojekt/)
+
+```{=html}
+<iframe src="https://rstatszh-k009.github.io/website/abschlussprojekt/" width="100%" height="500" style="border:2px solid #123233;" title="Abschlussprojekt Dokumentation"></iframe>
+```
+:::
+
+## Abschlussveranstaltung
+
+- 2024-12-17
+- 15:00 bis 15:30 / 16:00 Uhr
+- MS Teams
+
+## Raus aus Posit Cloud
+
+- Die Inhalte verschwinden nicht
+- Ihr könnt vorerst die Cloud auch weiter nutzen
+- Schritt für Schritt Software über den DAP selbst intallieren
+
+```{r}
+#| eval: false
+
+# Einmalig in Console ausführen
+install.packages("tidyverse")
+
+# In jedem Skript
+library(tidyverse)
+```
+
+## Rein in die Kantons-Communities
+
+- [Viva Engage Einstiegs Community "Data" im neuen Intranet & Tool](https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9) 
+
+- [Kanton Zurich MS Teams Data Community of Practice](https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58)
+
+## Besucht die Meetups
+
+- Open Data Beer: <https://opendatabeer.ch/>
+
+- adminR meetup: <https://www.meetup.com/adminr/>
+
+- Zurich R User Group: <https://www.meetup.com/zurich-r-user-group/>
+
+# Rückblick {background-color="#4C326A"}
+
+## Lernziele des Kurses {.scrollable}
+
+Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:
+
+1.  Teilnehmer:innen werden in der Lage sein, eine Reihe gängiger
+    datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R
+    tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von
+    Datenanalyseprojekten zu veranschaulichen und öffentlich zu
+    kommunizieren.
+
+. . . 
+
+2.  Teilnehmer:innen können das Quarto-Dateiformat und den visuellen
+    Bearbeitungsmodus der RStudio IDE zu verwenden, um
+    technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten,
+    Querverweisen, Abbildungen und Tabellen zu erstellen.
+    
+. . . 
+
+3.  Teilnehmer:innen können Git Versionskontrolle verwerden um: (1)
+    Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu
+    übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu
+    öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines
+    Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.
+
+## Ihr seid dran: 5 min Nachdenken + Notizen machen
+
+1. Was sind die drei nützlichsten Dinge die du gelernt hast?
+2. Welches Thema war besonders schwer zu folgen? 
+3. Was hat dir gefehlt?
+
+```{r}
+#| echo: false
+countdown(minutes = 5)
+```
+
+## Bitte ausfüllen 
+
+- <https://forms.gle/tKf16kWzhNmEogU16>
+
+![](img/md-10/feedback-form.png)
+
+## Wie es für mich weiter geht
+
+1. **Beratung:** Projektbezogener Support, Code Review, Coaching
+2. **rstatsZH Kursleitung:** Info über den 10. Kurs verbreiten. Start: 25.02.2025
+3. **Kurse zu vertiefenden Themen:** Entwicklung von 3-Stunden Workshops 
+
+## Zeitpuffer: Modul 10 {.smaller}
+
+::: {.hand-purple-large style="text-align: center;"}
+Kann ich noch etwas zum heutigen Modul erklären?
+:::
+
+```{r}
+#| echo: false
+countdown(5)
 ```
 
 # Zusatzaufgaben Modul 10 {background-color="#4C326A"}
@@ -64,6 +489,8 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ## Danke! `r emo::ji("sunflower")` 
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-10-funktionen.pdf)
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-10-funktionen.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
