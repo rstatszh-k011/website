@@ -178,7 +178,7 @@
     "href": "module/md-10.html",
     "title": "Modul 10",
     "section": "",
-    "text": "Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden verstehen die dplyr-Funktion across() anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen.",
+    "text": "Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen.",
     "crumbs": [
       "Modul 10"
     ]
@@ -188,7 +188,7 @@
     "href": "module/md-10.html#lernziele",
     "title": "Modul 10",
     "section": "",
-    "text": "Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden verstehen die dplyr-Funktion across() anzuwenden, um Datenmanipulationsaufgaben zu optimieren, indem Code-Duplizierung reduziert und die Lesbarkeit verbessert wird.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen.",
+    "text": "Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen.",
     "crumbs": [
       "Modul 10"
     ]
@@ -198,7 +198,7 @@
     "href": "module/md-10.html#folien",
     "title": "Modul 10",
     "section": " Folien",
-    "text": "Folien\n\nIn Vorbereitung",
+    "text": "Folien\nZeige Folien im Vollbildmodus an | Download slides as PDF",
     "crumbs": [
       "Modul 10"
     ]
@@ -208,7 +208,7 @@
     "href": "module/md-10.html#lesematerial",
     "title": "Modul 10",
     "section": " Lesematerial",
-    "text": "Lesematerial\n\nIn Vorbereitung",
+    "text": "Lesematerial\n\nLies: R for Data Science - Section 25 - Functions\nLies: R for Data Science - Section 26 - Iteration",
     "crumbs": [
       "Modul 10"
     ]
@@ -2813,7 +2813,7 @@
     "href": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-community",
     "title": "Ressourcen für OGD im Kanton Zürich",
     "section": "OGD Community",
-    "text": "OGD Community\nInnerhalb, und auch ausserhalb der Verwaltung, gibt es verschiedene Communities, die sich mit OGD, R und Open Source beschäftigen. Hier sind einige Beispiele:\n\nViva Engage Einstiegs Community “Data” im neuen Intranet & Tool: https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9\nKanton Zurich MS Teams Data Community of Practice: https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58\nR Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. https://statistikzh.github.io/rstats_ktzh/\nOpen Data Beer: https://opendatabeer.ch/\nadminR meetup: https://www.meetup.com/adminr/"
+    "text": "OGD Community\nInnerhalb, und auch ausserhalb der Verwaltung, gibt es verschiedene Communities, die sich mit OGD, R und Open Source beschäftigen. Hier sind einige Beispiele:\n\nViva Engage Einstiegs Community “Data” im neuen Intranet & Tool: https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9\nKanton Zurich MS Teams Data Community of Practice: https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58\nR Austausch: Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. https://statistikzh.github.io/rstats_ktzh/\nOpen Data Beer: https://opendatabeer.ch/\nadminR meetup: https://www.meetup.com/adminr/\nZurich R User Group: https://www.meetup.com/zurich-r-user-group/"
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-01-ktzh-ogd.html#ogd-kanton-zürich",
@@ -3668,5 +3668,36 @@
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "md-10-paramater-BENUTZERNAME",
     "text": "md-10-paramater-BENUTZERNAME\n\nWir machen weiter mit Abschnitt 2 bis 5"
+  },
+  {
+    "objectID": "zusatzaufgaben/md-10/za-10-01-communities.html",
+    "href": "zusatzaufgaben/md-10/za-10-01-communities.html",
+    "title": "Kantons-Communities",
+    "section": "",
+    "text": "Es ist nützlich direkt im Anschluss an den Kurs in einer Community zu sein, um das Gelernte zu vertiefen und sich mit anderen auszutauschen. Der Kanton Zürich bietet verschiedene Möglichkeiten an. Stosst dazu, stellt euch vor, und stellt Fragen wenn sie aufkommen. Ich bin auch dort und ihr könnt mich dort weiterhin erreichen.\n\n\n\nÖffne die folgenden zwei Links und treten den Communities bei.\n\n\nViva Engage Einstiegs Community “Data” im neuen Intranet & Tool: https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9\nKanton Zurich MS Teams Data Community of Practice: https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58\n\n\nStell dich kurz vor: Wo arbeitest du? Was sind deine Aufgaben? Teile, dass du im R Kurs mitgemacht hast."
+  },
+  {
+    "objectID": "zusatzaufgaben/md-10/za-10-01-communities.html#aufgaben",
+    "href": "zusatzaufgaben/md-10/za-10-01-communities.html#aufgaben",
+    "title": "Kantons-Communities",
+    "section": "",
+    "text": "Öffne die folgenden zwei Links und treten den Communities bei.\n\n\nViva Engage Einstiegs Community “Data” im neuen Intranet & Tool: https://engage.cloud.microsoft/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI0NjQ2ODQ0MDA2NSJ9\nKanton Zurich MS Teams Data Community of Practice: https://teams.microsoft.com/l/team/19%3Ag5aGGUm_wpjMXL1muNuKioEcl0YI041XzI0r1s87K481%40thread.tacv2/conversations?groupId=0ffbe0c2-40db-49df-8043-60dac2139834&tenantId=a020d0ae-094a-4d44-b66c-ac3fe8e90c58\n\n\nStell dich kurz vor: Wo arbeitest du? Was sind deine Aufgaben? Teile, dass du im R Kurs mitgemacht hast."
+  },
+  {
+    "objectID": "module/md-10.html#zusatzaufgaben",
+    "href": "module/md-10.html#zusatzaufgaben",
+    "title": "Modul 10",
+    "section": " Zusatzaufgaben",
+    "text": "Zusatzaufgaben\n\nZusatzaufgabe 1: Kantons-Communities beitreten\nZusatzaufgabe 2: Abschlussprojekt bis 10.12.2024 abschliessen\nAnbschlussprojekt fertigstellen",
+    "crumbs": [
+      "Modul 10"
+    ]
+  },
+  {
+    "objectID": "folien/quarto/lernende.html",
+    "href": "folien/quarto/lernende.html",
+    "title": "Lernende im Jahr 2022",
+    "section": "",
+    "text": "library(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlernende_ktzh &lt;- read_csv(here::here(\"folien/daten/lernende_ktzh.csv\"))\n\nRows: 2877 Columns: 10\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (7): kanton, stufe, schultyp, geschlecht, staatsangehoerigkeit, traeger...\ndbl  (2): jahr, anzahl\ndate (1): stand\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nLernende im Jahr 2022\n\nlernende_ktzh |&gt; \n    filter(jahr == params$jahr)\n\n# A tibble: 111 × 10\n   stand      kanton  jahr stufe        schultyp geschlecht staatsangehoerigkeit\n   &lt;date&gt;     &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;               \n 1 2023-09-01 zh      2022 Primarstufe… Volkssc… weiblich   Schweiz             \n 2 2023-09-01 zh      2022 Primarstufe… Volkssc… weiblich   Ausland             \n 3 2023-09-01 zh      2022 Primarstufe… Volkssc… weiblich   Schweiz             \n 4 2023-09-01 zh      2022 Primarstufe… Volkssc… weiblich   Ausland             \n 5 2023-09-01 zh      2022 Primarstufe… Volkssc… männlich   Schweiz             \n 6 2023-09-01 zh      2022 Primarstufe… Volkssc… männlich   Ausland             \n 7 2023-09-01 zh      2022 Primarstufe… Volkssc… männlich   Schweiz             \n 8 2023-09-01 zh      2022 Primarstufe… Volkssc… männlich   Ausland             \n 9 2023-09-01 zh      2022 Primarstufe… Heim- u… weiblich   Schweiz             \n10 2023-09-01 zh      2022 Primarstufe… Heim- u… weiblich   Ausland             \n# ℹ 101 more rows\n# ℹ 3 more variables: traegerschaft &lt;chr&gt;, finanzierung &lt;chr&gt;, anzahl &lt;dbl&gt;"
   }
 ]
