@@ -2,7 +2,7 @@
 title: "{{< var md-09.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2024-11-19"
+date:  "2025-04-22"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -33,7 +33,7 @@ library(gapminder)
 ```{r}
 #| label: lernziele
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
   dplyr::pull(lernziele)
 
@@ -472,7 +472,7 @@ Für das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+2.  Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
 3.  Klicke auf [Start]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [`01-markdown-syntax.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5. Verwende den [Quelltexteditor (Source editor)]{.highlight-yellow} Modus
@@ -771,7 +771,7 @@ head(penguins) |>
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+2.  Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
 3.  Klicke auf [Continue]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-querverweise.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5. Verwende den [Quelltexteditor (Source editor)]{.highlight-yellow} Modus
@@ -824,7 +824,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+2. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
 3. Klicke auf [Continue]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei [`03-folien.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::
@@ -885,10 +885,10 @@ countdown(5)
 ## Modul 9 Dokumentation
 
 ::: learn-more
-[rstatszh-k009.github.io/website/module/md-09.html](https://rstatszh-k009.github.io/website/module/md-09.html)
+[rstatszh-k010.github.io/website/module/md-09.html](https://rstatszh-k010.github.io/website/module/md-09.html)
 
 ```{=html}
-<iframe src="https://rstatszh-k009.github.io/website/module/md-09.html" width="100%" height="500" style="border:2px solid #123233;" title="Modul 9 Dokumentation"></iframe>
+<iframe src="https://rstatszh-k010.github.io/website/module/md-09.html" width="100%" height="500" style="border:2px solid #123233;" title="Modul 9 Dokumentation"></iframe>
 ```
 :::
 
@@ -903,6 +903,6 @@ countdown(5)
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
 
-Zugang zu Folien als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-09-text-daten.pdf)
+Zugang zu Folien als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-09-text-daten.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

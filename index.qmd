@@ -1,5 +1,5 @@
 ---
-title: "Vorbereitung - rstatsZH Kurs 009"
+title: "Vorbereitung - rstatsZH Kurs 010"
 editor: source
 execute: 
   echo: false
@@ -8,9 +8,9 @@ editor_options:
   chunk_output_type: console
 ---
 
-Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz  freut sich darauf, dich kennenzulernen. 
+Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter [Lars Schöbitz](https://www.linkedin.com/in/larsschoebitz/) freut sich darauf, dich kennenzulernen. Falls du noch nicht für diesen Kurs angemeldet bist, dies aber gerne möchtest, dann nimm Kontakt über folgende Seite mit uns auf: <https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html>
 
-Wir treffen uns ab 24.09.2024 jeweils um 13:00 Uhr auf Zoom.
+Wir treffen uns ab 25.02.2025 jeweils von 13:00 bis 15:30 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt.
 
 Vor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.
 
@@ -18,8 +18,7 @@ Vor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Di
 
 Arbeite durch die folgenden Schritte: 
 
-- Schritt 0: Einladung zum Slack Channel annhemen. Diese ist per Email gekommen. Falls du keine Einladung erhalten hast, schreibe bitte an Lars.
 - [Schritt 1](vorbereitung/01-github.qmd): Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.
 - [Schritt 2](vorbereitung/02-posit-cloud.qmd): Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.
 - [Schritt 3](vorbereitung/03-r4ds-intro.qmd): Lies die Einführung des Kursbuches: R for Data Science.
-- [Schritt 4](vorbereitung/04-umfrage.qmd): Fülle den Fragebogen bis Freitag, den 20. September 2024 aus.
+- [Schritt 4](vorbereitung/04-umfrage.qmd): Fülle den Fragebogen bis Freitag, den 21. Februar 2025 aus.

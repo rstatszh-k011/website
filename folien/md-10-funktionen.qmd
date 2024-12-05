@@ -2,7 +2,7 @@
 title: "{{< var md-10.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2024-11-26"
+date: "2025-04-29"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -72,7 +72,7 @@ write_csv(lernende_ktzh, here::here("folien/daten/lernende_ktzh.csv"))
 #| echo: false
 #| label: lernziele
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
     dplyr::filter(modul == params$modul) |>
     dplyr::pull(lernziele)
 
@@ -229,7 +229,7 @@ lernende_ktzh |>
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+2.  Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
 3.  Klicke auf [Start]{.highlight-yellow} neben [md-09-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [`01-funktionen.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5. Verwende den [Quelltexteditor (Source editor)]{.highlight-yellow} Modus
@@ -280,11 +280,11 @@ lernende_ktzh |>
 ## Klone das Repository md-10-paramater-BENUTZERNAME {.smaller}
 
 1. Öffne <https://www.github.com> in deinem Browser.
-2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k009](https://github.com/rstatszh-k009)
+2. Navigiere zur GitHub-Organisation für den Kurs: [github.com/rstatszh-k010](https://github.com/rstatszh-k010)
 3. Finde das Repository [md-10-parameter-BENUTZERNAME]{.highlight-yellow}, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.
 4. Klicke auf die grüne Schaltfläche "Code".
 5. Kopiere die HTTPS-URL in deine Zwischenablage.
-6. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/543494/content/all?sort=name_asc)
+6. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) auf [posit.cloud](https://posit.cloud/spaces/543494/content/all?sort=name_asc)
 7. Klicke auf "New Project" > "New Project from Git Repository"
 8. Füge die HTTPS-URL von GitHub in das Feld "URL of your Git Repository" ein. [**Beachte:**]{.highlight-yellow} Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.
 9. Warte, bis das Projekt bereitgestellt wurde.
@@ -364,10 +364,10 @@ quarto publish quarto-pub
 ## Abschlussprojekt
 
 ::: learn-more
-[rstatszh-k009.github.io/website/abschlussprojekt/](https://rstatszh-k009.github.io/website/abschlussprojekt/)
+[rstatszh-k010.github.io/website/abschlussprojekt/](https://rstatszh-k010.github.io/website/abschlussprojekt/)
 
 ```{=html}
-<iframe src="https://rstatszh-k009.github.io/website/abschlussprojekt/" width="100%" height="500" style="border:2px solid #123233;" title="Abschlussprojekt Dokumentation"></iframe>
+<iframe src="https://rstatszh-k010.github.io/website/abschlussprojekt/" width="100%" height="500" style="border:2px solid #123233;" title="Abschlussprojekt Dokumentation"></iframe>
 ```
 :::
 
@@ -473,10 +473,10 @@ countdown(5)
 ## Modul 10 Dokumentation
 
 ::: learn-more
-[rstatszh-k009.github.io/website/module/md-10.html](https://rstatszh-k009.github.io/website/module/md-10.html)
+[rstatszh-k010.github.io/website/module/md-10.html](https://rstatszh-k010.github.io/website/module/md-10.html)
 
 ```{=html}
-<iframe src="https://rstatszh-k009.github.io/website/module/md-10.html" width="100%" height="500" style="border:2px solid #123233;" title="Modul 10 Dokumentation"></iframe>
+<iframe src="https://rstatszh-k010.github.io/website/module/md-10.html" width="100%" height="500" style="border:2px solid #123233;" title="Modul 10 Dokumentation"></iframe>
 ```
 :::
 
@@ -491,6 +491,6 @@ countdown(5)
 
 Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
 
-Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-10-funktionen.pdf)
+Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-10-funktionen.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

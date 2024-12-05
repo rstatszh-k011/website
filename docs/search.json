@@ -4,7 +4,7 @@
     "href": "kalendar.html",
     "title": "Kurskalendar",
     "section": "",
-    "text": "modul\ndatum\ntitel\n\n\n\n\nModul 01\n24 September 2024\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n01 Oktober 2024\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n08 Oktober 2024\nDaten Transformation mit dplyr\n\n\nModul 04\n15 Oktober 2024\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n22 Oktober 2024\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\n29 Oktober 2024\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n05 November 2024\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n12 November 2024\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub III\n\n\nModul 09\n19 November 2024\nErstellung und Veröffentlichung analytischer Artikel mit Quarto & Tabellen & und Publizieren mit GitHub Pages\n\n\nModul 10\n26 November 2024\nFunktionen schreiben & Iteration II (across()) & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n03 Dezember 2024\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n10 Dezember 2024\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n17 Dezember 2024\nAbschlussveranstaltung",
+    "text": "modul\ndatum\ntitel\n\n\n\n\nModul 01\n25 Februar 2025\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n04 März 2025\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n11 März 2025\nDaten Transformation mit dplyr\n\n\nModul 04\n18 März 2025\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n25 März 2025\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n01 April 2025\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n08 April 2025\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n15 April 2025\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n22 April 2025\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n29 April 2025\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n06 Mai 2025\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n13 Mai 2025\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n20 Mai 2025\nAbschlussveranstaltung",
     "crumbs": [
       "Kurskalender"
     ]
@@ -12,9 +12,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Vorbereitung - rstatsZH Kurs 009",
+    "title": "Vorbereitung - rstatsZH Kurs 010",
     "section": "",
-    "text": "Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz freut sich darauf, dich kennenzulernen.\nWir treffen uns ab 24.09.2024 jeweils um 13:00 Uhr auf Zoom.\nVor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.",
+    "text": "Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz freut sich darauf, dich kennenzulernen. Falls du noch nicht für diesen Kurs angemeldet bist, dies aber gerne möchtest, dann nimm Kontakt über folgende Seite mit uns auf: https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html\nWir treffen uns ab 25.02.2025 jeweils von 13:00 bis 15:30 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt.\nVor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.",
     "crumbs": [
       "Vorbereitung"
     ]
@@ -22,9 +22,9 @@
   {
     "objectID": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
     "href": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
-    "title": "Vorbereitung - rstatsZH Kurs 009",
+    "title": "Vorbereitung - rstatsZH Kurs 010",
     "section": " Was muss ich vor Tag 1 vorbereiten?",
-    "text": "Was muss ich vor Tag 1 vorbereiten?\nArbeite durch die folgenden Schritte:\n\nSchritt 0: Einladung zum Slack Channel annhemen. Diese ist per Email gekommen. Falls du keine Einladung erhalten hast, schreibe bitte an Lars.\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen bis Freitag, den 20. September 2024 aus.",
+    "text": "Was muss ich vor Tag 1 vorbereiten?\nArbeite durch die folgenden Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen bis Freitag, den 21. Februar 2025 aus.",
     "crumbs": [
       "Vorbereitung"
     ]
@@ -118,7 +118,7 @@
     "href": "module/md-09.html#zusatzaufgabe",
     "title": "Modul 9",
     "section": " Zusatzaufgabe",
-    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2024-11-19.\n\nZusatzaufgabe 1: Abschlussprojekt - Querverweise",
+    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2025-04-22.\n\nZusatzaufgabe 1: Abschlussprojekt - Querverweise",
     "crumbs": [
       "Modul 09"
     ]
@@ -168,7 +168,7 @@
     "href": "module/md-06.html#zusatzaufgabe",
     "title": "Modul 6",
     "section": " Zusatzaufgabe",
-    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2024-10-29.\n\nZusatzaufgabe 1: Abschlussprojekt",
+    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2025-04-01.\n\nZusatzaufgabe 1: Abschlussprojekt",
     "crumbs": [
       "Modul 06"
     ]
@@ -218,7 +218,7 @@
     "href": "module/md-10.html#zusatzaufgaben",
     "title": "Modul 10",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2024-11-26.\n\nZusatzaufgabe 1: Kantons-Communities beitreten\nZusatzaufgabe 2: Abschlussprojekt bis 10.12.2024 abschliessen\nAnbschlussprojekt fertigstellen",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-04-29.\n\nZusatzaufgabe 1: Kantons-Communities beitreten\nZusatzaufgabe 2: Abschlussprojekt bis 10.12.2024 abschliessen\nAnbschlussprojekt fertigstellen",
     "crumbs": [
       "Modul 10"
     ]
@@ -268,7 +268,7 @@
     "href": "module/md-01.html#zusatzaufgaben",
     "title": "Modul 1",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2024-09-24.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-02-25.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
     "crumbs": [
       "Modul 01"
     ]
@@ -318,7 +318,7 @@
     "href": "module/md-03.html#zusatzaufgaben",
     "title": "Modul 3",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgaben bis Montag, den 14. Oktober 2024.\n\nZusatzaufgabe 1: Daten Transformation mit dplyr\nZusatzaufgabe 2: Mit OGD Daten arbeiten\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-03-11.\n\nZusatzaufgabe 1: Daten Transformation mit dplyr\nZusatzaufgabe 2: Mit OGD Daten arbeiten\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 03"
     ]
@@ -558,8 +558,8 @@
     "objectID": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
     "href": "folien/md-05-datumswerte.html#lernziele-für-diese-woche",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
-    "section": "",
-    "text": "Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können auf Ressourcen für das Arbeiten mit OGD zugreifen um eigene Daten für eine Publikation vorzubereiten."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können auf Ressourcen für das Arbeiten mit OGD zugreifen um eigene Daten für eine Publikation vorzubereiten."
   },
   {
     "objectID": "folien/md-05-datumswerte.html#dplyr-funktionen-mutate-case_when",
@@ -580,7 +580,7 @@
     "href": "folien/md-05-datumswerte.html#ihr-seid-dran-02-bedingungen-ihr.qmd",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Ihr seid dran: 02-bedingungen-ihr.qmd",
-    "text": "Ihr seid dran: 02-bedingungen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-bedingungen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 02-bedingungen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-bedingungen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#pause-machen",
@@ -615,7 +615,7 @@
     "href": "folien/md-05-datumswerte.html#ihr-seid-dran-04-datumswerte-ihr.qmd",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Ihr seid dran: 04-datumswerte-ihr.qmd",
-    "text": "Ihr seid dran: 04-datumswerte-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 04-datumswerte-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 04-datumswerte-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-05-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 04-datumswerte-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#pause-machen-1",
@@ -629,7 +629,7 @@
     "href": "folien/md-05-datumswerte.html#du-bist-dran-abschlussprojekt",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Du bist dran: Abschlussprojekt",
-    "text": "Du bist dran: Abschlussprojekt\n\n\nÖffne die Kurswebseite: rstatszh-k009.github.io/website/\nNavigiere zu den Zusatzaufgaben für Modul 5 und öffne “Zusatzaufgabe 2 - Abschlussprojekt - Daten auswählen”.\nLies die Anweisungen bis “Arbeitsschritte” und mache dir Notizen.\nHinterlasse Fragen und Kommentare hier: github.com/rstatszh-k009/abschlussprojekte/issues/1\n\n\n\n\n\n−+\n10:00"
+    "text": "Du bist dran: Abschlussprojekt\n\n\nÖffne die Kurswebseite: rstatszh-k010.github.io/website/\nNavigiere zu den Zusatzaufgaben für Modul 5 und öffne “Zusatzaufgabe 2 - Abschlussprojekt - Daten auswählen”.\nLies die Anweisungen bis “Arbeitsschritte” und mache dir Notizen.\nHinterlasse Fragen und Kommentare hier: github.com/rstatszh-k010/abschlussprojekte/issues/1\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#zeitpuffer-modul-5",
@@ -643,7 +643,7 @@
     "href": "folien/md-05-datumswerte.html#modul-5-dokumentation",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Modul 5 Dokumentation",
-    "text": "Modul 5 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-05.html"
+    "text": "Modul 5 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-05.html"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#zusatzaufgaben-abgabedatum",
@@ -657,14 +657,14 @@
     "href": "folien/md-05-datumswerte.html#danke-1",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
     "href": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
     "title": "Daten Transformation mit dplyr",
-    "section": "",
-    "text": "lernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-k009-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 34 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen."
   },
   {
     "objectID": "folien/md-03-datentransformation.html#eine-grammatik-der-datenmanipulation",
@@ -713,7 +713,7 @@
     "href": "folien/md-03-datentransformation.html#daten",
     "title": "Daten Transformation mit dplyr",
     "section": "Daten",
-    "text": "Daten\n\ntreibhausgase &lt;- read_csv(\"daten/ktzh-treibhausgase.csv\")\n\n\n\nRows: 1980 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (4): hauptgruppe, untergruppe, thg, thg_agg\ndbl (2): jahr, emission\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\nhead(treibhausgase)\n\n\n\n\n\n\n\njahr\nhauptgruppe\nuntergruppe\nthg\nthg_agg\nemission\n\n\n\n\n1990\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1991\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1992\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1993\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1994\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1995\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n\n\n\n\n. . .\n\nncol(treibhausgase)\n\n[1] 6\n\n\n\n. . .\n\nnrow(treibhausgase)\n\n[1] 1980"
+    "text": "Daten\n\ntreibhausgase &lt;- read_csv(\"daten/ktzh-treibhausgase.csv\")\n\n\nhead(treibhausgase)\n\n\n\n\n\n\n\njahr\nhauptgruppe\nuntergruppe\nthg\nthg_agg\nemission\n\n\n\n\n1990\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1991\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1992\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1993\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1994\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n1995\nAbwasser und Abfall\nAbfalldeponie\nCO2\nCO2eq\n0\n\n\n\n\n\n\n\n\nncol(treibhausgase)\n\n[1] 6\n\n\n\n\n\n\nnrow(treibhausgase)\n\n[1] 1980"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#data",
@@ -727,21 +727,21 @@
     "href": "folien/md-03-datentransformation.html#wir-sind-dran-md-03-uebungen",
     "title": "Daten Transformation mit dplyr",
     "section": "Wir sind dran: md-03-uebungen",
-    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\ncountdown(20)\n\n\n−+\n20:00"
+    "text": "Wir sind dran: md-03-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#pause-machen",
     "href": "folien/md-03-datentransformation.html#pause-machen",
     "title": "Daten Transformation mit dplyr",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
     "href": "folien/md-03-datentransformation.html#ihr-seid-dran-02-dplyr-ihr.qmd",
     "title": "Daten Transformation mit dplyr",
     "section": "Ihr seid dran: 02-dplyr-ihr.qmd",
-    "text": "Ihr seid dran: 02-dplyr-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-dplyr-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(25)\n\n\n−+\n25:00"
+    "text": "Ihr seid dran: 02-dplyr-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-dplyr-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#r-terminologie",
@@ -769,28 +769,28 @@
     "href": "folien/md-03-datentransformation.html#wir-sind-dran-03-dplyr-wir.qmd",
     "title": "Daten Transformation mit dplyr",
     "section": "Wir sind dran: 03-dplyr-wir.qmd",
-    "text": "Wir sind dran: 03-dplyr-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\ncountdown(25)\n\n\n−+\n25:00"
+    "text": "Wir sind dran: 03-dplyr-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-03-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-dplyr-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#pause-machen-1",
     "href": "folien/md-03-datentransformation.html#pause-machen-1",
     "title": "Daten Transformation mit dplyr",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\ncountdown(minutes = 5)\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#zeitpuffer-03-dplyr-wir.qmd",
     "href": "folien/md-03-datentransformation.html#zeitpuffer-03-dplyr-wir.qmd",
     "title": "Daten Transformation mit dplyr",
     "section": "Zeitpuffer: 03-dplyr-wir.qmd",
-    "text": "Zeitpuffer: 03-dplyr-wir.qmd\n\nWelche Konzepte kann ich nochmals erklären?\n\n\ncountdown(15)\n\n\n−+\n15:00"
+    "text": "Zeitpuffer: 03-dplyr-wir.qmd\n\nWelche Konzepte kann ich nochmals erklären?\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#modul-3-dokumentation",
     "href": "folien/md-03-datentransformation.html#modul-3-dokumentation",
     "title": "Daten Transformation mit dplyr",
     "section": "Modul 3 Dokumentation",
-    "text": "Modul 3 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-03.html"
+    "text": "Modul 3 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-03.html"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#zusatzaufgaben-abgabedatum",
@@ -804,21 +804,21 @@
     "href": "folien/md-03-datentransformation.html#danke-1",
     "title": "Daten Transformation mit dplyr",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
     "href": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
-    "section": "",
-    "text": "Die Lernenden können Daten aus Dateien im CSV und XLSX-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses, und auf GitHub, befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können die Anwendung der Git Befehle clone, commit, push beschreiben.\nDie Lernenden können die Begriffe local und remote Repository unterscheiden."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Daten aus Dateien im CSV und XLSX-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses, und auf GitHub, befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können die Anwendung der Git Befehle clone, commit, push beschreiben.\nDie Lernenden können die Begriffe local und remote Repository unterscheiden."
   },
   {
     "objectID": "folien/md-04-daten-management.html#variablen-typen",
     "href": "folien/md-04-daten-management.html#variablen-typen",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Variablen Typen",
-    "text": "Variablen Typen\n\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
+    "text": "Variablen Typen\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
   },
   {
     "objectID": "folien/md-04-daten-management.html#ordinal-skalierte-daten-in-r",
@@ -853,7 +853,7 @@
     "href": "folien/md-04-daten-management.html#ihr-seid-dran-02-faktoren-ihr.qmd",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Ihr seid dran: 02-faktoren-ihr.qmd",
-    "text": "Ihr seid dran: 02-faktoren-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-faktoren-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
+    "text": "Ihr seid dran: 02-faktoren-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-faktoren-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-04-daten-management.html#rechteckige-daten-in-r-einlesen",
@@ -867,21 +867,21 @@
     "href": "folien/md-04-daten-management.html#csv-xlsx",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "CSV & XLSX",
-    "text": "CSV & XLSX\n\n\n\nreadr\n\nread_csv() - durch Kommas getrennte Werte\nread_csv2() - durch Semicolon getrennte Werte (Tipp für das Konvertieren von xlsx als csv)\nread_tsv() - durch Tab getrennte Werte\nread_delim() - liest Dateien mit beliebigem Trennzeichen\n\n\n\n\nreadxl\n\nread_excel() - liest xls oder xlsx Dateien"
+    "text": "CSV & XLSX\n\n\nreadr\n\nread_csv() - durch Kommas getrennte Werte\nread_csv2() - durch Semicolon getrennte Werte (Tipp für das Konvertieren von xlsx als csv)\nread_tsv() - durch Tab getrennte Werte\nread_delim() - liest Dateien mit beliebigem Trennzeichen\n\n\nreadxl\n\nread_excel() - liest xls oder xlsx Dateien"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-aus-csv-dateien-lesen",
     "href": "folien/md-04-daten-management.html#daten-aus-csv-dateien-lesen",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten aus CSV-Dateien lesen",
-    "text": "Daten aus CSV-Dateien lesen\n\nImport von unbearbeiteten Rohdaten\n\n\nbefragung &lt;- read_csv(\"raw/KTZH_00001341_00002759_frage7a1.csv\")\n\n. . .\n\nbefragung\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
+    "text": "Daten aus CSV-Dateien lesen\n\nImport von unbearbeiteten Rohdaten\n\n\nbefragung &lt;- read_csv(\"raw/KTZH_00001341_00002759_frage7a1.csv\")\n\n\n\nbefragung\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;chr&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-als-csv-datei-schreiben",
     "href": "folien/md-04-daten-management.html#daten-als-csv-datei-schreiben",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Daten als CSV-Datei schreiben",
-    "text": "Daten als CSV-Datei schreiben\n\ntransformiere Daten\nexportiere verarbeitete, analysereife Daten\n\n\nantwort_levels &lt;- c(\"viel zu hoch\", \"eher zu hoch\", \"gerade angemessen\", \n                    \"eher zu tief\", \"viel zu tief\")\n\nbefragung_fct &lt;- befragung |&gt;\n    mutate(antwort = factor(antwort, levels = antwort_levels)) \n\n. . .\n\nbefragung_fct\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows\n\n\n\nwrite_csv(befragung_fct, \"daten/processed/ktzh-befragung-zufriedenheit.csv\")"
+    "text": "Daten als CSV-Datei schreiben\n\ntransformiere Daten\nexportiere verarbeitete, analysereife Daten\n\n\nantwort_levels &lt;- c(\"viel zu hoch\", \"eher zu hoch\", \"gerade angemessen\", \n                    \"eher zu tief\", \"viel zu tief\")\n\nbefragung_fct &lt;- befragung |&gt;\n    mutate(antwort = factor(antwort, levels = antwort_levels)) \n\n\n\nbefragung_fct\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows\n\n\n\nwrite_csv(befragung_fct, \"daten/processed/ktzh-befragung-zufriedenheit.csv\")"
   },
   {
     "objectID": "folien/md-04-daten-management.html#analysefertige-daten-einlesen",
@@ -902,7 +902,7 @@
     "href": "folien/md-04-daten-management.html#wie-speichern-wir-faktoren",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Wie speichern wir Faktoren?",
-    "text": "Wie speichern wir Faktoren?\n\nIn R können Daten als .rds Datei gespeichert werden\n.rds Dateien speichern die Struktur der Daten\nFaktoren und andere Datenstrukturen bleiben erhalten\n\n\nwrite_rds(befragung_fct, \"folien/daten/processed/ktzh-befragung-zufriedenheit.rds\")\n\n. . .\n\nbefragung_rds &lt;- read_rds(\"daten/processed/ktzh-befragung-zufriedenheit.rds\")\n\n\nbefragung_rds\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
+    "text": "Wie speichern wir Faktoren?\n\nIn R können Daten als .rds Datei gespeichert werden\n.rds Dateien speichern die Struktur der Daten\nFaktoren und andere Datenstrukturen bleiben erhalten\n\n\nwrite_rds(befragung_fct, \"folien/daten/processed/ktzh-befragung-zufriedenheit.rds\")\n\n\n\nbefragung_rds &lt;- read_rds(\"daten/processed/ktzh-befragung-zufriedenheit.rds\")\n\n\nbefragung_rds\n\n# A tibble: 1,213 × 5\n   geschlecht alter     gemeinde_groesse bezirk_name antwort          \n   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;       &lt;fct&gt;            \n 1 weiblich   55 bis 59 Winterthur       Winterthur  viel zu hoch     \n 2 männlich   70 bis 74 Winterthur       Winterthur  eher zu hoch     \n 3 weiblich   55 bis 59 10001 bis 20000  Hinwil      eher zu hoch     \n 4 weiblich   35 bis 39 20001 bis 50000  Hinwil      eher zu hoch     \n 5 weiblich   50 bis 54 5001 bis 10000   Meilen      eher zu hoch     \n 6 männlich   35 bis 39 &lt;1000            Andelfingen gerade angemessen\n 7 weiblich   45 bis 49 10001 bis 20000  Pfäffikon   viel zu hoch     \n 8 männlich   30 bis 34 &lt;1000            Winterthur  eher zu hoch     \n 9 weiblich   50 bis 54 5001 bis 10000   Winterthur  eher zu hoch     \n10 weiblich   80+       20001 bis 50000  Uster       eher zu hoch     \n# ℹ 1,203 more rows"
   },
   {
     "objectID": "folien/md-04-daten-management.html#daten-zusammenfassen",
@@ -958,7 +958,7 @@
     "href": "folien/md-04-daten-management.html#ihr-seid-dran-03-daten-import-ihr.qmd",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Ihr seid dran: 03-daten-import-ihr.qmd",
-    "text": "Ihr seid dran: 03-daten-import-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-daten-import-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
+    "text": "Ihr seid dran: 03-daten-import-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-04-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-daten-import-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-04-daten-management.html#zeitpuffer-modul-4",
@@ -972,7 +972,7 @@
     "href": "folien/md-04-daten-management.html#modul-4-dokumentation",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Modul 4 Dokumentation",
-    "text": "Modul 4 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-04.html"
+    "text": "Modul 4 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-04.html"
   },
   {
     "objectID": "folien/md-04-daten-management.html#zusatzaufgaben-abgabedatum",
@@ -986,7 +986,7 @@
     "href": "folien/md-04-daten-management.html#danke-1",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#section",
@@ -1021,7 +1021,7 @@
     "href": "folien/md-02-datenvisualisierung.html#andere-quellen-für-hilfe",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Andere Quellen für Hilfe",
-    "text": "Andere Quellen für Hilfe\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDokumentation Webseiten: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+    "text": "Andere Quellen für Hilfe\n\n\n\nPosit Community Forum: https://community.rstudio.com/\nDokumentation Webseiten: https://ggplot2.tidyverse.org/\nMastodon tag: #rstats\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#section-1",
@@ -1035,7 +1035,7 @@
     "href": "folien/md-02-datenvisualisierung.html#lernziele-für-diese-woche",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Lernziele (für diese Woche)",
-    "text": "Lernziele (für diese Woche)\n\nlernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-k009-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 34 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden."
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können beschreiben wie Variablen eines Datensatzes mittels des R-Package ggplot2 den visuellen Eigenschaften eines Diagramms zugeordnet werden (EN: aesthetic mapping).\nDie Lernenden können die Skalierungen (Farbe, Achsen) eines Diagramms kontrollieren.\nDie Lernenden können drei verschiedene Diagrammtypen (Balkendiagramm, Histogramm, Punkt) und ihre Anwendungsfälle vergleichen.\nDie Lernenden können den DAP navigieren um relevante Software selbst auf ihren Arbeitsgeräten zu installieren. Sie können sich das R-Bundle aus dem Serviceportal bestellen und wissen wie sie Probleme melden."
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#triff-das-stat",
@@ -1077,14 +1077,14 @@
     "href": "folien/md-02-datenvisualisierung.html#pause-machen",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n10:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#r-paket-ggplot2",
     "href": "folien/md-02-datenvisualisierung.html#r-paket-ggplot2",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "R Paket ggplot2",
-    "text": "R Paket ggplot2\n\n\n\nggplot2 ist das Datenvisualisierungspaket von tidyverse\ngg” in “ggplot2” steht für “Grammar of Graphics”\nInspiriert durch das Buch Grammar of Graphics von Leland Wilkinson\nDokumentation: https://ggplot2.tidyverse.org/\nBuch: https://ggplot2-book.org\n\n\n\n\n#knitr::include_graphics(here::here(\"slides/img/md-02/ggplot2-part-of-tidyverse.png\"))"
+    "text": "R Paket ggplot2\n\n\n\nggplot2 ist das Datenvisualisierungspaket von tidyverse\ngg” in “ggplot2” steht für “Grammar of Graphics”\nInspiriert durch das Buch Grammar of Graphics von Leland Wilkinson\nDokumentation: https://ggplot2.tidyverse.org/\nBuch: https://ggplot2-book.org"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#ich-bin-dran-arbeiten-mit-quarto-und-r",
@@ -1147,14 +1147,14 @@
     "href": "folien/md-02-datenvisualisierung.html#poll-1-was-stellt-die-dicke-linie-innerhalb-des-kastens-eines-boxplots-dar",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?",
-    "text": "Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?\n\n\n\nIch weiß es nicht\nder Mittelwert der Beobachtungen\ndie Mitte der Box\nder Median der Beobachtungen\n\n\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
+    "text": "Poll 1: Was stellt die dicke Linie innerhalb des Kastens eines Boxplots dar?\n\n\n\nIch weiß es nicht\nder Mittelwert der Beobachtungen\ndie Mitte der Box\nder Median der Beobachtungen"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#poll-2-wie-viel-prozent-der-beobachtungen-befinden-sich-innerhalb-der-box-eines-boxplots-interquartilsbereich",
     "href": "folien/md-02-datenvisualisierung.html#poll-2-wie-viel-prozent-der-beobachtungen-befinden-sich-innerhalb-der-box-eines-boxplots-interquartilsbereich",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Poll 2: Wie viel Prozent der Beobachtungen befinden sich innerhalb der Box eines Boxplots (Interquartilsbereich)?",
-    "text": "Poll 2: Wie viel Prozent der Beobachtungen befinden sich innerhalb der Box eines Boxplots (Interquartilsbereich)?\n\n\n\nIch weiß es nicht\n25%\nhängt vom Median ab\n50%\n\n\n\nggplot(data = gapminder,\n       mapping = aes(x = continent,\n                     y = lifeExp)) +\n  geom_boxplot() +\n  theme_minimal(base_size = 14)"
+    "text": "Poll 2: Wie viel Prozent der Beobachtungen befinden sich innerhalb der Box eines Boxplots (Interquartilsbereich)?\n\n\n\nIch weiß es nicht\n25%\nhängt vom Median ab\n50%"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#poll-3-was-ist-der-median-einer-gruppe-von-beobachtungen",
@@ -1168,35 +1168,35 @@
     "href": "folien/md-02-datenvisualisierung.html#boxplot-erklärt",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Boxplot, erklärt",
-    "text": "Boxplot, erklärt\n\n\n\n\n\n\n\n\nFigure 1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.\n\n\n\n\n\n\nBild entnommen aus: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nDie Box ist ein Feld, das den Bereich der mittleren Hälfte der Daten angibt, eine Distanz, die als Interquartilbereich (IQR) bekannt ist und sich vom 25. Perzentil der Verteilung bis zum 75. Perzentil erstreckt.\nIn der Mitte der Box befindet sich eine Linie, die den Median, d. h. das 50. Perzentil, der Verteilung anzeigt.\nDiese drei Linien vermitteln einen Eindruck von der Streuung der Verteilung und davon, ob die Verteilung symmetrisch um den Median oder zu einer Seite hin verzerrt ist.\nVisuelle Punkte, die Beobachtungen anzeigen, die mehr als das 1,5-Fache des IQR von einem der Ränder des Kastens entfernt liegen. Diese Ausreißer sind ungewöhnlich und werden daher einzeln dargestellt.\nEine Linie (oder ein Whisker), die sich von jedem Ende des Kastens bis zum am weitesten entfernten Punkt in der Verteilung erstreckt, der kein Ausreißer ist."
+    "text": "Boxplot, erklärt\n\n\nFigure 1: Diagramm, das zeigt, wie ein Boxplot erstellt wird.\n\nBild entnommen aus: https://r4ds.hadley.nz/data-visualize#fig-eda-boxplot\n\n\n\nDie Box ist ein Feld, das den Bereich der mittleren Hälfte der Daten angibt, eine Distanz, die als Interquartilbereich (IQR) bekannt ist und sich vom 25. Perzentil der Verteilung bis zum 75. Perzentil erstreckt.\nIn der Mitte der Box befindet sich eine Linie, die den Median, d. h. das 50. Perzentil, der Verteilung anzeigt.\nDiese drei Linien vermitteln einen Eindruck von der Streuung der Verteilung und davon, ob die Verteilung symmetrisch um den Median oder zu einer Seite hin verzerrt ist.\nVisuelle Punkte, die Beobachtungen anzeigen, die mehr als das 1,5-Fache des IQR von einem der Ränder des Kastens entfernt liegen. Diese Ausreißer sind ungewöhnlich und werden daher einzeln dargestellt.\nEine Linie (oder ein Whisker), die sich von jedem Ende des Kastens bis zum am weitesten entfernten Punkt in der Verteilung erstreckt, der kein Ausreißer ist."
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
     "href": "folien/md-02-datenvisualisierung.html#wir-sind-dran-md-02-uebungen",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Wir sind dran: md-02-uebungen",
-    "text": "Wir sind dran: md-02-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei md-02b-daten-visualisierung.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\ncountdown(20)\n\n\n−+\n20:00"
+    "text": "Wir sind dran: md-02-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-02-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei md-02b-daten-visualisierung.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#pause-machen-1",
     "href": "folien/md-02-datenvisualisierung.html#pause-machen-1",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Pause machen",
-    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\ncountdown(minutes = 5)\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
+    "text": "Pause machen\nBitte steh auf und beweg dich. Lasst eure E-Mails in Frieden ruhen.\n\n\n\n\n−+\n05:00\n\n\n\n\nBild erzeugt mit DALL-E 3 by OpenAI"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#variablen-typen",
     "href": "folien/md-02-datenvisualisierung.html#variablen-typen",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Variablen Typen",
-    "text": "Variablen Typen\n\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
+    "text": "Variablen Typen\n\n\n\nNumerisch\nDiskrete Variablen\n\nnicht negative\nzählbare\nganze Zahlen\nz.B. Anzahl Schüler, Würfelwurf\n\nStetige (kontinuierliche) Variablen\n\nunendliche Anzahl von Werten\nzwischen zwei Werten\nauch Datums/Uhrzeitwerte\nz.B. Länge, Gewicht, Grösse\n\n\nNicht numerisch\nKategoriale Variablen\n\nendliche Anzahl von Werten\neindeutige Gruppen (z.B. EU Länder)\nordinal, wenn diese eine logische Reihenfolge/Rangordnung aufweisen (z.B. Wochentage)"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#histogramm",
     "href": "folien/md-02-datenvisualisierung.html#histogramm",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Histogramm",
-    "text": "Histogramm\n\nzur Visualisierung der Verteilung von kontinuierlichen (numerischen) Variablen\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g)) +\n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_bin()`)."
+    "text": "Histogramm\n\nzur Visualisierung der Verteilung von kontinuierlichen (numerischen) Variablen\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g)) +\n  geom_histogram()"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#barplot-säulendiagramm",
@@ -1217,7 +1217,7 @@
     "href": "folien/md-02-datenvisualisierung.html#modul-2-dokumentation",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Modul 2 Dokumentation",
-    "text": "Modul 2 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-02.html"
+    "text": "Modul 2 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-02.html"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#zusatzaufgaben-abgabedatum",
@@ -1231,14 +1231,14 @@
     "href": "folien/md-02-datenvisualisierung.html#danke-1",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-10-funktionen.html#lernziele-für-diese-woche",
     "href": "folien/md-10-funktionen.html#lernziele-für-diese-woche",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
-    "section": "",
-    "text": "Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen."
   },
   {
     "objectID": "folien/md-10-funktionen.html#lernende-kanton-zürich",
@@ -1308,7 +1308,7 @@
     "href": "folien/md-10-funktionen.html#ihr-seid-dran-01-funktionen.qmd",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Ihr seid dran: 01-funktionen.qmd",
-    "text": "Ihr seid dran: 01-funktionen.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-funktionen.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: 01-funktionen.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-funktionen.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\ncountdown(15)\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-10-funktionen.html#parameter-in-quarto-dokumenten",
@@ -1343,7 +1343,7 @@
     "href": "folien/md-10-funktionen.html#klone-das-repository-md-10-paramater-benutzername",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Klone das Repository md-10-paramater-BENUTZERNAME",
-    "text": "Klone das Repository md-10-paramater-BENUTZERNAME\n\nÖffne https://www.github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-10-parameter-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
+    "text": "Klone das Repository md-10-paramater-BENUTZERNAME\n\nÖffne https://www.github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-10-parameter-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde."
   },
   {
     "objectID": "folien/md-10-funktionen.html#pause-machen",
@@ -1399,7 +1399,7 @@
     "href": "folien/md-10-funktionen.html#abschlussprojekt",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Abschlussprojekt",
-    "text": "Abschlussprojekt\n\nrstatszh-k009.github.io/website/abschlussprojekt/"
+    "text": "Abschlussprojekt\n\nrstatszh-k010.github.io/website/abschlussprojekt/"
   },
   {
     "objectID": "folien/md-10-funktionen.html#abschlussveranstaltung",
@@ -1434,7 +1434,7 @@
     "href": "folien/md-10-funktionen.html#lernziele-des-kurses",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Lernziele des Kurses",
-    "text": "Lernziele des Kurses\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n. . .\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n. . .\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten."
+    "text": "Lernziele des Kurses\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n\n\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten."
   },
   {
     "objectID": "folien/md-10-funktionen.html#ihr-seid-dran-5-min-nachdenken-notizen-machen",
@@ -1469,7 +1469,7 @@
     "href": "folien/md-10-funktionen.html#modul-10-dokumentation",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Modul 10 Dokumentation",
-    "text": "Modul 10 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-10.html"
+    "text": "Modul 10 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-10.html"
   },
   {
     "objectID": "folien/md-10-funktionen.html#zusatzaufgaben-abgabedatum",
@@ -1483,14 +1483,14 @@
     "href": "folien/md-10-funktionen.html#danke-1",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
     "href": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
     "title": "Daten Typen & Vektoren & For Loops",
-    "section": "",
-    "text": "ggplot(data = lernende2022_stufe_staat_sum,\n       mapping = aes(x = Stufe, \n                     y = Prozent, \n                     fill = Staatsangehoerigkeit)) +\n    coord_flip() +\n    geom_col() +\n    geom_text(aes(label = paste0(round(Prozent, 0), \"%\")),  \n              position = position_stack(vjust = 0.5)) +\n    labs(title = \"Lernende im Kanton Zürich \",\n         subtitle = \"nach Staatsangehörigkeit und Stufe im Jahr 2022\",\n         fill = \"Staatsangehörigkeit\",\n         caption = \"Daten: zh.ch/daten\",\n         y = NULL,\n         x = NULL) +\n    theme_minimal() +\n    theme(legend.position = \"bottom\", \n          panel.grid.major.y = element_blank())"
+    "section": "Modul 5 - Zusatzaufgabe 3",
+    "text": "Modul 5 - Zusatzaufgabe 3\n\n\nggplot(data = lernende2022_stufe_staat_sum,\n       mapping = aes(x = Stufe, \n                     y = Prozent, \n                     fill = Staatsangehoerigkeit)) +\n    coord_flip() +\n    geom_col() +\n    geom_text(aes(label = paste0(round(Prozent, 0), \"%\")),  \n              position = position_stack(vjust = 0.5)) +\n    labs(title = \"Lernende im Kanton Zürich \",\n         subtitle = \"nach Staatsangehörigkeit und Stufe im Jahr 2022\",\n         fill = \"Staatsangehörigkeit\",\n         caption = \"Daten: zh.ch/daten\",\n         y = NULL,\n         x = NULL) +\n    theme_minimal() +\n    theme(legend.position = \"bottom\", \n          panel.grid.major.y = element_blank())"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#lernziele-für-diese-woche",
@@ -1595,7 +1595,7 @@
     "href": "folien/md-06-daten-typen.html#ihr-seid-dran-02-vektor-typen-ihr.qmd",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Ihr seid dran: 02-vektor-typen-ihr.qmd",
-    "text": "Ihr seid dran: 02-vektor-typen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-vektor-typen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
+    "text": "Ihr seid dran: 02-vektor-typen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-vektor-typen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#zeitpuffer-modul-6-uebungen",
@@ -1623,7 +1623,7 @@
     "href": "folien/md-06-daten-typen.html#lösung-.gitignore",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Lösung: .gitignore",
-    "text": "Lösung: .gitignore\n\nDateien und Verzeichnisse in .gitignore eintragen\nwerden nicht auf GitHub hochgeladen\n\n\n\n\n\n\n\nDaten teilen\n\n\n\nDamit eine Analyse reproduzierbar ist, müssen die Daten für andere zugänglich sein. Die Dateien können auf anderen Wegen geteilt werden, z.B. per E-Mail, USB-Stick, Cloud-Dienst, etc."
+    "text": "Lösung: .gitignore\n\nDateien und Verzeichnisse in .gitignore eintragen\nwerden nicht auf GitHub hochgeladen\n\n\n\n\n\n\n\nDaten teilen\n\n\nDamit eine Analyse reproduzierbar ist, müssen die Daten für andere zugänglich sein. Die Dateien können auf anderen Wegen geteilt werden, z.B. per E-Mail, USB-Stick, Cloud-Dienst, etc."
   },
   {
     "objectID": "folien/md-06-daten-typen.html#informationssicherheit",
@@ -1637,7 +1637,7 @@
     "href": "folien/md-06-daten-typen.html#wir-sind-dran-03-gitignore-wir.qmd-docs04-dateipfade.qmd",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd",
-    "text": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-gitignore-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
+    "text": "Wir sind dran: 03-gitignore-wir.qmd & docs/04-dateipfade.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-06-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-gitignore-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#zeitpuffer-modul-6-uebungen-1",
@@ -1651,7 +1651,7 @@
     "href": "folien/md-06-daten-typen.html#modul-6-dokumentation",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Modul 6 Dokumentation",
-    "text": "Modul 6 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-06.html"
+    "text": "Modul 6 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-06.html"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#zusatzaufgaben-abgabedatum",
@@ -1665,7 +1665,7 @@
     "href": "folien/md-06-daten-typen.html#danke-1",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "abschlussprojekt/index.html",
@@ -1751,99 +1751,99 @@
     "objectID": "folien/md-01-willkommen.html#triff-die-kursleitung",
     "href": "folien/md-01-willkommen.html#triff-die-kursleitung",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Lars Schöbitz\n\n\n\n\n\n\n\nUmweltingenieur 🔨\nForscher im Ruhestand 🛏\nRStudio zertifizierte Lehrkraft\nData Steward an der ETH Zurich"
+    "section": "Triff die Kursleitung",
+    "text": "Triff die Kursleitung\n\n\nLars Schöbitz\n\n\n\n\n\n\n\nUmweltingenieur 🔨\nForscher im Ruhestand 🛏\nRStudio zertifizierte Lehrkraft\nData Steward an der ETH Zurich"
   },
   {
     "objectID": "folien/md-01-willkommen.html#lernziele-des-kurses",
     "href": "folien/md-01-willkommen.html#lernziele-des-kurses",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Die folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n. . .\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n. . .\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten."
+    "section": "Lernziele des Kurses",
+    "text": "Lernziele des Kurses\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n\n\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten."
   },
   {
     "objectID": "folien/md-01-willkommen.html#du-bist-dran-über-dich",
     "href": "folien/md-01-willkommen.html#du-bist-dran-über-dich",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Wähle einen Gegenstand aus und mache dir eine Minute lang Notizen.\nWas hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?\n\n\n\n\n\n\n−+\n01:00"
+    "section": "Du bist dran: Über Dich",
+    "text": "Du bist dran: Über Dich\n\n\nWähle einen Gegenstand aus und mache dir eine Minute lang Notizen.\nWas hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?\n\n\n\n\n\n\n−+\n01:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#in-paaren",
     "href": "folien/md-01-willkommen.html#in-paaren",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Nehmt euch jeweils 2 Minuten Zeit, um euch auszutauschen:\n\nWas hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?\n\n\n\n\n\n\n−+\n05:00"
+    "section": "In Paaren",
+    "text": "In Paaren\n\nNehmt euch jeweils 2 Minuten Zeit, um euch auszutauschen:\n\nWas hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?\n\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#kurskalendar",
     "href": "folien/md-01-willkommen.html#kurskalendar",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "modul\ndatum\ntitel\n\n\n\n\nModul 01\n24 September 2024\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n01 Oktober 2024\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n08 Oktober 2024\nDaten Transformation mit dplyr\n\n\nModul 04\n15 Oktober 2024\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n22 Oktober 2024\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\n29 Oktober 2024\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n05 November 2024\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n12 November 2024\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub III\n\n\nModul 09\n19 November 2024\nErstellung und Veröffentlichung analytischer Artikel mit Quarto & Tabellen & und Publizieren mit GitHub Pages\n\n\nModul 10\n26 November 2024\nFunktionen schreiben & Iteration II (across()) & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n03 Dezember 2024\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n10 Dezember 2024\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n17 Dezember 2024\nAbschlussveranstaltung"
+    "section": "Kurskalendar",
+    "text": "Kurskalendar\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nModul 01\n25 Februar 2025\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n04 März 2025\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n11 März 2025\nDaten Transformation mit dplyr\n\n\nModul 04\n18 März 2025\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n25 März 2025\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n01 April 2025\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n08 April 2025\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n15 April 2025\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n22 April 2025\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n29 April 2025\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n06 Mai 2025\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n13 Mai 2025\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n20 Mai 2025\nAbschlussveranstaltung"
   },
   {
     "objectID": "folien/md-01-willkommen.html#kursstruktur",
     "href": "folien/md-01-willkommen.html#kursstruktur",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Ich bin dran: Vortragssegmente + Live-Coding\nWir sind dran: Live-Coding + Mitmachen\nIhr seid dran: Übungen in Paaren"
+    "section": "Kursstruktur",
+    "text": "Kursstruktur\n\nIch bin dran: Vortragssegmente + Live-Coding\nWir sind dran: Live-Coding + Mitmachen\nIhr seid dran: Übungen in Paaren"
   },
   {
     "objectID": "folien/md-01-willkommen.html#ich-bin-dran-vortragssegmente-live-coding",
     "href": "folien/md-01-willkommen.html#ich-bin-dran-vortragssegmente-live-coding",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Der Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt Konzepte und Prinzipien, die relevant sind\nCode wird auf dem Bildschirm angezeigt"
+    "section": "Ich bin dran: Vortragssegmente + Live-Coding",
+    "text": "Ich bin dran: Vortragssegmente + Live-Coding\n\nDer Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt Konzepte und Prinzipien, die relevant sind\nCode wird auf dem Bildschirm angezeigt"
   },
   {
     "objectID": "folien/md-01-willkommen.html#wir-sind-dran-live-coding-mitmachen",
     "href": "folien/md-01-willkommen.html#wir-sind-dran-live-coding-mitmachen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Der Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt relevante Konzepte und Prinzipien\nDer Code wird auf dem Bildschirm angezeigt\nDie Lernenden machen mit, indem sie denselben Code schreiben und ausführen"
+    "section": "Wir sind dran: Live-Coding + Mitmachen",
+    "text": "Wir sind dran: Live-Coding + Mitmachen\n\nDer Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt relevante Konzepte und Prinzipien\nDer Code wird auf dem Bildschirm angezeigt\nDie Lernenden machen mit, indem sie denselben Code schreiben und ausführen"
   },
   {
     "objectID": "folien/md-01-willkommen.html#ihr-seid-dran-übungen-in-paaren",
     "href": "folien/md-01-willkommen.html#ihr-seid-dran-übungen-in-paaren",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Zwei Lernende arbeiten in Paaren in Break-out Räumen zusammen\nEine Person tippt und teilt die Bildschirmanzeige\nEine Person bietet Kommentare und Vorschläge an, und tippt selbst auch mit"
+    "section": "Ihr seid dran: Übungen in Paaren",
+    "text": "Ihr seid dran: Übungen in Paaren\n\nZwei Lernende arbeiten in Paaren in Break-out Räumen zusammen\nEine Person tippt und teilt die Bildschirmanzeige\nEine Person bietet Kommentare und Vorschläge an, und tippt selbst auch mit"
   },
   {
     "objectID": "folien/md-01-willkommen.html#unterstützung-bekommen-fragen-stellen",
     "href": "folien/md-01-willkommen.html#unterstützung-bekommen-fragen-stellen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Während Live-Coding: hebt die Hand mittels Zoom und unterbrecht mich. Ich werde versuchen, mich um dein Anliegen zu kümmern, wenn es die Zeit erlaubt. Offene Fragen werden dokumentiert.\nWährend Übungen in Break-out Räumen: Ihr könnt mich zu euch rufen. Bei einem Grossteil der Übungen werde ich versuchen in jedem Raum einmal vorbeizuschauen."
+    "section": "Unterstützung bekommen / Fragen stellen",
+    "text": "Unterstützung bekommen / Fragen stellen\n\nWährend Live-Coding: hebt die Hand mittels Zoom und unterbrecht mich. Ich werde versuchen, mich um dein Anliegen zu kümmern, wenn es die Zeit erlaubt. Offene Fragen werden dokumentiert.\nWährend Übungen in Break-out Räumen: Ihr könnt mich zu euch rufen. Bei einem Grossteil der Übungen werde ich versuchen in jedem Raum einmal vorbeizuschauen."
   },
   {
     "objectID": "folien/md-01-willkommen.html#verhaltenskodex",
     "href": "folien/md-01-willkommen.html#verhaltenskodex",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Diversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k009.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen."
+    "section": "Verhaltenskodex",
+    "text": "Verhaltenskodex\n\n\n\nDiversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k010.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen."
   },
   {
     "objectID": "folien/md-01-willkommen.html#website-zum-kurs",
     "href": "folien/md-01-willkommen.html#website-zum-kurs",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "rstatszh-k009.github.io/website/"
+    "section": "Website zum Kurs",
+    "text": "Website zum Kurs\nrstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
     "href": "folien/md-01-willkommen.html#wir-sind-dran-öffne-und-speichere-die-kurswebsite-als-lesezeichen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Öffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k009 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k009 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00"
+    "section": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen",
+    "text": "Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k010.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k010 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k010 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#lernziele-für-diese-woche",
     "href": "folien/md-01-willkommen.html#lernziele-für-diese-woche",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Die Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernenden können die vier Fenster der RStudio IDE identifizieren."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernenden können die vier Fenster der RStudio IDE identifizieren."
   },
   {
     "objectID": "folien/md-01-willkommen.html#section",
@@ -1906,7 +1906,7 @@
     "href": "folien/md-01-willkommen.html#quarto-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Quarto …",
-    "text": "Quarto …\n\nist ein neues, open-source, wissenschaftliches und technisches Publikationssystem\nzielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto …\n\nist ein neues, open-source, wissenschaftliches und technisches Publikationssystem\nzielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "folien/md-01-willkommen.html#ich-bin-dran-ein-rundgang-durch-rstudio-ide-und-quarto",
@@ -1927,7 +1927,7 @@
     "href": "folien/md-01-willkommen.html#ihr-seid-dran-md-01-uebungen",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Ihr seid dran: md-01-uebungen",
-    "text": "Ihr seid dran: md-01-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-01-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei “hallo-quarto.qmd” und klicke darauf, um sie im Fenster oben links zu öffnen.\nRender das Dokument.\nFüge deinen Namen zum Schlüssel author: im YAML-Header hinzu\nRender das Dokument.\nUntersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.\nBesprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.\n\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: md-01-uebungen\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-01-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei “hallo-quarto.qmd” und klicke darauf, um sie im Fenster oben links zu öffnen.\nRender das Dokument.\nFüge deinen Namen zum Schlüssel author: im YAML-Header hinzu\nRender das Dokument.\nUntersuche die Komponenten des Dokuments und führe eine weitere Aktualisierung und ein erneutes Rendern durch.\nBesprich die Notizen zu den von dir vorgenommenen Aktualisierungen. Notiere alle Aspekte des Dokuments, die nach der Tour und deiner ersten Interaktion damit unklar sind.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#von-deiner-eigenen-arbeitsumgebung-aus",
@@ -1941,7 +1941,7 @@
     "href": "folien/md-01-willkommen.html#mit-einer-installation-ist-alles-enthalten",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Mit einer Installation ist alles enthalten",
-    "text": "Mit einer Installation ist alles enthalten\n\nRMarkdown entwickelte sich zu einem großen Ökosystem mit unterschiedlicher Syntax.\nQuarto kommt mit allem was es braucht um verschiedene Formate zu erstellen.\n\nHTML Berichte und Webseiten\nPDF Berichte\nMS Office (Word, Powerpoint)\nPräsentationen (Powerpoint, Beamer, revealjs)\nBücher\n\n\n. . .\n\nJede Programmiersprache, exakt gleiche Vorgehensweise und Syntax"
+    "text": "Mit einer Installation ist alles enthalten\n\nRMarkdown entwickelte sich zu einem großen Ökosystem mit unterschiedlicher Syntax.\nQuarto kommt mit allem was es braucht um verschiedene Formate zu erstellen.\n\nHTML Berichte und Webseiten\nPDF Berichte\nMS Office (Word, Powerpoint)\nPräsentationen (Powerpoint, Beamer, revealjs)\nBücher\n\n\n\n\nJede Programmiersprache, exakt gleiche Vorgehensweise und Syntax"
   },
   {
     "objectID": "folien/md-01-willkommen.html#viele-quarto-formate",
@@ -1997,35 +1997,35 @@
     "href": "folien/md-01-willkommen.html#ihr-seid-dran-klone-ein-repository-von-github",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Ihr seid dran: Klone ein Repository von GitHub",
-    "text": "Ihr seid dran: Klone ein Repository von GitHub\n\nÖffne einen Webbrowser auf deinem Laptop.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nFalls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.\nKlicke im Menü auf der linken Seite auf Modul 1\nIn der Modulübersicht, scrolle nach unten zur Sektion “Zusatzaufgaben” und öffne “Zusatzaufgabe 1: Git configuration”\nFolge den Anweisungen auf der Website, um das Repository von GitHub zu klonen.\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: Klone ein Repository von GitHub\n\nÖffne einen Webbrowser auf deinem Laptop.\nGehe zur Website des Kurses: rstatszh-k010.github.io/website/\nFalls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.\nKlicke im Menü auf der linken Seite auf Modul 1\nIn der Modulübersicht, scrolle nach unten zur Sektion “Zusatzaufgaben” und öffne “Zusatzaufgabe 1: Git configuration”\nFolge den Anweisungen auf der Website, um das Repository von GitHub zu klonen.\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-01-willkommen.html#modul-1-dokumentation",
     "href": "folien/md-01-willkommen.html#modul-1-dokumentation",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Modul 1 Dokumentation",
-    "text": "Modul 1 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-01.html"
+    "text": "Modul 1 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-01.html"
   },
   {
     "objectID": "folien/md-01-willkommen.html#danke-1",
     "href": "folien/md-01-willkommen.html#danke-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
     "href": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
-    "section": "",
-    "text": "Die Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzeptes widergeben."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzeptes widergeben."
   },
   {
     "objectID": "folien/md-07-daten-formen.html#ihr-seid-dran-01-treibhausgase-ihr.qmd",
     "href": "folien/md-07-daten-formen.html#ihr-seid-dran-01-treibhausgase-ihr.qmd",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Ihr seid dran: 01-treibhausgase-ihr.qmd",
-    "text": "Ihr seid dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#daten-struktur-treibhausgase",
@@ -2207,7 +2207,7 @@
     "href": "folien/md-07-daten-formen.html#relevanter-unterschied---ziel-der-daten-publikation",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Relevanter Unterschied - Ziel der Daten Publikation",
-    "text": "Relevanter Unterschied - Ziel der Daten Publikation\n\n\nDaten in Tabellen darstellen\n\nLayout\n\nGut leserlich\nKompakt\nErkenntnis bringend\n\nMetadaten\n\n\nDaten für weitere Nutzung bereitstellen\n\nLayout (Tidy data)\n\nEigenschaft 1: Jede Spalte ist eine Variable\nEigenschaft 2: Jede Reihe ist eine Beobachtung\nEigenschaft 3: Jede Zelle enthält eine Messung\n\nKeine Metadaten\nKeine Farben, Formatierungen, etc.\nFolgt Standards (Datum: ISO 8601)\netc.\n\n\n\n\nSiehe OGD Leitlinien für Hinweis auf Tidy Data: https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md"
+    "text": "Relevanter Unterschied - Ziel der Daten Publikation\n\n\nDaten in Tabellen darstellen\n\nLayout\n\nGut leserlich\nKompakt\nErkenntnis bringend\n\nMetadaten\n\n\nDaten für weitere Nutzung bereitstellen\n\nLayout (Tidy data)\n\nEigenschaft 1: Jede Spalte ist eine Variable\nEigenschaft 2: Jede Reihe ist eine Beobachtung\nEigenschaft 3: Jede Zelle enthält eine Messung\n\nKeine Metadaten\nKeine Farben, Formatierungen, etc.\nFolgt Standards (Datum: ISO 8601)\netc.\n\n\n\nSiehe OGD Leitlinien für Hinweis auf Tidy Data: https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#pause-machen",
@@ -2221,7 +2221,7 @@
     "href": "folien/md-07-daten-formen.html#wir-sind-dran-01-treibhausgase-ihr.qmd",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Wir sind dran: 01-treibhausgase-ihr.qmd",
-    "text": "Wir sind dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
+    "text": "Wir sind dran: 01-treibhausgase-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-treibhausgase-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n25:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#mit-mehreren-dataframes-arbeiten",
@@ -2333,7 +2333,7 @@
     "href": "folien/md-07-daten-formen.html#ihr-seid-dran-02-joins-ihr.qmd",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Ihr seid dran: 02-joins-ihr.qmd",
-    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
+    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n15:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#pause-machen-1",
@@ -2347,7 +2347,7 @@
     "href": "folien/md-07-daten-formen.html#ihr-seid-dran-02-joins-ihr.qmd-1",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Ihr seid dran: 02-joins-ihr.qmd",
-    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 02-joins-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-07-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-joins-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#zeitpuffer-modul-7",
@@ -2361,7 +2361,7 @@
     "href": "folien/md-07-daten-formen.html#modul-7-dokumentation",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Modul 7 Dokumentation",
-    "text": "Modul 7 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-07.html"
+    "text": "Modul 7 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-07.html"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#zusatzaufgaben-abgabedatum",
@@ -2375,14 +2375,14 @@
     "href": "folien/md-07-daten-formen.html#danke-1",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-08-text-daten.html#lernziele-für-diese-woche",
     "href": "folien/md-08-text-daten.html#lernziele-für-diese-woche",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
-    "section": "",
-    "text": "Die Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\nDue Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\nDie Lernenden können das statR R-Paket nutzen um eine Visualisierung im Corporate Design des Kanton Zürich zu erstellen."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\nDue Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\nDie Lernenden können das statR R-Paket nutzen um eine Visualisierung im Corporate Design des Kanton Zürich zu erstellen."
   },
   {
     "objectID": "folien/md-08-text-daten.html#arbeiten-mit-strings-in-r",
@@ -2410,7 +2410,7 @@
     "href": "folien/md-08-text-daten.html#vornamen-statistik",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\nDaten: Vornamen der Bevölkerung nach Jahrgang, Schweiz, 2023\n\n\n\njährlich aktualisierte Daten\nVornamen mit weniger als 3 Nennungen werden ausgeschlossen\nDatenquelle: Bundesamt für Statistik\n\n\n\nFrage: Wieviele einzigartige Vornamen gibt es in der Schweiz?\n\n\n200’000\n1’000\n1.0 mio\n50’000\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\nDaten: Vornamen der Bevölkerung nach Jahrgang, Schweiz, 2023\n\n\n\njährlich aktualisierte Daten\nVornamen mit weniger als 3 Nennungen werden ausgeschlossen\nDatenquelle: Bundesamt für Statistik\n\n\n\nFrage: Wieviele einzigartige Vornamen gibt es in der Schweiz?\n\n\n200’000\n1’000\n1.0 mio\n50’000\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-1",
@@ -2424,42 +2424,42 @@
     "href": "folien/md-08-text-daten.html#vornamen-statistik-2",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) \n\n# A tibble: 10 × 3\n   vorname   geschlecht     n\n   &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;\n 1 Maria     w          74840\n 2 Daniel    m          62884\n 3 Peter     m          54007\n 4 Thomas    m          52732\n 5 Hans      m          44073\n 6 Christian m          41702\n 7 Martin    m          40627\n 8 Anna      w          40387\n 9 Michael   m          39922\n10 Andreas   m          39583\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) \n\n\n# A tibble: 10 × 3\n   vorname   geschlecht     n\n   &lt;chr&gt;     &lt;chr&gt;      &lt;dbl&gt;\n 1 Maria     w          74840\n 2 Daniel    m          62884\n 3 Peter     m          54007\n 4 Thomas    m          52732\n 5 Hans      m          44073\n 6 Christian m          41702\n 7 Martin    m          40627\n 8 Anna      w          40387\n 9 Michael   m          39922\n10 Andreas   m          39583\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-3",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-3",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem knitr R-Paket\n    kable()\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem knitr R-Paket\n    kable()\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-4",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-4",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem gt R-Paket\n    gt()\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # aus dem gt R-Paket\n    gt()\n\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-5",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-5",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # nutze gt R-Package für die Darstellung\n    gt() |&gt; \n    tab_style(\n        style = cell_fill(color = \"#AFF0ED\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"m\"\n        )\n    ) |&gt;\n    tab_style(\n        style = cell_fill(color = \"#FFD700\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"w\"\n        )\n    )\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was sind die häufigsten 10 Vornamen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, geschlecht, \n          wt = wert, sort = TRUE) |&gt;\n    head(n = 10) |&gt;\n    # nutze gt R-Package für die Darstellung\n    gt() |&gt; \n    tab_style(\n        style = cell_fill(color = \"#AFF0ED\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"m\"\n        )\n    ) |&gt;\n    tab_style(\n        style = cell_fill(color = \"#FFD700\"),\n        locations = cells_body(\n            columns = everything(),\n            rows = geschlecht == \"w\"\n        )\n    )\n\n\n\n\n\n\n\n\nvorname\ngeschlecht\nn\n\n\n\n\nMaria\nw\n74840\n\n\nDaniel\nm\n62884\n\n\nPeter\nm\n54007\n\n\nThomas\nm\n52732\n\n\nHans\nm\n44073\n\n\nChristian\nm\n41702\n\n\nMartin\nm\n40627\n\n\nAnna\nw\n40387\n\n\nMichael\nm\n39922\n\n\nAndreas\nm\n39583\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-6",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-6",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\nvornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge) |&gt; \n    print(n = 19)\n\n# A tibble: 19 × 2\n   laenge     n\n    &lt;int&gt; &lt;int&gt;\n 1      2   128\n 2      3  1094\n 3      4  5780\n 4      5 13793\n 5      6 16075\n 6      7 12114\n 7      8  7294\n 8      9  3719\n 9     10  2013\n10     11  1155\n11     12   811\n12     13   559\n13     14   384\n14     15   233\n15     16   131\n16     17    75\n17     18    30\n18     19     9\n19     20     4\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\n\nvornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge) |&gt; \n    print(n = 19)\n\n\n# A tibble: 19 × 2\n   laenge     n\n    &lt;int&gt; &lt;int&gt;\n 1      2   128\n 2      3  1094\n 3      4  5780\n 4      5 13793\n 5      6 16075\n 6      7 12114\n 7      8  7294\n 8      9  3719\n 9     10  2013\n10     11  1155\n11     12   811\n12     13   559\n13     14   384\n14     15   233\n15     16   131\n16     17    75\n17     18    30\n18     19     9\n19     20     4\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#vornamen-statistik-7",
     "href": "folien/md-08-text-daten.html#vornamen-statistik-7",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik",
-    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\nvornamen_laenge_sum &lt;- vornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge)\n\nggplot(data = vornamen_laenge_sum, \n       mapping = aes(x = laenge, y = n)) +\n    geom_col() +\n    theme_minimal(base_size = 12)\n\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik\n\nFrage: Was ist die Verteilung der Vornamenlängen in der Schweiz?\n\n\nvornamen_laenge_sum &lt;- vornamen |&gt; \n    count(vorname, wt = wert) |&gt; \n    mutate(laenge = str_length(vorname)) |&gt; \n    count(laenge)\n\nggplot(data = vornamen_laenge_sum, \n       mapping = aes(x = laenge, y = n)) +\n    geom_col() +\n    theme_minimal(base_size = 12)\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#ihr-seid-dran-vornamen-statistik",
@@ -2473,7 +2473,7 @@
     "href": "folien/md-08-text-daten.html#stringr-zeichenkettenmanipulation-in-r",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "stringr: Zeichenkettenmanipulation in R",
-    "text": "stringr: Zeichenkettenmanipulation in R\n\n\nHauptmerkmale:\n\nTeil der tidyverse R-Pakete\nKonsistente Syntax mit str_-Präfix\n\n\nFunktionen:\n\nstr_length(): Stringlänge ermitteln\nstr_c(): Strings verketten\nstr_sub(): Teilstrings extrahieren/ersetzen\nstr_detect(): Mustererkennung\nstr_count(): Anzahl Vorkommen eines Musters\n…\n\n\n\n\nstringr Dokumentation: https://stringr.tidyverse.org/"
+    "text": "stringr: Zeichenkettenmanipulation in R\n\n\nHauptmerkmale:\n\nTeil der tidyverse R-Pakete\nKonsistente Syntax mit str_-Präfix\n\n\nFunktionen:\n\nstr_length(): Stringlänge ermitteln\nstr_c(): Strings verketten\nstr_sub(): Teilstrings extrahieren/ersetzen\nstr_detect(): Mustererkennung\nstr_count(): Anzahl Vorkommen eines Musters\n…\n\n\n\nstringr Dokumentation: https://stringr.tidyverse.org/"
   },
   {
     "objectID": "folien/md-08-text-daten.html#ich-bin-dran-stringr-r-paket",
@@ -2494,7 +2494,7 @@
     "href": "folien/md-08-text-daten.html#vornamen-statistik-mit-statr-r-paket",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Vornamen Statistik mit statR R-Paket",
-    "text": "Vornamen Statistik mit statR R-Paket\n\n\n\n\n\n\n\n\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
+    "text": "Vornamen Statistik mit statR R-Paket\n\n\nDatenquelle: Weibliche Vornamen & Männliche Vornamen"
   },
   {
     "objectID": "folien/md-08-text-daten.html#statr-r-paket",
@@ -2508,7 +2508,7 @@
     "href": "folien/md-08-text-daten.html#wir-sind-dran-02-statr-wir.qmd",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Wir sind dran: 02-statR-wir.qmd",
-    "text": "Wir sind dran: 02-statR-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-statR-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
+    "text": "Wir sind dran: 02-statR-wir.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-statR-wir.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-08-text-daten.html#pause-machen-1",
@@ -2522,7 +2522,7 @@
     "href": "folien/md-08-text-daten.html#ihr-seid-dran-03-vornamen-ihr.qmd",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Ihr seid dran: 03-vornamen-ihr.qmd",
-    "text": "Ihr seid dran: 03-vornamen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-vornamen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
+    "text": "Ihr seid dran: 03-vornamen-ihr.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-08-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-vornamen-ihr.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-08-text-daten.html#zeitpuffer-modul-8",
@@ -2536,7 +2536,7 @@
     "href": "folien/md-08-text-daten.html#modul-8-dokumentation",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Modul 8 Dokumentation",
-    "text": "Modul 8 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-08.html"
+    "text": "Modul 8 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-08.html"
   },
   {
     "objectID": "folien/md-08-text-daten.html#zusatzaufgaben-abgabedatum",
@@ -2550,21 +2550,21 @@
     "href": "folien/md-08-text-daten.html#danke-1",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-09-quarto.html#lernziele-für-diese-woche",
     "href": "folien/md-09-quarto.html#lernziele-für-diese-woche",
     "title": "Erstellung von Berichten und Folien mit Quarto",
-    "section": "",
-    "text": "Die Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen."
+    "section": "Lernziele (für diese Woche)",
+    "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen."
   },
   {
     "objectID": "folien/md-09-quarto.html#quarto-1",
     "href": "folien/md-09-quarto.html#quarto-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Quarto …",
-    "text": "Quarto …\n\nist ein neues, open-source, wissenschaftliches und technisches Publikationssystem\nzielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern\n\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto …\n\nist ein neues, open-source, wissenschaftliches und technisches Publikationssystem\nzielt darauf ab, den Prozess der Erstellung von Berichten und der Zusammenarbeit drastisch zu verbessern\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "folien/md-09-quarto.html#artikel-berichte-html",
@@ -2620,7 +2620,7 @@
     "href": "folien/md-09-quarto.html#komponenten",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Komponenten",
-    "text": "Komponenten\n\nMetadaten: YAML\nText: Markdown\nCode: Ausgeführt via knitr (R) oder jupyter (python)\n\n. . .\nFüge alles zusammen und du erhältst anschauliche, schöne und nützliche Ergebnisse!"
+    "text": "Komponenten\n\nMetadaten: YAML\nText: Markdown\nCode: Ausgeführt via knitr (R) oder jupyter (python)\n\n\nFüge alles zusammen und du erhältst anschauliche, schöne und nützliche Ergebnisse!"
   },
   {
     "objectID": "folien/md-09-quarto.html#literate-programming",
@@ -2641,7 +2641,7 @@
     "href": "folien/md-09-quarto.html#output-ausgabe-optionen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Output (Ausgabe) Optionen",
-    "text": "Output (Ausgabe) Optionen\n---\nformat: etwas\n---\n. . .\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+    "text": "Output (Ausgabe) Optionen\n---\nformat: etwas\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
   },
   {
     "objectID": "folien/md-09-quarto.html#output-ausgabe-optionen-argumente",
@@ -2711,14 +2711,14 @@
     "href": "folien/md-09-quarto.html#listen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Listen",
-    "text": "Listen\nUngeordnete Liste:\n\n\nMarkdown:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1 \n\nAusgabe\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\nGeordnete Liste:\n\n\nMarkdown:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nAusgabe\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
+    "text": "Listen\nUngeordnete Liste:\n\n\nMarkdown:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1 \n\nAusgabe\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nGeordnete Liste:\n\n\nMarkdown:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nAusgabe\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
   },
   {
     "objectID": "folien/md-09-quarto.html#zitate",
     "href": "folien/md-09-quarto.html#zitate",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Zitate",
-    "text": "Zitate\nMarkdown:\n&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. \n&gt; - Donald Knuth, Literate Programming\n. . .\nOutput:\n\nLet us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming\n\n\n\n@knuth1984literate"
+    "text": "Zitate\nMarkdown:\n&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. \n&gt; - Donald Knuth, Literate Programming\n\nOutput:\n\nLet us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming\n\n\n\n\n@knuth1984literate"
   },
   {
     "objectID": "folien/md-09-quarto.html#fussnoten",
@@ -2732,14 +2732,14 @@
     "href": "folien/md-09-quarto.html#inline-fussnoten",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Inline-Fussnoten",
-    "text": "Inline-Fussnoten\nHier ist eine Inline-Notiz.^[Inline-Notizen sind einfacher zu schreiben,\nda man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um\num die Notiz zu schreiben.]\nHier ist eine Inline-Notiz.1\n\n\n\n\n\n\nVerwende den visuellen Editor-Modus (Visual editor)\n\n\n\nFür das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen."
+    "text": "Inline-Fussnoten\nHier ist eine Inline-Notiz.^[Inline-Notizen sind einfacher zu schreiben,\nda man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um\num die Notiz zu schreiben.]\nHier ist eine Inline-Notiz.1\n\n\n\n\n\n\nVerwende den visuellen Editor-Modus (Visual editor)\n\n\nFür das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.\n\n\n\nInline-Notizen sind einfacher zu schreiben, da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um die Notiz zu schreiben."
   },
   {
     "objectID": "folien/md-09-quarto.html#ihr-seid-dran-01-markdown-syntax.qmd",
     "href": "folien/md-09-quarto.html#ihr-seid-dran-01-markdown-syntax.qmd",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Ihr seid dran: 01-markdown-syntax.qmd",
-    "text": "Ihr seid dran: 01-markdown-syntax.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-markdown-syntax.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 01-markdown-syntax.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Start neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 01-markdown-syntax.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#pause-machen",
@@ -2781,7 +2781,7 @@
     "href": "folien/md-09-quarto.html#markdown-tabellen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Markdown Tabellen",
-    "text": "Markdown Tabellen\nMarkdown:\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n\n\n\n\n\nVerwende den visuellen Editor-Modus (Visual editor)\n\n\n\nFür das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.\n\n\n. . .\nAusgabe:\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+    "text": "Markdown Tabellen\nMarkdown:\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n\n\n\n\n\nVerwende den visuellen Editor-Modus (Visual editor)\n\n\nFür das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.\n\n\n\n\nAusgabe:\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
   },
   {
     "objectID": "folien/md-09-quarto.html#tabellen-mit-code",
@@ -2802,7 +2802,7 @@
     "href": "folien/md-09-quarto.html#markdown-abbildungen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Markdown Abbildungen",
-    "text": "Markdown Abbildungen\n![Pinguine spielen mit einem Quarto-Ball](img/md-09/penguins-quarto-ball.png)\n\n\n\nPinguine spielen mit einem Quarto-Ball"
+    "text": "Markdown Abbildungen\n![Pinguine spielen mit einem Quarto-Ball](img/md-09/penguins-quarto-ball.png)\n\nPinguine spielen mit einem Quarto-Ball"
   },
   {
     "objectID": "folien/md-09-quarto.html#unterabbildungen",
@@ -2823,7 +2823,7 @@
     "href": "folien/md-09-quarto.html#suche-nach-den-abbildungen",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Suche nach den Abbildungen",
-    "text": "Suche nach den Abbildungen\nAn Orten wie Markdown, YAML oder beim Einlesen von Dateien musst du absolute oder relative Dateipfade verwenden:\n. . .\n\nAbsolut = Schlecht: \"/Users/lars/uebungen\" - Auf wessen Computer wird das funktionieren?\n\n. . .\n\nRelativ = Besser:\n\n\"../ = ein Verzeichnis nach oben, ../../ = zwei Verzeichnisse nach oben, etc.\n/.. oder / = beginnen im “root”-Verzeichnis deines aktuellen Computers"
+    "text": "Suche nach den Abbildungen\nAn Orten wie Markdown, YAML oder beim Einlesen von Dateien musst du absolute oder relative Dateipfade verwenden:\n\n\nAbsolut = Schlecht: \"/Users/lars/uebungen\" - Auf wessen Computer wird das funktionieren?\n\n\n\n\nRelativ = Besser:\n\n\"../ = ein Verzeichnis nach oben, ../../ = zwei Verzeichnisse nach oben, etc.\n/.. oder / = beginnen im “root”-Verzeichnis deines aktuellen Computers"
   },
   {
     "objectID": "folien/md-09-quarto.html#abbildungen-mit-code-diagramme",
@@ -2837,7 +2837,7 @@
     "href": "folien/md-09-quarto.html#pfade-in-r-code-referenzieren",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Pfade in R-Code referenzieren",
-    "text": "Pfade in R-Code referenzieren\nVerwende das here-Paket, um auf das Projektverzeichnis zu verweisen, da here::here() immer im obersten Verzeichnis einer .Rproj beginnt:\n\n\n[1] \"/Users/lschoebitz/Documents/gitrepos/gh-org-rstatszh-k009/website\""
+    "text": "Pfade in R-Code referenzieren\nVerwende das here-Paket, um auf das Projektverzeichnis zu verweisen, da here::here() immer im obersten Verzeichnis einer .Rproj beginnt:\n\n\n[1] \"/Users/lschoebitz/Documents/gitrepos/gh-org-rstatszh-k010/website\""
   },
   {
     "objectID": "folien/md-09-quarto.html#abbildungen-mit-code-diagramme-1",
@@ -2879,7 +2879,7 @@
     "href": "folien/md-09-quarto.html#ihr-seid-dran-02-querverweise.qmd",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Ihr seid dran: 02-querverweise.qmd",
-    "text": "Ihr seid dran: 02-querverweise.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-querverweise.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
+    "text": "Ihr seid dran: 02-querverweise.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 02-querverweise.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\nVerwende den Quelltexteditor (Source editor) Modus\nFolge den Anweisungen in der Datei.\n\n\n\n\n\n−+\n20:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#gehts-auch-auf-deutsch",
@@ -2900,14 +2900,14 @@
     "href": "folien/md-09-quarto.html#komponenten-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Komponenten",
-    "text": "Komponenten\n\nMetadaten: YAML\nText: Markdown\nCode: Ausgeführt via knitr (R) oder jupyter (python)\n\n. . .\nFüge alles zusammen und du erhältst anschauliche, schöne und nützliche Folien!"
+    "text": "Komponenten\n\nMetadaten: YAML\nText: Markdown\nCode: Ausgeführt via knitr (R) oder jupyter (python)\n\n\nFüge alles zusammen und du erhältst anschauliche, schöne und nützliche Folien!"
   },
   {
     "objectID": "folien/md-09-quarto.html#wir-sind-dran-03-folien.qmd",
     "href": "folien/md-09-quarto.html#wir-sind-dran-03-folien.qmd",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Wir sind dran: 03-folien.qmd",
-    "text": "Wir sind dran: 03-folien.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-folien.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
+    "text": "Wir sind dran: 03-folien.qmd\n\n\nÖffne posit.cloud in deinem Browser (verwende dein Lesezeichen).\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.\nKlicke auf Continue neben md-09-uebungen.\nSuche im Dateimanager im Fenster unten rechts die Datei 03-folien.qmd und klicke darauf, um sie im Fenster oben links zu öffnen.\n\n\n\n\n\n−+\n30:00"
   },
   {
     "objectID": "folien/md-09-quarto.html#ihr-seid-dran-03-folien.qmd",
@@ -2942,7 +2942,7 @@
     "href": "folien/md-09-quarto.html#modul-9-dokumentation",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Modul 9 Dokumentation",
-    "text": "Modul 9 Dokumentation\n\nrstatszh-k009.github.io/website/module/md-09.html"
+    "text": "Modul 9 Dokumentation\n\nrstatszh-k010.github.io/website/module/md-09.html"
   },
   {
     "objectID": "folien/md-09-quarto.html#zusatzaufgaben-abgabedatum",
@@ -2956,7 +2956,7 @@
     "href": "folien/md-09-quarto.html#danke-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nZugang zu Folien als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International."
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nZugang zu Folien als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/quarto/lernende.html",
@@ -3269,7 +3269,7 @@
     "href": "module/md-02.html#zusatzaufgaben",
     "title": "Modul 2",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2024-09-24.\n\nZusatzaufgabe 1: Daten Visualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-03-04.\n\nZusatzaufgabe 1: Daten Visualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 02"
     ]
@@ -3319,7 +3319,7 @@
     "href": "module/md-05.html#übungsaufgaben",
     "title": "Modul 5",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\nBitte erledige die folgende Aufgaben bis Montag, den 28. Oktober 2024.\n\nZusatzaufgabe 1: OGD Ressourcen\nZusatzaufgabe 2: Abschlussprojekt - Daten auswählen\nZusatzaufgabe 3: Mit R arbeiten - Lernende im Kanton Zürich\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Übungsaufgaben\nBitte erledige die folgende Aufgabe bis 2025-03-25.\n\nZusatzaufgabe 1: OGD Ressourcen\nZusatzaufgabe 2: Abschlussprojekt - Daten auswählen\nZusatzaufgabe 3: Mit R arbeiten - Lernende im Kanton Zürich\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 05"
     ]
@@ -3369,7 +3369,7 @@
     "href": "module/md-04.html#zusatzaufgaben",
     "title": "Modul 4",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2024-10-15.\n\nZusatzaufgabe 1: R for Data Science (r4ds) Übungen\nZusatzaufgabe 2: OGD Daten importieren und erkunden\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-03-18.\n\nZusatzaufgabe 1: R for Data Science (r4ds) Übungen\nZusatzaufgabe 2: OGD Daten importieren und erkunden\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 04"
     ]
@@ -3419,7 +3419,7 @@
     "href": "module/md-07.html#zusatzaufgaben",
     "title": "Modul 7",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-04-08.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
     "crumbs": [
       "Modul 07"
     ]
@@ -3469,7 +3469,7 @@
     "href": "module/md-08.html#zusatzaufgaben",
     "title": "Modul 8",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2024-11-12.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
+    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2025-04-15.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
     "crumbs": [
       "Modul 08"
     ]
@@ -3501,7 +3501,7 @@
     "href": "vorbereitung/02-posit-cloud.html#tritt-dem-kursarbeitsbereich-auf-posit-cloud-bei",
     "title": "rstatsZH - Data Science mit R",
     "section": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei",
-    "text": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei\nÖffne diesen Link: https://posit.cloud/spaces/543494/join?access_code=-NyDPxsirLe5IRY9E8Z6-gsM8ofWxr1WlJvDqmPd",
+    "text": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei\nÖffne diesen Link: https://posit.cloud/spaces/591694/join?access_code=gkqKtTKokYLXVnRhzN4VkH98RnL1p0xVSJN1eq1P",
     "crumbs": [
       "Vorbereitung",
       "Schritt 2: Posit Cloud"
@@ -3584,82 +3584,5 @@
     "title": "Vereinbarung über Verhaltenskodex für Mitwirkende",
     "section": "",
     "text": "Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 2.1, verfügbar unter https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines wurden von Mozillas Code of Conduct Enforcement Ladder inspiriert.\nAntworten auf häufig gestellte Fragen zu diesem Verhaltenskodex finden Sie in den häufig gestellten Fragen unter https://www.contributor-covenant.org/faq (in Englisch). Andere Übersetzungen sind verfügbar unter https://www.contributor-covenant.org/translations."
-  },
-  {
-    "objectID": "folien/md-09-quarto.html",
-    "href": "folien/md-09-quarto.html",
-    "title": "Erstellung von Berichten und Folien mit Quarto",
-    "section": "",
-    "text": "Die Lernenden können Querverweise zu Diagrammen und Tabellen in Quarto Dokumenten erstellen.\nDie Lernenden können Folien im Format revealjs HTML erstellen.\nDie Lernenden können Metadaten eines Quarto Dokuments anpassen."
-  },
-  {
-    "objectID": "folien/md-09-quarto.html#footnotes",
-    "href": "folien/md-09-quarto.html#footnotes",
-    "title": "Erstellung von Berichten und Folien mit Quarto",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nInline-Notizen sind einfacher zu schreiben, da man nicht erst einen Bezeichner auswählen und nach unten gehen muss, um die Notiz zu schreiben.↩︎"
-  },
-  {
-    "objectID": "folien/md-08-text-daten.html",
-    "href": "folien/md-08-text-daten.html",
-    "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
-    "section": "",
-    "text": "Die Lernenden können die Funktion str_detect() aus dem R-Paket stringr verwenden um das Auftreten oder Fehlen bestimmter Muster in Zeichenvektoren (character Vektor) zu ermitteln.\nDue Lernenden können str_detect() mit dplyr Funktionen wie filter() oder mutate() nutzen, um Daten über das Auftreten von Mustern in Teilmengen zu unterteilen oder darauf basierend neue Variablen zu erstellen.\nDie Lernenden können das statR R-Paket nutzen um eine Visualisierung im Corporate Design des Kanton Zürich zu erstellen."
-  },
-  {
-    "objectID": "folien/md-07-daten-formen.html",
-    "href": "folien/md-07-daten-formen.html",
-    "title": "Datenformen lang und breit & Daten zusammenfügen",
-    "section": "",
-    "text": "Die Lernenden können Funktionen aus dem R-Paket tidyr anwenden, um ihre Daten von einem breiten in ein langes Format und umgekehrt umzuwandeln.\nDie Lernenden können Funktionen aus dem dplyr R-Paket anwenden, um mehrere Datensätze zu verknüpfen.\nDie Lernenden können die drei grundlegenden Elemente des Tidy Data Konzeptes widergeben."
-  },
-  {
-    "objectID": "folien/md-01-willkommen.html",
-    "href": "folien/md-01-willkommen.html",
-    "title": "Willkommen zum Kurs & Werkzeugkiste",
-    "section": "",
-    "text": "Lars Schöbitz\n\n\n\n\n\n\n\nUmweltingenieur 🔨\nForscher im Ruhestand 🛏\nRStudio zertifizierte Lehrkraft\nData Steward an der ETH Zurich\n\n\n\n\n\n\nDie folgenden Übergeordneten Lernziele sind für diesen Kurs definiert:\n\nTeilnehmer:innen werden in der Lage sein, eine Reihe gängiger datenwissenschaftlicher Werkzeuge (R, RStudio IDE, Git, GitHub, R tidyverse packages, Quarto) zu verwenden, um die Ergebnisse von Datenanalyseprojekten zu veranschaulichen und öffentlich zu kommunizieren.\n\n. . .\n\nTeilnehmer:innen können das Quarto-Dateiformat und den visuellen Bearbeitungsmodus der RStudio IDE zu verwenden, um technisch-wissenschaftliche Dokumente mit Zitaten, Fußnoten, Querverweisen, Abbildungen und Tabellen zu erstellen.\n\n. . .\n\nTeilnehmer:innen können Git Versionskontrolle verwerden um: (1) Änderungen an Dateien zu GitHub zu übertragen und von GitHub zu übernehmen, (2) Branches zu nutzen und Pull Requests auf GitHub zu öffnen, (3) mittels des GitHub Issue Tracker innerhalb eines Projekts zu kommunizieren und an Aufgaben zusammenzuarbeiten.\n\n\n\n\n\n\nWähle einen Gegenstand aus und mache dir eine Minute lang Notizen.\nWas hat der Gegenstand, den du ausgewählt hast, mit dem Grund zu tun, warum du hier bist?\n\n\n\n\n\n\n−+\n01:00\n\n\n\n\n\n\n\nNehmt euch jeweils 2 Minuten Zeit, um euch auszutauschen:\n\nWas hat der Gegenstand, den ihr ausgewählt habt, mit dem Grund eurer Anwesenheit zu tun?\n\n\n\n\n\n\n−+\n05:00\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nModul 01\n24 September 2024\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n01 Oktober 2024\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n08 Oktober 2024\nDaten Transformation mit dplyr\n\n\nModul 04\n15 Oktober 2024\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n22 Oktober 2024\nBedingte Anweisungen & Datumswerte\n\n\nModul 06\n29 Oktober 2024\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n05 November 2024\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n12 November 2024\nMit Text Daten arbeiten & Kollaboratives Arbeiten mit GitHub III\n\n\nModul 09\n19 November 2024\nErstellung und Veröffentlichung analytischer Artikel mit Quarto & Tabellen & und Publizieren mit GitHub Pages\n\n\nModul 10\n26 November 2024\nFunktionen schreiben & Iteration II (across()) & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n03 Dezember 2024\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n10 Dezember 2024\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n17 Dezember 2024\nAbschlussveranstaltung\n\n\n\n\n\n\n\n\n\nIch bin dran: Vortragssegmente + Live-Coding\nWir sind dran: Live-Coding + Mitmachen\nIhr seid dran: Übungen in Paaren\n\n\n\n\n\nDer Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt Konzepte und Prinzipien, die relevant sind\nCode wird auf dem Bildschirm angezeigt\n\n\n\n\n\nDer Kursleiter schreibt und spricht den Code laut vor\nDer Kursleiter erklärt relevante Konzepte und Prinzipien\nDer Code wird auf dem Bildschirm angezeigt\nDie Lernenden machen mit, indem sie denselben Code schreiben und ausführen\n\n\n\n\n\nZwei Lernende arbeiten in Paaren in Break-out Räumen zusammen\nEine Person tippt und teilt die Bildschirmanzeige\nEine Person bietet Kommentare und Vorschläge an, und tippt selbst auch mit\n\n\n\n\n\nWährend Live-Coding: hebt die Hand mittels Zoom und unterbrecht mich. Ich werde versuchen, mich um dein Anliegen zu kümmern, wenn es die Zeit erlaubt. Offene Fragen werden dokumentiert.\nWährend Übungen in Break-out Räumen: Ihr könnt mich zu euch rufen. Bei einem Grossteil der Übungen werde ich versuchen in jedem Raum einmal vorbeizuschauen.\n\n\n\n\n\n\n\nDiversität und Inklusion\nNamen und Pronomen\nLernprozess\nrstatszh-k009.github.io/website/verhaltenskodex.html\n\n\n\n\n\n\n\n\n\n\nPhoto by: Sharon McCutcheon\n\n\nDiversität und Inklusion sind auch mir sehr wichtig und mit einem Verhaltenskodex für unsere gemeinsame Zusammenarbeit versuche ich dies zu unterstützen. Bitte nehmt euch etwas Zeit diesen zu lesen. Ihr findet den Verhaltenskodex auf der Webseite für den Kurs.\nIch spreche euch basierend auf eurem Namen an, lasst mich wissen falls du einen anderen Namen und Pronomen bevorzugst.\nIch bin selbst in einem Prozess mehr pber verschiedene Perspektiven und Identitäten zu lernen. Sollte ich im Unterricht etwas sagen, dass dir Unbehagen bereitet, lass es mich bitte wissen.\n\n\n\n\nrstatszh-k009.github.io/website/\n\n\n\n\n\nÖffne einen Webbrowser auf deinem Arbeitsgerät.\nGehe zur Website des Kurses: rstatszh-k009.github.io/website/\nErstelle einen Lesezeichenordner mit dem Namen rstatszh-k009 in deiner Lesezeichenleiste.\nFüge dem Ordner rstatszh-k009 das Lesezeichen zur Kurs-Webseite hinzu.\n\n\n\n\n\n−+\n05:00\n\n\n\n\n\n\n\n\nDie Lernenden können ein GitHub Issue öffnen und den Kursleiter markieren.\nDie Lernenden können ein Repository von GitHub klonen und das GitHub PAT verwenden, um einen Commit von ihrem lokalen Repository auf GitHub zu übertragen.\nDie Lernenden können vier Komponenten einer Quarto-Datei identifizieren (YAML, Code Chunk, R-Code, Markdown).\nDie Lernenden können die vier Fenster der RStudio IDE identifizieren.\n\n\n\n\n\n\n\n\nArtwork from @juliesquid for @openscapes (illustrated by @allison_horst)"
-  },
-  {
-    "objectID": "folien/md-06-daten-typen.html",
-    "href": "folien/md-06-daten-typen.html",
-    "title": "Daten Typen & Vektoren & For Loops",
-    "section": "",
-    "text": "ggplot(data = lernende2022_stufe_staat_sum,\n       mapping = aes(x = Stufe, \n                     y = Prozent, \n                     fill = Staatsangehoerigkeit)) +\n    coord_flip() +\n    geom_col() +\n    geom_text(aes(label = paste0(round(Prozent, 0), \"%\")),  \n              position = position_stack(vjust = 0.5)) +\n    labs(title = \"Lernende im Kanton Zürich \",\n         subtitle = \"nach Staatsangehörigkeit und Stufe im Jahr 2022\",\n         fill = \"Staatsangehörigkeit\",\n         caption = \"Daten: zh.ch/daten\",\n         y = NULL,\n         x = NULL) +\n    theme_minimal() +\n    theme(legend.position = \"bottom\", \n          panel.grid.major.y = element_blank())"
-  },
-  {
-    "objectID": "folien/md-10-funktionen.html",
-    "href": "folien/md-10-funktionen.html",
-    "title": "Funktionen schreiben & Parameterisierung von Berichten",
-    "section": "",
-    "text": "Die Lernenden können die Vorteile für das Schreiben von Funktionen gegenüber dem Kopieren und Einfügen (copy-paste) von Code erläutern, wie z.B. eine bessere Lesbarkeit des Codes, eine einfachere Instandhaltung und ein geringeres Fehlerrisiko\nDie Lernenden können die Komponenten einer Funktion in R identifizieren, einschließlich des Funktionsnamens, der Argumente und des Hauptteils, und verstehen, wie man eine Funktion unter Verwendung dieser Komponenten erstellt.\nDie Lernenden können demonstrieren wie man Parameter in einem Quarto-Dokument festlegt und ändert, um die Ausgabe von Berichten anzupassen."
-  },
-  {
-    "objectID": "folien/md-02-datenvisualisierung.html",
-    "href": "folien/md-02-datenvisualisierung.html",
-    "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
-    "section": "",
-    "text": "gapminder_2007 &lt;- gapminder |&gt; \n  filter(year == 2007)"
-  },
-  {
-    "objectID": "folien/md-04-daten-management.html",
-    "href": "folien/md-04-daten-management.html",
-    "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
-    "section": "",
-    "text": "Die Lernenden können Daten aus Dateien im CSV und XLSX-Format importieren, die sich in Unterverzeichnissen des Stammverzeichnisses, und auf GitHub, befinden.\nDie Lernenden können den Unterschied zwischen drei Arten von Daten erörten: (1) unverarbeitete Rohdaten; (2) verarbeitete, analysefähige Daten, und (3) Daten, die einer Veröffentlichung zugrunde liegen.\nDie Lernenden können die Anwendung der Git Befehle clone, commit, push beschreiben.\nDie Lernenden können die Begriffe local und remote Repository unterscheiden."
-  },
-  {
-    "objectID": "folien/md-03-datentransformation.html",
-    "href": "folien/md-03-datentransformation.html",
-    "title": "Daten Transformation mit dplyr",
-    "section": "",
-    "text": "lernziele &lt;- readr::read_csv(here::here(\"data/tbl-01-rstatszh-k009-lernziele.csv\")) |&gt; \n  dplyr::filter(modul == params$modul) |&gt;\n  dplyr::pull(lernziele)\n\nRows: 34 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (2): titel, lernziele\ndbl  (1): modul\ndttm (1): datum\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nDie Lernenden können fünf Funktionen aus dem R-Paket dplyr anwenden, um eine Teilmenge von Daten zur Verwendung in einer Tabelle oder einem Diagramm zu erzeugen.\nDie Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um Daten mittels deskriptiver Statistik zusammenzufassen."
-  },
-  {
-    "objectID": "folien/md-05-datumswerte.html",
-    "href": "folien/md-05-datumswerte.html",
-    "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
-    "section": "",
-    "text": "Die Lernenden können Funktionen aus dem R-Paket dplyr anwenden, um durch bedingte Anweisungen Werte einer Variable in einem Datensatz zu ändern.\nDie Lernenden können Funktionen aus dem R-Paket lubridate anwenden, um aus Datumsangaben neue Variablen zu erstellen, welche zusätzliche Erkenntnisse liefern.\nDie Lernenden können auf Ressourcen für das Arbeiten mit OGD zugreifen um eigene Daten für eine Publikation vorzubereiten."
   }
 ]

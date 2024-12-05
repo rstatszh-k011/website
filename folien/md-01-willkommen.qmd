@@ -2,7 +2,7 @@
 title: "{{< var md-01.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2024-09-24"
+date: "2025-02-25"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -117,7 +117,7 @@ options(knitr.kable.NA = '')
 ```{r}
 #| tbl-colwidths: [20, 20, 60]
 
-readr::read_csv("../data/tbl-00-rstatszh-k009-kursplan.csv") |> 
+readr::read_csv("../data/tbl-00-rstatszh-kursplan.csv") |> 
   dplyr::select(modul, datum, titel) |> 
   dplyr::mutate(datum = format(datum, format = "%d %B %Y")) |> 
   knitr::kable()
@@ -163,7 +163,7 @@ readr::read_csv("../data/tbl-00-rstatszh-k009-kursplan.csv") |>
 - Diversität und Inklusion
 - Namen und Pronomen
 - Lernprozess
-- [rstatszh-k009.github.io/website/verhaltenskodex.html](https://rstatszh-k009.github.io/website/verhaltenskodex.html)
+- [rstatszh-k010.github.io/website/verhaltenskodex.html](https://rstatszh-k010.github.io/website/verhaltenskodex.html)
 
 
 :::
@@ -196,15 +196,15 @@ bereitet, lass es mich bitte wissen.
 
 ## Website zum Kurs {.center-align .large}
 
-[rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
+[rstatszh-k010.github.io/website/](https://rstatszh-k010.github.io/website/)
 
 ## Wir sind dran: Öffne und speichere die Kurswebsite als Lesezeichen
 
 ::: task
 1. Öffne einen Webbrowser auf deinem Arbeitsgerät.
-2. Gehe zur Website des Kurses: [rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
-3. Erstelle einen Lesezeichenordner mit dem Namen rstatszh-k009 in deiner Lesezeichenleiste.
-4. Füge dem Ordner rstatszh-k009 das Lesezeichen zur Kurs-Webseite hinzu.
+2. Gehe zur Website des Kurses: [rstatszh-k010.github.io/website/](https://rstatszh-k010.github.io/website/)
+3. Erstelle einen Lesezeichenordner mit dem Namen rstatszh-k010 in deiner Lesezeichenleiste.
+4. Füge dem Ordner rstatszh-k010 das Lesezeichen zur Kurs-Webseite hinzu.
 :::
 
 ```{r}
@@ -217,7 +217,7 @@ countdown(minutes = 5)
 ```{r}
 #| label: lernziele
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
   dplyr::pull(lernziele)
 
@@ -323,7 +323,7 @@ Photo by [Blake Wisz](https://unsplash.com/@blakewisz)
 
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+2. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
 3. Klicke auf [Start]{.highlight-yellow} neben [md-01-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei "hallo-quarto.qmd" und klicke darauf, um sie im Fenster oben links zu öffnen.
 4. Render das Dokument.
@@ -488,7 +488,7 @@ Zurücklehnen und genießen!
 ## Ihr seid dran: Klone ein Repository von GitHub {.smaller}
 
 1. Öffne einen Webbrowser auf deinem Laptop.
-2. Gehe zur Website des Kurses: [rstatszh-k009.github.io/website/](https://rstatszh-k009.github.io/website/)
+2. Gehe zur Website des Kurses: [rstatszh-k010.github.io/website/](https://rstatszh-k010.github.io/website/)
 3. Falls noch nicht geschehen, füge die Website des Kurses zu deinen Lesezeichen hinzu.
 4. Klicke im Menü auf der linken Seite auf [Modul 1]{.highlight-yellow}
 5. In der Modulübersicht, scrolle nach unten zur Sektion ["Zusatzaufgaben"]{.highlight-yellow} und öffne ["Zusatzaufgabe 1: Git configuration"]{.highlight-yellow}
@@ -505,10 +505,10 @@ countdown(minutes = 15)
 ## Modul 1 Dokumentation
 
 ::: learn-more
-[rstatszh-k009.github.io/website/module/md-01.html](https://rstatszh-k009.github.io/website/module/md-01.html)
+[rstatszh-k010.github.io/website/module/md-01.html](https://rstatszh-k010.github.io/website/module/md-01.html)
 
 ```{=html}
-<iframe src="https://rstatszh-k009.github.io/website/module/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
+<iframe src="https://rstatszh-k010.github.io/website/module/md-01.html" width="100%" height="500" style="border:2px solid #123233;" title="Module 1 documentation"></iframe>
 ```
 :::
 
@@ -518,7 +518,7 @@ countdown(minutes = 15)
 
 Folien erstellt mit revealjs und Quarto: <https://quarto.org/docs/presentations/revealjs/>
 
-Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-01-willkommen.pdf)
+Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-01-willkommen.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 

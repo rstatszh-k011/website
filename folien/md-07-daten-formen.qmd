@@ -2,7 +2,7 @@
 title: "{{< var md-07.titel >}}"
 subtitle: "{{< var course.long-titel >}}"
 author: "Lars Schöbitz"
-date: "2024-11-05"
+date: "2025-04-08"
 date-format: "MMM D, YYYY"
 format: 
   revealjs: 
@@ -34,7 +34,7 @@ library(knitr)
 ```{r}
 #| label: lernziele
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
     dplyr::filter(modul == params$modul) |>
     dplyr::pull(lernziele)
 
@@ -70,7 +70,7 @@ ghg_long <- ghg |>
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+2.  Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
 3.  Klicke auf [Start]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [`01-treibhausgase-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5.  Folge den Anweisungen in der Datei.
@@ -421,7 +421,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1. Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2. Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+2. Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
 3. Klicke auf [Continue]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
 4. Suche im Dateimanager im Fenster unten rechts die Datei [`01-treibhausgase-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 :::
@@ -753,7 +753,7 @@ professions |>
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+2.  Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
 3.  Klicke auf [Start]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-joins-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5.  Folge den Anweisungen in der Datei.
@@ -781,7 +781,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: task
 1.  Öffne [posit.cloud](https://posit.cloud) in deinem Browser (verwende dein Lesezeichen).
-2.  Öffne den rstatszh-k009 Arbeitsbereich (Workspace) für den Kurs.
+2.  Öffne den rstatszh-k010 Arbeitsbereich (Workspace) für den Kurs.
 3.  Klicke auf [Start]{.highlight-yellow} neben [md-07-uebungen]{.highlight-yellow}.
 4.  Suche im Dateimanager im Fenster unten rechts die Datei [`02-joins-ihr.qmd`]{.highlight-yellow} und klicke darauf, um sie im Fenster oben links zu öffnen.
 5.  Folge den Anweisungen in der Datei.
@@ -805,10 +805,10 @@ countdown(10)
 ## Modul 7 Dokumentation
 
 ::: learn-more
-[rstatszh-k009.github.io/website/module/md-07.html](https://rstatszh-k009.github.io/website/module/md-07.html)
+[rstatszh-k010.github.io/website/module/md-07.html](https://rstatszh-k010.github.io/website/module/md-07.html)
 
 ```{=html}
-<iframe src="https://rstatszh-k009.github.io/website/module/md-07.html" width="100%" height="500" style="border:2px solid #123233;" title="Modul 7 Dokumentation"></iframe>
+<iframe src="https://rstatszh-k010.github.io/website/module/md-07.html" width="100%" height="500" style="border:2px solid #123233;" title="Modul 7 Dokumentation"></iframe>
 ```
 :::
 
@@ -821,6 +821,6 @@ countdown(10)
 
 ## Danke! `r emo::ji("sunflower")` 
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k009/website/raw/main/folien/md-07-daten-formen.pdf)
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-07-daten-formen.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
