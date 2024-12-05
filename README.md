@@ -2,6 +2,6 @@
 
 Dieser Kurs wird durch das Statistische Amt des Kantons Zürich in Zusammenarbeit mit Lars Schöbitz (@larnsce), Lars Schöbitz GmbH, durchgeführt. 
 
-Die Webseite ist für die Kursdurchführung vom 24.09.2024 bis 26.11.2024.
+Die Webseite ist für die Kursdurchführung vom 25.02.2025 bis 29.04.2025.
 
-Ein Überblick über zusätzliche Termine, die Zielgruppe und Lernziele ist auf folgender Webseite zu finden:
+Ein Überblick über zusätzliche Termine, die Zielgruppe und Lernziele ist auf folgender Webseite zu finden: 
