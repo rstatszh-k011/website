@@ -23,7 +23,7 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
   dplyr::pull(lernziele)
 
@@ -47,5 +47,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 - Lies: [R for Data Science - Section 29 - Quarto formats](https://r4ds.hadley.nz/quarto-formats)
 
 ## {{< fa code >}} Zusatzaufgabe
+
+Bitte erledige die folgende Aufgabe bis {{< var md-09.date >}}.
 
 - [Zusatzaufgabe 1](../zusatzaufgaben/md-09/za-09-01-abschlussprojekt.qmd): Abschlussprojekt - Querverweise 

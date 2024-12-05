@@ -23,7 +23,7 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
   dplyr::pull(lernziele)
 
@@ -47,7 +47,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ## {{< fa code >}} Zusatzaufgaben
 
-Bitte erledige die folgende Aufgaben bis Montag, den 14. Oktober 2024. 
+Bitte erledige die folgende Aufgabe bis {{< var md-03.date >}}.
 
 -   [Zusatzaufgabe 1](../zusatzaufgaben/md-03/za-03-01-daten-transformation.qmd): Daten Transformation mit `dplyr`
 -   [Zusatzaufgabe 2](../zusatzaufgaben/md-03/za-03-02-github-repo-erstellen.qmd): Mit OGD Daten arbeiten

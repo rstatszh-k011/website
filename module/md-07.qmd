@@ -24,7 +24,7 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
   dplyr::pull(lernziele)
 
@@ -47,5 +47,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 - Lies: [R for Data Science - Section 19 - Joins](https://r4ds.hadley.nz/joins)
 
 ## {{< fa code >}} Zusatzaufgaben
+
+Bitte erledige die folgende Aufgabe bis {{< var md-07.date >}}.
 
 - [Zusatzaufgabe 1](../zusatzaufgaben/md-07/za-07-01-abschlussprojekt.qmd): Abschlussprojekt - Dokumentation 

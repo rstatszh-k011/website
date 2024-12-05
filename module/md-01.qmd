@@ -23,7 +23,7 @@ library(epoxy)
 ```{r}
 #| label: lernziele
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
   dplyr::pull(lernziele)
 
@@ -50,7 +50,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ## {{< fa code >}} Zusatzaufgaben
 
-Bitte erledige die folgende Aufgabe bis Montag, den 30. September 2024. 
+Bitte erledige die folgende Aufgabe bis {{< var md-01.date >}}.
 
 -   [Zusatzaufgabe 1](../zusatzaufgaben/md-01/za-01-01-git-configuration.qmd): Git configuration
 

@@ -23,7 +23,7 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
   dplyr::pull(lernziele)
 
@@ -48,6 +48,7 @@ lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv
 
 ## {{< fa code >}} Zusatzaufgaben
 
+Bitte erledige die folgende Aufgabe bis {{< var md-10.date >}}.
 
 - [Zusatzaufgabe 1](../zusatzaufgaben/md-10/za-10-01-communities.qmd): Kantons-Communities beitreten
 - [Zusatzaufgabe 2](../abschlussprojekt/): Abschlussprojekt bis 10.12.2024 abschliessen

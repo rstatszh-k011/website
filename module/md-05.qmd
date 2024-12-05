@@ -23,7 +23,7 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-k009-lernziele.csv")) |> 
+lernziele <- readr::read_csv(here::here("data/tbl-01-rstatszh-lernziele.csv")) |> 
   dplyr::filter(modul == params$modul) |>
   dplyr::pull(lernziele)
 
@@ -52,7 +52,7 @@ Ich überlasse es dir ob du in deinem `r4ds-USERNAME` Repository ein neues Quart
 
 ## {{< fa code >}} Übungsaufgaben
 
-Bitte erledige die folgende Aufgaben bis Montag, den 28. Oktober 2024. 
+Bitte erledige die folgende Aufgabe bis {{< var md-05.date >}}.
 
 -   [Zusatzaufgabe 1](../zusatzaufgaben/md-05/za-05-01-ktzh-ogd.qmd): OGD Ressourcen
 -   [Zusatzaufgabe 2](../zusatzaufgaben/md-05/za-05-02-abschlussprojekt.qmd): Abschlussprojekt - Daten auswählen
