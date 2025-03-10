@@ -368,8 +368,8 @@ countdown(15)
 
 ## Zusatzaufgaben Abgabedatum
 
--   Abgabedatum: [Montag, 14. Oktober]{.highlight-yellow}
--   Korrektur- und Feedbackphase bis zu: Donnerstag, 17. Oktober 
+-   Abgabedatum: [Montag, 17. März]{.highlight-yellow}
+-   Korrektur- und Feedbackphase bis zu: Donnerstag, 20. März 
 
 # Danke {background-color="#4C326A"}
 
