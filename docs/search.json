@@ -601,7 +601,7 @@
     "href": "folien/md-05-datumswerte.html#datums--und-zeitwerte-in-r-1",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Datums- und Zeitwerte in R",
-    "text": "Datums- und Zeitwerte in R\n\nDatums- und Zeitwerte werden als Zahlen Vektoren in R gespeichert\nDatumswerte werden als die Anzahl der Tage seit 1970-01-01 gespeichert\nZeitwerte werden als die Anzahl der Sekunden seit 1970-01-01 00:00:00 gespeichert\nDatum,s- und Zeitwerte werden als numerische Werte gespeichert, können aber formatiert werden, um wie Datum und Zeit auszusehen"
+    "text": "Datums- und Zeitwerte in R\n\nDatums- und Zeitwerte werden als Zahlen Vektoren in R gespeichert\nDatumswerte werden als die Anzahl der Tage seit 1970-01-01 gespeichert\nZeitwerte werden als die Anzahl der Sekunden seit 1970-01-01 00:00:00 gespeichert\nDatums- und Zeitwerte werden als numerische Werte gespeichert, können aber formatiert werden, um wie Datum und Zeit auszusehen"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#ich-bin-dran-datums--und-zeitwerte-in-r",
@@ -650,14 +650,14 @@
     "href": "folien/md-05-datumswerte.html#zusatzaufgaben-abgabedatum",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 28. Oktober\nKorrektur- und Feedbackphase bis zu: Donnerstag, 31. Oktober"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 31. März\nKorrektur- und Feedbackphase bis zu: Donnerstag, 03. April"
   },
   {
     "objectID": "folien/md-05-datumswerte.html#danke-1",
     "href": "folien/md-05-datumswerte.html#danke-1",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
@@ -3103,7 +3103,7 @@
     "href": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-1-klone-das-repository-für-modul-5",
     "title": "Mit R arbeiten - Lernende im Kanton Zürich",
     "section": "Schritt 1: Klone das Repository für Modul 5",
-    "text": "Schritt 1: Klone das Repository für Modul 5\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k009 Arbeitsbereich (Workspace) auf posit.cloud\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-05-ktzh-lernende.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
+    "text": "Schritt 1: Klone das Repository für Modul 5\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet, und öffne es in dem du darauf klickst.\nKlicke auf die grüne Schaltfläche “Code”.\nKopiere die HTTPS-URL in deine Zwischenablage.\nÖffne den rstatszh-k010 Arbeitsbereich (Workspace) auf Posit Cloud https://posit.cloud/spaces/591694/content/all?sort=name_asc\nKlicke auf “New Project” &gt; “New Project from Git Repository”\nFüge die HTTPS-URL von GitHub in das Feld “URL of your Git Repository” ein. Beachte: Stelle sicher, dass die Box unter Packages ein Häkchen gesetzt hat.\nWarte, bis das Projekt bereitgestellt wurde.\nÖffne den Reiter “Files” im Fenster unten links und arbeite durch die Aufgaben in den folgenden zwei Dateien:\n\n\nmd-05-ktzh-lernende.qmd\n\n\nFahre mit dem nächsten Schritt 2 fort."
   },
   {
     "objectID": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-2-übertrage-deine-änderungen-auf-github",
@@ -3117,7 +3117,7 @@
     "href": "zusatzaufgaben/md-05/za-05-03-lernende.html#schritt-3-eröffne-ein-issue-auf-github",
     "title": "Mit R arbeiten - Lernende im Kanton Zürich",
     "section": "Schritt 3: Eröffne ein Issue auf GitHub",
-    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
+    "text": "Schritt 3: Eröffne ein Issue auf GitHub\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository md-05-zusatzaufgaben-BENUTZERNAME, das mit deinem GitHub-Benutzernamen endet.\nKlicke auf die Schaltfläche “Issues”.\nKlicke auf die grüne Schaltfläche “New issue”.\nSchreibe in das Feld “Title”: “Zusatzaufgaben abgeschlossen”.\nMarkiere im Feld “Leave a comment” den Kursleiter mit @larnsce und hinterlasse eine Nachricht oder offene Frage."
   },
   {
     "objectID": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html",

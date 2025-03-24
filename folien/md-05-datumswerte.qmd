@@ -104,7 +104,7 @@ Bild erzeugt mit [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 -   Datums- und Zeitwerte werden als Zahlen Vektoren in R gespeichert
 -   Datumswerte werden als die Anzahl der Tage seit 1970-01-01 gespeichert
 -   Zeitwerte werden als die Anzahl der Sekunden seit 1970-01-01 00:00:00 gespeichert
--   Datum,s- und Zeitwerte werden als numerische Werte gespeichert, können aber formatiert werden, um wie Datum und Zeit auszusehen
+-   Datums- und Zeitwerte werden als numerische Werte gespeichert, können aber formatiert werden, um wie Datum und Zeit auszusehen
 
 ## Ich bin dran: Datums- und Zeitwerte in R 
 
@@ -187,13 +187,15 @@ countdown(15)
 
 ## Zusatzaufgaben Abgabedatum
 
--   Abgabedatum: [Montag, 28. Oktober]{.highlight-yellow}
--   Korrektur- und Feedbackphase bis zu: Donnerstag, 31. Oktober 
+-   Abgabedatum: [Montag, 31. März]{.highlight-yellow}
+-   Korrektur- und Feedbackphase bis zu: Donnerstag, 03. April 
 
 # Danke {background-color="#4C326A"}
 
 ## Danke! `r emo::ji("sunflower")` 
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-05-datumswerte.pdf)
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-05-datumswerte.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
