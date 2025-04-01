@@ -51,10 +51,10 @@ lernende <- lernende_in |>
         Finanzierung == "oef" ~ "öffentlich",
         Finanzierung == "priv" ~ "privat"))
 
-lernende2022 <- lernende |> 
+lernende_max <- lernende |> 
     filter(Jahr == max(Jahr))
 
-lernende2022_stufe_staat_sum <- lernende2022 |> 
+lernende_max_stufe_staat_sum <- lernende_max |> 
     group_by(Stufe, Staatsangehoerigkeit)  |> 
     summarise(
         Total = sum(Anzahl)
@@ -72,7 +72,7 @@ lernende2022_stufe_staat_sum <- lernende2022 |>
 #| output-location: column
 #| code-line-numbers: "|1-6|7-8|9-14|15-17"
 
-ggplot(data = lernende2022_stufe_staat_sum,
+ggplot(data = lernende_max_stufe_staat_sum,
        mapping = aes(x = Stufe, 
                      y = Prozent, 
                      fill = Staatsangehoerigkeit)) +
@@ -81,7 +81,7 @@ ggplot(data = lernende2022_stufe_staat_sum,
     geom_text(aes(label = paste0(round(Prozent, 0), "%")),  
               position = position_stack(vjust = 0.5)) +
     labs(title = "Lernende im Kanton Zürich ",
-         subtitle = "nach Staatsangehörigkeit und Stufe im Jahr 2022",
+         subtitle = "nach Staatsangehörigkeit und Stufe im Jahr 2023",
          fill = "Staatsangehörigkeit",
          caption = "Daten: zh.ch/daten",
          y = NULL,
@@ -239,7 +239,7 @@ waste_data_tidy |>
 
 # Daten Typen und Vektoren {background-color="#4C326A"}
 
-## Why care about data types? Warum sind Daten Typen wichtig?
+## Warum sind Daten Typen wichtig?
 
 ::: {style="width:75%;height:0;padding-bottom:83%;position:relative;"}
 <iframe src="https://giphy.com/embed/SvRuvlSEa67wNNHuHy" width="75%" height="75%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
@@ -304,7 +304,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "2chf") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) 
@@ -319,7 +319,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) |> 
@@ -338,7 +338,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) |> 
@@ -357,7 +357,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) 
@@ -374,7 +374,7 @@ survey_data_small |>
   mutate(price_glass_new = case_when(
     price_glass == "5-10" ~ "7.5",
     price_glass == "05-Oct" ~ "7.5",
-    str_detect(price_glass, pattern = "20") == TRUE ~ "20",
+    str_detect(price_glass, pattern = "2chf") == TRUE ~ "2",
     str_detect(price_glass, pattern = "See comment") == TRUE ~ NA_character_,
     TRUE ~ price_glass
   )) |> 
@@ -524,13 +524,15 @@ countdown(10)
 
 ## Zusatzaufgaben Abgabedatum
 
--   Abgabedatum: [Montag, 04. November]{.highlight-yellow}
--   Korrektur- und Feedbackphase bis zu: Donnerstag, 07. November 
+-   Abgabedatum: [Montag, 07. April]{.highlight-yellow}
+-   Korrektur- und Feedbackphase bis zu: Donnerstag, 10. April 
 
 # Danke {background-color="#4C326A"}
 
 ## Danke! `r emo::ji("sunflower")` 
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-06-daten-typen.pdf)
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-06-daten-typen.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).

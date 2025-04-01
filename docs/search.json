@@ -342,7 +342,7 @@
     "href": "zusatzaufgaben/md-06/za-06-01-abschlussprojekt.html#fragen-braucht-es-unterstützung",
     "title": "Abschlussprojekt",
     "section": "Fragen? Braucht es Unterstützung?",
-    "text": "Fragen? Braucht es Unterstützung?\nDu hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k009\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\n\n… eröffne eine Issue."
+    "text": "Fragen? Braucht es Unterstützung?\nDu hast nun gelernt wie du mich mittels GitHub Issues erreichen kannst. Falls du Fragen hast, zögere nicht mich zu kontaktieren. Ich bin gerne bereit dir zu helfen.\n\nÖffne github.com in deinem Browser.\nNavigiere zur GitHub-Organisation für den Kurs: github.com/rstatszh-k010\nFinde das Repository projekt-USERNAME, das mit deinem GitHub-Benutzernamen endet.\n\n… eröffne eine Issue."
   },
   {
     "objectID": "zusatzaufgaben/md-09/za-09-01-abschlussprojekt.html",
@@ -1490,7 +1490,7 @@
     "href": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Modul 5 - Zusatzaufgabe 3",
-    "text": "Modul 5 - Zusatzaufgabe 3\n\n\nggplot(data = lernende2022_stufe_staat_sum,\n       mapping = aes(x = Stufe, \n                     y = Prozent, \n                     fill = Staatsangehoerigkeit)) +\n    coord_flip() +\n    geom_col() +\n    geom_text(aes(label = paste0(round(Prozent, 0), \"%\")),  \n              position = position_stack(vjust = 0.5)) +\n    labs(title = \"Lernende im Kanton Zürich \",\n         subtitle = \"nach Staatsangehörigkeit und Stufe im Jahr 2022\",\n         fill = \"Staatsangehörigkeit\",\n         caption = \"Daten: zh.ch/daten\",\n         y = NULL,\n         x = NULL) +\n    theme_minimal() +\n    theme(legend.position = \"bottom\", \n          panel.grid.major.y = element_blank())"
+    "text": "Modul 5 - Zusatzaufgabe 3\n\n\nggplot(data = lernende_max_stufe_staat_sum,\n       mapping = aes(x = Stufe, \n                     y = Prozent, \n                     fill = Staatsangehoerigkeit)) +\n    coord_flip() +\n    geom_col() +\n    geom_text(aes(label = paste0(round(Prozent, 0), \"%\")),  \n              position = position_stack(vjust = 0.5)) +\n    labs(title = \"Lernende im Kanton Zürich \",\n         subtitle = \"nach Staatsangehörigkeit und Stufe im Jahr 2023\",\n         fill = \"Staatsangehörigkeit\",\n         caption = \"Daten: zh.ch/daten\",\n         y = NULL,\n         x = NULL) +\n    theme_minimal() +\n    theme(legend.position = \"bottom\", \n          panel.grid.major.y = element_blank())"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#lernziele-für-diese-woche",
@@ -1500,11 +1500,11 @@
     "text": "Lernziele (für diese Woche)\n\n\nDie Lernenden können die Bedeutung von Vektoren mit Bezug auf einen Dataframe erläutern.\nDie Lernenden können drei verschiedene Methoden anwenden um auf einen Vektor in einem dataframe zuzugreifen.\nDie Lernenden können die vier wichtigsten atomaren Vektortypen in R auflisten.\nDie Lernenden können einen for loop verwenden, um durch die Elemente eines Vektors in einem Dataframe zu iterieren und spezifische Operationen auf jedes Element anzuwenden."
   },
   {
-    "objectID": "folien/md-06-daten-typen.html#why-care-about-data-types-warum-sind-daten-typen-wichtig",
-    "href": "folien/md-06-daten-typen.html#why-care-about-data-types-warum-sind-daten-typen-wichtig",
+    "objectID": "folien/md-06-daten-typen.html#warum-sind-daten-typen-wichtig",
+    "href": "folien/md-06-daten-typen.html#warum-sind-daten-typen-wichtig",
     "title": "Daten Typen & Vektoren & For Loops",
-    "section": "Why care about data types? Warum sind Daten Typen wichtig?",
-    "text": "Why care about data types? Warum sind Daten Typen wichtig?\n\n\n\n\n\nvia GIPHY"
+    "section": "Warum sind Daten Typen wichtig?",
+    "text": "Warum sind Daten Typen wichtig?\n\n\n\n\n\nvia GIPHY"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#beispiel-recycling-umfrage-in-zürich",
@@ -1546,21 +1546,21 @@
     "href": "folien/md-06-daten-typen.html#ein-sehr-typischer-schritt-in-der-datenbereinigung",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Ein sehr typischer Schritt in der Datenbereinigung!",
-    "text": "Ein sehr typischer Schritt in der Datenbereinigung!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
+    "text": "Ein sehr typischer Schritt in der Datenbereinigung!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"2\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  ))"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#ein-sehr-typischer-schritt-in-der-datenbereinigung-1",
     "href": "folien/md-06-daten-typen.html#ein-sehr-typischer-schritt-in-der-datenbereinigung-1",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Ein sehr typischer Schritt in der Datenbereinigung!",
-    "text": "Ein sehr typischer Schritt in der Datenbereinigung!\n\n\n\n\n\n\n\n\n\n\n\nid\njob\nprice_glass_new\nprice_glass\n\n\n\n\n1\nStudent\n0\n0\n\n\n2\nRetired\n0\n0\n\n\n3\nOther\n0\n0\n\n\n4\nEmployed\n10\n10\n\n\n5\nEmployed\nNA\nSee comment\n\n\n6\nStudent\n7.5\n5-10\n\n\n7\nStudent\n0\n0\n\n\n8\nRetired\n0\n0\n\n\n9\nStudent\n10\n10\n\n\n10\nEmployed\n0\n0\n\n\n11\nEmployed\n20\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n10\n\n\n13\nStudent\n10\n10\n\n\n14\nEmployed\n0\n0\n\n\n15\nStudent\n10\n10\n\n\n16\nStudent\n0\n0\n\n\n17\nEmployed\n7.5\n5-10\n\n\n18\nOther\n0\n0\n\n\n19\nStudent\n0\n0\n\n\n20\nEmployed\n10\n10\n\n\n21\nEmployed\n0\n0\n\n\n22\nEmployed\n5\n5"
+    "text": "Ein sehr typischer Schritt in der Datenbereinigung!\n\n\n\n\n\n\n\n\n\n\n\nid\njob\nprice_glass_new\nprice_glass\n\n\n\n\n1\nStudent\n0\n0\n\n\n2\nRetired\n0\n0\n\n\n3\nOther\n0\n0\n\n\n4\nEmployed\n10\n10\n\n\n5\nEmployed\nNA\nSee comment\n\n\n6\nStudent\n7.5\n5-10\n\n\n7\nStudent\n0\n0\n\n\n8\nRetired\n0\n0\n\n\n9\nStudent\n10\n10\n\n\n10\nEmployed\n0\n0\n\n\n11\nEmployed\n2\n20 (2chf per person with 10 people in the WG)\n\n\n12\nStudent\n10\n10\n\n\n13\nStudent\n10\n10\n\n\n14\nEmployed\n0\n0\n\n\n15\nStudent\n10\n10\n\n\n16\nStudent\n0\n0\n\n\n17\nEmployed\n7.5\n5-10\n\n\n18\nOther\n0\n0\n\n\n19\nStudent\n0\n0\n\n\n20\nEmployed\n10\n10\n\n\n21\nEmployed\n0\n0\n\n\n22\nEmployed\n5\n5"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#summarise-argh",
     "href": "folien/md-06-daten-typen.html#summarise-argh",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Summarise? Argh!!!!",
-    "text": "Summarise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
+    "text": "Summarise? Argh!!!!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"2\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1               NA"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#respektiere-deine-daten-typen",
@@ -1574,7 +1574,7 @@
     "href": "folien/md-06-daten-typen.html#respektiere-deine-daten-typen-1",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Respektiere deine Daten Typen!",
-    "text": "Respektiere deine Daten Typen!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"20\") == TRUE ~ \"20\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             4.76"
+    "text": "Respektiere deine Daten Typen!\n\nsurvey_data_small |&gt; \n  mutate(price_glass_new = case_when(\n    price_glass == \"5-10\" ~ \"7.5\",\n    price_glass == \"05-Oct\" ~ \"7.5\",\n    str_detect(price_glass, pattern = \"2chf\") == TRUE ~ \"2\",\n    str_detect(price_glass, pattern = \"See comment\") == TRUE ~ NA_character_,\n    TRUE ~ price_glass\n  )) |&gt; \n  mutate(price_glass_new = as.numeric(price_glass_new)) |&gt; \n  summarise(mean_price_glass = mean(price_glass_new, na.rm = TRUE))\n\n# A tibble: 1 × 1\n  mean_price_glass\n             &lt;dbl&gt;\n1             3.90"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#ich-bin-dran-vektoren-und-iteration-mit-for-schleifen",
@@ -1658,14 +1658,14 @@
     "href": "folien/md-06-daten-typen.html#zusatzaufgaben-abgabedatum",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Zusatzaufgaben Abgabedatum",
-    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 04. November\nKorrektur- und Feedbackphase bis zu: Donnerstag, 07. November"
+    "text": "Zusatzaufgaben Abgabedatum\n\nAbgabedatum: Montag, 07. April\nKorrektur- und Feedbackphase bis zu: Donnerstag, 10. April"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#danke-1",
     "href": "folien/md-06-daten-typen.html#danke-1",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
   },
   {
     "objectID": "abschlussprojekt/index.html",
