@@ -512,13 +512,15 @@ countdown(10)
 
 ## Zusatzaufgaben Abgabedatum
 
--   Abgabedatum: [Montag, 18. November]{.highlight-yellow}
--   Korrektur- und Feedbackphase bis zu: Donnerstag, 21. November 
+-   Abgabedatum: [Montag, 21. April]{.highlight-yellow}
+-   Korrektur- und Feedbackphase bis zu: Donnerstag, 24. April 
 
 # Danke {background-color="#4C326A"}
 
 ## Danke! `r emo::ji("sunflower")` 
 
-Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-08-text-daten.pdf)
+Folien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ 
+
+Access slides als [PDF auf GitHub](https://github.com/rstatszh-k010/website/raw/main/folien/md-08-text-daten.pdf)
 
 Alle Materialien sind lizenziert unter [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
