@@ -28,13 +28,13 @@ library(readr)
 
 1. Navigiere zum Files Tab im unteren rechten Fenster von RStudio. Stelle sicher, dass du im Hauptverzeichnis deines Abschlussprojekts bist.
 
-2. Klick auf den "Blank File" Button um eine neue Datei zu erstellen.
+2. Klick auf den "New Blank File" Button um eine neue Datei zu erstellen.
 
 3. Selektiere die Option "Text file".
 
 4. Bennene die Datei `README.md` und klicke auf "OK". 
 
-5. Öffne die leere `README.md` Datei und schreibe `# Abschlussprojekt rstatsZH` auf eine Zeile. Wir werden die `README.md` Datei später mit Informationen zu deinem Abschlussprojekt füllen.
+5. Öffne die leere `README.md` Datei und schreibe `# Abschlussprojekt rstatsZH` auf die erste Zeile. Wir werden die `README.md` Datei später mit Informationen zu deinem Abschlussprojekt füllen.
 
 6. Speicher die Datei.
 
@@ -68,9 +68,9 @@ library(readr)
 
 ## Schritt 4: Lade das Dictionary hoch
 
-1. Öffne dein Abschlussprojekt auf posit.cloud.
+1. Öffne dein Abschlussprojekt auf Posit Cloud <https://posit.cloud/spaces/591694/content/>.
 
-2. Nutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook im CSV-Format in den Ordner `daten/processed` hochzuladen.
+2. Nutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook `codebook.csv` im CSV-Format in den Ordner `daten/processed` hochzuladen.
 
 ## Schritt 5: Bereite deine verarbeitete, analysefähige (processed) Daten vor
 
@@ -94,7 +94,7 @@ read_csv(here::here("daten/raw/your-file-name.csv"))
 
 ```{r}
 #| echo: fenced
-write_csv(x = your_data_object_name, 
+write_csv(x = daten_objekt_name, 
           here::here("daten/processed/your-file-name.csv"))
 ```
 

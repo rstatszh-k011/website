@@ -298,10 +298,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="schritt-2-erstelle-eine-readme.md-datei-im-hauptverzeichnis">Schritt 2: Erstelle eine <code>README.md</code> Datei im Hauptverzeichnis</h2>
 <ol type="1">
 <li><p>Navigiere zum Files Tab im unteren rechten Fenster von RStudio. Stelle sicher, dass du im Hauptverzeichnis deines Abschlussprojekts bist.</p></li>
-<li><p>Klick auf den “Blank File” Button um eine neue Datei zu erstellen.</p></li>
+<li><p>Klick auf den “New Blank File” Button um eine neue Datei zu erstellen.</p></li>
 <li><p>Selektiere die Option “Text file”.</p></li>
 <li><p>Bennene die Datei <code>README.md</code> und klicke auf “OK”.</p></li>
-<li><p>Öffne die leere <code>README.md</code> Datei und schreibe <code># Abschlussprojekt rstatsZH</code> auf eine Zeile. Wir werden die <code>README.md</code> Datei später mit Informationen zu deinem Abschlussprojekt füllen.</p></li>
+<li><p>Öffne die leere <code>README.md</code> Datei und schreibe <code># Abschlussprojekt rstatsZH</code> auf die erste Zeile. Wir werden die <code>README.md</code> Datei später mit Informationen zu deinem Abschlussprojekt füllen.</p></li>
 <li><p>Speicher die Datei.</p></li>
 </ol>
 </section>
@@ -330,8 +330,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="schritt-4-lade-das-dictionary-hoch" class="level2">
 <h2 class="anchored" data-anchor-id="schritt-4-lade-das-dictionary-hoch">Schritt 4: Lade das Dictionary hoch</h2>
 <ol type="1">
-<li><p>Öffne dein Abschlussprojekt auf posit.cloud.</p></li>
-<li><p>Nutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook im CSV-Format in den Ordner <code>daten/processed</code> hochzuladen.</p></li>
+<li><p>Öffne dein Abschlussprojekt auf Posit Cloud <a href="https://posit.cloud/spaces/591694/content/" class="uri">https://posit.cloud/spaces/591694/content/</a>.</p></li>
+<li><p>Nutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook <code>codebook.csv</code> im CSV-Format in den Ordner <code>daten/processed</code> hochzuladen.</p></li>
 </ol>
 </section>
 <section id="schritt-5-bereite-deine-verarbeitete-analysefähige-processed-daten-vor" class="level2">
@@ -364,7 +364,7 @@ Wir werden diesen Schritt mehrmals wiederholen.
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="in">write_csv(x = your_data_object_name, </span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="in">write_csv(x = daten_objekt_name, </span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="in">          here::here("daten/processed/your-file-name.csv"))</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

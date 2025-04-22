@@ -3138,7 +3138,7 @@
     "href": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-2-erstelle-eine-readme.md-datei-im-hauptverzeichnis",
     "title": "Abschlussprojekt",
     "section": "Schritt 2: Erstelle eine README.md Datei im Hauptverzeichnis",
-    "text": "Schritt 2: Erstelle eine README.md Datei im Hauptverzeichnis\n\nNavigiere zum Files Tab im unteren rechten Fenster von RStudio. Stelle sicher, dass du im Hauptverzeichnis deines Abschlussprojekts bist.\nKlick auf den “Blank File” Button um eine neue Datei zu erstellen.\nSelektiere die Option “Text file”.\nBennene die Datei README.md und klicke auf “OK”.\nÖffne die leere README.md Datei und schreibe # Abschlussprojekt rstatsZH auf eine Zeile. Wir werden die README.md Datei später mit Informationen zu deinem Abschlussprojekt füllen.\nSpeicher die Datei."
+    "text": "Schritt 2: Erstelle eine README.md Datei im Hauptverzeichnis\n\nNavigiere zum Files Tab im unteren rechten Fenster von RStudio. Stelle sicher, dass du im Hauptverzeichnis deines Abschlussprojekts bist.\nKlick auf den “New Blank File” Button um eine neue Datei zu erstellen.\nSelektiere die Option “Text file”.\nBennene die Datei README.md und klicke auf “OK”.\nÖffne die leere README.md Datei und schreibe # Abschlussprojekt rstatsZH auf die erste Zeile. Wir werden die README.md Datei später mit Informationen zu deinem Abschlussprojekt füllen.\nSpeicher die Datei."
   },
   {
     "objectID": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-3-übertrage-deine-änderungen-auf-github",
@@ -3159,14 +3159,14 @@
     "href": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-4-lade-das-dictionary-hoch",
     "title": "Abschlussprojekt",
     "section": "Schritt 4: Lade das Dictionary hoch",
-    "text": "Schritt 4: Lade das Dictionary hoch\n\nÖffne dein Abschlussprojekt auf posit.cloud.\nNutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook im CSV-Format in den Ordner daten/processed hochzuladen."
+    "text": "Schritt 4: Lade das Dictionary hoch\n\nÖffne dein Abschlussprojekt auf Posit Cloud https://posit.cloud/spaces/591694/content/.\nNutze den Files Tab im unteren rechten Fenster, um das Daten-Codebook codebook.csv im CSV-Format in den Ordner daten/processed hochzuladen."
   },
   {
     "objectID": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-5-bereite-deine-verarbeitete-analysefähige-processed-daten-vor",
     "href": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-5-bereite-deine-verarbeitete-analysefähige-processed-daten-vor",
     "title": "Abschlussprojekt",
     "section": "Schritt 5: Bereite deine verarbeitete, analysefähige (processed) Daten vor",
-    "text": "Schritt 5: Bereite deine verarbeitete, analysefähige (processed) Daten vor\n\n\n\n\n\n\nWir werden diesen Schritt mehrmals wiederholen.\n\n\n\nDieser Schritt wird mehrmals wiederholt, abhängig von der Komplexität deiner Rohdaten. Wichtig ist, dass du dies für die erste Iteration dieser Hausaufgabe durchführst, damit ich die Komplexität deines Projekts einschätzen können.\n\n\n\nÖffne die index.qmd Datei in deinem Abschlussprojekt.\nFalls die Daten noch nicht importiert sind, füge den folgenden Code in einen Code Chunk ein:\n\n\n```{r}\nread_csv(here::here(\"daten/raw/your-file-name.csv\"))\n```\n\n\nSchreibe Code, um deine Daten in einen Zustand zu bringen, in dem sie für die Analyse bereit sind (z.B. Umbenennen von Spalten, Auswahl von Spalten, die für deine Analyse relevant sind, Entfernen von NAs, Zusammenfügen mehrerer Dataframes usw.)\nSobald du deine Daten in einem Zustand hast, in dem sie für die Analyse bereit sind, speichere sie als CSV-Datei im Ordner daten/processed.\n\n\n```{r}\nwrite_csv(x = your_data_object_name, \n          here::here(\"daten/processed/your-file-name.csv\"))\n```"
+    "text": "Schritt 5: Bereite deine verarbeitete, analysefähige (processed) Daten vor\n\n\n\n\n\n\nWir werden diesen Schritt mehrmals wiederholen.\n\n\n\nDieser Schritt wird mehrmals wiederholt, abhängig von der Komplexität deiner Rohdaten. Wichtig ist, dass du dies für die erste Iteration dieser Hausaufgabe durchführst, damit ich die Komplexität deines Projekts einschätzen können.\n\n\n\nÖffne die index.qmd Datei in deinem Abschlussprojekt.\nFalls die Daten noch nicht importiert sind, füge den folgenden Code in einen Code Chunk ein:\n\n\n```{r}\nread_csv(here::here(\"daten/raw/your-file-name.csv\"))\n```\n\n\nSchreibe Code, um deine Daten in einen Zustand zu bringen, in dem sie für die Analyse bereit sind (z.B. Umbenennen von Spalten, Auswahl von Spalten, die für deine Analyse relevant sind, Entfernen von NAs, Zusammenfügen mehrerer Dataframes usw.)\nSobald du deine Daten in einem Zustand hast, in dem sie für die Analyse bereit sind, speichere sie als CSV-Datei im Ordner daten/processed.\n\n\n```{r}\nwrite_csv(x = daten_objekt_name, \n          here::here(\"daten/processed/your-file-name.csv\"))\n```"
   },
   {
     "objectID": "zusatzaufgaben/md-07/za-07-01-abschlussprojekt.html#schritt-6-übertrage-deine-änderungen-auf-github",
