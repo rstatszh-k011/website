@@ -676,6 +676,11 @@ ggplot(penguins, aes(x = species, fill = species)) +
     -   Füge der Abbildung oder Tabelle eine Beschriftung hinzu: `#| tbl-cap:` oder `#| fig-cap:`.
     -   Füge der Abbildung oder Tabelle eine Bezeichungen hinzu: `#| label:` beginnend mit `fig-` oder `tbl-`.
     -   Verweise im Text auf die Abbildung oder Tabelle mit `@fig-...` oder `@tbl-...`.
+    
+## Abbildung Querverweise {.smaller}
+
+- Mit Code
+- TODO
 
 ## Abbildung Querverweise {.smaller}
 
