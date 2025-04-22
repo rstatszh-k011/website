@@ -14,7 +14,7 @@ library(dplyr)
 
 ## course schedule  --------------------------------------------------
 
-kursplan <- "https://docs.google.com/spreadsheets/d/1NwrpVQRRxSSsnUaKVe-D089WJL7XKCZcQH2Ef1-GOYc/edit?gid=0#gid=0"
+kursplan <- "https://docs.google.com/spreadsheets/d/1G8Mq_I39ikD-bgli9ytcombrN2Bj0XsEqE_jsB7ZExA/edit?gid=0#gid=0"
 
 read_sheet(ss = kursplan) |> 
     mutate(titel = case_when(
@@ -25,14 +25,15 @@ read_sheet(ss = kursplan) |>
 
 ## learning objectives  ------------------------------
 
-lernziele <- "https://docs.google.com/spreadsheets/d/1Psu_bKUJ0evgDUorkoeV3KUGNDdSte--6GBYuuihQc0/edit?gid=0#gid=0"
+lernziele <- "https://docs.google.com/spreadsheets/d/1V1EFBkpIyAK5p9DGUeZ43pdRj4831CHBzPbiYizNB9A/edit?gid=0#gid=0"
 
-read_sheet(ss = lernziele) |> 
+read_sheet(ss = lernziele,  n_max = 37) |> 
     write_csv(here::here("data/tbl-01-rstatszh-lernziele.csv"))
 
 ## abschlussprojekt
 
-abschlussprojekt <- "https://docs.google.com/spreadsheets/d/1kyPzhG_0oZ7njXaKh6uIIW0yICEHySSEShlfPmzxviM/edit?gid=0#gid=0"
+abschlussprojekt <- "https://docs.google.com/spreadsheets/d/1rUfwhHVWzkGWQTW-VKxEhHRGgtRg893ijbkHHqiJ4YY/edit?gid=0#gid=0"
 
 read_sheet(ss = abschlussprojekt) |> 
     write_csv(here::here("data/tbl-02-rstatszh-abschlussprojekt.csv"))
+

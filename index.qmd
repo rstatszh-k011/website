@@ -1,5 +1,5 @@
 ---
-title: "Vorbereitung - rstatsZH Kurs 010"
+title: "Vorbereitung - rstatsZH Kurs 011"
 editor: source
 execute: 
   echo: false
@@ -10,7 +10,7 @@ editor_options:
 
 Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter [Lars Schöbitz](https://www.linkedin.com/in/larsschoebitz/) freut sich darauf, dich kennenzulernen. Falls du noch nicht für diesen Kurs angemeldet bist, dies aber gerne möchtest, dann nimm Kontakt über folgende Seite mit uns auf: <https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html>
 
-Wir treffen uns ab 25.02.2025 jeweils von 13:00 bis 15:30 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt.
+Wir treffen uns ab 23.09.2025 jeweils von 12:30 bis 15:00 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt. 
 
 Vor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.
 
