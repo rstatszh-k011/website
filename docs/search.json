@@ -4,7 +4,7 @@
     "href": "kalendar.html",
     "title": "Kurskalendar",
     "section": "",
-    "text": "modul\ndatum\ntitel\n\n\n\n\nModul 01\n25 Februar 2025\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n04 März 2025\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n11 März 2025\nDaten Transformation mit dplyr\n\n\nModul 04\n18 März 2025\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n25 März 2025\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n01 April 2025\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n08 April 2025\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n15 April 2025\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n22 April 2025\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n29 April 2025\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n06 Mai 2025\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n13 Mai 2025\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n20 Mai 2025\nAbschlussveranstaltung",
+    "text": "modul\ndatum\ntitel\n\n\n\n\nModul 01\n23 September 2025\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n30 September 2025\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n07 Oktober 2025\nDaten Transformation mit dplyr\n\n\nModul 04\n14 Oktober 2025\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n21 Oktober 2025\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n28 Oktober 2025\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n04 November 2025\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n11 November 2025\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n18 November 2025\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n25 November 2025\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n02 Dezember 2025\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n09 Dezember 2025\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n16 Dezember 2025\nAbschlussveranstaltung",
     "crumbs": [
       "Kurskalender"
     ]
@@ -12,9 +12,19 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Vorbereitung - rstatsZH Kurs 010",
+    "title": "Vorbereitung - rstatsZH Kurs 011",
     "section": "",
-    "text": "Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz freut sich darauf, dich kennenzulernen. Falls du noch nicht für diesen Kurs angemeldet bist, dies aber gerne möchtest, dann nimm Kontakt über folgende Seite mit uns auf: https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html\nWir treffen uns ab 25.02.2025 jeweils von 13:00 bis 15:30 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt.\nVor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.",
+    "text": "Vielen Dank für dein Interesse an diesem Kurs. Dein Kursleiter Lars Schöbitz freut sich darauf, dich kennenzulernen. Falls du noch nicht für diesen Kurs angemeldet bist, dies aber gerne möchtest, dann nimm Kontakt über folgende Seite mit uns auf: https://www.zh.ch/de/politik-staat/statistik-daten/datenkompetenz/datenkompetenz-verwaltung/rstatszh-data-science-mit-r-anmelden.html.\nBist du zufällig auf diese Seite geraten? Mehr Informationen zum Konzept, Kursinhalten und Terminen gibt es hier: https://rstats.zuerich/",
+    "crumbs": [
+      "Vorbereitung"
+    ]
+  },
+  {
+    "objectID": "index.html#wann-findet-dieser-kurs-statt",
+    "href": "index.html#wann-findet-dieser-kurs-statt",
+    "title": "Vorbereitung - rstatsZH Kurs 011",
+    "section": " Wann findet dieser Kurs statt?",
+    "text": "Wann findet dieser Kurs statt?\nWir treffen uns ab 23. September 2025 jeweils von 12:30 bis 15:00 Uhr auf MS Teams. Der Link wird über eine Kalendareinladung verschickt.\nVor Tag 1 müsst ihr einige Aufgaben zur Vorbereitung auf den Kurs erledigen. Diese Vorarbeiten stellen sicher, dass wir unsere gemeinsame Zeit auf das Lernen konzentrieren können, anstatt die Infrastruktur einzurichten.",
     "crumbs": [
       "Vorbereitung"
     ]
@@ -22,9 +32,9 @@
   {
     "objectID": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
     "href": "index.html#was-muss-ich-vor-tag-1-vorbereiten",
-    "title": "Vorbereitung - rstatsZH Kurs 010",
+    "title": "Vorbereitung - rstatsZH Kurs 011",
     "section": " Was muss ich vor Tag 1 vorbereiten?",
-    "text": "Was muss ich vor Tag 1 vorbereiten?\nArbeite durch die folgenden Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen bis Freitag, den 21. Februar 2025 aus.",
+    "text": "Was muss ich vor Tag 1 vorbereiten?\nArbeite durch die folgenden Schritte:\n\nSchritt 1: Erstelle ein Konto auf GitHub und richte ein GitHub Personal Access Token (PAT) ein.\nSchritt 2: Melde dich bei Posit Cloud an und tritt dem Arbeitsbereich für den Kurs bei.\nSchritt 3: Lies die Einführung des Kursbuches: R for Data Science.\nSchritt 4: Fülle den Fragebogen bis Freitag, den 19. September 2025 aus.",
     "crumbs": [
       "Vorbereitung"
     ]
@@ -67,7 +77,7 @@
     "href": "vorbereitung/04-umfrage.html",
     "title": "Fragebogen",
     "section": "",
-    "text": "Fragebogen\nVielen Dank für die Teilnahme am Kurs “rstatsZH - Data Science mit R”. Der folgende Fragebogen beinhaltet Fragen welche für die Kursverwaltung und für Berichtszwecke genutzt werden. Vielen Dank für das Ausfüllen.\nFragebogen: https://forms.gle/oRKgrm68UV17vUZ6A",
+    "text": "Fragebogen\nVielen Dank für die Teilnahme am Kurs “rstatsZH - Data Science mit R”. Der folgende Fragebogen beinhaltet Fragen welche für die Kursverwaltung und für Berichtszwecke genutzt werden. Danke für das Ausfüllen.\nFragebogen: https://forms.gle/oRKgrm68UV17vUZ6A",
     "crumbs": [
       "Vorbereitung",
       "Schritt 4: Umfrage"
@@ -118,7 +128,7 @@
     "href": "module/md-09.html#zusatzaufgabe",
     "title": "Modul 9",
     "section": " Zusatzaufgabe",
-    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2025-04-28.\n\nZusatzaufgabe 1: Abschlussprojekt - Querverweise",
+    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2025-11-18.\n\nZusatzaufgabe 1: Abschlussprojekt - Querverweise",
     "crumbs": [
       "Modul 09"
     ]
@@ -168,7 +178,7 @@
     "href": "module/md-06.html#zusatzaufgabe",
     "title": "Modul 6",
     "section": " Zusatzaufgabe",
-    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2025-04-07.\n\nZusatzaufgabe 1: Abschlussprojekt",
+    "text": "Zusatzaufgabe\nBitte erledige die folgende Aufgabe bis 2025-10-28.\n\nZusatzaufgabe 1: Abschlussprojekt",
     "crumbs": [
       "Modul 06"
     ]
@@ -218,7 +228,7 @@
     "href": "module/md-10.html#zusatzaufgaben",
     "title": "Modul 10",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-05-05.\n\nZusatzaufgabe 1: Kantons-Communities beitreten\nZusatzaufgabe 2: Abschlussprojekt bis 10.12.2024 abschliessen\nAnbschlussprojekt fertigstellen",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-11-25.\n\nZusatzaufgabe 1: Kantons-Communities beitreten\nZusatzaufgabe 2: Abschlussprojekt bis 10.12.2024 abschliessen\nAnbschlussprojekt fertigstellen",
     "crumbs": [
       "Modul 10"
     ]
@@ -268,7 +278,7 @@
     "href": "module/md-01.html#zusatzaufgaben",
     "title": "Modul 1",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-03-03.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-09-23.\n\nZusatzaufgabe 1: Git configuration\n\nVielen Dank für die Bearbeitung der Aufgabe.",
     "crumbs": [
       "Modul 01"
     ]
@@ -318,7 +328,7 @@
     "href": "module/md-03.html#zusatzaufgaben",
     "title": "Modul 3",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-03-17.\n\nZusatzaufgabe 1: Daten Transformation mit dplyr\nZusatzaufgabe 2: Mit OGD Daten arbeiten\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-10-07.\n\nZusatzaufgabe 1: Daten Transformation mit dplyr\nZusatzaufgabe 2: Mit OGD Daten arbeiten\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 03"
     ]
@@ -657,7 +667,7 @@
     "href": "folien/md-05-datumswerte.html#danke-1",
     "title": "Bedingte Anweisungen & Datumswerte & OGD Ressourcen",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/md-03-datentransformation.html#lernziele-für-diese-woche",
@@ -804,7 +814,7 @@
     "href": "folien/md-03-datentransformation.html#danke-1",
     "title": "Daten Transformation mit dplyr",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/md-04-daten-management.html#lernziele-für-diese-woche",
@@ -986,7 +996,7 @@
     "href": "folien/md-04-daten-management.html#danke-1",
     "title": "Daten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/md-02-datenvisualisierung.html#section",
@@ -1231,7 +1241,7 @@
     "href": "folien/md-02-datenvisualisierung.html#danke-1",
     "title": "Explorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP)",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/ Access slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/md-10-funktionen.html#lernziele-für-diese-woche",
@@ -1483,7 +1493,7 @@
     "href": "folien/md-10-funktionen.html#danke-1",
     "title": "Funktionen schreiben & Parameterisierung von Berichten",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/md-06-daten-typen.html#modul-5---zusatzaufgabe-3",
@@ -1665,7 +1675,7 @@
     "href": "folien/md-06-daten-typen.html#danke-1",
     "title": "Daten Typen & Vektoren & For Loops",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "abschlussprojekt/index.html",
@@ -1780,7 +1790,7 @@
     "href": "folien/md-01-willkommen.html#kurskalendar",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Kurskalendar",
-    "text": "Kurskalendar\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nModul 01\n25 Februar 2025\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n04 März 2025\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n11 März 2025\nDaten Transformation mit dplyr\n\n\nModul 04\n18 März 2025\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n25 März 2025\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n01 April 2025\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n08 April 2025\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n15 April 2025\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n22 April 2025\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n29 April 2025\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n06 Mai 2025\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n13 Mai 2025\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n20 Mai 2025\nAbschlussveranstaltung"
+    "text": "Kurskalendar\n\n\n\n\n\n\n\n\n\n\nmodul\ndatum\ntitel\n\n\n\n\nModul 01\n23 September 2025\nWillkommen zum Kurs & Werkzeugkiste & Kollaboratives Arbeiten mit GitHub I\n\n\nModul 02\n30 September 2025\nExplorative Datenanalyse durch Visualisierung & Digitaler Arbeitsplatz (DAP) & R-Community\n\n\nModul 03\n07 Oktober 2025\nDaten Transformation mit dplyr\n\n\nModul 04\n14 Oktober 2025\nDaten Import & Daten Management & Kollaboratives Arbeiten mit GitHub II\n\n\nModul 05\n21 Oktober 2025\nBedingte Anweisungen & Datumswerte & OGD Ressourcen\n\n\nModul 06\n28 Oktober 2025\nDaten Typen & Vektoren & Iteration I (for loops)\n\n\nModul 07\n04 November 2025\nDatenformen lang und breit & Daten zusammenfügen\n\n\nModul 08\n11 November 2025\nMit Text Daten arbeiten & KTZH Corporate Design mit statR\n\n\nModul 09\n18 November 2025\nErstellung von Berichten und Folien mit Quarto\n\n\nModul 10\n25 November 2025\nFunktionen schreiben & Parameterisierung von Berichten\n\n\nAbschlussprojekt\n02 Dezember 2025\nArbeitszeit für Abschlussprojekt\n\n\nAbschlussprojekt\n09 Dezember 2025\nAbgabe Abschlussprojekt\n\n\nAbschlussveranstaltung\n16 Dezember 2025\nAbschlussveranstaltung"
   },
   {
     "objectID": "folien/md-01-willkommen.html#kursstruktur",
@@ -2011,7 +2021,7 @@
     "href": "folien/md-01-willkommen.html#danke-1",
     "title": "Willkommen zum Kurs & Werkzeugkiste",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/md-07-daten-formen.html#lernziele-für-diese-woche",
@@ -2375,7 +2385,7 @@
     "href": "folien/md-07-daten-formen.html#danke-1",
     "title": "Datenformen lang und breit & Daten zusammenfügen",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/md-08-text-daten.html#lernziele-für-diese-woche",
@@ -2550,7 +2560,7 @@
     "href": "folien/md-08-text-daten.html#danke-1",
     "title": "Mit Text Daten arbeiten & KTZH Corporate Design mit statR",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/md-09-quarto.html#lernziele-für-diese-woche",
@@ -2956,7 +2966,7 @@
     "href": "folien/md-09-quarto.html#danke-1",
     "title": "Erstellung von Berichten und Folien mit Quarto",
     "section": "Danke! 🌻",
-    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nZugang zu Folien als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k010.github.io/website/"
+    "text": "Danke! 🌻\nFolien erstellt mit revealjs und Quarto: https://quarto.org/docs/presentations/revealjs/\nZugang zu Folien als PDF auf GitHub\nAlle Materialien sind lizenziert unter Creative Commons Attribution Share Alike 4.0 International.\n\n\n\n rstatszh-k011.github.io/website/"
   },
   {
     "objectID": "folien/quarto/lernende.html",
@@ -3269,7 +3279,7 @@
     "href": "module/md-02.html#zusatzaufgaben",
     "title": "Modul 2",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-03-10.\n\nZusatzaufgabe 1: Daten Visualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-09-30.\n\nZusatzaufgabe 1: Daten Visualisierung mit ggplot2\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 02"
     ]
@@ -3319,7 +3329,7 @@
     "href": "module/md-05.html#übungsaufgaben",
     "title": "Modul 5",
     "section": " Übungsaufgaben",
-    "text": "Übungsaufgaben\nBitte erledige die folgende Aufgabe bis 2025-03-31.\n\nZusatzaufgabe 1: OGD Ressourcen\nZusatzaufgabe 2: Abschlussprojekt - Daten auswählen\nZusatzaufgabe 3: Mit R arbeiten - Lernende im Kanton Zürich\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Übungsaufgaben\nBitte erledige die folgende Aufgabe bis 2025-10-21.\n\nZusatzaufgabe 1: OGD Ressourcen\nZusatzaufgabe 2: Abschlussprojekt - Daten auswählen\nZusatzaufgabe 3: Mit R arbeiten - Lernende im Kanton Zürich\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 05"
     ]
@@ -3369,7 +3379,7 @@
     "href": "module/md-04.html#zusatzaufgaben",
     "title": "Modul 4",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-03-24.\n\nZusatzaufgabe 1: R for Data Science (r4ds) Übungen\nZusatzaufgabe 2: OGD Daten importieren und erkunden\n\nVielen Dank für die Bearbeitung der Aufgaben.",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-10-14.\n\nZusatzaufgabe 1: R for Data Science (r4ds) Übungen\nZusatzaufgabe 2: OGD Daten importieren und erkunden\n\nVielen Dank für die Bearbeitung der Aufgaben.",
     "crumbs": [
       "Modul 04"
     ]
@@ -3419,7 +3429,7 @@
     "href": "module/md-07.html#zusatzaufgaben",
     "title": "Modul 7",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-04-14.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
+    "text": "Zusatzaufgaben\nBitte erledige die folgende Aufgabe bis 2025-11-04.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
     "crumbs": [
       "Modul 07"
     ]
@@ -3469,7 +3479,7 @@
     "href": "module/md-08.html#zusatzaufgaben",
     "title": "Modul 8",
     "section": " Zusatzaufgaben",
-    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2025-04-21.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
+    "text": "Zusatzaufgaben\nArbeitet weiter an eurem Abschlussprojekt. Die Zusatzaufgabe bleibt die gleiche wie in Modul 7. Bitte erledige die folgende Aufgabe bis 2025-11-11.\n\nZusatzaufgabe 1: Abschlussprojekt - Dokumentation",
     "crumbs": [
       "Modul 08"
     ]
@@ -3501,7 +3511,7 @@
     "href": "vorbereitung/02-posit-cloud.html#tritt-dem-kursarbeitsbereich-auf-posit-cloud-bei",
     "title": "rstatsZH - Data Science mit R",
     "section": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei",
-    "text": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei\nÖffne diesen Link: https://posit.cloud/spaces/591694/join?access_code=gkqKtTKokYLXVnRhzN4VkH98RnL1p0xVSJN1eq1P",
+    "text": "Tritt dem Kursarbeitsbereich auf Posit Cloud bei\nÖffne diesen Link: https://posit.cloud/spaces/643775/join?access_code=eL0-40x1bhGDpNIppCKmOk6PF2VoPzcW3-I7fdbe",
     "crumbs": [
       "Vorbereitung",
       "Schritt 2: Posit Cloud"
@@ -3512,7 +3522,7 @@
     "href": "vorbereitung/03-r4ds-intro.html",
     "title": "Kursbuch: R for Data Science",
     "section": "",
-    "text": "“R for Data Science” von Hadley Wickham und Garrett Grolemund ist ein unverzichtbarer Leitfaden für Anfänger:innen, die in die Welt der Datenwissenschaft mit R eintauchen möchten. Dieses Buch führt die Leser:innen in R, RStudio und den Tidyverse ein, eine Sammlung von R-Paketen, die entwickelt wurde, um datenwissenschaftliche Aufgaben zu optimieren und intuitiv zu gestalten.\nEs behandelt den gesamten datenwissenschaftlichen Prozess, einschließlich des Imports, Aufräumens (Cleaning), Transformierens, Visualisierens und Modellierens von Daten, wobei bewährte Verfahren und effiziente Arbeitsabläufe im Vordergrund stehen. Das Buch ist so aufgebaut, dass es Anfänger:innen dabei hilft, eine solide Grundlage in der Datenmanipulation und -analyse zu entwickeln, und bietet praktische Übungen zur Festigung des Gelernten.\nDieses Buch stellt das Kursbuch für diesen Kurs da. Der Zeitrahmen für den Kurs lässt es nicht zu durch sämtliche Kapitel zu arbeiten, jedoch werden die Kursteilnehmer:innen am Ende des Kurses mit den Fähigkeiten ausgestattet sein mittels des Buches selbstständig weiterzulernen.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
+    "text": "“R for Data Science” von Hadley Wickham und Garrett Grolemund ist ein unverzichtbarer Leitfaden für Anfänger:innen, die in die Welt der Datenwissenschaft mit R eintauchen möchten. Dieses Buch führt die Leser:innen in R, RStudio und den Tidyverse ein, eine Sammlung von R-Paketen, die entwickelt wurde, um datenwissenschaftliche Aufgaben zu optimieren und intuitiv zu gestalten.\nEs behandelt den gesamten datenwissenschaftlichen Prozess, einschließlich des Imports, Aufräumens (Cleaning), Transformierens, Visualisierens und Modellierens von Daten, wobei bewährte Verfahren und effiziente Arbeitsabläufe im Vordergrund stehen. Das Buch ist so aufgebaut, dass es Anfänger:innen dabei hilft, eine solide Grundlage in der Datenmanipulation und -analyse zu entwickeln, und bietet praktische Übungen zur Festigung des Gelernten.\nDieses Buch stellt das Kursbuch für diesen Kurs da. Der Zeitrahmen für den Kurs lässt es nicht zu durch sämtliche Kapitel zu arbeiten, jedoch werden die Kursteilnehmer:innen am Ende des Kurses mit den Fähigkeiten ausgestattet sein mittels des Buches selbstständig weiterzulernen.\n\n\n\n\n\n\n\n\nNichts installieren!\n\n\n\nDu brauchst keinerlei zusätzliche Software auf deinem Arbeitsgerät installieren. Wir arbeiten mit Posit Cloud, einer Online-Plattform, die dir eine R-Umgebung zur Verfügung stellt. Als Teil des Kurses wirst du lernen wie du die nötige Software auch auf deinem eigenen Computer installieren kannst.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
     "crumbs": [
       "Vorbereitung",
       "Schritt 3: Kursbuch"
@@ -3523,7 +3533,7 @@
     "href": "vorbereitung/03-r4ds-intro.html#aufgabe",
     "title": "Kursbuch: R for Data Science",
     "section": "",
-    "text": "Lese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
+    "text": "Nichts installieren!\n\n\n\nDu brauchst keinerlei zusätzliche Software auf deinem Arbeitsgerät installieren. Wir arbeiten mit Posit Cloud, einer Online-Plattform, die dir eine R-Umgebung zur Verfügung stellt. Als Teil des Kurses wirst du lernen wie du die nötige Software auch auf deinem eigenen Computer installieren kannst.\n\n\n\nLese das Kapitel “Introduction” von “R for Data Science” bis “Prerequisites” (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): https://r4ds.hadley.nz/intro",
     "crumbs": [
       "Vorbereitung",
       "Schritt 3: Kursbuch"

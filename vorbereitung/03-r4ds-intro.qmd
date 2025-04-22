@@ -8,4 +8,12 @@ Dieses Buch stellt das Kursbuch für diesen Kurs da. Der Zeitrahmen für den Kur
 
 ## Aufgabe
 
+::: {.callout-warning}
+## Nichts installieren!
+
+Du brauchst keinerlei zusätzliche Software auf deinem Arbeitsgerät installieren. Wir arbeiten mit Posit Cloud, einer Online-Plattform, die dir eine R-Umgebung zur Verfügung stellt. Als Teil des Kurses wirst du lernen wie du die nötige Software auch auf deinem eigenen Computer installieren kannst.
+
+:::
+
 1. Lese das Kapitel "Introduction" von "R for Data Science" bis "Prerequisites" (du brauchst keinerlei Software auf deinem Arbeitsgerät installieren): <https://r4ds.hadley.nz/intro>
+
