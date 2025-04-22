@@ -267,26 +267,6 @@ format:
     toc: true
 ```
 
-## Quarto linter
-
-Lint oder ein Linter ist ein statisches Code-Analyse-Tool, das Programmierfehler, Bugs, stilistische Fehler und verdächtige Konstrukte aufzeigt.
-
-<br>
-
-![](img/md-09/lint-rstudio.png){fig-alt="Linter zeigt Meldung für schlecht formatiertes YAML an."}
-
-::: aside
-Source: <https://en.wikipedia.org/wiki/Lint_(software)>
-:::
-
-## Quarto YAML Intelligenz
-
-RStudio + VSCode bieten eine umfangreiche Tab-Vervollständigung – fange mit einem Wort an und tippe auf die Tab-Taste, um es zu vervollständigen, oder  <kbd>`Strg + Leertaste`</kbd> um alle möglichen Optionen zu sehen.
-
-<br>
-
-![](img/md-09/quarto-tab-complete.png){fig-align="center" width="600"}
-
 ## Liste der gültigen YAML-Felder
 
 - Viele YAML-Felder sind bei verschiedenen Ausgaben gleich
@@ -362,7 +342,7 @@ Es gibt verschiedene Arten von "Links" oder Hyperlinks.
 **Markdown**
 
 ``` markdown
-Du kannst [benannte Hyperlinks] (https://quarto.org/),
+Du kannst [benannte Hyperlinks](https://quarto.org/),
 direkte URLs wie <https://quarto.org/> und Links zu 
 [anderen Orten](#quarto-anatomy) in 
 das Dokument einbetten. Die Syntax für das Einbetten eines
