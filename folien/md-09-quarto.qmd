@@ -537,7 +537,7 @@ penguins |>
 
 ::: callout-tip
 ## Verwende den visuellen Editor-Modus (Visual editor)
-Für das Hinzufügen von Fussnoten wird der visuelle Editor-Modus empfohlen.
+Für das Hinzufügen von Markdown Tabellen wird der visuelle Editor-Modus empfohlen.
 :::
 
 . . .
